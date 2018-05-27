@@ -10,7 +10,7 @@ import Foundation
 
 extension String {
     
-    /// Remove whitespaces and newlines
+    /// Whitespaces and newlines trimmed string
     var trimmed: String {
         return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }

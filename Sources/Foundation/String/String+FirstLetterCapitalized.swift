@@ -10,7 +10,7 @@ import Foundation
 
 public extension String {
     
-    /// a first letter capitalized string
+    /// First letter capitalized string
     var firstLetterCapitalized: String {
         return prefix(1).uppercased() + dropFirst()
     }
