@@ -12,32 +12,19 @@ import XCTest
 final class StringTrimmedTests: XCTestCase {
     
     func testTrimmed() {
-        let whitespaceHi = "   hi"
-        XCTAssertEqual(whitespaceHi.trimmed, "hi")
-        
-        let hiWhitespace = "hi   "
-        XCTAssertEqual(hiWhitespace.trimmed, "hi")
-        
-        let whitespaceHiWhitespace = "   hi   "
-        XCTAssertEqual(whitespaceHiWhitespace.trimmed, "hi")
-        
-        let returnHi = "\nhi"
-        XCTAssertEqual(returnHi.trimmed, "hi")
-        
-        let hiReturn = "hi\n"
-        XCTAssertEqual(hiReturn.trimmed, "hi")
-        
-        let returnHiReturn = "\nhi\n"
-        XCTAssertEqual(returnHiReturn.trimmed, "hi")
-        
-        let hiThere = "   hi   there   "
-        XCTAssertEqual(hiThere.trimmed, "hi   there")
-        
-        let hiReturnThere = "hi\nthere"
-        XCTAssertEqual(hiReturnThere.trimmed, "hi\nthere")
-        
-        let whitespaceHiReturnThereWhitespace = "   hi\nthere   "
-        XCTAssertEqual(whitespaceHiReturnThereWhitespace.trimmed, "hi\nthere")
+        XCTAssertEqual("   hi   ".trimmed, "hi")
+        XCTAssertEqual("\nhi\n".trimmed, "hi")
+        XCTAssertEqual("   hi   there   ".trimmed, "hi   there")
+        XCTAssertEqual("hi\nthere".trimmed, "hi\nthere")
+        XCTAssertEqual("   hi\nthere   ".trimmed, "hi\nthere")
+    }
+    
+    func testWhitespaceTrimmed() {
+        XCTAssertEqual("   hi   there   ".whitespaceTrimmed, "hi   there")
+    }
+    
+    func testNewlinesTrimmed() {
+        XCTAssertEqual("\n\nhi\n\nthere\n\n".newlineTrimmed, "hi\n\nthere")
     }
 
 }
