@@ -10,9 +10,19 @@ import Foundation
 
 extension String {
     
-    /// Whitespaces and newlines trimmed string
+    /// A whitespaces and newlines trimmed string.
     var trimmed: String {
         return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
+    
+    /// A whitespace trimmed string.
+    var whitespaceTrimmed: String {
+        return trimmingCharacters(in: CharacterSet.whitespaces)
+    }
+    
+    /// A newline trimmed string.
+    var newlineTrimmed: String {
+        return trimmingCharacters(in: CharacterSet.newlines)
     }
     
 }
