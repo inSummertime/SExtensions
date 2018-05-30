@@ -27,7 +27,8 @@ extension String {
     
     /// A sentense case representation of the string.
     var sentenseCased: String {
-        return trimmed.prefix(1).uppercased() + trimmed.dropFirst()
+        let sentense = uppercaseLetterSeparated.lowercased().newlineSeparated.lowercased().whitespaceCondensed.newlineCondensed
+        return sentense.prefix(1).uppercased() + sentense.dropFirst()
     }
     
     /// A first letter capitalized representation of the string.
@@ -42,12 +43,24 @@ extension String {
     
     /// A camel case representation of the string.
     var camelCased: String {
-        return trimmed.prefix(1).lowercased() + trimmed.capitalized.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "\n", with: "").dropFirst()
+        let sentense = uppercaseLetterSeparated.lowercased().newlineSeparated.lowercased().whitespaceCondensed.newlineCondensed
+        return sentense.prefix(1).lowercased() + sentense.capitalized.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "\n", with: "").dropFirst()
     }
     
-    /// Changes to camel case
+    /// Changes to camel case.
     mutating func toCamelCase() {
         self = camelCased
+    }
+    
+    /// A snake case representation of the string.
+    var snakeCased: String {
+        let sentense = uppercaseLetterSeparated.lowercased().newlineSeparated.lowercased().whitespaceCondensed.newlineCondensed.underscoreCondensed
+        return sentense.prefix(1).lowercased() + String(sentense.replacingOccurrences(of: " ", with: "_").replacingOccurrences(of: "\n", with: "_").dropFirst()).underscoreCondensed
+    }
+    
+    /// Changes to camel case.
+    mutating func toSnakeCase() {
+        self = snakeCased
     }
 
 }
