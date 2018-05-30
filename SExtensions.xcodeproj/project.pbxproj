@@ -18,6 +18,10 @@
 		71AB2F3920BCBC670060F4CB /* StringCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB2F3820BCBC670060F4CB /* StringCaseTests.swift */; };
 		71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5941C20BB71040073EE20 /* String+Bool.swift */; };
 		71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5942020BB73F50073EE20 /* StringBoolTests.swift */; };
+		71C28FBC20BE346500EF3654 /* String+Condense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FBB20BE346500EF3654 /* String+Condense.swift */; };
+		71C28FBE20BE348600EF3654 /* StringCondenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FBD20BE348600EF3654 /* StringCondenseTests.swift */; };
+		71C28FC020BE36BA00EF3654 /* String+Separate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FBF20BE36BA00EF3654 /* String+Separate.swift */; };
+		71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FC120BE385400EF3654 /* StringSeparateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		71AB2F3820BCBC670060F4CB /* StringCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCaseTests.swift; sourceTree = "<group>"; };
 		71B5941C20BB71040073EE20 /* String+Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Bool.swift"; sourceTree = "<group>"; };
 		71B5942020BB73F50073EE20 /* StringBoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringBoolTests.swift; sourceTree = "<group>"; };
+		71C28FBB20BE346500EF3654 /* String+Condense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Condense.swift"; sourceTree = "<group>"; };
+		71C28FBD20BE348600EF3654 /* StringCondenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCondenseTests.swift; sourceTree = "<group>"; };
+		71C28FBF20BE36BA00EF3654 /* String+Separate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Separate.swift"; sourceTree = "<group>"; };
+		71C28FC120BE385400EF3654 /* StringSeparateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSeparateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +151,8 @@
 			children = (
 				71B5941C20BB71040073EE20 /* String+Bool.swift */,
 				71AB2F3420BCBA740060F4CB /* String+Case.swift */,
+				71C28FBB20BE346500EF3654 /* String+Condense.swift */,
+				71C28FBF20BE36BA00EF3654 /* String+Separate.swift */,
 				71A6006720BA18FF0070B06F /* String+Trimmed.swift */,
 			);
 			path = String;
@@ -161,6 +171,8 @@
 			children = (
 				71B5942020BB73F50073EE20 /* StringBoolTests.swift */,
 				71AB2F3820BCBC670060F4CB /* StringCaseTests.swift */,
+				71C28FBD20BE348600EF3654 /* StringCondenseTests.swift */,
+				71C28FC120BE385400EF3654 /* StringSeparateTests.swift */,
 				71A6006920BA1B7E0070B06F /* StringTrimmedTests.swift */,
 			);
 			path = String;
@@ -288,8 +300,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				71A6006820BA18FF0070B06F /* String+Trimmed.swift in Sources */,
+				71C28FC020BE36BA00EF3654 /* String+Separate.swift in Sources */,
 				71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */,
 				71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */,
+				71C28FBC20BE346500EF3654 /* String+Condense.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +312,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */,
+				71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */,
 				71AB2F3920BCBC670060F4CB /* StringCaseTests.swift in Sources */,
+				71C28FBE20BE348600EF3654 /* StringCondenseTests.swift in Sources */,
 				71A6006A20BA1B7E0070B06F /* StringTrimmedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
