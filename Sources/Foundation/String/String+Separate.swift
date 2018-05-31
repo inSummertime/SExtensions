@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
     /// A uppercase letter separated string.
     var uppercaseLetterSeparated: String {

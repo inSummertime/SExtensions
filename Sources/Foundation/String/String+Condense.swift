@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
     /// A whitespace condensed string.
     var whitespaceCondensed: String {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
     /// Checks whether is uppercase.
     var isUppercase: Bool {
