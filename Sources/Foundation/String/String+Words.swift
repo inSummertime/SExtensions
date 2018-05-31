@@ -8,11 +8,16 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
     /// An array of words
     var words: [String] {
         return sentenseCased.lowercased().components(separatedBy: .whitespacesAndNewlines).filter({ $0.count > 0})
+    }
+    
+    /// How many word in a string
+    var wordCount: Int {
+        return words.count
     }
     
 }
