@@ -25,4 +25,18 @@ final class StringWordsTests: XCTestCase {
         XCTAssertEqual("hi\nthere".words, ["hi", "there"])
     }
     
+    func testWordCount() {
+        XCTAssertEqual("hi".wordCount, 1)
+        XCTAssertEqual("hiThere!".wordCount, 2)
+        XCTAssertEqual("hi There!".wordCount, 2)
+        XCTAssertEqual("hi There!*2".wordCount, 2)
+        XCTAssertEqual("2 hi There!".wordCount, 3)
+        XCTAssertEqual("hi_there".wordCount, 1)
+        XCTAssertEqual("hi-there".wordCount, 1)
+        XCTAssertEqual("hi-There".wordCount, 2)
+        XCTAssertEqual("".wordCount, 0)
+        XCTAssertEqual("   \n".wordCount, 0)
+        XCTAssertEqual("hi\nthere".wordCount, 2)
+    }
+    
 }
