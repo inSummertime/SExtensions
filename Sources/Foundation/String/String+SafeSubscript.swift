@@ -24,7 +24,7 @@ public extension String {
         }
     }
     
-    /// Creates a string with a contiguous countable range of the collection's elements safely.
+    /// Returns a string with a contiguous countable range of the collection's elements safely.
     ///
     ///     print("Hello world!"[safe: 1..<7])
     ///     // Prints "ello w"
@@ -42,7 +42,7 @@ public extension String {
         return String(self[lowerIndex..<upperIndex])
     }
     
-    /// Creates a string with a contiguous countable closed range of the collection's elements safely.
+    /// Returns a string with a contiguous countable closed range of the collection's elements safely.
     ///
     ///     print("Hello world!"[safe: 1...7])
     ///     // Prints "ello wo"
@@ -60,7 +60,7 @@ public extension String {
         return String(self[lowerIndex..<upperIndex])
     }
     
-    /// Creates a string with a contiguous countable partial from range of the collection's elements safely.
+    /// Returns a string with a contiguous countable partial from range of the collection's elements safely.
     ///
     ///     print("Hello world!"[safe: 0...])
     ///     // Prints "Hello world!"

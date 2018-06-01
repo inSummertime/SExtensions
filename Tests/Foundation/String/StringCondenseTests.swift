@@ -24,8 +24,8 @@ final class StringCondenseTests: XCTestCase {
     }
     
     func testCondense() {
-        XCTAssertEqual("Hello worrrrld!".condense(text: "r"), "Hello world!")
-        XCTAssertEqual("Helloooo wooorld!".condense(text: "o"), "Hello world!")
+        XCTAssertEqual("Hello worrrrld!".condensing(text: "r"), "Hello world!")
+        XCTAssertEqual("Helloooo wooorld!".condensing(text: "o"), "Hello world!")
     }
     
 }

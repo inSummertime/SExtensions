@@ -20,12 +20,12 @@ final class StringSeparateTests: XCTestCase {
     }
     
     func testSeparateByText() {
-        XCTAssertEqual("helloWorld".separate(by: "w"), "helloWorld")
-        XCTAssertEqual("helloWorld".separate(by: "W"), "hello World")
+        XCTAssertEqual("helloWorld".separating(by: "w"), "helloWorld")
+        XCTAssertEqual("helloWorld".separating(by: "W"), "hello World")
     }
     
     func testSeparateByCharacterSet() {
-        XCTAssertEqual("hello-world".separate(by: .punctuationCharacters), "hello -world")
+        XCTAssertEqual("hello-world".separating(by: .punctuationCharacters), "hello -world")
     }
     
 }
