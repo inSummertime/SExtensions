@@ -71,33 +71,51 @@ final class StringTrimTests: XCTestCase {
         XCTAssertEqual("Hello world!".trimmingEndCharacters(in: .symbols), "Hello world!")
     }
     
+    func testTrimmingText() {
+        XCTAssertEqual("Hello world!".trimming(text: "l"), "Heo word!")
+        XCTAssertEqual("Hello world!".trimming(text: "Hello"), " world!")
+        XCTAssertEqual("Hello world!".trimming(text: ""), "Hello world!")
+        XCTAssertEqual("Hello world!".trimming(text: " "), "Helloworld!")
+        XCTAssertEqual("Hello world!".trimming(text: "Hello world!"), "")
+        XCTAssertEqual("Hello world!".trimming(text: "Hello world! "), "Hello world!")
+    }
+    
     func testTrimText() {
-        XCTAssertEqual("Hello world!".trim(text: "l"), "Heo word!")
-        XCTAssertEqual("Hello world!".trim(text: "Hello"), " world!")
-        XCTAssertEqual("Hello world!".trim(text: ""), "Hello world!")
-        XCTAssertEqual("Hello world!".trim(text: " "), "Helloworld!")
-        XCTAssertEqual("Hello world!".trim(text: "Hello world!"), "")
-        XCTAssertEqual("Hello world!".trim(text: "Hello world! "), "Hello world!")
+        var helloWorld = "Hello world!"
+        helloWorld.trim(text: "l")
+        XCTAssertEqual(helloWorld, "Heo word!")
     }
     
-    func testTrimStart() {
-        XCTAssertEqual("Hello world!".trimStart(text: "H"), "ello world!")
-        XCTAssertEqual("Hello world!".trimStart(text: "e"), "Hello world!")
-        XCTAssertEqual("Hello world!".trimStart(text: "Hello"), " world!")
-        XCTAssertEqual("Hello world!".trimStart(text: ""), "Hello world!")
-        XCTAssertEqual("Hello world!".trimStart(text: " "), "Hello world!")
-        XCTAssertEqual("Hello world!".trimStart(text: "Hello world!"), "")
-        XCTAssertEqual("Hello world!".trimStart(text: "Hello world! "), "Hello world!")
+    func testTrimmingStartText() {
+        XCTAssertEqual("Hello world!".trimmingStart(text: "H"), "ello world!")
+        XCTAssertEqual("Hello world!".trimmingStart(text: "e"), "Hello world!")
+        XCTAssertEqual("Hello world!".trimmingStart(text: "Hello"), " world!")
+        XCTAssertEqual("Hello world!".trimmingStart(text: ""), "Hello world!")
+        XCTAssertEqual("Hello world!".trimmingStart(text: " "), "Hello world!")
+        XCTAssertEqual("Hello world!".trimmingStart(text: "Hello world!"), "")
+        XCTAssertEqual("Hello world!".trimmingStart(text: "Hello world! "), "Hello world!")
     }
     
-    func testTrimEnd() {
-        XCTAssertEqual("Hello world!".trimEnd(text: "!"), "Hello world")
-        XCTAssertEqual("Hello world!".trimEnd(text: "d"), "Hello world!")
-        XCTAssertEqual("Hello world!".trimEnd(text: "d!"), "Hello worl")
-        XCTAssertEqual("Hello world!".trimEnd(text: ""), "Hello world!")
-        XCTAssertEqual("Hello world!".trimEnd(text: " "), "Hello world!")
-        XCTAssertEqual("Hello world!".trimEnd(text: "Hello world!"), "")
-        XCTAssertEqual("Hello world!".trimEnd(text: "Hello world! "), "Hello world!")
+    func testTrimStartText() {
+        var helloWorld = "Hello world!"
+        helloWorld.trimStart(text: "H")
+        XCTAssertEqual(helloWorld, "ello world!")
+    }
+    
+    func testTrimmingEndText() {
+        XCTAssertEqual("Hello world!".trimmingEnd(text: "!"), "Hello world")
+        XCTAssertEqual("Hello world!".trimmingEnd(text: "d"), "Hello world!")
+        XCTAssertEqual("Hello world!".trimmingEnd(text: "d!"), "Hello worl")
+        XCTAssertEqual("Hello world!".trimmingEnd(text: ""), "Hello world!")
+        XCTAssertEqual("Hello world!".trimmingEnd(text: " "), "Hello world!")
+        XCTAssertEqual("Hello world!".trimmingEnd(text: "Hello world!"), "")
+        XCTAssertEqual("Hello world!".trimmingEnd(text: "Hello world! "), "Hello world!")
+    }
+    
+    func testTrimEndText() {
+        var helloWorld = "Hello world!"
+        helloWorld.trimEnd(text: "d!")
+        XCTAssertEqual(helloWorld, "Hello worl")
     }
     
 }
