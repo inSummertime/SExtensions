@@ -48,6 +48,12 @@ public extension String {
     }
     
     /// Changes to camel case.
+    ///
+    ///     let helloworld = "Hello world!"
+    ///     helloworld.toCamelCase()
+    ///     print(helloworld)
+    ///     // Prints "helloWorld"
+    ///
     mutating func toCamelCase() {
         self = camelCased
     }
@@ -59,6 +65,12 @@ public extension String {
     }
     
     /// Changes to camel case.
+    ///
+    ///     let helloworld = "Hello world!"
+    ///     helloworld.toSnakeCase()
+    ///     print(helloworld)
+    ///     // Prints "hello_world"
+    ///
     mutating func toSnakeCase() {
         self = snakeCased
     }

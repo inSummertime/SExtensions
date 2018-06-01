@@ -27,6 +27,9 @@ public extension String {
     
     /// Condenses text within a string
     ///
+    ///     print("Hello worrrrld!".condense(text: "r"))
+    ///     // Prints "Hello world!"
+    ///
     /// - Parameter text: text that needs to condense
     /// - Returns: a condensed string
     func condense(text: String) -> String {

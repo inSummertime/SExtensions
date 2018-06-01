@@ -55,9 +55,12 @@ public extension String {
         return trimmingEndCharacters(in: .newlines)
     }
     
-    /// Trims start with.
+    /// Trims start with a character set.
     ///
-    /// - Parameter characterSet: character set.
+    ///     print("!Hello world!".trimmingStartCharacters(in: .punctuationCharacters))
+    ///     // Prints "Hello world!"
+    ///
+    /// - Parameter characterSet: a character set.
     /// - Returns: a trimmed string.
     func trimmingStartCharacters(in set: CharacterSet) -> String {
         if let range = rangeOfCharacter(from: set.inverted) {
@@ -66,6 +69,13 @@ public extension String {
         return self
     }
     
+    /// Trims end with a character set.
+    ///
+    ///     print("Hello world!".trimmingEndCharacters(in: .punctuationCharacters))
+    ///     // Prints "Hello world"
+    ///
+    /// - Parameter set: a character set.
+    /// - Returns: a trimmed string.
     func trimmingEndCharacters(in set: CharacterSet) -> String {
         if let range = rangeOfCharacter(from: set.inverted, options: .backwards) {
             return String(self[startIndex..<range.upperBound])
@@ -75,6 +85,9 @@ public extension String {
     
     /// Trims text with a string.
     ///
+    ///     print("Hello world!".trim(text: "l"))
+    ///     // Prints "Heo word!"
+    ///
     /// - Parameter text: the text needs to trim.
     /// - Returns: a trimmed string.
     func trim(text: String) -> String {
@@ -82,6 +95,9 @@ public extension String {
     }
     
     /// Trims start text.
+    ///
+    ///     print("Hello world!".trimStart(text: "Hello"))
+    ///     // Prints " world!"
     ///
     /// - Parameter text: the text needs to trim.
     /// - Returns: a trimmed string.
@@ -97,6 +113,9 @@ public extension String {
     }
     
     /// Trims end text.
+    ///
+    ///     print("Hello world!".trimEnd(text: "d!"))
+    ///     // Prints "Hello worl"
     ///
     /// - Parameter text: the text needs to trim.
     /// - Returns: a trimmed string.
