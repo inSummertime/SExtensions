@@ -12,21 +12,20 @@ import XCTest
 final class StringSeparateTests: XCTestCase {
     
     func testUppercaseLetterSeparated() {
-        XCTAssertEqual("hiThere".uppercaseLetterSeparated, "hi There")
+        XCTAssertEqual("helloWorld".uppercaseLetterSeparated, "hello World")
     }
     
     func testNewlineSeparated() {
-        print("\nhi\nthere\n".newlineSeparated)
-        XCTAssertEqual("\nhi\nthere\n".newlineSeparated, "hi \nthere")
+        XCTAssertEqual("\nhello\nworld\n".newlineSeparated, "hello \nworld")
     }
     
     func testSeparateByText() {
-        XCTAssertEqual("hiThere".separate(by: "t"), "hiThere")
-        XCTAssertEqual("hiThere".separate(by: "T"), "hi There")
+        XCTAssertEqual("helloWorld".separate(by: "w"), "helloWorld")
+        XCTAssertEqual("helloWorld".separate(by: "W"), "hello World")
     }
     
     func testSeparateByCharacterSet() {
-        XCTAssertEqual("hi-there".separate(by: .punctuationCharacters), "hi -there")
+        XCTAssertEqual("hello-world".separate(by: .punctuationCharacters), "hello -world")
     }
     
 }

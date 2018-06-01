@@ -12,20 +12,20 @@ import XCTest
 final class StringCondenseTests: XCTestCase {
     
     func testWhitespaceCondensed() {
-        XCTAssertEqual("   hi   there   ".whitespaceCondensed, " hi there ")
+        XCTAssertEqual("   Hello   world!   ".whitespaceCondensed, " Hello world! ")
     }
     
     func testNewlineCondensed() {
-        XCTAssertEqual("\n\nhi\n\n\nthere\n\n".newlineCondensed, "\nhi\nthere\n")
+        XCTAssertEqual("\n\nHello\n\n\nworld!\n\n".newlineCondensed, "\nHello\nworld!\n")
     }
     
     func testUnderscoreCondensed() {
-        XCTAssertEqual("__hi__there__".underscoreCondensed, "_hi_there_")
+        XCTAssertEqual("__hello__world__".underscoreCondensed, "_hello_world_")
     }
     
     func testCondense() {
-        XCTAssertEqual("hi theereee".condense(text: "e"), "hi there")
-        XCTAssertEqual("hhhi thhhere".condense(text: "h"), "hi there")
+        XCTAssertEqual("Hello worrrrld!".condense(text: "r"), "Hello world!")
+        XCTAssertEqual("Helloooo wooorld!".condense(text: "o"), "Hello world!")
     }
     
 }

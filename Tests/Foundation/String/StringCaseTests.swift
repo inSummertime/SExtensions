@@ -12,48 +12,48 @@ import XCTest
 final class StringCaseTests: XCTestCase {
     
     func testIsUppercase() {
-        XCTAssertFalse("Hi".isUppercase)
-        XCTAssertTrue("HI".isUppercase)
-        XCTAssertFalse("hi".isUppercase)
-        XCTAssertTrue("HI THERE!".isUppercase)
-        XCTAssertFalse("hi there!".isUppercase)
+        XCTAssertFalse("Hello".isUppercase)
+        XCTAssertTrue("HELLO".isUppercase)
+        XCTAssertFalse("hello".isUppercase)
+        XCTAssertTrue("HELLO WORLD!".isUppercase)
+        XCTAssertFalse("hello world!".isUppercase)
         XCTAssertTrue(" $1 ".isUppercase)
         XCTAssertTrue("".isUppercase)
     }
     
     func testIsLowercase() {
-        XCTAssertFalse("Hi".isLowercase)
-        XCTAssertFalse("HI".isLowercase)
-        XCTAssertTrue("hi".isLowercase)
-        XCTAssertFalse("HI THERE!".isLowercase)
-        XCTAssertTrue("hi there!".isLowercase)
+        XCTAssertFalse("Hello".isLowercase)
+        XCTAssertFalse("HELLO".isLowercase)
+        XCTAssertTrue("hello".isLowercase)
+        XCTAssertFalse("HELLO WORLD!".isLowercase)
+        XCTAssertTrue("hello world!".isLowercase)
         XCTAssertTrue(" $1 ".isLowercase)
         XCTAssertTrue("".isLowercase)
     }
     
     func testIsCapitalized() {
-        XCTAssertTrue("Hi".isCapitalized)
-        XCTAssertFalse("HI".isCapitalized)
-        XCTAssertFalse("hi".isCapitalized)
-        XCTAssertTrue("Hi There!".isCapitalized)
-        XCTAssertFalse("HI THERE!".isCapitalized)
-        XCTAssertFalse("hi there!".isCapitalized)
-        XCTAssertFalse("Hi there!".isCapitalized)
+        XCTAssertTrue("Hello".isCapitalized)
+        XCTAssertFalse("HELLO".isCapitalized)
+        XCTAssertFalse("hello".isCapitalized)
+        XCTAssertTrue("Hello World!".isCapitalized)
+        XCTAssertFalse("HELLO WORLD!".isCapitalized)
+        XCTAssertFalse("hello world!".isCapitalized)
+        XCTAssertFalse("Hello world!".isCapitalized)
         XCTAssertTrue(" $1 ".isCapitalized)
         XCTAssertTrue("".isCapitalized)
     }
     
     func testSentensecased() {
         XCTAssertEqual(" h ".sentenseCased, "H")
-        XCTAssertEqual("hi".sentenseCased, "Hi")
-        XCTAssertEqual("hi there".sentenseCased, "Hi there")
-        print("\n hi \nthere! \n".sentenseCased)
-        print("Hi \nthere!")
-        XCTAssertEqual("\n hi \nthere! \n".sentenseCased, "Hi \nthere!")
+        XCTAssertEqual("hello".sentenseCased, "Hello")
+        XCTAssertEqual("hello world!".sentenseCased, "Hello world!")
+        print("\n hello \nworld! \n".sentenseCased)
+        print("Hello \nworld!")
+        XCTAssertEqual("\n hello \nworld! \n".sentenseCased, "Hello \nworld!")
         XCTAssertEqual(" ".sentenseCased, "")
         XCTAssertEqual(" $1 ".sentenseCased, "$1")
         XCTAssertEqual("".sentenseCased, "")
-        XCTAssertEqual("Hi there".sentenseCased, "Hi there")
+        XCTAssertEqual("Hello world".sentenseCased, "Hello world")
     }
     
     func capitalizeFirstLetter() {
@@ -61,13 +61,13 @@ final class StringCaseTests: XCTestCase {
         h.capitalizeFirstLetter()
         XCTAssertEqual(h, "H")
         
-        var hi = "hi"
-        hi.capitalizeFirstLetter()
-        XCTAssertEqual(hi, "Hi")
+        var hello = "hello"
+        hello.capitalizeFirstLetter()
+        XCTAssertEqual(hello, "Hello")
         
-        var hithere = "hi there"
-        hithere.capitalizeFirstLetter()
-        XCTAssertEqual(hithere, "Hi there")
+        var helloWorld = "hello world!"
+        helloWorld.capitalizeFirstLetter()
+        XCTAssertEqual(helloWorld, "Hello world!")
         
         var one = "1"
         one.capitalizeFirstLetter()
@@ -88,13 +88,13 @@ final class StringCaseTests: XCTestCase {
     
     func testCamelcased() {
         XCTAssertEqual(" h ".camelCased, "h")
-        XCTAssertEqual("hi".camelCased, "hi")
-        XCTAssertEqual("hi there".camelCased, "hiThere")
-        XCTAssertEqual("\n hi \nthere! \n".camelCased, "hiThere!")
+        XCTAssertEqual("hello".camelCased, "hello")
+        XCTAssertEqual("hello world!".camelCased, "helloWorld!")
+        XCTAssertEqual("\n hello \nworld! \n".camelCased, "helloWorld!")
         XCTAssertEqual(" ".camelCased, "")
         XCTAssertEqual(" $1 ".camelCased, "$1")
         XCTAssertEqual("".camelCased, "")
-        XCTAssertEqual("hiThere".camelCased, "hiThere")
+        XCTAssertEqual("helloWorld!".camelCased, "helloWorld!")
     }
     
     func testToCamelCase() {
@@ -102,17 +102,17 @@ final class StringCaseTests: XCTestCase {
         h.toCamelCase()
         XCTAssertEqual(h, "h")
         
-        var hi = "hi"
+        var hi = "hello"
         hi.toCamelCase()
-        XCTAssertEqual(hi, "hi")
+        XCTAssertEqual(hi, "hello")
         
-        var hithere = "hi there"
-        hithere.toCamelCase()
-        XCTAssertEqual(hithere, "hiThere")
+        var helloWold = "hello world!"
+        helloWold.toCamelCase()
+        XCTAssertEqual(helloWold, "helloWorld!")
         
-        var hiThere = "\n hi \nthere! \n"
-        hiThere.toCamelCase()
-        XCTAssertEqual(hiThere, "hiThere!")
+        var newlineHelloWorld = "\n hello \nworld! \n"
+        newlineHelloWorld.toCamelCase()
+        XCTAssertEqual(newlineHelloWorld, "helloWorld!")
         
         var one = "1"
         one.toCamelCase()
@@ -130,20 +130,20 @@ final class StringCaseTests: XCTestCase {
         empty.toCamelCase()
         XCTAssertEqual(empty, "")
         
-        var camelCasedHiThere = "hiThere"
-        camelCasedHiThere.toCamelCase()
-        XCTAssertEqual(camelCasedHiThere, "hiThere")
+        var camelCasedHelloWorld = "helloWorld!"
+        camelCasedHelloWorld.toCamelCase()
+        XCTAssertEqual(camelCasedHelloWorld, "helloWorld!")
     }
     
     func testSnakeCased() {
         XCTAssertEqual(" h ".snakeCased, "h")
-        XCTAssertEqual("hi".snakeCased, "hi")
-        XCTAssertEqual("hi there".snakeCased, "hi_there")
-        XCTAssertEqual("\n hi \nthere! \n".snakeCased, "hi_there!")
+        XCTAssertEqual("hello".snakeCased, "hello")
+        XCTAssertEqual("hello world!".snakeCased, "hello_world!")
+        XCTAssertEqual("\n hello \nworld! \n".snakeCased, "hello_world!")
         XCTAssertEqual(" ".snakeCased, "")
         XCTAssertEqual(" $1 ".snakeCased, "$1")
         XCTAssertEqual("".snakeCased, "")
-        XCTAssertEqual("hi_there".snakeCased, "hi_there")
+        XCTAssertEqual("hello_world!".snakeCased, "hello_world!")
     }
     
     func testToSnakeCase() {
@@ -151,17 +151,17 @@ final class StringCaseTests: XCTestCase {
         h.toSnakeCase()
         XCTAssertEqual(h, "h")
         
-        var hi = "hi"
-        hi.toSnakeCase()
-        XCTAssertEqual(hi, "hi")
+        var hello = "hello"
+        hello.toSnakeCase()
+        XCTAssertEqual(hello, "hello")
         
-        var hithere = "hi there"
-        hithere.toSnakeCase()
-        XCTAssertEqual(hithere, "hi_there")
+        var helloWorld = "hello world!"
+        helloWorld.toSnakeCase()
+        XCTAssertEqual(helloWorld, "hello_world!")
         
-        var hiThere = "\n hi \nthere! \n"
-        hiThere.toSnakeCase()
-        XCTAssertEqual(hiThere, "hi_there!")
+        var newlineHelloWorld = "\n hello \nworld! \n"
+        newlineHelloWorld.toSnakeCase()
+        XCTAssertEqual(newlineHelloWorld, "hello_world!")
         
         var one = "1"
         one.toSnakeCase()
@@ -179,13 +179,13 @@ final class StringCaseTests: XCTestCase {
         empty.toSnakeCase()
         XCTAssertEqual(empty, "")
         
-        var snakeCasedHiThere = "hi_there"
-        snakeCasedHiThere.toSnakeCase()
-        XCTAssertEqual(snakeCasedHiThere, "hi_there")
+        var snakeCasedHelloWorld = "hello_world!"
+        snakeCasedHelloWorld.toSnakeCase()
+        XCTAssertEqual(snakeCasedHelloWorld, "hello_world!")
         
-        var snakeCasedHiThereWithUnderscores = "_hi_there_"
-        snakeCasedHiThereWithUnderscores.toSnakeCase()
-        XCTAssertEqual(snakeCasedHiThere, "hi_there")
+        var snakeCasedHelloWorldWithUnderscores = "_hello_world!_"
+        snakeCasedHelloWorldWithUnderscores.toSnakeCase()
+        XCTAssertEqual(snakeCasedHelloWorldWithUnderscores, "hello_world!")
     }
     
 }
