@@ -10,52 +10,52 @@ import Foundation
 
 public extension String {
     
-    /// A whitespaces and newlines trimmed string.
+    /// A string with all whitespaces and newlines trimmed.
     var trimmed: String {
         return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
     
-    /// A start whitespace and newlines trimmed string.
+    /// A string with all start whitespaces and newlines trimmed.
     var startTrimmed: String {
         return trimmingStartCharacters(in: .whitespacesAndNewlines)
     }
     
-    /// A end whitespace and newlines trimmed string.
+    /// A string with all end whitespaces and newlines trimmed.
     var endTrimmed: String {
         return trimmingEndCharacters(in: .whitespacesAndNewlines)
     }
     
-    /// A whitespace trimmed string.
+    /// A string with all whitespaces trimmed.
     var whitespaceTrimmed: String {
         return trimmingCharacters(in: CharacterSet.whitespaces)
     }
     
-    /// A start whitespace trimmed string.
+    /// A string with all start whitespaces trimmed.
     var startWhitespaceTrimmed: String {
         return trimmingStartCharacters(in: .whitespaces)
     }
     
-    /// A end whitespace trimmed string.
+    /// A string with all end whitespaces trimmed.
     var endWhitespaceTrimmed: String {
         return trimmingEndCharacters(in: .whitespaces)
     }
     
-    /// A newline trimmed string.
+    /// A string with all newline trimmed.
     var newlineTrimmed: String {
         return trimmingCharacters(in: CharacterSet.newlines)
     }
     
-    /// A start newline trimmed string
+    /// A string with all start newlines trimmed
     var startNewlineTrimmed: String {
         return trimmingStartCharacters(in: .newlines)
     }
     
-    /// A end newline trimmed string.
+    /// A string with all end newlines trimmed.
     var endNewlineTrimmed: String {
         return trimmingEndCharacters(in: .newlines)
     }
     
-    /// Trims start with a character set.
+    /// Returns a string with the start trimmed with a character set.
     ///
     ///     print("!Hello world!".trimmingStartCharacters(in: .punctuationCharacters))
     ///     // Prints "Hello world!"
@@ -69,7 +69,7 @@ public extension String {
         return self
     }
     
-    /// Trims end with a character set.
+    /// Returns a string with the end trimmed with a character set.
     ///
     ///     print("Hello world!".trimmingEndCharacters(in: .punctuationCharacters))
     ///     // Prints "Hello world"
@@ -83,25 +83,38 @@ public extension String {
         return self
     }
     
-    /// Trims text with a string.
+    /// Returns a string with the text trimmed.
     ///
     ///     print("Hello world!".trim(text: "l"))
     ///     // Prints "Heo word!"
     ///
     /// - Parameter text: the text needs to trim.
     /// - Returns: a trimmed string.
-    func trim(text: String) -> String {
+    func trimming(text: String) -> String {
         return replacingOccurrences(of: text, with: "")
     }
     
-    /// Trims start text.
+    /// Trims text with a string.
+    ///
+    ///     var helloWorld = "Hello world!"
+    ///     helloWorld.trimmed(text: "l")
+    ///     print(helloWorld)
+    ///     // Prints "Heo word!"
+    ///
+    /// - Parameter text: the text needs to trim.
+    /// - Returns: a trimmed string.
+    mutating func trim(text: String) {
+        self = trimming(text: text)
+    }
+    
+    /// Returns a string with the start text trimmed.
     ///
     ///     print("Hello world!".trimStart(text: "Hello"))
     ///     // Prints " world!"
     ///
     /// - Parameter text: the text needs to trim.
     /// - Returns: a trimmed string.
-    func trimStart(text: String) -> String {
+    func trimmingStart(text: String) -> String {
         if let range = range(of: text) {
             if range.lowerBound > startIndex {
                 return self
@@ -112,14 +125,26 @@ public extension String {
         }
     }
     
-    /// Trims end text.
+    /// Trims start text.
+    ///
+    ///     var helloWorld = "Hello world!"
+    ///     helloWorld.trimmedStart(text: "Hello")
+    ///     print(helloWorld)
+    ///     // Prints " world!"
+    ///
+    /// - Parameter text: the text needs to trim.
+    mutating func trimStart(text: String) {
+        self = trimmingStart(text: text)
+    }
+    
+    /// Returns a string with the end text trimmed.
     ///
     ///     print("Hello world!".trimEnd(text: "d!"))
     ///     // Prints "Hello worl"
     ///
     /// - Parameter text: the text needs to trim.
     /// - Returns: a trimmed string.
-    func trimEnd(text: String) -> String {
+    func trimmingEnd(text: String) -> String {
         if let range = range(of: text, options: .backwards, range: nil, locale: nil) {
             if range.upperBound < endIndex {
                 return self
@@ -127,6 +152,18 @@ public extension String {
             return String(self[startIndex..<range.lowerBound])
         }
         return self
+    }
+    
+    /// Trims end text.
+    ///
+    ///     var helloWorld = "Hello world!"
+    ///     helloWorld.trimEnd(text: "d!")
+    ///     print(helloWorld)
+    ///     // Prints "Hello worl"
+    ///
+    /// - Parameter text: the text needs to trim.
+    mutating func trimEnd(text: String) {
+        self = trimmingEnd(text: text)
     }
     
 }
