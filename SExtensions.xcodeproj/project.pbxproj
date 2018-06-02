@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		714EB2FF20C206ED002ED5DE /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EB2FE20C206ED002ED5DE /* String+Date.swift */; };
+		714EB30120C207D9002ED5DE /* StringDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EB30020C207D9002ED5DE /* StringDateTests.swift */; };
 		71697E2920B91CDB005C58EC /* SExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71697E1F20B91CDB005C58EC /* SExtensions.framework */; };
 		71697E3020B91CDB005C58EC /* SExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71697E2220B91CDB005C58EC /* SExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71697E3E20B91E64005C58EC /* SExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 71697E3B20B91E63005C58EC /* SExtensions.podspec */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		714EB2FE20C206ED002ED5DE /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
+		714EB30020C207D9002ED5DE /* StringDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDateTests.swift; sourceTree = "<group>"; };
 		71697E1F20B91CDB005C58EC /* SExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71697E2220B91CDB005C58EC /* SExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SExtensions.h; sourceTree = "<group>"; };
 		71697E2320B91CDB005C58EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 				71B5941C20BB71040073EE20 /* String+Bool.swift */,
 				71AB2F3420BCBA740060F4CB /* String+Case.swift */,
 				71C28FBB20BE346500EF3654 /* String+Condense.swift */,
+				714EB2FE20C206ED002ED5DE /* String+Date.swift */,
 				71A4568520C0A609003E739C /* String+SafeSubscript.swift */,
 				71C28FBF20BE36BA00EF3654 /* String+Separate.swift */,
 				71A8004A20C164020029B141 /* String+Trim.swift */,
@@ -182,6 +187,7 @@
 				71B5942020BB73F50073EE20 /* StringBoolTests.swift */,
 				71AB2F3820BCBC670060F4CB /* StringCaseTests.swift */,
 				71C28FBD20BE348600EF3654 /* StringCondenseTests.swift */,
+				714EB30020C207D9002ED5DE /* StringDateTests.swift */,
 				71A4568720C0A657003E739C /* StringSafeSubscriptTests.swift */,
 				71C28FC120BE385400EF3654 /* StringSeparateTests.swift */,
 				71A8004C20C1642D0029B141 /* StringTrimTests.swift */,
@@ -315,6 +321,7 @@
 				71A8004B20C164020029B141 /* String+Trim.swift in Sources */,
 				71ACDC5C20BF7E650071FF33 /* String+Words.swift in Sources */,
 				71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */,
+				714EB2FF20C206ED002ED5DE /* String+Date.swift in Sources */,
 				71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */,
 				71A4568620C0A609003E739C /* String+SafeSubscript.swift in Sources */,
 				71C28FBC20BE346500EF3654 /* String+Condense.swift in Sources */,
@@ -325,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714EB30120C207D9002ED5DE /* StringDateTests.swift in Sources */,
 				71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */,
 				71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */,
 				71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */,
