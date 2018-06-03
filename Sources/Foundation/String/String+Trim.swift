@@ -11,46 +11,73 @@ import Foundation
 public extension String {
     
     /// A string with all whitespaces and newlines trimmed.
+    ///
+    ///     print(" \nhello \nworld\n ".trimmed)
+    ///     // Prints "hello \nworld"
     var trimmed: String {
         return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
     
     /// A string with all start whitespaces and newlines trimmed.
+    ///
+    ///     print(" \nHello \nworld!\n ".startTrimmed)
+    ///     // Prints "Hello \nworld!\n"
     var startTrimmed: String {
         return trimmingStartCharacters(in: .whitespacesAndNewlines)
     }
     
     /// A string with all end whitespaces and newlines trimmed.
+    ///
+    ///     print(" \nHello \nworld!\n ".endTrimmed)
+    ///     // Prints " \nHello \nworld!"
     var endTrimmed: String {
         return trimmingEndCharacters(in: .whitespacesAndNewlines)
     }
     
     /// A string with all whitespaces trimmed.
+    ///
+    ///     print(" \nHello \nworld!\n ".whitespaceTrimmed)
+    ///     // Prints "\nHello \nworld!\n"
     var whitespaceTrimmed: String {
         return trimmingCharacters(in: CharacterSet.whitespaces)
     }
     
     /// A string with all start whitespaces trimmed.
+    ///
+    ///     print(" \nHello \nworld!\n ".startWhitespaceTrimmed)
+    ///     // Prints "\nHello \nworld!\n "
     var startWhitespaceTrimmed: String {
         return trimmingStartCharacters(in: .whitespaces)
     }
     
     /// A string with all end whitespaces trimmed.
+    ///
+    ///     print(" \nHello \nworld!\n ".endWhitespaceTrimmed)
+    ///     // Prints " \nHello \nworld!\n"
     var endWhitespaceTrimmed: String {
         return trimmingEndCharacters(in: .whitespaces)
     }
     
     /// A string with all newline trimmed.
+    ///
+    ///     print("\n\nHellon\nworld!\n\n".newlineTrimmed)
+    ///     // Prints "Hello\n\nworld!\n"
     var newlineTrimmed: String {
         return trimmingCharacters(in: CharacterSet.newlines)
     }
     
     /// A string with all start newlines trimmed
+    ///
+    ///     print("\n\nhello\n\nworld!\n\n".startNewlineTrimmed)
+    ///     // Prints "hello\n\nworld!\n\n"
     var startNewlineTrimmed: String {
         return trimmingStartCharacters(in: .newlines)
     }
     
     /// A string with all end newlines trimmed.
+    ///
+    ///     print("\n\nhello\n\nworld!\n\n".endNewlineTrimmed)
+    ///     // Prints "\n\nhello\n\nworld!"
     var endNewlineTrimmed: String {
         return trimmingEndCharacters(in: .newlines)
     }

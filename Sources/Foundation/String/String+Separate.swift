@@ -11,11 +11,17 @@ import Foundation
 public extension String {
     
     /// A uppercase letter separated string.
+    ///
+    ///     print("helloWorld!".uppercaseLetterSeparated)
+    ///     // Prints "hello World!"
     var uppercaseLetterSeparated: String {
         return separating(by: .uppercaseLetters)
     }
     
     /// A newline separated string.
+    ///
+    ///     print("hello\nworld!".newlineSeparated)
+    ///     // Prints "hello world!"
     var newlineSeparated: String {
         return separating(by: "\n")
     }

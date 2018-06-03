@@ -11,16 +11,25 @@ import Foundation
 public extension String {
     
     /// A whitespace condensed string.
+    ///
+    ///     print("Hello  world!".whitespaceCondensed)
+    ///     // Prints "Hello world!"
     var whitespaceCondensed: String {
         return condensing(text: " ")
     }
     
     /// A newline condensed string.
+    ///
+    ///     print("Hello world!\n\n".newlineCondensed)
+    ///     // Prints "Hello world\n!"
     var newlineCondensed: String {
         return condensing(text: "\n")
     }
     
     /// A underscore condensed string.
+    ///
+    ///     print("Hello__world!".underscoreCondensed)
+    ///     // Prints "Hello_world!"
     var underscoreCondensed: String {
         return condensing(text: "_")
     }

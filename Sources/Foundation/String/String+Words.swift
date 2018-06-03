@@ -11,11 +11,17 @@ import Foundation
 public extension String {
     
     /// An array of words
+    ///
+    ///     print("Hello world!".words)
+    ///     // Prints ["hello", "world!"]
     var words: [String] {
         return sentenseCased.lowercased().components(separatedBy: .whitespacesAndNewlines).filter({ $0.count > 0})
     }
     
     /// How many word in a string
+    ///
+    ///     print("Hello world!".wordCount)
+    ///     // Prints 2
     var wordCount: Int {
         return words.count
     }
