@@ -14,6 +14,8 @@
 		71697E3E20B91E64005C58EC /* SExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 71697E3B20B91E63005C58EC /* SExtensions.podspec */; };
 		71697E3F20B91E64005C58EC /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 71697E3C20B91E64005C58EC /* LICENSE */; };
 		71697E4020B91E64005C58EC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 71697E3D20B91E64005C58EC /* README.md */; };
+		7177623720C3573F001F2C8E /* String+Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177623620C3573F001F2C8E /* String+Number.swift */; };
+		7177623920C35DF1001F2C8E /* StringNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177623820C35DF1001F2C8E /* StringNumberTests.swift */; };
 		71A4568620C0A609003E739C /* String+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A4568520C0A609003E739C /* String+SafeSubscript.swift */; };
 		71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A4568720C0A657003E739C /* StringSafeSubscriptTests.swift */; };
 		71A8004B20C164020029B141 /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8004A20C164020029B141 /* String+Trim.swift */; };
@@ -51,6 +53,8 @@
 		71697E3B20B91E63005C58EC /* SExtensions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SExtensions.podspec; sourceTree = "<group>"; };
 		71697E3C20B91E64005C58EC /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		71697E3D20B91E64005C58EC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7177623620C3573F001F2C8E /* String+Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Number.swift"; sourceTree = "<group>"; };
+		7177623820C35DF1001F2C8E /* StringNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringNumberTests.swift; sourceTree = "<group>"; };
 		71A4568520C0A609003E739C /* String+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SafeSubscript.swift"; sourceTree = "<group>"; };
 		71A4568720C0A657003E739C /* StringSafeSubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSafeSubscriptTests.swift; sourceTree = "<group>"; };
 		71A8004A20C164020029B141 /* String+Trim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Trim.swift"; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 				71AB2F3420BCBA740060F4CB /* String+Case.swift */,
 				71C28FBB20BE346500EF3654 /* String+Condense.swift */,
 				714EB2FE20C206ED002ED5DE /* String+Date.swift */,
+				7177623620C3573F001F2C8E /* String+Number.swift */,
 				71A4568520C0A609003E739C /* String+SafeSubscript.swift */,
 				71C28FBF20BE36BA00EF3654 /* String+Separate.swift */,
 				71A8004A20C164020029B141 /* String+Trim.swift */,
@@ -188,6 +193,7 @@
 				71AB2F3820BCBC670060F4CB /* StringCaseTests.swift */,
 				71C28FBD20BE348600EF3654 /* StringCondenseTests.swift */,
 				714EB30020C207D9002ED5DE /* StringDateTests.swift */,
+				7177623820C35DF1001F2C8E /* StringNumberTests.swift */,
 				71A4568720C0A657003E739C /* StringSafeSubscriptTests.swift */,
 				71C28FC120BE385400EF3654 /* StringSeparateTests.swift */,
 				71A8004C20C1642D0029B141 /* StringTrimTests.swift */,
@@ -319,6 +325,7 @@
 			files = (
 				71C28FC020BE36BA00EF3654 /* String+Separate.swift in Sources */,
 				71A8004B20C164020029B141 /* String+Trim.swift in Sources */,
+				7177623720C3573F001F2C8E /* String+Number.swift in Sources */,
 				71ACDC5C20BF7E650071FF33 /* String+Words.swift in Sources */,
 				71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */,
 				714EB2FF20C206ED002ED5DE /* String+Date.swift in Sources */,
@@ -332,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7177623920C35DF1001F2C8E /* StringNumberTests.swift in Sources */,
 				714EB30120C207D9002ED5DE /* StringDateTests.swift in Sources */,
 				71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */,
 				71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */,
