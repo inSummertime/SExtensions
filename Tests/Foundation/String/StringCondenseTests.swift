@@ -23,9 +23,9 @@ final class StringCondenseTests: XCTestCase {
         XCTAssertEqual("__hello__world__".underscoreCondensed, "_hello_world_")
     }
     
-    func testCondense() {
-        XCTAssertEqual("Hello worrrrld!".condensing(text: "r"), "Hello world!")
-        XCTAssertEqual("Helloooo wooorld!".condensing(text: "o"), "Hello world!")
+    func testCondenseString() {
+        XCTAssertEqual("Hello worrrrld!".condensingString("r"), "Hello world!")
+        XCTAssertEqual("Helloooo wooorld!".condensingString("o"), "Hello world!")
     }
     
 }

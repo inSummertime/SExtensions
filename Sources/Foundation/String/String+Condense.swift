@@ -15,7 +15,7 @@ public extension String {
     ///     print("Hello  world!".whitespaceCondensed)
     ///     // Prints "Hello world!"
     var whitespaceCondensed: String {
-        return condensing(text: " ")
+        return condensingString(" ")
     }
     
     /// A newline condensed string.
@@ -23,7 +23,7 @@ public extension String {
     ///     print("Hello world!\n\n".newlineCondensed)
     ///     // Prints "Hello world\n!"
     var newlineCondensed: String {
-        return condensing(text: "\n")
+        return condensingString("\n")
     }
     
     /// A underscore condensed string.
@@ -31,24 +31,24 @@ public extension String {
     ///     print("Hello__world!".underscoreCondensed)
     ///     // Prints "Hello_world!"
     var underscoreCondensed: String {
-        return condensing(text: "_")
+        return condensingString("_")
     }
     
-    /// Returns a string with a text condensed
+    /// Returns a string with a letter condensed
     ///
-    ///     print("Hello worrrrld!".condense(text: "r"))
+    ///     print("Hello worrrrld!".condensingString("r"))
     ///     // Prints "Hello world!"
     ///
-    /// - Parameter text: text that needs to condense
+    /// - Parameter letter: a letter that needs to condense
     /// - Returns: a condensed string
-    func condensing(text: String) -> String {
-        let joined = components(separatedBy: text).filter { !$0.isEmpty }.joined(separator: text)
-        if let first = first, let last = last, String(first) == text, String(last) == text {
-            return text + joined + text
-        } else if let first = first, String(first) == text {
-            return text + joined
-        } else if let last = last, String(last) == text {
-            return joined + text
+    func condensingString(_ string: String) -> String {
+        let joined = components(separatedBy: string).filter { !$0.isEmpty }.joined(separator: string)
+        if let first = first, let last = last, String(first) == string, String(last) == string {
+            return string + joined + string
+        } else if let first = first, String(first) == string {
+            return string + joined
+        } else if let last = last, String(last) == string {
+            return joined + string
         } else {
             return joined
         }
