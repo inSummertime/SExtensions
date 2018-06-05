@@ -22,6 +22,7 @@ final class StringNumberTests: XCTestCase {
         XCTAssertNotNil("9223372036854775807".number) // Int.max
         XCTAssertNotNil("9223372036854775808".number) // Int.max + 1
         XCTAssertNotNil("  \n\n  -1.0  \n\n  ".number)
+        XCTAssertNotNil("1,0".number)
     }
     
     func testNumberValue() {
@@ -35,6 +36,7 @@ final class StringNumberTests: XCTestCase {
         XCTAssertEqual("9223372036854775807".numberValue, NSNumber(value: 9223372036854775807)) // Int.max
         XCTAssertEqual("9223372036854775808".numberValue, NSNumber(value: 9223372036854775808.0)) // Int.max + 1
         XCTAssertEqual("\n 1.0 \n".numberValue, NSNumber(value: 1.0))
+        XCTAssertEqual("1,0".numberValue, NSNumber(value: 1.0))
     }
     
     func testIsNumber() {
@@ -48,6 +50,7 @@ final class StringNumberTests: XCTestCase {
         XCTAssertTrue("9223372036854775807".isNumber) // Int.max
         XCTAssertTrue("9223372036854775808".isNumber) // Int.max + 1
         XCTAssertTrue("  \n\n  -1.0  \n\n  ".isNumber)
+        XCTAssertTrue("1,0".isNumber)
     }
     
     func testInt() {
