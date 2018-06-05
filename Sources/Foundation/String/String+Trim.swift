@@ -117,7 +117,7 @@ public extension String {
     ///
     /// - Parameter text: the text needs to trim.
     /// - Returns: a trimmed string.
-    func trimming(text: String) -> String {
+    func trimmingText(_ text: String) -> String {
         return replacingOccurrences(of: text, with: "")
     }
     
@@ -130,67 +130,8 @@ public extension String {
     ///
     /// - Parameter text: the text needs to trim.
     /// - Returns: a trimmed string.
-    mutating func trim(text: String) {
-        self = trimming(text: text)
-    }
-    
-    /// Returns a string with the start text trimmed.
-    ///
-    ///     print("Hello world!".trimStart(text: "Hello"))
-    ///     // Prints " world!"
-    ///
-    /// - Parameter text: the text needs to trim.
-    /// - Returns: a trimmed string.
-    func trimmingStart(text: String) -> String {
-        if let range = range(of: text) {
-            if range.lowerBound > startIndex {
-                return self
-            }
-            return String(self[range.upperBound..<endIndex])
-        } else {
-            return self
-        }
-    }
-    
-    /// Trims start text.
-    ///
-    ///     var helloWorld = "Hello world!"
-    ///     helloWorld.trimmedStart(text: "Hello")
-    ///     print(helloWorld)
-    ///     // Prints " world!"
-    ///
-    /// - Parameter text: the text needs to trim.
-    mutating func trimStart(text: String) {
-        self = trimmingStart(text: text)
-    }
-    
-    /// Returns a string with the end text trimmed.
-    ///
-    ///     print("Hello world!".trimEnd(text: "d!"))
-    ///     // Prints "Hello worl"
-    ///
-    /// - Parameter text: the text needs to trim.
-    /// - Returns: a trimmed string.
-    func trimmingEnd(text: String) -> String {
-        if let range = range(of: text, options: .backwards, range: nil, locale: nil) {
-            if range.upperBound < endIndex {
-                return self
-            }
-            return String(self[startIndex..<range.lowerBound])
-        }
-        return self
-    }
-    
-    /// Trims end text.
-    ///
-    ///     var helloWorld = "Hello world!"
-    ///     helloWorld.trimEnd(text: "d!")
-    ///     print(helloWorld)
-    ///     // Prints "Hello worl"
-    ///
-    /// - Parameter text: the text needs to trim.
-    mutating func trimEnd(text: String) {
-        self = trimmingEnd(text: text)
+    mutating func trimText(_ text: String) {
+        self = trimmingText(text)
     }
     
 }
