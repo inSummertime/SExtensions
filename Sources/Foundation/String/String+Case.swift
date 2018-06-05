@@ -86,7 +86,7 @@ public extension String {
     ///     print("hello world!".snakeCased)
     ///     // Prints "hello_world!"
     var snakeCased: String {
-        let sentense = uppercaseLetterSeparated.lowercased().newlineSeparated.lowercased().whitespaceCondensed.newlineCondensed.underscoreCondensed.trimmingStart(text: "_").trimmingEnd(text: "_")
+        let sentense = uppercaseLetterSeparated.lowercased().newlineSeparated.lowercased().whitespaceCondensed.newlineCondensed.underscoreCondensed.removingPrefix("_").removingSuffex("_")
         return sentense.prefix(1).lowercased() + String(sentense.replacingOccurrences(of: " ", with: "_").replacingOccurrences(of: "\n", with: "_").dropFirst()).underscoreCondensed
     }
     
