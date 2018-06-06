@@ -199,9 +199,9 @@ final class StringNumberTests: XCTestCase {
     }
     
     func testFloatValue() {
-        XCTAssertEqual("Hello world!".floatValue, 0.0)
-        XCTAssertEqual("0".floatValue, 0.0)
-        XCTAssertEqual("0.1".floatValue, 0.1)
+        XCTAssertEqual("Hello world!".floatValue, Float(0.0))
+        XCTAssertEqual("0".floatValue, Float(0.0))
+        XCTAssertEqual("0.1".floatValue, Float(0.1))
     }
     
     func testIsFloat() {
