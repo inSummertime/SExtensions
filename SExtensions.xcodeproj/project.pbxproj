@@ -28,6 +28,8 @@
 		71AB824020C623AF00EC2A24 /* StringAlphanumericTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB823F20C623AF00EC2A24 /* StringAlphanumericTests.swift */; };
 		71ACDC5C20BF7E650071FF33 /* String+Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ACDC5B20BF7E640071FF33 /* String+Words.swift */; };
 		71ACDC5F20BF7E990071FF33 /* StringWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ACDC5D20BF7E6F0071FF33 /* StringWordsTests.swift */; };
+		71B2660D20C8C5670045AA33 /* NSAttributedString+Concatenate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2660C20C8C5670045AA33 /* NSAttributedString+Concatenate.swift */; };
+		71B2660F20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2660E20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift */; };
 		71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5941C20BB71040073EE20 /* String+Bool.swift */; };
 		71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5942020BB73F50073EE20 /* StringBoolTests.swift */; };
 		71C28FBC20BE346500EF3654 /* String+Condense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FBB20BE346500EF3654 /* String+Condense.swift */; };
@@ -71,6 +73,8 @@
 		71AB823F20C623AF00EC2A24 /* StringAlphanumericTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAlphanumericTests.swift; sourceTree = "<group>"; };
 		71ACDC5B20BF7E640071FF33 /* String+Words.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Words.swift"; sourceTree = "<group>"; };
 		71ACDC5D20BF7E6F0071FF33 /* StringWordsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringWordsTests.swift; sourceTree = "<group>"; };
+		71B2660C20C8C5670045AA33 /* NSAttributedString+Concatenate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Concatenate.swift"; sourceTree = "<group>"; };
+		71B2660E20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringConcatenateTests.swift; sourceTree = "<group>"; };
 		71B5941C20BB71040073EE20 /* String+Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Bool.swift"; sourceTree = "<group>"; };
 		71B5942020BB73F50073EE20 /* StringBoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringBoolTests.swift; sourceTree = "<group>"; };
 		71C28FBB20BE346500EF3654 /* String+Condense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Condense.swift"; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 		71697E4620B91EE8005C58EC /* String */ = {
 			isa = PBXGroup;
 			children = (
+				71B2660C20C8C5670045AA33 /* NSAttributedString+Concatenate.swift */,
 				71479E7A20C7482800418144 /* String+Affix.swift */,
 				71AB823D20C61A7400EC2A24 /* String+Alphanumeric.swift */,
 				71B5941C20BB71040073EE20 /* String+Bool.swift */,
@@ -199,6 +204,7 @@
 		71697E4A20B91F17005C58EC /* String */ = {
 			isa = PBXGroup;
 			children = (
+				71B2660E20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift */,
 				71479E7C20C7494700418144 /* StringAffixTests.swift */,
 				71AB823F20C623AF00EC2A24 /* StringAlphanumericTests.swift */,
 				71B5942020BB73F50073EE20 /* StringBoolTests.swift */,
@@ -338,6 +344,7 @@
 				71C28FC020BE36BA00EF3654 /* String+Separate.swift in Sources */,
 				71A8004B20C164020029B141 /* String+Trim.swift in Sources */,
 				7177623720C3573F001F2C8E /* String+Number.swift in Sources */,
+				71B2660D20C8C5670045AA33 /* NSAttributedString+Concatenate.swift in Sources */,
 				71ACDC5C20BF7E650071FF33 /* String+Words.swift in Sources */,
 				71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */,
 				714EB2FF20C206ED002ED5DE /* String+Date.swift in Sources */,
@@ -360,6 +367,7 @@
 				71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */,
 				71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */,
 				71ACDC5F20BF7E990071FF33 /* StringWordsTests.swift in Sources */,
+				71B2660F20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift in Sources */,
 				71AB2F3920BCBC670060F4CB /* StringCaseTests.swift in Sources */,
 				71AB824020C623AF00EC2A24 /* StringAlphanumericTests.swift in Sources */,
 				71A8004D20C1642D0029B141 /* StringTrimTests.swift in Sources */,
