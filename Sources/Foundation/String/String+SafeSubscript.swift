@@ -65,7 +65,7 @@ public extension String {
     ///     print("Hello world!"[safe: 0...])
     ///     // Prints "Hello world!"
     ///
-    /// - Parameter range: a countable partial from  range
+    /// - Parameter range: a countable partial from range
     subscript(safe range: CountablePartialRangeFrom<Int>) -> String? {
         if range.lowerBound >= count {
             return nil
@@ -102,6 +102,24 @@ public extension String {
         }
         let toIndex = self.index(startIndex, offsetBy: min(index, count))
         return String(self[startIndex..<toIndex])
+    }
+    
+    /// Returns a string with a range safely.
+    ///
+    ///     print([safe: Range(uncheckedBounds: (lower: 0, upper: 1)))
+    ///     // Prints "He"
+    ///
+    /// - Parameter range: a range
+    subscript(safe range: Range<Int>) -> String {
+        if range.upperBound < 0 {
+            return ""
+        }
+        if range.lowerBound >= count {
+            return ""
+        }
+        let fromIndex = index(startIndex, offsetBy: max(0, range.lowerBound))
+        let toIndex = index(startIndex, offsetBy: min(count - 1, range.upperBound))
+        return String(self[fromIndex...toIndex])
     }
     
 }
