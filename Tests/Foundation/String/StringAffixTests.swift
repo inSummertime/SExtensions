@@ -29,22 +29,48 @@ final class StringAffixTests: XCTestCase {
         XCTAssertEqual(helloWorld, "ello world!")
     }
     
+    func testRemovingPrefixCount() {
+        XCTAssertEqual("Hello world!".removingPrefix(1), "ello world!")
+        XCTAssertEqual("Hello world!".removingPrefix(100), "")
+    }
+    
+    func testRemovePrefixCount() {
+        var helloWorld = "Hello world!"
+        helloWorld.removePrefix(1)
+        XCTAssertEqual(helloWorld, "ello world!")
+        helloWorld.removePrefix(100)
+        XCTAssertEqual(helloWorld, "")
+    }
+    
     func testRemovingSuffix() {
-        XCTAssertEqual("Hello world!".removingSuffex("!"), "Hello world")
-        XCTAssertEqual("Hello world!".removingSuffex("d"), "Hello world!")
-        XCTAssertEqual("Hello world!".removingSuffex("d!"), "Hello worl")
-        XCTAssertEqual("Hello world!".removingSuffex(""), "Hello world!")
-        XCTAssertEqual("Hello world!".removingSuffex(" "), "Hello world!")
-        XCTAssertEqual("Hello world!".removingSuffex("Hello world!"), "")
-        XCTAssertEqual("Hello world!".removingSuffex("Hello world! "), "Hello world!")
-        XCTAssertEqual("Hello world!!".removingSuffex("!"), "Hello world!")
-        XCTAssertEqual("Hello-world!".removingSuffex("world!"), "Hello")
+        XCTAssertEqual("Hello world!".removingSuffix("!"), "Hello world")
+        XCTAssertEqual("Hello world!".removingSuffix("d"), "Hello world!")
+        XCTAssertEqual("Hello world!".removingSuffix("d!"), "Hello worl")
+        XCTAssertEqual("Hello world!".removingSuffix(""), "Hello world!")
+        XCTAssertEqual("Hello world!".removingSuffix(" "), "Hello world!")
+        XCTAssertEqual("Hello world!".removingSuffix("Hello world!"), "")
+        XCTAssertEqual("Hello world!".removingSuffix("Hello world! "), "Hello world!")
+        XCTAssertEqual("Hello world!!".removingSuffix("!"), "Hello world!")
+        XCTAssertEqual("Hello-world!".removingSuffix("world!"), "Hello")
     }
     
     func testRemoveSuffix() {
         var helloWorld = "Hello world!"
         helloWorld.removeSuffix("d!")
         XCTAssertEqual(helloWorld, "Hello worl")
+    }
+    
+    func testRemovingSuffixCount() {
+        XCTAssertEqual("Hello world!".removingSuffix(1), "Hello world")
+        XCTAssertEqual("Hello world!".removingSuffix(100), "")
+    }
+    
+    func testRemoveSuffixCount() {
+        var helloWorld = "Hello world!"
+        helloWorld.removeSuffix(1)
+        XCTAssertEqual(helloWorld, "Hello world")
+        helloWorld.removeSuffix(100)
+        XCTAssertEqual(helloWorld, "")
     }
     
 }
