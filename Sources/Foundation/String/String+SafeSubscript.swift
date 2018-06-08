@@ -76,4 +76,32 @@ public extension String {
         return String(self[lowerIndex..<endIndex])
     }
     
+    /// Returns a string from index safely.
+    ///
+    ///     print("Hello world!"[safeFrom: 1])
+    ///     // Prints "ello world!"
+    ///
+    /// - Parameter index: index
+    subscript(safeFrom index: Int) -> String {
+        if index >= count {
+            return ""
+        }
+        let fromIndex = self.index(startIndex, offsetBy: max(index, 0))
+        return String(self[fromIndex..<endIndex])
+    }
+    
+    /// Returns a string to index safely.
+    ///
+    ///     print("Hello world!"[safeTo: 1])
+    ///     // Prints "H"
+    ///
+    /// - Parameter index: index
+    subscript(safeTo index: Int) -> String {
+        if index <= 0 {
+            return ""
+        }
+        let toIndex = self.index(startIndex, offsetBy: min(index, count))
+        return String(self[startIndex..<toIndex])
+    }
+    
 }
