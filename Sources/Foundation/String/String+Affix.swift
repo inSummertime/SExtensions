@@ -39,6 +39,33 @@ public extension String {
         self = removingPrefix(prefix)
     }
     
+    /// Returns a new string which is remove the first 'count' charaters
+    ///
+    ///     print("Hello world!".removingPrefix(1))
+    ///     // Prints "ello world!"
+    ///
+    /// - Parameter count: the count of charaters need to remove
+    func removingPrefix(_ count: Int = 1) -> String {
+        if self.count > count {
+            let index = self.index(startIndex, offsetBy: count)
+            return String(self[index..<endIndex])
+        } else {
+            return ""
+        }
+    }
+    
+    /// Removes the first 'count' charaters
+    ///
+    ///     var helloWorld = "Hello world!"
+    ///     helloWorld.removePrefix(1)
+    ///     print(helloWorld)
+    ///     // Prints "ello  world!"
+    ///
+    /// - Parameter count: the count of charaters need to remove
+    mutating func removePrefix(_ count: Int = 1) {
+        self = removingPrefix(count)
+    }
+    
     /// Returns a string with suffex removed.
     ///
     ///     print("Hello world!".removingSuffex("d!"))
@@ -46,12 +73,12 @@ public extension String {
     ///
     /// - Parameter suffex: the suffex needs to remove.
     /// - Returns: a string.
-    func removingSuffex(_ suffex: String) -> String {
-        if hasSuffix("-\(suffex)") {
-            return String(dropLast("-\(suffex)".count))
+    func removingSuffix(_ suffix: String) -> String {
+        if hasSuffix("-\(suffix)") {
+            return String(dropLast("-\(suffix)".count))
         }
-        if hasSuffix(suffex) {
-            return String(dropLast(suffex.count))
+        if hasSuffix(suffix) {
+            return String(dropLast(suffix.count))
         }
         return self
     }
@@ -65,7 +92,36 @@ public extension String {
     ///
     /// - Parameter suffix: the suffix needs to remove.
     mutating func removeSuffix(_ suffix: String) {
-        self = removingSuffex(suffix)
+        self = removingSuffix(suffix)
+    }
+    
+    /// Returns a new string which is remove the last 'count' charaters
+    ///
+    ///     var helloWorld = "Hello world!"
+    ///     helloWorld.removeSuffix(1)
+    ///     print(helloWorld)
+    ///     // Prints "Hello world"
+    ///
+    /// - Parameter count: the count of charaters need to remove
+    func removingSuffix(_ count: Int = 1) -> String {
+        if self.count > count {
+            let index = self.index(endIndex, offsetBy: -count)
+            return String(self[..<index])
+        } else {
+            return ""
+        }
+    }
+    
+    /// Removes the last 'count' charaters
+    ///
+    ///     var helloWorld = "Hello world!"
+    ///     helloWorld.removeSuffix(1)
+    ///     print(helloWorld)
+    ///     // Prints "Hello  world"
+    ///
+    /// - Parameter count: the count of charaters need to remove
+    mutating func removeSuffix(_ count: Int = 1) {
+        self = removingSuffix(count)
     }
     
 }
