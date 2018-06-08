@@ -41,4 +41,18 @@ final class StringSafeSubscriptTests: XCTestCase {
         XCTAssertNil("Hello world!"[safe: 77...])
     }
     
+    func testSafeFrom() {
+        XCTAssertEqual("Hello world!"[safeFrom: 0], "Hello world!")
+        XCTAssertEqual("Hello world!"[safeFrom: 7], "orld!")
+        XCTAssertEqual("Hello world!"[safeFrom: (-7)], "Hello world!")
+        XCTAssertEqual("Hello world!"[safeFrom: (77)], "")
+    }
+    
+    func testSafeTo() {
+        XCTAssertEqual("Hello world!"[safeTo: 0], "")
+        XCTAssertEqual("Hello world!"[safeTo: (-7)], "")
+        XCTAssertEqual("Hello world!"[safeTo: (7)], "Hello w")
+        XCTAssertEqual("Hello world!"[safeTo: (77)], "Hello world!")
+    }
+    
 }
