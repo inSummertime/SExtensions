@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSAttributedString {
+public extension NSAttributedString {
     
     /// Returns the concatenation of lhs and rhs
     ///
