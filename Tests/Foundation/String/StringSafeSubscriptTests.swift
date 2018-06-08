@@ -55,4 +55,10 @@ final class StringSafeSubscriptTests: XCTestCase {
         XCTAssertEqual("Hello world!"[safeTo: (77)], "Hello world!")
     }
     
+    func testSafeIntegerRange() {
+        XCTAssertEqual("Hello world!"[safe: Range(uncheckedBounds: (lower: 0, upper: 1))], "He")
+        XCTAssertEqual("Hello world!"[safe: Range(uncheckedBounds: (lower: 77, upper: 78))], "")
+        XCTAssertEqual("Hello world!"[safe: Range(uncheckedBounds: (lower: -1, upper: 0))], "H")
+    }
+    
 }
