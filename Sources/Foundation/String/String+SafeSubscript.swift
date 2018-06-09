@@ -55,6 +55,13 @@ public extension String {
         if range.upperBound < 0 {
             return nil
         }
+        if range.upperBound == 0 {
+            if let first = first {
+                return String(first)
+            } else {
+                return nil
+            }
+        }
         let lowerIndex = index(startIndex, offsetBy: max(0, range.lowerBound), limitedBy: endIndex) ?? startIndex
         let upperIndex = index(lowerIndex, offsetBy: range.upperBound - range.lowerBound + 1, limitedBy: endIndex) ?? endIndex
         return String(self[lowerIndex..<upperIndex])
@@ -82,9 +89,9 @@ public extension String {
     ///     // Prints "ello world!"
     ///
     /// - Parameter index: index
-    subscript(safeFrom index: Int) -> String {
+    subscript(safeFrom index: Int) -> String? {
         if index >= count {
-            return ""
+            return nil
         }
         let fromIndex = self.index(startIndex, offsetBy: max(index, 0))
         return String(self[fromIndex..<endIndex])
@@ -93,33 +100,18 @@ public extension String {
     /// Returns a string to index safely.
     ///
     ///     print("Hello world!"[safeTo: 1])
-    ///     // Prints "H"
-    ///
-    /// - Parameter index: index
-    subscript(safeTo index: Int) -> String {
-        if index <= 0 {
-            return ""
-        }
-        let toIndex = self.index(startIndex, offsetBy: min(index, count))
-        return String(self[startIndex..<toIndex])
-    }
-    
-    /// Returns a string with a range safely.
-    ///
-    ///     print([safe: Range(uncheckedBounds: (lower: 0, upper: 1)))
     ///     // Prints "He"
     ///
-    /// - Parameter range: a range
-    subscript(safe range: Range<Int>) -> String {
-        if range.upperBound < 0 {
-            return ""
+    /// - Parameter index: index
+    subscript(safeTo index: Int) -> String? {
+        if index < 0 {
+            return nil
         }
-        if range.lowerBound >= count {
-            return ""
+        if count == 0 {
+            return nil
         }
-        let fromIndex = index(startIndex, offsetBy: max(0, range.lowerBound))
-        let toIndex = index(startIndex, offsetBy: min(count - 1, range.upperBound))
-        return String(self[fromIndex...toIndex])
+        let toIndex = self.index(startIndex, offsetBy: min(index, count - 1))
+        return String(self[startIndex...toIndex])
     }
     
 }
