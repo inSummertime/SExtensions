@@ -15,7 +15,7 @@ final class StringHeightTests: XCTestCase {
         let helloWorld = "Hello world!"
         let font = UIFont.systemFont(ofSize: 16.0)
         let height = helloWorld.height(withConstrainedWidth: .greatestFiniteMagnitude, font: font)
-        XCTAssertEqual(height, ceil(font.lineHeight))
+        XCTAssertEqual(height, font.lineHeight)
         
         let height1 = helloWorld.height(withConstrainedWidth: 32.0, font: font)
         let height2 = helloWorld.height(withConstrainedWidth: 64.0, font: font)
