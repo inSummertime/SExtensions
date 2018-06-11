@@ -33,6 +33,10 @@ final class StringDateTests: XCTestCase {
         XCTAssertEqual(componentsOfDateFromTime.hour!, 0)
         XCTAssertEqual(componentsOfDateFromTime.minute!, 0)
         XCTAssertEqual(componentsOfDateFromTime.second!, 0)
+        
+        let time1 = "2018-06-02 00:00:01"
+        let dateFromTime1 = time1.toDate(dateFormat: "yyyy-MM-dd HH:mm:ss", timeZone: TimeZone(identifier: "UTC")!)
+        XCTAssertEqual(dateFromTime!.timeIntervalSince(dateFromTime1!), -1)
     }
     
 }
