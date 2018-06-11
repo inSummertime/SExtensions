@@ -81,6 +81,9 @@ public extension String {
     
     /// Returns a string with a optional trailing with a constrained size and font.
     ///
+    ///     print("Hello world!".truncated(withConstrained: CGSize(width: 4.0, height: 4.0), font: UIFont.systemFont(ofSize: 8.0))
+    ///     // Prints "..."
+    ///
     /// - Parameters:
     ///   - size: a CGSize.
     ///   - font: font.

@@ -13,7 +13,7 @@ public extension String {
     /// Checks whether is uppercase.
     ///
     ///     print("HELLO WORLD!".isUppercase)
-    ///     // Prints true
+    ///     // Prints "true"
     var isUppercase: Bool {
         return uppercased() == self
     }
@@ -21,7 +21,7 @@ public extension String {
     /// Checks whether is lowercase.
     ///
     ///     print("hello world!".isLowercase)
-    ///     // Prints true
+    ///     // Prints "true"
     var isLowercase: Bool {
         return lowercased() == self
     }
@@ -29,7 +29,7 @@ public extension String {
     /// Checks whether is capitalized case.
     ///
     ///     print("Hello World!".isCapitalized)
-    ///     // Prints true
+    ///     // Prints "true"
     var isCapitalized: Bool {
         return self.capitalized == self
     }

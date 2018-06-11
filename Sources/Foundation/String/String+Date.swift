@@ -12,6 +12,11 @@ public extension String {
     
     /// Returns a date from a string
     ///
+    ///     let dateFromTime = "2018-06-02 00:00:00".toDate(dateFormat: "yyyy-MM-dd HH:mm:ss", timeZone: TimeZone(identifier: "UTC")!)
+    ///     let dateFromTime1 = "2018-06-02 00:00:01".toDate(dateFormat: "yyyy-MM-dd HH:mm:ss", timeZone: TimeZone(identifier: "UTC")!)
+    ///     print(dateFromTime!.timeIntervalSince(dateFromTime1!))
+    ///     // Prints "-1"
+    ///
     /// - Parameters:
     ///   - dateFormat: date format
     ///   - timeZone: time zone

@@ -13,7 +13,7 @@ public extension String {
     /// Returns height based on a given width and font
     ///
     ///     print("Hello world!".height(withConstrainedWidth: .greatestFiniteMagnitude, font: UIFont.systemFont(ofSize: 16.0)) == font.lineHeight)
-    ///     // Prints true
+    ///     // Prints "true"
     ///
     /// - Parameters:
     ///   - height: constrained width

@@ -13,7 +13,7 @@ public extension String {
     /// Optional bool value
     ///
     ///     print("yes".bool)
-    ///     // Prints Optional(true)
+    ///     // Prints "Optional(true)"
     var bool: Bool? {
         if ["true", "yes", "1", "one"].contains(lowercased().trimmed) {
             return true
