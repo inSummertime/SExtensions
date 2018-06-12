@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		712BB74A20CF64A300F01034 /* String+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712BB74920CF64A300F01034 /* String+Dictionary.swift */; };
+		712BB74C20CF65D400F01034 /* StringDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */; };
 		71375E2E20CAB46000C6A7E0 /* String+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71375E2D20CAB46000C6A7E0 /* String+Height.swift */; };
 		71375E3020CAB4BD00C6A7E0 /* StringHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */; };
 		71479E7B20C7482800418144 /* String+Affix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71479E7A20C7482800418144 /* String+Affix.swift */; };
@@ -57,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		712BB74920CF64A300F01034 /* String+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Dictionary.swift"; sourceTree = "<group>"; };
+		712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDictionaryTests.swift; sourceTree = "<group>"; };
 		71375E2D20CAB46000C6A7E0 /* String+Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Height.swift"; sourceTree = "<group>"; };
 		71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHeightTests.swift; sourceTree = "<group>"; };
 		71479E7A20C7482800418144 /* String+Affix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Affix.swift"; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 				71AB2F3420BCBA740060F4CB /* String+Case.swift */,
 				71C28FBB20BE346500EF3654 /* String+Condense.swift */,
 				714EB2FE20C206ED002ED5DE /* String+Date.swift */,
+				712BB74920CF64A300F01034 /* String+Dictionary.swift */,
 				71375E2D20CAB46000C6A7E0 /* String+Height.swift */,
 				7177623620C3573F001F2C8E /* String+Number.swift */,
 				71A4568520C0A609003E739C /* String+SafeSubscript.swift */,
@@ -233,6 +238,7 @@
 				71AB2F3820BCBC670060F4CB /* StringCaseTests.swift */,
 				71C28FBD20BE348600EF3654 /* StringCondenseTests.swift */,
 				714EB30020C207D9002ED5DE /* StringDateTests.swift */,
+				712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */,
 				71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */,
 				7177623820C35DF1001F2C8E /* StringNumberTests.swift */,
 				71A4568720C0A657003E739C /* StringSafeSubscriptTests.swift */,
@@ -376,6 +382,7 @@
 				71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */,
 				714EB2FF20C206ED002ED5DE /* String+Date.swift in Sources */,
 				71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */,
+				712BB74A20CF64A300F01034 /* String+Dictionary.swift in Sources */,
 				71A4568620C0A609003E739C /* String+SafeSubscript.swift in Sources */,
 				71AB823E20C61A7400EC2A24 /* String+Alphanumeric.swift in Sources */,
 				71479E7B20C7482800418144 /* String+Affix.swift in Sources */,
@@ -398,6 +405,7 @@
 				71375E3020CAB4BD00C6A7E0 /* StringHeightTests.swift in Sources */,
 				71B2660F20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift in Sources */,
 				71AF15C920CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift in Sources */,
+				712BB74C20CF65D400F01034 /* StringDictionaryTests.swift in Sources */,
 				71AB2F3920BCBC670060F4CB /* StringCaseTests.swift in Sources */,
 				71F367EA20CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift in Sources */,
 				71CC5AC720CB4E6600C4D564 /* StringTruncateTests.swift in Sources */,
