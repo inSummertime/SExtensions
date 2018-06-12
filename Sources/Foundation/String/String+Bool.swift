@@ -24,4 +24,9 @@ public extension String {
         }
     }
     
+    /// bool value
+    var boolValue: Bool {
+        return bool ?? false
+    }
+    
 }

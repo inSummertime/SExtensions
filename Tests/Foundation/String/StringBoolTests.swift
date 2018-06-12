@@ -30,4 +30,10 @@ final class StringBoolTests: XCTestCase {
         XCTAssertNil("hi".bool)
     }
     
+    func textBoolValue() {
+        XCTAssertFalse("hi".boolValue)
+        XCTAssertTrue("0".boolValue)
+        XCTAssertFalse("".boolValue)
+    }
+    
 }
