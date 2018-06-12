@@ -14,7 +14,6 @@ public extension String {
     ///
     ///     print("{\"name\": \"inSummertime\"}".dictionary!["name"])
     ///     // Prints "Optional(inSummertime)"
-    ///
     var dictionary: [String: Any]? {
         if let data = data(using: .utf8) {
             do {
@@ -30,7 +29,6 @@ public extension String {
     ///
     ///     print("{\"name\": \"inSummertime\"}".dictionaryValue)
     ///     // Prints "["name": inSummertime]"
-    ///
     var dictionaryValue: [String: Any] {
         return dictionary ?? [String: Any]()
     }
