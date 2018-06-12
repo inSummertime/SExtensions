@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name      = 'SExtensions'
-    s.version   = '0.0.17'
+    s.version   = '0.0.18'
     s.license   = 'MIT'
     s.summary   = 'Some handy extensions'
     s.homepage  = 'https://github.com/inSummertime/SExtensions'
