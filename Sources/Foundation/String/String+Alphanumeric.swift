@@ -10,7 +10,7 @@ import Foundation
 
 public extension String {
     
-    /// Returns true if it is alphanumeric.
+    /// Returns a Boolean value that indicates whether it is alphanumeric.
     ///
     ///     print("helloworld2".isAlphanumeric)
     ///     // Prints "true"
@@ -19,7 +19,7 @@ public extension String {
         return hasLetters && hasNumbers && count == 0
     }
     
-    /// Returns true if it has letters and numbers.
+    /// Returns a Boolean value that indicates whether it has letters and numbers.
     ///
     ///     print("Hello world! 2".hasLettersAndNumbers)
     ///     // Prints "true"
@@ -27,7 +27,7 @@ public extension String {
         return hasLetters && hasNumbers
     }
     
-    /// Returns true if it has letters.
+    /// Returns a Boolean value that indicates whether it has letters.
     ///
     ///     print("Hello world!".hasLetters)
     ///     // Prints "true"
@@ -35,7 +35,7 @@ public extension String {
         return rangeOfCharacter(from: .letters, options: [], range: nil) != nil
     }
     
-    /// Returns true if it has letters only.
+    /// Returns a Boolean value that indicates whether it has letters only.
     ///
     ///     print("helloworld".hasLettersOnly)
     ///     // Prints "true"
@@ -44,7 +44,7 @@ public extension String {
         return hasLetters && count == 0
     }
     
-    /// Returns true if it has numbers.
+    /// Returns a Boolean value that indicates whether it has numbers.
     ///
     ///     print("helloworld2".hasNumbers)
     ///     // Prints "true"
@@ -52,7 +52,7 @@ public extension String {
         return rangeOfCharacter(from: .decimalDigits, options: [], range: nil) != nil
     }
     
-    /// Returns true if it has numbers only.
+    /// Returns a Boolean value that indicates whether it has numbers only.
     ///
     ///     print("0".hasNumbersOnly)
     ///     // Prints "true"

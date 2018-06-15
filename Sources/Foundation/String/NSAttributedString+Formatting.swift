@@ -10,11 +10,11 @@ import UIKit
 
 public extension NSAttributedString {
     
-    /// Returns true if the text within a NSRange is having a color.
+    /// Returns a Boolean value that indicates whether the text within a NSRange is having a color.
     ///
     /// - Parameter color: text color.
     /// - Parameter range: the NSRange of the text.
-    /// - Returns: whether it is having a color.
+    /// - Returns: `true` if it has the color; otherwise, `false`.
     func isHavingColor(_ color: UIColor, in range: NSRange? = nil) -> Bool {
         let checkRange = range ?? NSRange(location: 0, length: string.count)
         let option = NSAttributedString.EnumerationOptions(rawValue: 0)
@@ -27,11 +27,11 @@ public extension NSAttributedString {
         return isHavingColor
     }
     
-    /// Returns true if the text within a NSRange is using a font.
+    /// Returns a Boolean value that indicates whether the text within a NSRange is using a font.
     ///
     /// - Parameter font: text font.
     /// - Parameter range: the NSRange of the text.
-    /// - Returns: whether it is having color.
+    /// - Returns: `true` if it has the color; otherwise, `false`.
     func isUsingFont(_ font: UIFont, in range: NSRange? = nil) -> Bool {
         let checkRange = range ?? NSRange(location: 0, length: string.count)
         let option = NSAttributedString.EnumerationOptions(rawValue: 0)
@@ -44,10 +44,10 @@ public extension NSAttributedString {
         return isUsingFont
     }
     
-    /// Returns true if the text within a NSRange is underlined.
+    /// Returns a Boolean value that indicates whether the text within a NSRange is underlined.
     ///
     /// - Parameter range: the NSRange of the text.
-    /// - Returns: whether it is underlined.
+    /// - Returns: `true` if it is underlined; otherwise, `false`.
     func isUnderlined(in range: NSRange? = nil) -> Bool {
         let checkRange = range ?? NSRange(location: 0, length: string.count)
         let option = NSAttributedString.EnumerationOptions(rawValue: 0)
@@ -60,10 +60,10 @@ public extension NSAttributedString {
         return isUnderlined
     }
     
-    /// Returns true if the text within a NSRange is highlighted.
+    /// Returns a Boolean value that indicates whether the text within a NSRange is highlighted.
     ///
     /// - Parameter range: the NSRange of the text.
-    /// - Returns: whether it is highlighted.
+    /// - Returns: `true` if it is highlighted; otherwise, `false`.
     func isHighlighted(with color: UIColor, in range: NSRange? = nil) -> Bool {
         let checkRange = range ?? NSRange(location: 0, length: string.count)
         let option = NSAttributedString.EnumerationOptions(rawValue: 0)
@@ -76,10 +76,10 @@ public extension NSAttributedString {
         return isHighlighted
     }
     
-    /// Returns true if the text within a NSRange is using strikethrough.
+    /// Returns a Boolean value that indicates whether the text within a NSRange is using strikethrough.
     ///
     /// - Parameter range: the NSRange of the text.
-    /// - Returns: whether it is using strikethrough.
+    /// - Returns: `true` if it is using strikethrough; otherwise, `false`.
     func isStrikethrough(in range: NSRange? = nil) -> Bool {
         let checkRange = range ?? NSRange(location: 0, length: string.count)
         let option = NSAttributedString.EnumerationOptions(rawValue: 0)
@@ -92,10 +92,10 @@ public extension NSAttributedString {
         return isStrikethrough
     }
     
-    /// Returns true if the text within a NSRange is using traits.
+    /// Returns a Boolean value that indicates whether the text within a NSRange is using traits.
     ///
     /// - Parameter range: the NSRange of the text.
-    /// - Returns: whether it is using traits.
+    /// - Returns: `true` if it is using traits; otherwise, `false`.
     func isUsingTraits(_ traits: UIFontDescriptorSymbolicTraits, in range: NSRange? = nil) -> Bool {
         let checkRange = range ?? NSRange(location: 0, length: string.count)
         let option = NSAttributedString.EnumerationOptions(rawValue: 0)
@@ -108,18 +108,18 @@ public extension NSAttributedString {
         return usingTraitsLength == checkRange.length
     }
     
-    /// Returns true if the text within a NSRange is bold.
+    /// Returns a Boolean value that indicates whether the text within a NSRange is bold.
     ///
     /// - Parameter range: the NSRange of the text.
-    /// - Returns: whether it is bold.
+    /// - Returns: `true` if it is bold; otherwise, `false`.
     func isBold(in range: NSRange? = nil) -> Bool {
         return isUsingTraits(.traitBold, in: range)
     }
     
-    /// Returns true if the text within a NSRange is italic.
+    /// Returns a Boolean value that indicates whether the text within a NSRange is italic.
     ///
     /// - Parameter range: the NSRange of the text.
-    /// - Returns: whether it is italic.
+    /// - Returns: `true` if it is italic; otherwise, `false`.
     func isItalic(in range: NSRange? = nil) -> Bool {
         return isUsingTraits(.traitItalic, in: range)
     }
