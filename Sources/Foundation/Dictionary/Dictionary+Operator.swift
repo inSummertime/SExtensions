@@ -18,7 +18,7 @@ public extension Dictionary {
     /// - Parameters:
     ///   - lhs: The first dictionary to add.
     ///   - rhs: The second dictionary to add.
-    /// - Returns: a dictionary.
+    /// - Returns: A dictionary.
     static func + (lhs: [Key: Value], rhs: [Key: Value]) -> [Key: Value] {
         var result = lhs
         for (key, value) in rhs {
@@ -55,7 +55,7 @@ public extension Dictionary where Key: Hashable, Value: Equatable {
     /// - Parameters:
     ///   - lhs: The first dictionary.
     ///   - rhs: The dictionary to subtract.
-    /// - Returns: a dictionary.
+    /// - Returns: A dictionary.
     static func - (lhs: [Key: Value], rhs: [Key: Value]) -> [Key: Value] {
         var result = lhs
         for (key, value) in rhs {
