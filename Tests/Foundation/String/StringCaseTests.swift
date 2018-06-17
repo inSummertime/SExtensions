@@ -75,7 +75,7 @@ final class StringCaseTests: XCTestCase {
         
         var whitespace = " "
         whitespace.changeToSentenseCase()
-        XCTAssertEqual(whitespace, " ")
+        XCTAssertEqual(whitespace, "")
         
         var dollar = "$1"
         dollar.changeToSentenseCase()
