@@ -34,38 +34,42 @@ public extension String {
         return self.capitalized == self
     }
     
-    /// A sentense case representation of the string.
+    /// A first letter capitalized representation of the string.
     ///
-    ///     print("hello world!".sentenseCased)
+    ///     print("hello world!".firstLetterCapitalized)
     ///     // Prints "Hello world!"
-    var sentenseCased: String {
+    var firstLetterCapitalized: String {
+        return changingToSentenseCase()
+    }
+    
+    /// Returns a sentense case representation of the string.
+    ///
+    ///     print("hello world!".changingToSentenseCase())
+    ///     // Prints "Hello world!"
+    ///
+    /// - Returns: A sentense case string.
+    func changingToSentenseCase() -> String {
         let sentense = uppercaseLetterSeparated.lowercased().newlineSeparated.lowercased().whitespaceCondensed.newlineCondensed
         return sentense.prefix(1).uppercased() + sentense.dropFirst()
     }
     
-    /// A first letter capitalized representation of the string.
-    ///
-    ///     print("hello world!".sentenseCased)
-    ///     // Prints "Hello world!"
-    var firstLetterCapitalized: String {
-        return sentenseCased
-    }
-    
-    /// Capitalizes the first letter.
+    /// Changes to sentense case.
     ///
     ///     var helloWorld = "hello world!"
-    ///     helloWorld.capitalizeFirstLetter()
-    ///     print(helloWorld.capitalizeFirstLetter)
+    ///     helloWorld.changeToSentenseCase()
+    ///     print(helloWorld)
     ///     // Prints "Hello world!"
-    mutating func capitalizeFirstLetter() {
-        self = sentenseCased
+    mutating func changeToSentenseCase() {
+        self = changingToSentenseCase()
     }
     
-    /// A camel case representation of the string.
+    /// Returns a camel case representation of the string.
     ///
-    ///     print("hello world!".camelCased)
+    ///     print("hello world!".changingToCamelCase())
     ///     // Prints "helloWorld!"
-    var camelCased: String {
+    ///
+    /// - Returns: a camel case string.
+    func changingToCamelCase() -> String {
         let sentense = uppercaseLetterSeparated.lowercased().newlineSeparated.lowercased().whitespaceCondensed.newlineCondensed
         return sentense.prefix(1).lowercased() + sentense.capitalized.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "\n", with: "").dropFirst()
     }
@@ -76,16 +80,17 @@ public extension String {
     ///     helloworld.toCamelCase()
     ///     print(helloworld)
     ///     // Prints "helloWorld"
-    ///
-    mutating func toCamelCase() {
-        self = camelCased
+    mutating func changeToCamelCase() {
+        self = changingToCamelCase()
     }
-    
-    /// A snake case representation of the string.
+
+    /// Returns a snake case representation of the string.
     ///
-    ///     print("hello world!".snakeCased)
+    ///     print("hello world!".changingToSnakeCase())
     ///     // Prints "hello_world!"
-    var snakeCased: String {
+    ///
+    /// - Returns: A snake case string.
+    func changingToSnakeCase() -> String {
         let sentense = uppercaseLetterSeparated.lowercased().newlineSeparated.lowercased().whitespaceCondensed.newlineCondensed.underscoreCondensed.removingPrefix("_").removingSuffix("_")
         return sentense.prefix(1).lowercased() + String(sentense.replacingOccurrences(of: " ", with: "_").replacingOccurrences(of: "\n", with: "_").dropFirst()).underscoreCondensed
     }
@@ -96,8 +101,8 @@ public extension String {
     ///     helloworld.toSnakeCase()
     ///     print(helloworld)
     ///     // Prints "hello_world"
-    mutating func toSnakeCase() {
-        self = snakeCased
+    mutating func changeToSnakeCase() {
+        self = changingToSnakeCase()
     }
 
 }

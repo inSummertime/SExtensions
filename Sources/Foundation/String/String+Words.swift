@@ -15,7 +15,7 @@ public extension String {
     ///     print("Hello world!".words)
     ///     // Prints ["hello", "world!"]
     var words: [String] {
-        return sentenseCased.lowercased().components(separatedBy: .whitespacesAndNewlines).filter({ $0.count > 0})
+        return changingToSentenseCase().lowercased().components(separatedBy: .whitespacesAndNewlines).filter({ $0.count > 0})
     }
     
     /// How many word in a string
