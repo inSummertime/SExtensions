@@ -24,6 +24,7 @@
 		716CF09A20D47AC00040BF9B /* DictionaryOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716CF09920D47AC00040BF9B /* DictionaryOperationTests.swift */; };
 		7177623720C3573F001F2C8E /* String+Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177623620C3573F001F2C8E /* String+Number.swift */; };
 		7177623920C35DF1001F2C8E /* StringNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177623820C35DF1001F2C8E /* StringNumberTests.swift */; };
+		7192D8C320D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */; };
 		71958F9220D088B400AFCBA5 /* String+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71958F9120D088B400AFCBA5 /* String+Array.swift */; };
 		71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71958F9320D0892A00AFCBA5 /* StringArrayTests.swift */; };
 		71A4568620C0A609003E739C /* String+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A4568520C0A609003E739C /* String+SafeSubscript.swift */; };
@@ -50,6 +51,7 @@
 		71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FC120BE385400EF3654 /* StringSeparateTests.swift */; };
 		71CC5AC520CB44C200C4D564 /* String+Truncate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CC5AC420CB44C200C4D564 /* String+Truncate.swift */; };
 		71CC5AC720CB4E6600C4D564 /* StringTruncateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CC5AC620CB4E6600C4D564 /* StringTruncateTests.swift */; };
+		71CE20A820D5DA0B00C0A5ED /* Dictionary+KeyCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE20A720D5DA0B00C0A5ED /* Dictionary+KeyCase.swift */; };
 		71EAAF9B20D140B900A648D8 /* Dictionary+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EAAF9A20D140B900A648D8 /* Dictionary+Subscript.swift */; };
 		71EAAF9D20D1437600A648D8 /* DictionarySubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EAAF9C20D1437600A648D8 /* DictionarySubscriptTests.swift */; };
 		71F367E820CEA24E00C01A74 /* NSMutableAttributedString+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F367E720CEA24E00C01A74 /* NSMutableAttributedString+Format.swift */; };
@@ -87,6 +89,7 @@
 		716CF09920D47AC00040BF9B /* DictionaryOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryOperationTests.swift; sourceTree = "<group>"; };
 		7177623620C3573F001F2C8E /* String+Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Number.swift"; sourceTree = "<group>"; };
 		7177623820C35DF1001F2C8E /* StringNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringNumberTests.swift; sourceTree = "<group>"; };
+		7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryKeyCaseTests.swift; sourceTree = "<group>"; };
 		71958F9120D088B400AFCBA5 /* String+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Array.swift"; sourceTree = "<group>"; };
 		71958F9320D0892A00AFCBA5 /* StringArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringArrayTests.swift; sourceTree = "<group>"; };
 		71A4568520C0A609003E739C /* String+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SafeSubscript.swift"; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 		71C28FC120BE385400EF3654 /* StringSeparateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSeparateTests.swift; sourceTree = "<group>"; };
 		71CC5AC420CB44C200C4D564 /* String+Truncate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Truncate.swift"; sourceTree = "<group>"; };
 		71CC5AC620CB4E6600C4D564 /* StringTruncateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTruncateTests.swift; sourceTree = "<group>"; };
+		71CE20A720D5DA0B00C0A5ED /* Dictionary+KeyCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+KeyCase.swift"; sourceTree = "<group>"; };
 		71EAAF9A20D140B900A648D8 /* Dictionary+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Subscript.swift"; sourceTree = "<group>"; };
 		71EAAF9C20D1437600A648D8 /* DictionarySubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionarySubscriptTests.swift; sourceTree = "<group>"; };
 		71F367E720CEA24E00C01A74 /* NSMutableAttributedString+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Format.swift"; sourceTree = "<group>"; };
@@ -282,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				71AB6B9C20D476D300E3CA73 /* Dictionary+Operation.swift */,
+				71CE20A720D5DA0B00C0A5ED /* Dictionary+KeyCase.swift */,
 				71B6F2B320D33C0B00B232C9 /* Dictionary+Operator.swift */,
 				71EAAF9A20D140B900A648D8 /* Dictionary+Subscript.swift */,
 			);
@@ -292,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				716CF09920D47AC00040BF9B /* DictionaryOperationTests.swift */,
+				7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */,
 				715F943420D3E9EC001C785F /* DictionaryOperatorTests.swift */,
 				71EAAF9C20D1437600A648D8 /* DictionarySubscriptTests.swift */,
 			);
@@ -430,6 +436,7 @@
 				71A4568620C0A609003E739C /* String+SafeSubscript.swift in Sources */,
 				71AB823E20C61A7400EC2A24 /* String+Alphanumeric.swift in Sources */,
 				71479E7B20C7482800418144 /* String+Affix.swift in Sources */,
+				71CE20A820D5DA0B00C0A5ED /* Dictionary+KeyCase.swift in Sources */,
 				71C28FBC20BE346500EF3654 /* String+Condense.swift in Sources */,
 				71F367E820CEA24E00C01A74 /* NSMutableAttributedString+Format.swift in Sources */,
 			);
@@ -446,6 +453,7 @@
 				71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */,
 				71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */,
 				71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */,
+				7192D8C320D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift in Sources */,
 				71ACDC5F20BF7E990071FF33 /* StringWordsTests.swift in Sources */,
 				71375E3020CAB4BD00C6A7E0 /* StringHeightTests.swift in Sources */,
 				71B2660F20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift in Sources */,
