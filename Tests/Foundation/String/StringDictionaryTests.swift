@@ -11,25 +11,67 @@ import XCTest
 
 final class StringDictionaryTests: XCTestCase {
     
-    func testDictionary() {
+    func testJSONDictionary() {
         let text = "{\"int\": 1, \"string\": \"Hello world!\", \"array\": [1, 2]}"
-        XCTAssertEqual(text.dictionary!["int"]! as! Int, 1)
-        XCTAssertEqual(text.dictionary!["string"]! as! String, "Hello world!")
-        XCTAssertEqual((text.dictionary!["array"]! as! [Int])[0], 1)
+        XCTAssertEqual(text.jsonDictionary!["int"]! as! Int, 1)
+        XCTAssertEqual(text.jsonDictionary!["string"]! as! String, "Hello world!")
+        XCTAssertEqual((text.jsonDictionary!["array"]! as! [Int])[0], 1)
         
-        XCTAssertNil("Hello world!".dictionary)
-        XCTAssertNil("".dictionary)
+        XCTAssertNil("Hello world!".jsonDictionary)
+        XCTAssertNil("".jsonDictionary)
+        XCTAssertNil("hello: world".jsonDictionary)
+        XCTAssertNil("hello: world, 0: 1".jsonDictionary)
     }
     
-    func testDictionaryValue() {
+    func testJSONDictionaryValue() {
         let text = "{\"int\": 1, \"string\": \"Hello world!\", \"array\": [1, 2]}"
-        XCTAssertEqual(text.dictionaryValue["int"]! as! Int, 1)
-        XCTAssertEqual(text.dictionaryValue["string"]! as! String, "Hello world!")
-        XCTAssertEqual((text.dictionaryValue["array"]! as! [Int])[0], 1)
+        XCTAssertEqual(text.jsonDictionaryValue["int"]! as! Int, 1)
+        XCTAssertEqual(text.jsonDictionaryValue["string"]! as! String, "Hello world!")
+        XCTAssertEqual((text.jsonDictionaryValue["array"]! as! [Int])[0], 1)
         
-        XCTAssertNotNil("Hello world!".dictionaryValue)
-        XCTAssertTrue("Hello world!".dictionaryValue.isEmpty)
-        XCTAssertTrue("".dictionaryValue.isEmpty)
+        XCTAssertNotNil("Hello world!".jsonDictionaryValue)
+        XCTAssertTrue("Hello world!".jsonDictionaryValue.isEmpty)
+        XCTAssertTrue("".jsonDictionaryValue.isEmpty)
+        XCTAssertTrue("hello: world".jsonDictionaryValue.isEmpty)
+        XCTAssertTrue("hello: world, 0: 1".jsonDictionaryValue.isEmpty)
+    }
+    
+    func testStringDictionary() {
+        XCTAssertNotNil("hello:world".stringDictionary)
+        XCTAssertNotNil("hello:  world".stringDictionary)
+        XCTAssertNil(":".stringDictionary)
+        XCTAssertNil("hello:".stringDictionary)
+        XCTAssertNil(":world".stringDictionary)
+        XCTAssertNil("hello::".stringDictionary)
+        XCTAssertNil("::hello::".stringDictionary)
+        XCTAssertNil("hello:world,".stringDictionary)
+        XCTAssertNil(",hello:world".stringDictionary)
+        XCTAssertNil(",hello:world,".stringDictionary)
+        XCTAssertNil("hello:world, 0".stringDictionary)
+        XCTAssertNil("hello:world, 0:".stringDictionary)
+        XCTAssertNil("hello:world, 0:1,".stringDictionary)
+        XCTAssertEqual("hello: world".stringDictionary!["hello"]!, "world")
+        XCTAssertEqual("  hello:  world,  0:  1 ".stringDictionary!["hello"]!, "world")
+        XCTAssertEqual("  hello:  world,  0:  1 ".stringDictionary!["0"]!, "1")
+    }
+    
+    func testStringDictionaryValue() {
+        XCTAssertTrue(":".stringDictionaryValue.isEmpty)
+        XCTAssertTrue(":".stringDictionaryValue.isEmpty)
+        XCTAssertTrue("hello:".stringDictionaryValue.isEmpty)
+        XCTAssertTrue(":world".stringDictionaryValue.isEmpty)
+        XCTAssertTrue("hello::".stringDictionaryValue.isEmpty)
+        XCTAssertTrue("::hello::".stringDictionaryValue.isEmpty)
+        XCTAssertTrue("hello:world,".stringDictionaryValue.isEmpty)
+        XCTAssertTrue(",hello:world".stringDictionaryValue.isEmpty)
+        XCTAssertTrue(",hello:world,".stringDictionaryValue.isEmpty)
+        XCTAssertTrue("hello:world, 0".stringDictionaryValue.isEmpty)
+        XCTAssertTrue("hello:world, 0:".stringDictionaryValue.isEmpty)
+        XCTAssertTrue("hello:world, 0:1,".stringDictionaryValue.isEmpty)
+        XCTAssertFalse("Hello:  world!".stringDictionaryValue.isEmpty)
+        XCTAssertEqual("Hello: world!".stringDictionaryValue["Hello"]!, "world!")
+        XCTAssertEqual(" Hello:  world!,  0:  1 ".stringDictionaryValue["Hello"]!, "world!")
+        XCTAssertEqual(" Hello:  world!,  0:  1 ".stringDictionaryValue["0"]!, "1")
     }
     
 }
