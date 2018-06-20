@@ -45,7 +45,7 @@ public extension Dictionary {
     
 }
 
-public extension Dictionary where Key: Hashable, Value: Equatable {
+public extension Dictionary where Value: Equatable {
     
     /// Subtracts the second value from the first if the key and the value are equal.
     ///
