@@ -28,7 +28,6 @@ final class DictionaryJSONTests: XCTestCase {
         XCTAssertNil([0.0: 1.0].jsonData())
         XCTAssertNil([0.0: "1"].jsonData())
         XCTAssertEqual(["hello": "world"].jsonData(), "{\"hello\":\"world\"}".data(using: .utf8))
-        print(["hello": "world"].jsonData())
     }
     
     func testJSONString() {
