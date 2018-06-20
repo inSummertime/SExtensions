@@ -31,9 +31,9 @@ final class DictionaryEmptyRemovedTests: XCTestCase {
         XCTAssertTrue(["hello": [NSNull()]].emptyRemoved.isEmpty)
         XCTAssertTrue(["hello": ["world": NSNull()]].emptyRemoved.isEmpty)
         
-        XCTAssertEqual(["hello": "world"].emptyRemoved as! [String: String], ["hello": "world"])
-        XCTAssertEqual(["hello": "world", "!": ""].emptyRemoved as! [String: String], ["hello": "world"])
-        XCTAssertEqual(["hello": ["world", "!", ""]].emptyRemoved as! [String: [String]], ["hello": ["world", "!"]])
+        XCTAssertEqual((["hello": "world"].emptyRemoved as! [String: String])["hello"]!, "world")
+        XCTAssertEqual((["hello": "world", "!": ""].emptyRemoved as! [String: String])["hello"]!, "world")
+        XCTAssertEqual((["hello": ["world", "!", ""]].emptyRemoved as! [String: [String]])["hello"]!, ["world", "!"])
         XCTAssertEqual((["hello": ["world": "!", "":  ""]].emptyRemoved["hello"]! as! [String: String])["world"]!, "!")
         XCTAssertEqual((["hello": ["world": ["!", ""]]].emptyRemoved["hello"] as! [String: [String]])["world"]!, ["!"])
         XCTAssertEqual((["hello": ["world": "!", "!": NSNull()]].emptyRemoved["hello"] as! [String: String])["world"]!, "!")
