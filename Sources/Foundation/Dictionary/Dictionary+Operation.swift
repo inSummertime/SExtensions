@@ -18,10 +18,12 @@ extension Dictionary {
     /// - Parameters:
     ///   - other: Another dictionary.
     /// - Returns: A dictionary.
-    func union(_ other: [Key: Value]) -> [Key: Value] {
+    func union(_ others: [Key: Value]...) -> [Key: Value] {
         var result = self
-        for (key, value) in other {
-            result[key] = value
+        for dictionary in others {
+            for (key, value) in dictionary {
+                result[key] = value
+            }
         }
         return result
     }
@@ -34,9 +36,11 @@ extension Dictionary {
     ///     // Prints "true"
     ///
     /// - Parameter other: Another dictionary.
-    mutating func fromUnion(_ other: [Key: Value]) {
-        for (key, value) in other {
-            self[key] = value
+    mutating func fromUnion(_ others: [Key: Value]...) {
+        for dictionary in others {
+            for (key, value) in dictionary {
+                self[key] = value
+            }
         }
     }
     
@@ -51,7 +55,7 @@ public extension Dictionary where Value: Equatable {
     ///
     /// - Parameter other: Another dictionary.
     /// - Returns: A new dictionary.
-    func intersection(_ other:  [Key: Value]) -> [Key: Value] {
+    func intersection(_ other: [Key: Value]) -> [Key: Value] {
         var result = [Key: Value]()
         for (key, value) in other {
             if let v = self[key], v == value {
@@ -68,11 +72,13 @@ public extension Dictionary where Value: Equatable {
     ///
     /// - Parameter other: Another dictionary.
     /// - Returns:  A new dictionary.
-    func subtracting(_ other:  [Key: Value]) -> [Key: Value] {
+    func subtracting(_ others: [Key: Value]...) -> [Key: Value] {
         var result = self
-        for (key, value) in other {
-            if self[key] == value {
-                result.removeValue(forKey: key)
+        for dictionary in others {
+            for (key, value) in dictionary {
+                if self[key] == value {
+                    result.removeValue(forKey: key)
+                }
             }
         }
         return result
@@ -86,10 +92,12 @@ public extension Dictionary where Value: Equatable {
     ///     // Prints "["hello": 0]"
     ///
     /// - Parameter other: Another dictionary.
-    mutating func subtract(_ other:  [Key: Value]) {
-        for (key, value) in other {
-            if self[key] == value {
-                removeValue(forKey: key)
+    mutating func subtract(_ others: [Key: Value]...) {
+        for dictionary in others {
+            for (key, value) in dictionary {
+                if self[key] == value {
+                    removeValue(forKey: key)
+                }
             }
         }
     }

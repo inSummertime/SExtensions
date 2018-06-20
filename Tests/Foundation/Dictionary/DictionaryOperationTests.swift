@@ -17,6 +17,7 @@ final class DictionaryOperationTests: XCTestCase {
         XCTAssertEqual(["hello": 0].union(["hello": 1]).union(["": 1]), ["hello": 1, "": 1])
         XCTAssertEqual([0: 0].union([1: 1]), [0: 0, 1: 1])
         XCTAssertEqual([0: 0].union([:]), [0: 0])
+        XCTAssertEqual([0: 0].union([1: 1], [2: 2, 3: 3]).union([:], [4: 4, 5: 5, 6: 6]), [0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6])
     }
     
     func testFromUnion() {
@@ -27,6 +28,8 @@ final class DictionaryOperationTests: XCTestCase {
         XCTAssertEqual(hello, ["hello": 1, "world": 1])
         hello.fromUnion([:])
         XCTAssertEqual(hello, ["hello": 1, "world": 1])
+        hello.fromUnion([:], ["hello": 0], ["world": 1], ["hello": 1, "world": 0])
+        XCTAssertEqual(hello, ["hello": 1, "world": 0])
     }
     
     func testIntersection() {
@@ -41,6 +44,7 @@ final class DictionaryOperationTests: XCTestCase {
         XCTAssertEqual(["hello": 0].subtracting(["hello": 0, "world": 1]), [:])
         XCTAssertEqual(["hello": 0].subtracting([:]), ["hello": 0])
         XCTAssertEqual(["hello": 0, "world": 1].subtracting(["world": 1]), ["hello": 0])
+         XCTAssertEqual(["hello": "world", "!": ""].subtracting(["hello": "world"], ["!": ""]), [:])
     }
     
     func testSubtract() {
@@ -51,9 +55,7 @@ final class DictionaryOperationTests: XCTestCase {
         XCTAssertEqual(helloWorld, ["hello": 0])
         helloWorld.subtract([:])
         XCTAssertEqual(helloWorld, ["hello": 0])
-        helloWorld.subtract(["hello": 0])
-        XCTAssertEqual(helloWorld, [:])
-        helloWorld.subtract(["hello": 0])
+        helloWorld.subtract(["hello": 0], [:])
         XCTAssertEqual(helloWorld, [:])
         helloWorld.subtract([:])
         XCTAssertEqual(helloWorld, [:])
