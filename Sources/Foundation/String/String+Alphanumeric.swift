@@ -19,7 +19,8 @@ public extension String {
         return hasLetters && hasNumbers && count == 0
     }
     
-    /// Returns a Boolean value that indicates whether it has letters and numbers.
+    /// Returns a Boolean value that indicates whether it has letters and
+    /// numbers.
     ///
     ///     print("Hello world! 2".hasLettersAndNumbers)
     ///     // Prints "true"

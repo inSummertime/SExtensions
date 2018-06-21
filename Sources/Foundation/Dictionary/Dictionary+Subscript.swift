@@ -10,7 +10,8 @@ import Foundation
 
 public extension Dictionary where Key == String {
     
-    /// Accesses the String value associated with the given key for reading and writing.
+    /// Accesses the String value associated with the given key for reading and
+    /// writing.
     ///
     ///     print(["hello": "world"][string: "hello"])
     ///     // Prints "Optional("world")"
@@ -26,7 +27,8 @@ public extension Dictionary where Key == String {
         }
     }
     
-    /// Accesses the String value associated with the given key for reading and writing.
+    /// Accesses the String value associated with the given key for reading and
+    /// writing.
     ///
     ///     print(["hello": "world"][stringValue: "hello"])
     ///     // Prints "world"
@@ -42,7 +44,8 @@ public extension Dictionary where Key == String {
         }
     }
     
-    /// Accesses the Int value associated with the given key for reading and writing.
+    /// Accesses the Int value associated with the given key for reading and
+    /// writing.
     ///
     ///     print(["hello": 1][int: "hello"])
     ///     // Prints "Optional(1)"
@@ -58,7 +61,8 @@ public extension Dictionary where Key == String {
         }
     }
     
-    /// Accesses the Int value associated with the given key for reading and writing.
+    /// Accesses the Int value associated with the given key for reading and
+    /// writing.
     ///
     ///     print(["hello": 1][intValue: "hello"])
     ///     // Prints "1"
@@ -74,7 +78,8 @@ public extension Dictionary where Key == String {
         }
     }
     
-    /// Accesses the Double value associated with the given key for reading and writing.
+    /// Accesses the Double value associated with the given key for reading and
+    /// writing.
     ///
     ///     print(["hello": 1.0][double: "hello"])
     ///     // Prints "Optional(1.0)"
@@ -90,7 +95,8 @@ public extension Dictionary where Key == String {
         }
     }
     
-    /// Accesses the Double value associated with the given key for reading and writing.
+    /// Accesses the Double value associated with the given key for reading and
+    /// writing.
     ///
     ///     print(["hello": 1.0][doubleValue: "hello"])
     ///     // Prints "1.0"
@@ -106,7 +112,8 @@ public extension Dictionary where Key == String {
         }
     }
     
-    /// Accesses the Array value associated with the given key for reading and writing.
+    /// Accesses the Array value associated with the given key for reading and
+    /// writing.
     ///
     ///     print(["hello": ["hello", "world"]][array: "hello"])
     ///     // Prints "Optional(["hello", "world"])"
@@ -122,7 +129,8 @@ public extension Dictionary where Key == String {
         }
     }
     
-    /// Accesses the Array value associated with the given key for reading and writing.
+    /// Accesses the Array value associated with the given key for reading and
+    /// writing.
     ///
     ///     print(["hello": ["hello", "world"]][arrayValue: "hello"])
     ///     // Prints ["hello", "world"]
@@ -138,7 +146,8 @@ public extension Dictionary where Key == String {
         }
     }
     
-    /// Accesses the Dictionary value associated with the given key for reading and writing.
+    /// Accesses the Dictionary value associated with the given key for reading
+    /// and writing.
     ///
     ///     print(["hello": ["hello": "world"]][dictionary: "hello"])
     ///     // Prints "Optional(["hello": "world"])"
@@ -154,7 +163,8 @@ public extension Dictionary where Key == String {
         }
     }
     
-    /// Accesses the Dictionary value associated with the given key for reading and writing.
+    /// Accesses the Dictionary value associated with the given key for reading
+    /// and writing.
     ///
     ///     print(["hello": ["hello": "world"]][dictionaryValue: "hello"])
     ///     // Prints "["hello": "world"]"

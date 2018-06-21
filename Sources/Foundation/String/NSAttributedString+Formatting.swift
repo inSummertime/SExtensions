@@ -10,7 +10,8 @@ import UIKit
 
 public extension NSAttributedString {
     
-    /// Returns a Boolean value that indicates whether the text within a NSRange is having a color.
+    /// Returns a Boolean value that indicates whether the text within a NSRange
+    /// is having a color.
     ///
     /// - Parameter color: text color.
     /// - Parameter range: the NSRange of the text.
@@ -27,7 +28,8 @@ public extension NSAttributedString {
         return isHavingColor
     }
     
-    /// Returns a Boolean value that indicates whether the text within a NSRange is using a font.
+    /// Returns a Boolean value that indicates whether the text within a NSRange
+    /// is using a font.
     ///
     /// - Parameter font: text font.
     /// - Parameter range: the NSRange of the text.
@@ -44,7 +46,8 @@ public extension NSAttributedString {
         return isUsingFont
     }
     
-    /// Returns a Boolean value that indicates whether the text within a NSRange is underlined.
+    /// Returns a Boolean value that indicates whether the text within a NSRange
+    /// is underlined.
     ///
     /// - Parameter range: the NSRange of the text.
     /// - Returns: `true` if it is underlined; otherwise, `false`.
@@ -60,7 +63,8 @@ public extension NSAttributedString {
         return isUnderlined
     }
     
-    /// Returns a Boolean value that indicates whether the text within a NSRange is highlighted.
+    /// Returns a Boolean value that indicates whether the text within a NSRange
+    /// is highlighted.
     ///
     /// - Parameter range: the NSRange of the text.
     /// - Returns: `true` if it is highlighted; otherwise, `false`.
@@ -76,7 +80,8 @@ public extension NSAttributedString {
         return isHighlighted
     }
     
-    /// Returns a Boolean value that indicates whether the text within a NSRange is using strikethrough.
+    /// Returns a Boolean value that indicates whether the text within a NSRange
+    /// is using strikethrough.
     ///
     /// - Parameter range: the NSRange of the text.
     /// - Returns: `true` if it is using strikethrough; otherwise, `false`.
@@ -92,7 +97,8 @@ public extension NSAttributedString {
         return isStrikethrough
     }
     
-    /// Returns a Boolean value that indicates whether the text within a NSRange is using traits.
+    /// Returns a Boolean value that indicates whether the text within a NSRange
+    /// is using traits.
     ///
     /// - Parameter range: the NSRange of the text.
     /// - Returns: `true` if it is using traits; otherwise, `false`.
@@ -108,7 +114,8 @@ public extension NSAttributedString {
         return usingTraitsLength == checkRange.length
     }
     
-    /// Returns a Boolean value that indicates whether the text within a NSRange is bold.
+    /// Returns a Boolean value that indicates whether the text within a NSRange
+    /// is bold.
     ///
     /// - Parameter range: the NSRange of the text.
     /// - Returns: `true` if it is bold; otherwise, `false`.
@@ -116,7 +123,8 @@ public extension NSAttributedString {
         return isUsingTraits(.traitBold, in: range)
     }
     
-    /// Returns a Boolean value that indicates whether the text within a NSRange is italic.
+    /// Returns a Boolean value that indicates whether the text within a NSRange
+    /// is italic.
     ///
     /// - Parameter range: the NSRange of the text.
     /// - Returns: `true` if it is italic; otherwise, `false`.

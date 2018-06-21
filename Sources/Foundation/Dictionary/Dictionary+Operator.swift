@@ -27,7 +27,8 @@ public extension Dictionary {
         return result
     }
     
-    /// Combiles two dictionaries and stores the result in the left-hand-side variable.
+    /// Combiles two dictionaries and stores the result in the left-hand-side
+    /// variable.
     ///
     ///     var hello = ["hello": 0]
     ///     hello += ["world": 1]
@@ -47,7 +48,8 @@ public extension Dictionary {
 
 public extension Dictionary where Value: Equatable {
     
-    /// Subtracts the second value from the first if the key and the value are equal.
+    /// Subtracts the second value from the first if the key and the value are
+    /// equal.
     ///
     ///     print(["hello": 0, "world": 1] - ["world": 1])
     ///     // Prints "["hello": 0]"
@@ -66,7 +68,8 @@ public extension Dictionary where Value: Equatable {
         return result
     }
     
-    /// Subtracts the second dictionary from the first if the key and the value are equal and stores the difference in the left-hand-side variable.
+    /// Subtracts the second dictionary from the first if the key and the value
+    /// are equal and stores the difference in the left-hand-side variable.
     ///
     ///     var hello = ["hello": 0, "world": 1]
     ///     hello -= ["world": 1]

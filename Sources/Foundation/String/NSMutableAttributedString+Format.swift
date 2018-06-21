@@ -73,7 +73,8 @@ public extension NSMutableAttributedString {
         addAttribute(.font, value: font, range: replacementRange)
     }
     
-    /// Returns a NSMutableAttributedString with the text within a NSRange underlined.
+    /// Returns a NSMutableAttributedString with the text within a NSRange
+    /// underlined.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!")
     ///     print(helloWorld.underlined().isUnderlined())
@@ -102,7 +103,8 @@ public extension NSMutableAttributedString {
         addAttribute(.underlineStyle, value: NSUnderlineStyle.styleSingle.rawValue, range: replacementRange)
     }
     
-    /// Returns a NSMutableAttributedString with underline within a NSRange removed.
+    /// Returns a NSMutableAttributedString with underline within a NSRange
+    /// removed.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.underlineStyle: true])
     ///     let range = NSRange(location: 0, length: 1)
@@ -132,7 +134,8 @@ public extension NSMutableAttributedString {
         addAttribute(.underlineStyle, value: NSUnderlineStyle.styleNone.rawValue, range: replacementRange)
     }
     
-    /// Returns a NSMutableAttributedStringwith the text within a NSRange highlighted.
+    /// Returns a NSMutableAttributedStringwith the text within a NSRange
+    /// highlighted.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!")
     ///     let range = NSRange(location: 0, length: 1)
@@ -163,7 +166,8 @@ public extension NSMutableAttributedString {
         addAttribute(.backgroundColor, value: color, range: replacementRange)
     }
     
-    /// Returns a NSMutableAttributedString with the text within a NSRange unhighlighted.
+    /// Returns a NSMutableAttributedString with the text within a NSRange
+    /// unhighlighted.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.backgroundColor: UIColor.white])
     ///     let range = NSRange(location: 0, length: 1)
@@ -193,7 +197,8 @@ public extension NSMutableAttributedString {
         addAttribute(.backgroundColor, value: UIColor.clear, range: replacementRange)
     }
     
-    /// Returns a NSMutableAttributedString with the text within a NSRange crossed out.
+    /// Returns a NSMutableAttributedString with the text within a NSRange
+    /// crossed out.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!")
     ///     let range = NSRange(location: 0, length: 1)
@@ -223,7 +228,8 @@ public extension NSMutableAttributedString {
         addAttribute(.strikethroughStyle, value: NSNumber.init(value: 1), range: replacementRange)
     }
     
-    /// Returns a NSMutableAttributedString with the text within a NSRange not crossed out.
+    /// Returns a NSMutableAttributedString with the text within a NSRange not
+    /// crossed out.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.strikethroughStyle: true])
     ///     let range = NSRange(location: 0, length: 1)
@@ -253,7 +259,8 @@ public extension NSMutableAttributedString {
         addAttribute(.strikethroughStyle, value: NSNumber.init(value: 0), range: replacementRange)
     }
     
-    /// Returns a NSMutableAttributedString with the text within a NSRange using traits.
+    /// Returns a NSMutableAttributedString with the text within a NSRange using
+    /// traits.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.systemFont(ofSize: 8.0)])
     ///     let range = NSRange(location: 0, length: 1)
@@ -305,7 +312,8 @@ public extension NSMutableAttributedString {
         })
     }
     
-    /// Returns a NSMutableAttributedString with the text within a NSRange using bold.
+    /// Returns a NSMutableAttributedString with the text within a NSRange using
+    /// bold.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.systemFont(ofSize: 8.0)])
     ///     let range = NSRange(location: 0, length: 1)
@@ -331,7 +339,8 @@ public extension NSMutableAttributedString {
         useTraits(.traitBold, in: range)
     }
     
-    /// Returns a NSMutableAttributedString with the text within a NSRange using italic.
+    /// Returns a NSMutableAttributedString with the text within a NSRange using
+    /// italic.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.systemFont(ofSize: 8.0)])
     ///     let range = NSRange(location: 0, length: 1)
@@ -357,7 +366,8 @@ public extension NSMutableAttributedString {
         useTraits(.traitItalic, in: range)
     }
     
-    /// Returns a NSMutableAttributedString with the text within a NSRange traits removed.
+    /// Returns a NSMutableAttributedString with the text within a NSRange
+    /// traits removed.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.boldSystemFont(ofSize: 8.0)])
     ///     let range = NSRange(location: 0, length: 1)
@@ -409,7 +419,8 @@ public extension NSMutableAttributedString {
         })
     }
     
-    /// Returns a NSMutableAttributedString with the text within a NSRange bold removed.
+    /// Returns a NSMutableAttributedString with the text within a NSRange bold
+    /// removed.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.boldSystemFont(ofSize: 8.0)])
     ///     let range = NSRange(location: 0, length: 1)
@@ -435,7 +446,8 @@ public extension NSMutableAttributedString {
         removeTraits(.traitBold, in: range)
     }
     
-    /// Returns a NSMutableAttributedString with the text within a NSRange italic removed.
+    /// Returns a NSMutableAttributedString with the text within a NSRange
+    /// italic removed.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.italicSystemFont(ofSize: 8.0)])
     ///     let range = NSRange(location: 0, length: 1)

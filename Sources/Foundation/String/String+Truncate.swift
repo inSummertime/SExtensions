@@ -42,7 +42,8 @@ public extension String {
         return truncated(toIndex: length - 1, trailing: trailing)
     }
     
-    /// Returns a string with a optional trailing with a constrained width, number of lines and font.
+    /// Returns a string with a optional trailing with a constrained width,
+    /// number of lines and font.
     ///
     ///     print("Hello world!".truncated(withConstrained: 16.0, font: font, numberOfLines: 2))
     ///     // Prints "Hello ..."
@@ -79,7 +80,8 @@ public extension String {
         return (self[safeTo: i] ?? "") + tail
     }
     
-    /// Returns a string with a optional trailing with a constrained size and font.
+    /// Returns a string with a optional trailing with a constrained size and
+    /// font.
     ///
     ///     print("Hello world!".truncated(withConstrained: CGSize(width: 4.0, height: 4.0), font: UIFont.systemFont(ofSize: 8.0))
     ///     // Prints "..."
