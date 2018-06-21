@@ -10,13 +10,14 @@ import Foundation
 
 extension Dictionary {
     
-    /// Returns a union dictionary of this dictionary and the given dictionary.
+    /// Returns a union dictionary of this dictionary and the given
+    /// dictionaries.
     ///
-    ///     print(["hello": 0].union(["world": 1]))
-    ///     // Prints "[0: 0, 1: 1]"
+    ///     print(["hello": 0].union(["hello": 1, "world": 1]))
+    ///     // Prints "["hello": 1, "world": 1]"
     ///
     /// - Parameters:
-    ///   - other: Another dictionary.
+    ///   - others: Other dictionaries.
     /// - Returns: A dictionary.
     func union(_ others: [Key: Value]...) -> [Key: Value] {
         var result = self
@@ -28,27 +29,37 @@ extension Dictionary {
         return result
     }
     
-    /// Inserts the elements of the given dictionary into the dictionary.
-    ///
-    ///     var hello = ["hello": 0]
-    ///     hello.fromUnion(["world": 1])
-    ///     print(hello, ["hello": 1, "world": 1])
-    ///     // Prints "true"
-    ///
-    /// - Parameter other: Another dictionary.
-    mutating func fromUnion(_ others: [Key: Value]...) {
-        for dictionary in others {
-            for (key, value) in dictionary {
-                self[key] = value
-            }
-        }
-    }
-    
 }
 
 public extension Dictionary where Value: Equatable {
     
-    /// Returns a new dictionary with the elements that are common to both this dictionary and the given dictionary.
+    /// Returns a union dictionary of this dictionary and the given dictionaries
+    /// having the same key but different value removed.
+    ///
+    ///     print(["hello": 0].unionWithoutSameKeyDifferentValue(["hello": 1, "world": 1]))
+    ///     // Prints "["world": 1]"
+    ///
+    /// - Parameters:
+    ///   - others: Other dictionaries.
+    /// - Returns: A dictionary.
+    func unionWithoutSameKeyDifferentValue(_ others: [Key: Value]...) -> [Key: Value] {
+        var result = self
+        for dictionary in others {
+            for (key, value) in dictionary {
+                if let v = self[key] {
+                    if v != value {
+                        result.removeValue(forKey: key)
+                    }
+                } else {
+                    result[key] = value
+                }
+            }
+        }
+        return result
+    }
+    
+    /// Returns a new dictionary with the elements that are common to both this
+    /// dictionary and the given dictionary.
     ///
     ///     print(["hello": 0].intersection(["hello": 0, "world": 1]))
     ///     // Prints "["hello": 0]"
@@ -65,12 +76,13 @@ public extension Dictionary where Value: Equatable {
         return result
     }
     
-    /// Returns a new dictionary containing the elements of this dictionary that do not occur in the given dictionary.
+    /// Returns a new dictionary containing the elements of this dictionary that
+    /// do not occur in the given dictionaries.
     ///
     ///     print(["hello": 0].intersection(["hello": 0, "world": 1]))
     ///     // Prints "["hello": 0]"
     ///
-    /// - Parameter other: Another dictionary.
+    /// - Parameter other: Other dictionaries.
     /// - Returns:  A new dictionary.
     func subtracting(_ others: [Key: Value]...) -> [Key: Value] {
         var result = self
@@ -84,14 +96,15 @@ public extension Dictionary where Value: Equatable {
         return result
     }
     
-    /// Removes the elements of this dictionary that do not occur in the given dictionary.
+    /// Removes the elements of this dictionary that do not occur in the given
+    /// dictionaries.
     ///
     ///     var helloWorld = ["hello": 0, "world": 1]
     ///     helloWorld.subtract(["world": 1])
     ///     print(helloWorld)
     ///     // Prints "["hello": 0]"
     ///
-    /// - Parameter other: Another dictionary.
+    /// - Parameter other: Other dictionaries.
     mutating func subtract(_ others: [Key: Value]...) {
         for dictionary in others {
             for (key, value) in dictionary {
@@ -102,7 +115,8 @@ public extension Dictionary where Value: Equatable {
         }
     }
     
-    /// Returns a Boolean value that indicates whether this dictionary is a subdictionary of the given dictionary.
+    /// Returns a Boolean value that indicates whether this dictionary is a
+    /// subdictionary of the given dictionary.
     ///
     ///     print(["hello": 0].isSubdictionary(of: ["hello": 0, "world": 1]))
     ///     // Prints "true"
@@ -128,7 +142,8 @@ public extension Dictionary where Value: Equatable {
         return true
     }
     
-    /// Returns a Boolean value that indicates whether the dictionary is a strict subdictionary of the given dictionary.
+    /// Returns a Boolean value that indicates whether the dictionary is a
+    /// strict subdictionary of the given dictionary.
     ///
     ///     print(["hello": 0].isStrictSubdictionary(of: ["hello": 0, "world": 1]))
     ///     // Prints "true"
@@ -142,7 +157,8 @@ public extension Dictionary where Value: Equatable {
         return isSubdictionary(of: other)
     }
     
-    /// Returns a Boolean value that indicates whether this dictionary contains the given dictionary.
+    /// Returns a Boolean value that indicates whether this dictionary contains
+    /// the given dictionary.
     ///
     ///     print(["hello": 0, "world": 1].contains(other: ["hello": 0]))
     ///     // Prints "true"

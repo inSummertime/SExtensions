@@ -20,16 +20,11 @@ final class DictionaryOperationTests: XCTestCase {
         XCTAssertEqual([0: 0].union([1: 1], [2: 2, 3: 3]).union([:], [4: 4, 5: 5, 6: 6]), [0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6])
     }
     
-    func testFromUnion() {
-        var hello = ["hello": 0]
-        hello.fromUnion(["hello": 1])
-        XCTAssertEqual(hello, ["hello": 1])
-        hello.fromUnion(["world": 1])
-        XCTAssertEqual(hello, ["hello": 1, "world": 1])
-        hello.fromUnion([:])
-        XCTAssertEqual(hello, ["hello": 1, "world": 1])
-        hello.fromUnion([:], ["hello": 0], ["world": 1], ["hello": 1, "world": 0])
-        XCTAssertEqual(hello, ["hello": 1, "world": 0])
+    func testUnionWithoutSameKeyDifferentValue() {
+        XCTAssertEqual(["hello": 0].unionWithoutSameKeyDifferentValue(["hello": 1]), [:])
+        XCTAssertEqual(["hello": 0].unionWithoutSameKeyDifferentValue(["world": 1]), ["hello": 0, "world": 1])
+        XCTAssertEqual(["hello": 0].unionWithoutSameKeyDifferentValue(["world": 1], [:]), ["hello": 0, "world": 1])
+        XCTAssertEqual(["hello": 0].unionWithoutSameKeyDifferentValue(["world": 1], ["!": 0]), ["hello": 0, "world": 1, "!": 0])
     }
     
     func testIntersection() {
