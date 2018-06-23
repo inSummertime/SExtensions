@@ -87,4 +87,35 @@ public extension Dictionary where Value: Equatable {
         }
     }
     
+    /// Returns a new dictionary with the elements that are common to both ywo
+    /// dictionaries.
+    ///
+    /// - Parameters:
+    ///   - lhs: A dictionary.
+    ///   - rhs: The dictionary to compare with `lhs`.
+    /// - Returns: A dictionary.
+    static func & (lhs: [Key: Value], rhs: [Key: Value]) -> [Key: Value] {
+        var result = [Key: Value]()
+        for (key, value) in rhs {
+            if let v = lhs[key], v == value {
+                result[key] = value
+            }
+        }
+        return result
+    }
+    
+    /// Returns a union dictionary of two dictionaries.
+    ///
+    /// - Parameters:
+    ///   - lhs: A dictionary.
+    ///   - rhs: The dictionary to combile with `lhs`.
+    /// - Returns: A dictionary.
+    static func | (lhs: [Key: Value], rhs: [Key: Value]) -> [Key: Value] {
+        var result = lhs
+        for (key, value) in rhs {
+            result[key] = value
+        }
+        return result
+    }
+    
 }
