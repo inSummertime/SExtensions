@@ -11,6 +11,7 @@ import Foundation
 public extension Dictionary where Key == String {
     
     /// All the empty strings, arrays and dictionaries removed version
+    ///
     ///     print(["hello": "world", "!": ""].emptyRemoved)
     ///     // Print "["hello": "world"]"
     var emptyRemoved: [String: Any] {
