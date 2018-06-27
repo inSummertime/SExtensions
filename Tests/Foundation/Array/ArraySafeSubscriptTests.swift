@@ -16,4 +16,38 @@ final class ArraySafeSubscriptTests: XCTestCase {
         XCTAssertEqual(["hello", "world"][safe: 1]!, "world")
     }
     
+    func testSafeSubscriptCountableRange() {
+        let array = ["hello", "world", "!"]
+        XCTAssertNil(array[safe: -10..<(-1)])
+        XCTAssertNil(array[safe: 10..<11])
+        XCTAssertEqual(array[safe: 0..<1]!, ["hello"])
+        XCTAssertEqual(array[safe: -1..<1]!, ["hello"])
+        XCTAssertEqual(array[safe: 1..<2]!, ["world"])
+        XCTAssertEqual(array[safe: 1..<3]!, ["world", "!"])
+        XCTAssertEqual(array[safe: 1..<4]!, ["world", "!"])
+        XCTAssertEqual(array[safe: 1..<1]!, [])
+        let emptyArray: [String] = []
+        XCTAssertNil(emptyArray[safe: -10..<(-1)])
+        XCTAssertNil(emptyArray[safe: 10..<11])
+        XCTAssertNil(emptyArray[safe: 1..<2])
+        XCTAssertNil(emptyArray[safe: 1..<4])
+    }
+    
+    func testSafeSubscriptCountableClosedRange() {
+        let array = ["hello", "world", "!"]
+        XCTAssertNil(array[safe: -10...(-1)])
+        XCTAssertNil(array[safe: 10...11])
+        XCTAssertEqual(array[safe: 0...1]!, ["hello", "world"])
+        XCTAssertEqual(array[safe: -1...1]!, ["hello", "world"])
+        XCTAssertEqual(array[safe: 1...2]!, ["world", "!"])
+        XCTAssertEqual(array[safe: 1...3]!, ["world", "!"])
+        XCTAssertEqual(array[safe: 1...4]!, ["world", "!"])
+        XCTAssertEqual(array[safe: 1...1]!, ["world"])
+        let emptyArray: [String] = []
+        XCTAssertNil(emptyArray[safe: -10...(-1)])
+        XCTAssertNil(emptyArray[safe: 10...11])
+        XCTAssertNil(emptyArray[safe: 1...2])
+        XCTAssertNil(emptyArray[safe: 1...4])
+    }
+    
 }
