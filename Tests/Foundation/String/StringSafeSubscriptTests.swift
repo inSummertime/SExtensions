@@ -27,6 +27,7 @@ final class StringSafeSubscriptTests: XCTestCase {
         XCTAssertNil("Hello world!"[safe: -777..<(-77)])
         XCTAssertNil(""[safe: 0..<0])
         XCTAssertNil(""[safe: 77..<777])
+        XCTAssertNil(""[safe: 0..<2])
         XCTAssertEqual("Hello world!"[safe: CountableRange(uncheckedBounds: (lower: 0, upper: 1))], "H")
         XCTAssertNil("Hello world!"[safe: CountableRange(uncheckedBounds: (lower: 77, upper: 78))])
         XCTAssertEqual("Hello world!"[safe: CountableRange(uncheckedBounds: (lower: -1, upper: 0))], "H")
