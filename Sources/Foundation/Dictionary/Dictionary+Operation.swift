@@ -59,18 +59,41 @@ public extension Dictionary where Value: Equatable {
     }
     
     /// Returns a new dictionary with the elements that are common to both this
-    /// dictionary and the given dictionary.
+    /// dictionary and the given dictionaries.
     ///
     ///     print(["hello": 0].intersection(["hello": 0, "world": 1]))
     ///     // Prints "["hello": 0]"
     ///
-    /// - Parameter other: Another dictionary.
+    /// - Parameter others: Other dictionaries.
     /// - Returns: A new dictionary.
-    func intersection(_ other: [Key: Value]) -> [Key: Value] {
+    func intersection(_ others: [Key: Value]...) -> [Key: Value] {
         var result = [Key: Value]()
-        for (key, value) in other {
-            if let v = self[key], v == value {
-                result[key] = value
+        for dictionary in others {
+            for (key, value) in dictionary {
+                if let v = self[key], v == value {
+                    result[key] = value
+                }
+            }
+        }
+        return result
+    }
+    
+    /// Returns a new dictionary with the elements that are different from the
+    /// given dictionaries.
+    ///
+    ///
+    ///
+    /// - Parameter others: other dictionaries
+    /// - Returns: a new dictionary
+    func difference(_ others: [Key: Value]...) -> [Key: Value] {
+        var result = self
+        for dictionary in others {
+            for (key, value) in dictionary {
+                if result[key] == nil {
+                    result[key] = value
+                } else {
+                    result.removeValue(forKey: key)
+                }
             }
         }
         return result
@@ -124,10 +147,7 @@ public extension Dictionary where Value: Equatable {
     /// - Parameter other: Another dictionary.
     /// - Returns: `true` if the dictionary is a subdictionary of `other`; otherwise, `false`.
     func isSubdictionary(of other: [Key: Value]) -> Bool {
-        if self.count == 0 {
-            return false
-        }
-        if other.count == 0 {
+        if isEmpty || other.isEmpty {
             return false
         }
         for (key, value) in self {

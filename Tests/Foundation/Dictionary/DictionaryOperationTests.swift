@@ -32,6 +32,16 @@ final class DictionaryOperationTests: XCTestCase {
         XCTAssertEqual(["hello": 0].intersection(["hello": 0, "world": 1]), ["hello": 0])
         XCTAssertEqual(["hello": 0].intersection(["hello": 1, "world": 1]), [:])
         XCTAssertEqual(["hello": 0].intersection([:]), [:])
+        XCTAssertEqual(["hello": 0].intersection(["hello": 1], ["world": 1]), [:])
+        XCTAssertEqual(["hello": 1].intersection(["hello": 1], ["world": 1]), ["hello": 1])
+    }
+    
+    func testDifference() {
+        XCTAssertEqual(["hello": 0].difference(["world": 1]), ["hello": 0, "world": 1])
+        XCTAssertEqual(["hello": 0].difference(["hello": 0, "world": 1]), ["world": 1])
+        XCTAssertEqual(["hello": 0].difference(["hello": 1, "world": 1]), ["world": 1])
+        XCTAssertEqual(["hello": 0].difference([:]), ["hello": 0])
+        XCTAssertEqual(["hello": 1].difference(["hello": 1], ["world": 1]), ["world": 1])
     }
     
     func testSubtracting() {
