@@ -90,6 +90,9 @@ public extension Dictionary where Value: Equatable {
     /// Returns a new dictionary with the elements that are common to both ywo
     /// dictionaries.
     ///
+    ///     print(["hello": 0] & ["hello": 0, "world": 1])
+    ///     // Prints "["hello": 0]"
+    ///
     /// - Parameters:
     ///   - lhs: A dictionary.
     ///   - rhs: The dictionary to compare with `lhs`.
@@ -105,6 +108,9 @@ public extension Dictionary where Value: Equatable {
     }
     
     /// Returns a union dictionary of two dictionaries.
+    ///
+    ///     print(["hello": 0] | ["world": 1])
+    ///     // Prints "["hello": 0, "world": 1]"
     ///
     /// - Parameters:
     ///   - lhs: A dictionary.
