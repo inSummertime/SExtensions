@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710A111320E4FF590054262F /* Array+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111220E4FF590054262F /* Array+Operator.swift */; };
+		710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111420E50AA70054262F /* ArrayOperatorTests.swift */; };
 		71105C4B20D9333600AB7B22 /* Dictionary+EmptyRemoved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71105C4A20D9333600AB7B22 /* Dictionary+EmptyRemoved.swift */; };
 		71105C4D20D9359D00AB7B22 /* DictionaryEmptyRemovedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71105C4C20D9359D00AB7B22 /* DictionaryEmptyRemovedTests.swift */; };
 		712BB74A20CF64A300F01034 /* String+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712BB74920CF64A300F01034 /* String+Dictionary.swift */; };
@@ -79,6 +81,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		710A111220E4FF590054262F /* Array+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Operator.swift"; sourceTree = "<group>"; };
+		710A111420E50AA70054262F /* ArrayOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOperatorTests.swift; sourceTree = "<group>"; };
 		71105C4A20D9333600AB7B22 /* Dictionary+EmptyRemoved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+EmptyRemoved.swift"; sourceTree = "<group>"; };
 		71105C4C20D9359D00AB7B22 /* DictionaryEmptyRemovedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEmptyRemovedTests.swift; sourceTree = "<group>"; };
 		712BB74920CF64A300F01034 /* String+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Dictionary.swift"; sourceTree = "<group>"; };
@@ -336,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				717D0E1220E3A838005E972D /* Array+Operation.swift */,
+				710A111220E4FF590054262F /* Array+Operator.swift */,
 				71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */,
 			);
 			path = Array;
@@ -345,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */,
+				710A111420E50AA70054262F /* ArrayOperatorTests.swift */,
 				71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */,
 			);
 			path = Array;
@@ -476,6 +482,7 @@
 				71B2660D20C8C5670045AA33 /* NSAttributedString+Concatenate.swift in Sources */,
 				71D7F6AB20DF63DB00525259 /* Dictionary+Has.swift in Sources */,
 				71ACDC5C20BF7E650071FF33 /* String+Words.swift in Sources */,
+				710A111320E4FF590054262F /* Array+Operator.swift in Sources */,
 				71AF15C720CCD93C006641D3 /* NSAttributedString+Formatting.swift in Sources */,
 				71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */,
 				714EB2FF20C206ED002ED5DE /* String+Date.swift in Sources */,
@@ -510,6 +517,7 @@
 				71375E3020CAB4BD00C6A7E0 /* StringHeightTests.swift in Sources */,
 				71B2660F20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift in Sources */,
 				71AF15C920CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift in Sources */,
+				710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */,
 				71EAAF9D20D1437600A648D8 /* DictionarySubscriptTests.swift in Sources */,
 				712BB74C20CF65D400F01034 /* StringDictionaryTests.swift in Sources */,
 				71AB2F3920BCBC670060F4CB /* StringCaseTests.swift in Sources */,
