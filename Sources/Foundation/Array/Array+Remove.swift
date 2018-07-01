@@ -28,6 +28,36 @@ public extension Array {
         return result
     }
     
+    /// Returns an array which does not contain any empty element.
+    ///
+    ///     print([["", ""], [], "", ["hello": ""], NSNull(), [[""]], [[:]], [["hello": []]]].removingEmpty().isEmpty)
+    ///     // Prints "true"
+    ///
+    /// - Returns: An array.
+    func removingEmpty() -> Array {
+        var result = Array()
+        for value in self {
+            if let stringValue = value as? String {
+                if !stringValue.isEmpty, let element = stringValue as? Element {
+                    result.append(element)
+                }
+            } else if let dictionaryValue = value as? [String: Any] {
+                let removed = dictionaryValue.removingEmpty()
+                if !removed.isEmpty {
+                    result.append(value)
+                }
+            } else if let arrayValue = value as? [Any] {
+                let removed = arrayValue.removingEmpty()
+                if !removed.isEmpty, let element = arrayValue as? Element {
+                    result.append(element)
+                }
+            } else if !(value is NSNull) {
+                result.append(value)
+            }
+        }
+        return result
+    }
+    
 }
 
 public extension Array where Element : Equatable {

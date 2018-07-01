@@ -31,9 +31,31 @@ final class ArrayRemoveTests: XCTestCase {
         XCTAssertEqual(["hello", "world", "!"].removingCountableRange(2..<7), ["hello", "world"])
     }
     
-    func removingCountableClosedRange() {
+    func testRemovingCountableClosedRange() {
         XCTAssertEqual(["hello", "world", "!"].removingCountableClosedRange(0...2), [])
         XCTAssertEqual(["hello", "world", "!"].removingCountableClosedRange(2...7), ["hello", "world"])
+    }
+    
+    func testRemovingEmpty() {
+        XCTAssertTrue([""].removingEmpty().isEmpty)
+        XCTAssertFalse(["hello", " "].removingEmpty().isEmpty)
+        XCTAssertTrue([[]].removingEmpty().isEmpty)
+        XCTAssertTrue([[""]].removingEmpty().isEmpty)
+        XCTAssertFalse([["world"]].removingEmpty().isEmpty)
+        XCTAssertTrue([[:]].removingEmpty().isEmpty)
+        XCTAssertTrue([["hello": ""]].removingEmpty().isEmpty)
+        XCTAssertTrue([["hello": ["world": [:]]]].removingEmpty().isEmpty)
+        XCTAssertTrue([[""], ["", ""]].removingEmpty().isEmpty)
+        XCTAssertTrue(["": ["", ""]].removingEmpty().isEmpty)
+        XCTAssertTrue([NSNull()].removingEmpty().isEmpty)
+        XCTAssertTrue([[NSNull()]].removingEmpty().isEmpty)
+        XCTAssertTrue([["world": NSNull()]].removingEmpty().isEmpty)
+        XCTAssertTrue([["", ""], [], "", ["hello": ""], NSNull(), [[""]], [[:]], [["hello": []]]].removingEmpty().isEmpty)
+        
+        XCTAssertEqual(["hello", "world"].removingEmpty(), ["hello", "world"])
+        XCTAssertEqual((["hello", "world", "!", "", [], [:], NSNull()].removingEmpty() as! [String]), ["hello", "world", "!"])
+        XCTAssertEqual((["hello", "world", "", ["", []], ["!": []], NSNull()].removingEmpty() as! [String]), ["hello", "world"])
+        XCTAssertEqual((["hello", "", [[]], ["!": [NSNull()]]].removingEmpty() as! [String]), ["hello"])
     }
     
 }
