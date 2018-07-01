@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		710A111320E4FF590054262F /* Array+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111220E4FF590054262F /* Array+Operator.swift */; };
 		710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111420E50AA70054262F /* ArrayOperatorTests.swift */; };
-		71105C4B20D9333600AB7B22 /* Dictionary+EmptyRemoved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71105C4A20D9333600AB7B22 /* Dictionary+EmptyRemoved.swift */; };
-		71105C4D20D9359D00AB7B22 /* DictionaryEmptyRemovedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71105C4C20D9359D00AB7B22 /* DictionaryEmptyRemovedTests.swift */; };
 		712BB74A20CF64A300F01034 /* String+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712BB74920CF64A300F01034 /* String+Dictionary.swift */; };
 		712BB74C20CF65D400F01034 /* StringDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */; };
 		71375E2E20CAB46000C6A7E0 /* String+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71375E2D20CAB46000C6A7E0 /* String+Height.swift */; };
@@ -32,6 +30,8 @@
 		717D0E1520E3ABA5005E972D /* ArrayOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */; };
 		718DCD6720E86D95000634B2 /* Array+Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6620E86D95000634B2 /* Array+Remove.swift */; };
 		718DCD6920E879C3000634B2 /* ArrayRemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */; };
+		718DCD6F20E89104000634B2 /* Dictionary+Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6E20E89104000634B2 /* Dictionary+Remove.swift */; };
+		718DCD7120E891DD000634B2 /* DictionaryRemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD7020E891DD000634B2 /* DictionaryRemoveTests.swift */; };
 		7192D8C320D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */; };
 		71958F9220D088B400AFCBA5 /* String+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71958F9120D088B400AFCBA5 /* String+Array.swift */; };
 		71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71958F9320D0892A00AFCBA5 /* StringArrayTests.swift */; };
@@ -87,8 +87,6 @@
 /* Begin PBXFileReference section */
 		710A111220E4FF590054262F /* Array+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Operator.swift"; sourceTree = "<group>"; };
 		710A111420E50AA70054262F /* ArrayOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOperatorTests.swift; sourceTree = "<group>"; };
-		71105C4A20D9333600AB7B22 /* Dictionary+EmptyRemoved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+EmptyRemoved.swift"; sourceTree = "<group>"; };
-		71105C4C20D9359D00AB7B22 /* DictionaryEmptyRemovedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEmptyRemovedTests.swift; sourceTree = "<group>"; };
 		712BB74920CF64A300F01034 /* String+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Dictionary.swift"; sourceTree = "<group>"; };
 		712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDictionaryTests.swift; sourceTree = "<group>"; };
 		71375E2D20CAB46000C6A7E0 /* String+Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Height.swift"; sourceTree = "<group>"; };
@@ -113,6 +111,8 @@
 		717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOperationTests.swift; sourceTree = "<group>"; };
 		718DCD6620E86D95000634B2 /* Array+Remove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Remove.swift"; sourceTree = "<group>"; };
 		718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayRemoveTests.swift; sourceTree = "<group>"; };
+		718DCD6E20E89104000634B2 /* Dictionary+Remove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Remove.swift"; sourceTree = "<group>"; };
+		718DCD7020E891DD000634B2 /* DictionaryRemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryRemoveTests.swift; sourceTree = "<group>"; };
 		7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryKeyCaseTests.swift; sourceTree = "<group>"; };
 		71958F9120D088B400AFCBA5 /* String+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Array.swift"; sourceTree = "<group>"; };
 		71958F9320D0892A00AFCBA5 /* StringArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringArrayTests.swift; sourceTree = "<group>"; };
@@ -319,12 +319,12 @@
 		71EAAF9E20D1438200A648D8 /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
-				71105C4A20D9333600AB7B22 /* Dictionary+EmptyRemoved.swift */,
 				71D7F6AA20DF63DB00525259 /* Dictionary+Has.swift */,
 				71E71C5620D72C1C0009C1A9 /* Dictionary+JSON.swift */,
 				71CE20A720D5DA0B00C0A5ED /* Dictionary+KeyCase.swift */,
 				71AB6B9C20D476D300E3CA73 /* Dictionary+Operation.swift */,
 				71B6F2B320D33C0B00B232C9 /* Dictionary+Operator.swift */,
+				718DCD6E20E89104000634B2 /* Dictionary+Remove.swift */,
 				71EAAF9A20D140B900A648D8 /* Dictionary+Subscript.swift */,
 			);
 			path = Dictionary;
@@ -333,12 +333,12 @@
 		71EAAF9F20D1438F00A648D8 /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
-				71105C4C20D9359D00AB7B22 /* DictionaryEmptyRemovedTests.swift */,
 				71D7F6AC20DF700100525259 /* DictionaryHasTests.swift */,
 				71E71C5820D72DC00009C1A9 /* DictionaryJSONTests.swift */,
 				7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */,
 				716CF09920D47AC00040BF9B /* DictionaryOperationTests.swift */,
 				715F943420D3E9EC001C785F /* DictionaryOperatorTests.swift */,
+				718DCD7020E891DD000634B2 /* DictionaryRemoveTests.swift */,
 				71EAAF9C20D1437600A648D8 /* DictionarySubscriptTests.swift */,
 			);
 			path = Dictionary;
@@ -488,7 +488,6 @@
 				71A8004B20C164020029B141 /* String+Trim.swift in Sources */,
 				71B6F2B420D33C0B00B232C9 /* Dictionary+Operator.swift in Sources */,
 				71E71C5720D72C1C0009C1A9 /* Dictionary+JSON.swift in Sources */,
-				71105C4B20D9333600AB7B22 /* Dictionary+EmptyRemoved.swift in Sources */,
 				71FAC84620DF878100D8E1C1 /* Array+SafeSubscript.swift in Sources */,
 				71375E2E20CAB46000C6A7E0 /* String+Height.swift in Sources */,
 				7177623720C3573F001F2C8E /* String+Number.swift in Sources */,
@@ -502,6 +501,7 @@
 				71EAAF9B20D140B900A648D8 /* Dictionary+Subscript.swift in Sources */,
 				71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */,
 				712BB74A20CF64A300F01034 /* String+Dictionary.swift in Sources */,
+				718DCD6F20E89104000634B2 /* Dictionary+Remove.swift in Sources */,
 				71958F9220D088B400AFCBA5 /* String+Array.swift in Sources */,
 				71AB6B9D20D476D300E3CA73 /* Dictionary+Operation.swift in Sources */,
 				71A4568620C0A609003E739C /* String+SafeSubscript.swift in Sources */,
@@ -526,11 +526,11 @@
 				71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */,
 				71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */,
 				7192D8C320D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift in Sources */,
-				71105C4D20D9359D00AB7B22 /* DictionaryEmptyRemovedTests.swift in Sources */,
 				71E07BDA20E755E200CC83FC /* ArrayHasTests.swift in Sources */,
 				71ACDC5F20BF7E990071FF33 /* StringWordsTests.swift in Sources */,
 				71375E3020CAB4BD00C6A7E0 /* StringHeightTests.swift in Sources */,
 				71B2660F20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift in Sources */,
+				718DCD7120E891DD000634B2 /* DictionaryRemoveTests.swift in Sources */,
 				718DCD6920E879C3000634B2 /* ArrayRemoveTests.swift in Sources */,
 				71AF15C920CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift in Sources */,
 				710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */,
