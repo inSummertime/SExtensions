@@ -30,6 +30,8 @@
 		7177623920C35DF1001F2C8E /* StringNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177623820C35DF1001F2C8E /* StringNumberTests.swift */; };
 		717D0E1320E3A838005E972D /* Array+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717D0E1220E3A838005E972D /* Array+Operation.swift */; };
 		717D0E1520E3ABA5005E972D /* ArrayOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */; };
+		718DCD6720E86D95000634B2 /* Array+Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6620E86D95000634B2 /* Array+Remove.swift */; };
+		718DCD6920E879C3000634B2 /* ArrayRemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */; };
 		7192D8C320D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */; };
 		71958F9220D088B400AFCBA5 /* String+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71958F9120D088B400AFCBA5 /* String+Array.swift */; };
 		71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71958F9320D0892A00AFCBA5 /* StringArrayTests.swift */; };
@@ -109,6 +111,8 @@
 		7177623820C35DF1001F2C8E /* StringNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringNumberTests.swift; sourceTree = "<group>"; };
 		717D0E1220E3A838005E972D /* Array+Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Operation.swift"; sourceTree = "<group>"; };
 		717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOperationTests.swift; sourceTree = "<group>"; };
+		718DCD6620E86D95000634B2 /* Array+Remove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Remove.swift"; sourceTree = "<group>"; };
+		718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayRemoveTests.swift; sourceTree = "<group>"; };
 		7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryKeyCaseTests.swift; sourceTree = "<group>"; };
 		71958F9120D088B400AFCBA5 /* String+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Array.swift"; sourceTree = "<group>"; };
 		71958F9320D0892A00AFCBA5 /* StringArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringArrayTests.swift; sourceTree = "<group>"; };
@@ -346,6 +350,7 @@
 				71E07BD720E7545400CC83FC /* Array+Has.swift */,
 				717D0E1220E3A838005E972D /* Array+Operation.swift */,
 				710A111220E4FF590054262F /* Array+Operator.swift */,
+				718DCD6620E86D95000634B2 /* Array+Remove.swift */,
 				71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */,
 			);
 			path = Array;
@@ -357,6 +362,7 @@
 				71E07BD920E755E200CC83FC /* ArrayHasTests.swift */,
 				717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */,
 				710A111420E50AA70054262F /* ArrayOperatorTests.swift */,
+				718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */,
 				71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */,
 			);
 			path = Array;
@@ -476,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				717D0E1320E3A838005E972D /* Array+Operation.swift in Sources */,
+				718DCD6720E86D95000634B2 /* Array+Remove.swift in Sources */,
 				71CC5AC520CB44C200C4D564 /* String+Truncate.swift in Sources */,
 				71C28FC020BE36BA00EF3654 /* String+Separate.swift in Sources */,
 				71A8004B20C164020029B141 /* String+Trim.swift in Sources */,
@@ -524,6 +531,7 @@
 				71ACDC5F20BF7E990071FF33 /* StringWordsTests.swift in Sources */,
 				71375E3020CAB4BD00C6A7E0 /* StringHeightTests.swift in Sources */,
 				71B2660F20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift in Sources */,
+				718DCD6920E879C3000634B2 /* ArrayRemoveTests.swift in Sources */,
 				71AF15C920CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift in Sources */,
 				710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */,
 				71EAAF9D20D1437600A648D8 /* DictionarySubscriptTests.swift in Sources */,
