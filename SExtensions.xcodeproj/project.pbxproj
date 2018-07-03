@@ -11,6 +11,8 @@
 		710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111420E50AA70054262F /* ArrayOperatorTests.swift */; };
 		712BB74A20CF64A300F01034 /* String+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712BB74920CF64A300F01034 /* String+Dictionary.swift */; };
 		712BB74C20CF65D400F01034 /* StringDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */; };
+		7130148020EB193200161E23 /* Array+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7130147F20EB193200161E23 /* Array+Index.swift */; };
+		7130148220EB1C3700161E23 /* ArrayIndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7130148120EB1C3700161E23 /* ArrayIndexTests.swift */; };
 		71375E2E20CAB46000C6A7E0 /* String+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71375E2D20CAB46000C6A7E0 /* String+Height.swift */; };
 		71375E3020CAB4BD00C6A7E0 /* StringHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */; };
 		71479E7B20C7482800418144 /* String+Affix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71479E7A20C7482800418144 /* String+Affix.swift */; };
@@ -89,6 +91,8 @@
 		710A111420E50AA70054262F /* ArrayOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOperatorTests.swift; sourceTree = "<group>"; };
 		712BB74920CF64A300F01034 /* String+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Dictionary.swift"; sourceTree = "<group>"; };
 		712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDictionaryTests.swift; sourceTree = "<group>"; };
+		7130147F20EB193200161E23 /* Array+Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Index.swift"; sourceTree = "<group>"; };
+		7130148120EB1C3700161E23 /* ArrayIndexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayIndexTests.swift; sourceTree = "<group>"; };
 		71375E2D20CAB46000C6A7E0 /* String+Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Height.swift"; sourceTree = "<group>"; };
 		71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHeightTests.swift; sourceTree = "<group>"; };
 		71479E7A20C7482800418144 /* String+Affix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Affix.swift"; sourceTree = "<group>"; };
@@ -348,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				71E07BD720E7545400CC83FC /* Array+Has.swift */,
+				7130147F20EB193200161E23 /* Array+Index.swift */,
 				717D0E1220E3A838005E972D /* Array+Operation.swift */,
 				710A111220E4FF590054262F /* Array+Operator.swift */,
 				718DCD6620E86D95000634B2 /* Array+Remove.swift */,
@@ -360,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				71E07BD920E755E200CC83FC /* ArrayHasTests.swift */,
+				7130148120EB1C3700161E23 /* ArrayIndexTests.swift */,
 				717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */,
 				710A111420E50AA70054262F /* ArrayOperatorTests.swift */,
 				718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */,
@@ -506,6 +512,7 @@
 				71AB6B9D20D476D300E3CA73 /* Dictionary+Operation.swift in Sources */,
 				71A4568620C0A609003E739C /* String+SafeSubscript.swift in Sources */,
 				71AB823E20C61A7400EC2A24 /* String+Alphanumeric.swift in Sources */,
+				7130148020EB193200161E23 /* Array+Index.swift in Sources */,
 				71479E7B20C7482800418144 /* String+Affix.swift in Sources */,
 				71CE20A820D5DA0B00C0A5ED /* Dictionary+KeyCase.swift in Sources */,
 				71C28FBC20BE346500EF3654 /* String+Condense.swift in Sources */,
@@ -541,6 +548,7 @@
 				716CF09A20D47AC00040BF9B /* DictionaryOperationTests.swift in Sources */,
 				71D7F6AD20DF700100525259 /* DictionaryHasTests.swift in Sources */,
 				71CC5AC720CB4E6600C4D564 /* StringTruncateTests.swift in Sources */,
+				7130148220EB1C3700161E23 /* ArrayIndexTests.swift in Sources */,
 				71AB824020C623AF00EC2A24 /* StringAlphanumericTests.swift in Sources */,
 				71A8004D20C1642D0029B141 /* StringTrimTests.swift in Sources */,
 				71FAC84920DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift in Sources */,
