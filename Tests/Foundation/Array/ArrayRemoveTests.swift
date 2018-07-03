@@ -60,6 +60,7 @@ final class ArrayRemoveTests: XCTestCase {
     
     func testRemovingDuplicates() {
         XCTAssertEqual(["hello", "world", "!", "hello", "world", "!"].removingDuplicates(), ["hello", "world", "!"])
+        XCTAssertEqual([0, 1, 0, 1].removingDuplicates(), [0, 1])
         XCTAssertEqual([String]().removingDuplicates(), [])
     }
     

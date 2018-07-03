@@ -16,6 +16,11 @@ final class ArraySafeSubscriptTests: XCTestCase {
         XCTAssertEqual(["hello", "world"][safe: 1]!, "world")
     }
     
+    func testSafeIndices() {
+        XCTAssertEqual(["hello"][safeIndices: 0, 1], ["hello"])
+        XCTAssertEqual(["hello"][safeIndices: 2, 3], [])
+    }
+    
     func testSafeSubscriptCountableRange() {
         let array = ["hello", "world", "!"]
         XCTAssertNil(array[safe: -10..<(-1)])
