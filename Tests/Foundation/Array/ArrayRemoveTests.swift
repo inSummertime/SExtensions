@@ -58,4 +58,9 @@ final class ArrayRemoveTests: XCTestCase {
         XCTAssertEqual((["hello", "", [[]], ["!": [NSNull()]]].removingEmpty() as! [String]), ["hello"])
     }
     
+    func testRemovingDuplicates() {
+        XCTAssertEqual(["hello", "world", "!", "hello", "world", "!"].removingDuplicates(), ["hello", "world", "!"])
+        XCTAssertEqual([String]().removingDuplicates(), [])
+    }
+    
 }

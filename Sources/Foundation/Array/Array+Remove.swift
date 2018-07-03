@@ -128,4 +128,20 @@ public extension Array where Element : Equatable {
         return self
     }
     
+    /// Returns an array which does not contain duplicated elements.
+    ///
+    ///     print(["hello", "world", "!", "hello", "world", "!"].removingDuplicates())
+    ///     // Prints "["hello", "world", "!"]"
+    ///
+    /// - Returns: An array.
+    func removingDuplicates() -> Array {
+        var result = Array()
+        for element in self {
+            if !result.contains(element) {
+                result.append(element)
+            }
+        }
+        return result
+    }
+    
 }
