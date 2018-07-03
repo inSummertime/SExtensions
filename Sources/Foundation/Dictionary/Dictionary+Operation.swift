@@ -81,7 +81,8 @@ public extension Dictionary where Value: Equatable {
     /// Returns a new dictionary with the elements that are different from the
     /// given dictionaries.
     ///
-    ///
+    ///     print(["hello": 0].difference(["hello": 0, "world": 1])
+    ///     // Prints "["world": 1]"
     ///
     /// - Parameter others: other dictionaries
     /// - Returns: a new dictionary
