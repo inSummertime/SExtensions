@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		710A111320E4FF590054262F /* Array+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111220E4FF590054262F /* Array+Operator.swift */; };
 		710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111420E50AA70054262F /* ArrayOperatorTests.swift */; };
+		711A3CCD20ED8ED90056E2E3 /* DoubleBoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A3CCC20ED8ED90056E2E3 /* DoubleBoolTests.swift */; };
 		712BB74A20CF64A300F01034 /* String+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712BB74920CF64A300F01034 /* String+Dictionary.swift */; };
 		712BB74C20CF65D400F01034 /* StringDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */; };
 		7130148020EB193200161E23 /* Array+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7130147F20EB193200161E23 /* Array+Index.swift */; };
@@ -55,6 +56,7 @@
 		71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5941C20BB71040073EE20 /* String+Bool.swift */; };
 		71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5942020BB73F50073EE20 /* StringBoolTests.swift */; };
 		71B6F2B420D33C0B00B232C9 /* Dictionary+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B6F2B320D33C0B00B232C9 /* Dictionary+Operator.swift */; };
+		71C28F3020EC4A6100C56F45 /* Double+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28F2F20EC4A6100C56F45 /* Double+Bool.swift */; };
 		71C28FBC20BE346500EF3654 /* String+Condense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FBB20BE346500EF3654 /* String+Condense.swift */; };
 		71C28FBE20BE348600EF3654 /* StringCondenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FBD20BE348600EF3654 /* StringCondenseTests.swift */; };
 		71C28FC020BE36BA00EF3654 /* String+Separate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FBF20BE36BA00EF3654 /* String+Separate.swift */; };
@@ -89,6 +91,7 @@
 /* Begin PBXFileReference section */
 		710A111220E4FF590054262F /* Array+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Operator.swift"; sourceTree = "<group>"; };
 		710A111420E50AA70054262F /* ArrayOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOperatorTests.swift; sourceTree = "<group>"; };
+		711A3CCC20ED8ED90056E2E3 /* DoubleBoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleBoolTests.swift; sourceTree = "<group>"; };
 		712BB74920CF64A300F01034 /* String+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Dictionary.swift"; sourceTree = "<group>"; };
 		712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDictionaryTests.swift; sourceTree = "<group>"; };
 		7130147F20EB193200161E23 /* Array+Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Index.swift"; sourceTree = "<group>"; };
@@ -138,6 +141,7 @@
 		71B5941C20BB71040073EE20 /* String+Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Bool.swift"; sourceTree = "<group>"; };
 		71B5942020BB73F50073EE20 /* StringBoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringBoolTests.swift; sourceTree = "<group>"; };
 		71B6F2B320D33C0B00B232C9 /* Dictionary+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Operator.swift"; sourceTree = "<group>"; };
+		71C28F2F20EC4A6100C56F45 /* Double+Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Bool.swift"; sourceTree = "<group>"; };
 		71C28FBB20BE346500EF3654 /* String+Condense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Condense.swift"; sourceTree = "<group>"; };
 		71C28FBD20BE348600EF3654 /* StringCondenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCondenseTests.swift; sourceTree = "<group>"; };
 		71C28FBF20BE36BA00EF3654 /* String+Separate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Separate.swift"; sourceTree = "<group>"; };
@@ -280,6 +284,7 @@
 			children = (
 				71FAC84720DF87A800D8E1C1 /* Array */,
 				71EAAF9E20D1438200A648D8 /* Dictionary */,
+				71C28F3120EC4A6900C56F45 /* Double */,
 				71697E4620B91EE8005C58EC /* String */,
 			);
 			path = Foundation;
@@ -316,8 +321,17 @@
 				71FAC84A20DF87E900D8E1C1 /* Array */,
 				71EAAF9F20D1438F00A648D8 /* Dictionary */,
 				71697E4A20B91F17005C58EC /* String */,
+				711A3CCC20ED8ED90056E2E3 /* DoubleBoolTests.swift */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		71C28F3120EC4A6900C56F45 /* Double */ = {
+			isa = PBXGroup;
+			children = (
+				71C28F2F20EC4A6100C56F45 /* Double+Bool.swift */,
+			);
+			path = Double;
 			sourceTree = "<group>";
 		};
 		71EAAF9E20D1438200A648D8 /* Dictionary */ = {
@@ -517,6 +531,7 @@
 				71CE20A820D5DA0B00C0A5ED /* Dictionary+KeyCase.swift in Sources */,
 				71C28FBC20BE346500EF3654 /* String+Condense.swift in Sources */,
 				71F367E820CEA24E00C01A74 /* NSMutableAttributedString+Format.swift in Sources */,
+				71C28F3020EC4A6100C56F45 /* Double+Bool.swift in Sources */,
 				71E07BD820E7545400CC83FC /* Array+Has.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +550,7 @@
 				7192D8C320D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift in Sources */,
 				71E07BDA20E755E200CC83FC /* ArrayHasTests.swift in Sources */,
 				71ACDC5F20BF7E990071FF33 /* StringWordsTests.swift in Sources */,
+				711A3CCD20ED8ED90056E2E3 /* DoubleBoolTests.swift in Sources */,
 				71375E3020CAB4BD00C6A7E0 /* StringHeightTests.swift in Sources */,
 				71B2660F20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift in Sources */,
 				718DCD7120E891DD000634B2 /* DictionaryRemoveTests.swift in Sources */,
