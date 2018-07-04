@@ -22,7 +22,10 @@ public extension Array {
     
     /// Returns an array if the indices are within bounds.
     ///
-    /// - Parameter indices: the indices the elements are at
+    ///     print(["hello"][safeIndices: 0, 1])
+    ///     // Prints "["hello"]"
+    ///
+    /// - Parameter indices: the indices the elements are at.
     subscript(safeIndices indices: Int...) -> Array {
         var result = Array()
         for index in indices {
