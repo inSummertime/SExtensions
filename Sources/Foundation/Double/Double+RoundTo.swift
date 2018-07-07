@@ -12,6 +12,9 @@ public extension Double {
     
     /// Returns a rounded double with a specific decimal.
     ///
+    ///     print(3.1415926.round(to: 2))
+    ///     // Prints "3.14"
+    ///
     /// - Parameter places: How many decimal.
     /// - Returns: A rounded double.
     func round(to places: Int) -> Double {
