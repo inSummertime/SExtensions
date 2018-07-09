@@ -11,6 +11,12 @@ import XCTest
 
 final class DoubleCurrencyTests: XCTestCase {
     
+    func testLocalCurrency() {
+        if Locale.current.identifier == "en_US" {
+            XCTAssertEqual(100.0.localCurrency, "$100.00")
+        }
+    }
+    
     func testUSDollar() {
         XCTAssertTrue(100.0.USDollar == "$100.00" || 100.0.USDollar == "US$100.00")
         XCTAssertTrue(00.0000000.USDollar == "$0.00" || 00.0000000.USDollar == "US$0.00")
