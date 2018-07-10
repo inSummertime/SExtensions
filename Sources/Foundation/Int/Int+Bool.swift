@@ -1,18 +1,18 @@
 //
-//  Double+Bool.swift
+//  Int+Bool.swift
 //  SExtensions
 //
-//  Created by Ray on 2018/7/4.
+//  Created by Ray on 7/10/18.
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
 import Foundation
 
-public extension Double {
+public extension Int {
     
     /// Checks if it means true
     ///
-    ///     print(1.0.bool)
+    ///     print(1.bool)
     ///     // Prints "true"
     var bool: Bool {
         return NSNumber(value: self) == NSNumber(value: true)
