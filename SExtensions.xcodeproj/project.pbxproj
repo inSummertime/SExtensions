@@ -42,6 +42,8 @@
 		719ECA7C20F3ADEA00F7901B /* DoubleCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719ECA7B20F3ADEA00F7901B /* DoubleCurrencyTests.swift */; };
 		71A4568620C0A609003E739C /* String+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A4568520C0A609003E739C /* String+SafeSubscript.swift */; };
 		71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A4568720C0A657003E739C /* StringSafeSubscriptTests.swift */; };
+		71A4B17D20F4327B00F5D044 /* Int+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A4B17C20F4327B00F5D044 /* Int+Bool.swift */; };
+		71A4B17F20F432A900F5D044 /* IntBoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A4B17E20F432A900F5D044 /* IntBoolTests.swift */; };
 		71A8004B20C164020029B141 /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8004A20C164020029B141 /* String+Trim.swift */; };
 		71A8004D20C1642D0029B141 /* StringTrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8004C20C1642D0029B141 /* StringTrimTests.swift */; };
 		71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB2F3420BCBA740060F4CB /* String+Case.swift */; };
@@ -133,6 +135,8 @@
 		719ECA7B20F3ADEA00F7901B /* DoubleCurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCurrencyTests.swift; sourceTree = "<group>"; };
 		71A4568520C0A609003E739C /* String+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+SafeSubscript.swift"; sourceTree = "<group>"; };
 		71A4568720C0A657003E739C /* StringSafeSubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSafeSubscriptTests.swift; sourceTree = "<group>"; };
+		71A4B17C20F4327B00F5D044 /* Int+Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Bool.swift"; sourceTree = "<group>"; };
+		71A4B17E20F432A900F5D044 /* IntBoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntBoolTests.swift; sourceTree = "<group>"; };
 		71A8004A20C164020029B141 /* String+Trim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Trim.swift"; sourceTree = "<group>"; };
 		71A8004C20C1642D0029B141 /* StringTrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTrimTests.swift; sourceTree = "<group>"; };
 		71AB2F3420BCBA740060F4CB /* String+Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Case.swift"; sourceTree = "<group>"; };
@@ -297,6 +301,7 @@
 				71FAC84720DF87A800D8E1C1 /* Array */,
 				71EAAF9E20D1438200A648D8 /* Dictionary */,
 				71C28F3120EC4A6900C56F45 /* Double */,
+				71A4B18120F432EB00F5D044 /* Int */,
 				71697E4620B91EE8005C58EC /* String */,
 			);
 			path = Foundation;
@@ -333,9 +338,26 @@
 				71FAC84A20DF87E900D8E1C1 /* Array */,
 				71EAAF9F20D1438F00A648D8 /* Dictionary */,
 				71ADB14220EFAC8E00FD8FCE /* Double */,
+				71A4B18020F432E100F5D044 /* Int */,
 				71697E4A20B91F17005C58EC /* String */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		71A4B18020F432E100F5D044 /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				71A4B17E20F432A900F5D044 /* IntBoolTests.swift */,
+			);
+			path = Int;
+			sourceTree = "<group>";
+		};
+		71A4B18120F432EB00F5D044 /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				71A4B17C20F4327B00F5D044 /* Int+Bool.swift */,
+			);
+			path = Int;
 			sourceTree = "<group>";
 		};
 		71ADB14220EFAC8E00FD8FCE /* Double */ = {
@@ -554,6 +576,7 @@
 				71958F9220D088B400AFCBA5 /* String+Array.swift in Sources */,
 				71AB6B9D20D476D300E3CA73 /* Dictionary+Operation.swift in Sources */,
 				71A4568620C0A609003E739C /* String+SafeSubscript.swift in Sources */,
+				71A4B17D20F4327B00F5D044 /* Int+Bool.swift in Sources */,
 				71AB823E20C61A7400EC2A24 /* String+Alphanumeric.swift in Sources */,
 				7130148020EB193200161E23 /* Array+Index.swift in Sources */,
 				71479E7B20C7482800418144 /* String+Affix.swift in Sources */,
@@ -572,6 +595,7 @@
 				71479E7D20C7494700418144 /* StringAffixTests.swift in Sources */,
 				715F943520D3E9EC001C785F /* DictionaryOperatorTests.swift in Sources */,
 				7177623920C35DF1001F2C8E /* StringNumberTests.swift in Sources */,
+				71A4B17F20F432A900F5D044 /* IntBoolTests.swift in Sources */,
 				714EB30120C207D9002ED5DE /* StringDateTests.swift in Sources */,
 				71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */,
 				71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */,
