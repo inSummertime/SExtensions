@@ -58,4 +58,9 @@ final class ArrayOperationTests: XCTestCase {
         XCTAssertTrue(["hello"].contains(["hello"]))
     }
     
+    func testSum() {
+        XCTAssertEqual([1, 2, 3].sum, 6)
+        XCTAssertEqual([1.0, 2.0, 3.0].sum, 6.0)
+    }
+    
 }
