@@ -12,10 +12,9 @@ import XCTest
 final class BoolToggleTests: XCTestCase {
     
     func testToggle() {
-        var bool = true
+        var bool: Bool = true
         bool.toggle()
         XCTAssertEqual(bool, false)
-        XCTAssertEqual(bool.toggle(), true)
     }
     
 }

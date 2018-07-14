@@ -18,10 +18,8 @@ public extension Bool {
     ///     // Prints "false"
     ///
     /// - Returns: Toggled value
-    @discardableResult
-    mutating func toggle() -> Bool {
+    mutating func toggle() {
         self = !self
-        return self
     }
     
 }
