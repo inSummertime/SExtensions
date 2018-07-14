@@ -1,8 +1,8 @@
 //
-//  Bool+Toggle.swift
+//  Bool+ToggleValue.swift
 //  SExtensions
 //
-//  Created by Ray on 7/12/18.
+//  Created by Ray on 7/14/18.
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
