@@ -13,11 +13,11 @@ public extension Bool {
     /// Toggles the value.
     ///
     ///     var bool = true
-    ///     bool.toggle()
+    ///     bool.toggleValue()
     ///     print(bool)
     ///     // Prints "false"
     ///
-    /// - Returns: Toggled value
+    /// - Returns: The toggled value.
     mutating func toggleValue() {
         self = !self
     }
