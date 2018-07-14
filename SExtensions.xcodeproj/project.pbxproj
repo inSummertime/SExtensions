@@ -14,6 +14,8 @@
 		712BB74C20CF65D400F01034 /* StringDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */; };
 		7130148020EB193200161E23 /* Array+Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7130147F20EB193200161E23 /* Array+Index.swift */; };
 		7130148220EB1C3700161E23 /* ArrayIndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7130148120EB1C3700161E23 /* ArrayIndexTests.swift */; };
+		7133739720F971F2004E7CAB /* Date+TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7133739620F971F2004E7CAB /* Date+TimeInterval.swift */; };
+		7133739A20F97313004E7CAB /* DateTimeIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7133739920F97313004E7CAB /* DateTimeIntervalTests.swift */; };
 		71375E2E20CAB46000C6A7E0 /* String+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71375E2D20CAB46000C6A7E0 /* String+Height.swift */; };
 		71375E3020CAB4BD00C6A7E0 /* StringHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */; };
 		71479E7B20C7482800418144 /* String+Affix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71479E7A20C7482800418144 /* String+Affix.swift */; };
@@ -108,6 +110,8 @@
 		712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDictionaryTests.swift; sourceTree = "<group>"; };
 		7130147F20EB193200161E23 /* Array+Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Index.swift"; sourceTree = "<group>"; };
 		7130148120EB1C3700161E23 /* ArrayIndexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayIndexTests.swift; sourceTree = "<group>"; };
+		7133739620F971F2004E7CAB /* Date+TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+TimeInterval.swift"; sourceTree = "<group>"; };
+		7133739920F97313004E7CAB /* DateTimeIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeIntervalTests.swift; sourceTree = "<group>"; };
 		71375E2D20CAB46000C6A7E0 /* String+Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Height.swift"; sourceTree = "<group>"; };
 		71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHeightTests.swift; sourceTree = "<group>"; };
 		71479E7A20C7482800418144 /* String+Affix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Affix.swift"; sourceTree = "<group>"; };
@@ -206,6 +210,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7133739820F972CF004E7CAB /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				7133739620F971F2004E7CAB /* Date+TimeInterval.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		7133739B20F9731A004E7CAB /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				7133739920F97313004E7CAB /* DateTimeIntervalTests.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
 		714B021920F5E14C007DD87B /* Bool */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +346,7 @@
 			children = (
 				71FAC84720DF87A800D8E1C1 /* Array */,
 				714B021920F5E14C007DD87B /* Bool */,
+				7133739820F972CF004E7CAB /* Date */,
 				71EAAF9E20D1438200A648D8 /* Dictionary */,
 				71C28F3120EC4A6900C56F45 /* Double */,
 				71A4B18120F432EB00F5D044 /* Int */,
@@ -364,6 +385,7 @@
 			children = (
 				71FAC84A20DF87E900D8E1C1 /* Array */,
 				714B021A20F5E157007DD87B /* Bool */,
+				7133739B20F9731A004E7CAB /* Date */,
 				71EAAF9F20D1438F00A648D8 /* Dictionary */,
 				71ADB14220EFAC8E00FD8FCE /* Double */,
 				71A4B18020F432E100F5D044 /* Int */,
@@ -597,6 +619,7 @@
 				71AE5F6920F1824C0026EFAE /* Double+Percentage.swift in Sources */,
 				71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */,
 				714EB2FF20C206ED002ED5DE /* String+Date.swift in Sources */,
+				7133739720F971F2004E7CAB /* Date+TimeInterval.swift in Sources */,
 				71EAAF9B20D140B900A648D8 /* Dictionary+Subscript.swift in Sources */,
 				71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */,
 				712BB74A20CF64A300F01034 /* String+Dictionary.swift in Sources */,
@@ -658,6 +681,7 @@
 				71FAC84920DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift in Sources */,
 				717D0E1520E3ABA5005E972D /* ArrayOperationTests.swift in Sources */,
 				71E71C5920D72DC00009C1A9 /* DictionaryJSONTests.swift in Sources */,
+				7133739A20F97313004E7CAB /* DateTimeIntervalTests.swift in Sources */,
 				71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */,
 				71C28FBE20BE348600EF3654 /* StringCondenseTests.swift in Sources */,
 			);
