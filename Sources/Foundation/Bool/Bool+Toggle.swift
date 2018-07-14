@@ -18,7 +18,7 @@ public extension Bool {
     ///     // Prints "false"
     ///
     /// - Returns: Toggled value
-    mutating func toggle() {
+    mutating func toggleValue() {
         self = !self
     }
     

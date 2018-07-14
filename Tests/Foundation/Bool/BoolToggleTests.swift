@@ -13,7 +13,7 @@ final class BoolToggleTests: XCTestCase {
     
     func testToggle() {
         var bool: Bool = true
-        bool.toggle()
+        bool.toggleValue()
         XCTAssertEqual(bool, false)
     }
     
