@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7107C56E20FAB31500790D4D /* Date+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107C56D20FAB31500790D4D /* Date+Init.swift */; };
+		7107C57020FAB64A00790D4D /* DateInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107C56F20FAB64A00790D4D /* DateInitTests.swift */; };
 		710A111320E4FF590054262F /* Array+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111220E4FF590054262F /* Array+Operator.swift */; };
 		710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111420E50AA70054262F /* ArrayOperatorTests.swift */; };
 		711A3CCD20ED8ED90056E2E3 /* DoubleBoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A3CCC20ED8ED90056E2E3 /* DoubleBoolTests.swift */; };
@@ -103,6 +105,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7107C56D20FAB31500790D4D /* Date+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Init.swift"; sourceTree = "<group>"; };
+		7107C56F20FAB64A00790D4D /* DateInitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInitTests.swift; sourceTree = "<group>"; };
 		710A111220E4FF590054262F /* Array+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Operator.swift"; sourceTree = "<group>"; };
 		710A111420E50AA70054262F /* ArrayOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOperatorTests.swift; sourceTree = "<group>"; };
 		711A3CCC20ED8ED90056E2E3 /* DoubleBoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleBoolTests.swift; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				7133739620F971F2004E7CAB /* Date+TimeInterval.swift */,
+				7107C56D20FAB31500790D4D /* Date+Init.swift */,
 			);
 			path = Date;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				7133739920F97313004E7CAB /* DateTimeIntervalTests.swift */,
+				7107C56F20FAB64A00790D4D /* DateInitTests.swift */,
 			);
 			path = Date;
 			sourceTree = "<group>";
@@ -614,6 +620,7 @@
 				71B2660D20C8C5670045AA33 /* NSAttributedString+Concatenate.swift in Sources */,
 				71D7F6AB20DF63DB00525259 /* Dictionary+Has.swift in Sources */,
 				71ACDC5C20BF7E650071FF33 /* String+Words.swift in Sources */,
+				7107C56E20FAB31500790D4D /* Date+Init.swift in Sources */,
 				7183031020F9A27600C0961A /* Bool+ToggleValue.swift in Sources */,
 				710A111320E4FF590054262F /* Array+Operator.swift in Sources */,
 				71AF15C720CCD93C006641D3 /* NSAttributedString+Formatting.swift in Sources */,
@@ -648,6 +655,7 @@
 				71479E7D20C7494700418144 /* StringAffixTests.swift in Sources */,
 				715F943520D3E9EC001C785F /* DictionaryOperatorTests.swift in Sources */,
 				7177623920C35DF1001F2C8E /* StringNumberTests.swift in Sources */,
+				7107C57020FAB64A00790D4D /* DateInitTests.swift in Sources */,
 				71A4B17F20F432A900F5D044 /* IntBoolTests.swift in Sources */,
 				714EB30120C207D9002ED5DE /* StringDateTests.swift in Sources */,
 				71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */,
