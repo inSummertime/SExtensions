@@ -30,8 +30,8 @@ public extension Date {
         return calendar.date(byAdding: dateComponents, to: self)
     }
     
-    /// Returns a new `Date` by updating a dictionary of calendar component and
-    /// Int value.
+    /// Returns a new `Date` by updating a dictionary of calendar component
+    /// and Int value.
     ///
     ///     print(Date(timeIntervalSinceReferenceDate: 0).updatingComponentDictionary([.day: 2, .hour: 1, .minute: 1], in: Calendar(identifier: Calendar.Identifier.gregorian)))
     ///     // Prints "Optional(2001-01-02 01:01:00 +0000)"
