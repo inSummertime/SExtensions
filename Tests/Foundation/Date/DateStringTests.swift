@@ -29,4 +29,27 @@ final class DateStringTests: XCTestCase {
         XCTAssertEqual(string, "2001.01.01 at 00:00:00 +0000")
     }
     
+    func testMonth() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        let timeZone = TimeZone(secondsFromGMT: 0)!
+        let locale = Locale(identifier: "en")
+        XCTAssertEqual(date.month(style: .full, calendar: calendar, timeZone: timeZone, locale: locale), "January")
+        XCTAssertEqual(date.month(style: .threeLetterAbbreviation, calendar: calendar, timeZone: timeZone, locale: locale), "Jan")
+        XCTAssertEqual(date.month(style: .oneLetterAbbreviation, calendar: calendar, timeZone: timeZone, locale: locale), "J")
+        XCTAssertEqual(date.month(style: .oneDigit, calendar: calendar, timeZone: timeZone, locale: locale), "1")
+        XCTAssertEqual(date.month(style: .twoDigits, calendar: calendar, timeZone: timeZone, locale: locale), "01")
+    }
+    
+    func testDayName() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        let timeZone = TimeZone(secondsFromGMT: 0)!
+        let locale = Locale(identifier: "en")
+        XCTAssertEqual(date.dayName(style: .full, calendar: calendar, timeZone: timeZone, locale: locale), "Monday")
+        XCTAssertEqual(date.dayName(style: .threeLetterAbbreviation, calendar: calendar, timeZone: timeZone, locale: locale), "Mon")
+        XCTAssertEqual(date.dayName(style: .twoLetterAbbreviation, calendar: calendar, timeZone: timeZone, locale: locale), "Mo")
+        XCTAssertEqual(date.dayName(style: .oneLetterAbbreviation, calendar: calendar, timeZone: timeZone, locale: locale), "M")
+    }
+    
 }
