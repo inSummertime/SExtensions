@@ -20,7 +20,7 @@ final class DateComponentTests: XCTestCase {
         XCTAssertEqual(date.second, 0)
     }
     
-    func testComponent() {
+    func testComponentInCalendar() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.timeZone = TimeZone(secondsFromGMT: 0)!
@@ -30,6 +30,26 @@ final class DateComponentTests: XCTestCase {
         XCTAssertEqual(date.component(.hour, in: calendar), 0)
         XCTAssertEqual(date.component(.minute, in: calendar), 0)
         XCTAssertEqual(date.component(.second, in: calendar), 0)
+    }
+    
+    func testComponentSinceDateInCalendar() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        let sometimeNextYear = date.addingTimeInterval(Date.timeIntervalPerWeek * 77)
+        XCTAssertEqual(sometimeNextYear.component(.era, since: date, in: calendar)!, 0)
+        XCTAssertEqual(sometimeNextYear.component(.year, since: date, in: calendar)!, 1)
+        XCTAssertEqual(sometimeNextYear.component(.yearForWeekOfYear, since: date, in: calendar)!, 1)
+        XCTAssertEqual(sometimeNextYear.component(.month, since: date, in: calendar)!, 17)
+        XCTAssertEqual(sometimeNextYear.component(.weekOfYear, since: date, in: calendar)!, 77)
+        XCTAssertEqual(sometimeNextYear.component(.weekOfMonth, since: date, in: calendar)!, 77)
+        XCTAssertEqual(sometimeNextYear.component(.weekdayOrdinal, since: date, in: calendar)!, 77)
+        XCTAssertEqual(sometimeNextYear.component(.weekday, since: date, in: calendar)!, 77 * 7)
+        XCTAssertEqual(sometimeNextYear.component(.day, since: date, in: calendar)!, 77 * 7)
+        XCTAssertEqual(sometimeNextYear.component(.hour, since: date, in: calendar)!, 77 * 7 * 24)
+        XCTAssertEqual(sometimeNextYear.component(.minute, since: date, in: calendar)!, 77 * 7 * 24 * 60)
+        XCTAssertEqual(sometimeNextYear.component(.second, since: date, in: calendar)!, 77 * 7 * 24 * 60 * 60)
+        XCTAssertNil(sometimeNextYear.component(.calendar, since: date, in: calendar))
     }
     
 }

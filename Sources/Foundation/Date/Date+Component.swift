@@ -56,4 +56,25 @@ public extension Date {
         return calendar.component(component, from: self)
     }
     
+    /// Returns the value for one component since a date.
+    ///
+    ///     let date = Date(timeIntervalSinceReferenceDate: 0)
+    ///     var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+    ///     calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+    ///     let sometimeNextYear = date.addingTimeInterval(Date.timeIntervalPerWeek * 77)
+    ///     print(sometimeNextYear.component(.weekOfYear, since: date, in: calendar))
+    ///     // Prints "77"
+    ///
+    /// - Parameters:
+    ///   - component: The component to calculate.
+    ///   - date: A date.
+    ///   - calendar: A calendar.
+    /// - Returns: The value for one component
+    func component(_ component: Calendar.Component, since date: Date, in calendar: Calendar) -> Int? {
+        if component == .calendar || component == .timeZone || component == .quarter || component == .nanosecond {
+            return nil
+        }
+        return calendar.dateComponents([component], from: date, to: self).value(for: component)
+    }
+    
 }
