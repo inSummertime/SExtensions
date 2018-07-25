@@ -19,19 +19,22 @@ final class DateCountTests: XCTestCase {
     
     func testDayCountThisYear() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
-        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
         XCTAssertEqual(date.dayCountThisYear(in: calendar), 365)
     }
     
     func testWeekCountThisMonth() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
-        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
         XCTAssertEqual(date.weekCountThisMonth(in: calendar), 5)
     }
     
     func testWeekCountThisYear() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
-        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
         XCTAssertEqual(date.weekCountThisYear(in: calendar), 53)
     }
     
