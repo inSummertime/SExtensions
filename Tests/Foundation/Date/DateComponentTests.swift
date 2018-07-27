@@ -52,4 +52,20 @@ final class DateComponentTests: XCTestCase {
         XCTAssertNil(sometimeNextYear.component(.calendar, since: date, in: calendar))
     }
     
+    func testComponentDictionary() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        let sometimeNextYear = date.addingTimeInterval(Date.timeIntervalPerWeek * 77 + Date.timeIntervalPerDay + Date.timeIntervalPerHour + Date.timeIntervalPerMinute + 1.0)
+        let dictionary = sometimeNextYear.componentDictionary([.era, .year, .month, .weekOfMonth, .day, .hour, .minute, .second], since: date, in: calendar)
+        XCTAssertEqual(dictionary[.era], 0)
+        XCTAssertEqual(dictionary[.year], 1)
+        XCTAssertEqual(dictionary[.month], 5)
+        XCTAssertEqual(dictionary[.weekOfMonth], 3)
+        XCTAssertEqual(dictionary[.day], 3)
+        XCTAssertEqual(dictionary[.hour], 1)
+        XCTAssertEqual(dictionary[.minute], 1)
+        XCTAssertEqual(dictionary[.second], 1)
+    }
+    
 }
