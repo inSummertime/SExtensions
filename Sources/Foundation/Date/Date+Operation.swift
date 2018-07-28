@@ -46,7 +46,9 @@ public extension Date {
         dateComponents.calendar = calendar
         var hasInvalidValue = false
         dictionary.forEach { (key, value) in
-            if value <= 0 {
+            if value < 0 {
+                hasInvalidValue = true
+            } else if (key == .month || key == .day) && value == 0 {
                 hasInvalidValue = true
             } else {
                 let currentValue = calendar.component(key, from: self)

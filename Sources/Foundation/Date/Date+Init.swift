@@ -46,16 +46,16 @@ public extension Date {
     ///   - minute: Minute.
     ///   - second: Second.
     init?(calendar: Calendar = .current, timeZone: TimeZone = .current, year: Int, month: Int? = nil, day: Int? = nil, hour: Int? = nil, minute: Int? = nil, second: Int? = nil) {
-        var components = DateComponents()
-        components.calendar = calendar
-        components.timeZone = timeZone
-        components.year = year
-        components.month = month
-        components.day = day
-        components.hour = hour
-        components.minute = minute
-        components.second = second
-        if let date = calendar.date(from: components) {
+        var dateComponents = DateComponents()
+        dateComponents.calendar = calendar
+        dateComponents.timeZone = timeZone
+        dateComponents.year = year
+        dateComponents.month = month
+        dateComponents.day = day
+        dateComponents.hour = hour
+        dateComponents.minute = minute
+        dateComponents.second = second
+        if let date = calendar.date(from: dateComponents) {
             self = date
         } else {
             return nil

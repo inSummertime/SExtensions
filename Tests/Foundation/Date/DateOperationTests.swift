@@ -51,8 +51,8 @@ final class DateOperationTests: XCTestCase {
         let nextDayHours = date.addingTimeInterval(Date.timeIntervalPerDay + Date.timeIntervalPerHour * 24)
         XCTAssertEqual(date.updatingComponentDictionary([.day: 2, .hour: 24], in: calendar), nextDayHours)
         
-        XCTAssertNil(date.updatingComponentDictionary([.day: 2, .hour: 1, .minute: 0], in: calendar))
-        XCTAssertNil(date.updatingComponentDictionary([.day: 2, .hour: 1, .minute: -1], in: calendar))
+        XCTAssertNil(date.updatingComponentDictionary([.month: 0, .hour: 1, .minute: 0], in: calendar))
+        XCTAssertNil(date.updatingComponentDictionary([.day: 0, .hour: 1, .minute: -1], in: calendar))
     }
     
 }
