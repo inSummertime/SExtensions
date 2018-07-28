@@ -27,6 +27,8 @@ public extension Date {
         switch component {
         case .year:
             components = [.year]
+        case .yearForWeekOfYear:
+            components = [.yearForWeekOfYear]
         case .month:
             components = [.year, .month]
         case .day:
@@ -37,7 +39,7 @@ public extension Date {
             components = [.year, .month, .day, .hour, .minute]
         case .second:
             return self
-        case .weekOfYear, .weekOfMonth:
+        case .weekOfYear, .weekOfMonth, .weekday:
             components = [.yearForWeekOfYear, .weekOfYear]
         default:
             return nil
@@ -59,7 +61,7 @@ public extension Date {
     ///   - calendar: A Calendar.
     /// - Returns: A date created from the specified component.
     func end(of component: Calendar.Component, in calendar: Calendar = Calendar.current) -> Date? {
-        if component == .year || component == .month || component == .day || component == .hour || component == .minute {
+        if component == .year || component == .month || component == .day || component == .hour || component == .minute || component == .yearForWeekOfYear {
             var dateComponents = DateComponents()
             dateComponents.calendar = calendar
             dateComponents.setValue(1, for: component)
@@ -71,7 +73,7 @@ public extension Date {
             } else {
                 return nil
             }
-        } else if component == .weekOfYear || component == .weekOfMonth {
+        } else if component == .weekOfYear || component == .weekOfMonth || component == .weekday {
             var dateComponents = DateComponents()
             dateComponents.calendar = calendar
             dateComponents.setValue(7, for: .day)
