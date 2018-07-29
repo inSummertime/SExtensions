@@ -12,13 +12,11 @@ import XCTest
 final class DateIsInTests: XCTestCase {
     
     func testIsInThePast() {
-        let yesterday = Date().addingTimeInterval(-Date.timeIntervalPerDay)
-        XCTAssertTrue(yesterday.isInThePast)
+        XCTAssertTrue(Date().addingTimeInterval(-Date.timeIntervalPerDay).isInThePast)
     }
     
     func testIsInTheFuture() {
-        let tomorrow = Date().addingTimeInterval(Date.timeIntervalPerDay)
-        XCTAssertTrue(tomorrow.isInTheFuture)
+        XCTAssertTrue(Date().addingTimeInterval(Date.timeIntervalPerDay).isInTheFuture)
     }
     
     func testIsInLastYear() {
@@ -73,6 +71,64 @@ final class DateIsInTests: XCTestCase {
         dateComponents.setValue(1, for: .year)
         let nextYear = calendar.date(byAdding: dateComponents, to: Date())
         XCTAssertTrue(nextYear!.isInNextYear(in: calendar)!)
+    }
+    
+    func testIsInTheMorning() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        XCTAssertFalse(date.addingTimeInterval(Date.timeIntervalPerHour * 3).isInTheMorning(in: calendar))
+        XCTAssertTrue(date.addingTimeInterval(Date.timeIntervalPerHour * 6).isInTheMorning(in: calendar))
+        XCTAssertTrue(date.addingTimeInterval(Date.timeIntervalPerHour * 9).isInTheMorning(in: calendar))
+        XCTAssertTrue(date.addingTimeInterval(Date.timeIntervalPerHour * 12).isInTheMorning(in: calendar))
+        XCTAssertFalse(date.addingTimeInterval(Date.timeIntervalPerHour * 15).isInTheMorning(in: calendar))
+    }
+    
+    func testIsInTheAfternoon() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        XCTAssertFalse(date.addingTimeInterval(Date.timeIntervalPerHour * 12).isInTheAfternoon(in: calendar))
+        XCTAssertTrue(date.addingTimeInterval(Date.timeIntervalPerHour * 15).isInTheAfternoon(in: calendar))
+        XCTAssertFalse(date.addingTimeInterval(Date.timeIntervalPerHour * 18).isInTheAfternoon(in: calendar))
+    }
+    
+    func testIsInTheEvening() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        XCTAssertFalse(date.addingTimeInterval(Date.timeIntervalPerHour * 15).isInTheEvening(in: calendar))
+        XCTAssertTrue(date.addingTimeInterval(Date.timeIntervalPerHour * 18).isInTheEvening(in: calendar))
+        XCTAssertFalse(date.addingTimeInterval(Date.timeIntervalPerHour * 21).isInTheEvening(in: calendar))
+        XCTAssertFalse(date.addingTimeInterval(Date.timeIntervalPerHour * 24).isInTheEvening(in: calendar))
+    }
+    
+    func testIsAtNight() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        XCTAssertTrue(date.isAtNight(in: calendar))
+        XCTAssertTrue(date.addingTimeInterval(Date.timeIntervalPerHour * 3).isAtNight(in: calendar))
+        XCTAssertFalse(date.addingTimeInterval(Date.timeIntervalPerHour * 6).isAtNight(in: calendar))
+        XCTAssertFalse(date.addingTimeInterval(Date.timeIntervalPerHour * 18).isAtNight(in: calendar))
+        XCTAssertTrue(date.addingTimeInterval(Date.timeIntervalPerHour * 21).isAtNight(in: calendar))
+        XCTAssertTrue(date.addingTimeInterval(Date.timeIntervalPerHour * 24).isAtNight(in: calendar))
+    }
+    
+    func testIsAtNoon() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        XCTAssertFalse(date.isAtNoon(in: calendar))
+        XCTAssertTrue(date.addingTimeInterval(Date.timeIntervalPerHour * 12).isAtNoon(in: calendar))
+    }
+    
+    func testIsAtMidnight() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        XCTAssertTrue(date.isAtMidnight(in: calendar))
+        XCTAssertFalse(date.addingTimeInterval(Date.timeIntervalPerHour * 12).isAtMidnight(in: calendar))
     }
     
 }
