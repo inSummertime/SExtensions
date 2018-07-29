@@ -55,4 +55,18 @@ final class DateOperationTests: XCTestCase {
         XCTAssertNil(date.updatingComponentDictionary([.day: 0, .hour: 1, .minute: -1], in: calendar))
     }
     
+    func testEarlierOrSame() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        let nextSecond = date.addingTimeInterval(1)
+        XCTAssertTrue(date <= nextSecond)
+        XCTAssertTrue(date <= Date(timeIntervalSinceReferenceDate: 0))
+    }
+    
+    func testLaterOrSame() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        let nextSecond = date.addingTimeInterval(1)
+        XCTAssertTrue(nextSecond >= date)
+        XCTAssertTrue(date >= Date(timeIntervalSinceReferenceDate: 0))
+    }
+    
 }
