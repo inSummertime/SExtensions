@@ -25,4 +25,14 @@ public extension Date {
         return lhs.timeIntervalSince(rhs)
     }
     
+    /// Returns true if the left hand `Date` is earlier in time than the right hand `Date` or the two `Date` values represent the same point in time.
+    static func <= (lhs: Date, rhs: Date) -> Bool {
+        return lhs == rhs || lhs < rhs
+    }
+    
+    /// Returns true if the left hand `Date` is later in time than the right hand `Date` or the two `Date` values represent the same point in time.
+    static func >= (lhs: Date, rhs: Date) -> Bool {
+        return lhs == rhs || lhs > rhs
+    }
+    
 }
