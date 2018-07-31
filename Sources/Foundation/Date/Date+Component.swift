@@ -40,9 +40,19 @@ public extension Date {
         return Calendar.current.component(.second, from: self)
     }
     
-    /// A set for all available calendar components
+    /// A set of all available calendar components.
     static var calendarComponentSet: Set<Calendar.Component> {
         return [.era, .year, .month, .day, .hour, .minute, .second, .weekdayOrdinal, .weekOfMonth, .weekOfYear, .yearForWeekOfYear, .weekday]
+    }
+    
+    /// A set of all calendar components for a day.
+    static var calendarDayComponentSet: Set<Calendar.Component> {
+        return [.year, .month, .day]
+    }
+    
+    /// A set of all calendar components for a day and time.
+    static var calendarDayAndTimeComponentSet: Set<Calendar.Component> {
+        return [.year, .month, .day, .hour, .minute, .second]
     }
     
     /// Returns the value for one component.
@@ -57,8 +67,25 @@ public extension Date {
     ///   - component: The component to calculate.
     ///   - calendar: A calendar.
     /// - Returns: The value for one component.
-    func component(_ component: Calendar.Component, in calendar: Calendar) -> Int {
+    func component(_ component: Calendar.Component, in calendar: Calendar) -> Int? {
+        if component == .calendar || component == .timeZone {
+            return nil
+        }
         return calendar.component(component, from: self)
+    }
+    
+    /// Returns the value for one component.
+    ///
+    ///     let date = Date(timeIntervalSinceReferenceDate: 0)
+    ///     print(date[.year])
+    ///     // Prints "Optional(2001)"
+    ///
+    /// - Parameter component: The component to calculate.
+    subscript(component: Calendar.Component) -> Int? {
+        if component == .calendar || component == .timeZone {
+            return nil
+        }
+        return Calendar.current.component(component, from: self)
     }
     
     /// Returns the value for one component since a date.
