@@ -49,6 +49,8 @@
 		7183031220F9A2A200C0961A /* BoolToggleValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183031120F9A2A200C0961A /* BoolToggleValueTests.swift */; };
 		718557F2210BEA0300BBFD32 /* Date+Truncated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718557F1210BEA0300BBFD32 /* Date+Truncated.swift */; };
 		718557F4210BEA4300BBFD32 /* DateTruncatedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718557F3210BEA4300BBFD32 /* DateTruncatedTests.swift */; };
+		718D2B47210FEC15002649BE /* Date+Comparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718D2B46210FEC15002649BE /* Date+Comparison.swift */; };
+		718D2B49210FED01002649BE /* DateComparisonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718D2B48210FED01002649BE /* DateComparisonTests.swift */; };
 		718DCD6720E86D95000634B2 /* Array+Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6620E86D95000634B2 /* Array+Remove.swift */; };
 		718DCD6920E879C3000634B2 /* ArrayRemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */; };
 		718DCD6F20E89104000634B2 /* Dictionary+Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6E20E89104000634B2 /* Dictionary+Remove.swift */; };
@@ -166,6 +168,8 @@
 		7183031120F9A2A200C0961A /* BoolToggleValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolToggleValueTests.swift; sourceTree = "<group>"; };
 		718557F1210BEA0300BBFD32 /* Date+Truncated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Truncated.swift"; sourceTree = "<group>"; };
 		718557F3210BEA4300BBFD32 /* DateTruncatedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTruncatedTests.swift; sourceTree = "<group>"; };
+		718D2B46210FEC15002649BE /* Date+Comparison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Comparison.swift"; sourceTree = "<group>"; };
+		718D2B48210FED01002649BE /* DateComparisonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComparisonTests.swift; sourceTree = "<group>"; };
 		718DCD6620E86D95000634B2 /* Array+Remove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Remove.swift"; sourceTree = "<group>"; };
 		718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayRemoveTests.swift; sourceTree = "<group>"; };
 		718DCD6E20E89104000634B2 /* Dictionary+Remove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Remove.swift"; sourceTree = "<group>"; };
@@ -249,6 +253,7 @@
 		7133739820F972CF004E7CAB /* Date */ = {
 			isa = PBXGroup;
 			children = (
+				718D2B46210FEC15002649BE /* Date+Comparison.swift */,
 				713B00E0210617E000305F64 /* Date+Component.swift */,
 				711272A22108180F006C550E /* Date+Count.swift */,
 				7107C56D20FAB31500790D4D /* Date+Init.swift */,
@@ -266,6 +271,7 @@
 		7133739B20F9731A004E7CAB /* Date */ = {
 			isa = PBXGroup;
 			children = (
+				718D2B48210FED01002649BE /* DateComparisonTests.swift */,
 				712FD315210621E500165D5A /* DateComponentTests.swift */,
 				711272A421081936006C550E /* DateCountTests.swift */,
 				7107C56F20FAB64A00790D4D /* DateInitTests.swift */,
@@ -693,6 +699,7 @@
 				71A4568620C0A609003E739C /* String+SafeSubscript.swift in Sources */,
 				713B00E1210617E000305F64 /* Date+Component.swift in Sources */,
 				71A4B17D20F4327B00F5D044 /* Int+Bool.swift in Sources */,
+				718D2B47210FEC15002649BE /* Date+Comparison.swift in Sources */,
 				71AB823E20C61A7400EC2A24 /* String+Alphanumeric.swift in Sources */,
 				7130148020EB193200161E23 /* Array+Index.swift in Sources */,
 				71479E7B20C7482800418144 /* String+Affix.swift in Sources */,
@@ -752,6 +759,7 @@
 				717D0E1520E3ABA5005E972D /* ArrayOperationTests.swift in Sources */,
 				71E71C5920D72DC00009C1A9 /* DictionaryJSONTests.swift in Sources */,
 				7133739A20F97313004E7CAB /* DateTimeIntervalTests.swift in Sources */,
+				718D2B49210FED01002649BE /* DateComparisonTests.swift in Sources */,
 				71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */,
 				71C28FBE20BE348600EF3654 /* StringCondenseTests.swift in Sources */,
 				71BA5BCE21000F4C002CE891 /* DateStartTests.swift in Sources */,
