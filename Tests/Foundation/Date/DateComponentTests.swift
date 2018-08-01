@@ -20,6 +20,16 @@ final class DateComponentTests: XCTestCase {
         XCTAssertEqual(date.second, 0)
     }
     
+    func testUTCComponents() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        XCTAssertEqual(date.yearUTC, 2001)
+        XCTAssertEqual(date.monthUTC, 1)
+        XCTAssertEqual(date.dayUTC, 1)
+        XCTAssertEqual(date.hourUTC, 0)
+        XCTAssertEqual(date.minuteUTC, 0)
+        XCTAssertEqual(date.secondUTC, 0)
+    }
+    
     func testComponentInCalendar() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
