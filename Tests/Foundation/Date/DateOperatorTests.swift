@@ -18,4 +18,18 @@ final class DateOperatorTests: XCTestCase {
         XCTAssertEqual(date - nextDay, -Date.timeIntervalPerDay)
     }
     
+    func testLessThanOrEqualTo() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        let next = date.addingTimeInterval(1)
+        XCTAssertTrue(date <= next)
+        XCTAssertTrue(date <= Date(timeIntervalSinceReferenceDate: 0))
+    }
+    
+    func testGreaterThanOrEqualTo() {
+        let date = Date(timeIntervalSinceReferenceDate: 0)
+        let next = date.addingTimeInterval(1)
+        XCTAssertTrue(next >= date)
+        XCTAssertTrue(date >= Date(timeIntervalSinceReferenceDate: 0))
+    }
+    
 }
