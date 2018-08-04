@@ -35,6 +35,8 @@
 		714B021820F5E141007DD87B /* BoolIntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714B021720F5E141007DD87B /* BoolIntTests.swift */; };
 		714EB2FF20C206ED002ED5DE /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EB2FE20C206ED002ED5DE /* String+Date.swift */; };
 		714EB30120C207D9002ED5DE /* StringDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EB30020C207D9002ED5DE /* StringDateTests.swift */; };
+		715CF54C21166346009187BF /* DateInterval+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CF54B21166346009187BF /* DateInterval+Operator.swift */; };
+		715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */; };
 		715F943520D3E9EC001C785F /* DictionaryOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F943420D3E9EC001C785F /* DictionaryOperatorTests.swift */; };
 		71697E2920B91CDB005C58EC /* SExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71697E1F20B91CDB005C58EC /* SExtensions.framework */; };
 		71697E3020B91CDB005C58EC /* SExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 71697E2220B91CDB005C58EC /* SExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -152,6 +154,8 @@
 		714B021720F5E141007DD87B /* BoolIntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolIntTests.swift; sourceTree = "<group>"; };
 		714EB2FE20C206ED002ED5DE /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		714EB30020C207D9002ED5DE /* StringDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDateTests.swift; sourceTree = "<group>"; };
+		715CF54B21166346009187BF /* DateInterval+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval+Operator.swift"; sourceTree = "<group>"; };
+		715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalOperatorTests.swift; sourceTree = "<group>"; };
 		715F943420D3E9EC001C785F /* DictionaryOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryOperatorTests.swift; sourceTree = "<group>"; };
 		71697E1F20B91CDB005C58EC /* SExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71697E2220B91CDB005C58EC /* SExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SExtensions.h; sourceTree = "<group>"; };
@@ -267,6 +271,7 @@
 				7127BD2320FEB70500816D4B /* Date+String.swift */,
 				7133739620F971F2004E7CAB /* Date+TimeInterval.swift */,
 				718557F1210BEA0300BBFD32 /* Date+Truncated.swift */,
+				715CF54B21166346009187BF /* DateInterval+Operator.swift */,
 			);
 			path = Date;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				7127BD2520FEB82D00816D4B /* DateStringTests.swift */,
 				7133739920F97313004E7CAB /* DateTimeIntervalTests.swift */,
 				718557F3210BEA4300BBFD32 /* DateTruncatedTests.swift */,
+				715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */,
 			);
 			path = Date;
 			sourceTree = "<group>";
@@ -679,6 +685,7 @@
 				71B2660D20C8C5670045AA33 /* NSAttributedString+Concatenate.swift in Sources */,
 				71D7F6AB20DF63DB00525259 /* Dictionary+Has.swift in Sources */,
 				71BA5BCC21000F2E002CE891 /* Date+Start.swift in Sources */,
+				715CF54C21166346009187BF /* DateInterval+Operator.swift in Sources */,
 				7127BD2420FEB70500816D4B /* Date+String.swift in Sources */,
 				71ACDC5C20BF7E650071FF33 /* String+Words.swift in Sources */,
 				7107C56E20FAB31500790D4D /* Date+Init.swift in Sources */,
@@ -765,6 +772,7 @@
 				7133739A20F97313004E7CAB /* DateTimeIntervalTests.swift in Sources */,
 				718D2B49210FED01002649BE /* DateComparisonTests.swift in Sources */,
 				71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */,
+				715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */,
 				71C28FBE20BE348600EF3654 /* StringCondenseTests.swift in Sources */,
 				71BA5BCE21000F4C002CE891 /* DateStartTests.swift in Sources */,
 				711EBCD920FD73FB0061AA57 /* DateOperationTests.swift in Sources */,
