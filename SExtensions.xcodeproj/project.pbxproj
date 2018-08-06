@@ -98,6 +98,8 @@
 		71C28FBE20BE348600EF3654 /* StringCondenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FBD20BE348600EF3654 /* StringCondenseTests.swift */; };
 		71C28FC020BE36BA00EF3654 /* String+Separate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FBF20BE36BA00EF3654 /* String+Separate.swift */; };
 		71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FC120BE385400EF3654 /* StringSeparateTests.swift */; };
+		71C49E10211903E800BEB644 /* DateInterval+Reschedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C49E0F211903E800BEB644 /* DateInterval+Reschedule.swift */; };
+		71C49E1221190C7F00BEB644 /* DateIntervalRescheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C49E1121190C7F00BEB644 /* DateIntervalRescheduleTests.swift */; };
 		71CC5AC520CB44C200C4D564 /* String+Truncate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CC5AC420CB44C200C4D564 /* String+Truncate.swift */; };
 		71CC5AC720CB4E6600C4D564 /* StringTruncateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CC5AC620CB4E6600C4D564 /* StringTruncateTests.swift */; };
 		71CE20A820D5DA0B00C0A5ED /* Dictionary+KeyCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE20A720D5DA0B00C0A5ED /* Dictionary+KeyCase.swift */; };
@@ -222,6 +224,8 @@
 		71C28FBD20BE348600EF3654 /* StringCondenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCondenseTests.swift; sourceTree = "<group>"; };
 		71C28FBF20BE36BA00EF3654 /* String+Separate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Separate.swift"; sourceTree = "<group>"; };
 		71C28FC120BE385400EF3654 /* StringSeparateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSeparateTests.swift; sourceTree = "<group>"; };
+		71C49E0F211903E800BEB644 /* DateInterval+Reschedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval+Reschedule.swift"; sourceTree = "<group>"; };
+		71C49E1121190C7F00BEB644 /* DateIntervalRescheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalRescheduleTests.swift; sourceTree = "<group>"; };
 		71CC5AC420CB44C200C4D564 /* String+Truncate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Truncate.swift"; sourceTree = "<group>"; };
 		71CC5AC620CB4E6600C4D564 /* StringTruncateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTruncateTests.swift; sourceTree = "<group>"; };
 		71CE20A720D5DA0B00C0A5ED /* Dictionary+KeyCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+KeyCase.swift"; sourceTree = "<group>"; };
@@ -276,6 +280,7 @@
 				7133739620F971F2004E7CAB /* Date+TimeInterval.swift */,
 				718557F1210BEA0300BBFD32 /* Date+Truncated.swift */,
 				715CF54B21166346009187BF /* DateInterval+Operator.swift */,
+				71C49E0F211903E800BEB644 /* DateInterval+Reschedule.swift */,
 				712AF1392117B08D004715A1 /* DateInterval+String.swift */,
 			);
 			path = Date;
@@ -297,6 +302,7 @@
 				718557F3210BEA4300BBFD32 /* DateTruncatedTests.swift */,
 				715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */,
 				712AF13B2117B23C004715A1 /* DateIntervalStringTests.swift */,
+				71C49E1121190C7F00BEB644 /* DateIntervalRescheduleTests.swift */,
 			);
 			path = Date;
 			sourceTree = "<group>";
@@ -712,6 +718,7 @@
 				712BB74A20CF64A300F01034 /* String+Dictionary.swift in Sources */,
 				718DCD6F20E89104000634B2 /* Dictionary+Remove.swift in Sources */,
 				71958F9220D088B400AFCBA5 /* String+Array.swift in Sources */,
+				71C49E10211903E800BEB644 /* DateInterval+Reschedule.swift in Sources */,
 				714B021620F5E0EA007DD87B /* Bool+Int.swift in Sources */,
 				71AB6B9D20D476D300E3CA73 /* Dictionary+Operation.swift in Sources */,
 				71A4568620C0A609003E739C /* String+SafeSubscript.swift in Sources */,
@@ -735,6 +742,7 @@
 			files = (
 				71479E7D20C7494700418144 /* StringAffixTests.swift in Sources */,
 				715F943520D3E9EC001C785F /* DictionaryOperatorTests.swift in Sources */,
+				71C49E1221190C7F00BEB644 /* DateIntervalRescheduleTests.swift in Sources */,
 				7127BD2620FEB82D00816D4B /* DateStringTests.swift in Sources */,
 				7177623920C35DF1001F2C8E /* StringNumberTests.swift in Sources */,
 				7107C57020FAB64A00790D4D /* DateInitTests.swift in Sources */,
