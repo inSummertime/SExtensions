@@ -60,6 +60,8 @@
 		718DCD6920E879C3000634B2 /* ArrayRemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */; };
 		718DCD6F20E89104000634B2 /* Dictionary+Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6E20E89104000634B2 /* Dictionary+Remove.swift */; };
 		718DCD7120E891DD000634B2 /* DictionaryRemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD7020E891DD000634B2 /* DictionaryRemoveTests.swift */; };
+		71903E85211A54BA00CE88F7 /* DateInterval+DurationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71903E84211A54BA00CE88F7 /* DateInterval+DurationComponent.swift */; };
+		71903E87211A55A700CE88F7 /* DateIntervalDurationComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71903E86211A55A700CE88F7 /* DateIntervalDurationComponentTests.swift */; };
 		7192D8C320D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */; };
 		71958F9220D088B400AFCBA5 /* String+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71958F9120D088B400AFCBA5 /* String+Array.swift */; };
 		71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71958F9320D0892A00AFCBA5 /* StringArrayTests.swift */; };
@@ -186,6 +188,8 @@
 		718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayRemoveTests.swift; sourceTree = "<group>"; };
 		718DCD6E20E89104000634B2 /* Dictionary+Remove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Remove.swift"; sourceTree = "<group>"; };
 		718DCD7020E891DD000634B2 /* DictionaryRemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryRemoveTests.swift; sourceTree = "<group>"; };
+		71903E84211A54BA00CE88F7 /* DateInterval+DurationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval+DurationComponent.swift"; sourceTree = "<group>"; };
+		71903E86211A55A700CE88F7 /* DateIntervalDurationComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalDurationComponentTests.swift; sourceTree = "<group>"; };
 		7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryKeyCaseTests.swift; sourceTree = "<group>"; };
 		71958F9120D088B400AFCBA5 /* String+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Array.swift"; sourceTree = "<group>"; };
 		71958F9320D0892A00AFCBA5 /* StringArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringArrayTests.swift; sourceTree = "<group>"; };
@@ -279,6 +283,7 @@
 				7127BD2320FEB70500816D4B /* Date+String.swift */,
 				7133739620F971F2004E7CAB /* Date+TimeInterval.swift */,
 				718557F1210BEA0300BBFD32 /* Date+Truncated.swift */,
+				71903E84211A54BA00CE88F7 /* DateInterval+DurationComponent.swift */,
 				715CF54B21166346009187BF /* DateInterval+Operator.swift */,
 				71C49E0F211903E800BEB644 /* DateInterval+Reschedule.swift */,
 				712AF1392117B08D004715A1 /* DateInterval+String.swift */,
@@ -300,6 +305,7 @@
 				7127BD2520FEB82D00816D4B /* DateStringTests.swift */,
 				7133739920F97313004E7CAB /* DateTimeIntervalTests.swift */,
 				718557F3210BEA4300BBFD32 /* DateTruncatedTests.swift */,
+				71903E86211A55A700CE88F7 /* DateIntervalDurationComponentTests.swift */,
 				715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */,
 				712AF13B2117B23C004715A1 /* DateIntervalStringTests.swift */,
 				71C49E1121190C7F00BEB644 /* DateIntervalRescheduleTests.swift */,
@@ -692,6 +698,7 @@
 				71B6F2B420D33C0B00B232C9 /* Dictionary+Operator.swift in Sources */,
 				71E71C5720D72C1C0009C1A9 /* Dictionary+JSON.swift in Sources */,
 				71FAC84620DF878100D8E1C1 /* Array+SafeSubscript.swift in Sources */,
+				71903E85211A54BA00CE88F7 /* DateInterval+DurationComponent.swift in Sources */,
 				71375E2E20CAB46000C6A7E0 /* String+Height.swift in Sources */,
 				7177623720C3573F001F2C8E /* String+Number.swift in Sources */,
 				71ADB13F20EFAC3F00FD8FCE /* Double+RoundTo.swift in Sources */,
@@ -765,6 +772,7 @@
 				71AF15C920CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift in Sources */,
 				710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */,
 				71A0F60621021C5D008FAD76 /* DateIsInTests.swift in Sources */,
+				71903E87211A55A700CE88F7 /* DateIntervalDurationComponentTests.swift in Sources */,
 				71AE5F6B20F183830026EFAE /* DoublePercentageTests.swift in Sources */,
 				71EAAF9D20D1437600A648D8 /* DictionarySubscriptTests.swift in Sources */,
 				71DEFCD02109554D000A03C9 /* DateOperatorTests.swift in Sources */,
