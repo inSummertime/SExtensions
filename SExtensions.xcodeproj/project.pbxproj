@@ -32,6 +32,7 @@
 		71375E2E20CAB46000C6A7E0 /* String+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71375E2D20CAB46000C6A7E0 /* String+Height.swift */; };
 		71375E3020CAB4BD00C6A7E0 /* StringHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */; };
 		713B00E1210617E000305F64 /* Date+Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B00E0210617E000305F64 /* Date+Component.swift */; };
+		713FBA26211FAAA300207986 /* TimeZone+UTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713FBA25211FAAA300207986 /* TimeZone+UTC.swift */; };
 		71479E7B20C7482800418144 /* String+Affix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71479E7A20C7482800418144 /* String+Affix.swift */; };
 		71479E7D20C7494700418144 /* StringAffixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71479E7C20C7494700418144 /* StringAffixTests.swift */; };
 		714B021620F5E0EA007DD87B /* Bool+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714B021520F5E0EA007DD87B /* Bool+Int.swift */; };
@@ -162,6 +163,7 @@
 		71375E2D20CAB46000C6A7E0 /* String+Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Height.swift"; sourceTree = "<group>"; };
 		71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHeightTests.swift; sourceTree = "<group>"; };
 		713B00E0210617E000305F64 /* Date+Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Component.swift"; sourceTree = "<group>"; };
+		713FBA25211FAAA300207986 /* TimeZone+UTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+UTC.swift"; sourceTree = "<group>"; };
 		71479E7A20C7482800418144 /* String+Affix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Affix.swift"; sourceTree = "<group>"; };
 		71479E7C20C7494700418144 /* StringAffixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAffixTests.swift; sourceTree = "<group>"; };
 		714B021520F5E0EA007DD87B /* Bool+Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Int.swift"; sourceTree = "<group>"; };
@@ -335,6 +337,14 @@
 			path = Date;
 			sourceTree = "<group>";
 		};
+		713FBA27211FAB9200207986 /* TimeZone */ = {
+			isa = PBXGroup;
+			children = (
+				713FBA25211FAAA300207986 /* TimeZone+UTC.swift */,
+			);
+			path = TimeZone;
+			sourceTree = "<group>";
+		};
 		714B021920F5E14C007DD87B /* Bool */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,6 +471,7 @@
 				71C28F3120EC4A6900C56F45 /* Double */,
 				71A4B18120F432EB00F5D044 /* Int */,
 				71697E4620B91EE8005C58EC /* String */,
+				713FBA27211FAB9200207986 /* TimeZone */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -734,6 +745,7 @@
 				7127BD2420FEB70500816D4B /* Date+String.swift in Sources */,
 				71ACDC5C20BF7E650071FF33 /* String+Words.swift in Sources */,
 				7107C56E20FAB31500790D4D /* Date+Init.swift in Sources */,
+				713FBA26211FAAA300207986 /* TimeZone+UTC.swift in Sources */,
 				7183031020F9A27600C0961A /* Bool+ToggleValue.swift in Sources */,
 				710A111320E4FF590054262F /* Array+Operator.swift in Sources */,
 				7128D64E211554D200A06FE0 /* Date+Is24HourTime.swift in Sources */,
