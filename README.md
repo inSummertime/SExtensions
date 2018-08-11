@@ -36,7 +36,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target>' do
-pod 'SExtensions', '~> 0.7.0'
+pod 'SExtensions', '~> 0.8.0'
 end
 ```
 
