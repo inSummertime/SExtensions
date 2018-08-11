@@ -11,6 +11,7 @@
 		7107C57020FAB64A00790D4D /* DateInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107C56F20FAB64A00790D4D /* DateInitTests.swift */; };
 		710A111320E4FF590054262F /* Array+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111220E4FF590054262F /* Array+Operator.swift */; };
 		710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111420E50AA70054262F /* ArrayOperatorTests.swift */; };
+		710BDE97211E5FF800317F46 /* Calendar+Gregorian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710BDE96211E5FF800317F46 /* Calendar+Gregorian.swift */; };
 		711272A32108180F006C550E /* Date+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711272A22108180F006C550E /* Date+Count.swift */; };
 		711272A521081936006C550E /* DateCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711272A421081936006C550E /* DateCountTests.swift */; };
 		711A3CCD20ED8ED90056E2E3 /* DoubleBoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A3CCC20ED8ED90056E2E3 /* DoubleBoolTests.swift */; };
@@ -140,6 +141,7 @@
 		7107C56F20FAB64A00790D4D /* DateInitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInitTests.swift; sourceTree = "<group>"; };
 		710A111220E4FF590054262F /* Array+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Operator.swift"; sourceTree = "<group>"; };
 		710A111420E50AA70054262F /* ArrayOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOperatorTests.swift; sourceTree = "<group>"; };
+		710BDE96211E5FF800317F46 /* Calendar+Gregorian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Gregorian.swift"; sourceTree = "<group>"; };
 		711272A22108180F006C550E /* Date+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Count.swift"; sourceTree = "<group>"; };
 		711272A421081936006C550E /* DateCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCountTests.swift; sourceTree = "<group>"; };
 		711A3CCC20ED8ED90056E2E3 /* DoubleBoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleBoolTests.swift; sourceTree = "<group>"; };
@@ -276,6 +278,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		710BDE98211E604600317F46 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				710BDE96211E5FF800317F46 /* Calendar+Gregorian.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		7133739820F972CF004E7CAB /* Date */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,6 +455,7 @@
 			children = (
 				71FAC84720DF87A800D8E1C1 /* Array */,
 				714B021920F5E14C007DD87B /* Bool */,
+				710BDE98211E604600317F46 /* Calendar */,
 				7133739820F972CF004E7CAB /* Date */,
 				71EAAF9E20D1438200A648D8 /* Dictionary */,
 				71C28F3120EC4A6900C56F45 /* Double */,
@@ -710,6 +721,7 @@
 				71A0F6042102151D008FAD76 /* Date+IsIn.swift in Sources */,
 				71B6F2B420D33C0B00B232C9 /* Dictionary+Operator.swift in Sources */,
 				71E71C5720D72C1C0009C1A9 /* Dictionary+JSON.swift in Sources */,
+				710BDE97211E5FF800317F46 /* Calendar+Gregorian.swift in Sources */,
 				71FAC84620DF878100D8E1C1 /* Array+SafeSubscript.swift in Sources */,
 				71903E85211A54BA00CE88F7 /* DateInterval+DurationComponent.swift in Sources */,
 				71375E2E20CAB46000C6A7E0 /* String+Height.swift in Sources */,
