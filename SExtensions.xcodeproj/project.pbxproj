@@ -309,12 +309,6 @@
 				7133739620F971F2004E7CAB /* Date+TimeInterval.swift */,
 				718557F1210BEA0300BBFD32 /* Date+Truncated.swift */,
 				71DEFCCD2109544A000A03C9 /* Date+Operator.swift */,
-				71AD0354211D088A00D5B536 /* DateInterval+Contains.swift */,
-				71903E84211A54BA00CE88F7 /* DateInterval+DurationComponent.swift */,
-				715CF54B21166346009187BF /* DateInterval+Operator.swift */,
-				71C49E0F211903E800BEB644 /* DateInterval+Reschedule.swift */,
-				7153D14D211BBDB600C0A1C7 /* DateInterval+Split.swift */,
-				712AF1392117B08D004715A1 /* DateInterval+String.swift */,
 			);
 			path = Date;
 			sourceTree = "<group>";
@@ -333,12 +327,6 @@
 				7127BD2520FEB82D00816D4B /* DateStringTests.swift */,
 				7133739920F97313004E7CAB /* DateTimeIntervalTests.swift */,
 				718557F3210BEA4300BBFD32 /* DateTruncatedTests.swift */,
-				71AD0356211D095C00D5B536 /* DateIntervalContainsTests.swift */,
-				71903E86211A55A700CE88F7 /* DateIntervalDurationComponentTests.swift */,
-				715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */,
-				71C49E1121190C7F00BEB644 /* DateIntervalRescheduleTests.swift */,
-				7153D14F211BC23800C0A1C7 /* DateIntervalSplitTests.swift */,
-				712AF13B2117B23C004715A1 /* DateIntervalStringTests.swift */,
 			);
 			path = Date;
 			sourceTree = "<group>";
@@ -474,6 +462,7 @@
 				714B021920F5E14C007DD87B /* Bool */,
 				710BDE98211E604600317F46 /* Calendar */,
 				7133739820F972CF004E7CAB /* Date */,
+				71BBE7052122622100EC5DC0 /* DateInterval */,
 				71EAAF9E20D1438200A648D8 /* Dictionary */,
 				71C28F3120EC4A6900C56F45 /* Double */,
 				71A4B18120F432EB00F5D044 /* Int */,
@@ -514,6 +503,7 @@
 				71FAC84A20DF87E900D8E1C1 /* Array */,
 				714B021A20F5E157007DD87B /* Bool */,
 				7133739B20F9731A004E7CAB /* Date */,
+				71BBE7062122623700EC5DC0 /* DateInterval */,
 				71EAAF9F20D1438F00A648D8 /* Dictionary */,
 				71ADB14220EFAC8E00FD8FCE /* Double */,
 				71A4B18020F432E100F5D044 /* Int */,
@@ -557,6 +547,32 @@
 				71B912212121024D006F9236 /* TimeZoneUTCTests.swift */,
 			);
 			path = TimeZone;
+			sourceTree = "<group>";
+		};
+		71BBE7052122622100EC5DC0 /* DateInterval */ = {
+			isa = PBXGroup;
+			children = (
+				71AD0354211D088A00D5B536 /* DateInterval+Contains.swift */,
+				71903E84211A54BA00CE88F7 /* DateInterval+DurationComponent.swift */,
+				715CF54B21166346009187BF /* DateInterval+Operator.swift */,
+				71C49E0F211903E800BEB644 /* DateInterval+Reschedule.swift */,
+				7153D14D211BBDB600C0A1C7 /* DateInterval+Split.swift */,
+				712AF1392117B08D004715A1 /* DateInterval+String.swift */,
+			);
+			path = DateInterval;
+			sourceTree = "<group>";
+		};
+		71BBE7062122623700EC5DC0 /* DateInterval */ = {
+			isa = PBXGroup;
+			children = (
+				71AD0356211D095C00D5B536 /* DateIntervalContainsTests.swift */,
+				71903E86211A55A700CE88F7 /* DateIntervalDurationComponentTests.swift */,
+				715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */,
+				71C49E1121190C7F00BEB644 /* DateIntervalRescheduleTests.swift */,
+				7153D14F211BC23800C0A1C7 /* DateIntervalSplitTests.swift */,
+				712AF13B2117B23C004715A1 /* DateIntervalStringTests.swift */,
+			);
+			path = DateInterval;
 			sourceTree = "<group>";
 		};
 		71C28F3120EC4A6900C56F45 /* Double */ = {
