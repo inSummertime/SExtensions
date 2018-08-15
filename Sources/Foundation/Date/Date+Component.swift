@@ -82,21 +82,6 @@ public extension Date {
         return calendar.component(.second, from: self)
     }
     
-    /// A set of all available calendar components.
-    static var calendarComponentSet: Set<Calendar.Component> {
-        return [.era, .year, .month, .day, .hour, .minute, .second, .weekdayOrdinal, .weekOfMonth, .weekOfYear, .yearForWeekOfYear, .weekday]
-    }
-    
-    /// A set of all calendar components for a day.
-    static var calendarDayComponentSet: Set<Calendar.Component> {
-        return [.year, .month, .day]
-    }
-    
-    /// A set of all calendar components for a day and time.
-    static var calendarDayAndTimeComponentSet: Set<Calendar.Component> {
-        return [.year, .month, .day, .hour, .minute, .second]
-    }
-    
     /// Returns the value for one component.
     ///
     ///     let date = Date(timeIntervalSinceReferenceDate: 0)
@@ -169,7 +154,7 @@ public extension Date {
     func componentDictionary(_ components: Set<Calendar.Component>, since date: Date, in calendar: Calendar) -> [Calendar.Component: Int] {
         let dateComponents = calendar.dateComponents(components, from: date, to: self)
         var dictionary = [Calendar.Component: Int]()
-        for component in Date.calendarComponentSet {
+        for component in Calendar.componentSet {
             if let value = dateComponents.value(for: component), value != NSDateComponentUndefined {
                 dictionary[component] = value
             }

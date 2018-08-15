@@ -43,7 +43,7 @@ public extension DateInterval {
     func durationComponentDictionary(_ components: Set<Calendar.Component>, in calendar: Calendar) -> [Calendar.Component: Int] {
         let dateComponents = calendar.dateComponents(components, from: start, to: end)
         var dictionary = [Calendar.Component: Int]()
-        for component in Date.calendarComponentSet {
+        for component in Calendar.componentSet {
             if let value = dateComponents.value(for: component), value != NSDateComponentUndefined {
                 dictionary[component] = value
             }
