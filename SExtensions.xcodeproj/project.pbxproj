@@ -43,6 +43,8 @@
 		714EB30120C207D9002ED5DE /* StringDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714EB30020C207D9002ED5DE /* StringDateTests.swift */; };
 		7153D14E211BBDB600C0A1C7 /* DateInterval+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D14D211BBDB600C0A1C7 /* DateInterval+Split.swift */; };
 		7153D150211BC23800C0A1C7 /* DateIntervalSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D14F211BC23800C0A1C7 /* DateIntervalSplitTests.swift */; };
+		715535E22127008900B25789 /* UserDefaults+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715535E12127008900B25789 /* UserDefaults+Date.swift */; };
+		715535E4212703E600B25789 /* UserDefaultsDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715535E3212703E600B25789 /* UserDefaultsDateTests.swift */; };
 		715CF54C21166346009187BF /* DateInterval+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CF54B21166346009187BF /* DateInterval+Operator.swift */; };
 		715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */; };
 		715F943520D3E9EC001C785F /* DictionaryOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F943420D3E9EC001C785F /* DictionaryOperatorTests.swift */; };
@@ -183,6 +185,8 @@
 		714EB30020C207D9002ED5DE /* StringDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDateTests.swift; sourceTree = "<group>"; };
 		7153D14D211BBDB600C0A1C7 /* DateInterval+Split.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval+Split.swift"; sourceTree = "<group>"; };
 		7153D14F211BC23800C0A1C7 /* DateIntervalSplitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalSplitTests.swift; sourceTree = "<group>"; };
+		715535E12127008900B25789 /* UserDefaults+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Date.swift"; sourceTree = "<group>"; };
+		715535E3212703E600B25789 /* UserDefaultsDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDateTests.swift; sourceTree = "<group>"; };
 		715CF54B21166346009187BF /* DateInterval+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval+Operator.swift"; sourceTree = "<group>"; };
 		715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalOperatorTests.swift; sourceTree = "<group>"; };
 		715F943420D3E9EC001C785F /* DictionaryOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryOperatorTests.swift; sourceTree = "<group>"; };
@@ -616,6 +620,7 @@
 			isa = PBXGroup;
 			children = (
 				71E973732124F85F007533A0 /* UserDefaults+Subscript.swift */,
+				715535E12127008900B25789 /* UserDefaults+Date.swift */,
 			);
 			path = UserDefaults;
 			sourceTree = "<group>";
@@ -624,6 +629,7 @@
 			isa = PBXGroup;
 			children = (
 				71E973762124FA8A007533A0 /* UserDefaultsSubscriptTests.swift */,
+				715535E3212703E600B25789 /* UserDefaultsDateTests.swift */,
 			);
 			path = UserDefaults;
 			sourceTree = "<group>";
@@ -819,6 +825,7 @@
 				71BA5BCC21000F2E002CE891 /* Date+Start.swift in Sources */,
 				7100892A2123A9C90020C7C5 /* Calendar+ComponentSet.swift in Sources */,
 				715CF54C21166346009187BF /* DateInterval+Operator.swift in Sources */,
+				715535E22127008900B25789 /* UserDefaults+Date.swift in Sources */,
 				7127BD2420FEB70500816D4B /* Date+String.swift in Sources */,
 				71ACDC5C20BF7E650071FF33 /* String+Words.swift in Sources */,
 				7107C56E20FAB31500790D4D /* Date+Init.swift in Sources */,
@@ -878,6 +885,7 @@
 				71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */,
 				712FD316210621E500165D5A /* DateComponentTests.swift in Sources */,
 				71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */,
+				715535E4212703E600B25789 /* UserDefaultsDateTests.swift in Sources */,
 				7192D8C320D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift in Sources */,
 				71E07BDA20E755E200CC83FC /* ArrayHasTests.swift in Sources */,
 				71ACDC5F20BF7E990071FF33 /* StringWordsTests.swift in Sources */,
