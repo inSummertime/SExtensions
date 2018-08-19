@@ -15,6 +15,15 @@ public extension UserDefaults {
     /// Codable object and returns nil if no value or the value is
     /// not Codable.
     ///
+    ///     struct Object: Codable {
+    ///         let id: Int
+    ///     }
+    ///     let object = Object(id: 0)
+    ///     let key = "HelloWorld!"
+    ///     UserDefaults.standard.setCodable(object, forKey: key)
+    ///     print(UserDefaults.standard.codable(Object.self, forKey: key)!.id == 0)
+    ///     // Prints "true"
+    ///
     /// - Parameters:
     ///   - type: A Codable type.
     ///   - defaultName: The key to search with.
@@ -29,6 +38,15 @@ public extension UserDefaults {
     /// entry for the receiver's suite name in the current user and
     /// any host, then asynchronously stores the value persistently,
     /// where it is made available to other processes.
+    ///
+    ///     struct Object: Codable {
+    ///         let id: Int
+    ///     }
+    ///     let object = Object(id: 0)
+    ///     let key = "HelloWorld!"
+    ///     UserDefaults.standard.setCodable(object, forKey: key)
+    ///     print(UserDefaults.standard.codable(Object.self, forKey: key)!.id == 0)
+    ///     // Prints "true"
     ///
     /// - Parameters:
     ///   - value: The Encodable value to store.

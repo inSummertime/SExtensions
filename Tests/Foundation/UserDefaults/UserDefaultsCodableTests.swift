@@ -17,7 +17,7 @@ final class UserDefaultsCodableTests: XCTestCase {
         }
         let object = Object(id: 0)
         let key = "HelloWorld!"
-        UserDefaults.standard.setCodable(object, forKey: "HelloWorld!")
+        UserDefaults.standard.setCodable(object, forKey: key)
         XCTAssertEqual(UserDefaults.standard.codable(Object.self, forKey: key)!.id, 0)
         UserDefaults.standard.removeObject(forKey: key)
     }
