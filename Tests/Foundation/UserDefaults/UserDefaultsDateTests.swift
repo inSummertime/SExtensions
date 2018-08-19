@@ -12,12 +12,11 @@ import XCTest
 final class UserDefaultsDateTests: XCTestCase {
     
     func testDate() {
-        let key = "HelloWorld!"
-        XCTAssertNil(UserDefaults.standard.date(forKey: key))
-        UserDefaults.standard.set(Date(timeIntervalSinceReferenceDate: 0), forKey: key)
-        XCTAssertEqual(UserDefaults.standard.date(forKey: key)!, Date(timeIntervalSinceReferenceDate: 0))
-        UserDefaults.standard.removeObject(forKey: key)
-        XCTAssertNil(UserDefaults.standard.date(forKey: key))
+        let key = "HelloWorld"
+        let userDefaults = UserDefaults(suiteName: "HelloWorld")
+        XCTAssertNil(userDefaults?.date(forKey: key))
+        userDefaults?.set(Date(timeIntervalSinceReferenceDate: 0), forKey: key)
+        XCTAssertEqual(userDefaults?.date(forKey: key)!, Date(timeIntervalSinceReferenceDate: 0))
     }
     
 }
