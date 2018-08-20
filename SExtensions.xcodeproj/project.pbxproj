@@ -122,6 +122,8 @@
 		71CE20A820D5DA0B00C0A5ED /* Dictionary+KeyCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE20A720D5DA0B00C0A5ED /* Dictionary+KeyCase.swift */; };
 		71D7F6AB20DF63DB00525259 /* Dictionary+Has.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F6AA20DF63DB00525259 /* Dictionary+Has.swift */; };
 		71D7F6AD20DF700100525259 /* DictionaryHasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F6AC20DF700100525259 /* DictionaryHasTests.swift */; };
+		71DB6F8421292E070014ACD0 /* URL+QueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB6F8321292E070014ACD0 /* URL+QueryParameter.swift */; };
+		71DB6F8621292E300014ACD0 /* URLQueryParameterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB6F8521292E300014ACD0 /* URLQueryParameterTests.swift */; };
 		71DEFCCE2109544A000A03C9 /* Date+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEFCCD2109544A000A03C9 /* Date+Operator.swift */; };
 		71DEFCD02109554D000A03C9 /* DateOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEFCCF2109554D000A03C9 /* DateOperatorTests.swift */; };
 		71E07BD820E7545400CC83FC /* Array+Has.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E07BD720E7545400CC83FC /* Array+Has.swift */; };
@@ -269,6 +271,8 @@
 		71CE20A720D5DA0B00C0A5ED /* Dictionary+KeyCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+KeyCase.swift"; sourceTree = "<group>"; };
 		71D7F6AA20DF63DB00525259 /* Dictionary+Has.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Has.swift"; sourceTree = "<group>"; };
 		71D7F6AC20DF700100525259 /* DictionaryHasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryHasTests.swift; sourceTree = "<group>"; };
+		71DB6F8321292E070014ACD0 /* URL+QueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+QueryParameter.swift"; sourceTree = "<group>"; };
+		71DB6F8521292E300014ACD0 /* URLQueryParameterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryParameterTests.swift; sourceTree = "<group>"; };
 		71DEFCCD2109544A000A03C9 /* Date+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Operator.swift"; sourceTree = "<group>"; };
 		71DEFCCF2109554D000A03C9 /* DateOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOperatorTests.swift; sourceTree = "<group>"; };
 		71E07BD720E7545400CC83FC /* Array+Has.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Has.swift"; sourceTree = "<group>"; };
@@ -498,6 +502,7 @@
 				71697E4620B91EE8005C58EC /* String */,
 				713FBA27211FAB9200207986 /* TimeZone */,
 				71E973752124F86C007533A0 /* UserDefaults */,
+				71DB6F7F2129240E0014ACD0 /* URL */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -541,6 +546,7 @@
 				71697E4A20B91F17005C58EC /* String */,
 				71B9122021210000006F9236 /* TimeZone */,
 				71E973782124FAB8007533A0 /* UserDefaults */,
+				71DB6F82212925830014ACD0 /* URL */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -618,6 +624,22 @@
 				71ADB13E20EFAC3F00FD8FCE /* Double+RoundTo.swift */,
 			);
 			path = Double;
+			sourceTree = "<group>";
+		};
+		71DB6F7F2129240E0014ACD0 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				71DB6F8321292E070014ACD0 /* URL+QueryParameter.swift */,
+			);
+			path = URL;
+			sourceTree = "<group>";
+		};
+		71DB6F82212925830014ACD0 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				71DB6F8521292E300014ACD0 /* URLQueryParameterTests.swift */,
+			);
+			path = URL;
 			sourceTree = "<group>";
 		};
 		71E973752124F86C007533A0 /* UserDefaults */ = {
@@ -862,6 +884,7 @@
 				71E973742124F85F007533A0 /* UserDefaults+Subscript.swift in Sources */,
 				71BBE709212263AD00EC5DC0 /* Int+Is.swift in Sources */,
 				71A4B17D20F4327B00F5D044 /* Int+Bool.swift in Sources */,
+				71DB6F8421292E070014ACD0 /* URL+QueryParameter.swift in Sources */,
 				718D2B47210FEC15002649BE /* Date+Comparison.swift in Sources */,
 				71AB823E20C61A7400EC2A24 /* String+Alphanumeric.swift in Sources */,
 				7130148020EB193200161E23 /* Array+Index.swift in Sources */,
@@ -929,6 +952,7 @@
 				71AB824020C623AF00EC2A24 /* StringAlphanumericTests.swift in Sources */,
 				71A8004D20C1642D0029B141 /* StringTrimTests.swift in Sources */,
 				71FAC84920DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift in Sources */,
+				71DB6F8621292E300014ACD0 /* URLQueryParameterTests.swift in Sources */,
 				717D0E1520E3ABA5005E972D /* ArrayOperationTests.swift in Sources */,
 				71E71C5920D72DC00009C1A9 /* DictionaryJSONTests.swift in Sources */,
 				7133739A20F97313004E7CAB /* DateTimeIntervalTests.swift in Sources */,
