@@ -40,7 +40,6 @@ final class URLQueryParameterTests: XCTestCase {
         var url = URL(string: "https://www.google.com/search?q=iPhone&source=lnt&oq=")
         url?.removeQueryParameterValue(forKey: "source")
         XCTAssertNil(url?.queryParameterValue(for: "source"))
-        print(url?.queryParameterValue(for: "source"))
         url?.removeQueryParameterValue(forKey: "oq")
         XCTAssertNil(url?.queryParameterValue(for: "oq"))
         XCTAssertEqual(url?.absoluteString, "https://www.google.com/search?q=iPhone")

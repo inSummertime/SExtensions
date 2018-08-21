@@ -128,6 +128,8 @@
 		71DEFCD02109554D000A03C9 /* DateOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEFCCF2109554D000A03C9 /* DateOperatorTests.swift */; };
 		71E07BD820E7545400CC83FC /* Array+Has.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E07BD720E7545400CC83FC /* Array+Has.swift */; };
 		71E07BDA20E755E200CC83FC /* ArrayHasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E07BD920E755E200CC83FC /* ArrayHasTests.swift */; };
+		71E18CBD212B8518001BB850 /* URL+HostURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E18CBC212B8518001BB850 /* URL+HostURL.swift */; };
+		71E18CBF212B85ED001BB850 /* URLHostURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E18CBE212B85ED001BB850 /* URLHostURLTests.swift */; };
 		71E2163721279D8600FBD147 /* UserDefaults+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E2163621279D8600FBD147 /* UserDefaults+Codable.swift */; };
 		71E216392127A3CE00FBD147 /* UserDefaultsCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E216382127A3CE00FBD147 /* UserDefaultsCodableTests.swift */; };
 		71E71C5720D72C1C0009C1A9 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E71C5620D72C1C0009C1A9 /* Dictionary+JSON.swift */; };
@@ -277,6 +279,8 @@
 		71DEFCCF2109554D000A03C9 /* DateOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOperatorTests.swift; sourceTree = "<group>"; };
 		71E07BD720E7545400CC83FC /* Array+Has.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Has.swift"; sourceTree = "<group>"; };
 		71E07BD920E755E200CC83FC /* ArrayHasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayHasTests.swift; sourceTree = "<group>"; };
+		71E18CBC212B8518001BB850 /* URL+HostURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+HostURL.swift"; sourceTree = "<group>"; };
+		71E18CBE212B85ED001BB850 /* URLHostURLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHostURLTests.swift; sourceTree = "<group>"; };
 		71E2163621279D8600FBD147 /* UserDefaults+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Codable.swift"; sourceTree = "<group>"; };
 		71E216382127A3CE00FBD147 /* UserDefaultsCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsCodableTests.swift; sourceTree = "<group>"; };
 		71E71C5620D72C1C0009C1A9 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
@@ -630,6 +634,7 @@
 			isa = PBXGroup;
 			children = (
 				71DB6F8321292E070014ACD0 /* URL+QueryParameter.swift */,
+				71E18CBC212B8518001BB850 /* URL+HostURL.swift */,
 			);
 			path = URL;
 			sourceTree = "<group>";
@@ -638,6 +643,7 @@
 			isa = PBXGroup;
 			children = (
 				71DB6F8521292E300014ACD0 /* URLQueryParameterTests.swift */,
+				71E18CBE212B85ED001BB850 /* URLHostURLTests.swift */,
 			);
 			path = URL;
 			sourceTree = "<group>";
@@ -844,6 +850,7 @@
 				71E71C5720D72C1C0009C1A9 /* Dictionary+JSON.swift in Sources */,
 				710BDE97211E5FF800317F46 /* Calendar+Gregorian.swift in Sources */,
 				71FAC84620DF878100D8E1C1 /* Array+SafeSubscript.swift in Sources */,
+				71E18CBD212B8518001BB850 /* URL+HostURL.swift in Sources */,
 				71903E85211A54BA00CE88F7 /* DateInterval+DurationComponent.swift in Sources */,
 				71375E2E20CAB46000C6A7E0 /* String+Height.swift in Sources */,
 				7177623720C3573F001F2C8E /* String+Number.swift in Sources */,
@@ -962,6 +969,7 @@
 				715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */,
 				712AF13C2117B23C004715A1 /* DateIntervalStringTests.swift in Sources */,
 				71C28FBE20BE348600EF3654 /* StringCondenseTests.swift in Sources */,
+				71E18CBF212B85ED001BB850 /* URLHostURLTests.swift in Sources */,
 				71BA5BCE21000F4C002CE891 /* DateStartTests.swift in Sources */,
 				711EBCD920FD73FB0061AA57 /* DateOperationTests.swift in Sources */,
 			);
