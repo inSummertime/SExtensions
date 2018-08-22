@@ -11,6 +11,11 @@ import Foundation
 public extension URL {
     
     /// Returns baseURL if baseURL is not nil, or removes all query parameters and path components
+    ///
+    ///     let baseURL = URL(string: "https://www.google.com")
+    ///     let url = URL(string: "https://www.google.com/search?q=iPhone")
+    ///     print(absoluteURL?.hostURL == baseURL)
+    ///     // Prints "true"
     var hostURL: URL {
         if let url = baseURL {
             return url
