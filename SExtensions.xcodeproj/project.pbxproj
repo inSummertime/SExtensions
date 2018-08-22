@@ -140,6 +140,8 @@
 		71EAAF9D20D1437600A648D8 /* DictionarySubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EAAF9C20D1437600A648D8 /* DictionarySubscriptTests.swift */; };
 		71F367E820CEA24E00C01A74 /* NSMutableAttributedString+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F367E720CEA24E00C01A74 /* NSMutableAttributedString+Format.swift */; };
 		71F367EA20CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F367E920CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift */; };
+		71F431F3212CDDA0005F67E3 /* URL+IsFromDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F431F2212CDDA0005F67E3 /* URL+IsFromDomain.swift */; };
+		71F431F5212CDDE1005F67E3 /* URLIsFromDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F431F4212CDDE1005F67E3 /* URLIsFromDomainTests.swift */; };
 		71FAC84620DF878100D8E1C1 /* Array+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */; };
 		71FAC84920DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */; };
 /* End PBXBuildFile section */
@@ -291,6 +293,8 @@
 		71EAAF9C20D1437600A648D8 /* DictionarySubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionarySubscriptTests.swift; sourceTree = "<group>"; };
 		71F367E720CEA24E00C01A74 /* NSMutableAttributedString+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Format.swift"; sourceTree = "<group>"; };
 		71F367E920CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringFormatTests.swift; sourceTree = "<group>"; };
+		71F431F2212CDDA0005F67E3 /* URL+IsFromDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+IsFromDomain.swift"; sourceTree = "<group>"; };
+		71F431F4212CDDE1005F67E3 /* URLIsFromDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLIsFromDomainTests.swift; sourceTree = "<group>"; };
 		71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SafeSubscript.swift"; sourceTree = "<group>"; };
 		71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySafeSubscriptTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -633,8 +637,9 @@
 		71DB6F7F2129240E0014ACD0 /* URL */ = {
 			isa = PBXGroup;
 			children = (
-				71DB6F8321292E070014ACD0 /* URL+QueryParameter.swift */,
 				71E18CBC212B8518001BB850 /* URL+HostURL.swift */,
+				71F431F2212CDDA0005F67E3 /* URL+IsFromDomain.swift */,
+				71DB6F8321292E070014ACD0 /* URL+QueryParameter.swift */,
 			);
 			path = URL;
 			sourceTree = "<group>";
@@ -642,8 +647,9 @@
 		71DB6F82212925830014ACD0 /* URL */ = {
 			isa = PBXGroup;
 			children = (
-				71DB6F8521292E300014ACD0 /* URLQueryParameterTests.swift */,
 				71E18CBE212B85ED001BB850 /* URLHostURLTests.swift */,
+				71F431F4212CDDE1005F67E3 /* URLIsFromDomainTests.swift */,
+				71DB6F8521292E300014ACD0 /* URLQueryParameterTests.swift */,
 			);
 			path = URL;
 			sourceTree = "<group>";
@@ -873,6 +879,7 @@
 				711272A32108180F006C550E /* Date+Count.swift in Sources */,
 				71DEFCCE2109544A000A03C9 /* Date+Operator.swift in Sources */,
 				71AF15C720CCD93C006641D3 /* NSAttributedString+Formatting.swift in Sources */,
+				71F431F3212CDDA0005F67E3 /* URL+IsFromDomain.swift in Sources */,
 				71AE5F6920F1824C0026EFAE /* Double+Percentage.swift in Sources */,
 				71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */,
 				714EB2FF20C206ED002ED5DE /* String+Date.swift in Sources */,
@@ -948,6 +955,7 @@
 				71E216392127A3CE00FBD147 /* UserDefaultsCodableTests.swift in Sources */,
 				71AB2F3920BCBC670060F4CB /* StringCaseTests.swift in Sources */,
 				718557F4210BEA4300BBFD32 /* DateTruncatedTests.swift in Sources */,
+				71F431F5212CDDE1005F67E3 /* URLIsFromDomainTests.swift in Sources */,
 				714B021820F5E141007DD87B /* BoolIntTests.swift in Sources */,
 				71F367EA20CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift in Sources */,
 				7183031220F9A2A200C0961A /* BoolToggleValueTests.swift in Sources */,
