@@ -17,6 +17,7 @@ final class UserDefaultsDateTests: XCTestCase {
         XCTAssertNil(userDefaults?.date(forKey: key))
         userDefaults?.set(Date(timeIntervalSinceReferenceDate: 0), forKey: key)
         XCTAssertEqual(userDefaults?.date(forKey: key)!, Date(timeIntervalSinceReferenceDate: 0))
+        userDefaults?.removeObject(forKey: key)
     }
     
 }
