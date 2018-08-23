@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import UIKit
-
 public extension String {
     
     /// Returns height based on a given width and font

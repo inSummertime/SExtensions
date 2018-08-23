@@ -6,8 +6,6 @@
 //  Copyright © 2018年 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension String {
     
     /// A uppercase letter separated string.

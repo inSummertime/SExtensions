@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension String {
     
     /// Returns a Boolean value that indicates whether it is alphanumeric.

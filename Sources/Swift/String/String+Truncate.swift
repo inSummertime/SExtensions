@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import UIKit
-
 public extension String {
     
     /// Returns a string truncated to index with a trialing string.
