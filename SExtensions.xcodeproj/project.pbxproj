@@ -455,6 +455,7 @@
 		71697E2C20B91CDB005C58EC /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				71B7655E212F73130027422D /* Swift */,
 				71697E4B20B91F1D005C58EC /* Foundation */,
 				71697E3A20B91D54005C58EC /* SupportingFiles */,
 			);
@@ -559,15 +560,9 @@
 		71697E4B20B91F1D005C58EC /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				71FAC84A20DF87E900D8E1C1 /* Array */,
-				714B021A20F5E157007DD87B /* Bool */,
 				710089282123A83B0020C7C5 /* Calendar */,
 				7133739B20F9731A004E7CAB /* Date */,
 				71BBE7062122623700EC5DC0 /* DateInterval */,
-				71EAAF9F20D1438F00A648D8 /* Dictionary */,
-				71ADB14220EFAC8E00FD8FCE /* Double */,
-				71A4B18020F432E100F5D044 /* Int */,
-				71697E4A20B91F17005C58EC /* String */,
 				71B9122021210000006F9236 /* TimeZone */,
 				71E973782124FAB8007533A0 /* UserDefaults */,
 				71DB6F82212925830014ACD0 /* URL */,
@@ -602,6 +597,19 @@
 				71ADB14020EFAC8400FD8FCE /* DoubleRoundToTests.swift */,
 			);
 			path = Double;
+			sourceTree = "<group>";
+		};
+		71B7655E212F73130027422D /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				71FAC84A20DF87E900D8E1C1 /* Array */,
+				714B021A20F5E157007DD87B /* Bool */,
+				71EAAF9F20D1438F00A648D8 /* Dictionary */,
+				71ADB14220EFAC8E00FD8FCE /* Double */,
+				71A4B18020F432E100F5D044 /* Int */,
+				71697E4A20B91F17005C58EC /* String */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 		71B9122021210000006F9236 /* TimeZone */ = {
