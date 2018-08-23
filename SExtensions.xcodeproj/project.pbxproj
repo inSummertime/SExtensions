@@ -372,6 +372,29 @@
 			path = Date;
 			sourceTree = "<group>";
 		};
+		713996A0212E321500C56C68 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				71FAC84720DF87A800D8E1C1 /* Array */,
+				714B021920F5E14C007DD87B /* Bool */,
+				71EAAF9E20D1438200A648D8 /* Dictionary */,
+				71C28F3120EC4A6900C56F45 /* Double */,
+				71A4B18120F432EB00F5D044 /* Int */,
+				71697E4620B91EE8005C58EC /* String */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		713996A1212E32F700C56C68 /* NSAttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				71B2660C20C8C5670045AA33 /* NSAttributedString+Concatenate.swift */,
+				71AF15C620CCD93C006641D3 /* NSAttributedString+Formatting.swift */,
+				71F367E720CEA24E00C01A74 /* NSMutableAttributedString+Format.swift */,
+			);
+			path = NSAttributedString;
+			sourceTree = "<group>";
+		};
 		713FBA27211FAB9200207986 /* TimeZone */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +445,7 @@
 		71697E2120B91CDB005C58EC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				713996A0212E321500C56C68 /* Swift */,
 				71697E4720B91EF0005C58EC /* Foundation */,
 				71697E3920B91D4E005C58EC /* SupportingFiles */,
 			);
@@ -474,9 +498,6 @@
 		71697E4620B91EE8005C58EC /* String */ = {
 			isa = PBXGroup;
 			children = (
-				71B2660C20C8C5670045AA33 /* NSAttributedString+Concatenate.swift */,
-				71AF15C620CCD93C006641D3 /* NSAttributedString+Formatting.swift */,
-				71F367E720CEA24E00C01A74 /* NSMutableAttributedString+Format.swift */,
 				71479E7A20C7482800418144 /* String+Affix.swift */,
 				71AB823D20C61A7400EC2A24 /* String+Alphanumeric.swift */,
 				71958F9120D088B400AFCBA5 /* String+Array.swift */,
@@ -499,15 +520,10 @@
 		71697E4720B91EF0005C58EC /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				71FAC84720DF87A800D8E1C1 /* Array */,
-				714B021920F5E14C007DD87B /* Bool */,
 				710BDE98211E604600317F46 /* Calendar */,
 				7133739820F972CF004E7CAB /* Date */,
 				71BBE7052122622100EC5DC0 /* DateInterval */,
-				71EAAF9E20D1438200A648D8 /* Dictionary */,
-				71C28F3120EC4A6900C56F45 /* Double */,
-				71A4B18120F432EB00F5D044 /* Int */,
-				71697E4620B91EE8005C58EC /* String */,
+				713996A1212E32F700C56C68 /* NSAttributedString */,
 				713FBA27211FAB9200207986 /* TimeZone */,
 				71E973752124F86C007533A0 /* UserDefaults */,
 				71DB6F7F2129240E0014ACD0 /* URL */,
