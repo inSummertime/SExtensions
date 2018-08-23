@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension Dictionary {
     
     /// Returns a dictionary which does not contains the values for keys

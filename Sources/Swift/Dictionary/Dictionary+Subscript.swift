@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension Dictionary where Key == String {
     
     /// Accesses the String value associated with the given key for reading and

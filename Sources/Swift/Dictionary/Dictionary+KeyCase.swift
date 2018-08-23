@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension Dictionary where Key == String {
     
     /// Returns a dictionary with all keys uppercased.
