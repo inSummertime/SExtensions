@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension Array {
     
     /// Returns the element if it is within bounds.
