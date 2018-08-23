@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension Bool {
     
     /// Returns 1 if true, otherwise 0
