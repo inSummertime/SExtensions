@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		710089272123A8330020C7C5 /* CalendarGregorianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710089262123A8330020C7C5 /* CalendarGregorianTests.swift */; };
 		7100892A2123A9C90020C7C5 /* Calendar+ComponentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710089292123A9C90020C7C5 /* Calendar+ComponentSet.swift */; };
+		71047A59213154C00098F094 /* URLRequestInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71047A58213154C00098F094 /* URLRequestInitTests.swift */; };
 		7107C56E20FAB31500790D4D /* Date+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107C56D20FAB31500790D4D /* Date+Init.swift */; };
 		7107C57020FAB64A00790D4D /* DateInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107C56F20FAB64A00790D4D /* DateInitTests.swift */; };
 		710A111320E4FF590054262F /* Array+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111220E4FF590054262F /* Array+Operator.swift */; };
@@ -94,6 +95,7 @@
 		71AD0357211D095C00D5B536 /* DateIntervalContainsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AD0356211D095C00D5B536 /* DateIntervalContainsTests.swift */; };
 		71ADB13F20EFAC3F00FD8FCE /* Double+RoundTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ADB13E20EFAC3F00FD8FCE /* Double+RoundTo.swift */; };
 		71ADB14120EFAC8400FD8FCE /* DoubleRoundToTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ADB14020EFAC8400FD8FCE /* DoubleRoundToTests.swift */; };
+		71ADEDF4213150EF0075C0A8 /* URLRequest+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71ADEDF3213150EF0075C0A8 /* URLRequest+Init.swift */; };
 		71AE5F6920F1824C0026EFAE /* Double+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AE5F6820F1824C0026EFAE /* Double+Percentage.swift */; };
 		71AE5F6B20F183830026EFAE /* DoublePercentageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AE5F6A20F183830026EFAE /* DoublePercentageTests.swift */; };
 		71AF15C720CCD93C006641D3 /* NSAttributedString+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AF15C620CCD93C006641D3 /* NSAttributedString+Formatting.swift */; };
@@ -159,6 +161,7 @@
 /* Begin PBXFileReference section */
 		710089262123A8330020C7C5 /* CalendarGregorianTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarGregorianTests.swift; sourceTree = "<group>"; };
 		710089292123A9C90020C7C5 /* Calendar+ComponentSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+ComponentSet.swift"; sourceTree = "<group>"; };
+		71047A58213154C00098F094 /* URLRequestInitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestInitTests.swift; sourceTree = "<group>"; };
 		7107C56D20FAB31500790D4D /* Date+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Init.swift"; sourceTree = "<group>"; };
 		7107C56F20FAB64A00790D4D /* DateInitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInitTests.swift; sourceTree = "<group>"; };
 		710A111220E4FF590054262F /* Array+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Operator.swift"; sourceTree = "<group>"; };
@@ -247,6 +250,7 @@
 		71AD0356211D095C00D5B536 /* DateIntervalContainsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalContainsTests.swift; sourceTree = "<group>"; };
 		71ADB13E20EFAC3F00FD8FCE /* Double+RoundTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+RoundTo.swift"; sourceTree = "<group>"; };
 		71ADB14020EFAC8400FD8FCE /* DoubleRoundToTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleRoundToTests.swift; sourceTree = "<group>"; };
+		71ADEDF3213150EF0075C0A8 /* URLRequest+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Init.swift"; sourceTree = "<group>"; };
 		71AE5F6820F1824C0026EFAE /* Double+Percentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Percentage.swift"; sourceTree = "<group>"; };
 		71AE5F6A20F183830026EFAE /* DoublePercentageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublePercentageTests.swift; sourceTree = "<group>"; };
 		71AF15C620CCD93C006641D3 /* NSAttributedString+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Formatting.swift"; sourceTree = "<group>"; };
@@ -324,6 +328,14 @@
 				710089262123A8330020C7C5 /* CalendarGregorianTests.swift */,
 			);
 			path = Calendar;
+			sourceTree = "<group>";
+		};
+		71047A5A213155D50098F094 /* URLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				71047A58213154C00098F094 /* URLRequestInitTests.swift */,
+			);
+			path = URLRequest;
 			sourceTree = "<group>";
 		};
 		710BDE98211E604600317F46 /* Calendar */ = {
@@ -528,6 +540,7 @@
 				713FBA27211FAB9200207986 /* TimeZone */,
 				71E973752124F86C007533A0 /* UserDefaults */,
 				71DB6F7F2129240E0014ACD0 /* URL */,
+				71ADEDF5213150F70075C0A8 /* URLRequest */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -566,6 +579,7 @@
 				71B9122021210000006F9236 /* TimeZone */,
 				71E973782124FAB8007533A0 /* UserDefaults */,
 				71DB6F82212925830014ACD0 /* URL */,
+				71047A5A213155D50098F094 /* URLRequest */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -597,6 +611,14 @@
 				71ADB14020EFAC8400FD8FCE /* DoubleRoundToTests.swift */,
 			);
 			path = Double;
+			sourceTree = "<group>";
+		};
+		71ADEDF5213150F70075C0A8 /* URLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				71ADEDF3213150EF0075C0A8 /* URLRequest+Init.swift */,
+			);
+			path = URLRequest;
 			sourceTree = "<group>";
 		};
 		71B7655E212F73130027422D /* Swift */ = {
@@ -924,6 +946,7 @@
 				71A4B17D20F4327B00F5D044 /* Int+Bool.swift in Sources */,
 				71DB6F8421292E070014ACD0 /* URL+QueryParameter.swift in Sources */,
 				718D2B47210FEC15002649BE /* Date+Comparison.swift in Sources */,
+				71ADEDF4213150EF0075C0A8 /* URLRequest+Init.swift in Sources */,
 				71AB823E20C61A7400EC2A24 /* String+Alphanumeric.swift in Sources */,
 				7130148020EB193200161E23 /* Array+Index.swift in Sources */,
 				71479E7B20C7482800418144 /* String+Affix.swift in Sources */,
@@ -968,6 +991,7 @@
 				71AF15C920CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift in Sources */,
 				710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */,
 				71AD0357211D095C00D5B536 /* DateIntervalContainsTests.swift in Sources */,
+				71047A59213154C00098F094 /* URLRequestInitTests.swift in Sources */,
 				71A0F60621021C5D008FAD76 /* DateIsInTests.swift in Sources */,
 				71903E87211A55A700CE88F7 /* DateIntervalDurationComponentTests.swift in Sources */,
 				71AE5F6B20F183830026EFAE /* DoublePercentageTests.swift in Sources */,
