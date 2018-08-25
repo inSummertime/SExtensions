@@ -15,6 +15,11 @@ public extension URLRequest {
     /// string contains characters that are illegal in a URL, or is an empty
     /// string).
     ///
+    ///     let url = URL(string: "https://www.google.com")
+    ///     let urlRequest = URLRequest(string: "https://www.google.com")
+    ///     print(urlRequest == URLRequest(url: url!))
+    ///     // Prints "true"
+    ///
     /// - Parameters:
     ///   - string: The URL string for the request.
     ///   - cachePolicy: The cache policy for the request. Defaults to
@@ -30,6 +35,12 @@ public extension URLRequest {
     /// relative to another URL. Returns `nil` if a `URL` cannot be formed
     /// with the string (for example, if the string contains characters that
     /// are illegal in a URL, or is an empty string).
+    ///
+    ///     let baseURL = URL(string: "https://www.google.com")
+    ///     let url = URL(string: "search?q=iPhone", relativeTo: baseURL)
+    ///     let urlRequest = URLRequest(string: "search?q=iPhone", relativeTo: baseURL)
+    ///     print(urlRequest ==  URLRequest(url: url!))
+    ///     // Prints "true"
     ///
     /// - Parameters:
     ///   - string: The URL string for the request.
