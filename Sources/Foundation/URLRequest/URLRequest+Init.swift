@@ -15,10 +15,15 @@ public extension URLRequest {
     /// string contains characters that are illegal in a URL, or is an empty
     /// string).
     ///
-    /// - Parameter string: The URL string for the request.
-    init?(string: String) {
+    /// - Parameters:
+    ///   - string: The URL string for the request.
+    ///   - cachePolicy: The cache policy for the request. Defaults to
+    ///     `.useProtocolCachePolicy`.
+    ///   - timeoutInterval: The timeout interval for the request. Defaults to
+    ///     60.0.
+    init?(string: String, cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy, timeoutInterval: TimeInterval = 60.0) {
         guard let url = URL(string: string) else { return nil }
-        self.init(url: url)
+        self.init(url: url, cachePolicy: cachePolicy, timeoutInterval: timeoutInterval)
     }
     
     /// Creates and initializes a URLRequest with the given URL sting,
@@ -29,9 +34,13 @@ public extension URLRequest {
     /// - Parameters:
     ///   - string: The URL string for the request.
     ///   - url: another URL.
-    init?(string: String, relativeTo url: URL?) {
+    ///   - cachePolicy: The cache policy for the request. Defaults to
+    ///     `.useProtocolCachePolicy`
+    ///   - timeoutInterval: The timeout interval for the request. Defaults to
+    ///     60.0.
+    init?(string: String, relativeTo url: URL?, cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy, timeoutInterval: TimeInterval = 60.0) {
         guard let url = URL(string: string, relativeTo: url) else { return nil }
-        self.init(url: url)
+        self.init(url: url, cachePolicy: cachePolicy, timeoutInterval: timeoutInterval)
     }
     
 }
