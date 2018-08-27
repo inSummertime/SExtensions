@@ -24,4 +24,14 @@ final class URLRequestInitTests: XCTestCase {
         XCTAssertEqual(urlRequest, URLRequest(url: url!))
     }
     
+    func testInitStringHTTPHeaderFields() {
+        let url = URL(string: "https://www.google.com")
+        var urlRequest = URLRequest(url: url!)
+        urlRequest.setValue("application/x-www-form-urlencoded; charset=utf-8", forHTTPHeaderField: "Content-Type")
+        urlRequest.setValue("1", forHTTPHeaderField: "Content-Length")
+        let httpHeaderFields = ["Content-Type": "application/x-www-form-urlencoded; charset=utf-8", "Content-Length": "1"]
+        let urlRequestWithStringAndHTTPHeaderFields = URLRequest(string: "https://www.google.com", httpHeaderFields: httpHeaderFields)
+        XCTAssertEqual(urlRequest, urlRequestWithStringAndHTTPHeaderFields)
+    }
+    
 }
