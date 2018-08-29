@@ -22,6 +22,10 @@ public extension Bundle {
         return infoDictionary?[kCFBundleNameKey as String] as? String
     }
     
+    var displayName: String? {
+        return infoDictionary?["CFBundleDisplayName"] as? String
+    }
+    
     var bundleID: String? {
         return infoDictionary?[kCFBundleIdentifierKey as String] as? String
     }
