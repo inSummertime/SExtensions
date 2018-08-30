@@ -1,0 +1,25 @@
+//
+//  JSONSerializationDictionaryTests.swift
+//  SExtensionsTests
+//
+//  Created by Ray on 2018/8/30.
+//  Copyright © 2018 Ray. All rights reserved.
+//
+
+import XCTest
+@testable import SExtensions
+
+final class JSONSerializationDictionaryTests: XCTestCase {
+    
+    func testDictionaryFromJSONFile() {
+        do {
+            let dictionary = try  JSONSerialization.dictionaryFromJSONFile(filename: "Test", callerClass: JSONSerializationDictionaryTests.self)
+            let anotherDictionary = try  JSONSerialization.dictionaryFromJSONFile(filename: "Test.json", callerClass: JSONSerializationDictionaryTests.self)
+            XCTAssertEqual(dictionary!["id"] as! Int, 0)
+            XCTAssertEqual(anotherDictionary!["title"] as! String, "title")
+        } catch {
+            XCTFail()
+        }
+    }
+    
+}
