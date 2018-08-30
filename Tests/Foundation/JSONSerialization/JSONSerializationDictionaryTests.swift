@@ -22,4 +22,15 @@ final class JSONSerializationDictionaryTests: XCTestCase {
         }
     }
     
+    func testDictionaryFromJSONString() {
+        let string = "{\"ids\":[\"1\",\"2\"],\"title\":[\"title\"]}"
+        do {
+            let dictionary = try JSONSerialization.dictionaryFromJSONString(string)
+            XCTAssertEqual(dictionary!["ids"] as! [String], ["1", "2"])
+            XCTAssertEqual(dictionary!["title"] as! [String], ["title"])
+        } catch {
+            XCTFail()
+        }
+    }
+    
 }
