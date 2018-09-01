@@ -57,6 +57,7 @@
 		716CF09A20D47AC00040BF9B /* DictionaryOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 716CF09920D47AC00040BF9B /* DictionaryOperationTests.swift */; };
 		7177623720C3573F001F2C8E /* String+Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177623620C3573F001F2C8E /* String+Number.swift */; };
 		7177623920C35DF1001F2C8E /* StringNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7177623820C35DF1001F2C8E /* StringNumberTests.swift */; };
+		717AFCFA2138B2A0007FEDD7 /* JSONSerialization+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717AFCF92138B2A0007FEDD7 /* JSONSerialization+String.swift */; };
 		717D0E1320E3A838005E972D /* Array+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717D0E1220E3A838005E972D /* Array+Operation.swift */; };
 		717D0E1520E3ABA5005E972D /* ArrayOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */; };
 		7183031020F9A27600C0961A /* Bool+ToggleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183030F20F9A27600C0961A /* Bool+ToggleValue.swift */; };
@@ -84,6 +85,7 @@
 		71A4B17F20F432A900F5D044 /* IntBoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A4B17E20F432A900F5D044 /* IntBoolTests.swift */; };
 		71A8004B20C164020029B141 /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8004A20C164020029B141 /* String+Trim.swift */; };
 		71A8004D20C1642D0029B141 /* StringTrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8004C20C1642D0029B141 /* StringTrimTests.swift */; };
+		71A8EB8A213A18D70024265B /* JSONSerializationStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8EB89213A18D70024265B /* JSONSerializationStringTests.swift */; };
 		71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB2F3420BCBA740060F4CB /* String+Case.swift */; };
 		71AB2F3920BCBC670060F4CB /* StringCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB2F3820BCBC670060F4CB /* StringCaseTests.swift */; };
 		71AB6B9D20D476D300E3CA73 /* Dictionary+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB6B9C20D476D300E3CA73 /* Dictionary+Operation.swift */; };
@@ -218,6 +220,7 @@
 		716CF09920D47AC00040BF9B /* DictionaryOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryOperationTests.swift; sourceTree = "<group>"; };
 		7177623620C3573F001F2C8E /* String+Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Number.swift"; sourceTree = "<group>"; };
 		7177623820C35DF1001F2C8E /* StringNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringNumberTests.swift; sourceTree = "<group>"; };
+		717AFCF92138B2A0007FEDD7 /* JSONSerialization+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONSerialization+String.swift"; sourceTree = "<group>"; };
 		717D0E1220E3A838005E972D /* Array+Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Operation.swift"; sourceTree = "<group>"; };
 		717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOperationTests.swift; sourceTree = "<group>"; };
 		7183030F20F9A27600C0961A /* Bool+ToggleValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+ToggleValue.swift"; sourceTree = "<group>"; };
@@ -245,6 +248,7 @@
 		71A4B17E20F432A900F5D044 /* IntBoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntBoolTests.swift; sourceTree = "<group>"; };
 		71A8004A20C164020029B141 /* String+Trim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Trim.swift"; sourceTree = "<group>"; };
 		71A8004C20C1642D0029B141 /* StringTrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTrimTests.swift; sourceTree = "<group>"; };
+		71A8EB89213A18D70024265B /* JSONSerializationStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializationStringTests.swift; sourceTree = "<group>"; };
 		71AB2F3420BCBA740060F4CB /* String+Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Case.swift"; sourceTree = "<group>"; };
 		71AB2F3820BCBC670060F4CB /* StringCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCaseTests.swift; sourceTree = "<group>"; };
 		71AB6B9C20D476D300E3CA73 /* Dictionary+Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Operation.swift"; sourceTree = "<group>"; };
@@ -778,6 +782,7 @@
 			isa = PBXGroup;
 			children = (
 				71B2FA892137667500A86AC2 /* JSONSerialization+Dictionary.swift */,
+				717AFCF92138B2A0007FEDD7 /* JSONSerialization+String.swift */,
 			);
 			path = JSONSerialization;
 			sourceTree = "<group>";
@@ -786,6 +791,7 @@
 			isa = PBXGroup;
 			children = (
 				71B2FA8B2137677000A86AC2 /* JSONSerializationDictionaryTests.swift */,
+				71A8EB89213A18D70024265B /* JSONSerializationStringTests.swift */,
 			);
 			path = JSONSerialization;
 			sourceTree = "<group>";
@@ -965,6 +971,7 @@
 				7183031020F9A27600C0961A /* Bool+ToggleValue.swift in Sources */,
 				71B2FA8A2137667500A86AC2 /* JSONSerialization+Dictionary.swift in Sources */,
 				710A111320E4FF590054262F /* Array+Operator.swift in Sources */,
+				717AFCFA2138B2A0007FEDD7 /* JSONSerialization+String.swift in Sources */,
 				7128D64E211554D200A06FE0 /* Date+Is24HourTime.swift in Sources */,
 				71AD0355211D088A00D5B536 /* DateInterval+Contains.swift in Sources */,
 				71E2163721279D8600FBD147 /* UserDefaults+Codable.swift in Sources */,
@@ -1035,6 +1042,7 @@
 				71B2660F20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift in Sources */,
 				719ECA7C20F3ADEA00F7901B /* DoubleCurrencyTests.swift in Sources */,
 				718DCD7120E891DD000634B2 /* DictionaryRemoveTests.swift in Sources */,
+				71A8EB8A213A18D70024265B /* JSONSerializationStringTests.swift in Sources */,
 				718DCD6920E879C3000634B2 /* ArrayRemoveTests.swift in Sources */,
 				71AF15C920CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift in Sources */,
 				710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */,
