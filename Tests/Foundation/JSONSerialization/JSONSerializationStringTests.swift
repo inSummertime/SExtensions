@@ -19,7 +19,6 @@ final class JSONSerializationStringTests: XCTestCase {
     func testJSONStringWithArray() {
         let array: [[String: Any]] = [["id": 0], ["title": "title"]]
         XCTAssertEqual(JSONSerialization.jsonString(with: array)!, "[{\"id\":0},{\"title\":\"title\"}]")
-        print(JSONSerialization.jsonString(with: array)!)
     }
     
 }
