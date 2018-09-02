@@ -18,14 +18,31 @@ public extension NSAttributedString {
     ///     // Prints "Hello world!"
     ///
     /// - Parameters:
-    ///   - lhs: a NSAttributedString
-    ///   - rhs: a NSAttributedString
-    /// - Returns: a concatenated NSAttributedString
+    ///   - lhs: A NSAttributedString.
+    ///   - rhs: Another NSAttributedString.
+    /// - Returns: A concatenated NSAttributedString.
     static func + (lhs: NSAttributedString, rhs: NSAttributedString) -> NSAttributedString {
         let result = NSMutableAttributedString()
         result.append(lhs)
         result.append(rhs)
         return NSAttributedString(attributedString: result)
+    }
+    
+    /// Adds two NSAttributedStrings and stores the result in the left-hand-side.
+    ///
+    ///     var hello = NSAttributedString(string: "Hello")
+    ///     let world = NSAttributedString(string: " world!")
+    ///     hello += world
+    ///     print(hello.string)
+    ///     // Prints "Hello world!"
+    ///
+    /// - Parameters:
+    ///   - lhs: The first NSAttributedString to add.
+    ///   - rhs: The second NSAttributedString to add.
+    static func += (lhs: inout NSAttributedString, rhs: NSAttributedString) {
+        let result = NSMutableAttributedString(attributedString: lhs)
+        result.append(rhs)
+        lhs = result
     }
     
 }
