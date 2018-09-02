@@ -19,4 +19,11 @@ final class NSAttributedStringConcatenateTests: XCTestCase {
         XCTAssertEqual((hello + world + empty).string, "Hello world!")
     }
     
+    func testAdditionAssignment() {
+        var hello = NSAttributedString(string: "Hello")
+        let world = NSAttributedString(string: " world!")
+        hello += world
+        XCTAssertEqual(hello.string, "Hello world!")
+    }
+    
 }
