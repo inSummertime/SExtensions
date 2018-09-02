@@ -568,9 +568,6 @@
 		71697E4A20B91F17005C58EC /* String */ = {
 			isa = PBXGroup;
 			children = (
-				71B2660E20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift */,
-				71AF15C820CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift */,
-				71F367E920CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift */,
 				71479E7C20C7494700418144 /* StringAffixTests.swift */,
 				71AB823F20C623AF00EC2A24 /* StringAlphanumericTests.swift */,
 				71958F9320D0892A00AFCBA5 /* StringArrayTests.swift */,
@@ -597,12 +594,23 @@
 				7133739B20F9731A004E7CAB /* Date */,
 				71BBE7062122623700EC5DC0 /* DateInterval */,
 				71F3797C21377124002F89AC /* JSONSerialization */,
+				71797432213B5EA800C360ED /* NSAttributedString */,
 				71B9122021210000006F9236 /* TimeZone */,
 				71E973782124FAB8007533A0 /* UserDefaults */,
 				71DB6F82212925830014ACD0 /* URL */,
 				71047A5A213155D50098F094 /* URLRequest */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		71797432213B5EA800C360ED /* NSAttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				71B2660E20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift */,
+				71AF15C820CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift */,
+				71F367E920CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift */,
+			);
+			path = NSAttributedString;
 			sourceTree = "<group>";
 		};
 		71A4B18020F432E100F5D044 /* Int */ = {
