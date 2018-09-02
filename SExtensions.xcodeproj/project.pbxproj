@@ -75,6 +75,8 @@
 		7192D8C320D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */; };
 		71958F9220D088B400AFCBA5 /* String+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71958F9120D088B400AFCBA5 /* String+Array.swift */; };
 		71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71958F9320D0892A00AFCBA5 /* StringArrayTests.swift */; };
+		719DD077213CA2440000A3AC /* JSONSerialization+JSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719DD076213CA2440000A3AC /* JSONSerialization+JSONObject.swift */; };
+		719DD079213CA7F00000A3AC /* JSONSerializationJSONObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719DD078213CA7F00000A3AC /* JSONSerializationJSONObjectTests.swift */; };
 		719ECA7A20F3AD2A00F7901B /* Double+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719ECA7920F3AD2A00F7901B /* Double+Currency.swift */; };
 		719ECA7C20F3ADEA00F7901B /* DoubleCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719ECA7B20F3ADEA00F7901B /* DoubleCurrencyTests.swift */; };
 		71A0F6042102151D008FAD76 /* Date+IsIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A0F6032102151D008FAD76 /* Date+IsIn.swift */; };
@@ -238,6 +240,8 @@
 		7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryKeyCaseTests.swift; sourceTree = "<group>"; };
 		71958F9120D088B400AFCBA5 /* String+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Array.swift"; sourceTree = "<group>"; };
 		71958F9320D0892A00AFCBA5 /* StringArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringArrayTests.swift; sourceTree = "<group>"; };
+		719DD076213CA2440000A3AC /* JSONSerialization+JSONObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONSerialization+JSONObject.swift"; sourceTree = "<group>"; };
+		719DD078213CA7F00000A3AC /* JSONSerializationJSONObjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializationJSONObjectTests.swift; sourceTree = "<group>"; };
 		719ECA7920F3AD2A00F7901B /* Double+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Currency.swift"; sourceTree = "<group>"; };
 		719ECA7B20F3ADEA00F7901B /* DoubleCurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCurrencyTests.swift; sourceTree = "<group>"; };
 		71A0F6032102151D008FAD76 /* Date+IsIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+IsIn.swift"; sourceTree = "<group>"; };
@@ -791,6 +795,7 @@
 			children = (
 				71B2FA892137667500A86AC2 /* JSONSerialization+Dictionary.swift */,
 				717AFCF92138B2A0007FEDD7 /* JSONSerialization+String.swift */,
+				719DD076213CA2440000A3AC /* JSONSerialization+JSONObject.swift */,
 			);
 			path = JSONSerialization;
 			sourceTree = "<group>";
@@ -799,6 +804,7 @@
 			isa = PBXGroup;
 			children = (
 				71B2FA8B2137677000A86AC2 /* JSONSerializationDictionaryTests.swift */,
+				719DD078213CA7F00000A3AC /* JSONSerializationJSONObjectTests.swift */,
 				71A8EB89213A18D70024265B /* JSONSerializationStringTests.swift */,
 			);
 			path = JSONSerialization;
@@ -957,6 +963,7 @@
 				719ECA7A20F3AD2A00F7901B /* Double+Currency.swift in Sources */,
 				71A0F6042102151D008FAD76 /* Date+IsIn.swift in Sources */,
 				71B6F2B420D33C0B00B232C9 /* Dictionary+Operator.swift in Sources */,
+				719DD077213CA2440000A3AC /* JSONSerialization+JSONObject.swift in Sources */,
 				71E71C5720D72C1C0009C1A9 /* Dictionary+JSON.swift in Sources */,
 				710BDE97211E5FF800317F46 /* Calendar+Gregorian.swift in Sources */,
 				71FAC84620DF878100D8E1C1 /* Array+SafeSubscript.swift in Sources */,
@@ -1054,6 +1061,7 @@
 				718DCD6920E879C3000634B2 /* ArrayRemoveTests.swift in Sources */,
 				71AF15C920CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift in Sources */,
 				710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */,
+				719DD079213CA7F00000A3AC /* JSONSerializationJSONObjectTests.swift in Sources */,
 				71AD0357211D095C00D5B536 /* DateIntervalContainsTests.swift in Sources */,
 				71047A59213154C00098F094 /* URLRequestInitTests.swift in Sources */,
 				71A0F60621021C5D008FAD76 /* DateIsInTests.swift in Sources */,
