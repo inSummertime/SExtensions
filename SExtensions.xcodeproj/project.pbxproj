@@ -133,6 +133,8 @@
 		71CC5AC520CB44C200C4D564 /* String+Truncate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CC5AC420CB44C200C4D564 /* String+Truncate.swift */; };
 		71CC5AC720CB4E6600C4D564 /* StringTruncateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CC5AC620CB4E6600C4D564 /* StringTruncateTests.swift */; };
 		71CE20A820D5DA0B00C0A5ED /* Dictionary+KeyCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CE20A720D5DA0B00C0A5ED /* Dictionary+KeyCase.swift */; };
+		71CF5DE7213F48A1002BB40F /* Int+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CF5DE6213F48A1002BB40F /* Int+Currency.swift */; };
+		71CF5DEB213F48FF002BB40F /* IntCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CF5DEA213F48FF002BB40F /* IntCurrencyTests.swift */; };
 		71D7F6AB20DF63DB00525259 /* Dictionary+Has.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F6AA20DF63DB00525259 /* Dictionary+Has.swift */; };
 		71D7F6AD20DF700100525259 /* DictionaryHasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F6AC20DF700100525259 /* DictionaryHasTests.swift */; };
 		71DB6F8421292E070014ACD0 /* URL+QueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB6F8321292E070014ACD0 /* URL+QueryParameter.swift */; };
@@ -301,6 +303,8 @@
 		71CC5AC420CB44C200C4D564 /* String+Truncate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Truncate.swift"; sourceTree = "<group>"; };
 		71CC5AC620CB4E6600C4D564 /* StringTruncateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTruncateTests.swift; sourceTree = "<group>"; };
 		71CE20A720D5DA0B00C0A5ED /* Dictionary+KeyCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+KeyCase.swift"; sourceTree = "<group>"; };
+		71CF5DE6213F48A1002BB40F /* Int+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Currency.swift"; sourceTree = "<group>"; };
+		71CF5DEA213F48FF002BB40F /* IntCurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntCurrencyTests.swift; sourceTree = "<group>"; };
 		71D7F6AA20DF63DB00525259 /* Dictionary+Has.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Has.swift"; sourceTree = "<group>"; };
 		71D7F6AC20DF700100525259 /* DictionaryHasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryHasTests.swift; sourceTree = "<group>"; };
 		71DB6F8321292E070014ACD0 /* URL+QueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+QueryParameter.swift"; sourceTree = "<group>"; };
@@ -628,6 +632,7 @@
 			isa = PBXGroup;
 			children = (
 				71A4B17E20F432A900F5D044 /* IntBoolTests.swift */,
+				71CF5DEA213F48FF002BB40F /* IntCurrencyTests.swift */,
 				71BBE70A212264AA00EC5DC0 /* IntIsTests.swift */,
 			);
 			path = Int;
@@ -637,6 +642,7 @@
 			isa = PBXGroup;
 			children = (
 				71A4B17C20F4327B00F5D044 /* Int+Bool.swift */,
+				71CF5DE6213F48A1002BB40F /* Int+Currency.swift */,
 				71BBE708212263AD00EC5DC0 /* Int+Is.swift */,
 			);
 			path = Int;
@@ -1004,6 +1010,7 @@
 				711272A32108180F006C550E /* Date+Count.swift in Sources */,
 				71DEFCCE2109544A000A03C9 /* Date+Operator.swift in Sources */,
 				71AF15C720CCD93C006641D3 /* NSAttributedString+Formatting.swift in Sources */,
+				71CF5DE7213F48A1002BB40F /* Int+Currency.swift in Sources */,
 				71F431F3212CDDA0005F67E3 /* URL+IsFromDomain.swift in Sources */,
 				71AE5F6920F1824C0026EFAE /* Double+Percentage.swift in Sources */,
 				71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */,
@@ -1043,6 +1050,7 @@
 			files = (
 				71479E7D20C7494700418144 /* StringAffixTests.swift in Sources */,
 				715F943520D3E9EC001C785F /* DictionaryOperatorTests.swift in Sources */,
+				71CF5DEB213F48FF002BB40F /* IntCurrencyTests.swift in Sources */,
 				71C49E1221190C7F00BEB644 /* DateIntervalRescheduleTests.swift in Sources */,
 				71BBE70B212264AA00EC5DC0 /* IntIsTests.swift in Sources */,
 				71DBC63A21321943006181CD /* URLRequestSetHTTPHeaderFieldsTests.swift in Sources */,
