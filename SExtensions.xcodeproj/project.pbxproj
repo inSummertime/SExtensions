@@ -106,6 +106,8 @@
 		71AF15C920CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AF15C820CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift */; };
 		71B2660D20C8C5670045AA33 /* NSAttributedString+Concatenate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2660C20C8C5670045AA33 /* NSAttributedString+Concatenate.swift */; };
 		71B2660F20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2660E20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift */; };
+		71B2D5592140979F00CD00D1 /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2D5582140979F00CD00D1 /* Encodable+Dictionary.swift */; };
+		71B2D55B214097D000CD00D1 /* EncodableDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2D55A214097D000CD00D1 /* EncodableDictionaryTests.swift */; };
 		71B2FA8A2137667500A86AC2 /* JSONSerialization+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2FA892137667500A86AC2 /* JSONSerialization+Dictionary.swift */; };
 		71B2FA8C2137677000A86AC2 /* JSONSerializationDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B2FA8B2137677000A86AC2 /* JSONSerializationDictionaryTests.swift */; };
 		71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5941C20BB71040073EE20 /* String+Bool.swift */; };
@@ -276,6 +278,8 @@
 		71AF15C820CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringFormattingTests.swift; sourceTree = "<group>"; };
 		71B2660C20C8C5670045AA33 /* NSAttributedString+Concatenate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Concatenate.swift"; sourceTree = "<group>"; };
 		71B2660E20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringConcatenateTests.swift; sourceTree = "<group>"; };
+		71B2D5582140979F00CD00D1 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
+		71B2D55A214097D000CD00D1 /* EncodableDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableDictionaryTests.swift; sourceTree = "<group>"; };
 		71B2FA892137667500A86AC2 /* JSONSerialization+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONSerialization+Dictionary.swift"; sourceTree = "<group>"; };
 		71B2FA8B2137677000A86AC2 /* JSONSerializationDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializationDictionaryTests.swift; sourceTree = "<group>"; };
 		71B5941C20BB71040073EE20 /* String+Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Bool.swift"; sourceTree = "<group>"; };
@@ -422,6 +426,7 @@
 				714B021920F5E14C007DD87B /* Bool */,
 				71EAAF9E20D1438200A648D8 /* Dictionary */,
 				71C28F3120EC4A6900C56F45 /* Double */,
+				71B2D55D2140980800CD00D1 /* Encodable */,
 				71A4B18120F432EB00F5D044 /* Int */,
 				71697E4620B91EE8005C58EC /* String */,
 			);
@@ -668,6 +673,22 @@
 			path = URLRequest;
 			sourceTree = "<group>";
 		};
+		71B2D55C214097FF00CD00D1 /* Encodable */ = {
+			isa = PBXGroup;
+			children = (
+				71B2D55A214097D000CD00D1 /* EncodableDictionaryTests.swift */,
+			);
+			path = Encodable;
+			sourceTree = "<group>";
+		};
+		71B2D55D2140980800CD00D1 /* Encodable */ = {
+			isa = PBXGroup;
+			children = (
+				71B2D5582140979F00CD00D1 /* Encodable+Dictionary.swift */,
+			);
+			path = Encodable;
+			sourceTree = "<group>";
+		};
 		71B7655E212F73130027422D /* Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -675,6 +696,7 @@
 				714B021A20F5E157007DD87B /* Bool */,
 				71EAAF9F20D1438F00A648D8 /* Dictionary */,
 				71ADB14220EFAC8E00FD8FCE /* Double */,
+				71B2D55C214097FF00CD00D1 /* Encodable */,
 				71A4B18020F432E100F5D044 /* Int */,
 				71697E4A20B91F17005C58EC /* String */,
 			);
@@ -973,6 +995,7 @@
 				718557F2210BEA0300BBFD32 /* Date+Truncated.swift in Sources */,
 				71CC5AC520CB44C200C4D564 /* String+Truncate.swift in Sources */,
 				71C28FC020BE36BA00EF3654 /* String+Separate.swift in Sources */,
+				71B2D5592140979F00CD00D1 /* Encodable+Dictionary.swift in Sources */,
 				712AF13A2117B08D004715A1 /* DateInterval+String.swift in Sources */,
 				71A8004B20C164020029B141 /* String+Trim.swift in Sources */,
 				7153D14E211BBDB600C0A1C7 /* DateInterval+Split.swift in Sources */,
@@ -1054,6 +1077,7 @@
 				71C49E1221190C7F00BEB644 /* DateIntervalRescheduleTests.swift in Sources */,
 				71BBE70B212264AA00EC5DC0 /* IntIsTests.swift in Sources */,
 				71DBC63A21321943006181CD /* URLRequestSetHTTPHeaderFieldsTests.swift in Sources */,
+				71B2D55B214097D000CD00D1 /* EncodableDictionaryTests.swift in Sources */,
 				7127BD2620FEB82D00816D4B /* DateStringTests.swift in Sources */,
 				7177623920C35DF1001F2C8E /* StringNumberTests.swift in Sources */,
 				7107C57020FAB64A00790D4D /* DateInitTests.swift in Sources */,
