@@ -36,6 +36,7 @@
 		71375E3020CAB4BD00C6A7E0 /* StringHeightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */; };
 		713B00E1210617E000305F64 /* Date+Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B00E0210617E000305F64 /* Date+Component.swift */; };
 		713FBA26211FAAA300207986 /* TimeZone+UTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713FBA25211FAAA300207986 /* TimeZone+UTC.swift */; };
+		71458A26214200E40048A1FD /* DispatchQueueDelayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71458A25214200E40048A1FD /* DispatchQueueDelayTests.swift */; };
 		71479E7B20C7482800418144 /* String+Affix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71479E7A20C7482800418144 /* String+Affix.swift */; };
 		71479E7D20C7494700418144 /* StringAffixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71479E7C20C7494700418144 /* StringAffixTests.swift */; };
 		714B021620F5E0EA007DD87B /* Bool+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714B021520F5E0EA007DD87B /* Bool+Int.swift */; };
@@ -157,6 +158,7 @@
 		71E973772124FA8A007533A0 /* UserDefaultsSubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E973762124FA8A007533A0 /* UserDefaultsSubscriptTests.swift */; };
 		71EAAF9B20D140B900A648D8 /* Dictionary+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EAAF9A20D140B900A648D8 /* Dictionary+Subscript.swift */; };
 		71EAAF9D20D1437600A648D8 /* DictionarySubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EAAF9C20D1437600A648D8 /* DictionarySubscriptTests.swift */; };
+		71F0FF7D2141FFB000A26790 /* DispatchQueue+Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F0FF7C2141FFB000A26790 /* DispatchQueue+Delay.swift */; };
 		71F367E820CEA24E00C01A74 /* NSMutableAttributedString+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F367E720CEA24E00C01A74 /* NSMutableAttributedString+Format.swift */; };
 		71F367EA20CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F367E920CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift */; };
 		71F431F3212CDDA0005F67E3 /* URL+IsFromDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F431F2212CDDA0005F67E3 /* URL+IsFromDomain.swift */; };
@@ -205,6 +207,7 @@
 		71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHeightTests.swift; sourceTree = "<group>"; };
 		713B00E0210617E000305F64 /* Date+Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Component.swift"; sourceTree = "<group>"; };
 		713FBA25211FAAA300207986 /* TimeZone+UTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+UTC.swift"; sourceTree = "<group>"; };
+		71458A25214200E40048A1FD /* DispatchQueueDelayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueDelayTests.swift; sourceTree = "<group>"; };
 		71479E7A20C7482800418144 /* String+Affix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Affix.swift"; sourceTree = "<group>"; };
 		71479E7C20C7494700418144 /* StringAffixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAffixTests.swift; sourceTree = "<group>"; };
 		714B021520F5E0EA007DD87B /* Bool+Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+Int.swift"; sourceTree = "<group>"; };
@@ -329,6 +332,7 @@
 		71E973762124FA8A007533A0 /* UserDefaultsSubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsSubscriptTests.swift; sourceTree = "<group>"; };
 		71EAAF9A20D140B900A648D8 /* Dictionary+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Subscript.swift"; sourceTree = "<group>"; };
 		71EAAF9C20D1437600A648D8 /* DictionarySubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionarySubscriptTests.swift; sourceTree = "<group>"; };
+		71F0FF7C2141FFB000A26790 /* DispatchQueue+Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Delay.swift"; sourceTree = "<group>"; };
 		71F367E720CEA24E00C01A74 /* NSMutableAttributedString+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Format.swift"; sourceTree = "<group>"; };
 		71F367E920CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringFormatTests.swift; sourceTree = "<group>"; };
 		71F431F2212CDDA0005F67E3 /* URL+IsFromDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+IsFromDomain.swift"; sourceTree = "<group>"; };
@@ -452,6 +456,14 @@
 			path = TimeZone;
 			sourceTree = "<group>";
 		};
+		71458A27214200E70048A1FD /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				71458A25214200E40048A1FD /* DispatchQueueDelayTests.swift */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
 		714B021920F5E14C007DD87B /* Bool */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,6 +505,7 @@
 		71697E2120B91CDB005C58EC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				71F0FF7E2141FFB900A26790 /* Dispatch */,
 				71697E4720B91EF0005C58EC /* Foundation */,
 				71697E3920B91D4E005C58EC /* SupportingFiles */,
 				713996A0212E321500C56C68 /* Swift */,
@@ -503,6 +516,7 @@
 		71697E2C20B91CDB005C58EC /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				71458A27214200E70048A1FD /* Dispatch */,
 				71697E4B20B91F1D005C58EC /* Foundation */,
 				71697E3A20B91D54005C58EC /* SupportingFiles */,
 				71B7655E212F73130027422D /* Swift */,
@@ -825,6 +839,14 @@
 			path = Dictionary;
 			sourceTree = "<group>";
 		};
+		71F0FF7E2141FFB900A26790 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				71F0FF7C2141FFB000A26790 /* DispatchQueue+Delay.swift */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
 		71F3797B2137710F002F89AC /* JSONSerialization */ = {
 			isa = PBXGroup;
 			children = (
@@ -1002,6 +1024,7 @@
 				719ECA7A20F3AD2A00F7901B /* Double+Currency.swift in Sources */,
 				71A0F6042102151D008FAD76 /* Date+IsIn.swift in Sources */,
 				71B6F2B420D33C0B00B232C9 /* Dictionary+Operator.swift in Sources */,
+				71F0FF7D2141FFB000A26790 /* DispatchQueue+Delay.swift in Sources */,
 				719DD077213CA2440000A3AC /* JSONSerialization+JSONObject.swift in Sources */,
 				71E71C5720D72C1C0009C1A9 /* Dictionary+JSON.swift in Sources */,
 				710BDE97211E5FF800317F46 /* Calendar+Gregorian.swift in Sources */,
@@ -1090,6 +1113,7 @@
 				71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */,
 				715535E4212703E600B25789 /* UserDefaultsDateTests.swift in Sources */,
 				7192D8C320D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift in Sources */,
+				71458A26214200E40048A1FD /* DispatchQueueDelayTests.swift in Sources */,
 				71E07BDA20E755E200CC83FC /* ArrayHasTests.swift in Sources */,
 				71B2FA8C2137677000A86AC2 /* JSONSerializationDictionaryTests.swift in Sources */,
 				71ACDC5F20BF7E990071FF33 /* StringWordsTests.swift in Sources */,
