@@ -6,6 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
+import Dispatch
+
 public extension DispatchSource {
     
     class func timer(delay: TimeInterval = 0, interval: TimeInterval = 1.0, isRepeating: Bool = true, queue: DispatchQueue = .main, handler: @escaping () -> Void) -> DispatchSourceTimer {

@@ -6,6 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
+import Dispatch
+
 public extension DispatchQueue {
     
     /// Performs the action after a specified seconds.
