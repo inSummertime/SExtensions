@@ -11,20 +11,20 @@ import XCTest
 
 final class DispatchSourceTimerTests: XCTestCase {
     
-    var start = 1
+    var number = 1
     var timer: DispatchSourceTimer?
     
     func testTimer() {
         let expectation = self.expectation(description: "StartShouldBeTwo")
         timer = DispatchSource.timer(delay: 1.0, interval: 1.0, isRepeating: true, queue: .main) {
-            self.start += 1
+            self.number += 1
         }
         perform(#selector(then(_:)), with: expectation, afterDelay: 3.0)
         wait(for: [expectation], timeout: 3.0)
     }
     
     func then(_ expectation: XCTestExpectation) {
-        XCTAssertTrue(start == 3)
+        XCTAssertTrue(number == 3)
         expectation.fulfill()
         timer?.cancel()
     }
