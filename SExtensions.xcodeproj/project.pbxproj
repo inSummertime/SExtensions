@@ -18,6 +18,8 @@
 		711272A32108180F006C550E /* Date+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711272A22108180F006C550E /* Date+Count.swift */; };
 		711272A521081936006C550E /* DateCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711272A421081936006C550E /* DateCountTests.swift */; };
 		711A3CCD20ED8ED90056E2E3 /* DoubleBoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A3CCC20ED8ED90056E2E3 /* DoubleBoolTests.swift */; };
+		711CD5462145DDE9002F26E4 /* CGRect+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711CD5452145DDE9002F26E4 /* CGRect+Update.swift */; };
+		711CD5482145E146002F26E4 /* CGRectUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711CD5472145E146002F26E4 /* CGRectUpdateTests.swift */; };
 		711EBCD720FD6C220061AA57 /* Date+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EBCD620FD6C220061AA57 /* Date+Operation.swift */; };
 		711EBCD920FD73FB0061AA57 /* DateOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EBCD820FD73FB0061AA57 /* DateOperationTests.swift */; };
 		7127BD2420FEB70500816D4B /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127BD2320FEB70500816D4B /* Date+String.swift */; };
@@ -193,6 +195,8 @@
 		711272A22108180F006C550E /* Date+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Count.swift"; sourceTree = "<group>"; };
 		711272A421081936006C550E /* DateCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCountTests.swift; sourceTree = "<group>"; };
 		711A3CCC20ED8ED90056E2E3 /* DoubleBoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleBoolTests.swift; sourceTree = "<group>"; };
+		711CD5452145DDE9002F26E4 /* CGRect+Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Update.swift"; sourceTree = "<group>"; };
+		711CD5472145E146002F26E4 /* CGRectUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectUpdateTests.swift; sourceTree = "<group>"; };
 		711EBCD620FD6C220061AA57 /* Date+Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Operation.swift"; sourceTree = "<group>"; };
 		711EBCD820FD73FB0061AA57 /* DateOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOperationTests.swift; sourceTree = "<group>"; };
 		7127BD2320FEB70500816D4B /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
@@ -662,6 +666,7 @@
 			isa = PBXGroup;
 			children = (
 				719C8C292144B49A00F3522D /* CGPoint+Operator.swift */,
+				711CD5452145DDE9002F26E4 /* CGRect+Update.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -670,6 +675,7 @@
 			isa = PBXGroup;
 			children = (
 				719C8C2C2144BE1A00F3522D /* CGPointOperatorTests.swift */,
+				711CD5472145E146002F26E4 /* CGRectUpdateTests.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -1090,6 +1096,7 @@
 				71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */,
 				714EB2FF20C206ED002ED5DE /* String+Date.swift in Sources */,
 				7133739720F971F2004E7CAB /* Date+TimeInterval.swift in Sources */,
+				711CD5462145DDE9002F26E4 /* CGRect+Update.swift in Sources */,
 				711EBCD720FD6C220061AA57 /* Date+Operation.swift in Sources */,
 				71EAAF9B20D140B900A648D8 /* Dictionary+Subscript.swift in Sources */,
 				71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */,
@@ -1143,6 +1150,7 @@
 				712FD316210621E500165D5A /* DateComponentTests.swift in Sources */,
 				71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */,
 				715535E4212703E600B25789 /* UserDefaultsDateTests.swift in Sources */,
+				711CD5482145E146002F26E4 /* CGRectUpdateTests.swift in Sources */,
 				7192D8C320D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift in Sources */,
 				71458A26214200E40048A1FD /* DispatchQueueDelayTests.swift in Sources */,
 				71E07BDA20E755E200CC83FC /* ArrayHasTests.swift in Sources */,
