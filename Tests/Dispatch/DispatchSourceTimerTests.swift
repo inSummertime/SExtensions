@@ -15,12 +15,15 @@ final class DispatchSourceTimerTests: XCTestCase {
     var timer: DispatchSourceTimer?
     
     func testTimer() {
-        let expectation = self.expectation(description: "StartShouldBeTwo")
-        timer = DispatchSource.timer(delay: 1.0, interval: 1.0, isRepeating: true, queue: .main) {
+        let expectation = self.expectation(description: "NumberShouldBe3")
+        let queue = DispatchQueue.global(qos: .background)
+        timer = DispatchSource.timer(delay: 1.0, interval: 1.0, isRepeating: true, queue: queue) {
             self.number += 1
         }
-        perform(#selector(then(_:)), with: expectation, afterDelay: 3.0)
-        wait(for: [expectation], timeout: 3.0)
+        queue.sync {
+            self.perform(#selector(self.then(_:)), with: expectation, afterDelay: 3.0)
+            self.wait(for: [expectation], timeout: 3.0)
+        }
     }
     
     func then(_ expectation: XCTestExpectation) {
