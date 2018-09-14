@@ -52,6 +52,8 @@
 		7153D150211BC23800C0A1C7 /* DateIntervalSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D14F211BC23800C0A1C7 /* DateIntervalSplitTests.swift */; };
 		715535E22127008900B25789 /* UserDefaults+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715535E12127008900B25789 /* UserDefaults+Date.swift */; };
 		715535E4212703E600B25789 /* UserDefaultsDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715535E3212703E600B25789 /* UserDefaultsDateTests.swift */; };
+		71587D43214BA05C0087A4DD /* String+IsPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71587D42214BA05C0087A4DD /* String+IsPhoneNumber.swift */; };
+		71587D45214BA0B70087A4DD /* StringIsPhoneNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71587D44214BA0B70087A4DD /* StringIsPhoneNumberTests.swift */; };
 		715CF54C21166346009187BF /* DateInterval+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CF54B21166346009187BF /* DateInterval+Operator.swift */; };
 		715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */; };
 		715F943520D3E9EC001C785F /* DictionaryOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F943420D3E9EC001C785F /* DictionaryOperatorTests.swift */; };
@@ -235,6 +237,8 @@
 		7153D14F211BC23800C0A1C7 /* DateIntervalSplitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalSplitTests.swift; sourceTree = "<group>"; };
 		715535E12127008900B25789 /* UserDefaults+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Date.swift"; sourceTree = "<group>"; };
 		715535E3212703E600B25789 /* UserDefaultsDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDateTests.swift; sourceTree = "<group>"; };
+		71587D42214BA05C0087A4DD /* String+IsPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+IsPhoneNumber.swift"; sourceTree = "<group>"; };
+		71587D44214BA0B70087A4DD /* StringIsPhoneNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringIsPhoneNumberTests.swift; sourceTree = "<group>"; };
 		715CF54B21166346009187BF /* DateInterval+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval+Operator.swift"; sourceTree = "<group>"; };
 		715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalOperatorTests.swift; sourceTree = "<group>"; };
 		715F943420D3E9EC001C785F /* DictionaryOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryOperatorTests.swift; sourceTree = "<group>"; };
@@ -599,6 +603,7 @@
 				714EB2FE20C206ED002ED5DE /* String+Date.swift */,
 				712BB74920CF64A300F01034 /* String+Dictionary.swift */,
 				71375E2D20CAB46000C6A7E0 /* String+Height.swift */,
+				71587D42214BA05C0087A4DD /* String+IsPhoneNumber.swift */,
 				7177623620C3573F001F2C8E /* String+Number.swift */,
 				71A4568520C0A609003E739C /* String+SafeSubscript.swift */,
 				71C28FBF20BE36BA00EF3654 /* String+Separate.swift */,
@@ -638,6 +643,7 @@
 				714EB30020C207D9002ED5DE /* StringDateTests.swift */,
 				712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */,
 				71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */,
+				71587D44214BA0B70087A4DD /* StringIsPhoneNumberTests.swift */,
 				7177623820C35DF1001F2C8E /* StringNumberTests.swift */,
 				71A4568720C0A657003E739C /* StringSafeSubscriptTests.swift */,
 				71C28FC120BE385400EF3654 /* StringSeparateTests.swift */,
@@ -1084,6 +1090,7 @@
 				71E18CBD212B8518001BB850 /* URL+HostURL.swift in Sources */,
 				71903E85211A54BA00CE88F7 /* DateInterval+DurationComponent.swift in Sources */,
 				71375E2E20CAB46000C6A7E0 /* String+Height.swift in Sources */,
+				71587D43214BA05C0087A4DD /* String+IsPhoneNumber.swift in Sources */,
 				7177623720C3573F001F2C8E /* String+Number.swift in Sources */,
 				71ADB13F20EFAC3F00FD8FCE /* Double+RoundTo.swift in Sources */,
 				71B2660D20C8C5670045AA33 /* NSAttributedString+Concatenate.swift in Sources */,
@@ -1169,6 +1176,7 @@
 				71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */,
 				71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */,
 				712FD316210621E500165D5A /* DateComponentTests.swift in Sources */,
+				71587D45214BA0B70087A4DD /* StringIsPhoneNumberTests.swift in Sources */,
 				71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */,
 				715535E4212703E600B25789 /* UserDefaultsDateTests.swift in Sources */,
 				711CD5482145E146002F26E4 /* CGRectUpdateTests.swift in Sources */,
