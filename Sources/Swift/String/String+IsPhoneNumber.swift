@@ -10,6 +10,10 @@ import Foundation
 
 public extension String {
     
+    /// Checks whether it is a phone number.
+    ///
+    ///     print("800–692–7753".isPhoneNumber)
+    ///     // Prints "true"
     var isPhoneNumber: Bool {
         do {
             let detector = try NSDataDetector(types: NSTextCheckingResult.CheckingType.phoneNumber.rawValue)
