@@ -24,6 +24,8 @@
 		711EBCD920FD73FB0061AA57 /* DateOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EBCD820FD73FB0061AA57 /* DateOperationTests.swift */; };
 		7127BD2420FEB70500816D4B /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127BD2320FEB70500816D4B /* Date+String.swift */; };
 		7127BD2620FEB82D00816D4B /* DateStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127BD2520FEB82D00816D4B /* DateStringTests.swift */; };
+		7128479E214F16EB00D8CBC8 /* NSAttributedString+InitHTMLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7128479D214F16EB00D8CBC8 /* NSAttributedString+InitHTMLString.swift */; };
+		712847A0214F1BC200D8CBC8 /* NSAttributedStringInitHTMLStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7128479F214F1BC200D8CBC8 /* NSAttributedStringInitHTMLStringTests.swift */; };
 		7128D64E211554D200A06FE0 /* Date+Is24HourTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7128D64D211554D200A06FE0 /* Date+Is24HourTime.swift */; };
 		712AF13A2117B08D004715A1 /* DateInterval+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712AF1392117B08D004715A1 /* DateInterval+String.swift */; };
 		712AF13C2117B23C004715A1 /* DateIntervalStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712AF13B2117B23C004715A1 /* DateIntervalStringTests.swift */; };
@@ -52,8 +54,6 @@
 		7153D150211BC23800C0A1C7 /* DateIntervalSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D14F211BC23800C0A1C7 /* DateIntervalSplitTests.swift */; };
 		715535E22127008900B25789 /* UserDefaults+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715535E12127008900B25789 /* UserDefaults+Date.swift */; };
 		715535E4212703E600B25789 /* UserDefaultsDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715535E3212703E600B25789 /* UserDefaultsDateTests.swift */; };
-		71587D43214BA05C0087A4DD /* String+IsPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71587D42214BA05C0087A4DD /* String+IsPhoneNumber.swift */; };
-		71587D45214BA0B70087A4DD /* StringIsPhoneNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71587D44214BA0B70087A4DD /* StringIsPhoneNumberTests.swift */; };
 		715CF54C21166346009187BF /* DateInterval+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CF54B21166346009187BF /* DateInterval+Operator.swift */; };
 		715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */; };
 		715F943520D3E9EC001C785F /* DictionaryOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F943420D3E9EC001C785F /* DictionaryOperatorTests.swift */; };
@@ -138,6 +138,7 @@
 		71C28FBE20BE348600EF3654 /* StringCondenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FBD20BE348600EF3654 /* StringCondenseTests.swift */; };
 		71C28FC020BE36BA00EF3654 /* String+Separate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FBF20BE36BA00EF3654 /* String+Separate.swift */; };
 		71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C28FC120BE385400EF3654 /* StringSeparateTests.swift */; };
+		71C2FBA8214E149600ABED50 /* StringSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C2FBA7214E149600ABED50 /* StringSplitTests.swift */; };
 		71C49E10211903E800BEB644 /* DateInterval+Reschedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C49E0F211903E800BEB644 /* DateInterval+Reschedule.swift */; };
 		71C49E1221190C7F00BEB644 /* DateIntervalRescheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C49E1121190C7F00BEB644 /* DateIntervalRescheduleTests.swift */; };
 		71C7F8E8213DFA07002B9916 /* JSONSerialization+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C7F8E7213DFA07002B9916 /* JSONSerialization+Array.swift */; };
@@ -152,6 +153,9 @@
 		71D67ED0214873D50004BB79 /* CGRectTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D67ECF214873D50004BB79 /* CGRectTransformTests.swift */; };
 		71D7F6AB20DF63DB00525259 /* Dictionary+Has.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F6AA20DF63DB00525259 /* Dictionary+Has.swift */; };
 		71D7F6AD20DF700100525259 /* DictionaryHasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7F6AC20DF700100525259 /* DictionaryHasTests.swift */; };
+		71D9F196214BA7C60051B4E4 /* String+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9F195214BA7C60051B4E4 /* String+Split.swift */; };
+		71D9F198214BB3960051B4E4 /* String+Is.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9F197214BB3960051B4E4 /* String+Is.swift */; };
+		71D9F19A214BB3B90051B4E4 /* StringIsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D9F199214BB3B90051B4E4 /* StringIsTests.swift */; };
 		71DB6F8421292E070014ACD0 /* URL+QueryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB6F8321292E070014ACD0 /* URL+QueryParameter.swift */; };
 		71DB6F8621292E300014ACD0 /* URLQueryParameterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DB6F8521292E300014ACD0 /* URLQueryParameterTests.swift */; };
 		71DBC6382132163B006181CD /* URLRequest+SetHTTPHeaderFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DBC6372132163B006181CD /* URLRequest+SetHTTPHeaderFields.swift */; };
@@ -209,6 +213,8 @@
 		711EBCD820FD73FB0061AA57 /* DateOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOperationTests.swift; sourceTree = "<group>"; };
 		7127BD2320FEB70500816D4B /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
 		7127BD2520FEB82D00816D4B /* DateStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateStringTests.swift; sourceTree = "<group>"; };
+		7128479D214F16EB00D8CBC8 /* NSAttributedString+InitHTMLString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+InitHTMLString.swift"; sourceTree = "<group>"; };
+		7128479F214F1BC200D8CBC8 /* NSAttributedStringInitHTMLStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringInitHTMLStringTests.swift; sourceTree = "<group>"; };
 		7128D64D211554D200A06FE0 /* Date+Is24HourTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Is24HourTime.swift"; sourceTree = "<group>"; };
 		712AF1392117B08D004715A1 /* DateInterval+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval+String.swift"; sourceTree = "<group>"; };
 		712AF13B2117B23C004715A1 /* DateIntervalStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalStringTests.swift; sourceTree = "<group>"; };
@@ -237,8 +243,6 @@
 		7153D14F211BC23800C0A1C7 /* DateIntervalSplitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalSplitTests.swift; sourceTree = "<group>"; };
 		715535E12127008900B25789 /* UserDefaults+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Date.swift"; sourceTree = "<group>"; };
 		715535E3212703E600B25789 /* UserDefaultsDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDateTests.swift; sourceTree = "<group>"; };
-		71587D42214BA05C0087A4DD /* String+IsPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+IsPhoneNumber.swift"; sourceTree = "<group>"; };
-		71587D44214BA0B70087A4DD /* StringIsPhoneNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringIsPhoneNumberTests.swift; sourceTree = "<group>"; };
 		715CF54B21166346009187BF /* DateInterval+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval+Operator.swift"; sourceTree = "<group>"; };
 		715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalOperatorTests.swift; sourceTree = "<group>"; };
 		715F943420D3E9EC001C785F /* DictionaryOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryOperatorTests.swift; sourceTree = "<group>"; };
@@ -326,6 +330,7 @@
 		71C28FBD20BE348600EF3654 /* StringCondenseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCondenseTests.swift; sourceTree = "<group>"; };
 		71C28FBF20BE36BA00EF3654 /* String+Separate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Separate.swift"; sourceTree = "<group>"; };
 		71C28FC120BE385400EF3654 /* StringSeparateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSeparateTests.swift; sourceTree = "<group>"; };
+		71C2FBA7214E149600ABED50 /* StringSplitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSplitTests.swift; sourceTree = "<group>"; };
 		71C49E0F211903E800BEB644 /* DateInterval+Reschedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval+Reschedule.swift"; sourceTree = "<group>"; };
 		71C49E1121190C7F00BEB644 /* DateIntervalRescheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalRescheduleTests.swift; sourceTree = "<group>"; };
 		71C7F8E7213DFA07002B9916 /* JSONSerialization+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONSerialization+Array.swift"; sourceTree = "<group>"; };
@@ -340,6 +345,9 @@
 		71D67ECF214873D50004BB79 /* CGRectTransformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectTransformTests.swift; sourceTree = "<group>"; };
 		71D7F6AA20DF63DB00525259 /* Dictionary+Has.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Has.swift"; sourceTree = "<group>"; };
 		71D7F6AC20DF700100525259 /* DictionaryHasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryHasTests.swift; sourceTree = "<group>"; };
+		71D9F195214BA7C60051B4E4 /* String+Split.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Split.swift"; sourceTree = "<group>"; };
+		71D9F197214BB3960051B4E4 /* String+Is.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Is.swift"; sourceTree = "<group>"; };
+		71D9F199214BB3B90051B4E4 /* StringIsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringIsTests.swift; sourceTree = "<group>"; };
 		71DB6F8321292E070014ACD0 /* URL+QueryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+QueryParameter.swift"; sourceTree = "<group>"; };
 		71DB6F8521292E300014ACD0 /* URLQueryParameterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryParameterTests.swift; sourceTree = "<group>"; };
 		71DBC6372132163B006181CD /* URLRequest+SetHTTPHeaderFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+SetHTTPHeaderFields.swift"; sourceTree = "<group>"; };
@@ -470,6 +478,7 @@
 			children = (
 				71B2660C20C8C5670045AA33 /* NSAttributedString+Concatenate.swift */,
 				71AF15C620CCD93C006641D3 /* NSAttributedString+Formatting.swift */,
+				7128479D214F16EB00D8CBC8 /* NSAttributedString+InitHTMLString.swift */,
 				71F367E720CEA24E00C01A74 /* NSMutableAttributedString+Format.swift */,
 			);
 			path = NSAttributedString;
@@ -603,10 +612,11 @@
 				714EB2FE20C206ED002ED5DE /* String+Date.swift */,
 				712BB74920CF64A300F01034 /* String+Dictionary.swift */,
 				71375E2D20CAB46000C6A7E0 /* String+Height.swift */,
-				71587D42214BA05C0087A4DD /* String+IsPhoneNumber.swift */,
+				71D9F197214BB3960051B4E4 /* String+Is.swift */,
 				7177623620C3573F001F2C8E /* String+Number.swift */,
 				71A4568520C0A609003E739C /* String+SafeSubscript.swift */,
 				71C28FBF20BE36BA00EF3654 /* String+Separate.swift */,
+				71D9F195214BA7C60051B4E4 /* String+Split.swift */,
 				71A8004A20C164020029B141 /* String+Trim.swift */,
 				71CC5AC420CB44C200C4D564 /* String+Truncate.swift */,
 				71ACDC5B20BF7E640071FF33 /* String+Words.swift */,
@@ -643,10 +653,11 @@
 				714EB30020C207D9002ED5DE /* StringDateTests.swift */,
 				712BB74B20CF65D400F01034 /* StringDictionaryTests.swift */,
 				71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */,
-				71587D44214BA0B70087A4DD /* StringIsPhoneNumberTests.swift */,
+				71D9F199214BB3B90051B4E4 /* StringIsTests.swift */,
 				7177623820C35DF1001F2C8E /* StringNumberTests.swift */,
 				71A4568720C0A657003E739C /* StringSafeSubscriptTests.swift */,
 				71C28FC120BE385400EF3654 /* StringSeparateTests.swift */,
+				71C2FBA7214E149600ABED50 /* StringSplitTests.swift */,
 				71A8004C20C1642D0029B141 /* StringTrimTests.swift */,
 				71CC5AC620CB4E6600C4D564 /* StringTruncateTests.swift */,
 				71ACDC5D20BF7E6F0071FF33 /* StringWordsTests.swift */,
@@ -675,6 +686,7 @@
 			children = (
 				71B2660E20C8C6720045AA33 /* NSAttributedStringConcatenateTests.swift */,
 				71AF15C820CCDA5C006641D3 /* NSAttributedStringFormattingTests.swift */,
+				7128479F214F1BC200D8CBC8 /* NSAttributedStringInitHTMLStringTests.swift */,
 				71F367E920CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift */,
 			);
 			path = NSAttributedString;
@@ -1068,6 +1080,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71D9F198214BB3960051B4E4 /* String+Is.swift in Sources */,
 				717D0E1320E3A838005E972D /* Array+Operation.swift in Sources */,
 				71C007972134B0FB00DF520A /* Bundle+Info.swift in Sources */,
 				718DCD6720E86D95000634B2 /* Array+Remove.swift in Sources */,
@@ -1090,7 +1103,6 @@
 				71E18CBD212B8518001BB850 /* URL+HostURL.swift in Sources */,
 				71903E85211A54BA00CE88F7 /* DateInterval+DurationComponent.swift in Sources */,
 				71375E2E20CAB46000C6A7E0 /* String+Height.swift in Sources */,
-				71587D43214BA05C0087A4DD /* String+IsPhoneNumber.swift in Sources */,
 				7177623720C3573F001F2C8E /* String+Number.swift in Sources */,
 				71ADB13F20EFAC3F00FD8FCE /* Double+RoundTo.swift in Sources */,
 				71B2660D20C8C5670045AA33 /* NSAttributedString+Concatenate.swift in Sources */,
@@ -1109,6 +1121,7 @@
 				7183031020F9A27600C0961A /* Bool+ToggleValue.swift in Sources */,
 				71B2FA8A2137667500A86AC2 /* JSONSerialization+Dictionary.swift in Sources */,
 				710A111320E4FF590054262F /* Array+Operator.swift in Sources */,
+				71D9F196214BA7C60051B4E4 /* String+Split.swift in Sources */,
 				717AFCFA2138B2A0007FEDD7 /* JSONSerialization+String.swift in Sources */,
 				7128D64E211554D200A06FE0 /* Date+Is24HourTime.swift in Sources */,
 				71AD0355211D088A00D5B536 /* DateInterval+Contains.swift in Sources */,
@@ -1129,6 +1142,7 @@
 				712BB74A20CF64A300F01034 /* String+Dictionary.swift in Sources */,
 				71606AFA21439ACB00D56245 /* DispatchSource+Timer.swift in Sources */,
 				7146A87C21473595005C1814 /* CGRect+Transform.swift in Sources */,
+				7128479E214F16EB00D8CBC8 /* NSAttributedString+InitHTMLString.swift in Sources */,
 				718DCD6F20E89104000634B2 /* Dictionary+Remove.swift in Sources */,
 				71958F9220D088B400AFCBA5 /* String+Array.swift in Sources */,
 				71C49E10211903E800BEB644 /* DateInterval+Reschedule.swift in Sources */,
@@ -1176,7 +1190,6 @@
 				71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */,
 				71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */,
 				712FD316210621E500165D5A /* DateComponentTests.swift in Sources */,
-				71587D45214BA0B70087A4DD /* StringIsPhoneNumberTests.swift in Sources */,
 				71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */,
 				715535E4212703E600B25789 /* UserDefaultsDateTests.swift in Sources */,
 				711CD5482145E146002F26E4 /* CGRectUpdateTests.swift in Sources */,
@@ -1231,8 +1244,11 @@
 				7146A87A2147303C005C1814 /* CGRectCenterTests.swift in Sources */,
 				71E71C5920D72DC00009C1A9 /* DictionaryJSONTests.swift in Sources */,
 				7133739A20F97313004E7CAB /* DateTimeIntervalTests.swift in Sources */,
+				71C2FBA8214E149600ABED50 /* StringSplitTests.swift in Sources */,
 				718D2B49210FED01002649BE /* DateComparisonTests.swift in Sources */,
 				71B9121F2120FFF6006F9236 /* TimeZoneIdentifierTests.swift in Sources */,
+				712847A0214F1BC200D8CBC8 /* NSAttributedStringInitHTMLStringTests.swift in Sources */,
+				71D9F19A214BB3B90051B4E4 /* StringIsTests.swift in Sources */,
 				71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */,
 				715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */,
 				712AF13C2117B23C004715A1 /* DateIntervalStringTests.swift in Sources */,
