@@ -54,6 +54,8 @@
 		7153D150211BC23800C0A1C7 /* DateIntervalSplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7153D14F211BC23800C0A1C7 /* DateIntervalSplitTests.swift */; };
 		715535E22127008900B25789 /* UserDefaults+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715535E12127008900B25789 /* UserDefaults+Date.swift */; };
 		715535E4212703E600B25789 /* UserDefaultsDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715535E3212703E600B25789 /* UserDefaultsDateTests.swift */; };
+		71585ADE21507C1E00ACD6A8 /* Array+Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71585ADD21507C1E00ACD6A8 /* Array+Sum.swift */; };
+		71585AE02150801300ACD6A8 /* ArraySumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71585ADF2150801300ACD6A8 /* ArraySumTests.swift */; };
 		715CF54C21166346009187BF /* DateInterval+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CF54B21166346009187BF /* DateInterval+Operator.swift */; };
 		715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */; };
 		715F943520D3E9EC001C785F /* DictionaryOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F943420D3E9EC001C785F /* DictionaryOperatorTests.swift */; };
@@ -243,6 +245,8 @@
 		7153D14F211BC23800C0A1C7 /* DateIntervalSplitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalSplitTests.swift; sourceTree = "<group>"; };
 		715535E12127008900B25789 /* UserDefaults+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Date.swift"; sourceTree = "<group>"; };
 		715535E3212703E600B25789 /* UserDefaultsDateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDateTests.swift; sourceTree = "<group>"; };
+		71585ADD21507C1E00ACD6A8 /* Array+Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Sum.swift"; sourceTree = "<group>"; };
+		71585ADF2150801300ACD6A8 /* ArraySumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySumTests.swift; sourceTree = "<group>"; };
 		715CF54B21166346009187BF /* DateInterval+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval+Operator.swift"; sourceTree = "<group>"; };
 		715CF54D21166737009187BF /* DateIntervalOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalOperatorTests.swift; sourceTree = "<group>"; };
 		715F943420D3E9EC001C785F /* DictionaryOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryOperatorTests.swift; sourceTree = "<group>"; };
@@ -948,6 +952,7 @@
 				710A111220E4FF590054262F /* Array+Operator.swift */,
 				718DCD6620E86D95000634B2 /* Array+Remove.swift */,
 				71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */,
+				71585ADD21507C1E00ACD6A8 /* Array+Sum.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -961,6 +966,7 @@
 				710A111420E50AA70054262F /* ArrayOperatorTests.swift */,
 				718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */,
 				71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */,
+				71585ADF2150801300ACD6A8 /* ArraySumTests.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -1089,6 +1095,7 @@
 				71CC5AC520CB44C200C4D564 /* String+Truncate.swift in Sources */,
 				71C28FC020BE36BA00EF3654 /* String+Separate.swift in Sources */,
 				71B2D5592140979F00CD00D1 /* Encodable+Dictionary.swift in Sources */,
+				71585ADE21507C1E00ACD6A8 /* Array+Sum.swift in Sources */,
 				712AF13A2117B08D004715A1 /* DateInterval+String.swift in Sources */,
 				71A8004B20C164020029B141 /* String+Trim.swift in Sources */,
 				7153D14E211BBDB600C0A1C7 /* DateInterval+Split.swift in Sources */,
@@ -1174,6 +1181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71479E7D20C7494700418144 /* StringAffixTests.swift in Sources */,
+				71585AE02150801300ACD6A8 /* ArraySumTests.swift in Sources */,
 				715F943520D3E9EC001C785F /* DictionaryOperatorTests.swift in Sources */,
 				71CF5DEB213F48FF002BB40F /* IntCurrencyTests.swift in Sources */,
 				71C49E1221190C7F00BEB644 /* DateIntervalRescheduleTests.swift in Sources */,
