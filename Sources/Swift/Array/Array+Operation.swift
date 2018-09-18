@@ -145,15 +145,3 @@ public extension Array where Element : Equatable {
     }
     
 }
-
-public extension Array where Element: Numeric {
-    
-    /// Returns the sum of all elements.
-    ///
-    ///     print([1, 2, 3].sum)
-    ///     // Prints "6"
-    var sum: Element {
-        return reduce(0, {$0 + $1})
-    }
-    
-}
