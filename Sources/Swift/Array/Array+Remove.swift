@@ -145,3 +145,36 @@ public extension Array where Element : Equatable {
     }
     
 }
+
+protocol OptionalProtocol {
+    
+    associatedtype Wrapped
+    
+    /// Evaluates the given closure when this `Optional` instance is not `nil`,
+    /// passing the unwrapped value as a parameter.
+    ///
+    /// Use the `map` method with a closure that returns a nonoptional value.
+    func map<U>(_ f: (Wrapped) throws -> U) rethrows -> U?
+}
+
+extension Optional: OptionalProtocol {}
+
+extension Array where Element: OptionalProtocol {
+    
+    /// Removes all nils.
+    ///
+    ///     print([0, nil, 1].removeNils())
+    ///     // Prints "[0, 1]"
+    ///
+    /// - Returns: An array with all nils removed.
+    func removingNils() -> [Element.Wrapped] {
+        var result: [Element.Wrapped] = []
+        for element in self {
+            if let element = element.map({ $0 }) {
+                result.append(element)
+            }
+        }
+        return result
+    }
+    
+}
