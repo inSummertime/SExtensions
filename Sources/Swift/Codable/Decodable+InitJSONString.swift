@@ -10,9 +10,9 @@ import Foundation
 
 public extension Decodable {
     
-    /// Init using a JSON string.
+    /// Creates a new instance using a JSON string.
     ///
-    /// - Parameter jsonString: A JSON String
+    /// - Parameter jsonString: A JSON String.
     /// - Throws: throws an error when failing to create a Foundation object
     ///   from JSON data.
     init?(jsonString: String) throws {
