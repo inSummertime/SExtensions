@@ -13,7 +13,7 @@ final class JSONSerializationArrayTests: XCTestCase {
     
     func testArrayFromJSONFile() {
         do {
-            let array = try  JSONSerialization.arrayFromJSONFile(filename: "Array", callerClass: JSONSerializationArrayTests.self)
+            let array = try JSONSerialization.arrayFromJSONFile(filename: "Array", callerClass: JSONSerializationArrayTests.self)
             let anotherArray = try  JSONSerialization.arrayFromJSONFile(filename: "Array.json", callerClass: JSONSerializationArrayTests.self)
             XCTAssertEqual(array![0]["id"] as! Int, 0)
             XCTAssertEqual(anotherArray![1]["title"] as! String, "title")
