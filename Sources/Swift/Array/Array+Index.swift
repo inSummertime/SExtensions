@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension Array where Element : Equatable {
     
     /// Returns the indexes where the specified value appears in the

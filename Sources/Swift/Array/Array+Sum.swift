@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public protocol Addable {
     
     /// Adds two values and produces their sum.
