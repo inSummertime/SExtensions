@@ -77,6 +77,21 @@ public extension Array where Element : Equatable {
         return result
     }
     
+    /// Returns an array which removes the last given element.
+    ///
+    ///     print([0, 1, 2, 1].removingLast(1))
+    ///     // Prints "[0, 1, 2]"
+    ///
+    /// - Parameter element: The elements to remove.
+    /// - Returns: An array.
+    func removingLast(_ element: Element) -> Array {
+        var result = self
+        if let index = lastIndex(of: element) {
+            result.remove(at: index)
+        }
+        return result
+    }
+    
     /// Returns an array which does not contain the elements in the given arrays.
     ///
     ///     print(["hello", "world", "!"].removing(["hello"], ["world", "!"]))
