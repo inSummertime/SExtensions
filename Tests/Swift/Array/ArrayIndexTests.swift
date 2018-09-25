@@ -16,6 +16,13 @@ final class ArrayIndexTests: XCTestCase {
         XCTAssertEqual(["hello", "world", "!", "hello", "world", "!"].indexes(of: "0"), [])
     }
     
+    func testLastIndex() {
+        XCTAssertEqual([0, 1, 2, 3, 1].lastIndex(of: 1), 4)
+        XCTAssertEqual(["hello", "world", "!", "hello", "world", "!"].lastIndex(of: "hello"), 3)
+        XCTAssertNil(["hello", "world", "!", "hello", "world", "!"].lastIndex(of: "0"))
+        XCTAssertNil([].lastIndex(of: ""))
+    }
+    
     func testIndexesIsIncluded() {
         XCTAssertEqual(["hello", "world", "!", "hello", "world", "!"].indexes( {$0.count == 5} ), [0, 1, 3, 4])
         XCTAssertEqual(["hello", "world", "!", "hello", "world", "!"].indexes( {$0.count == 2} ), [])
