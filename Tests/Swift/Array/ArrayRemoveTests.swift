@@ -21,6 +21,12 @@ final class ArrayRemoveTests: XCTestCase {
         XCTAssertEqual(["hello", "world", "!"].removing("", " "), ["hello", "world", "!"])
     }
     
+    func testRemovingLast() {
+        XCTAssertEqual(["hello", "world", "!", "hello"].removingLast("hello"), ["hello", "world", "!"])
+        XCTAssertEqual(["hello", "world", "!"].removingLast(""), ["hello", "world", "!"])
+        XCTAssertEqual([Int]().removingLast(0), [])
+    }
+    
     func testRemovingArrays() {
         XCTAssertEqual(["hello", "world", "!"].removing(["hello"], ["world", "!"]), [])
         XCTAssertEqual(["hello", "world", "!"].removing([" "], ["", "0"]), ["hello", "world", "!"])
