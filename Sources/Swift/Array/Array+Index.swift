@@ -17,14 +17,28 @@ public extension Array where Element : Equatable {
     /// - Parameter element: An element to search for in the array.
     /// - Returns: The array of indexes where `element` is found. If `element`
     ///   is not found in the array, returns an empty array.
-    func indexes(of element: Element) -> [Int] {
-        var indexes = [Int]()
+    func indexes(of element: Element) -> [Index] {
+        var indexes = [Index]()
         for index in 0..<count {
             if self[index] == element {
                 indexes.append(index)
             }
         }
         return indexes
+    }
+    
+    /// Returns the last index of the element.
+    ///
+    ///     print([0, 1, 2, 3, 1].lastIndex(of: 1))
+    ///     // Prints "4"
+    ///
+    /// - Parameter element: An element to search for in the array.
+    /// - Returns: A index
+    func lastIndex(of element: Element) -> Index? {
+        if let index = reversed().index(of: element) {
+            return  index.base - 1
+        }
+        return nil
     }
     
     /// Returns the indexes where `element` satisfies the given predicate.
@@ -38,8 +52,8 @@ public extension Array where Element : Equatable {
     /// - Returns: The array of indexes where `element` satisfies the given
     ///   predicate. If `element` is not found in the array, returns an empty
     ///   array.
-    func indexes(_ isIncluded: (_ element: Element) -> Bool) -> [Int] {
-        var indexes = [Int]()
+    func indexes(_ isIncluded: (_ element: Element) -> Bool) -> [Index] {
+        var indexes = [Index]()
         for index in 0..<count {
             if isIncluded(self[index]) {
                 indexes.append(index)
