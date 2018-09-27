@@ -90,3 +90,20 @@ public extension Dictionary where Key == String {
     }
     
 }
+
+extension Dictionary where Value: OptionalProtocol {
+    
+    /// Removes nils.
+    ///
+    /// - Returns: A dictionary.
+    func removingNils() -> [Key: Value.Wrapped] {
+        var result: [Key: Value.Wrapped] = [:]
+        for (key, value) in self {
+            if let unwrappedValue = value.map({ $0 }) {
+                result[key] = unwrappedValue
+            }
+        }
+        return result
+    }
+    
+}
