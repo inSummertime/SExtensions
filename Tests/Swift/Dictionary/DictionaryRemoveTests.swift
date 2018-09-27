@@ -52,5 +52,12 @@ final class DictionaryRemoveTests: XCTestCase {
         XCTAssertEqual((["hello": ["world": "!", "!": NSNull()]].removingEmpty()["hello"] as! [String: String])["world"]!, "!")
         XCTAssertEqual((["hello": ["world": ["!", NSNull()]]].removingEmpty()["hello"] as! [String: [String]])["world"]!, ["!"])
     }
+
+    func testRemovingNil() {
+        XCTAssertEqual([0: 1, 2: nil].removingNils(), [0: 1])
+        XCTAssertEqual(["hello": "world", "!": nil].removingNils(), ["hello": "world"])
+        XCTAssertEqual([String: String?]().removingNils(), [:])
+        XCTAssertTrue(["!": nil].removingNils().isEmpty)
+    }
     
 }
