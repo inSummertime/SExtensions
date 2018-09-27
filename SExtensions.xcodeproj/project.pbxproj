@@ -22,6 +22,8 @@
 		711272A32108180F006C550E /* Date+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711272A22108180F006C550E /* Date+Count.swift */; };
 		711272A521081936006C550E /* DateCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711272A421081936006C550E /* DateCountTests.swift */; };
 		711A3CCD20ED8ED90056E2E3 /* DoubleBoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A3CCC20ED8ED90056E2E3 /* DoubleBoolTests.swift */; };
+		711A42D8215D993900195DBF /* Array+Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A42D7215D993900195DBF /* Array+Split.swift */; };
+		711A42DA215D9AFE00195DBF /* ArraySplitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A42D9215D9AFE00195DBF /* ArraySplitTests.swift */; };
 		711CD5462145DDE9002F26E4 /* CGRect+Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711CD5452145DDE9002F26E4 /* CGRect+Update.swift */; };
 		711CD5482145E146002F26E4 /* CGRectUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711CD5472145E146002F26E4 /* CGRectUpdateTests.swift */; };
 		711EBCD720FD6C220061AA57 /* Date+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711EBCD620FD6C220061AA57 /* Date+Operation.swift */; };
@@ -223,6 +225,8 @@
 		711272A22108180F006C550E /* Date+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Count.swift"; sourceTree = "<group>"; };
 		711272A421081936006C550E /* DateCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCountTests.swift; sourceTree = "<group>"; };
 		711A3CCC20ED8ED90056E2E3 /* DoubleBoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleBoolTests.swift; sourceTree = "<group>"; };
+		711A42D7215D993900195DBF /* Array+Split.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Split.swift"; sourceTree = "<group>"; };
+		711A42D9215D9AFE00195DBF /* ArraySplitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySplitTests.swift; sourceTree = "<group>"; };
 		711CD5452145DDE9002F26E4 /* CGRect+Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Update.swift"; sourceTree = "<group>"; };
 		711CD5472145E146002F26E4 /* CGRectUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectUpdateTests.swift; sourceTree = "<group>"; };
 		711EBCD620FD6C220061AA57 /* Date+Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Operation.swift"; sourceTree = "<group>"; };
@@ -978,6 +982,7 @@
 				710A111220E4FF590054262F /* Array+Operator.swift */,
 				718DCD6620E86D95000634B2 /* Array+Remove.swift */,
 				71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */,
+				711A42D7215D993900195DBF /* Array+Split.swift */,
 				71585ADD21507C1E00ACD6A8 /* Array+Sum.swift */,
 			);
 			path = Array;
@@ -996,6 +1001,7 @@
 				710A111420E50AA70054262F /* ArrayOperatorTests.swift */,
 				718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */,
 				71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */,
+				711A42D9215D9AFE00195DBF /* ArraySplitTests.swift */,
 				71585ADF2150801300ACD6A8 /* ArraySumTests.swift */,
 			);
 			path = Array;
@@ -1160,6 +1166,7 @@
 				71DBC6382132163B006181CD /* URLRequest+SetHTTPHeaderFields.swift in Sources */,
 				7183031020F9A27600C0961A /* Bool+ToggleValue.swift in Sources */,
 				71B2FA8A2137667500A86AC2 /* JSONSerialization+Dictionary.swift in Sources */,
+				711A42D8215D993900195DBF /* Array+Split.swift in Sources */,
 				710A111320E4FF590054262F /* Array+Operator.swift in Sources */,
 				71D9F196214BA7C60051B4E4 /* String+Split.swift in Sources */,
 				717AFCFA2138B2A0007FEDD7 /* JSONSerialization+String.swift in Sources */,
@@ -1287,6 +1294,7 @@
 				71FAC84920DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift in Sources */,
 				71DB6F8621292E300014ACD0 /* URLQueryParameterTests.swift in Sources */,
 				717D0E1520E3ABA5005E972D /* ArrayOperationTests.swift in Sources */,
+				711A42DA215D9AFE00195DBF /* ArraySplitTests.swift in Sources */,
 				719C8C2D2144BE1A00F3522D /* CGPointOperatorTests.swift in Sources */,
 				7146A87A2147303C005C1814 /* CGRectCenterTests.swift in Sources */,
 				71E71C5920D72DC00009C1A9 /* DictionaryJSONTests.swift in Sources */,
