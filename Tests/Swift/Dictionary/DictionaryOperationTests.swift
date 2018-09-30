@@ -84,13 +84,4 @@ final class DictionaryOperationTests: XCTestCase {
         XCTAssertFalse(["hello": 0].isStrictSubdictionary(of: [:]))
     }
     
-    func testContains() {
-        XCTAssertTrue(["hello": 0, "world": 1].contains(other: ["hello": 0]))
-        XCTAssertTrue(["hello": 0, "world": 1].contains(other: ["hello": 0, "world": 1]))
-        XCTAssertFalse(["hello": 0, "world": 1].contains(other: ["": 0]))
-        XCTAssertFalse(["hello": 0, "world": 1].contains(other: [:]))
-        XCTAssertFalse(["hello": 0, "world": 1].contains(other: ["hello": 0, "world": 1, "!": 2]))
-        XCTAssertFalse([:].contains(other: ["hello": 0]))
-    }
-    
 }

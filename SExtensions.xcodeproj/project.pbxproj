@@ -15,6 +15,8 @@
 		7107D8942151B76A0064F8FE /* Array+Append.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107D8932151B76A0064F8FE /* Array+Append.swift */; };
 		7107D8962151B91E0064F8FE /* Array+Count.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107D8952151B91E0064F8FE /* Array+Count.swift */; };
 		7107D8982151BBAF0064F8FE /* ArrayCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107D8972151BBAF0064F8FE /* ArrayCountTests.swift */; };
+		7107E821216049C100B91E69 /* Dictionary+Contain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107E820216049C100B91E69 /* Dictionary+Contain.swift */; };
+		7107E82321604A6600B91E69 /* DictionaryContainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107E82221604A6600B91E69 /* DictionaryContainTests.swift */; };
 		710A111320E4FF590054262F /* Array+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111220E4FF590054262F /* Array+Operator.swift */; };
 		710A111520E50AA70054262F /* ArrayOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710A111420E50AA70054262F /* ArrayOperatorTests.swift */; };
 		710BDE97211E5FF800317F46 /* Calendar+Gregorian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710BDE96211E5FF800317F46 /* Calendar+Gregorian.swift */; };
@@ -220,6 +222,8 @@
 		7107D8932151B76A0064F8FE /* Array+Append.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Append.swift"; sourceTree = "<group>"; };
 		7107D8952151B91E0064F8FE /* Array+Count.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Count.swift"; sourceTree = "<group>"; };
 		7107D8972151BBAF0064F8FE /* ArrayCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCountTests.swift; sourceTree = "<group>"; };
+		7107E820216049C100B91E69 /* Dictionary+Contain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Contain.swift"; sourceTree = "<group>"; };
+		7107E82221604A6600B91E69 /* DictionaryContainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryContainTests.swift; sourceTree = "<group>"; };
 		710A111220E4FF590054262F /* Array+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Operator.swift"; sourceTree = "<group>"; };
 		710A111420E50AA70054262F /* ArrayOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOperatorTests.swift; sourceTree = "<group>"; };
 		710BDE96211E5FF800317F46 /* Calendar+Gregorian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Gregorian.swift"; sourceTree = "<group>"; };
@@ -935,6 +939,7 @@
 		71EAAF9E20D1438200A648D8 /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
+				7107E820216049C100B91E69 /* Dictionary+Contain.swift */,
 				71D7F6AA20DF63DB00525259 /* Dictionary+Has.swift */,
 				71E71C5620D72C1C0009C1A9 /* Dictionary+JSON.swift */,
 				71CE20A720D5DA0B00C0A5ED /* Dictionary+KeyCase.swift */,
@@ -949,6 +954,7 @@
 		71EAAF9F20D1438F00A648D8 /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
+				7107E82221604A6600B91E69 /* DictionaryContainTests.swift */,
 				71D7F6AC20DF700100525259 /* DictionaryHasTests.swift */,
 				71E71C5820D72DC00009C1A9 /* DictionaryJSONTests.swift */,
 				7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */,
@@ -1221,6 +1227,7 @@
 				71A4568620C0A609003E739C /* String+SafeSubscript.swift in Sources */,
 				713B00E1210617E000305F64 /* Date+Component.swift in Sources */,
 				71E973742124F85F007533A0 /* UserDefaults+Subscript.swift in Sources */,
+				7107E821216049C100B91E69 /* Dictionary+Contain.swift in Sources */,
 				71BBE709212263AD00EC5DC0 /* Int+Is.swift in Sources */,
 				71A4B17D20F4327B00F5D044 /* Int+Bool.swift in Sources */,
 				719C8C2A2144B49A00F3522D /* CGPoint+Operator.swift in Sources */,
@@ -1333,6 +1340,7 @@
 				712AF13C2117B23C004715A1 /* DateIntervalStringTests.swift in Sources */,
 				71C28FBE20BE348600EF3654 /* StringCondenseTests.swift in Sources */,
 				713C9DC021545DDE00EFF6D5 /* ArrayDuplicateTests.swift in Sources */,
+				7107E82321604A6600B91E69 /* DictionaryContainTests.swift in Sources */,
 				71E18CBF212B85ED001BB850 /* URLHostURLTests.swift in Sources */,
 				71BA5BCE21000F4C002CE891 /* DateStartTests.swift in Sources */,
 				711EBCD920FD73FB0061AA57 /* DateOperationTests.swift in Sources */,
