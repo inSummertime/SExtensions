@@ -176,16 +176,4 @@ public extension Dictionary where Value: Equatable {
         return isSubdictionary(of: other)
     }
     
-    /// Returns a Boolean value that indicates whether this dictionary contains
-    /// the given dictionary.
-    ///
-    ///     print(["hello": 0, "world": 1].contains(other: ["hello": 0]))
-    ///     // Prints "true"
-    ///
-    /// - Parameter other: Another dictionary.
-    /// - Returns: `true` if the dictionary contains `other`; otherwise, `false`.
-    func contains(other: [Key: Value]) -> Bool {
-        return other.isSubdictionary(of: self)
-    }
-    
 }
