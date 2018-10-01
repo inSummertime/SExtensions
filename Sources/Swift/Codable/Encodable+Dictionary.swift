@@ -10,7 +10,7 @@ import Foundation
 
 public extension Encodable {
     
-    /// Create a dictionary from a object which confirms Encodable
+    /// Creates a dictionary from a object which confirms Encodable
     var dictionary: [String: Any]? {
         guard let data = try? JSONEncoder().encode(self) else { return nil }
         let jsonObject = try? JSONSerialization.jsonObject(with: data, options: .allowFragments)
