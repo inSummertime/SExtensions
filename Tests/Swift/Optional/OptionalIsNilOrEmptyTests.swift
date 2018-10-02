@@ -11,13 +11,22 @@ import XCTest
 
 final class OptionalIsNilOrEmptyTests: XCTestCase {
 
-    func testIsNilOrEmpty() {
+    func testIsNilOrEmptyCollection() {
         var array: [Int]?
         XCTAssertTrue(array.isNilOrEmpty)
         array = []
         XCTAssertTrue(array.isNilOrEmpty)
         array = [1]
         XCTAssertFalse(array.isNilOrEmpty)
+    }
+    
+    func testIsNilOrEmptyString() {
+        var string: String?
+        XCTAssertTrue(string.isNilOrEmpty)
+        string = ""
+        XCTAssertTrue(string.isNilOrEmpty)
+        string = "!"
+        XCTAssertFalse(string.isNilOrEmpty)
     }
 
 }
