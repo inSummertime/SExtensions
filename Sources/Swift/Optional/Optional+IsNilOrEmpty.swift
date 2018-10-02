@@ -16,3 +16,13 @@ public extension Optional where Wrapped: Collection {
     
 }
 
+public extension Optional where Wrapped == String {
+    
+    /// Returns true if it is nil or empty.
+    var isNilOrEmpty: Bool {
+        guard let string = self else { return true }
+        return string.isEmpty
+    }
+    
+}
+
