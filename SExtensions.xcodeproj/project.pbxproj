@@ -98,6 +98,8 @@
 		718DCD6920E879C3000634B2 /* ArrayRemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */; };
 		718DCD6F20E89104000634B2 /* Dictionary+Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6E20E89104000634B2 /* Dictionary+Remove.swift */; };
 		718DCD7120E891DD000634B2 /* DictionaryRemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD7020E891DD000634B2 /* DictionaryRemoveTests.swift */; };
+		718EDF4221641770004CA361 /* Optional+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718EDF4121641770004CA361 /* Optional+Operator.swift */; };
+		718EDF44216418E2004CA361 /* OptionalOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718EDF43216418E2004CA361 /* OptionalOperatorTests.swift */; };
 		71903E85211A54BA00CE88F7 /* DateInterval+DurationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71903E84211A54BA00CE88F7 /* DateInterval+DurationComponent.swift */; };
 		71903E87211A55A700CE88F7 /* DateIntervalDurationComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71903E86211A55A700CE88F7 /* DateIntervalDurationComponentTests.swift */; };
 		7192D8C320D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */; };
@@ -310,6 +312,8 @@
 		718DCD6820E879C3000634B2 /* ArrayRemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayRemoveTests.swift; sourceTree = "<group>"; };
 		718DCD6E20E89104000634B2 /* Dictionary+Remove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Remove.swift"; sourceTree = "<group>"; };
 		718DCD7020E891DD000634B2 /* DictionaryRemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryRemoveTests.swift; sourceTree = "<group>"; };
+		718EDF4121641770004CA361 /* Optional+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Operator.swift"; sourceTree = "<group>"; };
+		718EDF43216418E2004CA361 /* OptionalOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalOperatorTests.swift; sourceTree = "<group>"; };
 		71903E84211A54BA00CE88F7 /* DateInterval+DurationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval+DurationComponent.swift"; sourceTree = "<group>"; };
 		71903E86211A55A700CE88F7 /* DateIntervalDurationComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateIntervalDurationComponentTests.swift; sourceTree = "<group>"; };
 		7192D8C220D5E4EE006D77A5 /* DictionaryKeyCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryKeyCaseTests.swift; sourceTree = "<group>"; };
@@ -737,6 +741,7 @@
 			isa = PBXGroup;
 			children = (
 				7198204A215FA0E9004DE4A1 /* OptionalIsNilOrEmptyTests.swift */,
+				718EDF43216418E2004CA361 /* OptionalOperatorTests.swift */,
 			);
 			path = Optional;
 			sourceTree = "<group>";
@@ -745,6 +750,7 @@
 			isa = PBXGroup;
 			children = (
 				71982048215FA0AC004DE4A1 /* Optional+IsNilOrEmpty.swift */,
+				718EDF4121641770004CA361 /* Optional+Operator.swift */,
 			);
 			path = Optional;
 			sourceTree = "<group>";
@@ -1162,6 +1168,7 @@
 				718DCD6720E86D95000634B2 /* Array+Remove.swift in Sources */,
 				71B9121D2120F7B9006F9236 /* TimeZone+Identifier.swift in Sources */,
 				718557F2210BEA0300BBFD32 /* Date+Truncated.swift in Sources */,
+				718EDF4221641770004CA361 /* Optional+Operator.swift in Sources */,
 				71CC5AC520CB44C200C4D564 /* String+Truncate.swift in Sources */,
 				71C28FC020BE36BA00EF3654 /* String+Separate.swift in Sources */,
 				71B2D5592140979F00CD00D1 /* Encodable+Dictionary.swift in Sources */,
@@ -1342,6 +1349,7 @@
 				71B9121F2120FFF6006F9236 /* TimeZoneIdentifierTests.swift in Sources */,
 				712847A0214F1BC200D8CBC8 /* NSAttributedStringInitHTMLStringTests.swift in Sources */,
 				71D9F19A214BB3B90051B4E4 /* StringIsTests.swift in Sources */,
+				718EDF44216418E2004CA361 /* OptionalOperatorTests.swift in Sources */,
 				71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */,
 				715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */,
 				712AF13C2117B23C004715A1 /* DateIntervalStringTests.swift in Sources */,
