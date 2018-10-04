@@ -14,9 +14,9 @@ public extension Array where Element : Equatable {
     ///     // Prints "["hello", "world", "!"]"
     ///
     /// - Parameters:
-    ///   - lhs: A array.
+    ///   - lhs: An array.
     ///   - rhs: The array to combile with `lhs`.
-    /// - Returns: A array.
+    /// - Returns: An array.
     static func | (lhs: Array, rhs: Array) -> Array {
         return lhs.union(rhs)
     }
@@ -29,7 +29,7 @@ public extension Array where Element : Equatable {
     /// - Parameters:
     ///   - lhs: The first array.
     ///   - rhs: The array to subtract.
-    /// - Returns: A array.
+    /// - Returns: An array.
     static func - (lhs: Array, rhs: Array) -> Array {
         return lhs.subtracting(rhs)
     }
@@ -43,7 +43,7 @@ public extension Array where Element : Equatable {
     ///     // Prints "["hello"]"
     ///
     /// - Parameters:
-    ///   - lhs: A array.
+    ///   - lhs: An array.
     ///   - rhs: The array to subtract from `lhs`.
     static func -= (lhs: inout Array, rhs: Array) {
         lhs = lhs.subtracting(rhs)
@@ -56,9 +56,9 @@ public extension Array where Element : Equatable {
     ///     // Prints "["hello"]"
     ///
     /// - Parameters:
-    ///   - lhs: A array.
+    ///   - lhs: An array.
     ///   - rhs: The array to compare with `lhs`.
-    /// - Returns: A array.
+    /// - Returns: An array.
     static func & (lhs: Array, rhs: Array) -> Array {
         return lhs.intersection(rhs)
     }
