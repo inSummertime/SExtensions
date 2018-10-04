@@ -203,6 +203,8 @@
 		71F367EA20CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F367E920CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift */; };
 		71F431F3212CDDA0005F67E3 /* URL+IsFromDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F431F2212CDDA0005F67E3 /* URL+IsFromDomain.swift */; };
 		71F431F5212CDDE1005F67E3 /* URLIsFromDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F431F4212CDDE1005F67E3 /* URLIsFromDomainTests.swift */; };
+		71F5D61421659B09000032B1 /* Set+Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F5D61321659B09000032B1 /* Set+Operator.swift */; };
+		71F5D61721659C0D000032B1 /* SetOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F5D61621659C0D000032B1 /* SetOperatorTests.swift */; };
 		71FAC84620DF878100D8E1C1 /* Array+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */; };
 		71FAC84920DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */; };
 /* End PBXBuildFile section */
@@ -417,6 +419,8 @@
 		71F367E920CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedStringFormatTests.swift; sourceTree = "<group>"; };
 		71F431F2212CDDA0005F67E3 /* URL+IsFromDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+IsFromDomain.swift"; sourceTree = "<group>"; };
 		71F431F4212CDDE1005F67E3 /* URLIsFromDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLIsFromDomainTests.swift; sourceTree = "<group>"; };
+		71F5D61321659B09000032B1 /* Set+Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+Operator.swift"; sourceTree = "<group>"; };
+		71F5D61621659C0D000032B1 /* SetOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetOperatorTests.swift; sourceTree = "<group>"; };
 		71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SafeSubscript.swift"; sourceTree = "<group>"; };
 		71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySafeSubscriptTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -513,6 +517,7 @@
 				71B2D55D2140980800CD00D1 /* Codable */,
 				71A4B18120F432EB00F5D044 /* Int */,
 				7198204D215FA1AE004DE4A1 /* Optional */,
+				71F5D61521659B12000032B1 /* Set */,
 				71697E4620B91EE8005C58EC /* String */,
 			);
 			path = Swift;
@@ -847,6 +852,7 @@
 				71B2D55C214097FF00CD00D1 /* Codable */,
 				71A4B18020F432E100F5D044 /* Int */,
 				7198204C215FA0F1004DE4A1 /* Optional */,
+				71F5D61821659C17000032B1 /* Set */,
 				71697E4A20B91F17005C58EC /* String */,
 			);
 			path = Swift;
@@ -1005,6 +1011,22 @@
 				71A8EB89213A18D70024265B /* JSONSerializationStringTests.swift */,
 			);
 			path = JSONSerialization;
+			sourceTree = "<group>";
+		};
+		71F5D61521659B12000032B1 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				71F5D61321659B09000032B1 /* Set+Operator.swift */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		71F5D61821659C17000032B1 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				71F5D61621659C0D000032B1 /* SetOperatorTests.swift */,
+			);
+			path = Set;
 			sourceTree = "<group>";
 		};
 		71FAC84720DF87A800D8E1C1 /* Array */ = {
@@ -1248,6 +1270,7 @@
 				7107D8962151B91E0064F8FE /* Array+Count.swift in Sources */,
 				71DB6F8421292E070014ACD0 /* URL+QueryParameter.swift in Sources */,
 				718D2B47210FEC15002649BE /* Date+Comparison.swift in Sources */,
+				71F5D61421659B09000032B1 /* Set+Operator.swift in Sources */,
 				71ADEDF4213150EF0075C0A8 /* URLRequest+Init.swift in Sources */,
 				71AB823E20C61A7400EC2A24 /* String+Alphanumeric.swift in Sources */,
 				7130148020EB193200161E23 /* Array+Index.swift in Sources */,
@@ -1354,6 +1377,7 @@
 				715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */,
 				712AF13C2117B23C004715A1 /* DateIntervalStringTests.swift in Sources */,
 				714CCE292161A16000D4E784 /* ArrayIndexedDictionaryTests.swift in Sources */,
+				71F5D61721659C0D000032B1 /* SetOperatorTests.swift in Sources */,
 				71C28FBE20BE348600EF3654 /* StringCondenseTests.swift in Sources */,
 				713C9DC021545DDE00EFF6D5 /* ArrayDuplicateTests.swift in Sources */,
 				7107E82321604A6600B91E69 /* DictionaryContainTests.swift in Sources */,
