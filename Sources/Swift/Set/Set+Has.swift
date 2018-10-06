@@ -1,17 +1,20 @@
 //
-//  Array+Has.swift
+//  Set+Has.swift
 //  SExtensions
 //
-//  Created by Ray on 2018/6/30.
+//  Created by Ray on 2018/10/6.
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-public extension Array {
+import Foundation
+
+public extension Set {
     
-    /// Returns a Boolean value that indicates whether the array has a
+    /// Returns a Boolean value that indicates whether the set has a
     /// element that satisfy the given predicate.
     ///
-    ///     print(["hello", "world"].hasAny({ $0.count == 5 }))
+    ///     let set: Set = ["hello", "world"]
+    ///     print(set.hasAny({ $0.count == 5 }))
     ///     // Prints "true"
     ///
     /// - Parameter isIncluded:  A closure that takes a element as its
@@ -22,10 +25,11 @@ public extension Array {
         return filter(isIncluded).count > 0
     }
     
-    /// Returns a Boolean value that indicates whether all elements in the array
+    /// Returns a Boolean value that indicates whether all elements in the set
     /// satisfy the given predicate.
     ///
-    ///     print(["hello", "world"].hasAll({ $0.count == 5 }))
+    ///     let set: Set = ["hello", "world"]
+    ///     print(set.hasAll({ $0.count == 5 }))
     ///     // Prints "true"
     ///
     /// - Parameter isIncluded:  A closure that takes a element as its
@@ -37,5 +41,3 @@ public extension Array {
     }
     
 }
-
-
