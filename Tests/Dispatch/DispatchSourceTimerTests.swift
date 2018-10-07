@@ -17,21 +17,22 @@ final class DispatchSourceTimerTests: XCTestCase {
     
     func testTimer() {
         let expectation = self.expectation(description: "NumberShouldBe3")
-        timer = DispatchSource.timer(delay: 1.0, interval: 1.0, isRepeating: true, queue: queue) {
+        timer = DispatchSource.timer(delay: 1.0, interval: 1.0, isRepeating: true, queue: queue) { timer in
             self.number += 1
+            if self.number > 3 {
+                timer.suspend()
+            }
         }
         queue.sync {
-            self.perform(#selector(self.then(_:)), with: expectation, afterDelay: 3.0)
-            self.wait(for: [expectation], timeout: 3.0)
+            self.perform(#selector(self.then(_:)), with: expectation, afterDelay: 5.0)
+            self.wait(for: [expectation], timeout: 5.0)
         }
     }
     
     func then(_ expectation: XCTestExpectation) {
-        queue.sync {
-            XCTAssertTrue(number == 3)
-            expectation.fulfill()
-            self.timer?.cancel()
-        }
+        XCTAssertTrue(number == 4)
+        expectation.fulfill()
+        self.timer?.cancel()
     }
     
 }
