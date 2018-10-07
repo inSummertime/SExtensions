@@ -54,8 +54,10 @@ final class ArrayOperationTests: XCTestCase {
     func testContains() {
         XCTAssertTrue(["hello", "world"].contains(["hello"]))
         XCTAssertFalse(["hello"].contains(["world"]))
-        XCTAssertFalse(["hello"].contains([]))
+        XCTAssertTrue(["hello"].contains([]))
         XCTAssertTrue(["hello"].contains(["hello"]))
+        XCTAssertFalse([String]().contains(["world"]))
+        XCTAssertTrue([String]().contains([]))
     }
     
 }

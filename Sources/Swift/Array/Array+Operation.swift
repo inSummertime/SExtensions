@@ -57,6 +57,9 @@ public extension Array where Element : Equatable {
     /// Returns a new array with the elements that are different from the given
     /// arrays.
     ///
+    ///     print(["hello", "world"].difference(["hello"]))
+    ///     // Prints "["world"]"
+    ///
     /// - Parameter others: Other arrays.
     /// - Returns: A new array.
     func difference(_ others: Array...) -> Array {
@@ -85,7 +88,7 @@ public extension Array where Element : Equatable {
         var result = self
         for array in others {
             for element in array {
-                if self.contains(element)  {
+                if contains(element)  {
                     result = result.filter({ $0 != element })
                 }
             }
@@ -103,8 +106,14 @@ public extension Array where Element : Equatable {
     /// - Returns: `true` if the array is a subarray of `other`; otherwise,
     ///   `false`.
     func isSubarray(of other: Array) -> Bool {
-        if isEmpty || other.isEmpty {
+        if self == other {
+            return true
+        }
+        if other.isEmpty {
             return false
+        }
+        if isEmpty {
+            return true
         }
         for element in self {
             if !other.contains(element) {
@@ -127,7 +136,7 @@ public extension Array where Element : Equatable {
         if self == other {
             return false
         }
-        return self.isSubarray(of: other)
+        return isSubarray(of: other)
     }
     
     /// Returns a Boolean value that indicates whether this array contains
