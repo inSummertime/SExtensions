@@ -13,10 +13,10 @@ final class DispatchSourceTimerTests: XCTestCase {
     
     var number = 1
     var timer: DispatchSourceTimer?
+    let queue = DispatchQueue.global(qos: .background)
     
     func testTimer() {
         let expectation = self.expectation(description: "NumberShouldBe3")
-        let queue = DispatchQueue.global(qos: .background)
         timer = DispatchSource.timer(delay: 1.0, interval: 1.0, isRepeating: true, queue: queue) {
             self.number += 1
         }
@@ -27,9 +27,11 @@ final class DispatchSourceTimerTests: XCTestCase {
     }
     
     func then(_ expectation: XCTestExpectation) {
-        XCTAssertTrue(number == 3)
-        expectation.fulfill()
-        timer?.cancel()
+        queue.sync {
+            XCTAssertTrue(number == 3)
+            expectation.fulfill()
+            self.timer?.cancel()
+        }
     }
     
 }
