@@ -151,4 +151,107 @@ public extension Array where Element : Equatable {
         return other.isSubarray(of: self)
     }
     
+    /// Returns an array with the elements to add after comparing the other array.
+    ///
+    ///     struct Data: Equatable {
+    ///         let id: Int
+    ///         let title: String
+    ///     }
+    ///     let array = [Data(id: 0, title: "hello"), Data(id: 1, title: "world")]
+    ///     let anotherArray = [Data(id: 1, title: "hello"), Data(id: 2, title: "world")]
+    ///     let result = array.arrayToAdd(other: anotherArray) {
+    ///         $0.id == $1.id
+    ///     }
+    ///     print(result)
+    ///     // Prints "[Data(id: 2, title: "world")]"
+    ///
+    /// - Parameters:
+    ///   - other: Another array.
+    ///   - isIncluded: A closure that takes a element as its
+    ///   argument and returns a Boolean value indicating whether the element
+    ///   should be included.
+    /// - Returns: An array.
+    func elementsToAdd(other: Array, isIncluded: (Element, Element) -> Bool) -> Array {
+        var result = other
+        for element in self {
+            for elementOther in other {
+                if isIncluded(element, elementOther) {
+                    result = result.filter({ $0 != elementOther })
+                }
+            }
+        }
+        return result
+    }
+    
+    /// Returns an array with the elements to remove after comparing the other array.
+    ///
+    ///     struct Data: Equatable {
+    ///         let id: Int
+    ///         let title: String
+    ///     }
+    ///     let array = [Data(id: 0, title: "hello"), Data(id: 1, title: "world")]
+    ///     let anotherArray = [Data(id: 1, title: "hello"), Data(id: 2, title: "world")]
+    ///     let result = array.arrayToRemove(other: anotherArray) {
+    ///         $0.id == $1.id
+    ///     }
+    ///     print(result)
+    ///     // Prints "[Data(id: 0, title: "hello")]"
+    ///
+    /// - Parameters:
+    ///   - other: Another array.
+    ///   - isIncluded: A closure that takes a element as its
+    ///   argument and returns a Boolean value indicating whether the element
+    ///   should be included.
+    /// - Returns: An array.
+    func elementsToRemove(other: Array, isIncluded: (Element, Element) -> Bool) -> Array {
+        var result = self
+        for element in self {
+            for elementOther in other {
+                if isIncluded(element, elementOther) {
+                    result = result.filter({ (el) -> Bool in
+                        el != element
+                    })
+                    result = result.filter({ $0 != element })
+                }
+            }
+        }
+        return result
+    }
+    
+}
+
+public extension Array {
+    
+    /// Returns an array with the elements to update after comparing the other array.
+    ///
+    ///     struct Data: Equatable {
+    ///         let id: Int
+    ///         let title: String
+    ///     }
+    ///     let array = [Data(id: 0, title: "hello"), Data(id: 1, title: "world")]
+    ///     let anotherArray = [Data(id: 1, title: "hello"), Data(id: 2, title: "world")]
+    ///     let result = array.arrayToUpdate(other: anotherArray) {
+    ///         $0.id == $1.id
+    ///     }
+    ///     print(result)
+    ///     // Prints "[Data(id: 1, title: "hello")]"
+    ///
+    /// - Parameters:
+    ///   - other: Another array.
+    ///   - isIncluded: A closure that takes a element as its
+    ///   argument and returns a Boolean value indicating whether the element
+    ///   should be included.
+    /// - Returns: An array.
+    func elementsToUpdate(other: Array, isIncluded: (Element, Element) -> Bool) -> Array {
+        var result = [Element]()
+        for element in self {
+            for elementOther in other {
+                if isIncluded(element, elementOther) {
+                    result.append(elementOther)
+                }
+            }
+        }
+        return result
+    }
+    
 }
