@@ -34,5 +34,56 @@ final class SetOperationTests: XCTestCase {
         XCTAssertFalse(empty.contains(["world"]))
         XCTAssertTrue(empty.contains([]))
     }
+    
+    func testElementsToAdd() {
+        struct Data: Hashable {
+            let id: Int
+            let title: String
+        }
+        let set: Set = [Data(id: 0, title: "hello"), Data(id: 1, title: "world")]
+        let anotherSet: Set = [Data(id: 1, title: "hello"), Data(id: 2, title: "!")]
+        let result = set.elementsToAdd(other: anotherSet) {
+            $0.id == $1.id
+        }
+        XCTAssertEqual(result, [Data(id: 2, title: "!")])
+        let anotherResult = set.elementsToAdd(other: anotherSet) {
+            $0.title == $1.title
+        }
+        XCTAssertEqual(anotherResult, [Data(id: 2, title: "!")])
+    }
+    
+    func testElementsToRemove() {
+        struct Data: Hashable {
+            let id: Int
+            let title: String
+        }
+        let set: Set = [Data(id: 0, title: "hello"), Data(id: 1, title: "world")]
+        let anotherSet: Set = [Data(id: 1, title: "hello"), Data(id: 2, title: "!")]
+        let result = set.elementsToRemove(other: anotherSet) {
+            $0.id == $1.id
+        }
+        XCTAssertEqual(result, [Data(id: 0, title: "hello")])
+        let anotherResult = set.elementsToRemove(other: anotherSet) {
+            $0.title == $1.title
+        }
+        XCTAssertEqual(anotherResult, [Data(id: 1, title: "world")])
+    }
+    
+    func testElementsToUpdate() {
+        struct Data: Hashable {
+            let id: Int
+            let title: String
+        }
+        let set: Set = [Data(id: 0, title: "hello"), Data(id: 1, title: "world")]
+        let anotherSet: Set = [Data(id: 1, title: "hello"), Data(id: 2, title: "!")]
+        let result = set.elementsToUpdate(other: anotherSet) {
+            $0.id == $1.id
+        }
+        XCTAssertEqual(result, [Data(id: 1, title: "hello")])
+        let anotherResult = set.elementsToUpdate(other: anotherSet) {
+            $0.title == $1.title
+        }
+        XCTAssertEqual(anotherResult, [Data(id: 1, title: "hello")])
+    }
 
 }
