@@ -45,4 +45,103 @@ public extension Set {
         return other.isSubset(of: self)
     }
     
+    /// Returns a set with the elements to add after comparing the other set.
+    ///
+    ///     struct Data: Hashable {
+    ///         let id: Int
+    ///         let title: String
+    ///     }
+    ///     let set: Set = [Data(id: 0, title: "hello"), Data(id: 1, title: "world")]
+    ///     let anotherSet: Set = [Data(id: 1, title: "hello"), Data(id: 2, title: "world")]
+    ///     let result = set.elementsToAdd(other: anotherArray) {
+    ///         $0.id == $1.id
+    ///     }
+    ///     print(result)
+    ///     // Prints "[Data(id: 2, title: "world")]"
+    ///
+    /// - Parameters:
+    ///   - other: Another set.
+    ///   - isIncluded: A closure that takes a element as its
+    ///   argument and returns a Boolean value indicating whether the element
+    ///   should be included.
+    /// - Returns: A set.
+    func elementsToAdd(other: Set, isIncluded: (Element, Element) -> Bool) -> Set {
+        var result = other
+        for element in self {
+            for elementOther in other {
+                if isIncluded(element, elementOther) {
+                    result = result.filter({ $0 != elementOther })
+                }
+            }
+        }
+        return result
+    }
+    
+    /// Returns a set with the elements to remove after comparing the other set.
+    ///
+    ///     struct Data: Hashable {
+    ///         let id: Int
+    ///         let title: String
+    ///     }
+    ///     let set: Set = [Data(id: 0, title: "hello"), Data(id: 1, title: "world")]
+    ///     let anotherSet: Set = [Data(id: 1, title: "hello"), Data(id: 2, title: "world")]
+    ///     let result = set.elementsToRemove(other: anotherSet) {
+    ///         $0.id == $1.id
+    ///     }
+    ///     print(result)
+    ///     // Prints "[Data(id: 0, title: "hello")]"
+    ///
+    /// - Parameters:
+    ///   - other: Another set.
+    ///   - isIncluded: A closure that takes a element as its
+    ///   argument and returns a Boolean value indicating whether the element
+    ///   should be included.
+    /// - Returns: A set.
+    func elementsToRemove(other: Set, isIncluded: (Element, Element) -> Bool) -> Set {
+        var result = self
+        for element in self {
+            for elementOther in other {
+                if isIncluded(element, elementOther) {
+                    result = result.filter({ (el) -> Bool in
+                        el != element
+                    })
+                    result = result.filter({ $0 != element })
+                }
+            }
+        }
+        return result
+    }
+    
+    /// Returns a set with the elements to update after comparing the other set.
+    ///
+    ///     struct Data: Hashable {
+    ///         let id: Int
+    ///         let title: String
+    ///     }
+    ///     let set: Set = [Data(id: 0, title: "hello"), Data(id: 1, title: "world")]
+    ///     let anotherSet: Set = [Data(id: 1, title: "hello"), Data(id: 2, title: "world")]
+    ///     let result = set.elementsToUpdate(other: anotherSet) {
+    ///         $0.id == $1.id
+    ///     }
+    ///     print(result)
+    ///     // Prints "[Data(id: 1, title: "hello")]"
+    ///
+    /// - Parameters:
+    ///   - other: Another set.
+    ///   - isIncluded: A closure that takes a element as its
+    ///   argument and returns a Boolean value indicating whether the element
+    ///   should be included.
+    /// - Returns: A set.
+    func elementsToUpdate(other: Set, isIncluded: (Element, Element) -> Bool) -> Set {
+        var result = Set<Element>()
+        for element in self {
+            for elementOther in other {
+                if isIncluded(element, elementOther) {
+                    result.insert(elementOther)
+                }
+            }
+        }
+        return result
+    }
+    
 }

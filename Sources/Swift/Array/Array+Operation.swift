@@ -159,7 +159,7 @@ public extension Array where Element : Equatable {
     ///     }
     ///     let array = [Data(id: 0, title: "hello"), Data(id: 1, title: "world")]
     ///     let anotherArray = [Data(id: 1, title: "hello"), Data(id: 2, title: "world")]
-    ///     let result = array.arrayToAdd(other: anotherArray) {
+    ///     let result = array.elementsToAdd(other: anotherArray) {
     ///         $0.id == $1.id
     ///     }
     ///     print(result)
@@ -191,7 +191,7 @@ public extension Array where Element : Equatable {
     ///     }
     ///     let array = [Data(id: 0, title: "hello"), Data(id: 1, title: "world")]
     ///     let anotherArray = [Data(id: 1, title: "hello"), Data(id: 2, title: "world")]
-    ///     let result = array.arrayToRemove(other: anotherArray) {
+    ///     let result = array.elementsToRemove(other: anotherArray) {
     ///         $0.id == $1.id
     ///     }
     ///     print(result)
@@ -230,7 +230,7 @@ public extension Array {
     ///     }
     ///     let array = [Data(id: 0, title: "hello"), Data(id: 1, title: "world")]
     ///     let anotherArray = [Data(id: 1, title: "hello"), Data(id: 2, title: "world")]
-    ///     let result = array.arrayToUpdate(other: anotherArray) {
+    ///     let result = array.elementsToUpdate(other: anotherArray) {
     ///         $0.id == $1.id
     ///     }
     ///     print(result)
