@@ -52,7 +52,6 @@ final class ArrayRemoveTests: XCTestCase {
         XCTAssertTrue([["hello": ""]].removingEmpty().isEmpty)
         XCTAssertTrue([["hello": ["world": [:]]]].removingEmpty().isEmpty)
         XCTAssertTrue([[""], ["", ""]].removingEmpty().isEmpty)
-        XCTAssertTrue(["": ["", ""]].removingEmpty().isEmpty)
         XCTAssertTrue([NSNull()].removingEmpty().isEmpty)
         XCTAssertTrue([[NSNull()]].removingEmpty().isEmpty)
         XCTAssertTrue([["world": NSNull()]].removingEmpty().isEmpty)

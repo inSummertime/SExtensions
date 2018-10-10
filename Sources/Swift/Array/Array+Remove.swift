@@ -34,23 +34,23 @@ public extension Array {
     /// - Returns: An array.
     func removingEmpty() -> Array {
         var result = Array()
-        for value in self {
-            if let stringValue = value as? String {
-                if !stringValue.isEmpty, let element = stringValue as? Element {
+        for element in self {
+            if let stringValue = element as? String {
+                if !stringValue.isEmpty {
                     result.append(element)
                 }
-            } else if let dictionaryValue = value as? [String: Any] {
+            } else if let dictionaryValue = element as? [String: Any] {
                 let removed = dictionaryValue.removingEmpty()
                 if !removed.isEmpty {
-                    result.append(value)
-                }
-            } else if let arrayValue = value as? [Any] {
-                let removed = arrayValue.removingEmpty()
-                if !removed.isEmpty, let element = arrayValue as? Element {
                     result.append(element)
                 }
-            } else if !(value is NSNull) {
-                result.append(value)
+            } else if let arrayValue = element as? [Any] {
+                let removed = arrayValue.removingEmpty()
+                if !removed.isEmpty {
+                    result.append(element)
+                }
+            } else if !(element is NSNull) {
+                result.append(element)
             }
         }
         return result
