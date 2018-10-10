@@ -124,6 +124,8 @@
 		71A8004B20C164020029B141 /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8004A20C164020029B141 /* String+Trim.swift */; };
 		71A8004D20C1642D0029B141 /* StringTrimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8004C20C1642D0029B141 /* StringTrimTests.swift */; };
 		71A8EB8A213A18D70024265B /* JSONSerializationStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A8EB89213A18D70024265B /* JSONSerializationStringTests.swift */; };
+		71AAE943216D72D000C7DD1D /* Set+Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAE942216D72D000C7DD1D /* Set+Remove.swift */; };
+		71AAE945216D73F700C7DD1D /* SetRemoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAE944216D73F700C7DD1D /* SetRemoveTests.swift */; };
 		71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB2F3420BCBA740060F4CB /* String+Case.swift */; };
 		71AB2F3920BCBC670060F4CB /* StringCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB2F3820BCBC670060F4CB /* StringCaseTests.swift */; };
 		71AB6B9D20D476D300E3CA73 /* Dictionary+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AB6B9C20D476D300E3CA73 /* Dictionary+Operation.swift */; };
@@ -342,6 +344,8 @@
 		71A8004A20C164020029B141 /* String+Trim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Trim.swift"; sourceTree = "<group>"; };
 		71A8004C20C1642D0029B141 /* StringTrimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTrimTests.swift; sourceTree = "<group>"; };
 		71A8EB89213A18D70024265B /* JSONSerializationStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializationStringTests.swift; sourceTree = "<group>"; };
+		71AAE942216D72D000C7DD1D /* Set+Remove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+Remove.swift"; sourceTree = "<group>"; };
+		71AAE944216D73F700C7DD1D /* SetRemoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetRemoveTests.swift; sourceTree = "<group>"; };
 		71AB2F3420BCBA740060F4CB /* String+Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Case.swift"; sourceTree = "<group>"; };
 		71AB2F3820BCBC670060F4CB /* StringCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCaseTests.swift; sourceTree = "<group>"; };
 		71AB6B9C20D476D300E3CA73 /* Dictionary+Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Operation.swift"; sourceTree = "<group>"; };
@@ -1023,6 +1027,7 @@
 				71AC326D2166D32D0051A838 /* Set+Average.swift */,
 				710AF47D21698F8100A2813E /* Set+Operation.swift */,
 				71F5D61321659B09000032B1 /* Set+Operator.swift */,
+				71AAE942216D72D000C7DD1D /* Set+Remove.swift */,
 			);
 			path = Set;
 			sourceTree = "<group>";
@@ -1033,6 +1038,7 @@
 				71AC326F2166D3660051A838 /* SetAverageTests.swift */,
 				710AF47F216992D000A2813E /* SetOperationTests.swift */,
 				71F5D61621659C0D000032B1 /* SetOperatorTests.swift */,
+				71AAE944216D73F700C7DD1D /* SetRemoveTests.swift */,
 			);
 			path = Set;
 			sourceTree = "<group>";
@@ -1262,6 +1268,7 @@
 				71606AFA21439ACB00D56245 /* DispatchSource+Timer.swift in Sources */,
 				7146A87C21473595005C1814 /* CGRect+Transform.swift in Sources */,
 				7128479E214F16EB00D8CBC8 /* NSAttributedString+InitHTMLString.swift in Sources */,
+				71AAE943216D72D000C7DD1D /* Set+Remove.swift in Sources */,
 				710AF47E21698F8100A2813E /* Set+Operation.swift in Sources */,
 				718DCD6F20E89104000634B2 /* Dictionary+Remove.swift in Sources */,
 				71958F9220D088B400AFCBA5 /* String+Array.swift in Sources */,
@@ -1307,6 +1314,7 @@
 				71B2D55B214097D000CD00D1 /* EncodableDictionaryTests.swift in Sources */,
 				7127BD2620FEB82D00816D4B /* DateStringTests.swift in Sources */,
 				7177623920C35DF1001F2C8E /* StringNumberTests.swift in Sources */,
+				71AAE945216D73F700C7DD1D /* SetRemoveTests.swift in Sources */,
 				7107C57020FAB64A00790D4D /* DateInitTests.swift in Sources */,
 				71606AFC21439B3300D56245 /* DispatchSourceTimerTests.swift in Sources */,
 				71A4B17F20F432A900F5D044 /* IntBoolTests.swift in Sources */,
