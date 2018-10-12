@@ -11,21 +11,19 @@ import XCTest
 
 final class DispatchQueueDelayTests: XCTestCase {
     
-    var start = 1
-    
     func testDelay() {
+        var start = 1
         let expectation = self.expectation(description: "StartShouldBeTwo")
         DispatchQueue.main.delay(1.0) {
-            self.start += 1
+            start += 1
+            expectation.fulfill()
         }
-        XCTAssertTrue(start == 1)
-        perform(#selector(then(_:)), with: expectation, afterDelay: 2.0)
-        wait(for: [expectation], timeout: 3.0)
-    }
-    
-    func then(_ expectation: XCTestExpectation) {
-        XCTAssertTrue(start == 2)
-        expectation.fulfill()
+        waitForExpectations(timeout: 3.0) { error in
+            if let error = error {
+                XCTFail("error: \(error)")
+            }
+            XCTAssertTrue(start == 2)
+        }
     }
     
 }
