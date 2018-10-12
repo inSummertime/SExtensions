@@ -11,28 +11,25 @@ import XCTest
 
 final class DispatchSourceTimerTests: XCTestCase {
     
-    var number = 1
     var timer: DispatchSourceTimer?
-    let queue = DispatchQueue.global(qos: .background)
     
     func testTimer() {
-        let expectation = self.expectation(description: "NumberShouldBe3")
+        var number = 1
+        let expectation = self.expectation(description: "NumberShouldBe4")
+        let queue = DispatchQueue.global(qos: .background)
         timer = DispatchSource.timer(delay: 1.0, interval: 1.0, isRepeating: true, queue: queue) { timer in
-            self.number += 1
-            if self.number > 3 {
-                timer.suspend()
+            number += 1
+            if number > 3 {
+                timer.cancel()
+                expectation.fulfill()
             }
         }
-        queue.sync {
-            self.perform(#selector(self.then(_:)), with: expectation, afterDelay: 5.0)
-            self.wait(for: [expectation], timeout: 5.0)
+        waitForExpectations(timeout: 5.0) { error in
+            if let error = error {
+                XCTFail("error: \(error)")
+            }
+            XCTAssertTrue(number == 4)
         }
-    }
-    
-    func then(_ expectation: XCTestExpectation) {
-        XCTAssertTrue(number == 4)
-        expectation.fulfill()
-        self.timer?.cancel()
     }
     
 }
