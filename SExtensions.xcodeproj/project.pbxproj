@@ -90,8 +90,6 @@
 		717AFCFA2138B2A0007FEDD7 /* JSONSerialization+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717AFCF92138B2A0007FEDD7 /* JSONSerialization+String.swift */; };
 		717D0E1320E3A838005E972D /* Array+Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717D0E1220E3A838005E972D /* Array+Operation.swift */; };
 		717D0E1520E3ABA5005E972D /* ArrayOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */; };
-		7183031020F9A27600C0961A /* Bool+ToggleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183030F20F9A27600C0961A /* Bool+ToggleValue.swift */; };
-		7183031220F9A2A200C0961A /* BoolToggleValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7183031120F9A2A200C0961A /* BoolToggleValueTests.swift */; };
 		718557F2210BEA0300BBFD32 /* Date+Truncated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718557F1210BEA0300BBFD32 /* Date+Truncated.swift */; };
 		718557F4210BEA4300BBFD32 /* DateTruncatedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718557F3210BEA4300BBFD32 /* DateTruncatedTests.swift */; };
 		718D2B47210FEC15002649BE /* Date+Comparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718D2B46210FEC15002649BE /* Date+Comparison.swift */; };
@@ -310,8 +308,6 @@
 		717AFCF92138B2A0007FEDD7 /* JSONSerialization+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONSerialization+String.swift"; sourceTree = "<group>"; };
 		717D0E1220E3A838005E972D /* Array+Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Operation.swift"; sourceTree = "<group>"; };
 		717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOperationTests.swift; sourceTree = "<group>"; };
-		7183030F20F9A27600C0961A /* Bool+ToggleValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+ToggleValue.swift"; sourceTree = "<group>"; };
-		7183031120F9A2A200C0961A /* BoolToggleValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolToggleValueTests.swift; sourceTree = "<group>"; };
 		718557F1210BEA0300BBFD32 /* Date+Truncated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Truncated.swift"; sourceTree = "<group>"; };
 		718557F3210BEA4300BBFD32 /* DateTruncatedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTruncatedTests.swift; sourceTree = "<group>"; };
 		718D2B46210FEC15002649BE /* Date+Comparison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Comparison.swift"; sourceTree = "<group>"; };
@@ -564,7 +560,6 @@
 			isa = PBXGroup;
 			children = (
 				714B021520F5E0EA007DD87B /* Bool+Int.swift */,
-				7183030F20F9A27600C0961A /* Bool+ToggleValue.swift */,
 			);
 			path = Bool;
 			sourceTree = "<group>";
@@ -573,7 +568,6 @@
 			isa = PBXGroup;
 			children = (
 				714B021720F5E141007DD87B /* BoolIntTests.swift */,
-				7183031120F9A2A200C0961A /* BoolToggleValueTests.swift */,
 			);
 			path = Bool;
 			sourceTree = "<group>";
@@ -1240,7 +1234,6 @@
 				71DD74F32149DA41002252A3 /* Int+Padded.swift in Sources */,
 				713FBA26211FAAA300207986 /* TimeZone+UTC.swift in Sources */,
 				71DBC6382132163B006181CD /* URLRequest+SetHTTPHeaderFields.swift in Sources */,
-				7183031020F9A27600C0961A /* Bool+ToggleValue.swift in Sources */,
 				71B2FA8A2137667500A86AC2 /* JSONSerialization+Dictionary.swift in Sources */,
 				711A42D8215D993900195DBF /* Array+Split.swift in Sources */,
 				710A111320E4FF590054262F /* Array+Operator.swift in Sources */,
@@ -1365,7 +1358,6 @@
 				71F431F5212CDDE1005F67E3 /* URLIsFromDomainTests.swift in Sources */,
 				714B021820F5E141007DD87B /* BoolIntTests.swift in Sources */,
 				71F367EA20CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift in Sources */,
-				7183031220F9A2A200C0961A /* BoolToggleValueTests.swift in Sources */,
 				716CF09A20D47AC00040BF9B /* DictionaryOperationTests.swift in Sources */,
 				7153D150211BC23800C0A1C7 /* DateIntervalSplitTests.swift in Sources */,
 				71D7F6AD20DF700100525259 /* DictionaryHasTests.swift in Sources */,
