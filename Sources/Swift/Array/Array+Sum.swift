@@ -58,9 +58,12 @@ extension String: Addable {
     
 }
 
-public extension Array where Element: Addable  {
+public extension Array where Element: Addable {
     
     /// The sum of all elements.
+    ///
+    ///     print(["Hello", " ", "world", "!"].sum)
+    ///     //Print "Hello world!"
     var sum: Element {
         return reduce( Element.zero()) { Element.add(lhs: $0, rhs: $1) }
     }
