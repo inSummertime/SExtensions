@@ -998,8 +998,8 @@
 			children = (
 				71C7F8E7213DFA07002B9916 /* JSONSerialization+Array.swift */,
 				71B2FA892137667500A86AC2 /* JSONSerialization+Dictionary.swift */,
-				717AFCF92138B2A0007FEDD7 /* JSONSerialization+String.swift */,
 				719DD076213CA2440000A3AC /* JSONSerialization+JSONObject.swift */,
+				717AFCF92138B2A0007FEDD7 /* JSONSerialization+String.swift */,
 			);
 			path = JSONSerialization;
 			sourceTree = "<group>";

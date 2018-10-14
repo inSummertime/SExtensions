@@ -13,7 +13,7 @@ final class JSONSerializationDictionaryTests: XCTestCase {
     
     func testDictionaryFromJSONFile() {
         do {
-            let dictionary = try  JSONSerialization.dictionaryFromJSONFile(filename: "Dictionary", callerClass: JSONSerializationDictionaryTests.self)
+            let dictionary = try JSONSerialization.dictionaryFromJSONFile(filename: "Dictionary", callerClass: JSONSerializationDictionaryTests.self)
             let anotherDictionary = try  JSONSerialization.dictionaryFromJSONFile(filename: "Dictionary.json", callerClass: JSONSerializationDictionaryTests.self)
             XCTAssertEqual(dictionary!["id"] as! Int, 0)
             XCTAssertEqual(anotherDictionary!["title"] as! String, "title")

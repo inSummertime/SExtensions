@@ -14,7 +14,7 @@ final class JSONSerializationJSONObjectTests: XCTestCase {
     func testJSONObjectFromFile() {
         do {
             let object = try JSONSerialization.jsonObjectFromFile(filename: "Dictionary", callerClass: JSONSerializationJSONObjectTests.self)
-            let anotherObject = try  JSONSerialization.jsonObjectFromFile(filename: "Dictionary.json", callerClass: JSONSerializationJSONObjectTests.self)
+            let anotherObject = try JSONSerialization.jsonObjectFromFile(filename: "Dictionary.json", callerClass: JSONSerializationJSONObjectTests.self)
             XCTAssertEqual((object! as! [String: Any])["id"] as! Int, 0)
             XCTAssertEqual((anotherObject! as! [String: Any])["title"] as! String, "title")
         } catch {
