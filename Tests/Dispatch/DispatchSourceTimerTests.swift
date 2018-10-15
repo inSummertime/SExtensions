@@ -17,7 +17,7 @@ final class DispatchSourceTimerTests: XCTestCase {
     func testTimerRepeating() {
         var number = 1
         let expectation = self.expectation(description: "Number should be 2")
-        let queue = DispatchQueue.global(qos: .background)
+        let queue = DispatchQueue.main
         timerRepeating = DispatchSource.timer(delay: 1.0, interval: 1.0, isRepeating: true, queue: queue) { timer in
             number += 1
             if number > 3 {
@@ -36,7 +36,7 @@ final class DispatchSourceTimerTests: XCTestCase {
     func testTimerNoRepeating() {
         var number = 1
         let expectation = self.expectation(description: "Number should be 2")
-        let queue = DispatchQueue.global(qos: .background)
+        let queue = DispatchQueue.main
         timerNoRepeating = DispatchSource.timer(delay: 1.0, interval: 1.0, isRepeating: false, queue: queue) { timer in
             number += 1
             expectation.fulfill()
