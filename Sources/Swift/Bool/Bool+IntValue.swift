@@ -1,5 +1,5 @@
 //
-//  Bool+Int.swift
+//  Bool+IntValue.swift
 //  SExtensions
 //
 //  Created by Ray on 7/11/18.
@@ -10,9 +10,9 @@ public extension Bool {
     
     /// Returns 1 if true, otherwise 0
     ///
-    ///     print(true.int)
+    ///     print(true.intValue)
     ///     // Prints "1"
-    var int: Int {
+    var intValue: Int {
         return self ? 1 : 0
     }
     

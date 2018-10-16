@@ -1,5 +1,5 @@
 //
-//  BoolIntTests.swift
+//  BoolIntValueTests.swift
 //  SExtensionsTests
 //
 //  Created by Ray on 7/11/18.
@@ -9,11 +9,11 @@
 import XCTest
 @testable import SExtensions
 
-final class BoolIntTests: XCTestCase {
+final class BoolIntValueTests: XCTestCase {
     
     func testInt() {
-        XCTAssertEqual(true.int, 1)
-        XCTAssertEqual(false.int, 0)
+        XCTAssertEqual(true.intValue, 1)
+        XCTAssertEqual(false.intValue, 0)
     }
     
 }
