@@ -133,7 +133,7 @@ final class DateIsInTests: XCTestCase {
     }
     
     func testIsWeekday() {
-        XCTAssertTrue(Date(timeIntervalSinceReferenceDate: 0).isInWeekday())
+        XCTAssertTrue(Date(timeIntervalSinceReferenceDate: 0).addingTimeInterval(Date.timeIntervalPerDay * 1).isInWeekday())
     }
     
     func testIsInTheMorning() {
