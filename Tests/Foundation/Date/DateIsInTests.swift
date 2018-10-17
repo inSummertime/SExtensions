@@ -46,6 +46,39 @@ final class DateIsInTests: XCTestCase {
         XCTAssertTrue(lastWeek!.isInLastWeek(in: calendar)!)
     }
     
+    func testIsInYesterday() {
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        var dateComponents = DateComponents()
+        dateComponents.calendar = calendar
+        dateComponents.setValue(-1, for: .day)
+        let yesterday = calendar.date(byAdding: dateComponents, to: Date())
+        XCTAssertTrue(yesterday!.isInYesterday(in: calendar))
+    }
+    
+    func testIsInToday() {
+        XCTAssertTrue(Date().isInToday())
+    }
+    
+    func testIsInTomorrow() {
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        var dateComponents = DateComponents()
+        dateComponents.calendar = calendar
+        dateComponents.setValue(1, for: .day)
+        let tomorrow = calendar.date(byAdding: dateComponents, to: Date())
+        XCTAssertTrue(tomorrow!.isInTomorrow(in: calendar))
+    }
+    
+    func testIsInThisWeek() {
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        var dateComponents = DateComponents()
+        dateComponents.calendar = calendar
+        dateComponents.setValue(-1, for: .day)
+        let yesterday = calendar.date(byAdding: dateComponents, to: Date())
+        dateComponents.setValue(1, for: .day)
+        let tomorrow = calendar.date(byAdding: dateComponents, to: Date())
+        XCTAssertTrue(yesterday!.isInWeekday(in: calendar) || tomorrow!.isInWeekday(in: calendar))
+    }
+    
     func testIsInNextWeek() {
         let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         var dateComponents = DateComponents()
@@ -53,6 +86,17 @@ final class DateIsInTests: XCTestCase {
         dateComponents.setValue(1, for: .weekOfYear)
         let nextWeek = calendar.date(byAdding: dateComponents, to: Date())
         XCTAssertTrue(nextWeek!.isInNextWeek(in: calendar)!)
+    }
+    
+    func testIsInThisMonth() {
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        var dateComponents = DateComponents()
+        dateComponents.calendar = calendar
+        dateComponents.setValue(-1, for: .day)
+        let yesterday = calendar.date(byAdding: dateComponents, to: Date())
+        dateComponents.setValue(1, for: .day)
+        let tomorrow = calendar.date(byAdding: dateComponents, to: Date())
+        XCTAssertTrue(yesterday!.isInThisMonth(in: calendar) || tomorrow!.isInThisMonth(in: calendar))
     }
     
     func testIsInNextMonth() {
@@ -64,6 +108,17 @@ final class DateIsInTests: XCTestCase {
         XCTAssertTrue(nextMonth!.isInNextMonth(in: calendar)!)
     }
     
+    func testIsInThisYear() {
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        var dateComponents = DateComponents()
+        dateComponents.calendar = calendar
+        dateComponents.setValue(-1, for: .day)
+        let yesterday = calendar.date(byAdding: dateComponents, to: Date())
+        dateComponents.setValue(1, for: .day)
+        let tomorrow = calendar.date(byAdding: dateComponents, to: Date())
+        XCTAssertTrue(yesterday!.isInThisYear(in: calendar) || tomorrow!.isInThisYear(in: calendar))
+    }
+    
     func testIsInNextYear() {
         let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         var dateComponents = DateComponents()
@@ -71,6 +126,14 @@ final class DateIsInTests: XCTestCase {
         dateComponents.setValue(1, for: .year)
         let nextYear = calendar.date(byAdding: dateComponents, to: Date())
         XCTAssertTrue(nextYear!.isInNextYear(in: calendar)!)
+    }
+    
+    func testIsWeekend() {
+        XCTAssertTrue(Date(timeIntervalSinceReferenceDate: 0).addingTimeInterval(Date.timeIntervalPerDay * -1).isInWeekend())
+    }
+    
+    func testIsWeekday() {
+        XCTAssertTrue(Date(timeIntervalSinceReferenceDate: 0).isInWeekday())
     }
     
     func testIsInTheMorning() {

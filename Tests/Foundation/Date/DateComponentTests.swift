@@ -40,6 +40,8 @@ final class DateComponentTests: XCTestCase {
         XCTAssertEqual(date.component(.hour, in: calendar)!, 0)
         XCTAssertEqual(date.component(.minute, in: calendar)!, 0)
         XCTAssertEqual(date.component(.second, in: calendar)!, 0)
+        XCTAssertNil(date.component(.calendar, in: calendar))
+        XCTAssertNil(date.component(.timeZone, in: calendar))
     }
     
     func testSubscript() {
@@ -47,6 +49,8 @@ final class DateComponentTests: XCTestCase {
         XCTAssertTrue(date[.year]! == 2001 || date[.year]! == 2000)
         XCTAssertTrue(date[.month]! == 1 || date[.month]! == 12)
         XCTAssertTrue(date[.day]! == 01 || date[.day]! == 31)
+        XCTAssertNil(date[.calendar])
+        XCTAssertNil(date[.timeZone])
     }
     
     func testComponentSinceDateInCalendar() {

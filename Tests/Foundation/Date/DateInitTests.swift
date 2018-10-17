@@ -14,6 +14,7 @@ final class DateInitTests: XCTestCase {
     func testInitString() {
         let date = Date(string: "2018.07.15 at 00:00:00 +0000", dateFormat: "yyyy.MM.dd 'at' HH:mm:ss Z", calendar: Calendar(identifier: Calendar.Identifier.gregorian))
         XCTAssertEqual(date!.description, "2018-07-15 00:00:00 +0000")
+        XCTAssertNil(Date(string: "00:00:00", dateFormat: "yyyy", calendar: Calendar(identifier: Calendar.Identifier.gregorian)))
     }
     
     func testInitCalendar() {
