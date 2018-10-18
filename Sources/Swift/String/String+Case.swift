@@ -15,6 +15,19 @@ public extension String {
     var isUppercase: Bool {
         return uppercased() == self
     }
+    
+    /// Retunrs true if the ith character is uppercase, or nil if cannot get the
+    /// character.
+    ///
+    ///     print("Hello World!".isUppercase(at: 0))
+    ///     // Prints "Optional(true)"
+    ///
+    /// - Parameter i: The position.
+    /// - Returns: Retunrs true if the ith character is uppercase, otherwise false.
+    func isUppercase(at i: Int) -> Bool? {
+        guard let character = self[safe: i] else { return nil }
+        return String(character).isUppercase
+    }
 
     /// Checks whether is lowercase.
     ///
@@ -22,6 +35,19 @@ public extension String {
     ///     // Prints "true"
     var isLowercase: Bool {
         return lowercased() == self
+    }
+    
+    /// Retunrs true if the ith character is lowercase, or nil if cannot get the
+    /// character.
+    ///
+    ///     print("Hello World!".isLowercase(at: 1))
+    ///     // Prints "Optional(true)"
+    ///
+    /// - Parameter i: The position.
+    /// - Returns: Retunrs true if the ith character is lowercase, otherwise false.
+    func isLowercase(at i: Int) -> Bool? {
+        guard let character = self[safe: i] else { return nil }
+        return String(character).isLowercase
     }
     
     /// Checks whether is capitalized case.

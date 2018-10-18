@@ -21,6 +21,17 @@ final class StringCaseTests: XCTestCase {
         XCTAssertTrue("".isUppercase)
     }
     
+    func testIsUppercaseAtIndex() {
+        let string = "Hello World!"
+        XCTAssertTrue(string.isUppercase(at: 0)!)
+        XCTAssertTrue(string.isUppercase(at: string.count - 1)!)
+        XCTAssertTrue(string.isUppercase(at: 5)!)
+        XCTAssertNil(string.isUppercase(at: string.count))
+        let empty = ""
+        XCTAssertNil(empty.isUppercase(at: 0))
+        print("Hello World!".isUppercase(at: 0))
+    }
+    
     func testIsLowercase() {
         XCTAssertFalse("Hello".isLowercase)
         XCTAssertFalse("HELLO".isLowercase)
@@ -29,6 +40,17 @@ final class StringCaseTests: XCTestCase {
         XCTAssertTrue("hello world!".isLowercase)
         XCTAssertTrue(" $1 ".isLowercase)
         XCTAssertTrue("".isLowercase)
+    }
+    
+    func testIsLowercaseAtIndex() {
+        let string = "Hello World!"
+        XCTAssertFalse(string.isLowercase(at: 0)!)
+        XCTAssertTrue(string.isLowercase(at: 1)!)
+        XCTAssertTrue(string.isLowercase(at: string.count - 1)!)
+        XCTAssertTrue(string.isLowercase(at: 5)!)
+        XCTAssertNil(string.isLowercase(at: string.count))
+        let empty = ""
+        XCTAssertNil(empty.isLowercase(at: 0))
     }
     
     func testIsCapitalized() {
