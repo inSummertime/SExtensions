@@ -15,8 +15,9 @@ final class ArrayAppendTests: XCTestCase {
         var array = [0, 1]
         XCTAssertEqual(array.appendIfNotContains(0), false)
         XCTAssertEqual(array, [0, 1])
-        XCTAssertEqual(array.appendIfNotContains(2), true)
-        XCTAssertEqual(array, [0, 1, 2])
+        var anotherArray = ["hello", "world"]
+        XCTAssertEqual(anotherArray.appendIfNotContains("!"), true)
+        XCTAssertEqual(anotherArray, ["hello", "world", "!"])
     }
     
     func testAppendMaxCountOfElement() {
