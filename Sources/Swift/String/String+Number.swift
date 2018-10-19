@@ -326,4 +326,24 @@ public extension String {
         return double != nil
     }
     
+    /// Returns an Int value from a Roman string.
+    ///
+    ///     print("IV".intFromRoman)
+    ///     // Prints "4"
+    var intFromRoman: Int? {
+        var result = 0
+        var temp: Character = " "
+        let dictionary: [Character: Int] = ["I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000]
+        let subtractionDictionary: [Character: Character] = ["V": "I", "X": "I", "L": "X", "C": "X", "D": "C", "M": "C"]
+        for character in self {
+            guard let number = dictionary[character] else { return nil }
+            result += number
+            if let smallRoman = subtractionDictionary[character], let numberToSubstrct = dictionary[smallRoman], smallRoman == temp {
+                result -= numberToSubstrct * 2
+            }
+            temp = character
+        }
+        return result
+    }
+    
 }
