@@ -29,7 +29,6 @@ final class StringCaseTests: XCTestCase {
         XCTAssertNil(string.isUppercase(at: string.count))
         let empty = ""
         XCTAssertNil(empty.isUppercase(at: 0))
-        print("Hello World!".isUppercase(at: 0))
     }
     
     func testIsLowercase() {

@@ -13,7 +13,7 @@ public extension String {
     ///     print("Hello world!"[safe: 0]!)
     ///     Prints "H"
     ///
-    /// - Parameter i: position
+    /// - Parameter i: Position.
     subscript(safe i: Int) -> Character? {
         if i >= 0 && i < count {
             return self[index(startIndex, offsetBy: i)]
@@ -28,7 +28,7 @@ public extension String {
     ///     print("Hello world!"[safe: 1..<7])
     ///     // Prints "ello w"
     ///
-    /// - Parameter range: a countable range
+    /// - Parameter range: A countable range.
     subscript(safe range: CountableRange<Int>) -> String? {
         if range.lowerBound >= count {
             return nil
@@ -47,7 +47,7 @@ public extension String {
     ///     print("Hello world!"[safe: 1...7])
     ///     // Prints "ello wo"
     ///
-    /// - Parameter range: a countable closed range
+    /// - Parameter range: A countable closed range.
     subscript(safe range: CountableClosedRange<Int>) -> String? {
         if range.lowerBound >= count {
             return nil
@@ -73,7 +73,7 @@ public extension String {
     ///     print("Hello world!"[safe: 0...])
     ///     // Prints "Hello world!"
     ///
-    /// - Parameter range: a countable partial from range
+    /// - Parameter range: A countable partial from range.
     subscript(safe range: CountablePartialRangeFrom<Int>) -> String? {
         if range.lowerBound >= count {
             return nil
@@ -89,7 +89,7 @@ public extension String {
     ///     print("Hello world!"[safeFrom: 1])
     ///     // Prints "ello world!"
     ///
-    /// - Parameter index: index
+    /// - Parameter index: The position.
     subscript(safeFrom index: Int) -> String? {
         if index >= count {
             return nil
@@ -103,7 +103,7 @@ public extension String {
     ///     print("Hello world!"[safeTo: 1])
     ///     // Prints "He"
     ///
-    /// - Parameter index: index
+    /// - Parameter index: The position.
     subscript(safeTo index: Int) -> String? {
         if index < 0 {
             return nil

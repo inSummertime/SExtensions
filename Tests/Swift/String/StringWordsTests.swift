@@ -39,4 +39,18 @@ final class StringWordsTests: XCTestCase {
         XCTAssertEqual("hi\nthere".wordCount, 2)
     }
     
+    func testWordsReversed() {
+        XCTAssertEqual("Hello world !".wordsReversed, "! world Hello")
+        XCTAssertEqual("hello".wordsReversed, "hello")
+        XCTAssertEqual("".wordsReversed, "")
+    }
+    
+    func testIsAnagram() {
+        XCTAssertTrue("abc".isAnagram(with: "acb"))
+        XCTAssertFalse("ab".isAnagram(with: "a"))
+        XCTAssertTrue("a".isAnagram(with: "a"))
+        XCTAssertTrue("".isAnagram(with: ""))
+        XCTAssertTrue(" ".isAnagram(with: " "))
+    }
+    
 }

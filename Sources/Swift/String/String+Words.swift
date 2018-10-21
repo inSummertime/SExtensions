@@ -24,4 +24,36 @@ public extension String {
         return words.count
     }
     
+    /// Reverse the words.
+    ///
+    ///     print("Hello world !".wordsReversed)
+    ///     // Prints "! world Hello"
+    var wordsReversed: String {
+        var characters = Array(self)
+        var i = 0
+        var j = 0
+        characters.reverse()
+        while i < characters.count {
+            j = i
+            while j < characters.count && characters[j] != " " {
+                j += 1
+            }
+            characters[i..<j].reverse()
+            i = j + 1
+        }
+        return String(characters)
+    }
+    
+    /// Returns true if it is an anagram with the given word.
+    ///
+    ///     print("abc".isAnagram(with: "acb"))
+    ///     // Prints "true"
+    ///
+    /// - Parameter word: A string.
+    /// - Returns: Returns true if it is an anagram with the given word.
+    func isAnagram(with word: String) -> Bool {
+        if count != word.count { return false }
+        return Set(Array(self)) == Set(Array(word))
+    }
+    
 }
