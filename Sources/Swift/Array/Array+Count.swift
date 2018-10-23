@@ -35,4 +35,30 @@ public extension Array where Element: Hashable {
         return dictionary
     }
     
+    /// Returns the element which appears the most.
+    ///
+    ///     print(["hello", "world", "!", "!", ""].mostCountElement)
+    ///     // Prints "!"
+    var mostCountElement: Element? {
+        var count = 1
+        var element: Element?
+        for pair in countDictionary {
+            if pair.1 > count {
+                element = pair.0
+                count = pair.1
+            }
+        }
+        return element
+    }
+    
+    /// Returns the element that appears more than half of the counts times.
+    ///
+    ///     print(["hello", "world", "!", "!", "!"].majorityElement)
+    ///     // Prints "!"
+    var majorityElement: Element? {
+        guard let element = mostCountElement else { return nil }
+        if countOfElement(element) > count / 2 { return element }
+        return nil
+    }
+    
 }
