@@ -53,4 +53,17 @@ final class StringWordsTests: XCTestCase {
         XCTAssertTrue(" ".isAnagram(with: " "))
     }
     
+    func testLongestPalindrome() {
+        XCTAssertEqual("".longestPalindrome, "")
+        XCTAssertEqual("a".longestPalindrome, "a")
+        XCTAssertEqual("ab".longestPalindrome, "b")
+        XCTAssertEqual("aa".longestPalindrome, "aa")
+        XCTAssertEqual("aba".longestPalindrome, "aba")
+        XCTAssertEqual("abab".longestPalindrome, "bab")
+        XCTAssertEqual("ababc".longestPalindrome, "bab")
+        XCTAssertEqual("ababa".longestPalindrome, "ababa")
+        XCTAssertEqual("abaabc".longestPalindrome, "baab")
+        XCTAssertEqual("abaaba".longestPalindrome, "abaaba")
+    }
+    
 }

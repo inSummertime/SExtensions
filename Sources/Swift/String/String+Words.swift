@@ -56,4 +56,34 @@ public extension String {
         return Set(Array(self)) == Set(Array(word))
     }
     
+    /// Returns the longest palindrome
+    ///
+    ///     print("abab".longestPalindrome)
+    ///     // Prints "bab"
+    var longestPalindrome: String {
+        guard count > 0 else { return "" }
+        
+        func expandAroundCenter(array: [Character], lhs: Int, rhs: Int) -> Int {
+            var left = lhs, right = rhs
+            while left >= 0 , right < array.count , array[left] == array[right] {
+                left -= 1
+                right += 1
+            }
+            return right - left - 1
+        }
+        
+        let characters = Array(self)
+        var start = 0, end = 0
+        for i in 0..<count {
+            let length = expandAroundCenter(array: characters, lhs: i, rhs: i)
+            let length2 = expandAroundCenter(array: characters, lhs: i, rhs: i + 1)
+            let len = max(length, length2)
+            if len > end - start {
+                start = i - (len - 1)/2
+                end = i + len/2
+            }
+        }
+        return String(characters[start...end])
+    }
+    
 }
