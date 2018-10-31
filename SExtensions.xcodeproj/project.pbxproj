@@ -104,6 +104,10 @@
 		717D0E1520E3ABA5005E972D /* ArrayOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */; };
 		718557F2210BEA0300BBFD32 /* Date+Truncated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718557F1210BEA0300BBFD32 /* Date+Truncated.swift */; };
 		718557F4210BEA4300BBFD32 /* DateTruncatedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718557F3210BEA4300BBFD32 /* DateTruncatedTests.swift */; };
+		7189E90921880DAB0057EB83 /* NSObject+MemoryAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189E90821880DAB0057EB83 /* NSObject+MemoryAddress.swift */; };
+		7189E90B21880E070057EB83 /* NSObjectMemoryAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189E90A21880E070057EB83 /* NSObjectMemoryAddressTests.swift */; };
+		7189E90D218810A30057EB83 /* String+MemoryAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189E90C218810A30057EB83 /* String+MemoryAddress.swift */; };
+		7189E90F2188116A0057EB83 /* StringMemoryAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7189E90E2188116A0057EB83 /* StringMemoryAddressTests.swift */; };
 		718D2B47210FEC15002649BE /* Date+Comparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718D2B46210FEC15002649BE /* Date+Comparison.swift */; };
 		718D2B49210FED01002649BE /* DateComparisonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718D2B48210FED01002649BE /* DateComparisonTests.swift */; };
 		718DCD6720E86D95000634B2 /* Array+Remove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718DCD6620E86D95000634B2 /* Array+Remove.swift */; };
@@ -334,6 +338,10 @@
 		717D0E1420E3ABA5005E972D /* ArrayOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOperationTests.swift; sourceTree = "<group>"; };
 		718557F1210BEA0300BBFD32 /* Date+Truncated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Truncated.swift"; sourceTree = "<group>"; };
 		718557F3210BEA4300BBFD32 /* DateTruncatedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTruncatedTests.swift; sourceTree = "<group>"; };
+		7189E90821880DAB0057EB83 /* NSObject+MemoryAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+MemoryAddress.swift"; sourceTree = "<group>"; };
+		7189E90A21880E070057EB83 /* NSObjectMemoryAddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectMemoryAddressTests.swift; sourceTree = "<group>"; };
+		7189E90C218810A30057EB83 /* String+MemoryAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MemoryAddress.swift"; sourceTree = "<group>"; };
+		7189E90E2188116A0057EB83 /* StringMemoryAddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringMemoryAddressTests.swift; sourceTree = "<group>"; };
 		718D2B46210FEC15002649BE /* Date+Comparison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Comparison.swift"; sourceTree = "<group>"; };
 		718D2B48210FED01002649BE /* DateComparisonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComparisonTests.swift; sourceTree = "<group>"; };
 		718DCD6620E86D95000634B2 /* Array+Remove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Remove.swift"; sourceTree = "<group>"; };
@@ -493,6 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				7109AC5821873E4D00527AD5 /* NSObject+ClassName.swift */,
+				7189E90821880DAB0057EB83 /* NSObject+MemoryAddress.swift */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -501,6 +510,7 @@
 			isa = PBXGroup;
 			children = (
 				7109AC5B21873E9800527AD5 /* NSObjectClassNameTests.swift */,
+				7189E90A21880E070057EB83 /* NSObjectMemoryAddressTests.swift */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -724,6 +734,7 @@
 				712BB74920CF64A300F01034 /* String+Dictionary.swift */,
 				71375E2D20CAB46000C6A7E0 /* String+Height.swift */,
 				71D9F197214BB3960051B4E4 /* String+Is.swift */,
+				7189E90C218810A30057EB83 /* String+MemoryAddress.swift */,
 				7177623620C3573F001F2C8E /* String+Number.swift */,
 				71A4568520C0A609003E739C /* String+SafeSubscript.swift */,
 				71C28FBF20BE36BA00EF3654 /* String+Separate.swift */,
@@ -767,6 +778,7 @@
 				71375E2F20CAB4BD00C6A7E0 /* StringHeightTests.swift */,
 				71D9F199214BB3B90051B4E4 /* StringIsTests.swift */,
 				7177623820C35DF1001F2C8E /* StringNumberTests.swift */,
+				7189E90E2188116A0057EB83 /* StringMemoryAddressTests.swift */,
 				71A4568720C0A657003E739C /* StringSafeSubscriptTests.swift */,
 				71C28FC120BE385400EF3654 /* StringSeparateTests.swift */,
 				71C2FBA7214E149600ABED50 /* StringSplitTests.swift */,
@@ -1315,6 +1327,7 @@
 				71E2163721279D8600FBD147 /* UserDefaults+Codable.swift in Sources */,
 				711272A32108180F006C550E /* Date+Count.swift in Sources */,
 				71DEFCCE2109544A000A03C9 /* Date+Operator.swift in Sources */,
+				7189E90D218810A30057EB83 /* String+MemoryAddress.swift in Sources */,
 				71AF15C720CCD93C006641D3 /* NSAttributedString+Formatting.swift in Sources */,
 				71CF5DE7213F48A1002BB40F /* Int+Currency.swift in Sources */,
 				711001A921756856001F5AC9 /* Bool+StringValue.swift in Sources */,
@@ -1363,6 +1376,7 @@
 				71C28FBC20BE346500EF3654 /* String+Condense.swift in Sources */,
 				71F367E820CEA24E00C01A74 /* NSMutableAttributedString+Format.swift in Sources */,
 				71C28F3020EC4A6100C56F45 /* Double+Bool.swift in Sources */,
+				7189E90921880DAB0057EB83 /* NSObject+MemoryAddress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1380,6 +1394,7 @@
 				71DBC63A21321943006181CD /* URLRequestSetHTTPHeaderFieldsTests.swift in Sources */,
 				71B2D55B214097D000CD00D1 /* EncodableDictionaryTests.swift in Sources */,
 				7127BD2620FEB82D00816D4B /* DateStringTests.swift in Sources */,
+				7189E90F2188116A0057EB83 /* StringMemoryAddressTests.swift in Sources */,
 				7177623920C35DF1001F2C8E /* StringNumberTests.swift in Sources */,
 				71AAE945216D73F700C7DD1D /* SetRemoveTests.swift in Sources */,
 				7107C57020FAB64A00790D4D /* DateInitTests.swift in Sources */,
@@ -1446,6 +1461,7 @@
 				71AB824020C623AF00EC2A24 /* StringAlphanumericTests.swift in Sources */,
 				71A8004D20C1642D0029B141 /* StringTrimTests.swift in Sources */,
 				71FAC84920DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift in Sources */,
+				7189E90B21880E070057EB83 /* NSObjectMemoryAddressTests.swift in Sources */,
 				71DB6F8621292E300014ACD0 /* URLQueryParameterTests.swift in Sources */,
 				717D0E1520E3ABA5005E972D /* ArrayOperationTests.swift in Sources */,
 				711A42DA215D9AFE00195DBF /* ArraySplitTests.swift in Sources */,
