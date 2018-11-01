@@ -8,15 +8,15 @@
 
 public extension String {
     
-    /// Returns height based on a given width and font
+    /// Returns height based on a given width and font.
     ///
     ///     print("Hello world!".height(withConstrainedWidth: .greatestFiniteMagnitude, font: UIFont.systemFont(ofSize: 16.0)) == font.lineHeight)
     ///     // Prints "true"
     ///
     /// - Parameters:
-    ///   - height: constrained width
-    ///   - font: font
-    /// - Returns: height
+    ///   - height: Constrained width.
+    ///   - font: Font
+    /// - Returns: Height.
     func height(withConstrainedWidth width: CGFloat, font: UIFont) -> CGFloat {
         let minWidth = max(font.pointSize, width)
         let constraintRect = CGSize(width: minWidth, height: .greatestFiniteMagnitude)
