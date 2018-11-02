@@ -73,7 +73,7 @@ public extension CALayer {
     /// - Parameter borderWidth: A CGFloat value that measures how bold the border is.
     /// - Parameter length: A CGFloat value that measures how long the border is.
     @discardableResult
-    public func addLeftBorder(color: UIColor, borderWidth: CGFloat, length: CGFloat = 0) -> CALayer {
+    func addLeftBorder(color: UIColor, borderWidth: CGFloat, length: CGFloat = 0) -> CALayer {
         let border = CALayer()
         border.backgroundColor = color.cgColor
         border.frame = CGRect(x: 0, y: 0, width: borderWidth, height: length == 0 ? frame.size.height: length)
