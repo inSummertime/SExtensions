@@ -10,10 +10,18 @@ import Foundation
 
 public extension NSObject {
     
+    /// The class name of a NSObject instance.
+    ///
+    ///     print(UIView().className)
+    ///     // Prints "UIView"
     var className: String {
         return String(describing: type(of: self))
     }
     
+    /// The class name of a NSObject.
+    ///
+    ///     print(UIView.className)
+    ///     // Prints "UIView"
     class var className: String {
         return String(describing: self)
     }
