@@ -214,6 +214,8 @@
 		71E18CBF212B85ED001BB850 /* URLHostURLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E18CBE212B85ED001BB850 /* URLHostURLTests.swift */; };
 		71E2163721279D8600FBD147 /* UserDefaults+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E2163621279D8600FBD147 /* UserDefaults+Codable.swift */; };
 		71E216392127A3CE00FBD147 /* UserDefaultsCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E216382127A3CE00FBD147 /* UserDefaultsCodableTests.swift */; };
+		71E6CA84218D222000E4C512 /* CALayer+AddColorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E6CA83218D222000E4C512 /* CALayer+AddColorGradient.swift */; };
+		71E6CA86218D22ED00E4C512 /* CALayerAddColorGradientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E6CA85218D22ED00E4C512 /* CALayerAddColorGradientTests.swift */; };
 		71E71C5720D72C1C0009C1A9 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E71C5620D72C1C0009C1A9 /* Dictionary+JSON.swift */; };
 		71E71C5920D72DC00009C1A9 /* DictionaryJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E71C5820D72DC00009C1A9 /* DictionaryJSONTests.swift */; };
 		71E973742124F85F007533A0 /* UserDefaults+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E973732124F85F007533A0 /* UserDefaults+Subscript.swift */; };
@@ -452,6 +454,8 @@
 		71E18CBE212B85ED001BB850 /* URLHostURLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHostURLTests.swift; sourceTree = "<group>"; };
 		71E2163621279D8600FBD147 /* UserDefaults+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Codable.swift"; sourceTree = "<group>"; };
 		71E216382127A3CE00FBD147 /* UserDefaultsCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsCodableTests.swift; sourceTree = "<group>"; };
+		71E6CA83218D222000E4C512 /* CALayer+AddColorGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+AddColorGradient.swift"; sourceTree = "<group>"; };
+		71E6CA85218D22ED00E4C512 /* CALayerAddColorGradientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerAddColorGradientTests.swift; sourceTree = "<group>"; };
 		71E71C5620D72C1C0009C1A9 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
 		71E71C5820D72DC00009C1A9 /* DictionaryJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryJSONTests.swift; sourceTree = "<group>"; };
 		71E973732124F85F007533A0 /* UserDefaults+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Subscript.swift"; sourceTree = "<group>"; };
@@ -870,6 +874,7 @@
 		71A0632A218AB698004D9ABA /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
+				71E6CA83218D222000E4C512 /* CALayer+AddColorGradient.swift */,
 				71A06328218AB67A004D9ABA /* CALayer+Border.swift */,
 				71A2A396218BCDFC00F55454 /* CALayer+RemoveAllSublayers.swift */,
 			);
@@ -881,6 +886,7 @@
 			children = (
 				71A0632B218AB931004D9ABA /* CALayerBorderTests.swift */,
 				71A2A398218BCE6E00F55454 /* CALayerRemoveAllSublayersTests.swift */,
+				71E6CA85218D22ED00E4C512 /* CALayerAddColorGradientTests.swift */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -1367,6 +1373,7 @@
 				7107D8942151B76A0064F8FE /* Array+Append.swift in Sources */,
 				7133739720F971F2004E7CAB /* Date+TimeInterval.swift in Sources */,
 				711CD5462145DDE9002F26E4 /* CGRect+Update.swift in Sources */,
+				71E6CA84218D222000E4C512 /* CALayer+AddColorGradient.swift in Sources */,
 				711EBCD720FD6C220061AA57 /* Date+Operation.swift in Sources */,
 				71EAAF9B20D140B900A648D8 /* Dictionary+Subscript.swift in Sources */,
 				71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */,
@@ -1511,6 +1518,7 @@
 				71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */,
 				715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */,
 				712AF13C2117B23C004715A1 /* DateIntervalStringTests.swift in Sources */,
+				71E6CA86218D22ED00E4C512 /* CALayerAddColorGradientTests.swift in Sources */,
 				7120E35321784D14007DE51E /* ArrayStringTests.swift in Sources */,
 				714CCE292161A16000D4E784 /* ArrayIndexedDictionaryTests.swift in Sources */,
 				71F5D61721659C0D000032B1 /* SetOperatorTests.swift in Sources */,
