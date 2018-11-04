@@ -21,6 +21,8 @@ final class UserDefaultsSubscriptTests: XCTestCase {
         XCTAssertFalse(userDefaults?[key]! as! Bool)
         userDefaults?.removeObject(forKey: key)
         XCTAssertNil(userDefaults?[key])
+        userDefaults?[key] = true
+        XCTAssertTrue(userDefaults?[key]! as! Bool)
     }
     
 }
