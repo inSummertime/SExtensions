@@ -19,6 +19,7 @@ final class URLIsFromDomainTests: XCTestCase {
         let absoluteURL = URL(string: "https://www.google.com/search?q=iPhone")!
         XCTAssertTrue(absoluteURL.isFromDomain("google.com"))
         XCTAssertTrue(absoluteURL.isFromDomain("www.google.com"))
+        XCTAssertFalse(absoluteURL.isFromDomain("www.apple.com"))
     }
     
 }
