@@ -18,7 +18,7 @@ public extension UserDefaults {
     ///     // Prints "Optional(1)"
     ///
     /// - Parameter key: The key to search with.
-    public subscript(key: String) -> Any? {
+    subscript(key: String) -> Any? {
         get {
             return object(forKey: key)
         }

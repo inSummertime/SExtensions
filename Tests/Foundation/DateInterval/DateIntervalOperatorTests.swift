@@ -44,6 +44,7 @@ final class DateIntervalOperatorTests: XCTestCase {
         let dateInterval = DateInterval(start: Date(timeIntervalSinceReferenceDate: 0), duration: 1)
         let nextDateInterval = DateInterval(start: Date(timeIntervalSinceReferenceDate: 0), duration: 2)
         XCTAssertEqual(dateInterval | nextDateInterval, nextDateInterval)
+        XCTAssertEqual(nextDateInterval | dateInterval, nextDateInterval)
         XCTAssertEqual(dateInterval | DateInterval(start: Date(timeIntervalSinceReferenceDate: 1), duration: 0), dateInterval)
         XCTAssertNil(dateInterval | DateInterval(start: Date(timeIntervalSinceReferenceDate: 2), duration: 1))
     }
