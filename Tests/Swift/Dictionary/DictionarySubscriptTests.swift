@@ -18,6 +18,9 @@ final class DictionarySubscriptTests: XCTestCase {
         XCTAssertNil(["hello": 1.0][string: "hello"])
         XCTAssertNil(["hello": ["hello": "world"]][string: "hello"])
         XCTAssertNil(["hello": ["hello", "world"]][string: "hello"])
+        var dictionary = ["hello": "world"]
+        dictionary[string: "!"] = "!"
+        XCTAssertEqual(dictionary, ["hello": "world", "!": "!"])
     }
     
     func testSubscriptStringValue() {
@@ -27,6 +30,9 @@ final class DictionarySubscriptTests: XCTestCase {
         XCTAssertEqual(["hello": 1.0][stringValue: "hello"], "")
         XCTAssertEqual(["hello": ["hello": "world"]][stringValue: "hello"], "")
         XCTAssertEqual(["hello": ["hello", "world"]][stringValue: "hello"], "")
+        var dictionary = ["hello": "world"]
+        dictionary[stringValue: "!"] = "!"
+        XCTAssertEqual(dictionary, ["hello": "world", "!": "!"])
     }
     
     func testSubscriptInt() {
@@ -36,6 +42,9 @@ final class DictionarySubscriptTests: XCTestCase {
         XCTAssertNil(["hello": "world"][int: "world"])
         XCTAssertNil(["hello": ["hello": "world"]][int: "hello"])
         XCTAssertNil(["hello": ["hello", "world"]][int: "hello"])
+        var dictionary = ["hello": 0]
+        dictionary[int: "world"] = 1
+        XCTAssertEqual(dictionary, ["hello": 0, "world": 1])
     }
     
     func testSubscriptIntValue() {
@@ -45,6 +54,9 @@ final class DictionarySubscriptTests: XCTestCase {
         XCTAssertEqual(["hello": "world"][intValue: "hello"], 0)
         XCTAssertEqual(["hello": ["hello": "world"]][intValue: "hello"], 0)
         XCTAssertEqual(["hello": ["hello", "world"]][intValue: "hello"], 0)
+        var dictionary = ["hello": 0]
+        dictionary[intValue: "world"] = 1
+        XCTAssertEqual(dictionary, ["hello": 0, "world": 1])
     }
     
     func testSubscriptDouble() {
@@ -54,6 +66,9 @@ final class DictionarySubscriptTests: XCTestCase {
         XCTAssertNil(["hello": "world"][double: "world"])
         XCTAssertNil(["hello": ["hello": "world"]][double: "hello"])
         XCTAssertNil(["hello": ["hello", "world"]][double: "hello"])
+        var dictionary = ["hello": 0.0]
+        dictionary[double: "world"] = 1.0
+        XCTAssertEqual(dictionary, ["hello": 0.0, "world": 1.0])
     }
     
     func testSubscriptDoubleValue() {
@@ -63,6 +78,9 @@ final class DictionarySubscriptTests: XCTestCase {
         XCTAssertEqual(["hello": "world"][doubleValue: "hello"], 0.0)
         XCTAssertEqual(["hello": ["hello": "world"]][doubleValue: "hello"], 0.0)
         XCTAssertEqual(["hello": ["hello", "world"]][doubleValue: "hello"], 0.0)
+        var dictionary = ["hello": 0.0]
+        dictionary[doubleValue: "world"] = 1.0
+        XCTAssertEqual(dictionary, ["hello": 0.0, "world": 1.0])
     }
     
     func testSubscriptArray() {
@@ -72,6 +90,9 @@ final class DictionarySubscriptTests: XCTestCase {
         XCTAssertNil(["hello": 1][array: "hello"])
         XCTAssertNil(["hello": "world"][array: "world"])
         XCTAssertNil(["hello": ["hello": "world"]][array: "hello"])
+        var dictionary = ["hello": [0, 1]]
+        dictionary[array: "world"] = [0, 1]
+        XCTAssertEqual(dictionary, ["hello": [0, 1], "world": [0, 1]])
     }
     
     func testSubscriptArrayValue() {
@@ -81,6 +102,9 @@ final class DictionarySubscriptTests: XCTestCase {
         XCTAssertEqual(["hello": 1.0][arrayValue: "hello"].count, 0)
         XCTAssertEqual(["hello": "world"][arrayValue: "hello"].count, 0)
         XCTAssertEqual(["hello": ["hello": "world"]][arrayValue: "hello"].count, 0)
+        var dictionary = ["hello": [0, 1]]
+        dictionary[arrayValue: "world"] = [0, 1]
+        XCTAssertEqual(dictionary, ["hello": [0, 1], "world": [0, 1]])
     }
     
     func testSubscriptDictionary() {
@@ -90,6 +114,9 @@ final class DictionarySubscriptTests: XCTestCase {
         XCTAssertNil(["hello": 1][dictionary: "hello"])
         XCTAssertNil(["hello": "world"][dictionary: "world"])
         XCTAssertNil(["hello": ["hello", "world"]][dictionary: "hello"])
+        var dictionary = ["hello": ["hello": "world"]]
+        dictionary[dictionary: "world"] = ["hello": "world"]
+        XCTAssertEqual(dictionary, ["hello": ["hello": "world"], "world": ["hello": "world"]])
     }
     
     func testSubscriptDictionaryValue() {
@@ -99,6 +126,9 @@ final class DictionarySubscriptTests: XCTestCase {
         XCTAssertTrue(["hello": 1.0][dictionaryValue: "hello"].isEmpty)
         XCTAssertTrue(["hello": "world"][dictionaryValue: "hello"].isEmpty)
         XCTAssertTrue(["hello": ["hello", "world"]][dictionaryValue: "hello"].isEmpty)
+        var dictionary = ["hello": ["hello": "world"]]
+        dictionary[dictionaryValue: "world"] = ["hello": "world"]
+        XCTAssertEqual(dictionary, ["hello": ["hello": "world"], "world": ["hello": "world"]])
     }
     
     func testSubscriptChain() {
