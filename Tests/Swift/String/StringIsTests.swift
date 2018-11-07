@@ -18,6 +18,9 @@ final class StringIsTests: XCTestCase {
         XCTAssertTrue("1300-550-691".isPhoneNumber) // Australia Apple Government Sales
         XCTAssertTrue("(852) 800 908 988".isPhoneNumber) // Hong Kong Apple Online Store
         XCTAssertTrue("(852) 2112 0099".isPhoneNumber) // Hong Kong Technical Support
+        XCTAssertFalse("".isPhoneNumber)
+        XCTAssertFalse("abc".isPhoneNumber)
+        XCTAssertFalse("123".isPhoneNumber)
     }
     
     func testIsEmail() {
