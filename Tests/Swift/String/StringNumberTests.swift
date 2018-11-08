@@ -80,6 +80,22 @@ final class StringNumberTests: XCTestCase {
         XCTAssertFalse("9223372036854775809".isInt) // Int.min - 1
     }
     
+    func testUInt() {
+        XCTAssertNil("Hello world!".uint)
+        XCTAssertNil("0.0".uint)
+        XCTAssertNotNil("  \n\n  1  \n\n  ".uint)
+    }
+    
+    func testUIntValue() {
+        XCTAssertEqual("Hello world!".uintValue, 0)
+        XCTAssertEqual("1.0".uintValue, 1)
+    }
+    
+    func testIsUInt() {
+        XCTAssertFalse("Hello world!".isUInt)
+        XCTAssertTrue("0".isUInt)
+    }
+    
     func testInt8() {
         XCTAssertNil("Hello world!".int8)
         XCTAssertNotNil("127".int8) // Int8.max
@@ -107,6 +123,22 @@ final class StringNumberTests: XCTestCase {
         XCTAssertFalse("129".isInt8) // Int8.min - 1
     }
     
+    func testUInt8() {
+        XCTAssertNil("Hello world!".uint8)
+        XCTAssertNil("0.0".uint8)
+        XCTAssertNotNil("  \n\n  1  \n\n  ".uint8)
+    }
+    
+    func testUInt8Value() {
+        XCTAssertEqual("Hello world!".uint8Value, 0)
+        XCTAssertEqual("1.0".uint8Value, 1)
+    }
+    
+    func testIsUInt8() {
+        XCTAssertFalse("Hello world!".isUInt8)
+        XCTAssertTrue("0".isUInt8)
+    }
+    
     func testInt16() {
         XCTAssertNil("Hello world!".int16)
         XCTAssertNotNil("32767".int16) // Int16.max
@@ -132,6 +164,22 @@ final class StringNumberTests: XCTestCase {
         XCTAssertFalse("32768".isInt16) // Int16.max + 1
         XCTAssertTrue("-32768".isInt16) // Int16.min
         XCTAssertFalse("32769".isInt16) // Int16.min - 1
+    }
+    
+    func testUInt16() {
+        XCTAssertNil("Hello world!".uint16)
+        XCTAssertNil("0.0".uint16)
+        XCTAssertNotNil("  \n\n  1  \n\n  ".uint16)
+    }
+    
+    func testUInt16Value() {
+        XCTAssertEqual("Hello world!".uint16Value, 0)
+        XCTAssertEqual("1.0".uint16Value, 1)
+    }
+    
+    func testIsUInt16() {
+        XCTAssertFalse("Hello world!".isUInt16)
+        XCTAssertTrue("0".isUInt16)
     }
     
     func testInt32() {
@@ -164,6 +212,22 @@ final class StringNumberTests: XCTestCase {
         XCTAssertEqual("1.0".int32Value, 1)
     }
     
+    func testUInt32() {
+        XCTAssertNil("Hello world!".uint32)
+        XCTAssertNil("0.0".uint32)
+        XCTAssertNotNil("  \n\n  1  \n\n  ".uint32)
+    }
+    
+    func testUInt32Value() {
+        XCTAssertEqual("Hello world!".uint32Value, 0)
+        XCTAssertEqual("1.0".uint32Value, 1)
+    }
+    
+    func testIsUInt32() {
+        XCTAssertFalse("Hello world!".isUInt32)
+        XCTAssertTrue("0".isUInt32)
+    }
+    
     func testInt64() {
         XCTAssertNil("Hello world!".int64)
         XCTAssertNotNil("9223372036854775807".int64) // Int64.max
@@ -189,6 +253,22 @@ final class StringNumberTests: XCTestCase {
         XCTAssertFalse("9223372036854775808".isInt64) // Int64.max + 1
         XCTAssertTrue("-9223372036854775808".isInt64) // Int64.min
         XCTAssertFalse("-9223372036854775809".isInt64) // Int64.min - 1
+    }
+    
+    func testUInt64() {
+        XCTAssertNil("Hello world!".uint64)
+        XCTAssertNil("0.0".uint64)
+        XCTAssertNotNil("  \n\n  1  \n\n  ".uint64)
+    }
+    
+    func testUInt64Value() {
+        XCTAssertEqual("Hello world!".uint64Value, 0)
+        XCTAssertEqual("1.0".uint64Value, 1)
+    }
+    
+    func testIsUInt64() {
+        XCTAssertFalse("Hello world!".isUInt64)
+        XCTAssertTrue("0".isUInt64)
     }
     
     func testFloat() {
