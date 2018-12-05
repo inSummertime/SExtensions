@@ -595,9 +595,9 @@
 				71FAC84720DF87A800D8E1C1 /* Array */,
 				714B021920F5E14C007DD87B /* Bool */,
 				7120E34C217816C1007DE51E /* Character */,
+				71B2D55D2140980800CD00D1 /* Codable */,
 				71EAAF9E20D1438200A648D8 /* Dictionary */,
 				71C28F3120EC4A6900C56F45 /* Double */,
-				71B2D55D2140980800CD00D1 /* Codable */,
 				71A4B18120F432EB00F5D044 /* Int */,
 				7198204D215FA1AE004DE4A1 /* Optional */,
 				71F5D61521659B12000032B1 /* Set */,
@@ -884,9 +884,9 @@
 		71A0632D218AB962004D9ABA /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
+				71E6CA85218D22ED00E4C512 /* CALayerAddColorGradientTests.swift */,
 				71A0632B218AB931004D9ABA /* CALayerBorderTests.swift */,
 				71A2A398218BCE6E00F55454 /* CALayerRemoveAllSublayersTests.swift */,
-				71E6CA85218D22ED00E4C512 /* CALayerAddColorGradientTests.swift */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -1211,6 +1211,7 @@
 				71697E1B20B91CDB005C58EC /* Frameworks */,
 				71697E1C20B91CDB005C58EC /* Headers */,
 				71697E1D20B91CDB005C58EC /* Resources */,
+				C452907121B778EB0021EC1C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1298,6 +1299,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C452907121B778EB0021EC1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71697E1A20B91CDB005C58EC /* Sources */ = {
