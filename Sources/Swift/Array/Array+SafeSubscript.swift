@@ -7,7 +7,7 @@
 //
 
 public extension Array {
-    
+
     /// Returns the element if it is within bounds.
     ///
     ///     print(["hello", "world"][safe: 1]!)
@@ -17,7 +17,7 @@ public extension Array {
     subscript(safe index: Int) -> Element? {
         return indices.contains(index) ? self[index] : nil
     }
-    
+
     /// Returns an array if the indices are within bounds.
     ///
     ///     print(["hello"][safeIndices: 0, 1])
@@ -33,7 +33,7 @@ public extension Array {
         }
         return result
     }
-    
+
     /// Returns a subsequence with a CountableRange safely.
     ///
     ///     print(["hello", "world", "!"][safe: 1..<4])
@@ -54,7 +54,7 @@ public extension Array {
         let upper = Swift.min(count, range.upperBound)
         return Array(self[lower..<upper])
     }
-    
+
     /// Returns a subsequence with a CountableClosedRange safely.
     ///
     ///     print(["hello", "world", "!"][safe: -1...1])
@@ -75,5 +75,5 @@ public extension Array {
         let upper = Swift.min(count - 1, range.upperBound)
         return Array(self[lower...upper])
     }
-    
+
 }

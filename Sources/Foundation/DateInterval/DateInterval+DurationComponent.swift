@@ -9,7 +9,7 @@
 import Foundation
 
 public extension DateInterval {
-    
+
     /// Returns the value for one component of the duration.
     ///
     ///     let dateInterval = DateInterval(start: Date(timeIntervalSinceReferenceDate: 0), duration: Date.timeIntervalPerWeek)
@@ -27,7 +27,7 @@ public extension DateInterval {
         }
         return calendar.dateComponents([component], from: start, to: end).value(for: component)
     }
-    
+
     /// Returns a component dictionary of the duration.
     ///
     ///     let dateInterval = DateInterval(start: Date(timeIntervalSinceReferenceDate: 0), duration: Date.timeIntervalPerWeek * 58)

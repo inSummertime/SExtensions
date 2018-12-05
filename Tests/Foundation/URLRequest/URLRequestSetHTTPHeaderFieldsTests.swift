@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class URLRequestSetHTTPHeaderFieldsTests: XCTestCase {
-    
+
     func testSetHTTPHeaderFields() {
         let url = URL(string: "https://www.google.com")
         var urlRequest = URLRequest(url: url!)
@@ -19,5 +19,5 @@ final class URLRequestSetHTTPHeaderFieldsTests: XCTestCase {
         XCTAssertEqual(urlRequest.value(forHTTPHeaderField: "Content-Type"), "application/x-www-form-urlencoded; charset=utf-8")
         XCTAssertEqual(urlRequest.value(forHTTPHeaderField: "Content-Length"), "1")
     }
-    
+
 }

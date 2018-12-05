@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// A string with all whitespaces and newlines trimmed.
     ///
     ///     print(" \nhello \nworld\n ".trimmed)
@@ -15,7 +15,7 @@ public extension String {
     var trimmed: String {
         return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
-    
+
     /// A string with all start whitespaces and newlines trimmed.
     ///
     ///     print(" \nHello \nworld!\n ".startTrimmed)
@@ -23,7 +23,7 @@ public extension String {
     var startTrimmed: String {
         return trimmingStartCharacters(in: .whitespacesAndNewlines)
     }
-    
+
     /// A string with all end whitespaces and newlines trimmed.
     ///
     ///     print(" \nHello \nworld!\n ".endTrimmed)
@@ -31,7 +31,7 @@ public extension String {
     var endTrimmed: String {
         return trimmingEndCharacters(in: .whitespacesAndNewlines)
     }
-    
+
     /// A string with all whitespaces trimmed.
     ///
     ///     print(" \nHello \nworld!\n ".whitespaceTrimmed)
@@ -39,7 +39,7 @@ public extension String {
     var whitespaceTrimmed: String {
         return trimmingCharacters(in: CharacterSet.whitespaces)
     }
-    
+
     /// A string with all start whitespaces trimmed.
     ///
     ///     print(" \nHello \nworld!\n ".startWhitespaceTrimmed)
@@ -47,7 +47,7 @@ public extension String {
     var startWhitespaceTrimmed: String {
         return trimmingStartCharacters(in: .whitespaces)
     }
-    
+
     /// A string with all end whitespaces trimmed.
     ///
     ///     print(" \nHello \nworld!\n ".endWhitespaceTrimmed)
@@ -55,7 +55,7 @@ public extension String {
     var endWhitespaceTrimmed: String {
         return trimmingEndCharacters(in: .whitespaces)
     }
-    
+
     /// A string with all newline trimmed.
     ///
     ///     print("\n\nHellon\nworld!\n\n".newlineTrimmed)
@@ -63,7 +63,7 @@ public extension String {
     var newlineTrimmed: String {
         return trimmingCharacters(in: CharacterSet.newlines)
     }
-    
+
     /// A string with all start newlines trimmed
     ///
     ///     print("\n\nhello\n\nworld!\n\n".startNewlineTrimmed)
@@ -71,7 +71,7 @@ public extension String {
     var startNewlineTrimmed: String {
         return trimmingStartCharacters(in: .newlines)
     }
-    
+
     /// A string with all end newlines trimmed.
     ///
     ///     print("\n\nhello\n\nworld!\n\n".endNewlineTrimmed)
@@ -79,7 +79,7 @@ public extension String {
     var endNewlineTrimmed: String {
         return trimmingEndCharacters(in: .newlines)
     }
-    
+
     /// Returns a string with the start trimmed with a character set.
     ///
     ///     print("!Hello world!".trimmingStartCharacters(in: .punctuationCharacters))
@@ -93,7 +93,7 @@ public extension String {
         }
         return self
     }
-    
+
     /// Returns a string with the end trimmed with a character set.
     ///
     ///     print("Hello world!".trimmingEndCharacters(in: .punctuationCharacters))
@@ -107,7 +107,7 @@ public extension String {
         }
         return self
     }
-    
+
     /// Returns a string with the text trimmed.
     ///
     ///     print("Hello world!".trim(text: "l"))
@@ -118,7 +118,7 @@ public extension String {
     func trimmingText(_ text: String) -> String {
         return replacingOccurrences(of: text, with: "")
     }
-    
+
     /// Trims text with a string.
     ///
     ///     var helloWorld = "Hello world!"
@@ -131,5 +131,5 @@ public extension String {
     mutating func trimText(_ text: String) {
         self = trimmingText(text)
     }
-    
+
 }

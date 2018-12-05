@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class UserDefaultsSubscriptTests: XCTestCase {
-    
+
     func testSubscript() {
         let key = "Hello World!"
         let userDefaults = UserDefaults(suiteName: "Hello World!")
@@ -24,5 +24,5 @@ final class UserDefaultsSubscriptTests: XCTestCase {
         userDefaults?[key] = true
         XCTAssertTrue(userDefaults?[key]! as! Bool)
     }
-    
+
 }

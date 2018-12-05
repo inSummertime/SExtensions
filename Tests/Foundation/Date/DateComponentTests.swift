@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class DateComponentTests: XCTestCase {
-    
+
     func testComponents() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
         XCTAssertTrue(date.year == 2001 || date.year == 2000)
@@ -19,7 +19,7 @@ final class DateComponentTests: XCTestCase {
         XCTAssertEqual(date.minute, 0)
         XCTAssertEqual(date.second, 0)
     }
-    
+
     func testUTCComponents() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
         XCTAssertEqual(date.yearUTC, 2001)
@@ -29,7 +29,7 @@ final class DateComponentTests: XCTestCase {
         XCTAssertEqual(date.minuteUTC, 0)
         XCTAssertEqual(date.secondUTC, 0)
     }
-    
+
     func testComponentInCalendar() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
@@ -43,7 +43,7 @@ final class DateComponentTests: XCTestCase {
         XCTAssertNil(date.component(.calendar, in: calendar))
         XCTAssertNil(date.component(.timeZone, in: calendar))
     }
-    
+
     func testSubscript() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
         XCTAssertTrue(date[.year]! == 2001 || date[.year]! == 2000)
@@ -52,7 +52,7 @@ final class DateComponentTests: XCTestCase {
         XCTAssertNil(date[.calendar])
         XCTAssertNil(date[.timeZone])
     }
-    
+
     func testComponentSinceDateInCalendar() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
@@ -72,7 +72,7 @@ final class DateComponentTests: XCTestCase {
         XCTAssertEqual(sometimeNextYear.component(.second, since: date, in: calendar)!, 77 * 7 * 24 * 60 * 60)
         XCTAssertNil(sometimeNextYear.component(.calendar, since: date, in: calendar))
     }
-    
+
     func testComponentDictionary() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
@@ -88,5 +88,5 @@ final class DateComponentTests: XCTestCase {
         XCTAssertEqual(dictionary[.minute], 1)
         XCTAssertEqual(dictionary[.second], 1)
     }
-    
+
 }

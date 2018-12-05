@@ -7,7 +7,7 @@
 //
 
 public extension Array {
-    
+
     /// Splits into an array of arrays of elements by a given size.
     ///
     ///     print([0, 1, 2, 3, 4, 5, 6, 7].spliting(by: 3))

@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class StringAffixTests: XCTestCase {
-    
+
     func testRemovingPrefix() {
         XCTAssertEqual("Hello world!".removingPrefix("H"), "ello world!")
         XCTAssertEqual("Hello world!".removingPrefix("e"), "Hello world!")
@@ -22,18 +22,18 @@ final class StringAffixTests: XCTestCase {
         XCTAssertEqual("HHello world!".removingPrefix("H"), "Hello world!")
         XCTAssertEqual("Hello-world!".removingPrefix("Hello"), "world!")
     }
-    
+
     func testRemovePrefix() {
         var helloWorld = "Hello world!"
         helloWorld.removePrefix("H")
         XCTAssertEqual(helloWorld, "ello world!")
     }
-    
+
     func testRemovingPrefixCount() {
         XCTAssertEqual("Hello world!".removingPrefix(1), "ello world!")
         XCTAssertEqual("Hello world!".removingPrefix(100), "")
     }
-    
+
     func testRemovePrefixCount() {
         var helloWorld = "Hello world!"
         helloWorld.removePrefix(1)
@@ -41,7 +41,7 @@ final class StringAffixTests: XCTestCase {
         helloWorld.removePrefix(100)
         XCTAssertEqual(helloWorld, "")
     }
-    
+
     func testRemovingSuffix() {
         XCTAssertEqual("Hello world!".removingSuffix("!"), "Hello world")
         XCTAssertEqual("Hello world!".removingSuffix("d"), "Hello world!")
@@ -53,18 +53,18 @@ final class StringAffixTests: XCTestCase {
         XCTAssertEqual("Hello world!!".removingSuffix("!"), "Hello world!")
         XCTAssertEqual("Hello-world!".removingSuffix("world!"), "Hello")
     }
-    
+
     func testRemoveSuffix() {
         var helloWorld = "Hello world!"
         helloWorld.removeSuffix("d!")
         XCTAssertEqual(helloWorld, "Hello worl")
     }
-    
+
     func testRemovingSuffixCount() {
         XCTAssertEqual("Hello world!".removingSuffix(1), "Hello world")
         XCTAssertEqual("Hello world!".removingSuffix(100), "")
     }
-    
+
     func testRemoveSuffixCount() {
         var helloWorld = "Hello world!"
         helloWorld.removeSuffix(1)
@@ -72,5 +72,5 @@ final class StringAffixTests: XCTestCase {
         helloWorld.removeSuffix(100)
         XCTAssertEqual(helloWorld, "")
     }
-    
+
 }

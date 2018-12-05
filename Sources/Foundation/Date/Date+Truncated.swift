@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Date {
-    
+
     /// Returns a date by truncating the components or nil.
     ///
     ///     var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
@@ -54,7 +54,7 @@ public extension Date {
         }
         return updatingComponentDictionary(dictionary, in: calendar)
     }
-    
+
     /// Returns a date by truncating the components starting from a given
     /// component or nil.
     ///
@@ -88,5 +88,5 @@ public extension Date {
         }
         return truncated(at: components, in: calendar)
     }
-    
+
 }

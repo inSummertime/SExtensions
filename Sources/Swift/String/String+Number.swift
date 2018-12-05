@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// Returns a number if it can
     ///
     ///     print("1".number)
@@ -18,7 +18,7 @@ public extension String {
         }
         return NSDecimalNumber(string: self)
     }
-    
+
     /// Returns a number or zero
     ///
     ///     print("1".numberValue)
@@ -29,7 +29,7 @@ public extension String {
         }
         return NSDecimalNumber(string: self)
     }
-    
+
     /// Returns true if it is a Number
     ///
     ///     print("1".isNumber)
@@ -37,7 +37,7 @@ public extension String {
     var isNumber: Bool {
         return number != nil
     }
-    
+
     /// Returns a Int if it can
     ///
     ///     print("1".int)
@@ -45,7 +45,7 @@ public extension String {
     var int: Int? {
         return Int(trimmed)
     }
-    
+
     /// Returns a Int or zero
     ///
     ///     print("1".intValue)
@@ -53,7 +53,7 @@ public extension String {
     var intValue: Int {
         return numberValue.intValue
     }
-    
+
     /// Returns true if it is an Int
     ///
     ///     print("1".isInt)
@@ -61,7 +61,7 @@ public extension String {
     var isInt: Bool {
         return int != nil
     }
-    
+
     /// Returns a UInt if it can
     ///
     ///     print("1".uint)
@@ -69,7 +69,7 @@ public extension String {
     var uint: UInt? {
         return UInt(trimmed)
     }
-    
+
     /// Returns a UInt or zero
     ///
     ///     print("1".uintValue)
@@ -77,7 +77,7 @@ public extension String {
     var uintValue: UInt {
         return numberValue.uintValue
     }
-    
+
     /// Returns true if it is an UInt
     ///
     ///     print("1".isUInt)
@@ -85,7 +85,7 @@ public extension String {
     var isUInt: Bool {
         return uint != nil
     }
-    
+
     /// Returns a Int8 if it can
     ///
     ///     print("1".int8)
@@ -93,7 +93,7 @@ public extension String {
     var int8: Int8? {
         return Int8(trimmed)
     }
-    
+
     /// Returns a Int8 or zero
     ///
     ///     print("1".int8Value)
@@ -101,7 +101,7 @@ public extension String {
     var int8Value: Int8 {
         return numberValue.int8Value
     }
-    
+
     /// Returns true if it is an Int8
     ///
     ///     print("1".isInt8)
@@ -109,7 +109,7 @@ public extension String {
     var isInt8: Bool {
         return int8 != nil
     }
-    
+
     /// Returns a UInt8 if it can
     ///
     ///     print("1".uint8)
@@ -117,7 +117,7 @@ public extension String {
     var uint8: UInt8? {
         return UInt8(trimmed)
     }
-    
+
     /// Returns a UInt8 or zero
     ///
     ///     print("1".uint8Value)
@@ -125,7 +125,7 @@ public extension String {
     var uint8Value: UInt8 {
         return numberValue.uint8Value
     }
-    
+
     /// Returns true if it is an UInt8
     ///
     ///     print("1".isUInt8)
@@ -133,7 +133,7 @@ public extension String {
     var isUInt8: Bool {
         return uint8 != nil
     }
-    
+
     /// Returns a Int16 if it can
     ///
     ///     print("1".int16)
@@ -141,7 +141,7 @@ public extension String {
     var int16: Int16? {
         return Int16(trimmed)
     }
-    
+
     /// Returns a Int16 or zero
     ///
     ///     print("1".int16Value)
@@ -149,7 +149,7 @@ public extension String {
     var int16Value: Int16 {
         return numberValue.int16Value
     }
-    
+
     /// Returns true if it is an Int16
     ///
     ///     print("1".isInt16)
@@ -157,7 +157,7 @@ public extension String {
     var isInt16: Bool {
         return int16 != nil
     }
-    
+
     /// Returns a UInt16 if it can
     ///
     ///     print("1".uint16)
@@ -165,7 +165,7 @@ public extension String {
     var uint16: UInt16? {
         return UInt16(trimmed)
     }
-    
+
     /// Returns a UInt16 or zero
     ///
     ///     print("1".uint16Value)
@@ -173,7 +173,7 @@ public extension String {
     var uint16Value: UInt16 {
         return numberValue.uint16Value
     }
-    
+
     /// Returns true if it is an UInt16
     ///
     ///     print("1".isUInt16)
@@ -181,7 +181,7 @@ public extension String {
     var isUInt16: Bool {
         return uint16 != nil
     }
-    
+
     /// Returns a Int32 if it can
     ///
     ///     print("1".int32)
@@ -189,7 +189,7 @@ public extension String {
     var int32: Int32? {
         return Int32(trimmed)
     }
-    
+
     /// Returns a Int32 or zero
     ///
     ///     print("1".int32Value)
@@ -197,7 +197,7 @@ public extension String {
     var int32Value: Int32 {
         return numberValue.int32Value
     }
-    
+
     /// Returns true if it is an Int32
     ///
     ///     print("1".isInt32)
@@ -205,7 +205,7 @@ public extension String {
     var isInt32: Bool {
         return int32 != nil
     }
-    
+
     /// Returns a UInt32 if it can
     ///
     ///     print("1".uint32)
@@ -213,7 +213,7 @@ public extension String {
     var uint32: UInt32? {
         return UInt32(trimmed)
     }
-    
+
     /// Returns a UInt32 or zero
     ///
     ///     print("1".uint32Value)
@@ -221,7 +221,7 @@ public extension String {
     var uint32Value: UInt32 {
         return numberValue.uint32Value
     }
-    
+
     /// Returns true if it is an UInt32
     ///
     ///     print("1".isUInt32)
@@ -229,7 +229,7 @@ public extension String {
     var isUInt32: Bool {
         return uint32 != nil
     }
-    
+
     /// Returns a Int64 if it can
     ///
     ///     print("1".int64)
@@ -237,7 +237,7 @@ public extension String {
     var int64: Int64? {
         return Int64(trimmed)
     }
-    
+
     /// Returns a Int64 or zero
     ///
     ///     print("1".int64Value)
@@ -245,7 +245,7 @@ public extension String {
     var int64Value: Int64 {
         return numberValue.int64Value
     }
-    
+
     /// Returns true if it is an Int64
     ///
     ///     print("1".isInt64)
@@ -253,7 +253,7 @@ public extension String {
     var isInt64: Bool {
         return int64 != nil
     }
-    
+
     /// Returns a UInt64 if it can
     ///
     ///     print("1".uint64)
@@ -261,7 +261,7 @@ public extension String {
     var uint64: UInt64? {
         return UInt64(trimmed)
     }
-    
+
     /// Returns a UInt64 or zero
     ///
     ///     print("1".uint64Value)
@@ -269,7 +269,7 @@ public extension String {
     var uint64Value: UInt64 {
         return numberValue.uint64Value
     }
-    
+
     /// Returns true if it is an UInt64
     ///
     ///     print("1".isUInt64)
@@ -277,7 +277,7 @@ public extension String {
     var isUInt64: Bool {
         return uint64 != nil
     }
-    
+
     /// Returns a Float if it can
     ///
     ///     print("1.0".float)
@@ -285,7 +285,7 @@ public extension String {
     var float: Float? {
         return Float(trimmed)
     }
-    
+
     /// Returns a Float or zero
     ///
     ///     print("1.0".floatValue)
@@ -293,7 +293,7 @@ public extension String {
     var floatValue: Float {
         return numberValue.floatValue
     }
-    
+
     /// Returns true if it is a Float
     ///
     ///     print("1.0".isFloat)
@@ -301,7 +301,7 @@ public extension String {
     var isFloat: Bool {
         return float != nil
     }
-    
+
     /// Returns a Double if it can
     ///
     ///     print("1.0".double)
@@ -309,7 +309,7 @@ public extension String {
     var double: Double? {
         return Double(trimmed)
     }
-    
+
     /// Returns a Double or zero
     ///
     ///     print("1.0".doubleValue)
@@ -317,7 +317,7 @@ public extension String {
     var doubleValue: Double {
         return numberValue.doubleValue
     }
-    
+
     /// Returns true if it is a Double
     ///
     ///     print("1.0".isDouble)
@@ -325,7 +325,7 @@ public extension String {
     var isDouble: Bool {
         return double != nil
     }
-    
+
     /// Returns an Int value from a Roman string.
     ///
     ///     print("IV".intFromRoman)
@@ -345,5 +345,5 @@ public extension String {
         }
         return result
     }
-    
+
 }

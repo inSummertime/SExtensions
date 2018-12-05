@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Date {
-    
+
     /// Returns a new `Date` by adding a dictionary of calendar component and
     /// Int value to this `Date`.
     ///
@@ -29,7 +29,7 @@ public extension Date {
         }
         return calendar.date(byAdding: dateComponents, to: self)
     }
-    
+
     /// Returns a new `Date` by updating a dictionary of calendar component
     /// and Int value.
     ///
@@ -60,5 +60,5 @@ public extension Date {
         }
         return calendar.date(byAdding: dateComponents, to: self)
     }
-    
+
 }

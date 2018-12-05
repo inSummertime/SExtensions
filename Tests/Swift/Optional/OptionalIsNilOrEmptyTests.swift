@@ -19,7 +19,7 @@ final class OptionalIsNilOrEmptyTests: XCTestCase {
         array = [1]
         XCTAssertFalse(array.isNilOrEmpty)
     }
-    
+
     func testIsNilOrEmptyString() {
         var string: String?
         XCTAssertTrue(string.isNilOrEmpty)

@@ -9,7 +9,7 @@
 import UIKit
 
 public extension NSMutableAttributedString {
-    
+
     /// Returns a NSMutableAttributedString with a color within a NSRange.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.foregroundColor: UIColor.white])
@@ -20,12 +20,12 @@ public extension NSMutableAttributedString {
     /// - Parameter range: the NSRange of the text.
     /// - Returns: a NSMutableAttributedString with a color.
     func colored(with color: UIColor, in range: NSRange? = nil) -> NSMutableAttributedString {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let mutableAttributedString = NSMutableAttributedString(attributedString: self)
         mutableAttributedString.addAttribute(.foregroundColor, value: color, range: replacementRange)
         return mutableAttributedString
     }
-    
+
     /// Colors the NSMutableAttributedString within a NSRange.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.foregroundColor: UIColor.white])
@@ -37,10 +37,10 @@ public extension NSMutableAttributedString {
     ///   - color: text color.
     ///   - range: the NSRange of the text.
     func color(with color: UIColor, in range: NSRange? = nil) {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         addAttribute(.foregroundColor, value: color, range: replacementRange)
     }
-    
+
     /// Returns a NSMutableAttributedString with a font within a NSRange.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.systemFont(ofSize: 8.0)])
@@ -52,12 +52,12 @@ public extension NSMutableAttributedString {
     ///   - range: the NSRange of the text.
     /// - Returns: a NSMutableAttributedString.
     func usingFont(_ font: UIFont, in range: NSRange? = nil) -> NSMutableAttributedString {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let mutableAttributedString = NSMutableAttributedString(attributedString: self)
         mutableAttributedString.addAttribute(.font, value: font, range: replacementRange)
         return mutableAttributedString
     }
-    
+
     /// Uses a font within a NSRange.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: font8])
@@ -69,10 +69,10 @@ public extension NSMutableAttributedString {
     ///   - font: the font.
     ///   - range: the NSRange of the text.
     func useFont(_ font: UIFont, in range: NSRange? = nil) {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         addAttribute(.font, value: font, range: replacementRange)
     }
-    
+
     /// Returns a NSMutableAttributedString with the text within a NSRange
     /// underlined.
     ///
@@ -83,12 +83,12 @@ public extension NSMutableAttributedString {
     /// - Parameter range: the NSRange of the text.
     /// - Returns: a underlined NSMutableAttributedString.
     func underlined(in range: NSRange? = nil) -> NSMutableAttributedString {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let mutableAttributedString = NSMutableAttributedString(attributedString: self)
         mutableAttributedString.addAttribute(.underlineStyle, value: NSUnderlineStyle.styleSingle.rawValue, range: replacementRange)
         return mutableAttributedString
     }
-    
+
     /// Underlines within a NSRange.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!")
@@ -99,10 +99,10 @@ public extension NSMutableAttributedString {
     ///
     /// - Parameter range: the NSRange of the text.
     func underline(in range: NSRange? = nil) {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         addAttribute(.underlineStyle, value: NSUnderlineStyle.styleSingle.rawValue, range: replacementRange)
     }
-    
+
     /// Returns a NSMutableAttributedString with underline within a NSRange
     /// removed.
     ///
@@ -114,12 +114,12 @@ public extension NSMutableAttributedString {
     /// - Parameter range: the NSRange of the text.
     /// - Returns: a underline removed NSMutableAttributedString.
     func removingUnderline(in range: NSRange? = nil) -> NSMutableAttributedString {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let mutableAttributedString = NSMutableAttributedString(attributedString: self)
         mutableAttributedString.addAttribute(.underlineStyle, value: NSUnderlineStyle.styleNone.rawValue, range: replacementRange)
         return mutableAttributedString
     }
-    
+
     /// Removes the underline within a NSRange.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.underlineStyle: true])
@@ -130,10 +130,10 @@ public extension NSMutableAttributedString {
     ///
     /// - Parameter range: the NSRange of the text.
     func removeUnderline(in range: NSRange? = nil) {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         addAttribute(.underlineStyle, value: NSUnderlineStyle.styleNone.rawValue, range: replacementRange)
     }
-    
+
     /// Returns a NSMutableAttributedStringwith the text within a NSRange
     /// highlighted.
     ///
@@ -146,12 +146,12 @@ public extension NSMutableAttributedString {
     /// - Parameter range: the NSRange of the text.
     /// - Returns: a highlighted NSMutableAttributedString.
     func highlighted(with color: UIColor, in range: NSRange? = nil) -> NSMutableAttributedString {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let mutableAttributedString = NSMutableAttributedString(attributedString: self)
         mutableAttributedString.addAttribute(.backgroundColor, value: color, range: replacementRange)
         return mutableAttributedString
     }
-    
+
     /// Highlights the text within a NSRange.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!")
@@ -162,10 +162,10 @@ public extension NSMutableAttributedString {
     ///
     /// - Parameter range: the NSRange of the text.
     func highlight(with color: UIColor, in range: NSRange? = nil) {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         addAttribute(.backgroundColor, value: color, range: replacementRange)
     }
-    
+
     /// Returns a NSMutableAttributedString with the text within a NSRange
     /// unhighlighted.
     ///
@@ -177,12 +177,12 @@ public extension NSMutableAttributedString {
     /// - Parameter range: the NSRange of the text.
     /// - Returns: a unhighlighted NSMutableAttributedString.
     func unhighlighted(in range: NSRange? = nil) -> NSMutableAttributedString {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let mutableAttributedString = NSMutableAttributedString(attributedString: self)
         mutableAttributedString.addAttribute(.backgroundColor, value: UIColor.clear, range: replacementRange)
         return mutableAttributedString
     }
-    
+
     /// Unhighlights the text within a NSRange.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.backgroundColor: UIColor.white])
@@ -193,10 +193,10 @@ public extension NSMutableAttributedString {
     ///
     /// - Parameter range: the NSRange of the text.
     func unhighlight(in range: NSRange? = nil) {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         addAttribute(.backgroundColor, value: UIColor.clear, range: replacementRange)
     }
-    
+
     /// Returns a NSMutableAttributedString with the text within a NSRange
     /// crossed out.
     ///
@@ -208,12 +208,12 @@ public extension NSMutableAttributedString {
     /// - Parameter range: the NSRange of the text.
     /// - Returns: a NSMutableAttributedString.
     func usingStrikethrough(in range: NSRange? = nil) -> NSMutableAttributedString {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let mutableAttributedString = NSMutableAttributedString(attributedString: self)
         mutableAttributedString.addAttribute(.strikethroughStyle, value: NSNumber.init(value: 1), range: replacementRange)
         return mutableAttributedString
     }
-    
+
     /// Crosses out the text within a NSRange.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!")
@@ -224,10 +224,10 @@ public extension NSMutableAttributedString {
     ///
     /// - Parameter range: the NSRange of the text.
     func useStrikethrough(in range: NSRange? = nil) {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         addAttribute(.strikethroughStyle, value: NSNumber.init(value: 1), range: replacementRange)
     }
-    
+
     /// Returns a NSMutableAttributedString with the text within a NSRange not
     /// crossed out.
     ///
@@ -239,12 +239,12 @@ public extension NSMutableAttributedString {
     /// - Parameter range: the NSRange of the text.
     /// - Returns: a NSMutableAttributedString.
     func removingStrikethrough(in range: NSRange? = nil) -> NSMutableAttributedString {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let mutableAttributedString = NSMutableAttributedString(attributedString: self)
         mutableAttributedString.addAttribute(.strikethroughStyle, value: NSNumber.init(value: 0), range: replacementRange)
         return mutableAttributedString
     }
-    
+
     // Removes the strikethrough of the text within a NSRange.
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.strikethroughStyle: true])
@@ -255,10 +255,10 @@ public extension NSMutableAttributedString {
     ///
     /// - Parameter range: the NSRange of the text.
     func removeStrikethrough(in range: NSRange? = nil) {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         addAttribute(.strikethroughStyle, value: NSNumber.init(value: 0), range: replacementRange)
     }
-    
+
     /// Returns a NSMutableAttributedString with the text within a NSRange using
     /// traits.
     ///
@@ -273,7 +273,7 @@ public extension NSMutableAttributedString {
     /// - Returns: a NSMutableAttributedString.
     func usingTraits(_ traits: UIFontDescriptorSymbolicTraits, in range: NSRange? = nil) -> NSMutableAttributedString {
         let mutableAttributedString = NSMutableAttributedString(attributedString: self)
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let options = NSAttributedString.EnumerationOptions(rawValue: 0)
         mutableAttributedString.enumerateAttribute(.font, in: replacementRange, options: options, using: { (value: Any, range: NSRange, _) in
             if let currentFont = value as? UIFont {
@@ -286,7 +286,7 @@ public extension NSMutableAttributedString {
         })
         return mutableAttributedString
     }
-    
+
     /// Uses traits within a NSRange
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.systemFont(ofSize: 8.0)])
@@ -299,7 +299,7 @@ public extension NSMutableAttributedString {
     ///   - traits: UIFontDescriptorSymbolicTraits.
     ///   - range: the NSRange of the text.
     func useTraits(_ traits: UIFontDescriptorSymbolicTraits, in range: NSRange? = nil) {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let options = NSAttributedString.EnumerationOptions(rawValue: 0)
         enumerateAttribute(.font, in: replacementRange, options: options, using: { (value: Any, range: NSRange, _) in
             if let currentFont = value as? UIFont {
@@ -311,7 +311,7 @@ public extension NSMutableAttributedString {
             }
         })
     }
-    
+
     /// Returns a NSMutableAttributedString with the text within a NSRange using
     /// bold.
     ///
@@ -325,7 +325,7 @@ public extension NSMutableAttributedString {
     func usingBold(in range: NSRange? = nil) -> NSMutableAttributedString {
         return usingTraits(.traitBold, in: range)
     }
-    
+
     /// Uses bold within a NSRange
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.systemFont(ofSize: 8.0)])
@@ -338,7 +338,7 @@ public extension NSMutableAttributedString {
     func useBold(in range: NSRange? = nil) {
         useTraits(.traitBold, in: range)
     }
-    
+
     /// Returns a NSMutableAttributedString with the text within a NSRange using
     /// italic.
     ///
@@ -352,7 +352,7 @@ public extension NSMutableAttributedString {
     func italicized(in range: NSRange? = nil) -> NSMutableAttributedString {
         return usingTraits(.traitItalic, in: range)
     }
-    
+
     /// Uses italic within a NSRange
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.systemFont(ofSize: 8.0)])
@@ -365,7 +365,7 @@ public extension NSMutableAttributedString {
     func italicize(in range: NSRange? = nil) {
         useTraits(.traitItalic, in: range)
     }
-    
+
     /// Returns a NSMutableAttributedString with the text within a NSRange
     /// traits removed.
     ///
@@ -380,7 +380,7 @@ public extension NSMutableAttributedString {
     /// - Returns: a NSMutableAttributedString.
     func removingTraits(_ traits: UIFontDescriptorSymbolicTraits, in range: NSRange? = nil) -> NSMutableAttributedString {
         let mutableAttributedString = NSMutableAttributedString(attributedString: self)
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let options = NSAttributedString.EnumerationOptions(rawValue: 0)
         mutableAttributedString.enumerateAttribute(.font, in: replacementRange, options: options, using: { (value: Any, range: NSRange, _) in
             if let currentFont = value as? UIFont {
@@ -393,7 +393,7 @@ public extension NSMutableAttributedString {
         })
         return mutableAttributedString
     }
-    
+
     /// Removes traits within a NSRange
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.boldSystemFont(ofSize: 8.0)])
@@ -406,7 +406,7 @@ public extension NSMutableAttributedString {
     ///   - traits: UIFontDescriptorSymbolicTraits.
     ///   - range: the NSRange of the text.
     func removeTraits(_ traits: UIFontDescriptorSymbolicTraits, in range: NSRange? = nil) {
-        let replacementRange = range ?? NSMakeRange(0, string.count)
+        let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let options = NSAttributedString.EnumerationOptions(rawValue: 0)
         enumerateAttribute(.font, in: replacementRange, options: options, using: { (value: Any, range: NSRange, _) in
             if let currentFont = value as? UIFont {
@@ -418,7 +418,7 @@ public extension NSMutableAttributedString {
             }
         })
     }
-    
+
     /// Returns a NSMutableAttributedString with the text within a NSRange bold
     /// removed.
     ///
@@ -432,7 +432,7 @@ public extension NSMutableAttributedString {
     func removingBold(in range: NSRange? = nil) -> NSMutableAttributedString {
         return removingTraits(.traitBold, in: range)
     }
-    
+
     /// Removes bold within a NSRange
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.boldSystemFont(ofSize: 8.0)])
@@ -445,7 +445,7 @@ public extension NSMutableAttributedString {
     func removeBold(in range: NSRange? = nil) {
         removeTraits(.traitBold, in: range)
     }
-    
+
     /// Returns a NSMutableAttributedString with the text within a NSRange
     /// italic removed.
     ///
@@ -459,7 +459,7 @@ public extension NSMutableAttributedString {
     func removingItalic(in range: NSRange? = nil) -> NSMutableAttributedString {
         return removingTraits(.traitItalic, in: range)
     }
-    
+
     /// Removes italic within a NSRange
     ///
     ///     let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.italicSystemFont(ofSize: 8.0)])
@@ -472,5 +472,5 @@ public extension NSMutableAttributedString {
     func removeItalic(in range: NSRange? = nil) {
         removeTraits(.traitItalic, in: range)
     }
-    
+
 }

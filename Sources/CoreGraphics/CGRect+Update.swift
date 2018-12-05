@@ -9,7 +9,7 @@
 import CoreGraphics
 
 public extension CGRect {
-    
+
     /// Returns a new CGRect with its origin x updated with the given
     /// value.
     ///
@@ -23,7 +23,7 @@ public extension CGRect {
     func updating(x: CGFloat) -> CGRect {
         return CGRect(x: x, y: origin.y, width: size.width, height: size.height)
     }
-    
+
     /// Updates its origin x.
     ///
     ///     var rect = CGRect(x: 1.0, y: 1.0, width: 1.0, height: 1.0)
@@ -35,7 +35,7 @@ public extension CGRect {
     mutating func update(x: CGFloat) {
         self = updating(x: x)
     }
-    
+
     /// Returns a new CGRect with its origin y updated with the given
     /// value.
     ///
@@ -49,7 +49,7 @@ public extension CGRect {
     func updating(y: CGFloat) -> CGRect {
         return CGRect(x: origin.x, y: y, width: size.width, height: size.height)
     }
-    
+
     /// Updates its origin y.
     ///
     ///     var rect = CGRect(x: 1.0, y: 1.0, width: 1.0, height: 1.0)
@@ -61,7 +61,7 @@ public extension CGRect {
     mutating func update(y: CGFloat) {
         self = updating(y: y)
     }
-    
+
     /// Returns a new CGRect with its width updated with the given value.
     ///
     ///     let rect = CGRect(x: 1.0, y: 1.0, width: 1.0, height: 1.0)
@@ -74,7 +74,7 @@ public extension CGRect {
     func updating(width: CGFloat) -> CGRect {
         return CGRect(x: origin.x, y: origin.y, width: width, height: size.height)
     }
-    
+
     /// Updates its width.
     ///
     ///     var rect = CGRect(x: 1.0, y: 1.0, width: 1.0, height: 1.0)
@@ -86,7 +86,7 @@ public extension CGRect {
     mutating func update(width: CGFloat) {
         self = updating(width: width)
     }
-    
+
     /// Returns a new CGRect with its height updated with the given
     /// value.
     ///
@@ -100,7 +100,7 @@ public extension CGRect {
     func updating(height: CGFloat) -> CGRect {
         return CGRect(x: origin.x, y: origin.y, width: size.width, height: height)
     }
-    
+
     /// Updates its height.
     ///
     ///     var rect = CGRect(x: 1.0, y: 1.0, width: 1.0, height: 1.0)
@@ -112,5 +112,5 @@ public extension CGRect {
     mutating func update(height: CGFloat) {
         self = updating(height: height)
     }
-    
+
 }

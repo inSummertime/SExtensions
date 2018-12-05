@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Optional where Wrapped: Numeric {
-    
+
     /// Adds two values and produces their sum.
     ///
     ///     let a: Int? = nil
@@ -28,7 +28,7 @@ public extension Optional where Wrapped: Numeric {
             return (lhs ?? 0) + (rhs ?? 0)
         }
     }
-    
+
     /// Subtracts one value from another and produces their difference.
     ///
     ///     let a: Int? = nil
@@ -47,7 +47,7 @@ public extension Optional where Wrapped: Numeric {
             return (lhs ?? 0) - (rhs ?? 0)
         }
     }
-    
+
     /// Multiplies two values and produces their product.
     ///
     ///     let a: Int? = nil

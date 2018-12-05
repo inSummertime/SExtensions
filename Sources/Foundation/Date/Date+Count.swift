@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Date {
-    
+
     /// Returns day count this month.
     ///
     ///     let date = Date(timeIntervalSinceReferenceDate: 0).addingTimeInterval(Date.timeIntervalPerWeek * 5)
@@ -23,7 +23,7 @@ public extension Date {
         let range = calendar.range(of: .day, in: .month, for: self)!
         return range.upperBound - range.lowerBound
     }
-    
+
     /// Returns day count this year.
     ///
     ///     let date = Date(timeIntervalSinceReferenceDate: 0)
@@ -37,7 +37,7 @@ public extension Date {
         let range = calendar.range(of: .day, in: .year, for: self)!
         return range.upperBound - range.lowerBound
     }
-    
+
     /// Returns week count this month.
     ///
     ///     let date = Date(timeIntervalSinceReferenceDate: 0)
@@ -51,7 +51,7 @@ public extension Date {
         let range = calendar.range(of: .weekOfMonth, in: .month, for: self)!
         return range.upperBound - range.lowerBound
     }
-    
+
     /// Returns week count this year.
     ///
     ///     let date = Date(timeIntervalSinceReferenceDate: 0)
@@ -65,5 +65,5 @@ public extension Date {
         let range = calendar.range(of: .weekOfYear, in: .year, for: self)!
         return range.upperBound - range.lowerBound
     }
-    
+
 }

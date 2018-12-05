@@ -17,14 +17,14 @@ final class ArrayStringTests: XCTestCase {
         XCTAssertEqual([""].longestCommonPrefix, "")
         XCTAssertNil([String]().longestCommonPrefix)
     }
-    
+
     func testLongestCommonSuffix() {
         XCTAssertEqual(["xyz", "wxyz", "vwxyz"].longestCommonSuffix, "xyz")
         XCTAssertEqual(["xyz"].longestCommonSuffix, "xyz")
         XCTAssertEqual([""].longestCommonSuffix, "")
         XCTAssertNil([String]().longestCommonSuffix)
     }
-    
+
     func testGroupAnagrams() {
         XCTAssertEqual(["ab", "ba", "abc", "acb", "bac"].groupAnagrams, [["ab", "ba"], ["abc", "acb", "bac"]])
         XCTAssertEqual(["ab", "ba", "abc", "acb", "bac", " ", ""].groupAnagrams, [[""], [" "], ["ab", "ba"], ["abc", "acb", "bac"]])

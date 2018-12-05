@@ -9,7 +9,7 @@
 import Dispatch
 
 public extension DispatchSource {
-    
+
     /// Returns a DispatchSourceTimer.
     ///
     /// - Parameters:
@@ -38,5 +38,5 @@ public extension DispatchSource {
         timer.resume()
         return timer
     }
-    
+
 }

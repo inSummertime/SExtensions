@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Set {
-    
+
     /// Returns a set which does not contain any empty element.
     ///
     ///     let emptyDictionaryValueSet: Set<[String: String]> = [["hello": ""]]
@@ -40,7 +40,7 @@ public extension Set {
         }
         return result
     }
-    
+
     /// Returns a set which does not contain the given elements.
     ///
     ///     print(["hello", "world", "!"].removing("hello", "world"))
@@ -57,11 +57,11 @@ public extension Set {
         }
         return result
     }
-    
+
 }
 
 extension Set where Element: OptionalProtocol, Element.Wrapped: Hashable {
-    
+
     /// Removes all nils.
     ///
     ///     print([0, nil, 1].removeNils())
@@ -77,5 +77,5 @@ extension Set where Element: OptionalProtocol, Element.Wrapped: Hashable {
         }
         return result
     }
-    
+
 }

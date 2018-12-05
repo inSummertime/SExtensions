@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class UserDefaultsCodableTests: XCTestCase {
-    
+
     func testCodable() {
         struct Object: Codable {
             let id: Int
@@ -22,5 +22,5 @@ final class UserDefaultsCodableTests: XCTestCase {
         XCTAssertEqual(userDefaults?.codable(Object.self, forKey: key)!.id, 0)
         userDefaults?.removeObject(forKey: key)
     }
-    
+
 }

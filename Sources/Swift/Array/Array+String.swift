@@ -8,8 +8,8 @@
 
 import Foundation
 
-public extension Array where Element : StringProtocol {
-    
+public extension Array where Element: StringProtocol {
+
     /// Returns longest common prefix of the elements.
     ///
     ///     print(["abc", "abcd", "abcde"].longestCommonPrefix)
@@ -27,7 +27,7 @@ public extension Array where Element : StringProtocol {
         }
         return prefix
     }
-    
+
     /// Returns longest common suffix of the elements.
     ///
     ///     print(["xyz", "wxyz", "vwxyz"].longestCommonSuffix)
@@ -45,7 +45,7 @@ public extension Array where Element : StringProtocol {
         }
         return suffix
     }
-    
+
     /// Returns a set of array of elements that are anagrams.
     ///
     ///     print(["ab", "ba", "abc", "acb", "bac", " ", ""].groupAnagrams)

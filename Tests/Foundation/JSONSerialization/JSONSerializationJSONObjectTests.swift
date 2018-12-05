@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class JSONSerializationJSONObjectTests: XCTestCase {
-    
+
     func testJSONObjectFromFile() {
         do {
             let object = try JSONSerialization.jsonObjectFromFile(filename: "Dictionary", callerClass: JSONSerializationJSONObjectTests.self)
@@ -21,7 +21,7 @@ final class JSONSerializationJSONObjectTests: XCTestCase {
             XCTFail()
         }
     }
-    
+
     func testDictionaryFromJSONString() {
         let string = "{\"ids\":[\"1\",\"2\"],\"title\":[\"title\"]}"
         do {

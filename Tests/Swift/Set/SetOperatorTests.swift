@@ -15,7 +15,7 @@ final class SetOperatorTests: XCTestCase {
         let set: Set = ["hello", "world"]
         XCTAssertEqual(set | ["!"], ["hello", "world", "!"])
     }
-    
+
     func testSubtractionOperator() {
         let set: Set = ["hello"]
         XCTAssertEqual(set - ["world"], ["hello"])
@@ -23,7 +23,7 @@ final class SetOperatorTests: XCTestCase {
         XCTAssertEqual(set - [], ["hello"])
         XCTAssertEqual(set - ["hello"], [])
     }
-    
+
     func testSubtractionAssignmentOperator() {
         var hello: Set = ["hello", "world"]
         hello -= ["world"]
@@ -33,7 +33,7 @@ final class SetOperatorTests: XCTestCase {
         hello -= ["hello", "world"]
         XCTAssertEqual(hello, [])
     }
-    
+
     func testAndOperator() {
         let set: Set = ["hello"]
         XCTAssertEqual(set & ["world"], [])

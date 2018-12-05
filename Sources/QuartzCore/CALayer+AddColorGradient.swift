@@ -9,7 +9,7 @@
 import QuartzCore
 
 public extension CALayer {
-    
+
     /// Adds color gradient.
     ///
     ///     let view = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))

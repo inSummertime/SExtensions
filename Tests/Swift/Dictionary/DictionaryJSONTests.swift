@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class DictionaryJSONTests: XCTestCase {
-    
+
     func testJSONData() {
         XCTAssertNotNil([:].jsonData())
         XCTAssertNotNil([String: Any]().jsonData())
@@ -29,7 +29,7 @@ final class DictionaryJSONTests: XCTestCase {
         XCTAssertNil([0.0: "1"].jsonData())
         XCTAssertEqual(["hello": "world"].jsonData(), "{\"hello\":\"world\"}".data(using: .utf8))
     }
-    
+
     func testJSONString() {
         XCTAssertEqual([:].jsonString(), "{}")
         XCTAssertEqual([String: Any]().jsonString(), "{}")
@@ -44,5 +44,5 @@ final class DictionaryJSONTests: XCTestCase {
         XCTAssertEqual(["hello": ["world": "!"]].jsonString(), "{\"hello\":{\"world\":\"!\"}}")
         XCTAssertEqual(["hello": ["world", "!"]].jsonString(), "{\"hello\":[\"world\",\"!\"]}")
     }
-    
+
 }

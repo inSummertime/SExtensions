@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class StringIsTests: XCTestCase {
-    
+
     func testIsPhoneNumber() {
         XCTAssertTrue("800–692–7753".isPhoneNumber) // (800) MY–APPLE
         XCTAssertTrue("(877) 412–7753".isPhoneNumber) // Apple Enterprise Sales
@@ -22,7 +22,7 @@ final class StringIsTests: XCTestCase {
         XCTAssertFalse("abc".isPhoneNumber)
         XCTAssertFalse("123".isPhoneNumber)
     }
-    
+
     func testIsEmail() {
         XCTAssertTrue("123@a.com".isEmail)
         XCTAssertTrue("123@a.co.au".isEmail)
@@ -32,5 +32,5 @@ final class StringIsTests: XCTestCase {
         XCTAssertFalse("123@.com".isEmail)
         XCTAssertFalse("123@com".isEmail)
     }
-    
+
 }

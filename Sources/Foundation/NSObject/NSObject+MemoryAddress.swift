@@ -9,10 +9,10 @@
 import Foundation
 
 public extension NSObject {
-    
+
     /// The memory address of the pointer of a NSObject.
     var memoryAddress: String {
         return String(format: "%p", self)
     }
-    
+
 }

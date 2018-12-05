@@ -9,7 +9,7 @@
 import Foundation
 
 public extension JSONSerialization {
-    
+
     /// Creates a Foundation object from JSON data. 
     ///
     /// - Parameters:
@@ -31,7 +31,7 @@ public extension JSONSerialization {
         let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
         return try jsonObject(with: data, options: readingOptions)
     }
-    
+
     /// Returns a Foundation object from a JSON string.
     ///
     /// - Parameters:
@@ -45,5 +45,5 @@ public extension JSONSerialization {
         guard let data = string.data(using: .utf8) else { return nil }
         return try jsonObject(with: data, options: readingOptions)
     }
-    
+
 }

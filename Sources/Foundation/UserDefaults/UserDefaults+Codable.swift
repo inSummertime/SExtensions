@@ -9,7 +9,7 @@
 import Foundation
 
 public extension UserDefaults {
-    
+
     /// Searches the receiver's search list for a default with
     /// the key 'defaultName' and converts the returned value to a
     /// Codable object and returns nil if no value or the value is
@@ -32,7 +32,7 @@ public extension UserDefaults {
         guard let data = object(forKey: defaultName) as? Data else { return nil }
         return try? JSONDecoder().decode(type, from: data)
     }
-    
+
     /// Stores an Encodable value (or removes the value if nil is
     /// passed as the value) for the provided key in the search list
     /// entry for the receiver's suite name in the current user and
@@ -55,5 +55,5 @@ public extension UserDefaults {
         let data = try? JSONEncoder().encode(value)
         set(data, forKey: defaultName)
     }
-    
+
 }

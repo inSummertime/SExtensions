@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Decodable {
-    
+
     /// Creates a new instance using a JSON string.
     ///
     /// - Parameter jsonString: A JSON String.
@@ -19,5 +19,5 @@ public extension Decodable {
         guard let jsonData = jsonString.data(using: .utf8) else { return nil }
         self = try JSONDecoder().decode(Self.self, from: jsonData)
     }
-    
+
 }

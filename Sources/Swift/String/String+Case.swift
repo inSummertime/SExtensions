@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// Checks whether is uppercase.
     ///
     ///     print("HELLO WORLD!".isUppercase)
@@ -15,7 +15,7 @@ public extension String {
     var isUppercase: Bool {
         return uppercased() == self
     }
-    
+
     /// Retunrs true if the ith character is uppercase, or nil if cannot get the
     /// character.
     ///
@@ -36,7 +36,7 @@ public extension String {
     var isLowercase: Bool {
         return lowercased() == self
     }
-    
+
     /// Retunrs true if the ith character is lowercase, or nil if cannot get the
     /// character.
     ///
@@ -49,7 +49,7 @@ public extension String {
         guard let character = self[safe: i] else { return nil }
         return String(character).isLowercase
     }
-    
+
     /// Checks whether is capitalized case.
     ///
     ///     print("Hello World!".isCapitalized)
@@ -57,7 +57,7 @@ public extension String {
     var isCapitalized: Bool {
         return self.capitalized == self
     }
-    
+
     /// A first letter capitalized representation of the string.
     ///
     ///     print("hello world!".firstLetterCapitalized)
@@ -65,7 +65,7 @@ public extension String {
     var firstLetterCapitalized: String {
         return changingToSentenseCase()
     }
-    
+
     /// Returns a sentense case representation of the string.
     ///
     ///     print("hello world!".changingToSentenseCase())
@@ -76,7 +76,7 @@ public extension String {
         let sentense = uppercaseLetterSeparated.lowercased().newlineSeparated.lowercased().whitespaceCondensed.newlineCondensed
         return sentense.prefix(1).uppercased() + sentense.dropFirst()
     }
-    
+
     /// Changes to sentense case.
     ///
     ///     var helloWorld = "hello world!"
@@ -86,7 +86,7 @@ public extension String {
     mutating func changeToSentenseCase() {
         self = changingToSentenseCase()
     }
-    
+
     /// Returns a camel case representation of the string.
     ///
     ///     print("hello world!".changingToCamelCase())
@@ -97,7 +97,7 @@ public extension String {
         let sentense = uppercaseLetterSeparated.lowercased().newlineSeparated.lowercased().whitespaceCondensed.newlineCondensed
         return sentense.prefix(1).lowercased() + sentense.capitalized.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "\n", with: "").dropFirst()
     }
-    
+
     /// Changes to camel case.
     ///
     ///     let helloworld = "Hello world!"
@@ -118,7 +118,7 @@ public extension String {
         let sentense = uppercaseLetterSeparated.lowercased().newlineSeparated.lowercased().whitespaceCondensed.newlineCondensed.underscoreCondensed.removingPrefix("_").removingSuffix("_")
         return sentense.prefix(1).lowercased() + String(sentense.replacingOccurrences(of: " ", with: "_").replacingOccurrences(of: "\n", with: "_").dropFirst()).underscoreCondensed
     }
-    
+
     /// Changes to camel case.
     ///
     ///     let helloworld = "Hello world!"

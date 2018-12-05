@@ -37,18 +37,18 @@ final class SetRemoveTests: XCTestCase {
         let stringSet: Set = ["hello", "world"]
         XCTAssertEqual(stringSet.removingEmpty(), ["hello", "world"])
     }
-    
+
     func testRemovingElements() {
         let set: Set = ["hello", "world", "!"]
         XCTAssertEqual(set.removing("hello", "world"), ["!"])
         XCTAssertEqual(set.removing("", " "), ["hello", "world", "!"])
     }
-    
+
     func testRemovingNil() {
         let set: Set = [0, nil, 1]
         XCTAssertEqual(set.removingNils(), [0, 1])
         let anotherSet: Set = ["hello", nil, "world", nil]
-        XCTAssertEqual(anotherSet.removingNils(), ["hello",  "world"])
+        XCTAssertEqual(anotherSet.removingNils(), ["hello", "world"])
         let nilSet: Set<Double?> = [nil, nil]
         XCTAssertEqual(nilSet.removingNils(), [])
     }

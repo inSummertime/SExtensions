@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class CALayerBorderTests: XCTestCase {
-    
+
     func testAddAndClearBorders() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 7.0, height: 7.0))
         view.layer.addBorders(color: .white, width: 1.0)
@@ -30,7 +30,7 @@ final class CALayerBorderTests: XCTestCase {
         XCTAssertEqual(topBorderLayer!.frame.size.width, 7.0)
         XCTAssertEqual(topBorderLayer!.frame.size.height, 1.0)
     }
-    
+
     func testAddRightBorder() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 7.0, height: 7.0))
         view.layer.addRightBorder(color: .clear, borderWidth: 1.0)
@@ -40,7 +40,7 @@ final class CALayerBorderTests: XCTestCase {
         XCTAssertEqual(topBorderLayer!.frame.size.width, 1.0)
         XCTAssertEqual(topBorderLayer!.frame.size.height, 7.0)
     }
-    
+
     func testAddBottomBorder() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 7.0, height: 7.0))
         view.layer.addBottomBorder(color: .clear, borderWidth: 1.0)
@@ -50,7 +50,7 @@ final class CALayerBorderTests: XCTestCase {
         XCTAssertEqual(topBorderLayer!.frame.size.width, 7.0)
         XCTAssertEqual(topBorderLayer!.frame.size.height, 1.0)
     }
-    
+
     func testAddLeftBorder() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 7.0, height: 7.0))
         view.layer.addLeftBorder(color: .clear, borderWidth: 1.0)

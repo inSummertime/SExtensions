@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class StringDateTests: XCTestCase {
-    
+
     func testToDate() {
         let timeUTC = "2018-06-02T00:00:00+0000"
         let dateFromTimeUTC = timeUTC.toDate(dateFormat: "yyyy-MM-dd'T'HH:mm:ssZ")
@@ -22,7 +22,7 @@ final class StringDateTests: XCTestCase {
         XCTAssertEqual(componentsOfDateFromTimeUTC.hour!, 0)
         XCTAssertEqual(componentsOfDateFromTimeUTC.minute!, 0)
         XCTAssertEqual(componentsOfDateFromTimeUTC.second!, 0)
-        
+
         let time = "2018-06-02 00:00:00"
         let dateFromTime = time.toDate(dateFormat: "yyyy-MM-dd HH:mm:ss", timeZone: TimeZone(identifier: "UTC")!)
         XCTAssertNotNil(dateFromTime)
@@ -33,10 +33,10 @@ final class StringDateTests: XCTestCase {
         XCTAssertEqual(componentsOfDateFromTime.hour!, 0)
         XCTAssertEqual(componentsOfDateFromTime.minute!, 0)
         XCTAssertEqual(componentsOfDateFromTime.second!, 0)
-        
+
         let time1 = "2018-06-02 00:00:01"
         let dateFromTime1 = time1.toDate(dateFormat: "yyyy-MM-dd HH:mm:ss", timeZone: TimeZone(identifier: "UTC")!)
         XCTAssertEqual(dateFromTime!.timeIntervalSince(dateFromTime1!), -1)
     }
-    
+
 }

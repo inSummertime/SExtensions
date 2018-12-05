@@ -9,7 +9,7 @@
 import Foundation
 
 public extension URL {
-    
+
     /// Returns true if the url is from a domain.
     ///
     ///     let url = URL(string: "https://www.google.com/search?q=iPhone")!
@@ -39,5 +39,5 @@ public extension URL {
         }
         return true
     }
-    
+
 }

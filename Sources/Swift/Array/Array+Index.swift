@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-public extension Array where Element : Equatable {
-    
+public extension Array where Element: Equatable {
+
     /// Returns the indexes where the specified value appears in the
     /// array.
     ///
@@ -26,7 +26,7 @@ public extension Array where Element : Equatable {
         }
         return indexes
     }
-    
+
     /// Returns the last index of the element.
     ///
     ///     print([0, 1, 2, 3, 1].lastIndex(of: 1))
@@ -40,7 +40,7 @@ public extension Array where Element : Equatable {
         }
         return nil
     }
-    
+
     /// Returns the indexes where `element` satisfies the given predicate.
     ///
     ///     print(["hello", "world", "!", "hello", "world", "!"].indexes( {$0.count == 5} ))
@@ -61,5 +61,5 @@ public extension Array where Element : Equatable {
         }
         return indexes
     }
-    
+
 }

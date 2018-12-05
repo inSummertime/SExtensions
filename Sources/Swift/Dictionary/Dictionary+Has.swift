@@ -7,7 +7,7 @@
 //
 
 public extension Dictionary {
-    
+
     /// Returns a Boolean value that indicates whether the dictionary has
     /// a key
     ///
@@ -19,7 +19,7 @@ public extension Dictionary {
     func hasKey(_ key: Key) -> Bool {
         return self[key] != nil
     }
-    
+
     /// Returns a Boolean value that indicates whether the dictionary has
     /// a element that satisfy the given predicate
     ///
@@ -33,7 +33,7 @@ public extension Dictionary {
     func hasAny(_ isIncluded: (_ element: Element) -> Bool) -> Bool {
         return self.filter(isIncluded).count > 0
     }
-    
+
     /// Returns a Boolean value that indicates whether the dictionary has
     /// all elements that satisfy the given predicate
     ///
@@ -51,7 +51,7 @@ public extension Dictionary {
 }
 
 public extension Dictionary where Value: Equatable {
-    
+
     /// Returns a Boolean value that indicates whether the dictionary has
     /// a key and a value
     ///
@@ -64,7 +64,7 @@ public extension Dictionary where Value: Equatable {
     func has(key: Key, value: Value) -> Bool {
         return self[key] == value
     }
-    
+
     /// Returns a Boolean value that indicates whether the dictionary has
     /// a key-value pair
     ///

@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-public extension Array where Element : Equatable {
-    
+public extension Array where Element: Equatable {
+
     /// Returns a new array with the elements of both this array and the given
     /// arrays.
     ///
@@ -28,7 +28,7 @@ public extension Array where Element : Equatable {
         }
         return result
     }
-    
+
     /// Returns a new array with the elements that are common to both this array
     /// and the given arrays.
     ///
@@ -53,7 +53,7 @@ public extension Array where Element : Equatable {
         }
         return result
     }
-    
+
     /// Returns a new array with the elements that are different from the given
     /// arrays.
     ///
@@ -75,7 +75,7 @@ public extension Array where Element : Equatable {
         }
         return result
     }
-    
+
     /// Returns a new array containing the elements of this array that do not
     /// occur in the given arrays.
     ///
@@ -88,14 +88,14 @@ public extension Array where Element : Equatable {
         var result = self
         for array in others {
             for element in array {
-                if contains(element)  {
+                if contains(element) {
                     result = result.filter({ $0 != element })
                 }
             }
         }
         return result
     }
-    
+
     /// Returns a Boolean value that indicates whether this array is a subarray
     /// of the given array.
     ///
@@ -122,7 +122,7 @@ public extension Array where Element : Equatable {
         }
         return true
     }
-    
+
     /// Returns a Boolean value that indicates whether the array is a strict
     /// subarray of the given array.
     ///
@@ -138,7 +138,7 @@ public extension Array where Element : Equatable {
         }
         return isSubarray(of: other)
     }
-    
+
     /// Returns a Boolean value that indicates whether this array contains
     /// the given array.
     ///
@@ -150,7 +150,7 @@ public extension Array where Element : Equatable {
     func contains(_ other: Array) -> Bool {
         return other.isSubarray(of: self)
     }
-    
+
     /// Returns an array with the elements to add after comparing the other array.
     ///
     ///     struct Data: Equatable {
@@ -182,7 +182,7 @@ public extension Array where Element : Equatable {
         }
         return result
     }
-    
+
     /// Returns an array with the elements to remove after comparing the other array.
     ///
     ///     struct Data: Equatable {
@@ -217,11 +217,11 @@ public extension Array where Element : Equatable {
         }
         return result
     }
-    
+
 }
 
 public extension Array {
-    
+
     /// Returns an array with the elements to update after comparing the other array.
     ///
     ///     struct Data: Equatable {
@@ -253,5 +253,5 @@ public extension Array {
         }
         return result
     }
-    
+
 }

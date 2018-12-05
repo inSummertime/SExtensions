@@ -24,7 +24,7 @@ final class CALayerAddColorGradientTests: XCTestCase {
         XCTAssertEqual(gradientLayer!.endPoint.x, 1.0)
         XCTAssertEqual(gradientLayer!.endPoint.y, 0.0)
     }
-    
+
     func testAddColorGradientVertical() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
         view.layer.addColorGradient(startColor: .white, endColor: .black, isHorizontal: false)

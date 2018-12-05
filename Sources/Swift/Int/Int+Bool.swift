@@ -7,7 +7,7 @@
 //
 
 public extension Int {
-    
+
     /// Checks if it means true
     ///
     ///     print(1.bool)
@@ -15,5 +15,5 @@ public extension Int {
     var bool: Bool {
         return NSNumber(value: self) == NSNumber(value: true)
     }
-    
+
 }

@@ -9,7 +9,7 @@
 import QuartzCore
 
 public extension CALayer {
-    
+
     /// Removes all the sublayers.
     ///
     ///     let parentlayer = CALayer()
@@ -25,5 +25,5 @@ public extension CALayer {
             $0.removeFromSuperlayer()
         }
     }
-    
+
 }

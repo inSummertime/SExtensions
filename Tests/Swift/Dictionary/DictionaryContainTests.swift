@@ -16,7 +16,7 @@ final class DictionaryContainTests: XCTestCase {
         XCTAssertFalse(["hello": 0, "world": 1].contains(value: 2))
         XCTAssertFalse([:].contains(value: 0))
     }
-    
+
     func testContainsOther() {
         XCTAssertTrue(["hello": 0, "world": 1].contains(other: ["hello": 0]))
         XCTAssertTrue(["hello": 0, "world": 1].contains(other: ["hello": 0, "world": 1]))

@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class DateComparisonTests: XCTestCase {
-    
+
     func testEarliest() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
         let previous = date.addingTimeInterval(-1.0)
@@ -19,7 +19,7 @@ final class DateComparisonTests: XCTestCase {
         XCTAssertEqual(Date.earliest(in: [date])!, date)
         XCTAssertNil(Date.earliest(in: []))
     }
-    
+
     func testLatest() {
         let date = Date(timeIntervalSinceReferenceDate: 0)
         let previous = date.addingTimeInterval(-1.0)
@@ -28,5 +28,5 @@ final class DateComparisonTests: XCTestCase {
         XCTAssertEqual(Date.latest(in: [date])!, date)
         XCTAssertNil(Date.latest(in: []))
     }
-    
+
 }

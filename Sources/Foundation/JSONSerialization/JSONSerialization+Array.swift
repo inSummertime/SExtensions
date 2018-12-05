@@ -9,7 +9,7 @@
 import Foundation
 
 public extension JSONSerialization {
-    
+
     /// Returns an array from a JSON file.
     ///
     /// - Parameters:
@@ -25,7 +25,7 @@ public extension JSONSerialization {
         let json = try JSONSerialization.jsonObjectFromFile(filename: filename, callerClass: callerClass, readingOptions: readingOptions)
         return json as? [[String: Any]]
     }
-    
+
     /// Returns an array from a JSON string.
     ///
     /// - Parameters:
@@ -39,5 +39,5 @@ public extension JSONSerialization {
         let json = try JSONSerialization.jsonObjectFromString(string, readingOptions: readingOptions)
         return json as? [[String: Any]]
     }
-    
+
 }

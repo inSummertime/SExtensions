@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class DispatchQueueDelayTests: XCTestCase {
-    
+
     func testDelay() {
         var start = 1
         let expectation = self.expectation(description: "StartShouldBeTwo")
@@ -25,5 +25,5 @@ final class DispatchQueueDelayTests: XCTestCase {
             XCTAssertTrue(start == 2)
         }
     }
-    
+
 }

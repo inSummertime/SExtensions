@@ -7,7 +7,7 @@
 //
 
 public extension Int {
-    
+
     /// Returns a local currency string.
     ///
     ///     if Locale.current.identifier == "en_US" {
@@ -21,7 +21,7 @@ public extension Int {
         formatter.maximumFractionDigits = 0
         return formatter.string(from: NSNumber(value: self))
     }
-    
+
     /// Returns an US dollar string.
     ///
     ///     print(100.USDollar == "$100" || 100.USDollar == "US$100")
@@ -29,7 +29,7 @@ public extension Int {
     var USDollar: String? {
         return currency(currencyCode: "USD")
     }
-    
+
     /// Returns a currency string with a currency code.
     ///
     ///     print((-100).currency(currencyCode: "USD").USDollar == "-$100" || (-100).currency(currencyCode: "USD").USDollar == "-US$100")
@@ -46,5 +46,5 @@ public extension Int {
         formatter.maximumFractionDigits = 0
         return formatter.string(from: NSNumber(value: self))
     }
-    
+
 }

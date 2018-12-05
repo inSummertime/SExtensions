@@ -10,13 +10,13 @@ import XCTest
 @testable import SExtensions
 
 final class StringHeightTests: XCTestCase {
-    
+
     func testHeight() {
         let helloWorld = "Hello world!"
         let font = UIFont.systemFont(ofSize: 16.0)
         let height = helloWorld.height(withConstrainedWidth: .greatestFiniteMagnitude, font: font)
         XCTAssertEqual(height, font.lineHeight)
-        
+
         let height1 = helloWorld.height(withConstrainedWidth: 32.0, font: font)
         let height2 = helloWorld.height(withConstrainedWidth: 64.0, font: font)
         XCTAssertTrue(height1 > height2)
@@ -25,5 +25,5 @@ final class StringHeightTests: XCTestCase {
         let height4 = helloWorld.height(withConstrainedWidth: 0, font: font)
         XCTAssertTrue(height3 == height4)
     }
-    
+
 }

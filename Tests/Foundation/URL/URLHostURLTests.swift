@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class URLHostURLTests: XCTestCase {
-    
+
     func testHostURL() {
         let baseURL = URL(string: "https://www.google.com")
         let url = URL(string: "search?q=iPhone", relativeTo: baseURL)
@@ -18,5 +18,5 @@ final class URLHostURLTests: XCTestCase {
         let absoluteURL = URL(string: "https://www.google.com/search?q=iPhone")
         XCTAssertEqual(absoluteURL?.hostURL, baseURL)
     }
-    
+
 }

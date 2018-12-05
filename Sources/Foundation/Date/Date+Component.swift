@@ -9,79 +9,79 @@
 import Foundation
 
 public extension Date {
-    
+
     /// The value for year component in current calendar.
     var year: Int {
         return Calendar.current.component(.year, from: self)
     }
-    
+
     /// The value for month component in current calendar.
     var month: Int {
         return Calendar.current.component(.month, from: self)
     }
-    
+
     /// The value for day component in current calendar.
     var day: Int {
         return Calendar.current.component(.day, from: self)
     }
-    
+
     /// The value for hour component in current calendar.
     var hour: Int {
         return Calendar.current.component(.hour, from: self)
     }
-    
+
     /// The value for minute component in current calendar.
     var minute: Int {
         return Calendar.current.component(.minute, from: self)
     }
-    
+
     /// The value for second component in current calendar.
     var second: Int {
         return Calendar.current.component(.second, from: self)
     }
-    
+
     /// The value for year component in gregorian calendar and UTC time zone.
     var yearUTC: Int {
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.timeZone = TimeZone(identifier: "UTC")!
         return calendar.component(.year, from: self)
     }
-    
+
     /// The value for month component in gregorian calendar and UTC time zone.
     var monthUTC: Int {
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.timeZone = TimeZone(identifier: "UTC")!
         return calendar.component(.month, from: self)
     }
-    
+
     /// The value for day component in gregorian calendar and UTC time zone.
     var dayUTC: Int {
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.timeZone = TimeZone(identifier: "UTC")!
         return calendar.component(.day, from: self)
     }
-    
+
     /// The value for hour component in gregorian calendar and UTC time zone.
     var hourUTC: Int {
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.timeZone = TimeZone(identifier: "UTC")!
         return calendar.component(.hour, from: self)
     }
-    
+
     /// The value for minute component in gregorian calendar and UTC time zone.
     var minuteUTC: Int {
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.timeZone = TimeZone(identifier: "UTC")!
         return calendar.component(.minute, from: self)
     }
-    
+
     /// The value for second component in gregorian calendar and UTC time zone.
     var secondUTC: Int {
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.timeZone = TimeZone(identifier: "UTC")!
         return calendar.component(.second, from: self)
     }
-    
+
     /// Returns the value for one component.
     ///
     ///     let date = Date(timeIntervalSinceReferenceDate: 0)
@@ -100,7 +100,7 @@ public extension Date {
         }
         return calendar.component(component, from: self)
     }
-    
+
     /// Returns the value for one component.
     ///
     ///     let date = Date(timeIntervalSinceReferenceDate: 0)
@@ -114,7 +114,7 @@ public extension Date {
         }
         return Calendar.current.component(component, from: self)
     }
-    
+
     /// Returns the value for one component since a date.
     ///
     ///     let date = Date(timeIntervalSinceReferenceDate: 0)
@@ -135,7 +135,7 @@ public extension Date {
         }
         return calendar.dateComponents([component], from: date, to: self).value(for: component)
     }
-    
+
     /// Returns a component dictionary since a date.
     ///
     ///     let date = Date(timeIntervalSinceReferenceDate: 0)
@@ -161,5 +161,5 @@ public extension Date {
         }
         return dictionary
     }
-    
+
 }

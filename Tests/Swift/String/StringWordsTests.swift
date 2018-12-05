@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class StringWordsTests: XCTestCase {
-    
+
     func testWords() {
         XCTAssertEqual("hi".words, ["hi"])
         XCTAssertEqual("hiThere!".words, ["hi", "there!"])
@@ -24,7 +24,7 @@ final class StringWordsTests: XCTestCase {
         XCTAssertEqual("   \n".words, [])
         XCTAssertEqual("hi\nthere".words, ["hi", "there"])
     }
-    
+
     func testWordCount() {
         XCTAssertEqual("hi".wordCount, 1)
         XCTAssertEqual("hiThere!".wordCount, 2)
@@ -38,13 +38,13 @@ final class StringWordsTests: XCTestCase {
         XCTAssertEqual("   \n".wordCount, 0)
         XCTAssertEqual("hi\nthere".wordCount, 2)
     }
-    
+
     func testWordsReversed() {
         XCTAssertEqual("Hello world !".wordsReversed, "! world Hello")
         XCTAssertEqual("hello".wordsReversed, "hello")
         XCTAssertEqual("".wordsReversed, "")
     }
-    
+
     func testIsAnagram() {
         XCTAssertTrue("abc".isAnagram(with: "acb"))
         XCTAssertFalse("ab".isAnagram(with: "a"))
@@ -52,7 +52,7 @@ final class StringWordsTests: XCTestCase {
         XCTAssertTrue("".isAnagram(with: ""))
         XCTAssertTrue(" ".isAnagram(with: " "))
     }
-    
+
     func testLongestPalindrome() {
         XCTAssertEqual("".longestPalindrome, "")
         XCTAssertEqual("a".longestPalindrome, "a")
@@ -65,5 +65,5 @@ final class StringWordsTests: XCTestCase {
         XCTAssertEqual("abaabc".longestPalindrome, "baab")
         XCTAssertEqual("abaaba".longestPalindrome, "abaaba")
     }
-    
+
 }

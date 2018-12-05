@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Date {
-    
+
     /// Returns the first moment of a given date, as a Date created from the
     /// specified component.
     ///
@@ -47,7 +47,7 @@ public extension Date {
         let dateComponents = calendar.dateComponents(components, from: self)
         return calendar.date(from: dateComponents)
     }
-    
+
     /// Returns the last moment of a given date, as a Date created from the
     /// specified component.
     ///
@@ -89,5 +89,5 @@ public extension Date {
             return nil
         }
     }
-    
+
 }

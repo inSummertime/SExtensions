@@ -9,7 +9,7 @@
 import Foundation
 
 public extension DateInterval {
-    
+
     /// Returns A `DateInterval` by moving this `DateInterval` to a new
     /// Date`.
     ///
@@ -40,7 +40,7 @@ public extension DateInterval {
         let endDate = end.addingTimeInterval(timeInterval)
         return DateInterval(start: start, end: endDate)
     }
-    
+
     /// Returns a new `DateInterval` by reducing a `TimeInterval` to this
     /// `DateInterval`.
     ///
@@ -55,5 +55,5 @@ public extension DateInterval {
         let endDate = end.addingTimeInterval(-timeInterval)
         return DateInterval(start: start, end: endDate)
     }
-    
+
 }

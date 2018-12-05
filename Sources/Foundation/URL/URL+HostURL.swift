@@ -9,7 +9,7 @@
 import Foundation
 
 public extension URL {
-    
+
     /// Returns baseURL if baseURL is not nil, or removes all query parameters and path components
     ///
     ///     let baseURL = URL(string: "https://www.google.com")

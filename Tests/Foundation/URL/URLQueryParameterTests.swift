@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class URLQueryParameterTests: XCTestCase {
-    
+
     func testQueryParameters() {
         var url = URL(string: "https://www.google.com/search?q=iPhone&source=lnt&oq=")
         let queryParameters = url?.queryParameters
@@ -20,14 +20,14 @@ final class URLQueryParameterTests: XCTestCase {
         url?.queryParameters = ["q": "iPad"]
         XCTAssertEqual(url?.absoluteString, "https://www.google.com/search?q=iPad")
     }
-    
+
     func testQueryParameterValue() {
         let url = URL(string: "https://www.google.com/search?q=iPhone&source=lnt&oq=")
         XCTAssertEqual(url?.queryParameterValue(for: "q"), "iPhone")
         XCTAssertEqual(url?.queryParameterValue(for: "source"), "lnt")
         XCTAssertEqual(url?.queryParameterValue(for: "oq"), "")
     }
-    
+
     func testUpdateQueryParameterValue() {
         var url = URL(string: "https://www.google.com/search?q=iPhone&source=lnt&oq=")
         url?.updateQueryParameterValue("iPad", for: "q")
@@ -35,7 +35,7 @@ final class URLQueryParameterTests: XCTestCase {
         url?.updateQueryParameterValue("X", for: "sa")
         XCTAssertEqual(url?.queryParameterValue(for: "sa"), "X")
     }
-    
+
     func testRemoveQueryParameterValue() {
         var url = URL(string: "https://www.google.com/search?q=iPhone&source=lnt&oq=")
         url?.removeQueryParameterValue(forKey: "source")
@@ -44,5 +44,5 @@ final class URLQueryParameterTests: XCTestCase {
         XCTAssertNil(url?.queryParameterValue(for: "oq"))
         XCTAssertEqual(url?.absoluteString, "https://www.google.com/search?q=iPhone")
     }
-    
+
 }

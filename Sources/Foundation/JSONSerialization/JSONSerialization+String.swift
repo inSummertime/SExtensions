@@ -9,7 +9,7 @@
 import Foundation
 
 public extension JSONSerialization {
-    
+
     /// Returns a JSON string from a dictionary.
     ///
     ///     let dictionary: [String: Any] = ["id": 0, "title": "title"]
@@ -22,7 +22,7 @@ public extension JSONSerialization {
         guard let jsonData = try? JSONSerialization.data(withJSONObject: dictionary, options: []) else { return nil }
         return String(data: jsonData, encoding: .utf8)
     }
-    
+
     /// Returns a JSON string from an array.
     ///
     ///     let array: [[String: Any]] = [["id": 0], ["title": "title"]]

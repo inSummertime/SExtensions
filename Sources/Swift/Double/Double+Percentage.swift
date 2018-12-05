@@ -7,7 +7,7 @@
 //
 
 public extension Double {
-    
+
     /// Returns a optional percentage string
     ///
     ///     print(0.55555.percentage(maximumFractionDigits: 1))
@@ -22,5 +22,5 @@ public extension Double {
         formatter.maximumFractionDigits = maximumFractionDigits
         return formatter.string(from: NSNumber(value: self))
     }
-    
+
 }

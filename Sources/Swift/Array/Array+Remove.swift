@@ -7,7 +7,7 @@
 //
 
 public extension Array {
-    
+
     /// Returns an array which does not contain the elements at the specified
     /// positions.
     ///
@@ -25,7 +25,7 @@ public extension Array {
         }
         return result
     }
-    
+
     /// Returns an array which does not contain any empty element.
     ///
     ///     print([["", ""], [], "", ["hello": ""], NSNull(), [[""]], [[:]], [["hello": []]]].removingEmpty().isEmpty)
@@ -55,11 +55,11 @@ public extension Array {
         }
         return result
     }
-    
+
 }
 
-public extension Array where Element : Equatable {
-    
+public extension Array where Element: Equatable {
+
     /// Returns an array which does not contain the given elements.
     ///
     ///     print(["hello", "world", "!"].removing("hello", "world"))
@@ -76,7 +76,7 @@ public extension Array where Element : Equatable {
         }
         return result
     }
-    
+
     /// Returns an array which removes the last given element.
     ///
     ///     print([0, 1, 2, 1].removingLast(1))
@@ -91,7 +91,7 @@ public extension Array where Element : Equatable {
         }
         return result
     }
-    
+
     /// Returns an array which does not contain the elements in the given arrays.
     ///
     ///     print(["hello", "world", "!"].removing(["hello"], ["world", "!"]))
@@ -110,7 +110,7 @@ public extension Array where Element : Equatable {
         }
         return result
     }
-    
+
     /// Returns an array which does not contain the elements in the given
     /// countable range.
     ///
@@ -125,7 +125,7 @@ public extension Array where Element : Equatable {
         }
         return self
     }
-    
+
     /// Returns an array which does not contain the elements in the given
     /// countable closed range.
     ///
@@ -140,7 +140,7 @@ public extension Array where Element : Equatable {
         }
         return self
     }
-    
+
     /// Returns an array which does not contain duplicated elements.
     ///
     ///     print(["hello", "world", "!", "hello", "world", "!"].removingDuplicates())
@@ -156,13 +156,13 @@ public extension Array where Element : Equatable {
         }
         return result
     }
-    
+
 }
 
 protocol OptionalProtocol {
-    
+
     associatedtype Wrapped
-    
+
     /// Evaluates the given closure when this `Optional` instance is not `nil`,
     /// passing the unwrapped value as a parameter.
     ///
@@ -173,7 +173,7 @@ protocol OptionalProtocol {
 extension Optional: OptionalProtocol {}
 
 extension Array where Element: OptionalProtocol {
-    
+
     /// Removes all nils.
     ///
     ///     print([0, nil, 1].removeNils())
@@ -189,5 +189,5 @@ extension Array where Element: OptionalProtocol {
         }
         return result
     }
-    
+
 }

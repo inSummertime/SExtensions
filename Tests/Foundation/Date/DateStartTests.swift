@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class DateStartTests: XCTestCase {
-    
+
     func testStart() {
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.timeZone = TimeZone(secondsFromGMT: 0)!
@@ -27,7 +27,7 @@ final class DateStartTests: XCTestCase {
         XCTAssertEqual(date.start(of: .weekday, in: calendar)!, Date(timeIntervalSinceReferenceDate: 0).addingTimeInterval(Date.timeIntervalPerDay * 48.0))
         XCTAssertNil(date.start(of: .quarter, in: calendar))
     }
-    
+
     func testEnd() {
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.timeZone = TimeZone(secondsFromGMT: 0)!
@@ -44,5 +44,5 @@ final class DateStartTests: XCTestCase {
         XCTAssertEqual(date.end(of: .weekday, in: calendar)!.description, "2001-02-24 23:59:59 +0000")
         XCTAssertNil(date.end(of: .quarter, in: calendar))
     }
-    
+
 }

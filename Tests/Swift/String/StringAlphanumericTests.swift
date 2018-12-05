@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class StringAlphanumericTests: XCTestCase {
-    
+
     func testIsAlphanumeric() {
         XCTAssertFalse("".isAlphanumeric)
         XCTAssertFalse(" ".isAlphanumeric)
@@ -22,7 +22,7 @@ final class StringAlphanumericTests: XCTestCase {
         XCTAssertFalse("Hello world * 2".isAlphanumeric)
         XCTAssertTrue("Helloworld2".isAlphanumeric)
     }
-    
+
     func testHasLettersAndNumbers() {
         XCTAssertFalse("".hasLettersAndNumbers)
         XCTAssertFalse(" ".hasLettersAndNumbers)
@@ -33,7 +33,7 @@ final class StringAlphanumericTests: XCTestCase {
         XCTAssertFalse("Hello world!".hasLettersAndNumbers)
         XCTAssertTrue("Hello world! * 2".hasLettersAndNumbers)
     }
-    
+
     func testHasLetters() {
         XCTAssertFalse("".hasLetters)
         XCTAssertFalse(" ".hasLetters)
@@ -43,7 +43,7 @@ final class StringAlphanumericTests: XCTestCase {
         XCTAssertTrue("Hello world!".hasLetters)
         XCTAssertTrue("Hello world! * 2".hasLetters)
     }
-    
+
     func testHasLettersOnly() {
         XCTAssertFalse("".hasLettersOnly)
         XCTAssertFalse(" ".hasLettersOnly)
@@ -54,7 +54,7 @@ final class StringAlphanumericTests: XCTestCase {
         XCTAssertFalse("Hello world! * 2".hasLettersOnly)
         XCTAssertTrue("Helloworld".hasLettersOnly)
     }
-    
+
     func testHasNumbers() {
         XCTAssertFalse("".hasNumbers)
         XCTAssertFalse(" ".hasNumbers)
@@ -65,7 +65,7 @@ final class StringAlphanumericTests: XCTestCase {
         XCTAssertFalse("Hello world!".hasNumbers)
         XCTAssertTrue("Hello world! * 2".hasNumbers)
     }
-    
+
     func testHasNumbersOnly() {
         XCTAssertFalse("".hasNumbersOnly)
         XCTAssertFalse(" ".hasNumbersOnly)
@@ -77,5 +77,5 @@ final class StringAlphanumericTests: XCTestCase {
         XCTAssertFalse("Hello world!".hasNumbersOnly)
         XCTAssertFalse("Hello world! * 2".hasNumbersOnly)
     }
-    
+
 }

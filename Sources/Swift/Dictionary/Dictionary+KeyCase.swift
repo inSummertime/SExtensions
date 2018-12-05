@@ -7,7 +7,7 @@
 //
 
 public extension Dictionary where Key == String {
-    
+
     /// Returns a dictionary with all keys uppercased.
     ///
     ///     print(["hello": 0, "world": 1].uppercasingAllKeys())
@@ -21,7 +21,7 @@ public extension Dictionary where Key == String {
         }
         return result
     }
-    
+
     /// Uppercases all keys.
     ///
     ///     var helloWorld = ["hello": 0, "world": 1]
@@ -31,7 +31,7 @@ public extension Dictionary where Key == String {
     mutating func uppercaseAllKeys() {
         self = uppercasingAllKeys()
     }
-    
+
     /// Returns a dictionary with all keys lowercased.
     ///
     ///     print(["HELLO": 0, "WORLD": 1].lowercasingAllKeys())
@@ -55,7 +55,7 @@ public extension Dictionary where Key == String {
     mutating func lowercaseAllKeys() {
         self = lowercasingAllKeys()
     }
-    
+
     /// Returns a dictionary with all keys capitalized.
     ///
     ///     print(["hello world!": 0, "hi there!": 1].capitalizingAllKeys())
@@ -69,7 +69,7 @@ public extension Dictionary where Key == String {
         }
         return result
     }
-    
+
     /// Capitalizes all keys
     ///
     ///     var helloWorld = ["hello world!": 0, "hi there!": 1]
@@ -79,7 +79,7 @@ public extension Dictionary where Key == String {
     mutating func capitalizeAllKeys() {
         self = capitalizingAllKeys()
     }
-    
+
     /// Returns a dictionary with all keys changed to sentence case.
     ///
     ///     print(["hello world!": 0, "hi there!": 1].changingAllKeysToSentenceCase())
@@ -93,7 +93,7 @@ public extension Dictionary where Key == String {
         }
         return result
     }
-    
+
     // Changes all keys to sentence case.
     ///
     ///     var helloWorld = ["hello world!": 0, "hi there!": 1]
@@ -103,7 +103,7 @@ public extension Dictionary where Key == String {
     mutating func changeAllKeysToSentenceCase() {
         self = changingAllKeysToSentenceCase()
     }
-    
+
     /// Returns a dictionary with all keys changed to camel case.
     ///
     ///     print(["hello world!": 0, "hi there!": 1].changingAllKeysToCamelCase())
@@ -117,7 +117,7 @@ public extension Dictionary where Key == String {
         }
         return result
     }
-    
+
     // Changes all keys to camel case.
     ///
     ///     var helloWorld = ["hello world!": 0, "hi there!": 1]
@@ -127,7 +127,7 @@ public extension Dictionary where Key == String {
     mutating func changeAllKeysToCamelCase() {
         self = changingAllKeysToCamelCase()
     }
-    
+
     /// Returns a dictionary with all keys changed to snake case.
     ///
     ///     print(["hello world!": 0, "hi there!": 1].changingAllKeysToSnakeCase())
@@ -141,7 +141,7 @@ public extension Dictionary where Key == String {
         }
         return result
     }
-    
+
     // Changes all keys to snake case.
     ///
     ///     var helloWorld = ["hello world!": 0, "hi there!": 1]

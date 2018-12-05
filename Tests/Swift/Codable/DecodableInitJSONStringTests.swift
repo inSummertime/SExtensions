@@ -22,7 +22,7 @@ class DecodableInitJSONStringTests: XCTestCase {
         } catch {
             XCTFail()
         }
-        
+
         let jsonStringEmpty = "{\"hello\":\"\"}"
         struct ObjectEmpty: Decodable {
             let hello: String
@@ -33,7 +33,7 @@ class DecodableInitJSONStringTests: XCTestCase {
         } catch {
             XCTFail()
         }
-        
+
         let jsonStringInt = "{\"hello\":0}"
         struct ObjectInt: Decodable {
             let hello: Int
@@ -44,7 +44,7 @@ class DecodableInitJSONStringTests: XCTestCase {
         } catch {
             XCTFail()
         }
-        
+
         let jsonStringArray = "{\"hello\":[\"world\",\"!\"]}"
         struct ObjectArray: Decodable {
             let hello: [String]
@@ -55,7 +55,7 @@ class DecodableInitJSONStringTests: XCTestCase {
         } catch {
             XCTFail()
         }
-        
+
         let jsonStringDictionary = "{\"hello\":{\"world\":\"!\"}}"
         struct ObjectDictionary: Decodable {
             let hello: [String: String]
@@ -66,7 +66,7 @@ class DecodableInitJSONStringTests: XCTestCase {
         } catch {
             XCTFail()
         }
-        
+
         let jsonStringCodable = "{\"hello\":\"world\"}"
         struct ObjectCodable: Codable {
             let hello: String

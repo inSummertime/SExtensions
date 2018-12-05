@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// Accesses the character at the given position safely.
     ///
     ///     print("Hello world!"[safe: 0]!)
@@ -21,7 +21,7 @@ public extension String {
             return nil
         }
     }
-    
+
     /// Returns a string with a contiguous countable range of the collection's
     /// elements safely.
     ///
@@ -40,7 +40,7 @@ public extension String {
         let upperIndex = index(lowerIndex, offsetBy: range.upperBound - range.lowerBound, limitedBy: endIndex) ?? endIndex
         return String(self[lowerIndex..<upperIndex])
     }
-    
+
     /// Returns a string with a contiguous countable closed range of the
     /// collection's elements safely.
     ///
@@ -66,7 +66,7 @@ public extension String {
         let upperIndex = index(lowerIndex, offsetBy: range.upperBound - range.lowerBound + 1, limitedBy: endIndex) ?? endIndex
         return String(self[lowerIndex..<upperIndex])
     }
-    
+
     /// Returns a string with a contiguous countable partial from range of the
     /// collection's elements safely.
     ///
@@ -83,7 +83,7 @@ public extension String {
         }
         return String(self[lowerIndex..<endIndex])
     }
-    
+
     /// Returns a string from index safely.
     ///
     ///     print("Hello world!"[safeFrom: 1])
@@ -97,7 +97,7 @@ public extension String {
         let fromIndex = self.index(startIndex, offsetBy: max(index, 0))
         return String(self[fromIndex..<endIndex])
     }
-    
+
     /// Returns a string to index safely.
     ///
     ///     print("Hello world!"[safeTo: 1])
@@ -114,5 +114,5 @@ public extension String {
         let toIndex = self.index(startIndex, offsetBy: min(index, count - 1))
         return String(self[startIndex...toIndex])
     }
-    
+
 }

@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class DateTruncatedTests: XCTestCase {
-    
+
     func testTruncatedAt() {
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.timeZone = TimeZone(secondsFromGMT: 0)!
@@ -23,7 +23,7 @@ final class DateTruncatedTests: XCTestCase {
         XCTAssertEqual(date.truncated(at: [.second, .nanosecond], in: calendar)!, Date(timeIntervalSinceReferenceDate: 0).addingTimeInterval(Date.timeIntervalPerDay * 50.0 + Date.timeIntervalPerHour * 7.0 + Date.timeIntervalPerMinute * 7))
         XCTAssertEqual(date.truncated(at: [.day, .minute], in: calendar)!, Date(timeIntervalSinceReferenceDate: 0).addingTimeInterval(Date.timeIntervalPerDay * 31.0 + Date.timeIntervalPerHour * 7.0 + 7.0))
     }
-    
+
     func testTruncatedFrom() {
         var calendar = Calendar(identifier: Calendar.Identifier.gregorian)
         calendar.timeZone = TimeZone(secondsFromGMT: 0)!
@@ -36,5 +36,5 @@ final class DateTruncatedTests: XCTestCase {
         XCTAssertEqual(date.truncated(from: .second, in: calendar)!.description, "2001-02-20 07:07:00 +0000")
         XCTAssertEqual(date.truncated(from: .nanosecond, in: calendar)!.description, "2001-02-20 07:07:07 +0000")
     }
-    
+
 }

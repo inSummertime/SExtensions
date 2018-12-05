@@ -9,7 +9,7 @@
 import Foundation
 
 public extension UserDefaults {
-    
+
     /// Searches the receiver's search list for a default with the
     /// key and return it using subscript.
     ///
@@ -26,5 +26,5 @@ public extension UserDefaults {
             set(newValue, forKey: key)
         }
     }
-    
+
 }

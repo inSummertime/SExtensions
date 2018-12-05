@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Date {
-    
+
     /// Returns a `Date` initialized by a given string, dateFormat, calendar.
     ///
     ///     print(Date(string: "2018.07.15 at 00:00:00 +0000", dateFormat: "yyyy.MM.dd 'at' HH:mm:ss Z", calendar: Calendar(identifier: Calendar.Identifier.gregorian)))
@@ -29,7 +29,7 @@ public extension Date {
             return nil
         }
     }
-    
+
     /// Returns a `Date` initialized by a calendar, a time zone and
     /// components.
     ///
@@ -61,5 +61,5 @@ public extension Date {
             return nil
         }
     }
-    
+
 }

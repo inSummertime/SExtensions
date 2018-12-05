@@ -9,7 +9,7 @@
 import Foundation
 
 public extension NSObject {
-    
+
     /// The class name of a NSObject instance.
     ///
     ///     print(UIView().className)
@@ -17,7 +17,7 @@ public extension NSObject {
     var className: String {
         return String(describing: type(of: self))
     }
-    
+
     /// The class name of a NSObject.
     ///
     ///     print(UIView.className)
@@ -25,5 +25,5 @@ public extension NSObject {
     class var className: String {
         return String(describing: self)
     }
-    
+
 }

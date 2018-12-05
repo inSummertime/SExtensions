@@ -9,7 +9,7 @@
 import Foundation
 
 public extension DateInterval {
-    
+
     /// Returns `true` if `self` contains another `dateInterval`.
     ///
     ///     let dateInterval = DateInterval(start: Date(timeIntervalSinceReferenceDate: 0), duration: 2.0)
@@ -22,5 +22,5 @@ public extension DateInterval {
     func contains(_ dateInterval: DateInterval) -> Bool {
         return dateInterval.start >= start && dateInterval.end <= end
     }
-    
+
 }

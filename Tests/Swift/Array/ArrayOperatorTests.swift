@@ -10,18 +10,18 @@ import XCTest
 @testable import SExtensions
 
 final class ArrayOperatorTests: XCTestCase {
-    
+
     func testOrOperator() {
         XCTAssertEqual(["hello", "world"] | ["!"], ["hello", "world", "!"])
     }
-    
+
     func testSubtractionOperator() {
         XCTAssertEqual(["hello"] - ["world"], ["hello"])
         XCTAssertEqual(["hello"] - ["hello", "world"], [])
         XCTAssertEqual(["hello"] - [], ["hello"])
         XCTAssertEqual(["hello", "world"] - ["world"], ["hello"])
     }
-    
+
     func testSubtractionAssignmentOperator() {
         var hello = ["hello", "world"]
         hello -= ["world"]
@@ -31,11 +31,11 @@ final class ArrayOperatorTests: XCTestCase {
         hello -= ["hello", "world"]
         XCTAssertEqual(hello, [])
     }
-    
+
     func testAndOperator() {
         XCTAssertEqual(["hello"] & ["world"], [])
         XCTAssertEqual(["hello"] & ["hello", "world"], ["hello"])
         XCTAssertEqual(["hello"] & [], [])
     }
-    
+
 }

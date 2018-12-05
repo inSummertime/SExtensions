@@ -7,7 +7,7 @@
 //
 
 public extension Array where Element: Equatable {
-    
+
     /// Appends the element if array does not contain the element.
     ///
     ///     var array = [0, 1]
@@ -27,7 +27,7 @@ public extension Array where Element: Equatable {
             return true
         }
     }
-    
+
     /// Appends the element if array does not contain enough.
     ///
     ///     var array = ["hello", "world", "!"]
@@ -46,7 +46,7 @@ public extension Array where Element: Equatable {
     /// - Returns: Whether appended.
     @discardableResult
     mutating func append(_ newElement: Element, maxCountOfElement: Int) -> Bool {
-        let countOfElment = filter{ $0 == newElement }.count
+        let countOfElment = filter { $0 == newElement }.count
         if countOfElment >= maxCountOfElement {
             return false
         } else {

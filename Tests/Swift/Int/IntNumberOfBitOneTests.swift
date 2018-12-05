@@ -17,7 +17,7 @@ final class IntNumberOfBitOneTests: XCTestCase {
         XCTAssertEqual(3.numberOfBitOne, 2)
         XCTAssertEqual((-4).numberOfBitOne, 1)
     }
-    
+
     func testNumberOfBitZero() {
         XCTAssertEqual(0.numberOfBitZero, 1)
         XCTAssertEqual(1.numberOfBitZero, 0)
@@ -25,6 +25,5 @@ final class IntNumberOfBitOneTests: XCTestCase {
         XCTAssertEqual(3.numberOfBitZero, 0)
         XCTAssertEqual((-4).numberOfBitZero, 2)
     }
-
 
 }

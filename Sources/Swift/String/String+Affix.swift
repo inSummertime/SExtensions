@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// Returns a string with prefix removed.
     ///
     ///     print("Hello world!".removingPrefix("Hello"))
@@ -24,7 +24,7 @@ public extension String {
         }
         return self
     }
-    
+
     /// Removes prefix.
     ///
     ///     var helloWorld = "Hello world!"
@@ -36,7 +36,7 @@ public extension String {
     mutating func removePrefix(_ prefix: String) {
         self = removingPrefix(prefix)
     }
-    
+
     /// Returns a new string which is remove the first 'count' charaters
     ///
     ///     print("Hello world!".removingPrefix(1))
@@ -51,7 +51,7 @@ public extension String {
             return ""
         }
     }
-    
+
     /// Removes the first 'count' charaters
     ///
     ///     var helloWorld = "Hello world!"
@@ -63,7 +63,7 @@ public extension String {
     mutating func removePrefix(_ count: Int = 1) {
         self = removingPrefix(count)
     }
-    
+
     /// Returns a string with suffex removed.
     ///
     ///     print("Hello world!".removingSuffex("d!"))
@@ -80,7 +80,7 @@ public extension String {
         }
         return self
     }
-    
+
     /// Removes suffix.
     ///
     ///     var helloWorld = "Hello world!"
@@ -92,7 +92,7 @@ public extension String {
     mutating func removeSuffix(_ suffix: String) {
         self = removingSuffix(suffix)
     }
-    
+
     /// Returns a new string which is remove the last 'count' charaters
     ///
     ///     var helloWorld = "Hello world!"
@@ -109,7 +109,7 @@ public extension String {
             return ""
         }
     }
-    
+
     /// Removes the last 'count' charaters
     ///
     ///     var helloWorld = "Hello world!"
@@ -121,5 +121,5 @@ public extension String {
     mutating func removeSuffix(_ count: Int = 1) {
         self = removingSuffix(count)
     }
-    
+
 }

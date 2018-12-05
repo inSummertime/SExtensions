@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// Returns a Boolean value that indicates whether it is alphanumeric.
     ///
     ///     print("helloworld2".isAlphanumeric)
@@ -16,7 +16,7 @@ public extension String {
         let count = components(separatedBy: .alphanumerics).joined(separator: "").count
         return hasLetters && hasNumbers && count == 0
     }
-    
+
     /// Returns a Boolean value that indicates whether it has letters and
     /// numbers.
     ///
@@ -25,7 +25,7 @@ public extension String {
     var hasLettersAndNumbers: Bool {
         return hasLetters && hasNumbers
     }
-    
+
     /// Returns a Boolean value that indicates whether it has letters.
     ///
     ///     print("Hello world!".hasLetters)
@@ -33,7 +33,7 @@ public extension String {
     var hasLetters: Bool {
         return rangeOfCharacter(from: .letters, options: [], range: nil) != nil
     }
-    
+
     /// Returns a Boolean value that indicates whether it has letters only.
     ///
     ///     print("helloworld".hasLettersOnly)
@@ -42,7 +42,7 @@ public extension String {
         let count = components(separatedBy: .letters).joined(separator: "").count
         return hasLetters && count == 0
     }
-    
+
     /// Returns a Boolean value that indicates whether it has numbers.
     ///
     ///     print("helloworld2".hasNumbers)
@@ -50,7 +50,7 @@ public extension String {
     var hasNumbers: Bool {
         return rangeOfCharacter(from: .decimalDigits, options: [], range: nil) != nil
     }
-    
+
     /// Returns a Boolean value that indicates whether it has numbers only.
     ///
     ///     print("0".hasNumbersOnly)
@@ -59,5 +59,5 @@ public extension String {
         let count = components(separatedBy: .decimalDigits).joined(separator: "").count
         return hasNumbers && count == 0
     }
-    
+
 }

@@ -7,22 +7,21 @@
 //
 
 public extension Optional where Wrapped: Collection {
-    
+
     /// Returns true if it is nil or empty.
     var isNilOrEmpty: Bool {
         guard let collection = self else { return true }
         return collection.isEmpty
     }
-    
+
 }
 
 public extension Optional where Wrapped == String {
-    
+
     /// Returns true if it is nil or empty.
     var isNilOrEmpty: Bool {
         guard let string = self else { return true }
         return string.isEmpty
     }
-    
-}
 
+}

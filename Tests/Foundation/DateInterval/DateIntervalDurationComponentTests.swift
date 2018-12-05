@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class DateIntervalDurationComponentTests: XCTestCase {
-    
+
     func testDurationComponent() {
         let dateInterval = DateInterval(start: Date(timeIntervalSinceReferenceDate: 0), duration: Date.timeIntervalPerWeek)
         let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
@@ -23,7 +23,7 @@ final class DateIntervalDurationComponentTests: XCTestCase {
         XCTAssertEqual(dateInterval.durationComponent(.second, in: calendar)!, 7 * 24 * 60 * 60)
         XCTAssertNil(dateInterval.durationComponent(.calendar, in: calendar))
     }
-    
+
     func testComponentDictionary() {
         let dateInterval = DateInterval(start: Date(timeIntervalSinceReferenceDate: 0), duration: Date.timeIntervalPerWeek * 58 + Date.timeIntervalPerDay + Date.timeIntervalPerHour + Date.timeIntervalPerMinute + 1.0)
         let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
@@ -37,5 +37,5 @@ final class DateIntervalDurationComponentTests: XCTestCase {
         XCTAssertEqual(dictionary[.minute], 1)
         XCTAssertEqual(dictionary[.second], 1)
     }
-    
+
 }

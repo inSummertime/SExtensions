@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class NSAttributedStringInitHTMLStringTests: XCTestCase {
-    
+
     func testInitHTMLString() {
         let html = "<span><strong><i>Hello world!</i></strong></span>"
         do {
@@ -20,5 +20,5 @@ final class NSAttributedStringInitHTMLStringTests: XCTestCase {
             XCTFail()
         }
     }
-    
+
 }

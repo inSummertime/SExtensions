@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Date {
-    
+
     /// Returns the interval between the receiver and another given date.
     ///
     ///     let date = Date(timeIntervalSinceReferenceDate: 0)
@@ -24,7 +24,7 @@ public extension Date {
     static func - (lhs: Date, rhs: Date) -> TimeInterval {
         return lhs.timeIntervalSince(rhs)
     }
-    
+
     /// Returns true if the left hand `Date` is earlier in time than the
     /// right hand `Date` or the two `Date` values represent the same point
     /// in time.
@@ -41,7 +41,7 @@ public extension Date {
     static func <= (lhs: Date, rhs: Date) -> Bool {
         return lhs == rhs || lhs < rhs
     }
-    
+
     /// Returns true if the left hand `Date` is later in time than the right
     /// hand `Date` or the two `Date` values represent the same point in
     /// time.
@@ -58,5 +58,5 @@ public extension Date {
     static func >= (lhs: Date, rhs: Date) -> Bool {
         return lhs == rhs || lhs > rhs
     }
-    
+
 }

@@ -10,22 +10,22 @@ import XCTest
 @testable import SExtensions
 
 final class StringCondenseTests: XCTestCase {
-    
+
     func testWhitespaceCondensed() {
         XCTAssertEqual("   Hello   world!   ".whitespaceCondensed, " Hello world! ")
     }
-    
+
     func testNewlineCondensed() {
         XCTAssertEqual("\n\nHello\n\n\nworld!\n\n".newlineCondensed, "\nHello\nworld!\n")
     }
-    
+
     func testUnderscoreCondensed() {
         XCTAssertEqual("__hello__world__".underscoreCondensed, "_hello_world_")
     }
-    
+
     func testCondenseString() {
         XCTAssertEqual("Hello worrrrld!".condensingString("r"), "Hello world!")
         XCTAssertEqual("Helloooo wooorld!".condensingString("o"), "Hello world!")
     }
-    
+
 }

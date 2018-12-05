@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class StringTruncateTests: XCTestCase {
-    
+
     func testTruncatedToIndex() {
         XCTAssertEqual("Hello world!".truncated(toIndex: 0), "H...")
         XCTAssertEqual("Hello world!".truncated(toIndex: 6), "Hello w...")
@@ -18,7 +18,7 @@ final class StringTruncateTests: XCTestCase {
         XCTAssertEqual("Hello world!".truncated(toIndex: -16), "")
         XCTAssertEqual("".truncated(toIndex: 16), "")
     }
-    
+
     func testTruncatedToLength() {
         XCTAssertEqual("Hello world!".truncated(toLength: 0), "")
         XCTAssertEqual("Hello world!".truncated(toLength: 6), "Hello ...")
@@ -26,7 +26,7 @@ final class StringTruncateTests: XCTestCase {
         XCTAssertEqual("Hello world!".truncated(toLength: -16), "")
         XCTAssertEqual("".truncated(toLength: 16), "")
     }
-    
+
     func testTruncatedWithConstrainedWidthNumberOfLinesAndFont() {
         let helloWorld = "Hello world!"
         let font = UIFont.systemFont(ofSize: 8.0)
@@ -41,7 +41,7 @@ final class StringTruncateTests: XCTestCase {
         XCTAssertEqual("".truncated(withConstrained: 64.0, font: font, numberOfLines: 2), "")
         XCTAssertEqual("".truncated(withConstrained: 4.0, font: font, numberOfLines: 0), "")
     }
-    
+
     func testTruncatedWithConstrainedSizeAndFont() {
         let helloWorld = "Hello world!"
         let font = UIFont.systemFont(ofSize: 8.0)
@@ -56,5 +56,5 @@ final class StringTruncateTests: XCTestCase {
         XCTAssertEqual("".truncated(withConstrained: CGSize(width: 4.0, height: 64.0), font: font), "")
         XCTAssertEqual("".truncated(withConstrained: CGSize(width: 64.0, height: 64.0), font: font), "")
     }
-    
+
 }

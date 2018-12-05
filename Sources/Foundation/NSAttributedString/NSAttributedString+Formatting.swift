@@ -9,7 +9,7 @@
 import UIKit
 
 public extension NSAttributedString {
-    
+
     /// Returns a Boolean value that indicates whether the text within a NSRange
     /// is having a color.
     ///
@@ -27,7 +27,7 @@ public extension NSAttributedString {
         })
         return isHavingColor
     }
-    
+
     /// Returns a Boolean value that indicates whether the text within a NSRange
     /// is using a font.
     ///
@@ -45,7 +45,7 @@ public extension NSAttributedString {
         })
         return isUsingFont
     }
-    
+
     /// Returns a Boolean value that indicates whether the text within a NSRange
     /// is underlined.
     ///
@@ -62,7 +62,7 @@ public extension NSAttributedString {
         })
         return isUnderlined
     }
-    
+
     /// Returns a Boolean value that indicates whether the text within a NSRange
     /// is highlighted.
     ///
@@ -79,7 +79,7 @@ public extension NSAttributedString {
         })
         return isHighlighted
     }
-    
+
     /// Returns a Boolean value that indicates whether the text within a NSRange
     /// is using strikethrough.
     ///
@@ -96,7 +96,7 @@ public extension NSAttributedString {
         })
         return isStrikethrough
     }
-    
+
     /// Returns a Boolean value that indicates whether the text within a NSRange
     /// is using traits.
     ///
@@ -113,7 +113,7 @@ public extension NSAttributedString {
         })
         return usingTraitsLength == checkRange.length
     }
-    
+
     /// Returns a Boolean value that indicates whether the text within a NSRange
     /// is bold.
     ///
@@ -122,7 +122,7 @@ public extension NSAttributedString {
     func isBold(in range: NSRange? = nil) -> Bool {
         return isUsingTraits(.traitBold, in: range)
     }
-    
+
     /// Returns a Boolean value that indicates whether the text within a NSRange
     /// is italic.
     ///
@@ -131,5 +131,5 @@ public extension NSAttributedString {
     func isItalic(in range: NSRange? = nil) -> Bool {
         return isUsingTraits(.traitItalic, in: range)
     }
-    
+
 }

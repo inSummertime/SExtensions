@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Date {
-    
+
     /// Returns `true` if it is in the past.
     ///
     ///     print(Date().addingTimeInterval(-Date.timeIntervalPerDay).isInThePast)
@@ -17,7 +17,7 @@ public extension Date {
     var isInThePast: Bool {
         return self < Date()
     }
-    
+
     /// Returns `true` if it is in the future.
     ///
     ///     print(Date().addingTimeInterval(Date.timeIntervalPerDay).isInTheFuture)
@@ -25,7 +25,7 @@ public extension Date {
     var isInTheFuture: Bool {
         return self > Date()
     }
-    
+
     /// Returns `true` if it is within last year, as defined by the calendar
     /// and calendar's locale.
     ///
@@ -49,7 +49,7 @@ public extension Date {
             return nil
         }
     }
-    
+
     /// Returns `true` if it is within last month, as defined by the calendar
     /// and calendar's locale.
     ///
@@ -73,7 +73,7 @@ public extension Date {
             return nil
         }
     }
-    
+
     /// Returns `true` if it is within last week, as defined by the calendar
     /// and calendar's locale.
     ///
@@ -97,7 +97,7 @@ public extension Date {
             return nil
         }
     }
-    
+
     /// Returns `true` if it is within yesterday, as defined by the calendar
     /// and calendar's locale.
     ///
@@ -106,7 +106,7 @@ public extension Date {
     func isInYesterday(in calendar: Calendar = Calendar.current) -> Bool {
         return calendar.isDateInYesterday(self)
     }
-    
+
     /// Returns `true` if it is within today, as defined by the calendar
     /// and calendar's locale.
     ///
@@ -115,7 +115,7 @@ public extension Date {
     func isInToday(in calendar: Calendar = Calendar.current) -> Bool {
         return calendar.isDateInToday(self)
     }
-    
+
     /// Returns `true` if it is within tomorrow, as defined by the calendar
     /// and calendar's locale.
     ///
@@ -124,7 +124,7 @@ public extension Date {
     func isInTomorrow(in calendar: Calendar = Calendar.current) -> Bool {
         return calendar.isDateInTomorrow(self)
     }
-    
+
     /// Returns `true` if it is within this week, as defined by the calendar
     /// and calendar's locale.
     ///
@@ -133,7 +133,7 @@ public extension Date {
     func isInThisWeek(in calendar: Calendar = Calendar.current) -> Bool {
         return calendar.isDate(self, equalTo: Date(), toGranularity: .weekOfYear)
     }
-    
+
     /// Returns `true` if it is within next week, as defined by the calendar
     /// and calendar's locale.
     ///
@@ -157,7 +157,7 @@ public extension Date {
             return nil
         }
     }
-    
+
     /// Returns `true` if it is within this month, as defined by the calendar
     /// and calendar's locale.
     ///
@@ -166,7 +166,7 @@ public extension Date {
     func isInThisMonth(in calendar: Calendar = Calendar.current) -> Bool {
         return calendar.isDate(self, equalTo: Date(), toGranularity: .month)
     }
-    
+
     /// Returns `true` if it is within next month, as defined by the calendar
     /// and calendar's locale.
     ///
@@ -190,7 +190,7 @@ public extension Date {
             return nil
         }
     }
-    
+
     /// Returns `true` if it is within this year, as defined by the calendar
     /// and calendar's locale.
     ///
@@ -199,7 +199,7 @@ public extension Date {
     func isInThisYear(in calendar: Calendar = Calendar.current) -> Bool {
         return calendar.isDate(self, equalTo: Date(), toGranularity: .year)
     }
-    
+
     /// Returns `true` if it is within next year, as defined by the calendar
     /// and calendar's locale.
     ///
@@ -223,7 +223,7 @@ public extension Date {
             return nil
         }
     }
-    
+
     /// Returns `true` if it is within a weekend period, as defined by the
     /// calendar and calendar's locale.
     ///
@@ -232,7 +232,7 @@ public extension Date {
     func isInWeekend(in calendar: Calendar = Calendar.current) -> Bool {
         return calendar.isDateInWeekend(self)
     }
-    
+
     /// Returns `true` if it is within a weekday period, as defined by the
     /// calendar and calendar's locale.
     ///
@@ -241,7 +241,7 @@ public extension Date {
     func isInWeekday(in calendar: Calendar = Calendar.current) -> Bool {
         return !calendar.isDateInWeekend(self)
     }
-    
+
     /// Returns `true` if it is within the morning period, as defined by the
     /// calendar and calendar's locale.
     ///
@@ -257,7 +257,7 @@ public extension Date {
         let hour = calendar.component(.hour, from: self)
         return hour >= 6 && hour <= 12
     }
-    
+
     /// Returns `true` if it is within the afterning period, as defined by
     /// the calendar and calendar's locale.
     ///
@@ -273,7 +273,7 @@ public extension Date {
         let hour = calendar.component(.hour, from: self)
         return hour > 12 && hour <= 17
     }
-    
+
     /// Returns `true` if it is within the evening period, as defined by
     /// the calendar and calendar's locale.
     ///
@@ -289,7 +289,7 @@ public extension Date {
         let hour = calendar.component(.hour, from: self)
         return hour > 17 && hour < 20
     }
-    
+
     /// Returns `true` if it is within the night period, as defined by
     /// the calendar and calendar's locale.
     ///
@@ -305,7 +305,7 @@ public extension Date {
         let hour = calendar.component(.hour, from: self)
         return hour >= 20 || hour < 6
     }
-    
+
     /// Returns `true` if it is at noon, as defined by the calendar and
     /// calendar's locale.
     ///
@@ -320,7 +320,7 @@ public extension Date {
     func isAtNoon(in calendar: Calendar = Calendar.current) -> Bool {
         return calendar.component(.hour, from: self) == 12
     }
-    
+
     /// Returns `true` if it is at midnight, as defined by the calendar and
     /// calendar's locale.
     ///
@@ -335,5 +335,5 @@ public extension Date {
     func isAtMidnight(in calendar: Calendar = Calendar.current) -> Bool {
         return calendar.component(.hour, from: self) == 0
     }
-    
+
 }

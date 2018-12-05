@@ -9,7 +9,7 @@
 import Foundation
 
 extension String {
-    
+
     /// Returns the memory address of an object.
     ///
     /// - Parameter object: AnyObject or nil.
@@ -19,5 +19,5 @@ extension String {
         let opaque: UnsafeMutableRawPointer = Unmanaged.passUnretained(object).toOpaque()
         return String(describing: opaque)
     }
-    
+
 }

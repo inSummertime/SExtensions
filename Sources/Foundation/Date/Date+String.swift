@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Date {
-    
+
     /// Returns a string from a date with a date style.
     ///
     ///     print(Date(timeIntervalSinceReferenceDate: 0).string(dateStyle: .medium, timeStyle: .short, calendar: Calendar(identifier: Calendar.Identifier.gregorian), timeZone: TimeZone(secondsFromGMT: 0)!, locale: Locale(identifier: "en")))
@@ -35,7 +35,7 @@ public extension Date {
         dateFormatter.doesRelativeDateFormatting = doesRelativeDateFormatting
         return dateFormatter.string(from: self)
     }
-    
+
     /// Returns a string from a date with a date format.
     ///
     ///     print(Date(timeIntervalSinceReferenceDate: 0).string(dateFormat: "yyyy.MM.dd 'at' HH:mm:ss Z", calendar: Calendar(identifier: Calendar.Identifier.gregorian), timeZone: TimeZone(secondsFromGMT: 0)!))
@@ -54,7 +54,7 @@ public extension Date {
         dateFormatter.locale = locale
         return dateFormatter.string(from: self)
     }
-    
+
     /// Month styles.
     ///
     /// - full: Full name of month.
@@ -69,7 +69,7 @@ public extension Date {
         case twoDigits = "MM"
         case oneDigit = "M"
     }
-    
+
     /// Returns a month string from a date with a month date format
     /// style.
     ///
@@ -89,7 +89,7 @@ public extension Date {
     func month(style: MonthStyle, calendar: Calendar = Calendar.current, timeZone: TimeZone = TimeZone.current, locale: Locale = Locale.current) -> String {
         return string(dateFormat: style.rawValue, calendar: calendar, timeZone: timeZone, locale: locale)
     }
-    
+
     /// Day name styles.
     ///
     /// - full: Full day name.
@@ -102,7 +102,7 @@ public extension Date {
         case twoLetterAbbreviation = "EEEEEE"
         case oneLetterAbbreviation = "EEEEE"
     }
-    
+
     /// Returns a day name string from a date with a day name date
     /// format style.
     ///
@@ -122,5 +122,5 @@ public extension Date {
     func dayName(style: DayNameStyle, calendar: Calendar = Calendar.current, timeZone: TimeZone = TimeZone.current, locale: Locale = Locale.current) -> String {
         return string(dateFormat: style.rawValue, calendar: calendar, timeZone: timeZone, locale: locale)
     }
-    
+
 }

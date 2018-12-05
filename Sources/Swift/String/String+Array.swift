@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// An array if possible
     ///
     ///     print("[1, \"Hello world!\"]".array)
@@ -22,7 +22,7 @@ public extension String {
         }
         return nil
     }
-    
+
     /// An array or an empty array
     ///
     ///     print("[1, \"Hello world!\"]".arrayValue[0])
@@ -30,5 +30,5 @@ public extension String {
     var arrayValue: [Any] {
         return array ?? [Any]()
     }
-    
+
 }

@@ -7,7 +7,7 @@
 //
 
 public extension Double {
-    
+
     /// Returns a local currency string.
     ///
     ///     if Locale.current.identifier == "en_US" {
@@ -20,7 +20,7 @@ public extension Double {
         formatter.locale = Locale.current
         return formatter.string(from: NSNumber(value: self))
     }
-    
+
     /// Returns an US dollar string.
     ///
     ///     print(100.0.USDollar == "$100.00" || 100.0.USDollar == "US$100.00")
@@ -28,7 +28,7 @@ public extension Double {
     var USDollar: String? {
         return currency(currencyCode: "USD")
     }
-    
+
     /// Returns a currency string with a currency code.
     ///
     ///     print((-100.0091111).currency(currencyCode: "USD").USDollar == "-$100.01" || (-100.0091111).currency(currencyCode: "USD").USDollar == "-US$100.01")
@@ -44,5 +44,5 @@ public extension Double {
         formatter.currencyCode = currencyCode
         return formatter.string(from: NSNumber(value: self))
     }
-    
+
 }

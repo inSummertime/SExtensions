@@ -9,7 +9,7 @@
 import Foundation
 
 public extension DateInterval {
-    
+
     /// Returns a string from a date interval with a date style.
     ///
     ///     let dateInterval = DateInterval(start: Date(timeIntervalSinceReferenceDate: 0), duration: 60)
@@ -49,7 +49,7 @@ public extension DateInterval {
             return "\(startDate) - \(endDate)"
         }
     }
-    
+
     /// Returns a string from a date interval with a date format.
     ///
     ///     let dateInterval = DateInterval(start: Date(timeIntervalSinceReferenceDate: 0), duration: 1)
@@ -75,5 +75,5 @@ public extension DateInterval {
         let endDate = dateFormatter.string(from: end)
         return "\(startDate) - \(endDate)"
     }
-    
+
 }

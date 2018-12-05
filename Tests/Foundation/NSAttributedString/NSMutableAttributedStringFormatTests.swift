@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class NSMutableAttributedStringFormatTests: XCTestCase {
-    
+
     func testColored() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.foregroundColor: UIColor.white])
         let blackHelloWorld = helloWorld.colored(with: .black)
@@ -20,7 +20,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertFalse(mixedHelloWorld.isHavingColor(.black))
         XCTAssertTrue(mixedHelloWorld.isHavingColor(.clear, in: range))
     }
-    
+
     func testColor() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.foregroundColor: UIColor.white])
         helloWorld.color(with: .black)
@@ -30,7 +30,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertFalse(helloWorld.isHavingColor(.black))
         XCTAssertTrue(helloWorld.isHavingColor(.clear, in: range))
     }
-    
+
     func testUsingFont() {
         let font8 = UIFont.systemFont(ofSize: 8.0)
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: font8])
@@ -42,7 +42,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertFalse(mixedHelloWorld.isUsingFont(font8))
         XCTAssertTrue(mixedHelloWorld.isUsingFont(font8, in: range))
     }
-    
+
     func testUseFont() {
         let font8 = UIFont.systemFont(ofSize: 8.0)
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: font8])
@@ -54,7 +54,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertFalse(helloWorld.isUsingFont(font8))
         XCTAssertTrue(helloWorld.isUsingFont(font8, in: range))
     }
-    
+
     func testUnderlined() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!")
         XCTAssertTrue(helloWorld.underlined().isUnderlined())
@@ -62,7 +62,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertFalse(helloWorld.underlined(in: range).isUnderlined())
         XCTAssertTrue(helloWorld.underlined(in: range).isUnderlined(in: range))
     }
-    
+
     func testUnderline() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!")
         let range = NSRange(location: 0, length: 1)
@@ -72,7 +72,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         helloWorld.underline()
         XCTAssertTrue(helloWorld.isUnderlined())
     }
-    
+
     func testRemovingUnderline() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.underlineStyle: true])
         let range = NSRange(location: 0, length: 1)
@@ -82,7 +82,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertTrue(helloWorld.removingUnderline(in: range).isUnderlined(in: anotherRange))
         XCTAssertFalse(helloWorld.removingUnderline().isUnderlined())
     }
-    
+
     func testRemoveUnderline() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.underlineStyle: true])
         let range = NSRange(location: 0, length: 1)
@@ -95,7 +95,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         helloWorld.removeUnderline()
         XCTAssertFalse(helloWorld.isUnderlined())
     }
-    
+
     func testHighlighted() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!")
         let range = NSRange(location: 0, length: 1)
@@ -103,7 +103,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertTrue(helloWorld.highlighted(with: .white, in: range).isHighlighted(with: .white, in: range))
         XCTAssertTrue(helloWorld.highlighted(with: .black).isHighlighted(with: .black))
     }
-    
+
     func testHighlight() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!")
         let range = NSRange(location: 0, length: 1)
@@ -113,7 +113,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         helloWorld.highlight(with: .black)
         XCTAssertTrue(helloWorld.isHighlighted(with: .black))
     }
-    
+
     func testUnhighlighted() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.backgroundColor: UIColor.white])
         let range = NSRange(location: 0, length: 1)
@@ -121,7 +121,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertFalse(helloWorld.unhighlighted(in: range).isHighlighted(with: .white, in: range))
         XCTAssertFalse(helloWorld.unhighlighted().isHighlighted(with: .white))
     }
-    
+
     func testUnhighlight() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.backgroundColor: UIColor.white])
         let range = NSRange(location: 0, length: 1)
@@ -133,7 +133,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         helloWorld.unhighlight()
         XCTAssertFalse(helloWorld.isHighlighted(with: .white))
     }
-    
+
     func testUsingStrikethrough() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!")
         let range = NSRange(location: 0, length: 1)
@@ -141,7 +141,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertTrue(helloWorld.usingStrikethrough(in: range).isStrikethrough(in: range))
         XCTAssertTrue(helloWorld.usingStrikethrough().isStrikethrough())
     }
-    
+
     func testUseStrikethrough() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!")
         let range = NSRange(location: 0, length: 1)
@@ -151,7 +151,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         helloWorld.useStrikethrough()
         XCTAssertTrue(helloWorld.isStrikethrough())
     }
-    
+
     func testRemovingStrikethrough() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.strikethroughStyle: true])
         let range = NSRange(location: 0, length: 1)
@@ -160,7 +160,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertTrue(helloWorld.removingStrikethrough(in: range).isStrikethrough(in: anotherRange))
         XCTAssertFalse(helloWorld.removingStrikethrough().isStrikethrough())
     }
-    
+
     func testRemoveStrikethrough() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.strikethroughStyle: true])
         let range = NSRange(location: 0, length: 1)
@@ -171,7 +171,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         helloWorld.removeStrikethrough()
         XCTAssertFalse(helloWorld.isStrikethrough())
     }
-    
+
     func testUsingBold() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.systemFont(ofSize: 8.0)])
         let range = NSRange(location: 0, length: 1)
@@ -179,7 +179,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertTrue(helloWorld.usingBold(in: range).isBold(in: range))
         XCTAssertTrue(helloWorld.usingBold().isBold())
     }
-    
+
     func testUseBold() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.systemFont(ofSize: 8.0)])
         let range = NSRange(location: 0, length: 1)
@@ -189,7 +189,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         helloWorld.useBold()
         XCTAssertTrue(helloWorld.isBold())
     }
-    
+
     func testItalicized() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.systemFont(ofSize: 8.0)])
         let range = NSRange(location: 0, length: 1)
@@ -197,7 +197,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertTrue(helloWorld.italicized(in: range).isItalic(in: range))
         XCTAssertTrue(helloWorld.italicized().isItalic())
     }
-    
+
     func testItalicize() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.systemFont(ofSize: 8.0)])
         let range = NSRange(location: 0, length: 1)
@@ -207,7 +207,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         helloWorld.italicize()
         XCTAssertTrue(helloWorld.isItalic())
     }
-    
+
     func testRemovingBold() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.boldSystemFont(ofSize: 8.0)])
         let range = NSRange(location: 0, length: 1)
@@ -216,7 +216,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertTrue(helloWorld.removingBold(in: range).isBold(in: anotherRange))
         XCTAssertFalse(helloWorld.removingBold().isBold())
     }
-    
+
     func testRemoveBold() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.boldSystemFont(ofSize: 8.0)])
         let range = NSRange(location: 0, length: 1)
@@ -227,7 +227,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         helloWorld.removeBold()
         XCTAssertFalse(helloWorld.isBold())
     }
-    
+
     func testRemovingItalic() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.italicSystemFont(ofSize: 8.0)])
         let range = NSRange(location: 0, length: 1)
@@ -236,7 +236,7 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         XCTAssertTrue(helloWorld.removingItalic(in: range).isItalic(in: anotherRange))
         XCTAssertFalse(helloWorld.removingItalic().isItalic())
     }
-    
+
     func testRemoveItalic() {
         let helloWorld = NSMutableAttributedString(string: "Hello world!", attributes: [.font: UIFont.italicSystemFont(ofSize: 8.0)])
         let range = NSRange(location: 0, length: 1)

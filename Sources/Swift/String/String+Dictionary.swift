@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// A dictionary from a JSON string if possible.
     ///
     ///     print("{\"hello\": \"world\"}".jsonDictionary)
@@ -22,7 +22,7 @@ public extension String {
         }
         return nil
     }
-    
+
     /// A dictionary or a empty dictionary from a JSON string.
     ///
     ///     print("{\"hello\": \"world\"}".dictionaryValue)
@@ -30,7 +30,7 @@ public extension String {
     var jsonDictionaryValue: [String: Any] {
         return jsonDictionary ?? [String: Any]()
     }
-    
+
     /// A dictionary from a string if possible.
     ///
     ///     print("hello: world".stringDictionary)
@@ -49,7 +49,7 @@ public extension String {
         }
         return result
     }
-    
+
     /// A dictionary or a empty dictionary from a string.
     ///
     ///     print("hello: world".stringDictionaryValue)
@@ -57,5 +57,5 @@ public extension String {
     var stringDictionaryValue: [String: String] {
         return stringDictionary ?? [String: String]()
     }
-    
+
 }

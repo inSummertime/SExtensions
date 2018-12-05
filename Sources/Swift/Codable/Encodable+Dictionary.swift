@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Encodable {
-    
+
     /// Creates a dictionary from a object which confirms Encodable
     var dictionary: [String: Any]? {
         guard let data = try? JSONEncoder().encode(self) else { return nil }
@@ -17,5 +17,5 @@ public extension Encodable {
         let dictionary = jsonObject.flatMap { $0 as? [String: Any] }
         return dictionary
     }
-    
+
 }

@@ -10,9 +10,9 @@ import XCTest
 @testable import SExtensions
 
 final class CalendarGregorianTests: XCTestCase {
-    
+
     func testGregorian() {
         XCTAssertEqual(Calendar.gregorian.identifier, Calendar.Identifier.gregorian)
     }
-    
+
 }

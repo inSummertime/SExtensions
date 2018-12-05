@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class StringBoolTests: XCTestCase {
-    
+
     func testTrue() {
         XCTAssertTrue("TRUE".bool!)
         XCTAssertTrue("true".bool!)
@@ -18,22 +18,22 @@ final class StringBoolTests: XCTestCase {
         XCTAssertTrue("1".bool!)
         XCTAssertTrue("One".bool!)
     }
-    
+
     func testFalse() {
         XCTAssertFalse("False".bool!)
         XCTAssertFalse("no".bool!)
         XCTAssertFalse("0".bool!)
         XCTAssertFalse("zero".bool!)
     }
-    
+
     func textNil() {
         XCTAssertNil("hi".bool)
     }
-    
+
     func textBoolValue() {
         XCTAssertFalse("hi".boolValue)
         XCTAssertTrue("0".boolValue)
         XCTAssertFalse("".boolValue)
     }
-    
+
 }

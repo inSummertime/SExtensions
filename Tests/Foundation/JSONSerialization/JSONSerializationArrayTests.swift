@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class JSONSerializationArrayTests: XCTestCase {
-    
+
     func testArrayFromJSONFile() {
         do {
             let array = try JSONSerialization.arrayFromJSONFile(filename: "Array", callerClass: JSONSerializationArrayTests.self)
@@ -21,7 +21,7 @@ final class JSONSerializationArrayTests: XCTestCase {
             XCTFail()
         }
     }
-    
+
     func testArrayFromJSONString() {
         let string = "[{\"id\":\"1\"},{\"title\":\"title\"}]"
         do {
@@ -32,5 +32,5 @@ final class JSONSerializationArrayTests: XCTestCase {
             XCTFail()
         }
     }
-    
+
 }

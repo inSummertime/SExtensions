@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// A whitespace condensed string.
     ///
     ///     print("Hello  world!".whitespaceCondensed)
@@ -15,7 +15,7 @@ public extension String {
     var whitespaceCondensed: String {
         return condensingString(" ")
     }
-    
+
     /// A newline condensed string.
     ///
     ///     print("Hello world!\n\n".newlineCondensed)
@@ -23,7 +23,7 @@ public extension String {
     var newlineCondensed: String {
         return condensingString("\n")
     }
-    
+
     /// A underscore condensed string.
     ///
     ///     print("Hello__world!".underscoreCondensed)
@@ -31,7 +31,7 @@ public extension String {
     var underscoreCondensed: String {
         return condensingString("_")
     }
-    
+
     /// Returns a string with a letter condensed
     ///
     ///     print("Hello worrrrld!".condensingString("r"))
@@ -51,5 +51,5 @@ public extension String {
             return joined
         }
     }
-    
+
 }

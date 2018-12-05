@@ -7,7 +7,7 @@
 //
 
 public extension Double {
-    
+
     /// Returns a rounded double with a specific decimal.
     ///
     ///     print(3.1415926.round(to: 2))
@@ -22,5 +22,5 @@ public extension Double {
         let divisor = pow(10.0, Double(places))
         return (self * divisor).rounded() / divisor
     }
-    
+
 }

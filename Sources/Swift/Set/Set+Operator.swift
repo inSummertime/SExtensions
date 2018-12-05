@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Set {
-    
+
     /// Returns a union set of two sets.
     ///
     ///     print(["hello", "world"] | ["!"])
@@ -22,7 +22,7 @@ public extension Set {
     static func | (lhs: Set, rhs: Set) -> Set {
         return lhs.union(rhs)
     }
-    
+
     /// Subtracts the second value from the first if the elements are equal.
     ///
     ///     print(["hello", "world"] - ["world"])
@@ -35,7 +35,7 @@ public extension Set {
     static func - (lhs: Set, rhs: Set) -> Set {
         return lhs.subtracting(rhs)
     }
-    
+
     /// Subtracts the second set from the first if the elements are equal and stores the
     /// difference in the left-hand-side variable.
     ///
@@ -50,7 +50,7 @@ public extension Set {
     static func -= (lhs: inout Set, rhs: Set) {
         lhs = lhs.subtracting(rhs)
     }
-    
+
     /// Returns a new set with the elements that are common to both ywo sets.
     ///
     ///     print(["hello"] & ["hello", "world"])
@@ -63,5 +63,5 @@ public extension Set {
     static func & (lhs: Set, rhs: Set) -> Set {
         return lhs.intersection(rhs)
     }
-    
+
 }

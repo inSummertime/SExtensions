@@ -9,7 +9,7 @@
 import Foundation
 
 public extension URL {
-    
+
     /// A Dictionary of query parameters
     ///
     ///     let url = URL(string: "https://www.google.com/search?q=iPhone&source=lnt&oq=")
@@ -38,7 +38,7 @@ public extension URL {
             self = urlComponents?.url ?? self
         }
     }
-    
+
     /// Returns the query parameter value for a key.
     ///
     ///     let url = URL(string: "https://www.google.com/search?q=iPhone&source=lnt&oq=")
@@ -50,7 +50,7 @@ public extension URL {
     func queryParameterValue(for key: String) -> String? {
         return queryParameters?[key]
     }
-    
+
     /// Updates the value for the given key, or adds a new key-value
     /// pair if the key does not exist.
     ///
@@ -67,7 +67,7 @@ public extension URL {
         parameters[key] = value
         queryParameters = parameters
     }
-    
+
     /// Removes the given key and its associated query parameter
     /// value.
     ///
@@ -83,5 +83,5 @@ public extension URL {
         parameters.removeValue(forKey: key)
         queryParameters = parameters
     }
-    
+
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 public extension NSAttributedString {
-    
+
     /// Returns the concatenation of lhs and rhs
     ///
     ///     let hello = NSAttributedString(string: "Hello")
@@ -27,7 +27,7 @@ public extension NSAttributedString {
         result.append(rhs)
         return NSAttributedString(attributedString: result)
     }
-    
+
     /// Adds two NSAttributedStrings and stores the result in the left-hand-side.
     ///
     ///     var hello = NSAttributedString(string: "Hello")
@@ -44,5 +44,5 @@ public extension NSAttributedString {
         result.append(rhs)
         lhs = result
     }
-    
+
 }

@@ -10,12 +10,12 @@ import XCTest
 @testable import SExtensions
 
 final class IntBoolTests: XCTestCase {
-    
+
     func testBool() {
         XCTAssertTrue(1.bool)
         XCTAssertFalse(0.bool)
         XCTAssertFalse((-1).bool)
         XCTAssertFalse(2.bool)
     }
-    
+
 }

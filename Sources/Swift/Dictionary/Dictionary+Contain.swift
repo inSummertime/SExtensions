@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Dictionary where Value: Equatable {
-    
+
     /// Returns a Boolean value that indicates whether this dictionary contains
     /// the given value.
     ///
@@ -18,7 +18,7 @@ public extension Dictionary where Value: Equatable {
     func contains(value: Value) -> Bool {
         return contains { $0.1 == value }
     }
-    
+
     /// Returns a Boolean value that indicates whether this dictionary contains
     /// the given dictionary.
     ///

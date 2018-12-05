@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Date {
-    
+
     /// whether is 24-hour time
     var is24HourTime: Bool {
         let formatter = DateFormatter()
@@ -19,5 +19,5 @@ public extension Date {
         let pmRange = dateString.range(of: formatter.pmSymbol)
         return amRange == nil && pmRange == nil
     }
-    
+
 }

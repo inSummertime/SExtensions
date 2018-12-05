@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class DoublePercentageTests: XCTestCase {
-    
+
     func testPercentage() {
         XCTAssertEqual(2.0.percentage()!, "200%")
         XCTAssertEqual(1.0.percentage()!, "100%")
@@ -23,5 +23,5 @@ final class DoublePercentageTests: XCTestCase {
         XCTAssertEqual((-0.99999).percentage(maximumFractionDigits: 4)!, "-99.999%")
         XCTAssertEqual((-1.0).percentage(maximumFractionDigits: 4)!, "-100%")
     }
-    
+
 }

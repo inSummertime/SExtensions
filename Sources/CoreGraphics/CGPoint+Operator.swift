@@ -9,7 +9,7 @@
 import CoreGraphics
 
 public extension CGPoint {
-    
+
     /// Adds two CGPoint.
     ///
     ///     let point = CGPoint(x: 1.0, y: 2.0)
@@ -25,7 +25,7 @@ public extension CGPoint {
     static func + (lhs: CGPoint, rhs: CGPoint) -> CGPoint {
         return CGPoint(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
     }
-    
+
     /// Adds two CGPoint and stores the result in the left-hand-side
     /// variable.
     ///
@@ -40,7 +40,7 @@ public extension CGPoint {
     static func += (lhs: inout CGPoint, rhs: CGPoint) {
         lhs = CGPoint(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
     }
-    
+
     /// Subtracts the second value from the first.
     ///
     ///     let point = CGPoint(x: 1.0, y: 2.0)
@@ -56,7 +56,7 @@ public extension CGPoint {
     static func - (lhs: CGPoint, rhs: CGPoint) -> CGPoint {
         return CGPoint(x: lhs.x - rhs.x, y: lhs.y - rhs.y)
     }
-    
+
     /// Subtracts the second CGPoint from the first and stores the
     /// result in the left-hand-side variable.
     ///
@@ -71,5 +71,5 @@ public extension CGPoint {
     static func -= (lhs: inout CGPoint, rhs: CGPoint) {
         lhs = CGPoint(x: lhs.x - rhs.x, y: lhs.y - rhs.y)
     }
-    
+
 }

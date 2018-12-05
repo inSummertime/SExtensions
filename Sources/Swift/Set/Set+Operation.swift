@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Set {
-    
+
     /// Returns a new set with the elements that are different from the given
     /// sets.
     ///
@@ -32,7 +32,7 @@ public extension Set {
         }
         return result
     }
-    
+
     /// Returns a Boolean value that indicates whether this set contains
     /// the given set.
     ///
@@ -44,7 +44,7 @@ public extension Set {
     func contains(_ other: Set) -> Bool {
         return other.isSubset(of: self)
     }
-    
+
     /// Returns a set with the elements to add after comparing the other set.
     ///
     ///     struct Data: Hashable {
@@ -76,7 +76,7 @@ public extension Set {
         }
         return result
     }
-    
+
     /// Returns a set with the elements to remove after comparing the other set.
     ///
     ///     struct Data: Hashable {
@@ -111,7 +111,7 @@ public extension Set {
         }
         return result
     }
-    
+
     /// Returns a set with the elements to update after comparing the other set.
     ///
     ///     struct Data: Hashable {
@@ -143,5 +143,5 @@ public extension Set {
         }
         return result
     }
-    
+
 }

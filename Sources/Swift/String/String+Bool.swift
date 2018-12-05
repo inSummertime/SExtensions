@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// Optional bool value
     ///
     ///     print("yes".bool)
@@ -21,10 +21,10 @@ public extension String {
             return nil
         }
     }
-    
+
     /// bool value
     var boolValue: Bool {
         return bool ?? false
     }
-    
+
 }

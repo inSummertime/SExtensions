@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class TimeZoneIdentifierTests: XCTestCase {
-    
+
     func testIdentifier() {
         XCTAssertEqual(TimeZone.Identifier.America.LosAngeles.rawValue, "America/Los_Angeles")
         XCTAssertNotNil(TimeZone(identifier: TimeZone.Identifier.America.LosAngeles.rawValue))
@@ -20,5 +20,5 @@ final class TimeZoneIdentifierTests: XCTestCase {
         XCTAssertNotNil(TimeZone(identifier: TimeZone.Identifier.GMT.rawValue))
         print(TimeZone.UTC.identifier)
     }
-    
+
 }

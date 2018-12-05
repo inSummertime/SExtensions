@@ -9,7 +9,7 @@
 import Foundation
 
 public extension String {
-    
+
     /// Checks whether it is a phone number.
     ///
     ///     print("800–692–7753".isPhoneNumber)
@@ -17,7 +17,7 @@ public extension String {
     var isPhoneNumber: Bool {
         do {
             let detector = try NSDataDetector(types: NSTextCheckingResult.CheckingType.phoneNumber.rawValue)
-            let matches = detector.matches(in: self, options: [], range: NSMakeRange(0, count))
+            let matches = detector.matches(in: self, options: [], range: NSRange(location: 0, length: count))
             if let first = matches.first {
                 return first.resultType == .phoneNumber && first.range.location == 0 && first.range.length == count
             } else {
@@ -27,7 +27,7 @@ public extension String {
             return false
         }
     }
-    
+
     /// Checks whether it is an email.
     ///
     ///     print("123@a.com".isEmail)
@@ -37,5 +37,5 @@ public extension String {
         let predicate = NSPredicate(format: "SELF MATCHES %@", regularExpression)
         return predicate.evaluate(with: self)
     }
-    
+
 }

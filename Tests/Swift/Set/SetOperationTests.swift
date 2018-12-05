@@ -34,7 +34,7 @@ final class SetOperationTests: XCTestCase {
         XCTAssertFalse(empty.contains(["world"]))
         XCTAssertTrue(empty.contains([]))
     }
-    
+
     func testElementsToAdd() {
         struct Data: Hashable {
             let id: Int
@@ -51,7 +51,7 @@ final class SetOperationTests: XCTestCase {
         }
         XCTAssertEqual(anotherResult, [Data(id: 2, title: "!")])
     }
-    
+
     func testElementsToRemove() {
         struct Data: Hashable {
             let id: Int
@@ -68,7 +68,7 @@ final class SetOperationTests: XCTestCase {
         }
         XCTAssertEqual(anotherResult, [Data(id: 1, title: "world")])
     }
-    
+
     func testElementsToUpdate() {
         struct Data: Hashable {
             let id: Int

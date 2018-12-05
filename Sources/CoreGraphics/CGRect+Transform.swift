@@ -9,7 +9,7 @@
 import Foundation
 
 public extension CGRect {
-    
+
     /// Returns a new scaled CGRect from the center ancer point.
     ///
     ///     let rect = CGRect(x: 0, y: 0, width: 1.0, height: 2.0)
@@ -29,7 +29,7 @@ public extension CGRect {
         let newY = (height - newHeight) / 2.0
         return CGRect(x: newX, y: newY, width: newWidth, height: newHeight)
     }
-    
+
     /// Returns a new scaled CGRect from the top left ancer point.
     ///
     ///     let rect = CGRect(x: 0, y: 0, width: 1.0, height: 2.0)
@@ -46,7 +46,7 @@ public extension CGRect {
         let newHeight = height * scaleY
         return CGRect(x: origin.x, y: origin.y, width: newWidth, height: newHeight)
     }
-    
+
     /// Returns a new scaled CGRect from the top right ancer point.
     ///
     ///     let rect = CGRect(x: 0, y: 0, width: 1.0, height: 2.0)
@@ -65,7 +65,7 @@ public extension CGRect {
         let newX = origin.x + (1 - scaleX) * width
         return CGRect(x: newX, y: origin.y, width: newWidth, height: newHeight)
     }
-    
+
     /// Returns a new scaled CGRect from the bottom left ancer point.
     ///
     ///     let rect = CGRect(x: 0, y: 0, width: 1.0, height: 2.0)
@@ -84,7 +84,7 @@ public extension CGRect {
         let newY = origin.y + (1 - scaleY) * height
         return CGRect(x: origin.x, y: newY, width: newWidth, height: newHeight)
     }
-    
+
     /// Returns a new scaled CGRect from the bottom right ancer point.
     ///
     ///     let rect = CGRect(x: 0, y: 0, width: 1.0, height: 2.0)
@@ -104,7 +104,7 @@ public extension CGRect {
         let newY = origin.y + (1 - scaleY) * height
         return CGRect(x: newX, y: newY, width: newWidth, height: newHeight)
     }
-    
+
     /// Returns a new translated CGRect.
     ///
     ///     let rect = CGRect(x: 0, y: 0, width: 1.0, height: 2.0)
@@ -119,5 +119,5 @@ public extension CGRect {
     func transformTranslate(tx: CGFloat, ty: CGFloat) -> CGRect {
         return CGRect(x: origin.x + tx, y: origin.y + ty, width: width, height: height)
     }
-    
+
 }

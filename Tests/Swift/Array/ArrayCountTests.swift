@@ -27,14 +27,14 @@ final class ArrayCountTests: XCTestCase {
         XCTAssertEqual([].countDictionary, [:])
         XCTAssertEqual(["hello", "world"].countDictionary, ["hello": 1, "world": 1])
     }
-    
+
     func testMostCountElement() {
         XCTAssertNil([String]().mostCountElement)
         XCTAssertNil([0, 1, 2].mostCountElement)
         XCTAssertEqual([0, 0, 1].mostCountElement, 0)
         XCTAssertEqual(["hello", "world", "!", "!", ""].mostCountElement, "!")
     }
-    
+
     func testMajorityElement() {
         XCTAssertNil([String]().majorityElement)
         XCTAssertNil([0, 1, 2].majorityElement)

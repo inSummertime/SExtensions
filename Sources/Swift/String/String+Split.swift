@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// Splits a string by a given lenght.
     ///
     ///     print("Hello World!".spliting(by: 6) == ["Hello ", "World!"])
@@ -34,7 +34,7 @@ public extension String {
         }
         return result
     }
-    
+
     /// Splits a string by captital letters or punctuation.
     ///
     ///     print("Hello World!".splitingByCapitalLettersOrPunctuation() == ["Hello", "World", "!"])
@@ -54,5 +54,5 @@ public extension String {
         let trimmedString = string.trimmingCharacters(in: .whitespacesAndNewlines)
         return trimmedString.components(separatedBy: " ")
     }
-    
+
 }

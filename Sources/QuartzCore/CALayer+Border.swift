@@ -9,7 +9,7 @@
 import QuartzCore
 
 public extension CALayer {
-    
+
     /// Add borders.
     ///
     ///     let view = UIView(frame: CGRect(x: 0, y: 0, width: 7.0, height: 7.0))
@@ -25,7 +25,7 @@ public extension CALayer {
         borderColor = color.cgColor
         borderWidth = width
     }
-    
+
     /// Remove all borders.
     ///
     ///     let view = UIView(frame: CGRect(x: 0, y: 0, width: 7.0, height: 7.0))
@@ -39,7 +39,7 @@ public extension CALayer {
         borderColor = UIColor.clear.cgColor
         borderWidth = 0
     }
-    
+
     /// Returns a CALayer that is added as a top border.
     ///
     ///     let view = UIView(frame: CGRect(x: 0, y: 0, width: 7.0, height: 7.0))
@@ -64,7 +64,7 @@ public extension CALayer {
         addSublayer(border)
         return border
     }
-    
+
     /// Returns a CALayer that is added as a right border.
     ///
     ///     let view = UIView(frame: CGRect(x: 0, y: 0, width: 7.0, height: 7.0))
@@ -89,7 +89,7 @@ public extension CALayer {
         addSublayer(border)
         return border
     }
-    
+
     /// Returns a CALayer that is added as a bottom border.
     ///
     ///     let view = UIView(frame: CGRect(x: 0, y: 0, width: 7.0, height: 7.0))
@@ -114,7 +114,7 @@ public extension CALayer {
         addSublayer(border)
         return border
     }
-    
+
     /// Returns a CALayer that is added as a left border.
     ///
     ///     let view = UIView(frame: CGRect(x: 0, y: 0, width: 7.0, height: 7.0))
@@ -139,5 +139,5 @@ public extension CALayer {
         addSublayer(border)
         return border
     }
-    
+
 }

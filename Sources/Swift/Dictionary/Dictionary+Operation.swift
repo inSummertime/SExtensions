@@ -7,7 +7,7 @@
 //
 
 extension Dictionary {
-    
+
     /// Returns a union dictionary of this dictionary and the given
     /// dictionaries.
     ///
@@ -26,11 +26,11 @@ extension Dictionary {
         }
         return result
     }
-    
+
 }
 
 public extension Dictionary where Value: Equatable {
-    
+
     /// Returns a union dictionary of this dictionary and the given dictionaries
     /// having the same key but different value removed.
     ///
@@ -55,7 +55,7 @@ public extension Dictionary where Value: Equatable {
         }
         return result
     }
-    
+
     /// Returns a new dictionary with the elements that are common to both this
     /// dictionary and the given dictionaries.
     ///
@@ -75,7 +75,7 @@ public extension Dictionary where Value: Equatable {
         }
         return result
     }
-    
+
     /// Returns a new dictionary with the elements that are different from the
     /// given dictionaries.
     ///
@@ -97,7 +97,7 @@ public extension Dictionary where Value: Equatable {
         }
         return result
     }
-    
+
     /// Returns a new dictionary containing the elements of this dictionary that
     /// do not occur in the given dictionaries.
     ///
@@ -117,7 +117,7 @@ public extension Dictionary where Value: Equatable {
         }
         return result
     }
-    
+
     /// Removes the elements of this dictionary that do not occur in the given
     /// dictionaries.
     ///
@@ -136,7 +136,7 @@ public extension Dictionary where Value: Equatable {
             }
         }
     }
-    
+
     /// Returns a Boolean value that indicates whether this dictionary is a
     /// subdictionary of the given dictionary.
     ///
@@ -160,7 +160,7 @@ public extension Dictionary where Value: Equatable {
         }
         return true
     }
-    
+
     /// Returns a Boolean value that indicates whether the dictionary is a
     /// strict subdictionary of the given dictionary.
     ///
@@ -175,5 +175,5 @@ public extension Dictionary where Value: Equatable {
         }
         return isSubdictionary(of: other)
     }
-    
+
 }

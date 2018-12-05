@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class UserDefaultsDateTests: XCTestCase {
-    
+
     func testDate() {
         let key = "HelloWorld"
         let userDefaults = UserDefaults(suiteName: "HelloWorld")
@@ -19,5 +19,5 @@ final class UserDefaultsDateTests: XCTestCase {
         XCTAssertEqual(userDefaults?.date(forKey: key)!, Date(timeIntervalSinceReferenceDate: 0))
         userDefaults?.removeObject(forKey: key)
     }
-    
+
 }

@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class StringCaseTests: XCTestCase {
-    
+
     func testIsUppercase() {
         XCTAssertFalse("Hello".isUppercase)
         XCTAssertTrue("HELLO".isUppercase)
@@ -20,7 +20,7 @@ final class StringCaseTests: XCTestCase {
         XCTAssertTrue(" $1 ".isUppercase)
         XCTAssertTrue("".isUppercase)
     }
-    
+
     func testIsUppercaseAtIndex() {
         let string = "Hello World!"
         XCTAssertTrue(string.isUppercase(at: 0)!)
@@ -30,7 +30,7 @@ final class StringCaseTests: XCTestCase {
         let empty = ""
         XCTAssertNil(empty.isUppercase(at: 0))
     }
-    
+
     func testIsLowercase() {
         XCTAssertFalse("Hello".isLowercase)
         XCTAssertFalse("HELLO".isLowercase)
@@ -40,7 +40,7 @@ final class StringCaseTests: XCTestCase {
         XCTAssertTrue(" $1 ".isLowercase)
         XCTAssertTrue("".isLowercase)
     }
-    
+
     func testIsLowercaseAtIndex() {
         let string = "Hello World!"
         XCTAssertFalse(string.isLowercase(at: 0)!)
@@ -51,7 +51,7 @@ final class StringCaseTests: XCTestCase {
         let empty = ""
         XCTAssertNil(empty.isLowercase(at: 0))
     }
-    
+
     func testIsCapitalized() {
         XCTAssertTrue("Hello".isCapitalized)
         XCTAssertFalse("HELLO".isCapitalized)
@@ -63,7 +63,7 @@ final class StringCaseTests: XCTestCase {
         XCTAssertTrue(" $1 ".isCapitalized)
         XCTAssertTrue("".isCapitalized)
     }
-    
+
     func testChangingToSentenseCase() {
         XCTAssertEqual(" h ".changingToSentenseCase(), "H")
         XCTAssertEqual("hello".changingToSentenseCase(), "Hello")
@@ -76,37 +76,37 @@ final class StringCaseTests: XCTestCase {
         XCTAssertEqual("".changingToSentenseCase(), "")
         XCTAssertEqual("Hello world".changingToSentenseCase(), "Hello world")
     }
-    
+
     func testChangeToSentenseCase() {
         var h = " h "
         h.changeToSentenseCase()
         XCTAssertEqual(h, "H")
-        
+
         var hello = "hello"
         hello.changeToSentenseCase()
         XCTAssertEqual(hello, "Hello")
-        
+
         var helloWorld = "hello world!"
         helloWorld.changeToSentenseCase()
         XCTAssertEqual(helloWorld, "Hello world!")
-        
+
         var one = "1"
         one.changeToSentenseCase()
         XCTAssertEqual(one, "1")
-        
+
         var whitespace = " "
         whitespace.changeToSentenseCase()
         XCTAssertEqual(whitespace, "")
-        
+
         var dollar = "$1"
         dollar.changeToSentenseCase()
         XCTAssertEqual(dollar, "$1")
-        
+
         var empty = ""
         empty.changeToSentenseCase()
         XCTAssertEqual(empty, "")
     }
-    
+
     func testChangingToCamelCase() {
         XCTAssertEqual(" h ".changingToCamelCase(), "h")
         XCTAssertEqual("hello".changingToCamelCase(), "hello")
@@ -117,45 +117,45 @@ final class StringCaseTests: XCTestCase {
         XCTAssertEqual("".changingToCamelCase(), "")
         XCTAssertEqual("helloWorld!".changingToCamelCase(), "helloWorld!")
     }
-    
+
     func testChangeToCamelCase() {
         var h = " h "
         h.changeToCamelCase()
         XCTAssertEqual(h, "h")
-        
+
         var hi = "hello"
         hi.changeToCamelCase()
         XCTAssertEqual(hi, "hello")
-        
+
         var helloWold = "hello world!"
         helloWold.changeToCamelCase()
         XCTAssertEqual(helloWold, "helloWorld!")
-        
+
         var newlineHelloWorld = "\n hello \nworld! \n"
         newlineHelloWorld.changeToCamelCase()
         XCTAssertEqual(newlineHelloWorld, "helloWorld!")
-        
+
         var one = "1"
         one.changeToCamelCase()
         XCTAssertEqual(one, "1")
-        
+
         var whitespace = " "
         whitespace.changeToCamelCase()
         XCTAssertEqual(whitespace, "")
-        
+
         var dollar = "$1"
         dollar.changeToCamelCase()
         XCTAssertEqual(dollar, "$1")
-        
+
         var empty = ""
         empty.changeToCamelCase()
         XCTAssertEqual(empty, "")
-        
+
         var camelCasedHelloWorld = "helloWorld!"
         camelCasedHelloWorld.changeToCamelCase()
         XCTAssertEqual(camelCasedHelloWorld, "helloWorld!")
     }
-    
+
     func testChangingToSnakeCase() {
         XCTAssertEqual(" h ".changingToSnakeCase(), "h")
         XCTAssertEqual("hello".changingToSnakeCase(), "hello")
@@ -166,47 +166,47 @@ final class StringCaseTests: XCTestCase {
         XCTAssertEqual("".changingToSnakeCase(), "")
         XCTAssertEqual("hello_world!".changingToSnakeCase(), "hello_world!")
     }
-    
+
     func testChangeToSnakeCase() {
         var h = " h "
         h.changeToSnakeCase()
         XCTAssertEqual(h, "h")
-        
+
         var hello = "hello"
         hello.changeToSnakeCase()
         XCTAssertEqual(hello, "hello")
-        
+
         var helloWorld = "hello world!"
         helloWorld.changeToSnakeCase()
         XCTAssertEqual(helloWorld, "hello_world!")
-        
+
         var newlineHelloWorld = "\n hello \nworld! \n"
         newlineHelloWorld.changeToSnakeCase()
         XCTAssertEqual(newlineHelloWorld, "hello_world!")
-        
+
         var one = "1"
         one.changeToSnakeCase()
         XCTAssertEqual(one, "1")
-        
+
         var whitespace = " "
         whitespace.changeToSnakeCase()
         XCTAssertEqual(whitespace, "")
-        
+
         var dollar = "$1"
         dollar.changeToSnakeCase()
         XCTAssertEqual(dollar, "$1")
-        
+
         var empty = ""
         empty.changeToSnakeCase()
         XCTAssertEqual(empty, "")
-        
+
         var snakeCasedHelloWorld = "hello_world!"
         snakeCasedHelloWorld.changeToSnakeCase()
         XCTAssertEqual(snakeCasedHelloWorld, "hello_world!")
-        
+
         var snakeCasedHelloWorldWithUnderscores = "_hello_world!_"
         snakeCasedHelloWorldWithUnderscores.changeToSnakeCase()
         XCTAssertEqual(snakeCasedHelloWorldWithUnderscores, "hello_world!")
     }
-    
+
 }

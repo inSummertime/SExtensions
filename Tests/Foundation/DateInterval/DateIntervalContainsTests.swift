@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class DateIntervalContainsTests: XCTestCase {
-    
+
     func testContains() {
         let dateInterval = DateInterval(start: Date(timeIntervalSinceReferenceDate: 0), duration: 2.0)
         XCTAssertTrue(dateInterval.contains(dateInterval))
@@ -18,5 +18,5 @@ final class DateIntervalContainsTests: XCTestCase {
         XCTAssertTrue(dateInterval.contains(DateInterval(start: Date(timeIntervalSinceReferenceDate: 0).addingTimeInterval(1.0), duration: 1.0)))
         XCTAssertFalse(dateInterval.contains(DateInterval(start: Date(timeIntervalSinceReferenceDate: 0).addingTimeInterval(2.0), duration: 1.0)))
     }
-    
+
 }

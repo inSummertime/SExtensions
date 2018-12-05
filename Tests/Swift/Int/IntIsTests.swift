@@ -10,18 +10,18 @@ import XCTest
 @testable import SExtensions
 
 final class IntIsTests: XCTestCase {
-    
+
     func testIsEven() {
         XCTAssertTrue(0.isEven)
         XCTAssertTrue(2.isEven)
         XCTAssertTrue(4.isEven)
     }
-    
+
     func testIsOdd() {
         XCTAssertTrue(1.isOdd)
         XCTAssertTrue(3.isOdd)
     }
-    
+
     func testIsPrime() {
         XCTAssertTrue(1.isPrime)
         XCTAssertTrue(2.isPrime)
@@ -36,5 +36,5 @@ final class IntIsTests: XCTestCase {
         XCTAssertTrue(11.isPrime)
         XCTAssertFalse(12.isPrime)
     }
-    
+
 }

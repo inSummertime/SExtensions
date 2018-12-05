@@ -7,7 +7,7 @@
 //
 
 public extension Dictionary {
-    
+
     /// Generates JSON data if possible.
     ///
     ///     print(["hello": "world"].jsonData() == "{\"hello\":\"world\"}".data(using: .utf8))
@@ -21,7 +21,7 @@ public extension Dictionary {
         }
         return try? JSONSerialization.data(withJSONObject: self, options: options)
     }
-    
+
     /// Generates a string if possible.
     ///
     ///     print(["hello": "world"].jsonString())
@@ -35,5 +35,5 @@ public extension Dictionary {
         }
         return String(data: jsonData, encoding: .utf8)
     }
-    
+
 }

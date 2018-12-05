@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// Returns height based on a given width and font.
     ///
     ///     print("Hello world!".height(withConstrainedWidth: .greatestFiniteMagnitude, font: UIFont.systemFont(ofSize: 16.0)) == font.lineHeight)
@@ -23,5 +23,5 @@ public extension String {
         let rect = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
         return rect.height
     }
-    
+
 }

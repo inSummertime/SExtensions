@@ -7,7 +7,7 @@
 //
 
 public extension Dictionary where Key == String {
-    
+
     /// Accesses the String value associated with the given key for reading and
     /// writing.
     ///
@@ -24,7 +24,7 @@ public extension Dictionary where Key == String {
             self[key] = newValue as? Value
         }
     }
-    
+
     /// Accesses the String value associated with the given key for reading and
     /// writing.
     ///
@@ -41,7 +41,7 @@ public extension Dictionary where Key == String {
             self[key] = newValue as? Value
         }
     }
-    
+
     /// Accesses the Int value associated with the given key for reading and
     /// writing.
     ///
@@ -58,7 +58,7 @@ public extension Dictionary where Key == String {
             self[key] = newValue as? Value
         }
     }
-    
+
     /// Accesses the Int value associated with the given key for reading and
     /// writing.
     ///
@@ -75,7 +75,7 @@ public extension Dictionary where Key == String {
             self[key] = newValue as? Value
         }
     }
-    
+
     /// Accesses the Double value associated with the given key for reading and
     /// writing.
     ///
@@ -92,7 +92,7 @@ public extension Dictionary where Key == String {
             self[key] = newValue as? Value
         }
     }
-    
+
     /// Accesses the Double value associated with the given key for reading and
     /// writing.
     ///
@@ -109,7 +109,7 @@ public extension Dictionary where Key == String {
             self[key] = newValue as? Value
         }
     }
-    
+
     /// Accesses the Array value associated with the given key for reading and
     /// writing.
     ///
@@ -126,7 +126,7 @@ public extension Dictionary where Key == String {
             self[key] = newValue as? Value
         }
     }
-    
+
     /// Accesses the Array value associated with the given key for reading and
     /// writing.
     ///
@@ -143,7 +143,7 @@ public extension Dictionary where Key == String {
             self[key] = newValue as? Value
         }
     }
-    
+
     /// Accesses the Dictionary value associated with the given key for reading
     /// and writing.
     ///
@@ -160,7 +160,7 @@ public extension Dictionary where Key == String {
             self[key] = newValue as? Value
         }
     }
-    
+
     /// Accesses the Dictionary value associated with the given key for reading
     /// and writing.
     ///
@@ -177,5 +177,5 @@ public extension Dictionary where Key == String {
             self[key] = newValue as? Value
         }
     }
-    
+
 }

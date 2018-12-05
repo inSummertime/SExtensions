@@ -10,10 +10,10 @@ import XCTest
 @testable import SExtensions
 
 final class BoolIntValueTests: XCTestCase {
-    
+
     func testInt() {
         XCTAssertEqual(true.intValue, 1)
         XCTAssertEqual(false.intValue, 0)
     }
-    
+
 }

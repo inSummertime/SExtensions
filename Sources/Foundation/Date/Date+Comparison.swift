@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Date {
-    
+
     /// Returns the earlist date in a date array.
     ///
     ///     let date = Date(timeIntervalSinceReferenceDate: 0)
@@ -28,7 +28,7 @@ public extension Date {
             $0 < $1
         })
     }
-    
+
     /// Returns the latest date in a date array.
     ///
     ///     let date = Date(timeIntervalSinceReferenceDate: 0)
@@ -47,5 +47,5 @@ public extension Date {
             $0 > $1
         })
     }
-    
+
 }

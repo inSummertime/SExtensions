@@ -10,17 +10,17 @@ import XCTest
 @testable import SExtensions
 
 final class ArraySafeSubscriptTests: XCTestCase {
-    
+
     func testSafeSubscript() {
         XCTAssertNil(["hello"][safe: 1])
         XCTAssertEqual(["hello", "world"][safe: 1]!, "world")
     }
-    
+
     func testSafeIndices() {
         XCTAssertEqual(["hello"][safeIndices: 0, 1], ["hello"])
         XCTAssertEqual(["hello"][safeIndices: 2, 3], [])
     }
-    
+
     func testSafeSubscriptCountableRange() {
         let array = ["hello", "world", "!"]
         XCTAssertNil(array[safe: -10..<(-1)])
@@ -37,7 +37,7 @@ final class ArraySafeSubscriptTests: XCTestCase {
         XCTAssertNil(emptyArray[safe: 1..<2])
         XCTAssertNil(emptyArray[safe: 1..<4])
     }
-    
+
     func testSafeSubscriptCountableClosedRange() {
         let array = ["hello", "world", "!"]
         XCTAssertNil(array[safe: -10...(-1)])
@@ -54,5 +54,5 @@ final class ArraySafeSubscriptTests: XCTestCase {
         XCTAssertNil(emptyArray[safe: 1...2])
         XCTAssertNil(emptyArray[safe: 1...4])
     }
-    
+
 }

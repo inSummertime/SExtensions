@@ -7,7 +7,7 @@
 //
 
 public extension Array where Element: Equatable {
-    
+
     /// Returns the count of a element.
     ///
     ///     print([0, 0, 1, 2].countOfElement(0))
@@ -16,13 +16,13 @@ public extension Array where Element: Equatable {
     /// - Parameter element: The element.
     /// - Returns: The count.
     func countOfElement(_ element: Element) -> Int {
-        return filter{ $0 == element }.count
+        return filter { $0 == element }.count
     }
-    
+
 }
 
 public extension Array where Element: Hashable {
-    
+
     /// A dictionary of all elements and their counts.
     ///
     ///     print([0, 0, 1, 2].countDictionary)
@@ -34,7 +34,7 @@ public extension Array where Element: Hashable {
         }
         return dictionary
     }
-    
+
     /// Returns the element which appears the most.
     ///
     ///     print(["hello", "world", "!", "!", ""].mostCountElement)
@@ -50,7 +50,7 @@ public extension Array where Element: Hashable {
         }
         return element
     }
-    
+
     /// Returns the element that appears more than half of the counts times.
     ///
     ///     print(["hello", "world", "!", "!", "!"].majorityElement)
@@ -60,5 +60,5 @@ public extension Array where Element: Hashable {
         if countOfElement(element) > count / 2 { return element }
         return nil
     }
-    
+
 }

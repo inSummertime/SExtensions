@@ -10,9 +10,9 @@ import XCTest
 @testable import SExtensions
 
 final class TimeZoneUTCTests: XCTestCase {
-    
+
     func testUTC() {
         XCTAssertEqual(TimeZone.UTC.identifier, "GMT")
     }
-    
+
 }

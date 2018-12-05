@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Character {
-    
+
     /// Returns true if it is uppercase
     ///
     ///     print(Character("A").isUppercase)
@@ -17,7 +17,7 @@ public extension Character {
     var isUppercase: Bool {
         return String(self).isUppercase
     }
-    
+
     /// Returns true if it is lowercase
     ///
     ///     print(Character("a").isLowercase)
@@ -25,5 +25,5 @@ public extension Character {
     var isLowercase: Bool {
         return String(self).isLowercase
     }
-    
+
 }

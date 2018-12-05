@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// A uppercase letter separated string.
     ///
     ///     print("helloWorld!".uppercaseLetterSeparated)
@@ -15,7 +15,7 @@ public extension String {
     var uppercaseLetterSeparated: String {
         return separating(by: .uppercaseLetters)
     }
-    
+
     /// A newline separated string.
     ///
     ///     print("hello\nworld!".newlineSeparated)
@@ -23,7 +23,7 @@ public extension String {
     var newlineSeparated: String {
         return separating(by: "\n")
     }
-    
+
     /// Returns a string separated by a text.
     ///
     ///     print("helloWorld".separate(by: "W"))
@@ -41,7 +41,7 @@ public extension String {
         }
         return separated
     }
-    
+
     /// Returns a string separated by a character set.
     ///
     ///     print("hello-world".separate(by: .punctuationCharacters))
@@ -59,5 +59,5 @@ public extension String {
         }
         return separated
     }
-    
+
 }

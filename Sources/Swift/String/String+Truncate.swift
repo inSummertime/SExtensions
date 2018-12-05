@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// Returns a string truncated to index with a trialing string.
     ///
     ///     print("Hello world!".truncated(toIndex: 6))
@@ -26,7 +26,7 @@ public extension String {
         }
         return (self[safeTo: index] ?? "") + (trailing ?? "")
     }
-    
+
     /// Returns a string truncated to length with a trailing string.
     ///
     ///     print("Hello world!".truncated(toLength: 6))
@@ -39,7 +39,7 @@ public extension String {
     func truncated(toLength length: Int, trailing: String? = "...") -> String {
         return truncated(toIndex: length - 1, trailing: trailing)
     }
-    
+
     /// Returns a string with a optional trailing with a constrained width,
     /// number of lines and font.
     ///
@@ -77,7 +77,7 @@ public extension String {
         }
         return (self[safeTo: i] ?? "") + tail
     }
-    
+
     /// Returns a string with a optional trailing with a constrained size and
     /// font.
     ///
@@ -109,5 +109,5 @@ public extension String {
         }
         return (self[safeTo: i] ?? "") + tail
     }
-    
+
 }

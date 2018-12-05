@@ -9,7 +9,7 @@
 import Foundation
 
 public extension URLRequest {
-    
+
     /// Creates and initializes a URLRequest with the given URL sting, cache
     /// policy and timeoutInterval. Returns `nil` if a `URL` cannot be formed
     /// with the string (for example, if the string contains characters that
@@ -30,7 +30,7 @@ public extension URLRequest {
         guard let url = URL(string: string) else { return nil }
         self.init(url: url, cachePolicy: cachePolicy, timeoutInterval: timeoutInterval)
     }
-    
+
     /// Creates and initializes a URLRequest with the given URL sting,
     /// relative to another URL, cache policy and timeoutInterval. Returns
     /// `nil` if a `URL` cannot be formed with the string (for example, if the
@@ -54,7 +54,7 @@ public extension URLRequest {
         guard let url = URL(string: string, relativeTo: url) else { return nil }
         self.init(url: url, cachePolicy: cachePolicy, timeoutInterval: timeoutInterval)
     }
-    
+
     /// Creates and initializes a URLRequest with the given URL sting,
     /// HTTPHeaderFields, cache policy and timeoutInterval. Returns `nil` if a
     /// `URL` cannot be formed with the string (for example, if the string
@@ -71,5 +71,5 @@ public extension URLRequest {
         self.init(string: string, cachePolicy: cachePolicy, timeoutInterval: timeoutInterval)
         self.setHTTPHeaderFields(httpHeaderFields)
     }
-    
+
 }

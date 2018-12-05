@@ -7,7 +7,7 @@
 //
 
 public extension Dictionary {
-    
+
     /// Returns a dictionary which does not contains the values for keys
     ///
     ///     print(["hello": "", "world": ""].removingValueForKeys("hello", "world").isEmpty)
@@ -22,11 +22,11 @@ public extension Dictionary {
         }
         return result
     }
-    
+
 }
 
 public extension Dictionary where Value: Equatable {
-    
+
     /// Returns a dictionary which does not contains the values.
     ///
     ///     print(["hello": "world", "!": ""].removingValues("world", "").isEmpty)
@@ -41,11 +41,11 @@ public extension Dictionary where Value: Equatable {
         }
         return result
     }
-    
+
 }
 
 public extension Dictionary where Key == String {
-    
+
     /// Returns a dictionary which does not contain empty elements.
     ///
     ///     print(["hello": ["hello": [""]], "world": ["", ["": ""]], "!": "", "Null": NSNull()].removingEmpty().isEmpty)
@@ -84,15 +84,15 @@ public extension Dictionary where Key == String {
             if value is NSNull {
                 result.removeValue(forKey: key)
             }
-            
+
         }
         return result
     }
-    
+
 }
 
 extension Dictionary where Value: OptionalProtocol {
-    
+
     /// Removes nils.
     ///
     /// - Returns: A dictionary.
@@ -105,5 +105,5 @@ extension Dictionary where Value: OptionalProtocol {
         }
         return result
     }
-    
+
 }

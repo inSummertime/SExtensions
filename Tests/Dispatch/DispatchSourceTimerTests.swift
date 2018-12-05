@@ -10,10 +10,10 @@ import XCTest
 @testable import SExtensions
 
 final class DispatchSourceTimerTests: XCTestCase {
-    
+
     var timerRepeating: DispatchSourceTimer?
     var timerNoRepeating: DispatchSourceTimer?
-    
+
     func testTimerRepeating() {
         var number = 1
         let expectation = self.expectation(description: "Number should be 2")
@@ -32,12 +32,12 @@ final class DispatchSourceTimerTests: XCTestCase {
             XCTAssertTrue(number == 4)
         }
     }
-    
+
     func testTimerNoRepeating() {
         var number = 1
         let expectation = self.expectation(description: "Number should be 2")
         let queue = DispatchQueue.main
-        timerNoRepeating = DispatchSource.timer(delay: 1.0, interval: 1.0, isRepeating: false, queue: queue) { timer in
+        timerNoRepeating = DispatchSource.timer(delay: 1.0, interval: 1.0, isRepeating: false, queue: queue) { _ in
             number += 1
             expectation.fulfill()
         }
@@ -49,5 +49,5 @@ final class DispatchSourceTimerTests: XCTestCase {
             self.timerNoRepeating?.cancel()
         }
     }
-    
+
 }

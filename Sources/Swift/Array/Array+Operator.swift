@@ -6,7 +6,7 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-public extension Array where Element : Equatable {
+public extension Array where Element: Equatable {
 
     /// Returns a union array of two arrays.
     ///
@@ -20,7 +20,7 @@ public extension Array where Element : Equatable {
     static func | (lhs: Array, rhs: Array) -> Array {
         return lhs.union(rhs)
     }
-    
+
     /// Subtracts the second value from the first if the elements are equal.
     ///
     ///     print(["hello", "world"] - ["world"])
@@ -33,7 +33,7 @@ public extension Array where Element : Equatable {
     static func - (lhs: Array, rhs: Array) -> Array {
         return lhs.subtracting(rhs)
     }
-    
+
     /// Subtracts the second array from the first if the elements are equal and
     /// stores the difference in the left-hand-side variable.
     ///
@@ -48,7 +48,7 @@ public extension Array where Element : Equatable {
     static func -= (lhs: inout Array, rhs: Array) {
         lhs = lhs.subtracting(rhs)
     }
-    
+
     /// Returns a new array with the elements that are common to both ywo
     /// arrays.
     ///

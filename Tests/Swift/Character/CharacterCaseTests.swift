@@ -17,7 +17,7 @@ final class CharacterCaseTests: XCTestCase {
         XCTAssertTrue(Character(" ").isUppercase)
         XCTAssertTrue(Character("!").isUppercase)
     }
-    
+
     func testIsLowercase() {
         XCTAssertFalse(Character("A").isLowercase)
         XCTAssertTrue(Character("b").isLowercase)

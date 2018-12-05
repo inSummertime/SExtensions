@@ -9,7 +9,7 @@
 import Foundation
 
 public extension UserDefaults {
-    
+
     /// Searches the receiver's search list for a default with
     /// the key 'defaultName' and converts the returned value to a
     /// Date and returns nil if the value is not a Date.
@@ -23,5 +23,5 @@ public extension UserDefaults {
     func date(forKey defaultName: String) -> Date? {
         return object(forKey: defaultName) as? Date
     }
-    
+
 }

@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// Returns a date from a string
     ///
     ///     let dateFromTime = "2018-06-02 00:00:00".toDate(dateFormat: "yyyy-MM-dd HH:mm:ss", timeZone: TimeZone(identifier: "UTC")!)
@@ -29,5 +29,5 @@ public extension String {
         dateFormatter.locale = locale
         return dateFormatter.date(from: self)
     }
-    
+
 }

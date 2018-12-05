@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class DoubleBoolTests: XCTestCase {
-    
+
     func testBool() {
         XCTAssertTrue(1.0.bool)
         XCTAssertFalse(0.bool)
@@ -18,5 +18,5 @@ final class DoubleBoolTests: XCTestCase {
         XCTAssertFalse(2.0.bool)
         XCTAssertFalse(Double.nan.bool)
     }
-    
+
 }

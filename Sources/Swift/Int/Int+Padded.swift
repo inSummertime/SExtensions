@@ -7,7 +7,7 @@
 //
 
 public extension Int {
-    
+
     /// Returns a padded string with the given field width.
     ///
     ///     print(1.padded(fieldWidth: 10) == "0000000001")
@@ -18,5 +18,5 @@ public extension Int {
     func padded(fieldWidth: Int) -> String {
         return String(format: "%0*d", fieldWidth, self)
     }
-    
+
 }

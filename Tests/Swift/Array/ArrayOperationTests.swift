@@ -10,13 +10,13 @@ import XCTest
 @testable import SExtensions
 
 final class ArrayOperationTests: XCTestCase {
-    
+
     func testUnion() {
         XCTAssertEqual(["hello", "world"].union(["!"], ["hello"]), ["hello", "world", "!"])
         let empty: [String] = []
         XCTAssertEqual(empty.union([], []), [])
     }
-    
+
     func testIntersection() {
         XCTAssertEqual(["hello", "world"].intersection(["hello"]), ["hello"])
         XCTAssertEqual(["hello", "world"].intersection(["hello"], ["world"]), [])
@@ -24,7 +24,7 @@ final class ArrayOperationTests: XCTestCase {
         let empty: [String] = []
         XCTAssertEqual(empty.intersection([], []), [])
     }
-    
+
     func testDifference() {
         XCTAssertEqual(["hello", "world"].difference(["hello"]), ["world"])
         XCTAssertEqual(["hello", "world"].difference(["hello"], ["world"]), [])
@@ -39,18 +39,18 @@ final class ArrayOperationTests: XCTestCase {
         XCTAssertEqual(["hello", "world", "!"].subtracting(["hello", "world"]), ["!"])
         XCTAssertEqual(["hello", "world", "!"].subtracting(["hello", "world"], ["!"]), [])
     }
-    
+
     func testIsSubarray() {
         XCTAssertTrue(["hello"].isSubarray(of: ["hello", "world"]))
         XCTAssertFalse(["hello"].isSubarray(of: ["world"]))
         XCTAssertFalse(["hello"].isSubarray(of: []))
         XCTAssertTrue(["hello"].isSubarray(of: ["hello"]))
     }
-    
+
     func testIsStrictSubarray() {
         XCTAssertFalse(["hello"].isStrictSubarray(of: ["hello"]))
     }
-    
+
     func testContains() {
         XCTAssertTrue(["hello", "world"].contains(["hello"]))
         XCTAssertFalse(["hello"].contains(["world"]))
@@ -59,7 +59,7 @@ final class ArrayOperationTests: XCTestCase {
         XCTAssertFalse([String]().contains(["world"]))
         XCTAssertTrue([String]().contains([]))
     }
-    
+
     func testElementsToAdd() {
         struct Data: Equatable {
             let id: Int
@@ -76,7 +76,7 @@ final class ArrayOperationTests: XCTestCase {
         }
         XCTAssertEqual(anotherResult, [Data(id: 2, title: "!")])
     }
-    
+
     func testElementsToRemove() {
         struct Data: Equatable {
             let id: Int
@@ -93,7 +93,7 @@ final class ArrayOperationTests: XCTestCase {
         }
         XCTAssertEqual(anotherResult, [Data(id: 1, title: "world")])
     }
-    
+
     func testElementsToUpdate() {
         struct Data: Equatable {
             let id: Int
@@ -110,5 +110,5 @@ final class ArrayOperationTests: XCTestCase {
         }
         XCTAssertEqual(anotherResult, [Data(id: 1, title: "hello")])
     }
-    
+
 }

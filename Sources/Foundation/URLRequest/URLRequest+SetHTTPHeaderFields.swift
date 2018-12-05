@@ -9,7 +9,7 @@
 import Foundation
 
 public extension URLRequest {
-    
+
     /// Sets the HTTP header fields with a dictionary.
     ///
     ///     let url = URL(string: "https://www.google.com")

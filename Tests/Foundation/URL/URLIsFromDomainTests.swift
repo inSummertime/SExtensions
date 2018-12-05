@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class URLIsFromDomainTests: XCTestCase {
-    
+
     func testIsFromDomain() {
         let baseURL = URL(string: "https://www.google.com")
         let url = URL(string: "search?q=iPhone", relativeTo: baseURL)!
@@ -21,5 +21,5 @@ final class URLIsFromDomainTests: XCTestCase {
         XCTAssertTrue(absoluteURL.isFromDomain("www.google.com"))
         XCTAssertFalse(absoluteURL.isFromDomain("www.apple.com"))
     }
-    
+
 }

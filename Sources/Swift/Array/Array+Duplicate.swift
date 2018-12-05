@@ -7,7 +7,7 @@
 //
 
 public extension Array where Element: Hashable {
-    
+
     /// A set of duplicate elements.
     ///
     ///     print([0, 1, 2, 2, 3, 3].duplicates)
@@ -17,7 +17,7 @@ public extension Array where Element: Hashable {
         let duplicateDictionary = dictionary.filter { $1.count > 1 }
         return Set(duplicateDictionary.keys)
     }
-    
+
     /// An array of duplidate elements with the original order.
     ///
     ///     print([0, 0, 1, 2, 2, 3, 0, 2].duplicateArray)
@@ -28,5 +28,5 @@ public extension Array where Element: Hashable {
         let uniques = Array(uniqueDictionary.keys)
         return subtracting(uniques)
     }
-    
+
 }

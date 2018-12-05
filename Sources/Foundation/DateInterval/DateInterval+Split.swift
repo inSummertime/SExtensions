@@ -9,7 +9,7 @@
 import Foundation
 
 public extension DateInterval {
-    
+
     /// Splits into sub date intervals with a duration, max split count, and
     /// a bool indicating whether omits a date interval whose duration is
     /// insufficient
@@ -40,7 +40,7 @@ public extension DateInterval {
                 while startDate.addingTimeInterval(offset) <= end {
                     let dateInterval = DateInterval(start: startDate, duration: duraion)
                     if let maxSplits = maxSplits {
-                        if maxSplits > dateIntervals.count  {
+                        if maxSplits > dateIntervals.count {
                             dateIntervals.append(dateInterval)
                         } else {
                             break
@@ -55,7 +55,7 @@ public extension DateInterval {
                     let realDuration = DateInterval(start: startDate, duration: duraion).end > end ? end - startDate : duration
                     let dateInterval = DateInterval(start: startDate, duration: realDuration)
                     if let maxSplits = maxSplits {
-                        if maxSplits > dateIntervals.count  {
+                        if maxSplits > dateIntervals.count {
                             dateIntervals.append(dateInterval)
                         } else {
                             break
@@ -69,5 +69,5 @@ public extension DateInterval {
             return dateIntervals
         }
     }
-    
+
 }

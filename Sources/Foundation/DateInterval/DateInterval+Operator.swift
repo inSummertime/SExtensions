@@ -9,7 +9,7 @@
 import Foundation
 
 public extension DateInterval {
-    
+
     /// Returns a Boolean value indicating whether the value of the first
     /// argument is greater than that of the second argument.
     ///
@@ -25,7 +25,7 @@ public extension DateInterval {
     static func > (lhs: DateInterval, rhs: DateInterval) -> Bool {
         return rhs < lhs
     }
-    
+
     /// Returns a Boolean value indicating whether the value of the first
     /// argument is less than that of the second argument, or whether two
     /// values are equal.
@@ -42,7 +42,7 @@ public extension DateInterval {
     static func <= (lhs: DateInterval, rhs: DateInterval) -> Bool {
         return lhs == rhs || lhs < rhs
     }
-    
+
     /// Returns a Boolean value indicating whether the value of the first
     /// argument is greater than that of the second argument, or whether two
     /// values are equal.
@@ -59,8 +59,7 @@ public extension DateInterval {
     static func >= (lhs: DateInterval, rhs: DateInterval) -> Bool {
         return lhs == rhs || rhs < lhs
     }
-    
-    
+
     /// Returns a DateInterval that represents the interval where the given
     /// date interval and the current instance intersect. In the event that
     /// there is no intersection, the method returns nil.
@@ -77,7 +76,7 @@ public extension DateInterval {
     static func & (lhs: DateInterval, rhs: DateInterval) -> DateInterval? {
         return lhs.intersection(with: rhs)
     }
-    
+
     /// Returns a DateInterval that represents the interval where the given
     /// date interval and the current instance combile. In the event that
     /// there is no intersection, the method returns nil.
@@ -101,5 +100,5 @@ public extension DateInterval {
             return DateInterval(start: rhs.start, end: lhs.end)
         }
     }
-    
+
 }

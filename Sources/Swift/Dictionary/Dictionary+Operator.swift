@@ -7,7 +7,7 @@
 //
 
 public extension Dictionary {
-    
+
     /// Combiles two dictionaries.
     ///
     ///     print([0: 0] + [1: 1])
@@ -24,7 +24,7 @@ public extension Dictionary {
         }
         return result
     }
-    
+
     /// Combiles two dictionaries and stores the result in the left-hand-side
     /// variable.
     ///
@@ -41,11 +41,11 @@ public extension Dictionary {
             lhs[key] = value
         }
     }
-    
+
 }
 
 public extension Dictionary where Value: Equatable {
-    
+
     /// Subtracts the second value from the first if the key and the value are
     /// equal.
     ///
@@ -65,7 +65,7 @@ public extension Dictionary where Value: Equatable {
         }
         return result
     }
-    
+
     /// Subtracts the second dictionary from the first if the key and the value
     /// are equal and stores the difference in the left-hand-side variable.
     ///
@@ -84,7 +84,7 @@ public extension Dictionary where Value: Equatable {
             }
         }
     }
-    
+
     /// Returns a new dictionary with the elements that are common to both ywo
     /// dictionaries.
     ///
@@ -104,7 +104,7 @@ public extension Dictionary where Value: Equatable {
         }
         return result
     }
-    
+
     /// Returns a union dictionary of two dictionaries.
     ///
     ///     print(["hello": 0] | ["world": 1])
@@ -121,5 +121,5 @@ public extension Dictionary where Value: Equatable {
         }
         return result
     }
-    
+
 }

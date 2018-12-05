@@ -7,7 +7,7 @@
 //
 
 public extension String {
-    
+
     /// An array of words
     ///
     ///     print("Hello world!".words)
@@ -15,7 +15,7 @@ public extension String {
     var words: [String] {
         return changingToSentenseCase().lowercased().components(separatedBy: .whitespacesAndNewlines).filter({ $0.count > 0})
     }
-    
+
     /// How many word in a string
     ///
     ///     print("Hello world!".wordCount)
@@ -23,7 +23,7 @@ public extension String {
     var wordCount: Int {
         return words.count
     }
-    
+
     /// Reverse the words.
     ///
     ///     print("Hello world !".wordsReversed)
@@ -43,7 +43,7 @@ public extension String {
         }
         return String(characters)
     }
-    
+
     /// Returns true if it is an anagram with the given word.
     ///
     ///     print("abc".isAnagram(with: "acb"))
@@ -55,23 +55,23 @@ public extension String {
         if count != word.count { return false }
         return Set(Array(self)) == Set(Array(word))
     }
-    
+
     /// Returns the longest palindrome
     ///
     ///     print("abab".longestPalindrome)
     ///     // Prints "bab"
     var longestPalindrome: String {
         guard count > 0 else { return "" }
-        
+
         func expandAroundCenter(array: [Character], lhs: Int, rhs: Int) -> Int {
             var left = lhs, right = rhs
-            while left >= 0 , right < array.count , array[left] == array[right] {
+            while left >= 0, right < array.count, array[left] == array[right] {
                 left -= 1
                 right += 1
             }
             return right - left - 1
         }
-        
+
         let characters = Array(self)
         var start = 0, end = 0
         for i in 0..<count {
@@ -85,5 +85,5 @@ public extension String {
         }
         return String(characters[start...end])
     }
-    
+
 }
