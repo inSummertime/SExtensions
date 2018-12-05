@@ -109,10 +109,8 @@ public extension Dictionary where Value: Equatable {
     func subtracting(_ others: [Key: Value]...) -> [Key: Value] {
         var result = self
         for dictionary in others {
-            for (key, value) in dictionary {
-                if self[key] == value {
-                    result.removeValue(forKey: key)
-                }
+            for (key, value) in dictionary where value == self[key] {
+                result.removeValue(forKey: key)
             }
         }
         return result
@@ -129,10 +127,8 @@ public extension Dictionary where Value: Equatable {
     /// - Parameter other: Other dictionaries.
     mutating func subtract(_ others: [Key: Value]...) {
         for dictionary in others {
-            for (key, value) in dictionary {
-                if self[key] == value {
-                    removeValue(forKey: key)
-                }
+            for (key, value) in dictionary where value == self[key] {
+                removeValue(forKey: key)
             }
         }
     }

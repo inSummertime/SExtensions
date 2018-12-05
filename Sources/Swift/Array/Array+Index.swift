@@ -19,10 +19,8 @@ public extension Array where Element: Equatable {
     ///   is not found in the array, returns an empty array.
     func indexes(of element: Element) -> [Index] {
         var indexes = [Index]()
-        for index in 0..<count {
-            if self[index] == element {
-                indexes.append(index)
-            }
+        for index in 0..<count where self[index] == element {
+            indexes.append(index)
         }
         return indexes
     }

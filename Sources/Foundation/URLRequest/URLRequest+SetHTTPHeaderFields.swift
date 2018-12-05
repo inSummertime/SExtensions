@@ -21,10 +21,8 @@ public extension URLRequest {
     ///
     /// - Parameter fields: A dictionary containing the HTTP header fields.
     mutating func setHTTPHeaderFields(_ fields: [String: String]) {
-        for (key, value) in fields {
-            if value != "" {
-                setValue(value, forHTTPHeaderField: key)
-            }
+        for (key, value) in fields where value != "" {
+            setValue(value, forHTTPHeaderField: key)
         }
     }
 

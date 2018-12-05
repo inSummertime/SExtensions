@@ -58,10 +58,8 @@ public extension Dictionary where Value: Equatable {
     /// - Returns: A dictionary.
     static func - (lhs: [Key: Value], rhs: [Key: Value]) -> [Key: Value] {
         var result = lhs
-        for (key, value) in rhs {
-            if lhs[key] == value {
-                result.removeValue(forKey: key)
-            }
+        for (key, value) in rhs where value == lhs[key] {
+            result.removeValue(forKey: key)
         }
         return result
     }
@@ -78,10 +76,8 @@ public extension Dictionary where Value: Equatable {
     ///   - lhs: A dictionary.
     ///   - rhs: The dictionary to subtract from `lhs`.
     static func -= (lhs: inout [Key: Value], rhs: [Key: Value]) {
-        for (key, value) in rhs {
-            if lhs[key] == value {
-                lhs.removeValue(forKey: key)
-            }
+        for (key, value) in rhs where value == lhs[key] {
+            lhs.removeValue(forKey: key)
         }
     }
 

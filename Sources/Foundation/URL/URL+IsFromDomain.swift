@@ -32,10 +32,8 @@ public extension URL {
         if offset < 0 {
             return false
         }
-        for i in offset..<selfComponentsCount {
-            if !(selfHostComponents[i] == targetHostComponents[i - offset]) {
-                return false
-            }
+        for i in offset..<selfComponentsCount where !(selfHostComponents[i] == targetHostComponents[i - offset]) {
+            return false
         }
         return true
     }

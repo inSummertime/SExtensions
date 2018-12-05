@@ -42,11 +42,9 @@ public extension Array where Element: Hashable {
     var mostCountElement: Element? {
         var count = 1
         var element: Element?
-        for pair in countDictionary {
-            if pair.1 > count {
-                element = pair.0
-                count = pair.1
-            }
+        for pair in countDictionary where pair.1 > count {
+            element = pair.0
+            count = pair.1
         }
         return element
     }
