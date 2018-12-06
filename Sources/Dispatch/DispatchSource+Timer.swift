@@ -22,7 +22,11 @@ public extension DispatchSource {
     ///   - queue: A dispatch queue the handler will execute on.
     ///   - handler: A handler to execute.
     /// - Returns: A DispatchSourceTimer.
-    class func timer(delay: TimeInterval = 0, interval: TimeInterval = 1.0, isRepeating: Bool = true, queue: DispatchQueue = .main, handler: @escaping (DispatchSourceTimer) -> Void) -> DispatchSourceTimer {
+    class func timer(delay: TimeInterval = 0,
+                     interval: TimeInterval = 1.0,
+                     isRepeating: Bool = true,
+                     queue: DispatchQueue = .main,
+                     handler: @escaping (DispatchSourceTimer) -> Void) -> DispatchSourceTimer {
         let timer = DispatchSource.makeTimerSource(queue: queue)
         let deadline = DispatchTime.now() + DispatchTimeInterval.seconds(Int(delay))
         let dispatchTimeInterval = DispatchTimeInterval.seconds(Int(interval))

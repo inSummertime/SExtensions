@@ -30,7 +30,12 @@ public extension DateInterval {
     ///     whether the receiver uses phrases such as “today” and “tomorrow”
     ///     for the date component.
     /// - Returns: A string.
-     func string(dateStyle: DateFormatter.Style, timeStyle: DateFormatter.Style = .none, calendar: Calendar = Calendar.current, timeZone: TimeZone = TimeZone.current, locale: Locale = Locale.current, doesRelativeDateFormatting: Bool = false) -> String {
+     func string(dateStyle: DateFormatter.Style,
+                 timeStyle: DateFormatter.Style = .none,
+                 calendar: Calendar = Calendar.current,
+                 timeZone: TimeZone = TimeZone.current,
+                 locale: Locale = Locale.current,
+                 doesRelativeDateFormatting: Bool = false) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.calendar = calendar
         dateFormatter.timeZone = timeZone
