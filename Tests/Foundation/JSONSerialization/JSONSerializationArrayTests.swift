@@ -18,7 +18,7 @@ final class JSONSerializationArrayTests: XCTestCase {
             XCTAssertEqual(array![0]["id"] as! Int, 0)
             XCTAssertEqual(anotherArray![1]["title"] as! String, "title")
         } catch {
-            XCTFail()
+            XCTFail("File cannot be read, or failed to create a Foundation object from JSON data.")
         }
     }
 
@@ -29,7 +29,7 @@ final class JSONSerializationArrayTests: XCTestCase {
             XCTAssertEqual(array![0]["id"] as! String, "1")
             XCTAssertEqual(array![1]["title"] as! String, "title")
         } catch {
-            XCTFail()
+            XCTFail("Failed to create a Foundation object from JSON data.")
         }
     }
 

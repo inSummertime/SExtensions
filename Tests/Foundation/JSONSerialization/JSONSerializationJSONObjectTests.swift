@@ -18,7 +18,7 @@ final class JSONSerializationJSONObjectTests: XCTestCase {
             XCTAssertEqual((object! as! [String: Any])["id"] as! Int, 0)
             XCTAssertEqual((anotherObject! as! [String: Any])["title"] as! String, "title")
         } catch {
-            XCTFail()
+            XCTFail("File cannot be read, or failed to create a Foundation object from JSON data.")
         }
     }
 
@@ -28,7 +28,7 @@ final class JSONSerializationJSONObjectTests: XCTestCase {
             let object = try JSONSerialization.jsonObjectFromString(string)
             XCTAssertEqual((object! as! [String: Any])["ids"] as! [String], ["1", "2"])
         } catch {
-            XCTFail()
+            XCTFail("File cannot be read, or failed to create a Foundation object from JSON data.")
         }
     }
 

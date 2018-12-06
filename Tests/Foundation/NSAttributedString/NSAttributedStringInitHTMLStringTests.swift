@@ -17,7 +17,7 @@ final class NSAttributedStringInitHTMLStringTests: XCTestCase {
             let attributedString = try NSAttributedString(htmlString: html)
             XCTAssertEqual(attributedString.string, "Hello world!")
         } catch {
-            XCTFail()
+            XCTFail("Error occurred.")
         }
     }
 

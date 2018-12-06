@@ -20,9 +20,11 @@ class DecodableInitJSONStringTests: XCTestCase {
             let object = try Object(jsonString: jsonString)
             XCTAssertEqual(object!.hello, "world")
         } catch {
-            XCTFail()
+            XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }
+    }
 
+    func testInitJSONStringEmpty() {
         let jsonStringEmpty = "{\"hello\":\"\"}"
         struct ObjectEmpty: Decodable {
             let hello: String
@@ -31,9 +33,11 @@ class DecodableInitJSONStringTests: XCTestCase {
             let objectEmpty = try ObjectEmpty(jsonString: jsonStringEmpty)
             XCTAssertEqual(objectEmpty!.hello, "")
         } catch {
-            XCTFail()
+            XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }
+    }
 
+    func testInitJSONStringInt() {
         let jsonStringInt = "{\"hello\":0}"
         struct ObjectInt: Decodable {
             let hello: Int
@@ -42,9 +46,11 @@ class DecodableInitJSONStringTests: XCTestCase {
             let objectInt = try ObjectInt(jsonString: jsonStringInt)
             XCTAssertEqual(objectInt!.hello, 0)
         } catch {
-            XCTFail()
+            XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }
+    }
 
+    func testInitJSONStringArray() {
         let jsonStringArray = "{\"hello\":[\"world\",\"!\"]}"
         struct ObjectArray: Decodable {
             let hello: [String]
@@ -53,9 +59,11 @@ class DecodableInitJSONStringTests: XCTestCase {
             let objectArray = try ObjectArray(jsonString: jsonStringArray)
             XCTAssertEqual(objectArray!.hello, ["world", "!"])
         } catch {
-            XCTFail()
+            XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }
+    }
 
+    func testInitJSONStringDictionary() {
         let jsonStringDictionary = "{\"hello\":{\"world\":\"!\"}}"
         struct ObjectDictionary: Decodable {
             let hello: [String: String]
@@ -64,9 +72,11 @@ class DecodableInitJSONStringTests: XCTestCase {
             let objectDictionary = try ObjectDictionary(jsonString: jsonStringDictionary)
             XCTAssertEqual(objectDictionary!.hello, ["world": "!"])
         } catch {
-            XCTFail()
+            XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }
+    }
 
+    func testInitJSONStringCodable() {
         let jsonStringCodable = "{\"hello\":\"world\"}"
         struct ObjectCodable: Codable {
             let hello: String
@@ -75,7 +85,7 @@ class DecodableInitJSONStringTests: XCTestCase {
             let objectCodable = try ObjectCodable(jsonString: jsonStringCodable)
             XCTAssertEqual(objectCodable!.hello, "world")
         } catch {
-            XCTFail()
+            XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }
     }
 

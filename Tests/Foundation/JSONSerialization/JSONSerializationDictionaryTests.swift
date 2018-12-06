@@ -18,7 +18,7 @@ final class JSONSerializationDictionaryTests: XCTestCase {
             XCTAssertEqual(dictionary!["id"] as! Int, 0)
             XCTAssertEqual(anotherDictionary!["title"] as! String, "title")
         } catch {
-            XCTFail()
+            XCTFail("Failed to create a Foundation object from JSON data or JSON serialization.")
         }
     }
 
@@ -29,7 +29,7 @@ final class JSONSerializationDictionaryTests: XCTestCase {
             XCTAssertEqual(dictionary!["ids"] as! [String], ["1", "2"])
             XCTAssertEqual(dictionary!["title"] as! [String], ["title"])
         } catch {
-            XCTFail()
+            XCTFail("Failed to create a Foundation object from JSON data or JSON serialization.")
         }
     }
 
