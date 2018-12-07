@@ -5,6 +5,7 @@
 //  Created by Ray on 2018/7/28.
 //  Copyright © 2018 Ray. All rights reserved.
 //
+//  swiftlint:disable cyclomatic_complexity
 
 import Foundation
 
