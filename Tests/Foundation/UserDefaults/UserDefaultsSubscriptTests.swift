@@ -13,7 +13,8 @@ final class UserDefaultsSubscriptTests: XCTestCase {
 
     func testSubscript() {
         let key = "Hello World!"
-        let userDefaults = UserDefaults(suiteName: "Hello World!")
+        let suiteName = Date().string(dateStyle: .full)
+        let userDefaults = UserDefaults(suiteName: suiteName)
         XCTAssertNil(userDefaults?[key])
         userDefaults?.set(true, forKey: key)
         XCTAssertTrue(userDefaults?[key]! as! Bool)
@@ -23,6 +24,7 @@ final class UserDefaultsSubscriptTests: XCTestCase {
         XCTAssertNil(userDefaults?[key])
         userDefaults?[key] = true
         XCTAssertTrue(userDefaults?[key]! as! Bool)
+        userDefaults?.removeObject(forKey: key)
     }
 
 }
