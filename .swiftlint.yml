@@ -1,3 +1,5 @@
+excluded:
+  - fastlane
 disabled_rules:
   - identifier_name
   - file_length
