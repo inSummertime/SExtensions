@@ -7,11 +7,14 @@ xcode_destination: platform=iOS Simulator,OS=12.0,name=iPad Pro (9.7-inch)
 before_script:
   - gem install danger --no-ri --no-rdoc --no-document
   - gem install danger-swiftlint --no-ri --no-rdoc --no-document
+  - if [ $DANGER == "ALLOW" ]; then
+         danger;
+    fi
 matrix:
   include:
   - osx_image: xcode10
     env: iPhone X
-    script: xcodebuild -project SExtensions.xcodeproj/ -scheme SExtensions -destination 'platform=iOS Simulator,OS=12.0,name=iPhone X' clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -parallel-testing-enabled YES -parallel-testing-worker-count 4 -quiet
+    script: xcodebuild -project SExtensions.xcodeproj/ -scheme SExtensions -destination 'platform=iOS Simulator,OS=12.0,name=iPhone X' clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -parallel-testing-enabled YES -parallel-testing-worker-count 4 -quiet DANGER="ALLOW"
   - osx_image: xcode10
     env: iPad Pro (9.7-inch)
     script: xcodebuild -project SExtensions.xcodeproj/ -scheme SExtensions -destination 'platform=iOS Simulator,OS=12.0,name=iPad Pro (9.7-inch)' clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -parallel-testing-enabled YES -parallel-testing-worker-count 4 -quiet
