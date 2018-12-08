@@ -1,4 +1,3 @@
-rvm: 2.0.0
 language: swift
 os: osx
 osx_image: xcode10
