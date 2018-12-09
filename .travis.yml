@@ -12,7 +12,6 @@ before_script:
       bundle exec danger;
     fi
 matrix:
-  fast_finish: true
   include:
     - osx_image: xcode10
       env: CI_BUILD_TARGET='nap' CI_DEVICE='iPhone X (12.0)' DANGER="ALLOW"
