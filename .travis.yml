@@ -5,6 +5,7 @@ xcode_project: SExtensions.xcodeproj
 xcode_scheme: SExtensions
 xcode_destination: platform=iOS Simulator,OS=12.0,name=iPad Pro (9.7-inch)
 before_script:
+  - gem install bundler
   - if [ $DANGER == "ALLOW" ]; then
          bundle exec danger
     fi
