@@ -8,12 +8,9 @@ before_install:
   - bundle install
 before_script:
   - gem install bundle
-  - if [ $DANGER == "ALLOW" ]; then
-      bundle exec danger;
-    fi
 matrix:
   include:
     - osx_image: xcode10
-      env: CI_BUILD_TARGET='nap' CI_DEVICE='iPhone X (12.0)' DANGER="ALLOW"
+      env: iPhone XS MAX (12.0)
     - osx_image: xcode10
-      env: CI_BUILD_TARGET='nap' CI_DEVICE='iPad Pro (9.7-inch)'
+      env: iPad Pro (11-inch)
