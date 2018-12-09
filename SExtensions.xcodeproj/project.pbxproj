@@ -859,9 +859,9 @@
 			isa = PBXGroup;
 			children = (
 				719C8C292144B49A00F3522D /* CGPoint+Operator.swift */,
-				711CD5452145DDE9002F26E4 /* CGRect+Update.swift */,
 				7146A87721472FC0005C1814 /* CGRect+Center.swift */,
 				7146A87B21473595005C1814 /* CGRect+Transform.swift */,
+				711CD5452145DDE9002F26E4 /* CGRect+Update.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
