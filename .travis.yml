@@ -8,6 +8,7 @@ before_install:
   - bundle install
 before_script:
   - gem install bundle
+  - bundle exec danger
 matrix:
   include:
     - osx_image: xcode10
