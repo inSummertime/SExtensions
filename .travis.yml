@@ -10,7 +10,7 @@ before_script:
   - bundle --version
   - gem install bundle
   - if [ $DANGER == "ALLOW" ]; then
-      bundle exec danger
+      bundle exec danger;
     fi
 matrix:
   include:
