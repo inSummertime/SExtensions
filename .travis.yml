@@ -4,22 +4,16 @@ osx_image: xcode10
 xcode_project: SExtensions.xcodeproj
 xcode_scheme: SExtensions
 xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone XS MAX
-env:
-  global:
-    - CC_TEST_REPORTER_ID=f8f30e5f73436135afdf8cd7397c2fde0300c3089d6a708c63df177a0116c49c
 before_install:
   - gem install bundle
   - bundle install
 before_script:
-  # code climate
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
-script:
-  # code climate
-  - bundle exec rspec
-  # danger
   - bundle exec danger
-after_script:
-  # code climate
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+matrix:
+  include:
+    - osx_image: xcode10
+      env: iPhone XS MAX
+    - osx_image: xcode10
+      env: iPad Pro (11-inch)
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
