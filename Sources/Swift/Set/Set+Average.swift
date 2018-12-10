@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension Set where Element: Numeric {
 
     /// Returns the sum of all elements.

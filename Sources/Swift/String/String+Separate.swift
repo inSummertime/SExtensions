@@ -3,7 +3,7 @@
 //  SExtensions
 //
 //  Created by Ray on 2018/5/30.
-//  Copyright © 2018年 Ray. All rights reserved.
+//  Copyright © 2018 Ray. All rights reserved.
 //
 
 public extension String {

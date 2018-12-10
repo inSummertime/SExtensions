@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension Array {
 
     /// Returns a dictionary with the index as the key, elmenent as the vlaue.

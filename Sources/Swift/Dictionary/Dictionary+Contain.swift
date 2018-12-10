@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension Dictionary where Value: Equatable {
 
     /// Returns a Boolean value that indicates whether this dictionary contains

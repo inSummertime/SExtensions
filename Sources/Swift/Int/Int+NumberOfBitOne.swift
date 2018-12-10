@@ -6,8 +6,6 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension Int {
 
     /// Returns the number of 1 it has in binary representation.
