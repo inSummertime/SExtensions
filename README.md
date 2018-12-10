@@ -1,4 +1,4 @@
-# Extensions  [![codecov](https://codecov.io/gh/inSummertime/SExtensions/branch/master/graph/badge.svg)](https://codecov.io/gh/inSummertime/SExtensions)
+# Extensions  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]  [![Swift](https://img.shields.io/badge/swfit-4.2-green.svg)]  [![codecov](https://codecov.io/gh/inSummertime/SExtensions/branch/master/graph/badge.svg)](https://codecov.io/gh/inSummertime/SExtensions)
 
 Some handy extensions.
 
@@ -14,7 +14,7 @@ Some handy extensions.
 
 - iOS 10.0+
 - Xcode 9.0+
-- Swift 4.0+
+- Swift 4.2+
 
 ---
 
