@@ -1,4 +1,4 @@
-# Extensions
+# Extensions[![codecov](https://codecov.io/gh/inSummertime/SExtensions/branch/master/graph/badge.svg)](https://codecov.io/gh/inSummertime/SExtensions)
 
 Some handy extensions.
 
