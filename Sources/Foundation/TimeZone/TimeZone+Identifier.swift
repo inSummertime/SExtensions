@@ -11,8 +11,14 @@ import Foundation
 
 public extension TimeZone {
 
+    /// Identifiers for regions.
+    ///
+    /// - GMT: GMT identifier.
     enum Identifier: String {
+        /// GMT identifier.
+        case GMT
 
+        /// Identifiers for Afirca regions
         enum Africa: String {
             case abidjan = "Africa/Abidjan"
             case accra = "Africa/Accra"
@@ -69,6 +75,7 @@ public extension TimeZone {
             case windhoek = "Africa/Windhoek"
         }
 
+        /// Identifiers for America regions
         enum America: String {
             case adak = "America/Adak"
             case anchorage = "America/Anchorage"
@@ -240,6 +247,7 @@ public extension TimeZone {
             }
         }
 
+        /// Identifiers for Antarctica regions
         enum Antarctica: String {
             case casey = "Antarctica/Casey"
             case davis = "Antarctica/Davis"
@@ -255,10 +263,12 @@ public extension TimeZone {
             case vostok = "Antarctica/Vostok"
         }
 
+        /// Identifiers for Arctic regions
         enum Arctic: String {
             case longyearbyen = "Arctic/Longyearbyen"
         }
 
+        /// Identifiers for Asia regions
         enum Asia: String {
             case aden = "Asia/Aden"
             case almaty = "Asia/Almaty"
@@ -377,6 +387,7 @@ public extension TimeZone {
             case sydney = "Australia/Sydney"
         }
 
+        /// Identifiers for Europe regions
         enum Europe: String {
             case amsterdam = "Europe/Amsterdam"
             case andorra = "Europe/Andorra"
@@ -439,8 +450,7 @@ public extension TimeZone {
             case zurich = "Europe/Zurich"
         }
 
-        case GMT
-
+        /// Identifiers for Indian regions
         enum Indian: String {
             case antananarivo = "Indian/Antananarivo"
             case chagos = "Indian/Chagos"
@@ -455,6 +465,7 @@ public extension TimeZone {
             case reunion = "Indian/Reunion"
         }
 
+        /// Identifiers for Pacific regions
         enum Pacific: String {
             case apia = "Pacific/Apia"
             case auckland = "Pacific/Auckland"
