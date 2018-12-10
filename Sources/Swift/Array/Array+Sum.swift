@@ -6,6 +6,7 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
+/// To make add action work for Int, Double and String.
 public protocol Addable {
 
     /// Adds two values and produces their sum.

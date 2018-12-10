@@ -84,7 +84,6 @@ public extension Dictionary where Key == String {
             if value is NSNull {
                 result.removeValue(forKey: key)
             }
-
         }
         return result
     }

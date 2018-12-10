@@ -6,10 +6,9 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
-
 public extension Int {
 
+    /// A new Int in a reversed order.
     var reversed: Int? {
         let sign = self < 0 ? -1 : 1
         let text = String(String(self * sign).reversed())

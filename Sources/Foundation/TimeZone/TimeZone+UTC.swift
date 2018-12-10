@@ -10,6 +10,7 @@ import Foundation
 
 public extension TimeZone {
 
+    /// UTC time zone.
     static var UTC: TimeZone {
         return TimeZone(identifier: "UTC")!
     }
