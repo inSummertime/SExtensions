@@ -23,9 +23,3 @@ script:
 after_script:
   # code climate
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
-matrix:
-  include:
-    - osx_image: xcode10
-      env: iPhone XS MAX
-    - osx_image: xcode10
-      env: iPad Pro (11-inch)
