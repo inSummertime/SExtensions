@@ -63,15 +63,20 @@ public extension Date {
     /// Month styles.
     ///
     /// - full: Full name of month.
-    /// - threeLetters: Three letter month abbreviation.
-    /// - oneLetter: One letter month abbreviation.
+    /// - threeLetterAbbreviation: Three letter month abbreviation.
+    /// - oneLetterAbbreviation: One letter month abbreviation.
     /// - twoDigits: A month with at least 2 digits.
     /// - oneDigit: A month with at least 1 digit.
     enum MonthStyle: String {
+        /// Full name of month.
         case full = "MMMM"
+        /// Three letter month abbreviation.
         case threeLetterAbbreviation = "MMM"
+        /// One letter month abbreviation.
         case oneLetterAbbreviation = "MMMMM"
+        /// A month with at least 2 digits.
         case twoDigits = "MM"
+        /// A month with at least 1 digit.
         case oneDigit = "M"
     }
 
@@ -98,13 +103,17 @@ public extension Date {
     /// Day name styles.
     ///
     /// - full: Full day name.
-    /// - threeLetters: 3 letter day abbreviation of day name.
-    /// - twoLetters: 2 letter day abbreviation of day name.
-    /// - oneLetter: 1 letter day abbreviation of day name.
+    /// - threeLetterAbbreviation: 3-letter day abbreviation of day name.
+    /// - twoLetterAbbreviation: 2-letter day abbreviation of day name.
+    /// - oneLetterAbbreviation: 1-letter day abbreviation of day name.
     enum DayNameStyle: String {
+        /// Full day name.
         case full = "EEEE"
+        /// 3-letter day abbreviation of day name.
         case threeLetterAbbreviation = "EEE"
+        /// 2-letter day abbreviation of day name.
         case twoLetterAbbreviation = "EEEEEE"
+        /// 1-letter day abbreviation of day name.
         case oneLetterAbbreviation = "EEEEE"
     }
 

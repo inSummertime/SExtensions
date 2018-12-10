@@ -21,7 +21,7 @@ public extension Array where Element: BinaryInteger {
 
 }
 
-extension Array where Element: BinaryFloatingPoint {
+public extension Array where Element: BinaryFloatingPoint {
 
     /// Returns the average of all elements.
     var average: Element {

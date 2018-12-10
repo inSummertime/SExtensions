@@ -6,7 +6,7 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-extension Dictionary {
+public extension Dictionary {
 
     /// Returns a union dictionary of this dictionary and the given
     /// dictionaries.
