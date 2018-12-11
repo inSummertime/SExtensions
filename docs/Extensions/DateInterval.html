@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DateInterval Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/DateInterval" class="dashAnchor"></a>
+    <a title="DateInterval Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SExtensions Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SExtensions Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DateInterval Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CALayer.html">CALayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGPoint.html">CGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGRect.html">CGRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Calendar.html">Calendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Character.html">Character</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date/MonthStyle.html">– MonthStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date/DayNameStyle.html">– DayNameStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DateInterval.html">DateInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Decodable.html">Decodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchSource.html">DispatchSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONSerialization.html">JSONSerialization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSAttributedString.html">NSAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSMutableAttributedString.html">NSMutableAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSObject.html">NSObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Set.html">Set</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/TimeZone.html">TimeZone</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/TimeZone/Identifier.html">– Identifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLRequest.html">URLRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UserDefaults.html">UserDefaults</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Addable.html">Addable</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DateInterval</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@available(OSX 10.12, iOS 10.0, watchOS 3.0, tvOS 10.0, *)</span>
+<span class="kd">struct</span> <span class="kt">DateInterval</span> <span class="p">:</span> <span class="kt">ReferenceConvertible</span><span class="p">,</span> <span class="kt">Comparable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE8containsySbACF"></a>
+                    <a name="//apple_ref/swift/Method/contains(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE8containsySbACF">contains(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code>true</code> if <code>self</code> contains another <code>dateInterval</code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dateInterval</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">)))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="n">_</span> <span class="nv">dateInterval</span><span class="p">:</span> <span class="kt">DateInterval</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dateInterval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>dateInterval</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Returns <code>true</code> if <code>self</code> contains another
+<code>dateInterval</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE17durationComponent_2inSiSgAA8CalendarV0F0O_AItF"></a>
+                    <a name="//apple_ref/swift/Method/durationComponent(_:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE17durationComponent_2inSiSgAA8CalendarV0F0O_AItF">durationComponent(_:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the value for one component of the duration.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Date</span><span class="o">.</span><span class="n">timeIntervalPerWeek</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">calendar</span> <span class="o">=</span> <span class="kt">Calendar</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="kt">Calendar</span><span class="o">.</span><span class="kt">Identifier</span><span class="o">.</span><span class="n">gregorian</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dateInterval</span><span class="o">.</span><span class="nf">durationComponent</span><span class="p">(</span><span class="o">.</span><span class="n">weekOfMonth</span><span class="p">,</span> <span class="nv">in</span><span class="p">:</span> <span class="n">calendar</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">durationComponent</span><span class="p">(</span><span class="n">_</span> <span class="nv">component</span><span class="p">:</span> <span class="kt">Calendar</span><span class="o">.</span><span class="kt">Component</span><span class="p">,</span> <span class="k">in</span> <span class="nv">calendar</span><span class="p">:</span> <span class="kt">Calendar</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>component</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The component to calculate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>calendar</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A calendar.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The value for one component</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE27durationComponentDictionary_2inSDyAA8CalendarV0F0OSiGShyAJG_AHtF"></a>
+                    <a name="//apple_ref/swift/Method/durationComponentDictionary(_:in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE27durationComponentDictionary_2inSDyAA8CalendarV0F0OSiGShyAJG_AHtF">durationComponentDictionary(_:in:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a component dictionary of the duration.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="kt">Date</span><span class="o">.</span><span class="n">timeIntervalPerWeek</span> <span class="o">*</span> <span class="mi">58</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">calendar</span> <span class="o">=</span> <span class="kt">Calendar</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="kt">Calendar</span><span class="o">.</span><span class="kt">Identifier</span><span class="o">.</span><span class="n">gregorian</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">dictionary</span> <span class="o">=</span> <span class="n">dateInterval</span><span class="o">.</span><span class="nf">durationComponentDictionary</span><span class="p">([</span><span class="o">.</span><span class="n">era</span><span class="p">,</span> <span class="o">.</span><span class="n">year</span><span class="p">,</span> <span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="o">.</span><span class="n">weekOfMonth</span><span class="p">,</span> <span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="o">.</span><span class="n">second</span><span class="p">],</span> <span class="nv">in</span><span class="p">:</span> <span class="n">calendar</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dictionary</span><span class="p">[</span><span class="o">.</span><span class="n">year</span><span class="p">]</span><span class="o">!</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">durationComponentDictionary</span><span class="p">(</span><span class="n">_</span> <span class="nv">components</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Calendar</span><span class="o">.</span><span class="kt">Component</span><span class="o">&gt;</span><span class="p">,</span> <span class="k">in</span> <span class="nv">calendar</span><span class="p">:</span> <span class="kt">Calendar</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Calendar</span><span class="o">.</span><span class="kt">Component</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>components</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A component set.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>calendar</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A calendar.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A component dictionary</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE1goiySbAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&gt;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE1goiySbAC_ACtFZ">&gt;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value indicating whether the value of the first
+argument is greater than that of the second argument.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">nextDateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">nextDateInterval</span> <span class="o">&gt;</span> <span class="n">dateInterval</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">&gt;</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">DateInterval</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">DateInterval</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A value to compare.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another value to compare.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a Boolean value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE2leoiySbAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&lt;=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE2leoiySbAC_ACtFZ">&lt;=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value indicating whether the value of the first
+argument is less than that of the second argument, or whether two
+values are equal.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">nextDateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dateInterval</span> <span class="o">&lt;=</span> <span class="n">nextDateInterval</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">&lt;=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">DateInterval</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">DateInterval</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A value to compare.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another value to compare.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a Boolean value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE2geoiySbAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&gt;=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE2geoiySbAC_ACtFZ">&gt;=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value indicating whether the value of the first
+argument is greater than that of the second argument, or whether two
+values are equal.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">nextDateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">nextDateInterval</span> <span class="o">&gt;=</span> <span class="n">dateInterval</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">DateInterval</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">DateInterval</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A value to compare.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another value to compare.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a Boolean value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE1aoiyACSgAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&amp;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE1aoiyACSgAC_ACtFZ">&amp;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a DateInterval that represents the interval where the given
+date interval and the current instance intersect. In the event that
+there is no intersection, the method returns nil.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">nextDateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dateInterval</span> <span class="o">&amp;</span> <span class="n">nextDateInterval</span> <span class="o">==</span> <span class="n">dateInterval</span><span class="p">)</span>
+<span class="c1">// Print "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">&amp;</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">DateInterval</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">DateInterval</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DateInterval</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A value to compare.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another value to compare.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a DateInterval, or nil.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE1ooiyACSgAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/|(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE1ooiyACSgAC_ACtFZ">|(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a DateInterval that represents the interval where the given
+date interval and the current instance combile. In the event that
+there is no intersection, the method returns nil.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">nextDateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dateInterval</span> <span class="o">|</span> <span class="n">nextDateInterval</span> <span class="o">==</span> <span class="n">nextDateInterval</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">|</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">DateInterval</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">DateInterval</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DateInterval</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A value to compare.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another value to compare.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a DateInterval, or nil.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE6moving2toAcA0B0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/moving(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE6moving2toAcA0B0V_tF">moving(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns A <code>DateInterval</code> by moving this <code>DateInterval</code> to a new
+Date`.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mf">60.0</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">nextDateInterval</span> <span class="o">=</span> <span class="n">dateInterval</span><span class="o">.</span><span class="nf">moving</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="nf">addingTimeInterval</span><span class="p">(</span><span class="mf">60.0</span><span class="p">))</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">nextDateInterval</span><span class="o">.</span><span class="n">start</span> <span class="o">==</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="nf">addingTimeInterval</span><span class="p">(</span><span class="mf">60.0</span><span class="p">))</span>
+<span class="c1">// Prints "true"</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">nextDateInterval</span><span class="o">.</span><span class="n">duration</span> <span class="o">==</span> <span class="mf">60.0</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">moving</span><span class="p">(</span><span class="n">to</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DateInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Date</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>DateInterval</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE10prolonging04timeC0ACSd_tF"></a>
+                    <a name="//apple_ref/swift/Method/prolonging(timeInterval:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE10prolonging04timeC0ACSd_tF">prolonging(timeInterval:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new <code>DateInterval</code> by prolonging a <code>TimeInterval</code> to this
+<code>DateInterval</code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mf">60.0</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">nextDateInterval</span> <span class="o">=</span> <span class="n">dateInterval</span><span class="o">.</span><span class="nf">prolonging</span><span class="p">(</span><span class="nv">timeInterval</span><span class="p">:</span> <span class="mf">60.0</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">nextDateInterval</span><span class="o">.</span><span class="n">duration</span> <span class="o">==</span> <span class="mf">120.0</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">prolonging</span><span class="p">(</span><span class="nv">timeInterval</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DateInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeInterval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value to prolong, in seconds.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>DateInterval</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE11endingEarly04timeC0ACSd_tF"></a>
+                    <a name="//apple_ref/swift/Method/endingEarly(timeInterval:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE11endingEarly04timeC0ACSd_tF">endingEarly(timeInterval:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new <code>DateInterval</code> by reducing a <code>TimeInterval</code> to this
+<code>DateInterval</code>.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mf">60.0</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">nextDateInterval</span> <span class="o">=</span> <span class="n">dateInterval</span><span class="o">.</span><span class="nf">endingEarly</span><span class="p">(</span><span class="nv">timeInterval</span><span class="p">:</span> <span class="mf">30.0</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">nextDateInterval</span><span class="o">.</span><span class="n">duration</span> <span class="o">==</span> <span class="mf">30.0</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">endingEarly</span><span class="p">(</span><span class="nv">timeInterval</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">DateInterval</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeInterval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value to reduce, in seconds.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>DateInterval</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE5split4with9maxSplits020omittingInsufficientbC0SayACGSd_SiSgSbtF"></a>
+                    <a name="//apple_ref/swift/Method/split(with:maxSplits:omittingInsufficientDateInterval:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE5split4with9maxSplits020omittingInsufficientbC0SayACGSd_SiSgSbtF">split(with:maxSplits:omittingInsufficientDateInterval:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Splits into sub date intervals with a duration, max split count, and
+a bool indicating whether omits a date interval whose duration is
+insufficient</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mf">60.0</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">dateIntervals</span> <span class="o">=</span> <span class="n">dateInterval</span><span class="o">.</span><span class="nf">split</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="mf">7.0</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dateIntervals</span><span class="o">.</span><span class="n">count</span> <span class="o">==</span> <span class="mi">8</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dateIntervals</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">==</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mf">49.0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mf">7.0</span><span class="p">))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">split</span><span class="p">(</span><span class="n">with</span> <span class="nv">duraion</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">,</span> <span class="nv">maxSplits</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">omittingInsufficientDateInterval</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">DateInterval</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>duraion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A time interval for the sub date intervals.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxSplits</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The max count of the results.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>omittingInsufficientDateInterval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A bool indicating whether omits
+a date interval whose duration is insufficient.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A array of date intervals.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE6string9dateStyle04timeG08calendar0H4Zone6locale012doesRelativeB10FormattingSSSo015NSDateFormatterG0V_AmA8CalendarVAA04TimeJ0VAA6LocaleVSbtF"></a>
+                    <a name="//apple_ref/swift/Method/string(dateStyle:timeStyle:calendar:timeZone:locale:doesRelativeDateFormatting:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE6string9dateStyle04timeG08calendar0H4Zone6locale012doesRelativeB10FormattingSSSo015NSDateFormatterG0V_AmA8CalendarVAA04TimeJ0VAA6LocaleVSbtF">string(dateStyle:timeStyle:calendar:timeZone:locale:doesRelativeDateFormatting:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a string from a date interval with a date style.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mi">60</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">calendar</span> <span class="o">=</span> <span class="kt">Calendar</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="kt">Calendar</span><span class="o">.</span><span class="kt">Identifier</span><span class="o">.</span><span class="n">gregorian</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">timeZone</span> <span class="o">=</span> <span class="kt">TimeZone</span><span class="p">(</span><span class="nv">secondsFromGMT</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span><span class="o">!</span>
+<span class="k">let</span> <span class="nv">locale</span> <span class="o">=</span> <span class="kt">Locale</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="s">"en"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="n">dateInterval</span><span class="o">.</span><span class="nf">string</span><span class="p">(</span><span class="nv">dateStyle</span><span class="p">:</span> <span class="o">.</span><span class="n">medium</span><span class="p">,</span> <span class="nv">timeStyle</span><span class="p">:</span> <span class="o">.</span><span class="n">short</span><span class="p">,</span> <span class="nv">calendar</span><span class="p">:</span> <span class="n">calendar</span><span class="p">,</span> <span class="nv">timeZone</span><span class="p">:</span> <span class="n">timeZone</span><span class="p">,</span> <span class="nv">locale</span><span class="p">:</span> <span class="n">locale</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+<span class="c1">// Prints "Jan 1, 2001 at 12:00 AM - 12:01 AM"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="nv">dateStyle</span><span class="p">:</span> <span class="kt">DateFormatter</span><span class="o">.</span><span class="kt">Style</span><span class="p">,</span>
+            <span class="nv">timeStyle</span><span class="p">:</span> <span class="kt">DateFormatter</span><span class="o">.</span><span class="kt">Style</span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span><span class="p">,</span>
+            <span class="nv">calendar</span><span class="p">:</span> <span class="kt">Calendar</span> <span class="o">=</span> <span class="kt">Calendar</span><span class="o">.</span><span class="n">current</span><span class="p">,</span>
+            <span class="nv">timeZone</span><span class="p">:</span> <span class="kt">TimeZone</span> <span class="o">=</span> <span class="kt">TimeZone</span><span class="o">.</span><span class="n">current</span><span class="p">,</span>
+            <span class="nv">locale</span><span class="p">:</span> <span class="kt">Locale</span> <span class="o">=</span> <span class="kt">Locale</span><span class="o">.</span><span class="n">current</span><span class="p">,</span>
+            <span class="nv">doesRelativeDateFormatting</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dateStyle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The date style of the receiver..</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeStyle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time style of the receiver.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>calendar</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The calendar for the receiver.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeZone</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time zone for the receiver.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>locale</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The locale for the receiver.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>doesRelativeDateFormatting</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A Boolean value that indicates
+whether the receiver uses phrases such as “today” and “tomorrow”
+for the date component.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A string.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation12DateIntervalV11SExtensionsE6string10dateFormat8calendar8timeZone6localeS2S_AA8CalendarVAA04TimeJ0VAA6LocaleVtF"></a>
+                    <a name="//apple_ref/swift/Method/string(dateFormat:calendar:timeZone:locale:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation12DateIntervalV11SExtensionsE6string10dateFormat8calendar8timeZone6localeS2S_AA8CalendarVAA04TimeJ0VAA6LocaleVtF">string(dateFormat:calendar:timeZone:locale:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a string from a date interval with a date format.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dateInterval</span> <span class="o">=</span> <span class="kt">DateInterval</span><span class="p">(</span><span class="nv">start</span><span class="p">:</span> <span class="kt">Date</span><span class="p">(</span><span class="nv">timeIntervalSinceReferenceDate</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span> <span class="nv">duration</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">calendar</span> <span class="o">=</span> <span class="kt">Calendar</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="kt">Calendar</span><span class="o">.</span><span class="kt">Identifier</span><span class="o">.</span><span class="n">gregorian</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">timeZone</span> <span class="o">=</span> <span class="kt">TimeZone</span><span class="p">(</span><span class="nv">secondsFromGMT</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span><span class="o">!</span>
+<span class="k">let</span> <span class="nv">dateFormat</span> <span class="o">=</span> <span class="s">"yyyy.MM.dd 'at' HH:mm:ss Z"</span>
+<span class="k">let</span> <span class="nv">string</span> <span class="o">=</span> <span class="n">dateInterval</span><span class="o">.</span><span class="nf">string</span><span class="p">(</span><span class="nv">dateFormat</span><span class="p">:</span> <span class="n">dateFormat</span><span class="p">,</span> <span class="nv">calendar</span><span class="p">:</span> <span class="n">calendar</span><span class="p">,</span> <span class="nv">timeZone</span><span class="p">:</span> <span class="n">timeZone</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+<span class="c1">// Prints "2001.01.01 at 00:00:00 +0000 - 2001.01.01 at 00:00:01 +0000"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="nv">dateFormat</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">calendar</span><span class="p">:</span> <span class="kt">Calendar</span> <span class="o">=</span> <span class="kt">Calendar</span><span class="o">.</span><span class="n">current</span><span class="p">,</span> <span class="nv">timeZone</span><span class="p">:</span> <span class="kt">TimeZone</span> <span class="o">=</span> <span class="kt">TimeZone</span><span class="o">.</span><span class="n">current</span><span class="p">,</span> <span class="nv">locale</span><span class="p">:</span> <span class="kt">Locale</span> <span class="o">=</span> <span class="kt">Locale</span><span class="o">.</span><span class="n">current</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dateFormat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The date format string used by the receiver.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>calendar</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The calendar for the receiver.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeZone</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time zone for the receiver.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A string.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2018-12-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

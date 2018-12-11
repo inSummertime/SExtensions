@@ -1,0 +1,2600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dictionary Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/Dictionary" class="dashAnchor"></a>
+    <a title="Dictionary Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SExtensions Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SExtensions Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Dictionary Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CALayer.html">CALayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGPoint.html">CGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGRect.html">CGRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Calendar.html">Calendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Character.html">Character</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date/MonthStyle.html">– MonthStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date/DayNameStyle.html">– DayNameStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DateInterval.html">DateInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Decodable.html">Decodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchSource.html">DispatchSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONSerialization.html">JSONSerialization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSAttributedString.html">NSAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSMutableAttributedString.html">NSMutableAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSObject.html">NSObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Set.html">Set</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/TimeZone.html">TimeZone</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/TimeZone/Identifier.html">– Identifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLRequest.html">URLRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UserDefaults.html">UserDefaults</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Addable.html">Addable</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Dictionary</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE8contains5valueSbq__tF"></a>
+                    <a name="//apple_ref/swift/Method/contains(value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE8contains5valueSbq__tF">contains(value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether this dictionary contains
+the given value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A Value.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the dictionary contains <code>value</code>; otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE8contains5otherSbSDyxq_G_tF"></a>
+                    <a name="//apple_ref/swift/Method/contains(other:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE8contains5otherSbSDyxq_G_tF">contains(other:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether this dictionary contains
+the given dictionary.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="nv">other</span><span class="p">:</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="nv">other</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the dictionary contains <code>other</code>; otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsE6hasKeyySbxF"></a>
+                    <a name="//apple_ref/swift/Method/hasKey(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsE6hasKeyySbxF">hasKey(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether the dictionary has
+a key</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="nf">hasKey</span><span class="p">(</span><span class="s">"hello"</span><span class="p">))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hasKey</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A key</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the dictionary has the key; otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsE6hasAnyyS2bx3key_q_5valuet_tXEF"></a>
+                    <a name="//apple_ref/swift/Method/hasAny(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsE6hasAnyyS2bx3key_q_5valuet_tXEF">hasAny(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether the dictionary has
+a element that satisfy the given predicate</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nf">hasAny</span><span class="p">({</span> <span class="nv">$0</span><span class="o">.</span><span class="mi">1</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">}))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hasAny</span><span class="p">(</span><span class="n">_</span> <span class="nv">isIncluded</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isIncluded</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes a key-value pair as its
+argument and returns a Boolean value indicating whether the pair
+should be included.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the dictionary has any element that <code>isIncluded</code> allows; otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsE6hasAllyS2bx3key_q_5valuet_tXEF"></a>
+                    <a name="//apple_ref/swift/Method/hasAll(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsE6hasAllyS2bx3key_q_5valuet_tXEF">hasAll(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether the dictionary has
+all elements that satisfy the given predicate</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nf">hasAll</span><span class="p">({</span> <span class="nv">$0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="n">count</span> <span class="o">==</span> <span class="mi">5</span> <span class="p">}))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hasAll</span><span class="p">(</span><span class="n">_</span> <span class="nv">isIncluded</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isIncluded</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes a key-value pair as its
+argument and returns a Boolean value indicating whether the pair
+should be included.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the dictionary has all elements that <code>isIncluded</code> allows; otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE3has3key5valueSbx_q_tF"></a>
+                    <a name="//apple_ref/swift/Method/has(key:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE3has3key5valueSbx_q_tF">has(key:value:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether the dictionary has
+a key and a value</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="nf">has</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="mi">0</span><span class="p">))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">has</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A key</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A value</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the dictionary has the key and value; otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE10hasElementySbx3key_q_5valuet_tF"></a>
+                    <a name="//apple_ref/swift/Method/hasElement(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE10hasElementySbx3key_q_5valuet_tF">hasElement(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether the dictionary has
+a key-value pair</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="nf">hasElement</span><span class="p">((</span><span class="s">"hello"</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span>
+<span class="c1">// Print "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">hasElement</span><span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>element</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A key-value pair</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the dictionary has the a key-value pair; otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsE8jsonData7options10Foundation0C0VSgSo20NSJSONWritingOptionsV_tF"></a>
+                    <a name="//apple_ref/swift/Method/jsonData(options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsE8jsonData7options10Foundation0C0VSgSo20NSJSONWritingOptionsV_tF">jsonData(options:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates JSON data if possible.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="s">"world"</span><span class="p">]</span><span class="o">.</span><span class="nf">jsonData</span><span class="p">()</span> <span class="o">==</span> <span class="s">"{</span><span class="se">\"</span><span class="s">hello</span><span class="se">\"</span><span class="s">:</span><span class="se">\"</span><span class="s">world</span><span class="se">\"</span><span class="s">}"</span><span class="o">.</span><span class="nf">data</span><span class="p">(</span><span class="nv">using</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">jsonData</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="kt">JSONSerialization</span><span class="o">.</span><span class="kt">WritingOptions</span> <span class="o">=</span> <span class="p">[])</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>JSONSerialization.WritingOptions.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Optional data.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsE10jsonString7optionsSSSgSo20NSJSONWritingOptionsV_tF"></a>
+                    <a name="//apple_ref/swift/Method/jsonString(options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsE10jsonString7optionsSSSgSo20NSJSONWritingOptionsV_tF">jsonString(options:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates a string if possible.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="s">"world"</span><span class="p">]</span><span class="o">.</span><span class="nf">jsonString</span><span class="p">())</span>
+<span class="c1">// Prints "Optional("{\"hello\":\"world\"}")"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">jsonString</span><span class="p">(</span><span class="nv">options</span><span class="p">:</span> <span class="kt">JSONSerialization</span><span class="o">.</span><span class="kt">WritingOptions</span> <span class="o">=</span> <span class="p">[])</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>JSONSerialization.WritingOptions.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Optional string.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE18uppercasingAllKeysSDySSq_GyF"></a>
+                    <a name="//apple_ref/swift/Method/uppercasingAllKeys()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE18uppercasingAllKeysSDySSq_GyF">uppercasingAllKeys()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a dictionary with all keys uppercased.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nf">uppercasingAllKeys</span><span class="p">())</span>
+<span class="c1">// Prints "["HELLO": 0, "WORLD": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">uppercasingAllKeys</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE16uppercaseAllKeysyyF"></a>
+                    <a name="//apple_ref/swift/Method/uppercaseAllKeys()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE16uppercaseAllKeysyyF">uppercaseAllKeys()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Uppercases all keys.</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helloWorld</span> <span class="o">=</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">helloWorld</span><span class="o">.</span><span class="nf">uppercaseAllKeys</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">helloWorld</span><span class="p">)</span>
+<span class="c1">// Prints "["HELLO": 0, "WORLD": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">uppercaseAllKeys</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE18lowercasingAllKeysSDySSq_GyF"></a>
+                    <a name="//apple_ref/swift/Method/lowercasingAllKeys()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE18lowercasingAllKeysSDySSq_GyF">lowercasingAllKeys()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a dictionary with all keys lowercased.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"HELLO"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"WORLD"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nf">lowercasingAllKeys</span><span class="p">())</span>
+<span class="c1">// Prints "["hello": 0, "world": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lowercasingAllKeys</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE16lowercaseAllKeysyyF"></a>
+                    <a name="//apple_ref/swift/Method/lowercaseAllKeys()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE16lowercaseAllKeysyyF">lowercaseAllKeys()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lowercases all keys.</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helloWorld</span> <span class="o">=</span> <span class="p">[</span><span class="s">"HELLO"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"WORLD"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">helloWorld</span><span class="o">.</span><span class="nf">lowercaseAllKeys</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">helloWorld</span><span class="p">)</span>
+<span class="c1">// Prints "["hello": 0, "world": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">lowercaseAllKeys</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE19capitalizingAllKeysSDySSq_GyF"></a>
+                    <a name="//apple_ref/swift/Method/capitalizingAllKeys()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE19capitalizingAllKeysSDySSq_GyF">capitalizingAllKeys()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a dictionary with all keys capitalized.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello world!"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"hi there!"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nf">capitalizingAllKeys</span><span class="p">())</span>
+<span class="c1">// Prints "["Hello World!": 0, "Hi There!": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">capitalizingAllKeys</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE17capitalizeAllKeysyyF"></a>
+                    <a name="//apple_ref/swift/Method/capitalizeAllKeys()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE17capitalizeAllKeysyyF">capitalizeAllKeys()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Capitalizes all keys</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helloWorld</span> <span class="o">=</span> <span class="p">[</span><span class="s">"hello world!"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"hi there!"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">helloWorld</span><span class="o">.</span><span class="nf">capitalizeAllKeys</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">helloWorld</span><span class="p">)</span>
+<span class="c1">// Prints "["Hello World!": 0, "Hi There!": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">capitalizeAllKeys</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE29changingAllKeysToSentenceCaseSDySSq_GyF"></a>
+                    <a name="//apple_ref/swift/Method/changingAllKeysToSentenceCase()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE29changingAllKeysToSentenceCaseSDySSq_GyF">changingAllKeysToSentenceCase()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a dictionary with all keys changed to sentence case.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello world!"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"hi there!"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nf">changingAllKeysToSentenceCase</span><span class="p">())</span>
+<span class="c1">// Prints "["Hello world!": 0, "Hi there!": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changingAllKeysToSentenceCase</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE27changeAllKeysToSentenceCaseyyF"></a>
+                    <a name="//apple_ref/swift/Method/changeAllKeysToSentenceCase()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE27changeAllKeysToSentenceCaseyyF">changeAllKeysToSentenceCase()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>var helloWorld = [<q>hello world!</q>: 0, <q>hi there!</q>: 1]
+helloWorld.changeAllKeysToSentenceCase()
+print(helloWorld)
+// Prints <q>[</q>Hello world!<q>: 0,</q>Hi there!<q>: 1]</q></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">changeAllKeysToSentenceCase</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE26changingAllKeysToCamelCaseSDySSq_GyF"></a>
+                    <a name="//apple_ref/swift/Method/changingAllKeysToCamelCase()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE26changingAllKeysToCamelCaseSDySSq_GyF">changingAllKeysToCamelCase()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a dictionary with all keys changed to camel case.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello world!"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"hi there!"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nf">changingAllKeysToCamelCase</span><span class="p">())</span>
+<span class="c1">// Prints "["helloWorld!": 0, "hiThere!": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changingAllKeysToCamelCase</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE24changeAllKeysToCamelCaseyyF"></a>
+                    <a name="//apple_ref/swift/Method/changeAllKeysToCamelCase()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE24changeAllKeysToCamelCaseyyF">changeAllKeysToCamelCase()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>var helloWorld = [<q>hello world!</q>: 0, <q>hi there!</q>: 1]
+helloWorld.changeAllKeysToCamelCase()
+print(helloWorld)
+// Prints <q>[</q>helloWorld!<q>: 0,</q>hiThere!<q>: 1]</q></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">changeAllKeysToCamelCase</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE26changingAllKeysToSnakeCaseSDySSq_GyF"></a>
+                    <a name="//apple_ref/swift/Method/changingAllKeysToSnakeCase()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE26changingAllKeysToSnakeCaseSDySSq_GyF">changingAllKeysToSnakeCase()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a dictionary with all keys changed to snake case.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello world!"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"hi there!"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nf">changingAllKeysToSnakeCase</span><span class="p">())</span>
+<span class="c1">// Prints "["hello_world!": 0, "hi_there!": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">changingAllKeysToSnakeCase</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE24changeAllKeysToSnakeCaseyyF"></a>
+                    <a name="//apple_ref/swift/Method/changeAllKeysToSnakeCase()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE24changeAllKeysToSnakeCaseyyF">changeAllKeysToSnakeCase()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>var helloWorld = [<q>hello world!</q>: 0, <q>hi there!</q>: 1]
+helloWorld.changeAllKeysToSnakeCase()
+print(helloWorld)
+// Prints <q>[</q>hello_world!<q>: 0,</q>hi_there!<q>: 1]</q></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">changeAllKeysToSnakeCase</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsE5unionySDyxq_GACd_tF"></a>
+                    <a name="//apple_ref/swift/Method/union(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsE5unionySDyxq_GACd_tF">union(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a union dictionary of this dictionary and the given
+dictionaries.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="nf">union</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]))</span>
+<span class="c1">// Prints "["hello": 1, "world": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">union</span><span class="p">(</span><span class="n">_</span> <span class="nv">others</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>others</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other dictionaries.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE33unionWithoutSameKeyDifferentValueySDyxq_GACd_tF"></a>
+                    <a name="//apple_ref/swift/Method/unionWithoutSameKeyDifferentValue(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE33unionWithoutSameKeyDifferentValueySDyxq_GACd_tF">unionWithoutSameKeyDifferentValue(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a union dictionary of this dictionary and the given dictionaries
+having the same key but different value removed.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="nf">unionWithoutSameKeyDifferentValue</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]))</span>
+<span class="c1">// Prints "["world": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">unionWithoutSameKeyDifferentValue</span><span class="p">(</span><span class="n">_</span> <span class="nv">others</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>others</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other dictionaries.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE12intersectionySDyxq_GACd_tF"></a>
+                    <a name="//apple_ref/swift/Method/intersection(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE12intersectionySDyxq_GACd_tF">intersection(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new dictionary with the elements that are common to both this
+dictionary and the given dictionaries.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="nf">intersection</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]))</span>
+<span class="c1">// Prints "["hello": 0]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">intersection</span><span class="p">(</span><span class="n">_</span> <span class="nv">others</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>others</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other dictionaries.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE10differenceySDyxq_GACd_tF"></a>
+                    <a name="//apple_ref/swift/Method/difference(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE10differenceySDyxq_GACd_tF">difference(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new dictionary with the elements that are different from the
+given dictionaries.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="nf">difference</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">])</span>
+<span class="c1">// Prints "["world": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">difference</span><span class="p">(</span><span class="n">_</span> <span class="nv">others</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>others</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>other dictionaries</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new dictionary</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE11subtractingySDyxq_GACd_tF"></a>
+                    <a name="//apple_ref/swift/Method/subtracting(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE11subtractingySDyxq_GACd_tF">subtracting(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new dictionary containing the elements of this dictionary that
+do not occur in the given dictionaries.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="nf">intersection</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]))</span>
+<span class="c1">// Prints "["hello": 0]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">subtracting</span><span class="p">(</span><span class="n">_</span> <span class="nv">others</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other dictionaries.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE8subtractyySDyxq_Gd_tF"></a>
+                    <a name="//apple_ref/swift/Method/subtract(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE8subtractyySDyxq_Gd_tF">subtract(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the elements of this dictionary that do not occur in the given
+dictionaries.</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">helloWorld</span> <span class="o">=</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">helloWorld</span><span class="o">.</span><span class="nf">subtract</span><span class="p">([</span><span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">])</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">helloWorld</span><span class="p">)</span>
+<span class="c1">// Prints "["hello": 0]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="nf">subtract</span><span class="p">(</span><span class="n">_</span> <span class="nv">others</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span><span class="o">...</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other dictionaries.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE15isSubdictionary2ofSbSDyxq_G_tF"></a>
+                    <a name="//apple_ref/swift/Method/isSubdictionary(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE15isSubdictionary2ofSbSDyxq_G_tF">isSubdictionary(of:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether this dictionary is a
+subdictionary of the given dictionary.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="nf">isSubdictionary</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isSubdictionary</span><span class="p">(</span><span class="n">of</span> <span class="nv">other</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the dictionary is a subdictionary of <code>other</code>; otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE21isStrictSubdictionary2ofSbSDyxq_G_tF"></a>
+                    <a name="//apple_ref/swift/Method/isStrictSubdictionary(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE21isStrictSubdictionary2ofSbSDyxq_G_tF">isStrictSubdictionary(of:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether the dictionary is a
+strict subdictionary of the given dictionary.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="nf">isStrictSubdictionary</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isStrictSubdictionary</span><span class="p">(</span><span class="n">of</span> <span class="nv">other</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the dictionary is a strict subdictionary of <code>other</code>; otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsE1poiySDyxq_GAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/+(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsE1poiySDyxq_GAC_ACtFZ">+(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combiles two dictionaries.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="mi">0</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">1</span><span class="p">:</span> <span class="mi">1</span><span class="p">])</span>
+<span class="c1">// Prints "[0: 0, 1: 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">+</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The first dictionary to add.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The second dictionary to add.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsE2peoiyySDyxq_Gz_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/+=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsE2peoiyySDyxq_Gz_ACtFZ">+=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combiles two dictionaries and stores the result in the left-hand-side
+variable.</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">hello</span> <span class="o">=</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">hello</span> <span class="o">+=</span> <span class="p">[</span><span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">hello</span><span class="p">)</span>
+<span class="c1">// Prints "["hello": 0, "world": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">+=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The first dictionary to add.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The second dictionary to add.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE1soiySDyxq_GAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/-(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE1soiySDyxq_GAC_ACtFZ">-(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subtracts the second value from the first if the key and the value are
+equal.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">[</span><span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">])</span>
+<span class="c1">// Prints "["hello": 0]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">-</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The first dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The dictionary to subtract.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE2seoiyySDyxq_Gz_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/-=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE2seoiyySDyxq_Gz_ACtFZ">-=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subtracts the second dictionary from the first if the key and the value
+are equal and stores the difference in the left-hand-side variable.</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">hello</span> <span class="o">=</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">hello</span> <span class="o">-=</span> <span class="p">[</span><span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">hello</span><span class="p">)</span>
+<span class="c1">// Prints "["hello": 0]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">-=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The dictionary to subtract from <code>lhs</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE1aoiySDyxq_GAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&amp;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE1aoiySDyxq_GAC_ACtFZ">&amp;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new dictionary with the elements that are common to both ywo
+dictionaries.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span> <span class="o">&amp;</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">])</span>
+<span class="c1">// Prints "["hello": 0]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">&amp;</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The dictionary to compare with <code>lhs</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE1ooiySDyxq_GAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/|(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE1ooiySDyxq_GAC_ACtFZ">|(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a union dictionary of two dictionaries.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">0</span><span class="p">]</span> <span class="o">|</span> <span class="p">[</span><span class="s">"world"</span><span class="p">:</span> <span class="mi">1</span><span class="p">])</span>
+<span class="c1">// Prints "["hello": 0, "world": 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">|</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The dictionary to combile with <code>lhs</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsE20removingValueForKeysySDyxq_Gxd_tF"></a>
+                    <a name="//apple_ref/swift/Method/removingValueForKeys(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsE20removingValueForKeysySDyxq_Gxd_tF">removingValueForKeys(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a dictionary which does not contains the values for keys</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="s">""</span><span class="p">,</span> <span class="s">"world"</span><span class="p">:</span> <span class="s">""</span><span class="p">]</span><span class="o">.</span><span class="nf">removingValueForKeys</span><span class="p">(</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">)</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removingValueForKeys</span><span class="p">(</span><span class="n">_</span> <span class="nv">keys</span><span class="p">:</span> <span class="kt">Key</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keys</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The positions of the key-value pair to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSQR_rlE14removingValuesySDyxq_Gq_d_tF"></a>
+                    <a name="//apple_ref/swift/Method/removingValues(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSQR_rlE14removingValuesySDyxq_Gq_d_tF">removingValues(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a dictionary which does not contains the values.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">:</span> <span class="s">""</span><span class="p">]</span><span class="o">.</span><span class="nf">removingValues</span><span class="p">(</span><span class="s">"world"</span><span class="p">,</span> <span class="s">""</span><span class="p">)</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removingValues</span><span class="p">(</span><span class="n">_</span> <span class="nv">values</span><span class="p">:</span> <span class="kt">Value</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>values</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The values to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE13removingEmptySDySSq_GyF"></a>
+                    <a name="//apple_ref/swift/Method/removingEmpty()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE13removingEmptySDySSq_GyF">removingEmpty()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a dictionary which does not contain empty elements.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">:</span> <span class="p">[</span><span class="s">""</span><span class="p">]],</span> <span class="s">"world"</span><span class="p">:</span> <span class="p">[</span><span class="s">""</span><span class="p">,</span> <span class="p">[</span><span class="s">""</span><span class="p">:</span> <span class="s">""</span><span class="p">]],</span> <span class="s">"!"</span><span class="p">:</span> <span class="s">""</span><span class="p">,</span> <span class="s">"Null"</span><span class="p">:</span> <span class="kt">NSNull</span><span class="p">()]</span><span class="o">.</span><span class="nf">removingEmpty</span><span class="p">()</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removingEmpty</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Dictionary</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a dictionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE6stringSSSgSS_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(string:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE6stringSSSgSS_tcip">subscript(string:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accesses the String value associated with the given key for reading and
+writing.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="s">"world"</span><span class="p">][</span><span class="nv">string</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">])</span>
+<span class="c1">// Prints "Optional("world")"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">string</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to find in the dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The String value associated with <code>key</code> if <code>key</code> is in the dictionary; otherwise, <code>nil</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE11stringValueS2S_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(stringValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE11stringValueS2S_tcip">subscript(stringValue:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accesses the String value associated with the given key for reading and
+writing.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="s">"world"</span><span class="p">][</span><span class="nv">stringValue</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">])</span>
+<span class="c1">// Prints "world"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">stringValue</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to find in the dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The String value associated with <code>key</code> if <code>key</code> is in the dictionary; otherwise, &ldquo;&rdquo;.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE3intSiSgSS_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(int:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE3intSiSgSS_tcip">subscript(int:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accesses the Int value associated with the given key for reading and
+writing.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">1</span><span class="p">][</span><span class="nv">int</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">])</span>
+<span class="c1">// Prints "Optional(1)"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">int</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to find in the dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Int value associated with <code>key</code> if <code>key</code> is in the dictionary; otherwise, <code>nil</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE8intValueSiSS_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(intValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE8intValueSiSS_tcip">subscript(intValue:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accesses the Int value associated with the given key for reading and
+writing.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mi">1</span><span class="p">][</span><span class="nv">intValue</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">])</span>
+<span class="c1">// Prints "1"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">intValue</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to find in the dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Int value associated with <code>key</code> if <code>key</code> is in the dictionary; otherwise, 0.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE6doubleSdSgSS_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(double:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE6doubleSdSgSS_tcip">subscript(double:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accesses the Double value associated with the given key for reading and
+writing.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">][</span><span class="nv">double</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">])</span>
+<span class="c1">// Prints "Optional(1.0)"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">double</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to find in the dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Double value associated with <code>key</code> if <code>key</code> is in the dictionary; otherwise, <code>nil</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE11doubleValueSdSS_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(doubleValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE11doubleValueSdSS_tcip">subscript(doubleValue:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accesses the Double value associated with the given key for reading and
+writing.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">][</span><span class="nv">doubleValue</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">])</span>
+<span class="c1">// Prints "1.0"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">doubleValue</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to find in the dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Double value associated with <code>key</code> if <code>key</code> is in the dictionary; otherwise, 0.0.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE5arraySayypGSgSS_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(array:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE5arraySayypGSgSS_tcip">subscript(array:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accesses the Array value associated with the given key for reading and
+writing.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">]][</span><span class="nv">array</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">])</span>
+<span class="c1">// Prints "Optional(["hello", "world"])"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">array</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to find in the dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Array value associated with <code>key</code> if <code>key</code> is in the dictionary; otherwise, <code>nil</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE10arrayValueSayypGSS_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(arrayValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE10arrayValueSayypGSS_tcip">subscript(arrayValue:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accesses the Array value associated with the given key for reading and
+writing.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">]][</span><span class="nv">arrayValue</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">])</span>
+<span class="c1">// Prints ["hello", "world"]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">arrayValue</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to find in the dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Array value associated with <code>key</code> if <code>key</code> is in the dictionary; otherwise, <a href="">Any</a>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE10dictionarySDySSypGSgSS_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dictionary:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE10dictionarySDySSypGSgSS_tcip">subscript(dictionary:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accesses the Dictionary value associated with the given key for reading
+and writing.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">:</span> <span class="s">"world"</span><span class="p">]][</span><span class="nv">dictionary</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">])</span>
+<span class="c1">// Prints "Optional(["hello": "world"])"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">dictionary</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to find in the dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Dictionary value associated with <code>key</code> if <code>key</code> is in the dictionary; otherwise, <code>nil</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SD11SExtensionsSSRszrlE15dictionaryValueSDySSypGSS_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(dictionaryValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD11SExtensionsSSRszrlE15dictionaryValueSDySSypGSS_tcip">subscript(dictionaryValue:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Accesses the Dictionary value associated with the given key for reading
+and writing.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">:</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">:</span> <span class="s">"world"</span><span class="p">]][</span><span class="nv">dictionaryValue</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">])</span>
+<span class="c1">// Prints "["hello": "world"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">dictionaryValue</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key to find in the dictionary.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Dictionary value associated with <code>key</code> if <code>key</code> is in the dictionary; otherwise, <a href="">String: Any</a>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2018-12-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

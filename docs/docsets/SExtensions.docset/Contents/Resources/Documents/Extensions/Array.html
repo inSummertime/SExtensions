@@ -1,0 +1,2482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/Array" class="dashAnchor"></a>
+    <a title="Array Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SExtensions Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SExtensions Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Array Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bool.html">Bool</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CALayer.html">CALayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGPoint.html">CGPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CGRect.html">CGRect</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Calendar.html">Calendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Character.html">Character</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date/MonthStyle.html">– MonthStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date/DayNameStyle.html">– DayNameStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DateInterval.html">DateInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Decodable.html">Decodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchSource.html">DispatchSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Double.html">Double</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Int.html">Int</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONSerialization.html">JSONSerialization</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSAttributedString.html">NSAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSMutableAttributedString.html">NSMutableAttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSObject.html">NSObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Optional.html">Optional</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Set.html">Set</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/TimeZone.html">TimeZone</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/TimeZone/Identifier.html">– Identifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLRequest.html">URLRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UserDefaults.html">UserDefaults</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Addable.html">Addable</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Array</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="p">:</span> <span class="n">_DestructorSafeContainer</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE19appendIfNotContainsySbxF"></a>
+                    <a name="//apple_ref/swift/Method/appendIfNotContains(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE19appendIfNotContainsySbxF">appendIfNotContains(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Appends the element if array does not contain the element.</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="nf">appendIfNotContains</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1">// Prints "true"</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="c1">// Prints "[0, 1, 2]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="k">mutating</span> <span class="kd">func</span> <span class="nf">appendIfNotContains</span><span class="p">(</span><span class="n">_</span> <span class="nv">newElement</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newElement</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The element that needs to append.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Whether appended.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE6append_17maxCountOfElementSbx_SitF"></a>
+                    <a name="//apple_ref/swift/Method/append(_:maxCountOfElement:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE6append_17maxCountOfElementSbx_SitF">append(_:maxCountOfElement:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Appends the element if array does not contain enough.</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="s">"hello"</span><span class="p">,</span> <span class="nv">maxCountOfElement</span><span class="p">:</span> <span class="mi">1</span><span class="p">))</span>
+<span class="c1">// Prints "false"</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="c1">// Prints "["hello", "world", "!"]"</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">array</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="s">"!"</span><span class="p">,</span> <span class="nv">maxCountOfElement</span><span class="p">:</span> <span class="mi">2</span><span class="p">))</span>
+<span class="c1">// Prints "true"</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="c1">// Prints "["hello", "world", "!", "!"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="k">mutating</span> <span class="kd">func</span> <span class="nf">append</span><span class="p">(</span><span class="n">_</span> <span class="nv">newElement</span><span class="p">:</span> <span class="kt">Element</span><span class="p">,</span> <span class="nv">maxCountOfElement</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newElement</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The element that needs to append.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxCountOfElement</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The max capicity of the element.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Whether appended.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSjRzlE5totalxvp"></a>
+                    <a name="//apple_ref/swift/Property/total" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSjRzlE5totalxvp">total</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the sum of all elements.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">total</span><span class="p">:</span> <span class="kt">Element</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSzRzlE7averageSdvp"></a>
+                    <a name="//apple_ref/swift/Property/average" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSzRzlE7averageSdvp">average</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the average of all elements.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">average</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSBRzlE7averagexvp"></a>
+                    <a name="//apple_ref/swift/Property/average" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSBRzlE7averagexvp">average</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the average of all elements.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">average</span><span class="p">:</span> <span class="kt">Element</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE14countOfElementySixF"></a>
+                    <a name="//apple_ref/swift/Method/countOfElement(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE14countOfElementySixF">countOfElement(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the count of a element.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="nf">countOfElement</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+<span class="c1">// Prints "2"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">countOfElement</span><span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>element</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The element.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The count.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSHRzlE15countDictionarySDyxSiGvp"></a>
+                    <a name="//apple_ref/swift/Property/countDictionary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSHRzlE15countDictionarySDyxSiGvp">countDictionary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A dictionary of all elements and their counts.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">countDictionary</span><span class="p">)</span>
+<span class="c1">// Prints "[0: 2, 1: 1, 2: 1]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">countDictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">Element</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSHRzlE16mostCountElementxSgvp"></a>
+                    <a name="//apple_ref/swift/Property/mostCountElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSHRzlE16mostCountElementxSgvp">mostCountElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the element which appears the most.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">,</span> <span class="s">""</span><span class="p">]</span><span class="o">.</span><span class="n">mostCountElement</span><span class="p">)</span>
+<span class="c1">// Prints "!"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mostCountElement</span><span class="p">:</span> <span class="kt">Element</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSHRzlE15majorityElementxSgvp"></a>
+                    <a name="//apple_ref/swift/Property/majorityElement" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSHRzlE15majorityElementxSgvp">majorityElement</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the element that appears more than half of the counts times.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]</span><span class="o">.</span><span class="n">majorityElement</span><span class="p">)</span>
+<span class="c1">// Prints "!"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">majorityElement</span><span class="p">:</span> <span class="kt">Element</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSHRzlE10duplicatesShyxGvp"></a>
+                    <a name="//apple_ref/swift/Property/duplicates" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSHRzlE10duplicatesShyxGvp">duplicates</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A set of duplicate elements.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">duplicates</span><span class="p">)</span>
+<span class="c1">// Prints "[2, 3]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">duplicates</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSHRzlE14duplicateArraySayxGvp"></a>
+                    <a name="//apple_ref/swift/Property/duplicateArray" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSHRzlE14duplicateArraySayxGvp">duplicateArray</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of duplidate elements with the original order.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">duplicateArray</span><span class="p">)</span>
+<span class="c1">// Prints "[0, 0, 2, 2, 0, 2]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">duplicateArray</span><span class="p">:</span> <span class="kt">Array</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE7indexes2ofSaySiGx_tF"></a>
+                    <a name="//apple_ref/swift/Method/indexes(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE7indexes2ofSaySiGx_tF">indexes(of:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the indexes where the specified value appears in the
+array.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">,</span> <span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]</span><span class="o">.</span><span class="nf">indexes</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">))</span>
+<span class="c1">// Prints "[0, 3]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">indexes</span><span class="p">(</span><span class="n">of</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Index</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>element</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An element to search for in the array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The array of indexes where <code>element</code> is found. If <code>element</code>
+is not found in the array, returns an empty array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE9lastIndex2ofSiSgx_tF"></a>
+                    <a name="//apple_ref/swift/Method/lastIndex(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE9lastIndex2ofSiSgx_tF">lastIndex(of:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the last index of the element.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nf">lastIndex</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="mi">1</span><span class="p">))</span>
+<span class="c1">// Prints "4"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lastIndex</span><span class="p">(</span><span class="n">of</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Index</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>element</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An element to search for in the array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A index</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE7indexesySaySiGSbxXEF"></a>
+                    <a name="//apple_ref/swift/Method/indexes(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE7indexesySaySiGSbxXEF">indexes(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the indexes where <code>element</code> satisfies the given predicate.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">,</span> <span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]</span><span class="o">.</span><span class="nf">indexes</span><span class="p">(</span> <span class="p">{</span><span class="nv">$0</span><span class="o">.</span><span class="n">count</span> <span class="o">==</span> <span class="mi">5</span><span class="p">}</span> <span class="p">))</span>
+<span class="c1">// Print "[0, 1, 3, 4]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">indexes</span><span class="p">(</span><span class="n">_</span> <span class="nv">isIncluded</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Index</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isIncluded</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes a element as its
+argument and returns a Boolean value indicating whether the element
+should be included.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The array of indexes where <code>element</code> satisfies the given
+predicate. If <code>element</code> is not found in the array, returns an empty
+array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsE17indexedDictionarySDySixGvp"></a>
+                    <a name="//apple_ref/swift/Property/indexedDictionary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsE17indexedDictionarySDySixGvp">indexedDictionary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a dictionary with the index as the key, elmenent as the vlaue.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">indexedDictionary</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">dictionary</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="c1">// Prints "Optional("hello")"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">indexedDictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt">Element</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE5unionySayxGACd_tF"></a>
+                    <a name="//apple_ref/swift/Method/union(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE5unionySayxGACd_tF">union(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new array with the elements of both this array and the given
+arrays.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">]</span><span class="o">.</span><span class="nf">union</span><span class="p">([</span><span class="s">"!"</span><span class="p">],</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">])</span>
+<span class="c1">// Prints "["hello", "world", "!"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">union</span><span class="p">(</span><span class="n">_</span> <span class="nv">others</span><span class="p">:</span> <span class="kt">Array</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>others</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other arrays.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new array with the unique elements of this array and
+<code>others</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE12intersectionySayxGACd_tF"></a>
+                    <a name="//apple_ref/swift/Method/intersection(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE12intersectionySayxGACd_tF">intersection(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new array with the elements that are common to both this array
+and the given arrays.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">]</span><span class="o">.</span><span class="nf">intersection</span><span class="p">([</span><span class="s">"hello"</span><span class="p">])</span>
+<span class="c1">// Prints "["hello"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">intersection</span><span class="p">(</span><span class="n">_</span> <span class="nv">others</span><span class="p">:</span> <span class="kt">Array</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>others</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other arrays</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE10differenceySayxGACd_tF"></a>
+                    <a name="//apple_ref/swift/Method/difference(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE10differenceySayxGACd_tF">difference(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new array with the elements that are different from the given
+arrays.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">]</span><span class="o">.</span><span class="nf">difference</span><span class="p">([</span><span class="s">"hello"</span><span class="p">]))</span>
+<span class="c1">// Prints "["world"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">difference</span><span class="p">(</span><span class="n">_</span> <span class="nv">others</span><span class="p">:</span> <span class="kt">Array</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>others</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other arrays.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A new array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE11subtractingySayxGACd_tF"></a>
+                    <a name="//apple_ref/swift/Method/subtracting(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE11subtractingySayxGACd_tF">subtracting(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new array containing the elements of this array that do not
+occur in the given arrays.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]</span><span class="o">.</span><span class="nf">subtracting</span><span class="p">([</span><span class="s">"hello"</span><span class="p">]))</span>
+<span class="c1">// Prints "["world", "!"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">subtracting</span><span class="p">(</span><span class="n">_</span> <span class="nv">others</span><span class="p">:</span> <span class="kt">Array</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>others</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Other array</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a new array</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE10isSubarray2ofSbSayxG_tF"></a>
+                    <a name="//apple_ref/swift/Method/isSubarray(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE10isSubarray2ofSbSayxG_tF">isSubarray(of:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether this array is a subarray
+of the given array.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">]</span><span class="o">.</span><span class="nf">isSubarray</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">]))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isSubarray</span><span class="p">(</span><span class="n">of</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">Array</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the array is a subarray of <code>other</code>; otherwise,
+<code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE16isStrictSubarray2ofSbSayxG_tF"></a>
+                    <a name="//apple_ref/swift/Method/isStrictSubarray(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE16isStrictSubarray2ofSbSayxG_tF">isStrictSubarray(of:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether the array is a strict
+subarray of the given array.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">]</span><span class="o">.</span><span class="nf">isStrictSubarray</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">]))</span>
+<span class="c1">// Prints "false"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isStrictSubarray</span><span class="p">(</span><span class="n">of</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">Array</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the array is a strict subarray of <code>other</code>;
+otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE8containsySbSayxGF"></a>
+                    <a name="//apple_ref/swift/Method/contains(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE8containsySbSayxGF">contains(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value that indicates whether this array contains
+the given array.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">]</span><span class="o">.</span><span class="nf">contains</span><span class="p">([</span><span class="s">"hello"</span><span class="p">]))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="kt">Array</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the array contains <code>other</code>; otherwise, <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE13elementsToAdd5other10isIncludedSayxGAE_Sbx_xtXEtF"></a>
+                    <a name="//apple_ref/swift/Method/elementsToAdd(other:isIncluded:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE13elementsToAdd5other10isIncludedSayxGAE_Sbx_xtXEtF">elementsToAdd(other:isIncluded:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array with the elements to add after comparing the other array.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Data</span><span class="p">:</span> <span class="kt">Equatable</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span>
+    <span class="k">let</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span>
+<span class="p">}</span>
+<span class="k">let</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Data</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">),</span> <span class="kt">Data</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"world"</span><span class="p">)]</span>
+<span class="k">let</span> <span class="nv">anotherArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Data</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">),</span> <span class="kt">Data</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"world"</span><span class="p">)]</span>
+<span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="nf">elementsToAdd</span><span class="p">(</span><span class="nv">other</span><span class="p">:</span> <span class="n">anotherArray</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$0</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="nv">$1</span><span class="o">.</span><span class="n">id</span>
+<span class="p">}</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="c1">// Prints "[Data(id: 2, title: "world")]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">elementsToAdd</span><span class="p">(</span><span class="nv">other</span><span class="p">:</span> <span class="kt">Array</span><span class="p">,</span> <span class="nv">isIncluded</span><span class="p">:</span> <span class="p">(</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isIncluded</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes a element as its
+argument and returns a Boolean value indicating whether the element
+should be included.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE16elementsToRemove5other10isIncludedSayxGAE_Sbx_xtXEtF"></a>
+                    <a name="//apple_ref/swift/Method/elementsToRemove(other:isIncluded:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE16elementsToRemove5other10isIncludedSayxGAE_Sbx_xtXEtF">elementsToRemove(other:isIncluded:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array with the elements to remove after comparing the other array.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Data</span><span class="p">:</span> <span class="kt">Equatable</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span>
+    <span class="k">let</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span>
+<span class="p">}</span>
+<span class="k">let</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Data</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">),</span> <span class="kt">Data</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"world"</span><span class="p">)]</span>
+<span class="k">let</span> <span class="nv">anotherArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Data</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">),</span> <span class="kt">Data</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"world"</span><span class="p">)]</span>
+<span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="nf">elementsToRemove</span><span class="p">(</span><span class="nv">other</span><span class="p">:</span> <span class="n">anotherArray</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$0</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="nv">$1</span><span class="o">.</span><span class="n">id</span>
+<span class="p">}</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="c1">// Prints "[Data(id: 0, title: "hello")]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">elementsToRemove</span><span class="p">(</span><span class="nv">other</span><span class="p">:</span> <span class="kt">Array</span><span class="p">,</span> <span class="nv">isIncluded</span><span class="p">:</span> <span class="p">(</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isIncluded</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes a element as its
+argument and returns a Boolean value indicating whether the element
+should be included.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsE16elementsToUpdate5other10isIncludedSayxGAE_Sbx_xtXEtF"></a>
+                    <a name="//apple_ref/swift/Method/elementsToUpdate(other:isIncluded:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsE16elementsToUpdate5other10isIncludedSayxGAE_Sbx_xtXEtF">elementsToUpdate(other:isIncluded:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array with the elements to update after comparing the other array.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Data</span><span class="p">:</span> <span class="kt">Equatable</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span>
+    <span class="k">let</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span>
+<span class="p">}</span>
+<span class="k">let</span> <span class="nv">array</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Data</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">),</span> <span class="kt">Data</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"world"</span><span class="p">)]</span>
+<span class="k">let</span> <span class="nv">anotherArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Data</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">),</span> <span class="kt">Data</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="s">"world"</span><span class="p">)]</span>
+<span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">array</span><span class="o">.</span><span class="nf">elementsToUpdate</span><span class="p">(</span><span class="nv">other</span><span class="p">:</span> <span class="n">anotherArray</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$0</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="nv">$1</span><span class="o">.</span><span class="n">id</span>
+<span class="p">}</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="c1">// Prints "[Data(id: 1, title: "hello")]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">elementsToUpdate</span><span class="p">(</span><span class="nv">other</span><span class="p">:</span> <span class="kt">Array</span><span class="p">,</span> <span class="nv">isIncluded</span><span class="p">:</span> <span class="p">(</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isIncluded</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes a element as its
+argument and returns a Boolean value indicating whether the element
+should be included.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE1ooiySayxGAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/|(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE1ooiySayxGAC_ACtFZ">|(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a union array of two arrays.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">]</span> <span class="o">|</span> <span class="p">[</span><span class="s">"!"</span><span class="p">])</span>
+<span class="c1">// Prints "["hello", "world", "!"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">|</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Array</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Array</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The array to combile with <code>lhs</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE1soiySayxGAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/-(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE1soiySayxGAC_ACtFZ">-(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subtracts the second value from the first if the elements are equal.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">]</span> <span class="o">-</span> <span class="p">[</span><span class="s">"world"</span><span class="p">])</span>
+<span class="c1">// Prints "["hello"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">-</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Array</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Array</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The first array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The array to subtract.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE2seoiyySayxGz_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/-=(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE2seoiyySayxGz_ACtFZ">-=(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subtracts the second array from the first if the elements are equal and
+stores the difference in the left-hand-side variable.</p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">hello</span> <span class="o">=</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">]</span>
+<span class="n">hello</span> <span class="o">-=</span> <span class="p">[</span><span class="s">"world"</span><span class="p">]</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">hello</span><span class="p">)</span>
+<span class="c1">// Prints "["hello"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">-=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Array</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Array</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The array to subtract from <code>lhs</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE1aoiySayxGAC_ACtFZ"></a>
+                    <a name="//apple_ref/swift/Method/&amp;(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE1aoiySayxGAC_ACtFZ">&amp;(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a new array with the elements that are common to both ywo
+arrays.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">]</span> <span class="o">&amp;</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">])</span>
+<span class="c1">// Prints "["hello"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="o">&amp;</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">Array</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">Array</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rhs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The array to compare with <code>lhs</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsE8removing2atSayxGSid_tF"></a>
+                    <a name="//apple_ref/swift/Method/removing(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsE8removing2atSayxGSid_tF">removing(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array which does not contain the elements at the specified
+positions.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]</span><span class="o">.</span><span class="nf">removing</span><span class="p">(</span><span class="nv">at</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="c1">// Prints "["!"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removing</span><span class="p">(</span><span class="n">at</span> <span class="nv">positions</span><span class="p">:</span> <span class="kt">Int</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>positions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The positions of the elements to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsE13removingEmptySayxGyF"></a>
+                    <a name="//apple_ref/swift/Method/removingEmpty()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsE13removingEmptySayxGyF">removingEmpty()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array which does not contain any empty element.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([[</span><span class="s">""</span><span class="p">,</span> <span class="s">""</span><span class="p">],</span> <span class="p">[],</span> <span class="s">""</span><span class="p">,</span> <span class="p">[</span><span class="s">"hello"</span><span class="p">:</span> <span class="s">""</span><span class="p">],</span> <span class="kt">NSNull</span><span class="p">(),</span> <span class="p">[[</span><span class="s">""</span><span class="p">]],</span> <span class="p">[[:]],</span> <span class="p">[[</span><span class="s">"hello"</span><span class="p">:</span> <span class="p">[]]]]</span><span class="o">.</span><span class="nf">removingEmpty</span><span class="p">()</span><span class="o">.</span><span class="n">isEmpty</span><span class="p">)</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removingEmpty</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE8removingySayxGxd_tF"></a>
+                    <a name="//apple_ref/swift/Method/removing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE8removingySayxGxd_tF">removing(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array which does not contain the given elements.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]</span><span class="o">.</span><span class="nf">removing</span><span class="p">(</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">))</span>
+<span class="c1">// Prints "["!"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removing</span><span class="p">(</span><span class="n">_</span> <span class="nv">elements</span><span class="p">:</span> <span class="kt">Element</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>elements</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The elements to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE12removingLastySayxGxF"></a>
+                    <a name="//apple_ref/swift/Method/removingLast(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE12removingLastySayxGxF">removingLast(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array which removes the last given element.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="nf">removingLast</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="c1">// Prints "[0, 1, 2]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removingLast</span><span class="p">(</span><span class="n">_</span> <span class="nv">element</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>element</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The elements to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE8removingySayxGACd_tF"></a>
+                    <a name="//apple_ref/swift/Method/removing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE8removingySayxGACd_tF">removing(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array which does not contain the elements in the given arrays.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]</span><span class="o">.</span><span class="nf">removing</span><span class="p">([</span><span class="s">"hello"</span><span class="p">],</span> <span class="p">[</span><span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]))</span>
+<span class="c1">// Prints "[]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removing</span><span class="p">(</span><span class="n">_</span> <span class="nv">others</span><span class="p">:</span> <span class="kt">Array</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>others</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The arrays to remove</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE22removingCountableRangeySayxGSnySiGF"></a>
+                    <a name="//apple_ref/swift/Method/removingCountableRange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE22removingCountableRangeySayxGSnySiGF">removingCountableRange(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array which does not contain the elements in the given
+countable range.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]</span><span class="o">.</span><span class="nf">removingCountableRange</span><span class="p">(</span><span class="mi">0</span><span class="o">..&lt;</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1">// Prints "["!"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removingCountableRange</span><span class="p">(</span><span class="n">_</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">CountableRange</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>range</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A countable range.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE28removingCountableClosedRangeySayxGSNySiGF"></a>
+                    <a name="//apple_ref/swift/Method/removingCountableClosedRange(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE28removingCountableClosedRangeySayxGSNySiGF">removingCountableClosedRange(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array which does not contain the elements in the given
+countable closed range.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]</span><span class="o">.</span><span class="nf">removingCountableClosedRange</span><span class="p">(</span><span class="mi">0</span><span class="o">...</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1">// Prints "[]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removingCountableClosedRange</span><span class="p">(</span><span class="n">_</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">CountableClosedRange</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>range</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A countable closed range.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSQRzlE18removingDuplicatesSayxGyF"></a>
+                    <a name="//apple_ref/swift/Method/removingDuplicates()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSQRzlE18removingDuplicatesSayxGyF">removingDuplicates()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array which does not contain duplicated elements.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">,</span> <span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]</span><span class="o">.</span><span class="nf">removingDuplicates</span><span class="p">())</span>
+<span class="c1">// Prints "["hello", "world", "!"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removingDuplicates</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Array</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsE4safexSgSi_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(safe:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsE4safexSgSi_tcip">subscript(safe:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the element if it is within bounds.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">][</span><span class="nv">safe</span><span class="p">:</span> <span class="mi">1</span><span class="p">]</span><span class="o">!</span><span class="p">)</span>
+<span class="c1">// Prints "world"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">safe</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Element</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the specified index.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsE11safeIndicesSayxGSid_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(safeIndices:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsE11safeIndicesSayxGSid_tcip">subscript(safeIndices:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array if the indices are within bounds.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">][</span><span class="nv">safeIndices</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="c1">// Prints "["hello"]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">safeIndices</span> <span class="nv">indices</span><span class="p">:</span> <span class="kt">Int</span><span class="o">...</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indices</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the indices the elements are at.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsE4safeSayxGSgSnySiG_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(safe:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsE4safeSayxGSgSnySiG_tcip">subscript(safe:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a subsequence with a CountableRange safely.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">][</span><span class="nv">safe</span><span class="p">:</span> <span class="mi">1</span><span class="o">..&lt;</span><span class="mi">4</span><span class="p">])</span>
+<span class="c1">// Prints "Optional(["world", "!"])"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">safe</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">CountableRange</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>range</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a CountableRange.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A subsequence starting at the <code>start</code> position of the
+CountableRange or self and ending at the <code>end</code> position of the
+CountableRange or self</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsE4safeSayxGSgSNySiG_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(safe:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsE4safeSayxGSgSNySiG_tcip">subscript(safe:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a subsequence with a CountableClosedRange safely.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"hello"</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">][</span><span class="nv">safe</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="o">...</span><span class="mi">1</span><span class="p">])</span>
+<span class="c1">// Prints "Optional(["hello", "world"])"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="n">safe</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">CountableClosedRange</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Array</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>range</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a CountableClosedRange</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A subsequence starting at the <code>start</code> position of the
+CountableClosedRange or self and ending at the <code>end</code> position of the
+CountableClosedRange or self</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsE8spliting2bySaySayxGGSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/spliting(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsE8spliting2bySaySayxGGSi_tF">spliting(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Splits into an array of arrays of elements by a given size.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="nf">spliting</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="mi">3</span><span class="p">))</span>
+<span class="c1">// Prints "[[0, 1, 2], [3, 4, 5], [6, 7]]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">spliting</span><span class="p">(</span><span class="n">by</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[[</span><span class="kt">Element</span><span class="p">]]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>size</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of each array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSyRzlE19longestCommonPrefixxSgvp"></a>
+                    <a name="//apple_ref/swift/Property/longestCommonPrefix" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSyRzlE19longestCommonPrefixxSgvp">longestCommonPrefix</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns longest common prefix of the elements.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"abc"</span><span class="p">,</span> <span class="s">"abcd"</span><span class="p">,</span> <span class="s">"abcde"</span><span class="p">]</span><span class="o">.</span><span class="n">longestCommonPrefix</span><span class="p">)</span>
+<span class="c1">// Prints "abc"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">longestCommonPrefix</span><span class="p">:</span> <span class="kt">Element</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSyRzlE19longestCommonSuffixxSgvp"></a>
+                    <a name="//apple_ref/swift/Property/longestCommonSuffix" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSyRzlE19longestCommonSuffixxSgvp">longestCommonSuffix</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns longest common suffix of the elements.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"xyz"</span><span class="p">,</span> <span class="s">"wxyz"</span><span class="p">,</span> <span class="s">"vwxyz"</span><span class="p">]</span><span class="o">.</span><span class="n">longestCommonSuffix</span><span class="p">)</span>
+<span class="c1">// Prints "xyz"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">longestCommonSuffix</span><span class="p">:</span> <span class="kt">Element</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsSyRzlE13groupAnagramsShySayxGGvp"></a>
+                    <a name="//apple_ref/swift/Property/groupAnagrams" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsSyRzlE13groupAnagramsShySayxGGvp">groupAnagrams</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a set of array of elements that are anagrams.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"ab"</span><span class="p">,</span> <span class="s">"ba"</span><span class="p">,</span> <span class="s">"abc"</span><span class="p">,</span> <span class="s">"acb"</span><span class="p">,</span> <span class="s">"bac"</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">""</span><span class="p">]</span><span class="o">.</span><span class="n">groupAnagrams</span><span class="p">)</span>
+<span class="c1">//Prints "[["ab", "ba"], [""], [" "], ["abc", "acb", "bac"]]"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">groupAnagrams</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Element</span><span class="p">]</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa11SExtensionsAA7AddableRzlE3sumxvp"></a>
+                    <a name="//apple_ref/swift/Property/sum" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa11SExtensionsAA7AddableRzlE3sumxvp">sum</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The sum of all elements.</p>
+<pre class="highlight swift"><code><span class="nf">print</span><span class="p">([</span><span class="s">"Hello"</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">"world"</span><span class="p">,</span> <span class="s">"!"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">)</span>
+<span class="c1">//Print "Hello world!"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sum</span><span class="p">:</span> <span class="kt">Element</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2018-12-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
