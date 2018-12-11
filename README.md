@@ -1,4 +1,4 @@
-# Extensions  [![Swift](https://img.shields.io/badge/swfit-4.2-green.svg)](https://swift.org/blog/swift-4-2-released/) [![Build Status](https://travis-ci.org/inSummertime/SExtensions.svg?branch=master)](https://travis-ci.org/inSummertime/SExtensions) [![codecov](https://codecov.io/gh/inSummertime/SExtensions/branch/master/graph/badge.svg)](https://codecov.io/gh/inSummertime/SExtensions) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+# Extensions  [![Swift](https://img.shields.io/badge/swfit-4.2-green.svg)](https://swift.org/blog/swift-4-2-released/) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![codecov](https://codecov.io/gh/inSummertime/SExtensions/branch/master/graph/badge.svg)](https://codecov.io/gh/inSummertime/SExtensions) [![Build Status](https://travis-ci.org/inSummertime/SExtensions.svg?branch=master)](https://travis-ci.org/inSummertime/SExtensions)
 
 Some handy extensions.
 
