@@ -231,6 +231,7 @@
 		71F5D61721659C0D000032B1 /* SetOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F5D61621659C0D000032B1 /* SetOperatorTests.swift */; };
 		71FAC84620DF878100D8E1C1 /* Array+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */; };
 		71FAC84920DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */; };
+		C408D30C21C11B4800736055 /* BotPreIntegration.sh in Resources */ = {isa = PBXBuildFile; fileRef = C408D30B21C11B4800736055 /* BotPreIntegration.sh */; };
 		C45485E321BCCF1A00E7F47A /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E121BCCF1A00E7F47A /* Gemfile */; };
 		C45485E421BCCF1A00E7F47A /* Dangerfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E221BCCF1A00E7F47A /* Dangerfile */; };
 /* End PBXBuildFile section */
@@ -473,6 +474,7 @@
 		71F5D61621659C0D000032B1 /* SetOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetOperatorTests.swift; sourceTree = "<group>"; };
 		71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SafeSubscript.swift"; sourceTree = "<group>"; };
 		71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySafeSubscriptTests.swift; sourceTree = "<group>"; };
+		C408D30B21C11B4800736055 /* BotPreIntegration.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BotPreIntegration.sh; sourceTree = "<group>"; };
 		C45485E121BCCF1A00E7F47A /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		C45485E221BCCF1A00E7F47A /* Dangerfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -733,6 +735,7 @@
 		71697E4320B91EAD005C58EC /* Deployment */ = {
 			isa = PBXGroup;
 			children = (
+				C408D30B21C11B4800736055 /* BotPreIntegration.sh */,
 				C45485E221BCCF1A00E7F47A /* Dangerfile */,
 				C45485E121BCCF1A00E7F47A /* Gemfile */,
 				71697E3C20B91E64005C58EC /* LICENSE */,
@@ -1292,6 +1295,7 @@
 				C45485E321BCCF1A00E7F47A /* Gemfile in Resources */,
 				71697E4020B91E64005C58EC /* README.md in Resources */,
 				C45485E421BCCF1A00E7F47A /* Dangerfile in Resources */,
+				C408D30C21C11B4800736055 /* BotPreIntegration.sh in Resources */,
 				71697E3F20B91E64005C58EC /* LICENSE in Resources */,
 				71697E3E20B91E64005C58EC /* SExtensions.podspec in Resources */,
 			);
