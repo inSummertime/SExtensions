@@ -232,6 +232,7 @@
 		71FAC84620DF878100D8E1C1 /* Array+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */; };
 		71FAC84920DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */; };
 		C408D30C21C11B4800736055 /* BotPreIntegration.sh in Resources */ = {isa = PBXBuildFile; fileRef = C408D30B21C11B4800736055 /* BotPreIntegration.sh */; };
+		C42CFA5221C251EC004AC65A /* CALayer+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42CFA5121C251EC004AC65A /* CALayer+Corner.swift */; };
 		C45485E321BCCF1A00E7F47A /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E121BCCF1A00E7F47A /* Gemfile */; };
 		C45485E421BCCF1A00E7F47A /* Dangerfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E221BCCF1A00E7F47A /* Dangerfile */; };
 /* End PBXBuildFile section */
@@ -475,6 +476,7 @@
 		71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SafeSubscript.swift"; sourceTree = "<group>"; };
 		71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySafeSubscriptTests.swift; sourceTree = "<group>"; };
 		C408D30B21C11B4800736055 /* BotPreIntegration.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BotPreIntegration.sh; sourceTree = "<group>"; };
+		C42CFA5121C251EC004AC65A /* CALayer+Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Corner.swift"; sourceTree = "<group>"; };
 		C45485E121BCCF1A00E7F47A /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		C45485E221BCCF1A00E7F47A /* Dangerfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -885,6 +887,7 @@
 			children = (
 				71E6CA83218D222000E4C512 /* CALayer+AddColorGradient.swift */,
 				71A06328218AB67A004D9ABA /* CALayer+Border.swift */,
+				C42CFA5121C251EC004AC65A /* CALayer+Corner.swift */,
 				71A2A396218BCDFC00F55454 /* CALayer+RemoveAllSublayers.swift */,
 			);
 			path = QuartzCore;
@@ -1436,6 +1439,7 @@
 				71F5D61421659B09000032B1 /* Set+Operator.swift in Sources */,
 				71ADEDF4213150EF0075C0A8 /* URLRequest+Init.swift in Sources */,
 				71AB823E20C61A7400EC2A24 /* String+Alphanumeric.swift in Sources */,
+				C42CFA5221C251EC004AC65A /* CALayer+Corner.swift in Sources */,
 				716AE42521788FAD0000CBDA /* Int+NumberOfBitOne.swift in Sources */,
 				7130148020EB193200161E23 /* Array+Index.swift in Sources */,
 				7109AC5921873E4D00527AD5 /* NSObject+ClassName.swift in Sources */,
