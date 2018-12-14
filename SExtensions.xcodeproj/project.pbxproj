@@ -235,6 +235,8 @@
 		C42CFA5221C251EC004AC65A /* CALayer+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42CFA5121C251EC004AC65A /* CALayer+Corner.swift */; };
 		C45485E321BCCF1A00E7F47A /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E121BCCF1A00E7F47A /* Gemfile */; };
 		C45485E421BCCF1A00E7F47A /* Dangerfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E221BCCF1A00E7F47A /* Dangerfile */; };
+		C4ABF1C221C33A3900C0A5BA /* CALayer+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */; };
+		C4ABF1C421C33B8700C0A5BA /* CALayerCornerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABF1C321C33B8700C0A5BA /* CALayerCornerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -479,6 +481,8 @@
 		C42CFA5121C251EC004AC65A /* CALayer+Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Corner.swift"; sourceTree = "<group>"; };
 		C45485E121BCCF1A00E7F47A /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		C45485E221BCCF1A00E7F47A /* Dangerfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
+		C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Shadow.swift"; sourceTree = "<group>"; };
+		C4ABF1C321C33B8700C0A5BA /* CALayerCornerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerCornerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -889,6 +893,7 @@
 				71A06328218AB67A004D9ABA /* CALayer+Border.swift */,
 				C42CFA5121C251EC004AC65A /* CALayer+Corner.swift */,
 				71A2A396218BCDFC00F55454 /* CALayer+RemoveAllSublayers.swift */,
+				C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -898,6 +903,7 @@
 			children = (
 				71E6CA85218D22ED00E4C512 /* CALayerAddColorGradientTests.swift */,
 				71A0632B218AB931004D9ABA /* CALayerBorderTests.swift */,
+				C4ABF1C321C33B8700C0A5BA /* CALayerCornerTests.swift */,
 				71A2A398218BCE6E00F55454 /* CALayerRemoveAllSublayersTests.swift */,
 			);
 			path = QuartzCore;
@@ -1357,6 +1363,7 @@
 				7153D14E211BBDB600C0A1C7 /* DateInterval+Split.swift in Sources */,
 				719ECA7A20F3AD2A00F7901B /* Double+Currency.swift in Sources */,
 				71A0F6042102151D008FAD76 /* Date+IsIn.swift in Sources */,
+				C4ABF1C221C33A3900C0A5BA /* CALayer+Shadow.swift in Sources */,
 				716BF0EA215854C800AE2BBB /* Array+Average.swift in Sources */,
 				71B6F2B420D33C0B00B232C9 /* Dictionary+Operator.swift in Sources */,
 				71F0FF7D2141FFB000A26790 /* DispatchQueue+Delay.swift in Sources */,
@@ -1458,6 +1465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4ABF1C421C33B8700C0A5BA /* CALayerCornerTests.swift in Sources */,
 				71479E7D20C7494700418144 /* StringAffixTests.swift in Sources */,
 				710DAF3521531BC80098C387 /* ArrayAppendTests.swift in Sources */,
 				71585AE02150801300ACD6A8 /* ArraySumTests.swift in Sources */,
