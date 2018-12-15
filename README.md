@@ -1,4 +1,4 @@
-# Extensions  [![Swift](https://img.shields.io/badge/swfit-4.2-green.svg)](https://swift.org/blog/swift-4-2-released/) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![codecov](https://codecov.io/gh/inSummertime/SExtensions/branch/master/graph/badge.svg)](https://codecov.io/gh/inSummertime/SExtensions) [![Build Status](https://travis-ci.org/inSummertime/SExtensions.svg?branch=master)](https://travis-ci.org/inSummertime/SExtensions)
+# Extensions  [![Swift](https://img.shields.io/badge/swfit-4.2-green.svg)](https://swift.org/blog/swift-4-2-released/) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![codecov](https://codecov.io/gh/inSummertime/SExtensions/branch/master/graph/badge.svg)](https://codecov.io/gh/inSummertime/SExtensions) [![Build Status](https://travis-ci.org/inSummertime/SExtensions.svg?branch=master)](https://travis-ci.org/inSummertime/SExtensions) [![codebeat badge](https://codebeat.co/badges/d5bddc30-3170-44f7-a47f-1d713f774818)](https://codebeat.co/projects/github-com-insummertime-sextensions-master)
 
 Some handy extensions.
 
