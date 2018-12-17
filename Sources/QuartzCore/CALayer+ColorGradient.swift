@@ -1,5 +1,5 @@
 //
-//  CALayer+AddColorGradient.swift
+//  CALayer+ColorGradient.swift
 //  SExtensions
 //
 //  Created by Ray on 2018/11/3.
