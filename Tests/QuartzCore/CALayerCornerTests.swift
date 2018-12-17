@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import SExtensions
 
 final class CALayerCornerTests: XCTestCase {
 
