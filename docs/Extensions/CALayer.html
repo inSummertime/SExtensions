@@ -811,6 +811,192 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:So7CALayerC11SExtensionsE12bringToFrontyyF"></a>
+                    <a name="//apple_ref/swift/Method/bringToFront()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7CALayerC11SExtensionsE12bringToFrontyyF">bringToFront()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Brings to the front.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">superlayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">sublayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">anotherSublayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="n">superlayer</span><span class="o">.</span><span class="nf">addSublayer</span><span class="p">(</span><span class="n">sublayer</span><span class="p">)</span>
+<span class="n">superlayer</span><span class="o">.</span><span class="nf">addSublayer</span><span class="p">(</span><span class="n">anotherSublayer</span><span class="p">)</span>
+<span class="n">sublayer</span><span class="o">.</span><span class="nf">bringToFront</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">superlayer</span><span class="o">.</span><span class="n">sublayers</span><span class="o">!.</span><span class="n">first</span><span class="o">!</span> <span class="o">==</span> <span class="n">anotherSublayer</span><span class="p">)</span>
+<span class="c1">// Print "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">bringToFront</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So7CALayerC11SExtensionsE10sendToBackyyF"></a>
+                    <a name="//apple_ref/swift/Method/sendToBack()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7CALayerC11SExtensionsE10sendToBackyyF">sendToBack()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends to the back.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">superlayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">sublayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">anotherSublayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="n">superlayer</span><span class="o">.</span><span class="nf">addSublayer</span><span class="p">(</span><span class="n">sublayer</span><span class="p">)</span>
+<span class="n">superlayer</span><span class="o">.</span><span class="nf">addSublayer</span><span class="p">(</span><span class="n">anotherSublayer</span><span class="p">)</span>
+<span class="n">anotherSublayer</span><span class="o">.</span><span class="nf">sendToBack</span><span class="p">()</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">superlayer</span><span class="o">.</span><span class="n">sublayers</span><span class="o">!.</span><span class="n">first</span><span class="o">!</span> <span class="o">==</span> <span class="n">anotherSublayer</span><span class="p">)</span>
+<span class="c1">// Print "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sendToBack</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So7CALayerC11SExtensionsE20bringSublayerToFrontyyABF"></a>
+                    <a name="//apple_ref/swift/Method/bringSublayerToFront(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7CALayerC11SExtensionsE20bringSublayerToFrontyyABF">bringSublayerToFront(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Brings a sublayer to the front.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">superlayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">sublayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">anotherSublayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="n">superlayer</span><span class="o">.</span><span class="nf">addSublayer</span><span class="p">(</span><span class="n">sublayer</span><span class="p">)</span>
+<span class="n">superlayer</span><span class="o">.</span><span class="nf">addSublayer</span><span class="p">(</span><span class="n">anotherSublayer</span><span class="p">)</span>
+<span class="n">superlayer</span><span class="o">.</span><span class="nf">bringSublayerToFront</span><span class="p">(</span><span class="n">sublayer</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">superlayer</span><span class="o">.</span><span class="n">sublayers</span><span class="o">!.</span><span class="n">first</span><span class="o">!</span> <span class="o">==</span> <span class="n">anotherSublayer</span><span class="p">)</span>
+<span class="c1">// Print "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">bringSublayerToFront</span><span class="p">(</span><span class="n">_</span> <span class="nv">layer</span><span class="p">:</span> <span class="kt">CALayer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>layer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A sublayer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So7CALayerC11SExtensionsE18sendSublayerToBackyyABF"></a>
+                    <a name="//apple_ref/swift/Method/sendSublayerToBack(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7CALayerC11SExtensionsE18sendSublayerToBackyyABF">sendSublayerToBack(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a sublayer to the back.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">superlayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">sublayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">anotherSublayer</span> <span class="o">=</span> <span class="kt">CALayer</span><span class="p">()</span>
+<span class="n">superlayer</span><span class="o">.</span><span class="nf">addSublayer</span><span class="p">(</span><span class="n">sublayer</span><span class="p">)</span>
+<span class="n">superlayer</span><span class="o">.</span><span class="nf">addSublayer</span><span class="p">(</span><span class="n">anotherSublayer</span><span class="p">)</span>
+<span class="n">superlayer</span><span class="o">.</span><span class="nf">sendSublayerToBack</span><span class="p">(</span><span class="n">anotherSublayer</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">superlayer</span><span class="o">.</span><span class="n">sublayers</span><span class="o">!.</span><span class="n">first</span><span class="o">!</span> <span class="o">==</span> <span class="n">anotherSublayer</span><span class="p">)</span>
+<span class="c1">// Print "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sendSublayerToBack</span><span class="p">(</span><span class="n">_</span> <span class="nv">layer</span><span class="p">:</span> <span class="kt">CALayer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>layer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A sublayer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:So7CALayerC11SExtensionsE18removeAllSublayersyyF"></a>
                     <a name="//apple_ref/swift/Method/removeAllSublayers()" class="dashAnchor"></a>
                     <a class="token" href="#/s:So7CALayerC11SExtensionsE18removeAllSublayersyyF">removeAllSublayers()</a>
@@ -1014,7 +1200,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2018-12-17)</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2018-12-18)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
