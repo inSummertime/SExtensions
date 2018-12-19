@@ -215,7 +215,7 @@
 		71E2163721279D8600FBD147 /* UserDefaults+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E2163621279D8600FBD147 /* UserDefaults+Codable.swift */; };
 		71E216392127A3CE00FBD147 /* UserDefaultsCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E216382127A3CE00FBD147 /* UserDefaultsCodableTests.swift */; };
 		71E6CA84218D222000E4C512 /* CALayer+ColorGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E6CA83218D222000E4C512 /* CALayer+ColorGradient.swift */; };
-		71E6CA86218D22ED00E4C512 /* CALayerAddColorGradientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E6CA85218D22ED00E4C512 /* CALayerAddColorGradientTests.swift */; };
+		71E6CA86218D22ED00E4C512 /* CALayerColorGradientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E6CA85218D22ED00E4C512 /* CALayerColorGradientTests.swift */; };
 		71E71C5720D72C1C0009C1A9 /* Dictionary+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E71C5620D72C1C0009C1A9 /* Dictionary+JSON.swift */; };
 		71E71C5920D72DC00009C1A9 /* DictionaryJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E71C5820D72DC00009C1A9 /* DictionaryJSONTests.swift */; };
 		71E973742124F85F007533A0 /* UserDefaults+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E973732124F85F007533A0 /* UserDefaults+Subscript.swift */; };
@@ -466,7 +466,7 @@
 		71E2163621279D8600FBD147 /* UserDefaults+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Codable.swift"; sourceTree = "<group>"; };
 		71E216382127A3CE00FBD147 /* UserDefaultsCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsCodableTests.swift; sourceTree = "<group>"; };
 		71E6CA83218D222000E4C512 /* CALayer+ColorGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+ColorGradient.swift"; sourceTree = "<group>"; };
-		71E6CA85218D22ED00E4C512 /* CALayerAddColorGradientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerAddColorGradientTests.swift; sourceTree = "<group>"; };
+		71E6CA85218D22ED00E4C512 /* CALayerColorGradientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerColorGradientTests.swift; sourceTree = "<group>"; };
 		71E71C5620D72C1C0009C1A9 /* Dictionary+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+JSON.swift"; sourceTree = "<group>"; };
 		71E71C5820D72DC00009C1A9 /* DictionaryJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryJSONTests.swift; sourceTree = "<group>"; };
 		71E973732124F85F007533A0 /* UserDefaults+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Subscript.swift"; sourceTree = "<group>"; };
@@ -913,8 +913,8 @@
 		71A0632D218AB962004D9ABA /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
-				71E6CA85218D22ED00E4C512 /* CALayerAddColorGradientTests.swift */,
 				71A0632B218AB931004D9ABA /* CALayerBorderTests.swift */,
+				71E6CA85218D22ED00E4C512 /* CALayerColorGradientTests.swift */,
 				C4ABF1C321C33B8700C0A5BA /* CALayerCornerTests.swift */,
 				C4375F9B21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift */,
 				71A2A398218BCE6E00F55454 /* CALayerRemoveAllSublayersTests.swift */,
@@ -1583,7 +1583,7 @@
 				71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */,
 				715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */,
 				712AF13C2117B23C004715A1 /* DateIntervalStringTests.swift in Sources */,
-				71E6CA86218D22ED00E4C512 /* CALayerAddColorGradientTests.swift in Sources */,
+				71E6CA86218D22ED00E4C512 /* CALayerColorGradientTests.swift in Sources */,
 				7120E35321784D14007DE51E /* ArrayStringTests.swift in Sources */,
 				714CCE292161A16000D4E784 /* ArrayIndexedDictionaryTests.swift in Sources */,
 				71F5D61721659C0D000032B1 /* SetOperatorTests.swift in Sources */,
