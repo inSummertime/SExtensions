@@ -1,6 +1,40 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Border.swift",
+      "line": 22,
+      "symbol": "CALayer.BorderSide.all",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Border.swift",
+      "line": 22,
+      "symbol": "CALayer.BorderSide.bottom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Border.swift",
+      "line": 22,
+      "symbol": "CALayer.BorderSide.left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Border.swift",
+      "line": 22,
+      "symbol": "CALayer.BorderSide.right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Border.swift",
+      "line": 22,
+      "symbol": "CALayer.BorderSide.top",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/Jerry/Data/Work/SExtensions"
 }
