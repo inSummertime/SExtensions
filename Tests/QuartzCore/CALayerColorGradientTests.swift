@@ -1,5 +1,5 @@
 //
-//  CALayerAddColorGradientTests.swift
+//  CALayerColorGradientTests.swift
 //  SExtensionsTests
 //
 //  Created by Ray on 2018/11/3.
@@ -11,7 +11,7 @@ import XCTest
 
 final class CALayerAddColorGradientTests: XCTestCase {
 
-    func testAddColorGradientHorizontal() {
+    func testAddColorGradientHorizontally() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
         view.layer.addColorGradient(startColor: .white, endColor: .black)
         let gradientLayer = view.layer.sublayers?.first as? CAGradientLayer
@@ -25,7 +25,7 @@ final class CALayerAddColorGradientTests: XCTestCase {
         XCTAssertEqual(gradientLayer!.endPoint.y, 0.0)
     }
 
-    func testAddColorGradientVertical() {
+    func testAddColorGradientVertically() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
         view.layer.addColorGradient(startColor: .white, endColor: .black, isHorizontal: false)
         let gradientLayer = view.layer.sublayers?.first as? CAGradientLayer
