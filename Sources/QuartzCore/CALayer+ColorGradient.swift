@@ -35,7 +35,8 @@ public extension CALayer {
     ///   - endColor: End UIColor.
     ///   - isHorizontal: Whether the direction is horizontal.
     ///   - width: Gradient width.
-    ///   - isHorizontal: Gradient height.
+    ///   - height: Gradient height.
+    /// - Returns: A CALayer.
     @discardableResult
     func addColorGradient(startColor: UIColor, endColor: UIColor, isHorizontal: Bool = true, width: CGFloat? = nil, height: CGFloat? = nil) -> CAGradientLayer {
         let gradientLayer = CAGradientLayer()
