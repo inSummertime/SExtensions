@@ -8,7 +8,7 @@
 
 public extension Int {
 
-    /// Checks if it means true
+    /// Checks if it means true.
     ///
     ///     print(1.bool)
     ///     // Prints "true"
