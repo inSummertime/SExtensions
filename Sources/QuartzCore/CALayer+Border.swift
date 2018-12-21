@@ -148,5 +148,28 @@ public extension CALayer {
         addSublayer(gradientLayer)
         return gradientLayer
     }
+    
+    /// Animates border color and width.
+    ///
+    /// - Parameters:
+    ///   - duration: Animation duration.
+    ///   - color: A instance of UIColor which defines what color the border will animate to.
+    ///   - width: A CGFloat value that measures how bold the border will animate to.
+    func animateBorders(duration: CFTimeInterval, color: UIColor? = nil, width: CGFloat? = nil) {
+        let toColor = color?.cgColor ?? borderColor
+        let colorAnimation = CABasicAnimation(keyPath: "borderColor")
+        colorAnimation.toValue = toColor
+        
+        let toWidth = width ?? borderWidth
+        let widthAnimation = CABasicAnimation(keyPath: "borderWidth")
+        widthAnimation.toValue = toWidth
+        
+        let animationGroup = CAAnimationGroup()
+        animationGroup.duration = duration
+        animationGroup.animations = [colorAnimation, widthAnimation]
+        animationGroup.isRemovedOnCompletion = false
+        animationGroup.fillMode = kCAFillModeForwards
+        add(animationGroup, forKey: nil)
+    }
 
 }
