@@ -242,6 +242,7 @@
 		C45485E421BCCF1A00E7F47A /* Dangerfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E221BCCF1A00E7F47A /* Dangerfile */; };
 		C4ABF1C221C33A3900C0A5BA /* CALayer+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */; };
 		C4ABF1C421C33B8700C0A5BA /* CALayerCornerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABF1C321C33B8700C0A5BA /* CALayerCornerTests.swift */; };
+		C4D58F5D21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D58F5C21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift */; };
 		C4F8A3E421CB3CBE005C33B6 /* CALayer+PerformWithoutAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8A3E321CB3CBE005C33B6 /* CALayer+PerformWithoutAnimation.swift */; };
 /* End PBXBuildFile section */
 
@@ -494,6 +495,7 @@
 		C45485E221BCCF1A00E7F47A /* Dangerfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 		C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Shadow.swift"; sourceTree = "<group>"; };
 		C4ABF1C321C33B8700C0A5BA /* CALayerCornerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerCornerTests.swift; sourceTree = "<group>"; };
+		C4D58F5C21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+PauseAndResumeAnimation.swift"; sourceTree = "<group>"; };
 		C4F8A3E321CB3CBE005C33B6 /* CALayer+PerformWithoutAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+PerformWithoutAnimation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -905,6 +907,7 @@
 				71E6CA83218D222000E4C512 /* CALayer+ColorGradient.swift */,
 				C42CFA5121C251EC004AC65A /* CALayer+Corner.swift */,
 				C4375F9921C8BB95009B3243 /* CALayer+FrontAndBack.swift */,
+				C4D58F5C21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift */,
 				C4F8A3E321CB3CBE005C33B6 /* CALayer+PerformWithoutAnimation.swift */,
 				71A2A396218BCDFC00F55454 /* CALayer+RemoveAllSublayers.swift */,
 				C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */,
@@ -1466,6 +1469,7 @@
 				71F5D61421659B09000032B1 /* Set+Operator.swift in Sources */,
 				71ADEDF4213150EF0075C0A8 /* URLRequest+Init.swift in Sources */,
 				71AB823E20C61A7400EC2A24 /* String+Alphanumeric.swift in Sources */,
+				C4D58F5D21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift in Sources */,
 				C42CFA5221C251EC004AC65A /* CALayer+Corner.swift in Sources */,
 				716AE42521788FAD0000CBDA /* Int+NumberOfBitOne.swift in Sources */,
 				7130148020EB193200161E23 /* Array+Index.swift in Sources */,
