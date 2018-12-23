@@ -309,9 +309,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So7CALayerC11SExtensionsE22addColorGradientBorder05startD003endD09lineWidth4side12isHorizontalSo15CAGradientLayerCSo7UIColorC_AM12CoreGraphics7CGFloatVAbCE0F4SideOSbSgtF"></a>
-                    <a name="//apple_ref/swift/Method/addColorGradientBorder(startColor:endColor:lineWidth:side:isHorizontal:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So7CALayerC11SExtensionsE22addColorGradientBorder05startD003endD09lineWidth4side12isHorizontalSo15CAGradientLayerCSo7UIColorC_AM12CoreGraphics7CGFloatVAbCE0F4SideOSbSgtF">addColorGradientBorder(startColor:endColor:lineWidth:side:isHorizontal:)</a>
+                    <a name="/s:So7CALayerC11SExtensionsE22addColorGradientBorder6colors9lineWidth4side12isHorizontalSo15CAGradientLayerCSaySo7UIColorCG_12CoreGraphics7CGFloatVAbCE0F4SideOSbSgtF"></a>
+                    <a name="//apple_ref/swift/Method/addColorGradientBorder(colors:lineWidth:side:isHorizontal:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7CALayerC11SExtensionsE22addColorGradientBorder6colors9lineWidth4side12isHorizontalSo15CAGradientLayerCSaySo7UIColorCG_12CoreGraphics7CGFloatVAbCE0F4SideOSbSgtF">addColorGradientBorder(colors:lineWidth:side:isHorizontal:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -321,7 +321,7 @@
                       <div class="abstract">
                         <p>Adds color gradient border.</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">view</span> <span class="o">=</span> <span class="kt">UIView</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">64</span><span class="p">))</span>
-<span class="n">view</span><span class="o">.</span><span class="n">layer</span><span class="o">.</span><span class="nf">addColorGradientBorder</span><span class="p">(</span><span class="nv">startColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">white</span><span class="p">,</span> <span class="nv">endColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="p">,</span> <span class="nv">lineWidth</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">side</span><span class="p">:</span> <span class="o">.</span><span class="n">all</span><span class="p">,</span> <span class="nv">isHorizontal</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
+<span class="n">view</span><span class="o">.</span><span class="n">layer</span><span class="o">.</span><span class="nf">addColorGradientBorder</span><span class="p">(</span><span class="nv">color</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIColor</span><span class="o">.</span><span class="n">white</span><span class="p">,</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="p">],</span> <span class="nv">lineWidth</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">side</span><span class="p">:</span> <span class="o">.</span><span class="n">all</span><span class="p">,</span> <span class="nv">isHorizontal</span><span class="p">:</span> <span class="kc">true</span><span class="p">)</span>
 <span class="k">let</span> <span class="nv">gradientLayer</span> <span class="o">=</span> <span class="n">view</span><span class="o">.</span><span class="n">layer</span><span class="o">.</span><span class="n">sublayers</span><span class="p">?</span><span class="o">.</span><span class="n">first</span> <span class="k">as?</span> <span class="kt">CAGradientLayer</span>
 <span class="nf">print</span><span class="p">(</span><span class="n">gradientLayer</span><span class="o">!.</span><span class="n">bounds</span> <span class="o">==</span> <span class="n">view</span><span class="o">.</span><span class="n">bounds</span><span class="p">)</span>
 <span class="c1">// Print "true"</span>
@@ -345,7 +345,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">func</span> <span class="nf">addColorGradientBorder</span><span class="p">(</span><span class="nv">startColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">,</span> <span class="nv">endColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">,</span> <span class="nv">lineWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">side</span><span class="p">:</span> <span class="kt"><a href="../Extensions/CALayer/BorderSide.html">BorderSide</a></span><span class="p">,</span> <span class="nv">isHorizontal</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CAGradientLayer</span></code></pre>
+<span class="kd">func</span> <span class="nf">addColorGradientBorder</span><span class="p">(</span><span class="nv">colors</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIColor</span><span class="p">],</span> <span class="nv">lineWidth</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">side</span><span class="p">:</span> <span class="kt"><a href="../Extensions/CALayer/BorderSide.html">BorderSide</a></span><span class="p">,</span> <span class="nv">isHorizontal</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CAGradientLayer</span></code></pre>
 
                         </div>
                       </div>
@@ -356,24 +356,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>startColor</em>
+                                <em>colors</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Start UIColor.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>endColor</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>End UIColor.</p>
+                                  <p>Gradient UIColor array.</p>
                                 </div>
                               </td>
                             </tr>
@@ -409,7 +397,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Whether the direction is horizontal.</p>
+                                  <p>Whether the gradient direction is horizontal.</p>
                                 </div>
                               </td>
                             </tr>
@@ -419,6 +407,100 @@
                       <div>
                         <h4>Return Value</h4>
                         <p>A CAGradientLayer.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So7CALayerC11SExtensionsE27addColorGradientRoundBorder6colors5width12isHorizontal7corners6radiusySaySo7UIColorCG_12CoreGraphics7CGFloatVSbSo12UIRectCornerVAOtF"></a>
+                    <a name="//apple_ref/swift/Method/addColorGradientRoundBorder(colors:width:isHorizontal:corners:radius:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7CALayerC11SExtensionsE27addColorGradientRoundBorder6colors5width12isHorizontal7corners6radiusySaySo7UIColorCG_12CoreGraphics7CGFloatVSbSo12UIRectCornerVAOtF">addColorGradientRoundBorder(colors:width:isHorizontal:corners:radius:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds color gradient round borders.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addColorGradientRoundBorder</span><span class="p">(</span><span class="nv">colors</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIColor</span><span class="p">],</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">,</span> <span class="nv">isHorizontal</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">corners</span><span class="p">:</span> <span class="kt">UIRectCorner</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="n">allCorners</span><span class="p">],</span> <span class="nv">radius</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>colors</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Gradient UIColor array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Border width.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isHorizontal</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether the gradient direction is horizontal.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>corners</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An instance of UIRectCorner which defines which corner needs to be round.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>radius</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A CGFloat value that measures how round the corner is.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -655,7 +737,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>an instance of UIRectCorner which defines which corner needs to be rounded.</p>
+                                  <p>An instance of UIRectCorner which defines which corner needs to be round.</p>
                                 </div>
                               </td>
                             </tr>
@@ -667,7 +749,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>a CGFloat value that measures how round the corner is.</p>
+                                  <p>A CGFloat value that measures how round the corner is.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1227,7 +1309,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2018-12-22)</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2018-12-23)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
