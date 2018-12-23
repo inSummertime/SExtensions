@@ -87,7 +87,7 @@ public extension CALayer {
     /// Adds color gradient border.
     ///
     ///     let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
-    ///     view.layer.addColorGradientBorder(startColor: UIColor.white, endColor: UIColor.black, lineWidth: 1, side: .all, isHorizontal: true)
+    ///     view.layer.addColorGradientBorder(color: [UIColor.white, UIColor.black], lineWidth: 1, side: .all, isHorizontal: true)
     ///     let gradientLayer = view.layer.sublayers?.first as? CAGradientLayer
     ///     print(gradientLayer!.bounds == view.bounds)
     ///     // Print "true"
@@ -105,17 +105,18 @@ public extension CALayer {
     ///     // Print "true"
     ///
     /// - Parameters:
-    ///   - startColor: Start UIColor.
-    ///   - endColor: End UIColor.
+    ///   - colors: Gradient UIColor array.
     ///   - lineWidth: Border width.
     ///   - side: Which side the border is on.
-    ///   - isHorizontal: Whether the direction is horizontal.
+    ///   - isHorizontal: Whether the gradient direction is horizontal.
     /// - Returns: A CAGradientLayer.
     @discardableResult
-    func addColorGradientBorder(startColor: UIColor, endColor: UIColor, lineWidth: CGFloat, side: BorderSide, isHorizontal: Bool? = nil) -> CAGradientLayer {
+    func addColorGradientBorder(colors: [UIColor], lineWidth: CGFloat, side: BorderSide, isHorizontal: Bool? = nil) -> CAGradientLayer {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = CGRect(origin: .zero, size: bounds.size)
-        gradientLayer.colors = [startColor.cgColor, endColor.cgColor]
+        gradientLayer.colors = colors.map({ (color) -> CGColor in
+            color.cgColor
+        })
         gradientLayer.startPoint = CGPoint.zero
         let shapeLayer = CAShapeLayer()
         shapeLayer.lineWidth = lineWidth
@@ -147,6 +148,43 @@ public extension CALayer {
         gradientLayer.mask = shapeLayer
         addSublayer(gradientLayer)
         return gradientLayer
+    }
+    
+    /// Adds color gradient round borders.
+    ///
+    /// - Parameters:
+    ///   - colors: Gradient UIColor array.
+    ///   - width: Border width.
+    ///   - isHorizontal: Whether the gradient direction is horizontal.
+    ///   - corners: An instance of UIRectCorner which defines which corner needs to be round.
+    ///   - radius: A CGFloat value that measures how round the corner is.
+    func addColorGradientRoundBorder(colors: [UIColor], width: CGFloat, isHorizontal: Bool = true, corners: UIRectCorner = [.allCorners], radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = path.cgPath
+        mask = shapeLayer
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = bounds
+        gradientLayer.colors = colors.map({ (color) -> CGColor in
+            color.cgColor
+        })
+        gradientLayer.startPoint = CGPoint.zero
+        if isHorizontal {
+            gradientLayer.endPoint = CGPoint(x: 1.0, y: 0)
+        } else {
+            gradientLayer.endPoint = CGPoint(x: 0, y: 1.0)
+        }
+        
+        let gradientPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let gradientShapeLayer = CAShapeLayer()
+        gradientShapeLayer.path = gradientPath.cgPath
+        gradientShapeLayer.lineWidth = width
+        gradientShapeLayer.fillColor = nil
+        gradientShapeLayer.strokeColor = UIColor.black.cgColor
+        gradientLayer.mask = gradientShapeLayer
+        
+        addSublayer(gradientLayer)
     }
     
     /// Animates border color and width.

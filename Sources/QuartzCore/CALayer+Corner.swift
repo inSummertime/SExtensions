@@ -12,8 +12,8 @@ public extension CALayer {
 
     /// Returns a CALayer with rounded corners.
     ///
-    /// - Parameter corners: an instance of UIRectCorner which defines which corner needs to be rounded.
-    /// - Parameter radius: a CGFloat value that measures how round the corner is.
+    /// - Parameter corners: An instance of UIRectCorner which defines which corner needs to be round.
+    /// - Parameter radius: A CGFloat value that measures how round the corner is.
     @discardableResult
     func addRoundCorners(corners: UIRectCorner = [.allCorners], radius: CGFloat) -> CALayer {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
