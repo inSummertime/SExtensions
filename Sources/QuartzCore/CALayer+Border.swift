@@ -10,7 +10,7 @@ import QuartzCore
 import UIKit
 
 public extension CALayer {
-    
+
     /// Which side the border is on.
     ///
     /// - all: All sides.
@@ -35,7 +35,7 @@ public extension CALayer {
         borderColor = UIColor.clear.cgColor
         borderWidth = 0
     }
-    
+
     /// Add borders.
     ///
     ///     let view = UIView(frame: CGRect(x: 0, y: 0, width: 7.0, height: 7.0))
@@ -149,7 +149,7 @@ public extension CALayer {
         addSublayer(gradientLayer)
         return gradientLayer
     }
-    
+
     /// Adds color gradient round borders.
     ///
     /// - Parameters:
@@ -163,7 +163,7 @@ public extension CALayer {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = path.cgPath
         mask = shapeLayer
-        
+
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = bounds
         gradientLayer.colors = colors.map({ (color) -> CGColor in
@@ -175,7 +175,7 @@ public extension CALayer {
         } else {
             gradientLayer.endPoint = CGPoint(x: 0, y: 1.0)
         }
-        
+
         let gradientPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         let gradientShapeLayer = CAShapeLayer()
         gradientShapeLayer.path = gradientPath.cgPath
@@ -183,10 +183,10 @@ public extension CALayer {
         gradientShapeLayer.fillColor = nil
         gradientShapeLayer.strokeColor = UIColor.black.cgColor
         gradientLayer.mask = gradientShapeLayer
-        
+
         addSublayer(gradientLayer)
     }
-    
+
     /// Animates border color and width.
     ///
     /// - Parameters:
@@ -197,11 +197,11 @@ public extension CALayer {
         let toColor = color?.cgColor ?? borderColor
         let colorAnimation = CABasicAnimation(keyPath: "borderColor")
         colorAnimation.toValue = toColor
-        
+
         let toWidth = width ?? borderWidth
         let widthAnimation = CABasicAnimation(keyPath: "borderWidth")
         widthAnimation.toValue = toWidth
-        
+
         let animationGroup = CAAnimationGroup()
         animationGroup.duration = duration
         animationGroup.animations = [colorAnimation, widthAnimation]

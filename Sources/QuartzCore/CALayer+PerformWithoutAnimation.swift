@@ -9,7 +9,7 @@
 import QuartzCore
 
 public extension CALayer {
-    
+
     /// Performs an action without animation.
     ///
     /// - Parameter actionsWithoutAnimation: The action.

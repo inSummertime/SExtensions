@@ -31,5 +31,5 @@ public extension CALayer {
         let cornerRadius = radius ?? min(bounds.size.width, bounds.size.height) / 2.0
         self.cornerRadius = cornerRadius
     }
-    
+
 }

@@ -9,14 +9,14 @@
 import QuartzCore
 
 public extension CALayer {
-    
+
     /// Pauses the animation.
     func pauseAnimation() {
         let pauseTime = convertTime(CACurrentMediaTime(), from: nil)
         speed = 0
         timeOffset = pauseTime
     }
-    
+
     /// Resumes the animation.
     func resumeAnimation() {
         let pauseTime = timeOffset
@@ -25,5 +25,5 @@ public extension CALayer {
         speed = 1
         beginTime = convertTime(CACurrentMediaTime(), from: nil) - pauseTime
     }
-    
+
 }
