@@ -582,9 +582,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So7CALayerC11SExtensionsE16addColorGradient05startD003endD012isHorizontal5width6heightSo15CAGradientLayerCSo7UIColorC_AMSb12CoreGraphics7CGFloatVSgAQtF"></a>
-                    <a name="//apple_ref/swift/Method/addColorGradient(startColor:endColor:isHorizontal:width:height:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So7CALayerC11SExtensionsE16addColorGradient05startD003endD012isHorizontal5width6heightSo15CAGradientLayerCSo7UIColorC_AMSb12CoreGraphics7CGFloatVSgAQtF">addColorGradient(startColor:endColor:isHorizontal:width:height:)</a>
+                    <a name="/s:So7CALayerC11SExtensionsE16addColorGradient6colors12isHorizontal5width6heightSo15CAGradientLayerCSaySo7UIColorCG_Sb12CoreGraphics7CGFloatVSgAQtF"></a>
+                    <a name="//apple_ref/swift/Method/addColorGradient(colors:isHorizontal:width:height:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7CALayerC11SExtensionsE16addColorGradient6colors12isHorizontal5width6heightSo15CAGradientLayerCSaySo7UIColorCG_Sb12CoreGraphics7CGFloatVSgAQtF">addColorGradient(colors:isHorizontal:width:height:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -618,7 +618,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">func</span> <span class="nf">addColorGradient</span><span class="p">(</span><span class="nv">startColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">,</span> <span class="nv">endColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">,</span> <span class="nv">isHorizontal</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CAGradientLayer</span></code></pre>
+<span class="kd">func</span> <span class="nf">addColorGradient</span><span class="p">(</span><span class="nv">colors</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIColor</span><span class="p">],</span> <span class="nv">isHorizontal</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CAGradientLayer</span></code></pre>
 
                         </div>
                       </div>
@@ -629,24 +629,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>startColor</em>
+                                <em>colors</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>Start UIColor.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>endColor</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>End UIColor.</p>
+                                  <p>Gradient UIColor array.</p>
                                 </div>
                               </td>
                             </tr>
@@ -692,6 +680,99 @@
                       <div>
                         <h4>Return Value</h4>
                         <p>A CALayer.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So7CALayerC11SExtensionsE22addRadialColorGradient6colors10startPoint03endI04sizeSo15CAGradientLayerCSaySo7UIColorCG_So7CGPointVAOSo6CGSizeVSgtF"></a>
+                    <a name="//apple_ref/swift/Method/addRadialColorGradient(colors:startPoint:endPoint:size:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7CALayerC11SExtensionsE22addRadialColorGradient6colors10startPoint03endI04sizeSo15CAGradientLayerCSaySo7UIColorCG_So7CGPointVAOSo6CGSizeVSgtF">addRadialColorGradient(colors:startPoint:endPoint:size:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a radial color gradient.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">view</span> <span class="o">=</span> <span class="kt">UIView</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">64</span><span class="p">))</span>
+<span class="n">view</span><span class="o">.</span><span class="n">layer</span><span class="o">.</span><span class="nf">addRadialColorGradient</span><span class="p">(</span><span class="nv">colors</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="n">white</span><span class="p">,</span> <span class="o">.</span><span class="n">black</span><span class="p">],</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">16</span><span class="p">))</span>
+<span class="k">let</span> <span class="nv">gradientLayer</span> <span class="o">=</span> <span class="n">view</span><span class="o">.</span><span class="n">layer</span><span class="o">.</span><span class="n">sublayers</span><span class="p">?</span><span class="o">.</span><span class="n">first</span> <span class="k">as?</span> <span class="kt">CAGradientLayer</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">gradientLayer</span><span class="o">!.</span><span class="n">frame</span><span class="o">.</span><span class="n">origin</span><span class="p">)</span>
+<span class="c1">// Prints "(24.0, 24.0)"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">func</span> <span class="nf">addRadialColorGradient</span><span class="p">(</span><span class="nv">colors</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIColor</span><span class="p">],</span> <span class="nv">startPoint</span><span class="p">:</span> <span class="kt">CGPoint</span> <span class="o">=</span> <span class="kt">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">),</span> <span class="nv">endPoint</span><span class="p">:</span> <span class="kt">CGPoint</span> <span class="o">=</span> <span class="kt">CGPoint</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">),</span> <span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CAGradientLayer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>colors</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Gradient UIColor array.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>startPoint</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The start of the gradient when drawn into the layer&rsquo;s coordinate space.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endPoint</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The end points of the gradient when drawn into the layer&rsquo;s coordinate space.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>size</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The size of the gradient.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A CAGradientLayer.</p>
                       </div>
                     </section>
                   </div>
@@ -1309,7 +1390,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2018-12-23)</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2018-12-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
