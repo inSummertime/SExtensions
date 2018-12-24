@@ -96,7 +96,7 @@ final class CALayerBorderTests: XCTestCase {
         XCTAssertEqual(gradientLayer!.endPoint.x, 1.0)
         XCTAssertEqual(gradientLayer!.endPoint.y, 0)
     }
-    
+
     func testColorGradientRightBorder() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
         view.layer.addColorGradientBorder(colors: [UIColor.white, UIColor.black], lineWidth: 1, side: .right)
@@ -107,7 +107,7 @@ final class CALayerBorderTests: XCTestCase {
         XCTAssertEqual(gradientLayer!.endPoint.x, 0)
         XCTAssertEqual(gradientLayer!.endPoint.y, 1.0)
     }
-    
+
     func testColorGradientBottomBorder() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
         view.layer.addColorGradientBorder(colors: [UIColor.white, UIColor.black], lineWidth: 1, side: .bottom)
@@ -118,7 +118,7 @@ final class CALayerBorderTests: XCTestCase {
         XCTAssertEqual(gradientLayer!.endPoint.x, 1.0)
         XCTAssertEqual(gradientLayer!.endPoint.y, 0)
     }
-    
+
     func testColorGradientLeftBorder() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
         view.layer.addColorGradientBorder(colors: [UIColor.white, UIColor.black], lineWidth: 1, side: .left)
@@ -129,7 +129,7 @@ final class CALayerBorderTests: XCTestCase {
         XCTAssertEqual(gradientLayer!.endPoint.x, 0)
         XCTAssertEqual(gradientLayer!.endPoint.y, 1.0)
     }
-    
+
     func testAddColorGradientRoundBorder() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
         view.backgroundColor = .white
@@ -141,7 +141,7 @@ final class CALayerBorderTests: XCTestCase {
         XCTAssertEqual(gradientLayer!.endPoint.x, 1)
         XCTAssertEqual(gradientLayer!.endPoint.y, 0)
     }
-    
+
     func testAnimateBorders() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
         view.layer.addBorder(color: .white, width: 7)
