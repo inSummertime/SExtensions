@@ -231,6 +231,8 @@
 		71F5D61721659C0D000032B1 /* SetOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F5D61621659C0D000032B1 /* SetOperatorTests.swift */; };
 		71FAC84620DF878100D8E1C1 /* Array+SafeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */; };
 		71FAC84920DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */; };
+		C40878FE21D0B1B900DE07FD /* CALayer+TransparentCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40878FD21D0B1B900DE07FD /* CALayer+TransparentCircle.swift */; };
+		C408790021D0B33100DE07FD /* CALayerTransparentCircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40878FF21D0B33100DE07FD /* CALayerTransparentCircleTests.swift */; };
 		C408D30C21C11B4800736055 /* BotPreIntegration.sh in Resources */ = {isa = PBXBuildFile; fileRef = C408D30B21C11B4800736055 /* BotPreIntegration.sh */; };
 		C42CFA5221C251EC004AC65A /* CALayer+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42CFA5121C251EC004AC65A /* CALayer+Corner.swift */; };
 		C4375F9A21C8BB95009B3243 /* CALayer+FrontAndBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4375F9921C8BB95009B3243 /* CALayer+FrontAndBack.swift */; };
@@ -484,6 +486,8 @@
 		71F5D61621659C0D000032B1 /* SetOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetOperatorTests.swift; sourceTree = "<group>"; };
 		71FAC84520DF878100D8E1C1 /* Array+SafeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SafeSubscript.swift"; sourceTree = "<group>"; };
 		71FAC84820DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySafeSubscriptTests.swift; sourceTree = "<group>"; };
+		C40878FD21D0B1B900DE07FD /* CALayer+TransparentCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+TransparentCircle.swift"; sourceTree = "<group>"; };
+		C40878FF21D0B33100DE07FD /* CALayerTransparentCircleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerTransparentCircleTests.swift; sourceTree = "<group>"; };
 		C408D30B21C11B4800736055 /* BotPreIntegration.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BotPreIntegration.sh; sourceTree = "<group>"; };
 		C42CFA5121C251EC004AC65A /* CALayer+Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Corner.swift"; sourceTree = "<group>"; };
 		C4375F9921C8BB95009B3243 /* CALayer+FrontAndBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+FrontAndBack.swift"; sourceTree = "<group>"; };
@@ -911,6 +915,7 @@
 				C4F8A3E321CB3CBE005C33B6 /* CALayer+PerformWithoutAnimation.swift */,
 				71A2A396218BCDFC00F55454 /* CALayer+RemoveAllSublayers.swift */,
 				C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */,
+				C40878FD21D0B1B900DE07FD /* CALayer+TransparentCircle.swift */,
 				C442B42B21C7DF8E00EB56FF /* CALayer+TriangleCorner.swift */,
 			);
 			path = QuartzCore;
@@ -925,6 +930,7 @@
 				C4375F9B21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift */,
 				71A2A398218BCE6E00F55454 /* CALayerRemoveAllSublayersTests.swift */,
 				C4375F9D21C8C4A4009B3243 /* CALayerShadowTests.swift */,
+				C40878FF21D0B33100DE07FD /* CALayerTransparentCircleTests.swift */,
 				C442B42D21C7E34500EB56FF /* CALayerTriangleCornerTests.swift */,
 			);
 			path = QuartzCore;
@@ -1432,6 +1438,7 @@
 				711001A921756856001F5AC9 /* Bool+StringValue.swift in Sources */,
 				71F431F3212CDDA0005F67E3 /* URL+IsFromDomain.swift in Sources */,
 				71AE5F6920F1824C0026EFAE /* Double+Percentage.swift in Sources */,
+				C40878FE21D0B1B900DE07FD /* CALayer+TransparentCircle.swift in Sources */,
 				714CCE272161A11A00D4E784 /* Array+IndexedDictionary.swift in Sources */,
 				71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */,
 				714EB2FF20C206ED002ED5DE /* String+Date.swift in Sources */,
@@ -1560,6 +1567,7 @@
 				71761624215704B700CE8531 /* DecodableInitJSONStringTests.swift in Sources */,
 				71F431F5212CDDE1005F67E3 /* URLIsFromDomainTests.swift in Sources */,
 				714B021820F5E141007DD87B /* BoolIntValueTests.swift in Sources */,
+				C408790021D0B33100DE07FD /* CALayerTransparentCircleTests.swift in Sources */,
 				71F367EA20CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift in Sources */,
 				716CF09A20D47AC00040BF9B /* DictionaryOperationTests.swift in Sources */,
 				7153D150211BC23800C0A1C7 /* DateIntervalSplitTests.swift in Sources */,
