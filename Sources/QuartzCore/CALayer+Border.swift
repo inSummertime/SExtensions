@@ -209,5 +209,43 @@ public extension CALayer {
         animationGroup.fillMode = kCAFillModeForwards
         add(animationGroup, forKey: nil)
     }
+    
+    /// Adds dashed borders.
+    ///
+    /// - Parameters:
+    ///   - side: Which side the border is on.
+    ///   - color: A instance of UIColor which defines what color the border is.
+    ///   - lineWidth: A CGFloat value that measures how bold the border is.
+    ///   - lineDashPattern: The dash pattern (an array of NSNumbers) applied when creating the
+    ///     stroked version of the path.
+    /// - Returns: A CAShapeLayer.
+    @discardableResult
+    func addDashedBorder(side: BorderSide, color: UIColor, lineWidth: CGFloat, lineDashPattern: [NSNumber]) -> CAShapeLayer {
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.strokeColor = color.cgColor
+        shapeLayer.lineWidth = lineWidth
+        shapeLayer.lineDashPattern = lineDashPattern
+        let path = CGMutablePath()
+        let width = bounds.size.width
+        let height = bounds.size.height
+        switch side {
+        case .all:
+            path.addLines(between: [CGPoint(x: 0, y: lineWidth / 2), CGPoint(x: width, y: lineWidth / 2)])
+            path.addLines(between: [CGPoint(x: width - lineWidth / 2, y: 0), CGPoint(x: width - lineWidth / 2, y: height)])
+            path.addLines(between: [CGPoint(x: 0, y: height - lineWidth / 2), CGPoint(x: width, y: height - lineWidth / 2)])
+            path.addLines(between: [CGPoint(x: lineWidth / 2, y: 0), CGPoint(x: lineWidth / 2, y: height)])
+        case .top:
+            path.addLines(between: [CGPoint(x: 0, y: lineWidth / 2), CGPoint(x: width, y:  lineWidth / 2)])
+        case .right:
+            path.addLines(between: [CGPoint(x: width - lineWidth / 2, y: 0), CGPoint(x: width - lineWidth / 2, y: height)])
+        case .bottom:
+            path.addLines(between: [CGPoint(x: 0, y: height - lineWidth / 2), CGPoint(x: width, y: height - lineWidth / 2)])
+        case .left:
+            path.addLines(between: [CGPoint(x: lineWidth / 2, y: 0), CGPoint(x: lineWidth / 2, y: height)])
+        }
+        shapeLayer.path = path
+        addSublayer(shapeLayer)
+        return shapeLayer
+    }
 
 }
