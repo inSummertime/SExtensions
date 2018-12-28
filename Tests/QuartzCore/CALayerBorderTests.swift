@@ -132,7 +132,6 @@ final class CALayerBorderTests: XCTestCase {
 
     func testAddColorGradientRoundBorder() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
-        view.backgroundColor = .white
         view.layer.addColorGradientRoundBorder(colors: [.white, .red, .blue], width: 4, isHorizontal: true, corners: [.allCorners], radius: 12)
         let gradientLayer = view.layer.sublayers?.first as? CAGradientLayer
         XCTAssertNotNil(gradientLayer)
@@ -145,7 +144,6 @@ final class CALayerBorderTests: XCTestCase {
     func testAnimateBorders() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
         view.layer.addBorder(color: .white, width: 7)
-        view.layer.animateBorders(duration: 7, color: .black, width: 16)
         XCTAssertEqual(view.layer.borderColor, UIColor.white.cgColor)
         XCTAssertEqual(view.layer.borderWidth, 7)
     }

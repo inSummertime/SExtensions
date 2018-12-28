@@ -247,5 +247,20 @@ public extension CALayer {
         addSublayer(shapeLayer)
         return shapeLayer
     }
+    
+    /// Adds dotted borders.
+    ///
+    /// - Parameters:
+    ///   - side: Which side the border is on.
+    ///   - color: A instance of UIColor which defines what color the border is.
+    ///   - lineWidth: A CGFloat value that measures how bold the border is.
+    /// - Returns: A CAShapeLayer.
+    func addDottedBorder(side: BorderSide, color: UIColor, lineWidth: CGFloat) -> CAShapeLayer {
+        let shapeLayer = addDashedBorder(side: side, color: color, lineWidth: lineWidth, lineDashPattern: [0, NSNumber(value: Double(lineWidth * 2))])
+        shapeLayer.lineDashPhase = -lineWidth / 2
+        shapeLayer.lineCap = kCALineCapRound
+        shapeLayer.lineJoin = kCALineJoinRound
+        return shapeLayer
+    }
 
 }
