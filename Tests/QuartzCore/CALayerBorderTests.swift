@@ -147,5 +147,19 @@ final class CALayerBorderTests: XCTestCase {
         XCTAssertEqual(view.layer.borderColor, UIColor.white.cgColor)
         XCTAssertEqual(view.layer.borderWidth, 7)
     }
+    
+    func testAddExternalBorder() {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
+        let border = view.layer.addExternalBorder(color: .white, width: 4)
+        XCTAssertEqual(border.frame, CGRect(x: -4, y: -4, width: 72, height: 72))
+        let topBorder = view.layer.addExternalBorder(color: .white, width: 4, side: .top)
+        XCTAssertEqual(topBorder.frame, CGRect(x: 0, y: -4, width: 64, height: 4))
+        let rightBorder = view.layer.addExternalBorder(color: .white, width: 4, side: .right)
+        XCTAssertEqual(rightBorder.frame, CGRect(x: 64, y: 0, width: 4, height: 64))
+        let bottomBorder = view.layer.addExternalBorder(color: .white, width: 4, side: .bottom)
+        XCTAssertEqual(bottomBorder.frame, CGRect(x: 0, y: 64, width: 64, height: 4))
+        let leftBorder = view.layer.addExternalBorder(color: .white, width: 4, side: .left)
+        XCTAssertEqual(leftBorder.frame, CGRect(x: -4, y: 0, width: 4, height: 64))
+    }
 
 }
