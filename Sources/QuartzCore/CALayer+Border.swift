@@ -262,5 +262,36 @@ public extension CALayer {
         shapeLayer.lineJoin = kCALineJoinRound
         return shapeLayer
     }
+    
+    /// Add an external border.
+    ///
+    /// - Parameters:
+    ///   - color: A instance of UIColor which defines what color the border is.
+    ///   - width: A CGFloat value that measures how bold the border is.
+    ///   - side: An enum value represents which side the border is on.
+    /// - Returns: A CALayer
+    func addExternalBorder(color: UIColor, width: CGFloat, side: BorderSide = .all) -> CALayer {
+        let border = CALayer()
+        switch side {
+        case .all:
+            border.borderColor = color.cgColor
+            border.borderWidth = width
+            border.frame = CGRect(x: -width, y: -width, width: bounds.size.width + width * 2, height: bounds.size.height + width * 2)
+        case .top:
+            border.backgroundColor = color.cgColor
+            border.frame = CGRect(x: 0, y: -width, width: bounds.size.width, height: width)
+        case .right:
+            border.backgroundColor = color.cgColor
+            border.frame = CGRect(x: bounds.size.width, y: 0, width: width, height: bounds.size.height)
+        case .bottom:
+            border.backgroundColor = color.cgColor
+            border.frame = CGRect(x: 0, y: bounds.size.height, width: bounds.size.width, height: width)
+        case .left:
+            border.backgroundColor = color.cgColor
+            border.frame = CGRect(x: -width, y: 0, width: width, height: bounds.size.height)
+        }
+        insertSublayer(border, at: 0)
+        return border
+    }
 
 }
