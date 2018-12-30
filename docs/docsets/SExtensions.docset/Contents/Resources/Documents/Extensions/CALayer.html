@@ -1521,9 +1521,9 @@ stroked version of the path.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So7CALayerC11SExtensionsE9addShadow5color6offset6radius7opacityySo7UIColorC_So6CGSizeV12CoreGraphics7CGFloatVSftF"></a>
-                    <a name="//apple_ref/swift/Method/addShadow(color:offset:radius:opacity:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So7CALayerC11SExtensionsE9addShadow5color6offset6radius7opacityySo7UIColorC_So6CGSizeV12CoreGraphics7CGFloatVSftF">addShadow(color:offset:radius:opacity:)</a>
+                    <a name="/s:So7CALayerC11SExtensionsE9addShadow6radius5color6offset7opacityy12CoreGraphics7CGFloatV_So7UIColorCSo6CGSizeVSftF"></a>
+                    <a name="//apple_ref/swift/Method/addShadow(radius:color:offset:opacity:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7CALayerC11SExtensionsE9addShadow6radius5color6offset7opacityy12CoreGraphics7CGFloatV_So7UIColorCSo6CGSizeVSftF">addShadow(radius:color:offset:opacity:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1538,7 +1538,7 @@ stroked version of the path.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addShadow</span><span class="p">(</span><span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGSize</span> <span class="o">=</span> <span class="kt">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="o">-</span><span class="mi">3</span><span class="p">),</span> <span class="nv">radius</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="nv">opacity</span><span class="p">:</span> <span class="kt">Float</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addShadow</span><span class="p">(</span><span class="nv">radius</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGSize</span> <span class="o">=</span> <span class="kt">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="o">-</span><span class="mi">3</span><span class="p">),</span> <span class="nv">opacity</span><span class="p">:</span> <span class="kt">Float</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1546,6 +1546,100 @@ stroked version of the path.</p>
                         <h4>Parameters</h4>
                         <table class="graybox">
                           <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>color</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The color of the shadow. Defaults to opaque black.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>radius</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The blur radius used to create the shadow. Defaults to 3.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The shadow offset. Defaults to (0, -3).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>opacity</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The opacity of the shadow. Defaults to 0.5.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So7CALayerC11SExtensionsE14addRoundShadow6radius5color6offset7opacityy12CoreGraphics7CGFloatV_So7UIColorCSo6CGSizeVSftF"></a>
+                    <a name="//apple_ref/swift/Method/addRoundShadow(radius:color:offset:opacity:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7CALayerC11SExtensionsE14addRoundShadow6radius5color6offset7opacityy12CoreGraphics7CGFloatV_So7UIColorCSo6CGSizeVSftF">addRoundShadow(radius:color:offset:opacity:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a round shadow.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addRoundShadow</span><span class="p">(</span><span class="nv">radius</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">black</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">CGSize</span> <span class="o">=</span> <span class="kt">CGSize</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="o">-</span><span class="mi">3</span><span class="p">),</span> <span class="nv">opacity</span><span class="p">:</span> <span class="kt">Float</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>radius</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The blur radius used to create the shadow. Defaults to 3.</p>
+                                </div>
+                              </td>
+                            </tr>
                             <tr>
                               <td>
                                 <code>
@@ -1573,24 +1667,12 @@ stroked version of the path.</p>
                             <tr>
                               <td>
                                 <code>
-                                <em>radius</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The blur radius used to create the shadow. Defaults to 3.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
                                 <em>opacity</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The opacity of the shadow. Defaults to 0.</p>
+                                  <p>The opacity of the shadow. Defaults to 0.5.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1775,7 +1857,7 @@ stroked version of the path.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2018-12-29)</p>
+          <p>&copy; 2018 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2018-12-30)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
