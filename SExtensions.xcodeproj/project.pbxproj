@@ -244,6 +244,7 @@
 		C45485E421BCCF1A00E7F47A /* Dangerfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E221BCCF1A00E7F47A /* Dangerfile */; };
 		C4ABF1C221C33A3900C0A5BA /* CALayer+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */; };
 		C4ABF1C421C33B8700C0A5BA /* CALayerCornerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABF1C321C33B8700C0A5BA /* CALayerCornerTests.swift */; };
+		C4B3D26421D9D47200FD395B /* CALayer+Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */; };
 		C4D58F5D21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D58F5C21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift */; };
 		C4F8A3E421CB3CBE005C33B6 /* CALayer+PerformWithoutAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8A3E321CB3CBE005C33B6 /* CALayer+PerformWithoutAnimation.swift */; };
 /* End PBXBuildFile section */
@@ -499,6 +500,7 @@
 		C45485E221BCCF1A00E7F47A /* Dangerfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 		C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Shadow.swift"; sourceTree = "<group>"; };
 		C4ABF1C321C33B8700C0A5BA /* CALayerCornerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerCornerTests.swift; sourceTree = "<group>"; };
+		C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Curve.swift"; sourceTree = "<group>"; };
 		C4D58F5C21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+PauseAndResumeAnimation.swift"; sourceTree = "<group>"; };
 		C4F8A3E321CB3CBE005C33B6 /* CALayer+PerformWithoutAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+PerformWithoutAnimation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -910,6 +912,7 @@
 				71A06328218AB67A004D9ABA /* CALayer+Border.swift */,
 				71E6CA83218D222000E4C512 /* CALayer+ColorGradient.swift */,
 				C42CFA5121C251EC004AC65A /* CALayer+Corner.swift */,
+				C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */,
 				C4375F9921C8BB95009B3243 /* CALayer+FrontAndBack.swift */,
 				C4D58F5C21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift */,
 				C4F8A3E321CB3CBE005C33B6 /* CALayer+PerformWithoutAnimation.swift */,
@@ -1438,6 +1441,7 @@
 				711001A921756856001F5AC9 /* Bool+StringValue.swift in Sources */,
 				71F431F3212CDDA0005F67E3 /* URL+IsFromDomain.swift in Sources */,
 				71AE5F6920F1824C0026EFAE /* Double+Percentage.swift in Sources */,
+				C4B3D26421D9D47200FD395B /* CALayer+Curve.swift in Sources */,
 				C40878FE21D0B1B900DE07FD /* CALayer+TransparentCircle.swift in Sources */,
 				714CCE272161A11A00D4E784 /* Array+IndexedDictionary.swift in Sources */,
 				71AB2F3520BCBA740060F4CB /* String+Case.swift in Sources */,
