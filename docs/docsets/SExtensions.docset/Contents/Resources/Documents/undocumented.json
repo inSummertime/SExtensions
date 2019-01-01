@@ -34,6 +34,34 @@
       "symbol": "CALayer.BorderSide.top",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Curve.swift",
+      "line": 20,
+      "symbol": "CALayer.CurveSide.bottom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Curve.swift",
+      "line": 20,
+      "symbol": "CALayer.CurveSide.left",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Curve.swift",
+      "line": 20,
+      "symbol": "CALayer.CurveSide.right",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Curve.swift",
+      "line": 20,
+      "symbol": "CALayer.CurveSide.top",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/Jerry/Data/Work/SExtensions"
