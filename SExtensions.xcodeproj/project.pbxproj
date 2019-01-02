@@ -243,6 +243,8 @@
 		C45485E321BCCF1A00E7F47A /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E121BCCF1A00E7F47A /* Gemfile */; };
 		C45485E421BCCF1A00E7F47A /* Dangerfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E221BCCF1A00E7F47A /* Dangerfile */; };
 		C46E626721DB145D00842639 /* CALayer+Rhombus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E626621DB145D00842639 /* CALayer+Rhombus.swift */; };
+		C498739F21DC52330004267F /* CALayer+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498739E21DC52330004267F /* CALayer+UIImage.swift */; };
+		C49873A121DC54E10004267F /* CALayerUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49873A021DC54E10004267F /* CALayerUIImageTests.swift */; };
 		C4ABF1C221C33A3900C0A5BA /* CALayer+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */; };
 		C4ABF1C421C33B8700C0A5BA /* CALayerCornerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABF1C321C33B8700C0A5BA /* CALayerCornerTests.swift */; };
 		C4B3D26421D9D47200FD395B /* CALayer+Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */; };
@@ -500,6 +502,8 @@
 		C45485E121BCCF1A00E7F47A /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		C45485E221BCCF1A00E7F47A /* Dangerfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 		C46E626621DB145D00842639 /* CALayer+Rhombus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Rhombus.swift"; sourceTree = "<group>"; };
+		C498739E21DC52330004267F /* CALayer+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+UIImage.swift"; sourceTree = "<group>"; };
+		C49873A021DC54E10004267F /* CALayerUIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerUIImageTests.swift; sourceTree = "<group>"; };
 		C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Shadow.swift"; sourceTree = "<group>"; };
 		C4ABF1C321C33B8700C0A5BA /* CALayerCornerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerCornerTests.swift; sourceTree = "<group>"; };
 		C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Curve.swift"; sourceTree = "<group>"; };
@@ -923,6 +927,7 @@
 				C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */,
 				C40878FD21D0B1B900DE07FD /* CALayer+TransparentCircle.swift */,
 				C442B42B21C7DF8E00EB56FF /* CALayer+TriangleCorner.swift */,
+				C498739E21DC52330004267F /* CALayer+UIImage.swift */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -938,6 +943,7 @@
 				C4375F9D21C8C4A4009B3243 /* CALayerShadowTests.swift */,
 				C40878FF21D0B33100DE07FD /* CALayerTransparentCircleTests.swift */,
 				C442B42D21C7E34500EB56FF /* CALayerTriangleCornerTests.swift */,
+				C49873A021DC54E10004267F /* CALayerUIImageTests.swift */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -1400,6 +1406,7 @@
 				C4ABF1C221C33A3900C0A5BA /* CALayer+Shadow.swift in Sources */,
 				716BF0EA215854C800AE2BBB /* Array+Average.swift in Sources */,
 				71B6F2B420D33C0B00B232C9 /* Dictionary+Operator.swift in Sources */,
+				C498739F21DC52330004267F /* CALayer+UIImage.swift in Sources */,
 				71F0FF7D2141FFB000A26790 /* DispatchQueue+Delay.swift in Sources */,
 				713C9DBE215458A100EFF6D5 /* Array+Duplicate.swift in Sources */,
 				7120E34B21780DB4007DE51E /* Character+Case.swift in Sources */,
@@ -1537,6 +1544,7 @@
 				71ACDC5F20BF7E990071FF33 /* StringWordsTests.swift in Sources */,
 				71ADB14120EFAC8400FD8FCE /* DoubleRoundToTests.swift in Sources */,
 				C4375F9E21C8C4A4009B3243 /* CALayerShadowTests.swift in Sources */,
+				C49873A121DC54E10004267F /* CALayerUIImageTests.swift in Sources */,
 				711A3CCD20ED8ED90056E2E3 /* DoubleBoolTests.swift in Sources */,
 				71375E3020CAB4BD00C6A7E0 /* StringHeightTests.swift in Sources */,
 				71C7F8EA213DFD6B002B9916 /* JSONSerializationArrayTests.swift in Sources */,
