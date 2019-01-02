@@ -6,8 +6,9 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import QuartzCore
 import CoreGraphics
+import QuartzCore
+import UIKit
 
 public extension CALayer {
 

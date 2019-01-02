@@ -6,6 +6,7 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
+import CoreGraphics
 import QuartzCore
 import UIKit
 
