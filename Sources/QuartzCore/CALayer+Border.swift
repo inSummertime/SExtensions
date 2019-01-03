@@ -150,6 +150,30 @@ public extension CALayer {
         addSublayer(gradientLayer)
         return gradientLayer
     }
+    
+    /// Adds a round border.
+    ///
+    /// - Parameters:
+    ///   - color: A instance of UIColor which defines what color the border is.
+    ///   - width: A CGFloat value that measures how bold the border is.
+    ///   - radius: A CGFloat value that measures how round the corner is.
+    /// - Returns: A CAShapeLayer.
+    @discardableResult
+    func addRoundBorder(color: UIColor, width: CGFloat, radius: CGFloat) -> CAShapeLayer {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: .allCorners, cornerRadii: CGSize(width: radius, height: radius))
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = path.cgPath
+        mask = shapeLayer
+        
+        let borderLayer = CAShapeLayer()
+        borderLayer.path = path.cgPath
+        // Because it draws in the center of the path, only the inside half is visible, so double the width.
+        borderLayer.lineWidth = width * 2
+        borderLayer.fillColor = nil
+        borderLayer.strokeColor = color.cgColor
+        addSublayer(borderLayer)
+        return borderLayer
+    }
 
     /// Adds color gradient round borders.
     ///
@@ -159,7 +183,8 @@ public extension CALayer {
     ///   - isHorizontal: Whether the gradient direction is horizontal.
     ///   - corners: An instance of UIRectCorner which defines which corner needs to be round.
     ///   - radius: A CGFloat value that measures how round the corner is.
-    func addColorGradientRoundBorder(colors: [UIColor], width: CGFloat, isHorizontal: Bool = true, corners: UIRectCorner = [.allCorners], radius: CGFloat) {
+    @discardableResult
+    func addColorGradientRoundBorder(colors: [UIColor], width: CGFloat, isHorizontal: Bool = true, corners: UIRectCorner = [.allCorners], radius: CGFloat) -> CAGradientLayer {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = path.cgPath
@@ -177,15 +202,15 @@ public extension CALayer {
             gradientLayer.endPoint = CGPoint(x: 0, y: 1.0)
         }
 
-        let gradientPath = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         let gradientShapeLayer = CAShapeLayer()
-        gradientShapeLayer.path = gradientPath.cgPath
-        gradientShapeLayer.lineWidth = width
+        gradientShapeLayer.path = path.cgPath
+        // Because it draws in the center of the path, only the inside half is visible, so double the width.
+        gradientShapeLayer.lineWidth = width * 2
         gradientShapeLayer.fillColor = nil
         gradientShapeLayer.strokeColor = UIColor.black.cgColor
         gradientLayer.mask = gradientShapeLayer
-
         addSublayer(gradientLayer)
+        return gradientLayer
     }
 
     /// Animates border color and width.
@@ -271,6 +296,7 @@ public extension CALayer {
     ///   - width: A CGFloat value that measures how bold the border is.
     ///   - side: An enum value represents which side the border is on.
     /// - Returns: A CALayer
+    @discardableResult
     func addExternalBorder(color: UIColor, width: CGFloat, side: BorderSide = .all) -> CALayer {
         let border = CALayer()
         switch side {
