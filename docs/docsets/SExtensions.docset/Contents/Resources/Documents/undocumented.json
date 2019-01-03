@@ -2,65 +2,72 @@
   "warnings": [
     {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Border.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "CALayer.BorderSide.all",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Border.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "CALayer.BorderSide.bottom",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Border.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "CALayer.BorderSide.left",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Border.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "CALayer.BorderSide.right",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Border.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "CALayer.BorderSide.top",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Curve.swift",
-      "line": 20,
+      "line": 22,
       "symbol": "CALayer.CurveSide.bottom",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Curve.swift",
-      "line": 20,
+      "line": 22,
       "symbol": "CALayer.CurveSide.left",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Curve.swift",
-      "line": 20,
+      "line": 22,
       "symbol": "CALayer.CurveSide.right",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Curve.swift",
-      "line": 20,
+      "line": 22,
       "symbol": "CALayer.CurveSide.top",
       "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+UIImage.swift",
+      "line": 15,
+      "symbol": "CALayer.image",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],
