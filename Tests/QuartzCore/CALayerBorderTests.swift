@@ -129,10 +129,17 @@ final class CALayerBorderTests: XCTestCase {
         XCTAssertEqual(gradientLayer!.endPoint.x, 0)
         XCTAssertEqual(gradientLayer!.endPoint.y, 1.0)
     }
+    
+    func testAddRoundBorder() {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 16))
+        view.layer.addRoundBorder(color: .white, width: 1, radius: 4)
+        let borderLayer = view.layer.sublayers?.first as? CAShapeLayer
+        XCTAssertNotNil(borderLayer)
+    }
 
     func testAddColorGradientRoundBorder() {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
-        view.layer.addColorGradientRoundBorder(colors: [.white, .red, .blue], width: 4, isHorizontal: true, corners: [.allCorners], radius: 12)
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 16))
+        view.layer.addColorGradientRoundBorder(colors: [.white, .red, .blue], width: 7, isHorizontal: true, corners: [.allCorners], radius: 0)
         let gradientLayer = view.layer.sublayers?.first as? CAGradientLayer
         XCTAssertNotNil(gradientLayer)
         XCTAssertEqual(gradientLayer!.startPoint.x, 0)
