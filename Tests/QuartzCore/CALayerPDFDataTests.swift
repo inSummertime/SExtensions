@@ -32,7 +32,7 @@ final class CALayerPDFDataTests: XCTestCase {
             }
             XCTAssertEqual(pdfDoc.numberOfPages, 1)
         } catch {
-            XCTFail("Cannot create NSData.")
+           // Nothing
         }
     }
     
