@@ -64,6 +64,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+PDFData.swift",
+      "line": 13,
+      "symbol": "CALayer.pdfData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+UIImage.swift",
       "line": 15,
       "symbol": "CALayer.image",
