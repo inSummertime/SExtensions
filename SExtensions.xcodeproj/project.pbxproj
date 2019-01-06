@@ -245,6 +245,7 @@
 		C45A479A21DFA6E700637655 /* CALayer+PDFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A479921DFA6E700637655 /* CALayer+PDFData.swift */; };
 		C45A479C21DFA72200637655 /* CALayerPDFDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A479B21DFA72200637655 /* CALayerPDFDataTests.swift */; };
 		C46E626721DB145D00842639 /* CALayer+Rhombus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E626621DB145D00842639 /* CALayer+Rhombus.swift */; };
+		C48F8E6421E08C7400E4A7E2 /* CALayer+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F8E6321E08C7400E4A7E2 /* CALayer+Shake.swift */; };
 		C498739F21DC52330004267F /* CALayer+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498739E21DC52330004267F /* CALayer+UIImage.swift */; };
 		C49873A121DC54E10004267F /* CALayerUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49873A021DC54E10004267F /* CALayerUIImageTests.swift */; };
 		C4ABF1C221C33A3900C0A5BA /* CALayer+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */; };
@@ -506,6 +507,7 @@
 		C45A479921DFA6E700637655 /* CALayer+PDFData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+PDFData.swift"; sourceTree = "<group>"; };
 		C45A479B21DFA72200637655 /* CALayerPDFDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerPDFDataTests.swift; sourceTree = "<group>"; };
 		C46E626621DB145D00842639 /* CALayer+Rhombus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Rhombus.swift"; sourceTree = "<group>"; };
+		C48F8E6321E08C7400E4A7E2 /* CALayer+Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Shake.swift"; sourceTree = "<group>"; };
 		C498739E21DC52330004267F /* CALayer+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+UIImage.swift"; sourceTree = "<group>"; };
 		C49873A021DC54E10004267F /* CALayerUIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerUIImageTests.swift; sourceTree = "<group>"; };
 		C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Shadow.swift"; sourceTree = "<group>"; };
@@ -933,6 +935,7 @@
 				C40878FD21D0B1B900DE07FD /* CALayer+TransparentCircle.swift */,
 				C442B42B21C7DF8E00EB56FF /* CALayer+TriangleCorner.swift */,
 				C498739E21DC52330004267F /* CALayer+UIImage.swift */,
+				C48F8E6321E08C7400E4A7E2 /* CALayer+Shake.swift */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -1469,6 +1472,7 @@
 				71E6CA84218D222000E4C512 /* CALayer+ColorGradient.swift in Sources */,
 				711EBCD720FD6C220061AA57 /* Date+Operation.swift in Sources */,
 				71EAAF9B20D140B900A648D8 /* Dictionary+Subscript.swift in Sources */,
+				C48F8E6421E08C7400E4A7E2 /* CALayer+Shake.swift in Sources */,
 				71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */,
 				712BB74A20CF64A300F01034 /* String+Dictionary.swift in Sources */,
 				71606AFA21439ACB00D56245 /* DispatchSource+Timer.swift in Sources */,
