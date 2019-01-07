@@ -34,7 +34,7 @@ public extension Array where Element: Equatable {
     /// - Returns: A index
     func lastIndex(of element: Element) -> Index? {
         if let index = reversed().index(of: element) {
-            return  index.base - 1
+            return index.base - 1
         }
         return nil
     }

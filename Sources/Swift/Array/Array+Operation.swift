@@ -44,11 +44,9 @@ public extension Array where Element: Equatable {
                 temp = result
                 result.removeAll()
             }
-            for element in array {
-                if temp.contains(element) {
-                    result.append(element)
-                }
-            }
+            result += array.filter({
+                temp.contains($0)
+            })
         }
         return result
     }
