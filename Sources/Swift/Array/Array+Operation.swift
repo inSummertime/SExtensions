@@ -20,11 +20,10 @@ public extension Array where Element: Equatable {
     func union(_ others: Array...) -> Array {
         var result = self
         for array in others {
-            for element in array {
-                if !result.contains(element) {
-                    result.append(element)
-                }
-            }
+            let differences = array.filter({
+                !contains($0)
+            })
+            result += differences
         }
         return result
     }
