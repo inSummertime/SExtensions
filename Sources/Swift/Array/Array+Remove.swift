@@ -17,13 +17,8 @@ public extension Array {
     /// - Parameter positions: The positions of the elements to remove.
     /// - Returns: An array.
     func removing(at positions: Int...) -> Array {
-        var result = Array()
-        for index in 0..<count {
-            if !positions.contains(index) {
-                result.append(self[index])
-            }
-        }
-        return result
+        let elements = enumerated().filter { !positions.contains($0.offset) }
+        return elements.map({ $0.element })
     }
 
     /// Returns an array which does not contain any empty element.
