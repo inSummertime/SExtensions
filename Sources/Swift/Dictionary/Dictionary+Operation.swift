@@ -145,6 +145,12 @@ public extension Dictionary where Value: Equatable {
         if isEmpty || other.isEmpty {
             return false
         }
+        if count > other.count {
+            return false
+        }
+        if self == other {
+            return true
+        }
         for (key, value) in self {
             if let v = other[key] {
                 if v != value {
