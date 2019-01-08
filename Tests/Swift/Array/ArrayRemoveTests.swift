@@ -30,6 +30,8 @@ final class ArrayRemoveTests: XCTestCase {
     func testRemovingArrays() {
         XCTAssertEqual(["hello", "world", "!"].removing(["hello"], ["world", "!"]), [])
         XCTAssertEqual(["hello", "world", "!"].removing([" "], ["", "0"]), ["hello", "world", "!"])
+        XCTAssertEqual(["hello", "world", "!"].removing([]), ["hello", "world", "!"])
+        XCTAssertEqual([String]().removing([String]()), [])
     }
 
     func testRemovingCountableRange() {
