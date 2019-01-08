@@ -97,10 +97,8 @@ public extension Array where Element: Equatable {
     func removing(_ others: Array...) -> Array {
         var result = self
         for array in others {
-            for element in array {
-                if let index = result.index(of: element) {
-                    result.remove(at: index)
-                }
+            result = result.filter {
+                !array.contains($0)
             }
         }
         return result
