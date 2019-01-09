@@ -24,7 +24,7 @@ public extension CALayer {
         shadowOffset = offset
         shadowOpacity = opacity
     }
-    
+
     /// Adds a round shadow.
     ///
     /// - Parameters:

@@ -33,14 +33,14 @@ public extension CALayer {
         let cornerRadius = radius ?? min(bounds.size.width, bounds.size.height) / 2.0
         self.cornerRadius = cornerRadius
     }
-    
+
     /// Animates corner radius.
     ///
     /// - Parameters:
     ///   - radius: New radius.
     ///   - duration: Animation duration.
     func animateCornerRadius(_ radius: CGFloat, duration: CFTimeInterval) {
-        let animation = CABasicAnimation(keyPath:"cornerRadius")
+        let animation = CABasicAnimation(keyPath: "cornerRadius")
         animation.toValue = radius
         animation.duration = duration
         animation.isRemovedOnCompletion = false

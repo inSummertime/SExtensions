@@ -10,7 +10,7 @@ import XCTest
 @testable import SExtensions
 
 final class CALayerPDFDataTests: XCTestCase {
-    
+
     func testPDFData() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
         view.backgroundColor = .white
@@ -35,5 +35,5 @@ final class CALayerPDFDataTests: XCTestCase {
            // Nothing
         }
     }
-    
+
 }

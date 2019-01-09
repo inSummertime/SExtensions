@@ -9,7 +9,7 @@
 import QuartzCore
 
 public extension CALayer {
-    
+
     var pdfData: NSData? {
         let data = NSMutableData()
         UIGraphicsBeginPDFContextToData(data, bounds, nil)
@@ -19,5 +19,5 @@ public extension CALayer {
         UIGraphicsEndPDFContext()
         return data
     }
-    
+
 }

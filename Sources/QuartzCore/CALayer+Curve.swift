@@ -11,7 +11,7 @@ import QuartzCore
 import UIKit
 
 public extension CALayer {
-    
+
     /// The side that the curve is on.
     ///
     /// - top: Top side.
@@ -21,7 +21,7 @@ public extension CALayer {
     enum CurveSide {
         case top, right, bottom, left
     }
-    
+
     /// Adds a curve on a side of a CALayer.
     ///
     /// - Parameters:
@@ -63,5 +63,5 @@ public extension CALayer {
         mask = shapeLayer
         return shapeLayer
     }
-    
+
 }

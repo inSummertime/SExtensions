@@ -150,7 +150,7 @@ public extension CALayer {
         addSublayer(gradientLayer)
         return gradientLayer
     }
-    
+
     /// Adds a round border.
     ///
     /// - Parameters:
@@ -164,7 +164,7 @@ public extension CALayer {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = path.cgPath
         mask = shapeLayer
-        
+
         let borderLayer = CAShapeLayer()
         borderLayer.path = path.cgPath
         // Because it draws in the center of the path, only the inside half is visible, so double the width.
@@ -235,7 +235,7 @@ public extension CALayer {
         animationGroup.fillMode = kCAFillModeForwards
         add(animationGroup, forKey: nil)
     }
-    
+
     /// Adds dashed borders.
     ///
     /// - Parameters:
@@ -261,7 +261,7 @@ public extension CALayer {
             path.addLines(between: [CGPoint(x: 0, y: height - lineWidth / 2), CGPoint(x: width, y: height - lineWidth / 2)])
             path.addLines(between: [CGPoint(x: lineWidth / 2, y: 0), CGPoint(x: lineWidth / 2, y: height)])
         case .top:
-            path.addLines(between: [CGPoint(x: 0, y: lineWidth / 2), CGPoint(x: width, y:  lineWidth / 2)])
+            path.addLines(between: [CGPoint(x: 0, y: lineWidth / 2), CGPoint(x: width, y: lineWidth / 2)])
         case .right:
             path.addLines(between: [CGPoint(x: width - lineWidth / 2, y: 0), CGPoint(x: width - lineWidth / 2, y: height)])
         case .bottom:
@@ -273,7 +273,7 @@ public extension CALayer {
         addSublayer(shapeLayer)
         return shapeLayer
     }
-    
+
     /// Adds dotted borders.
     ///
     /// - Parameters:
@@ -288,7 +288,7 @@ public extension CALayer {
         shapeLayer.lineJoin = kCALineJoinRound
         return shapeLayer
     }
-    
+
     /// Add an external border.
     ///
     /// - Parameters:

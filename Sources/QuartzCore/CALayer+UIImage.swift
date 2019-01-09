@@ -11,7 +11,7 @@ import QuartzCore
 import UIKit
 
 public extension CALayer {
-    
+
     var image: UIImage? {
         defer {
             UIGraphicsEndImageContext()

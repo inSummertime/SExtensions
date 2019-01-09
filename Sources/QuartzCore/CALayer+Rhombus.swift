@@ -9,7 +9,7 @@
 import QuartzCore
 
 public extension CALayer {
-    
+
     /// Adds a rhombus mask.
     ///
     /// - Parameter isSqureNeeded: A Bool value represnts whether rhombus is a squre.
@@ -35,11 +35,11 @@ public extension CALayer {
             path.addLine(to: CGPoint(x: bounds.minX, y: bounds.midY))
         }
         path.close()
-        
+
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = path.cgPath
         mask = shapeLayer
         return shapeLayer
     }
-    
+
 }
