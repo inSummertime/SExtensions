@@ -64,11 +64,7 @@ public extension Array where Element: Equatable {
     /// - Returns: An array.
     func removing(_ elements: Element...) -> Array {
         var result = self
-        for element in elements {
-            if let index = result.index(of: element) {
-                result.remove(at: index)
-            }
-        }
+        result.removeAll(where: {elements.contains($0)})
         return result
     }
 
