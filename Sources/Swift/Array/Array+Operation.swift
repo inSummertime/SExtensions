@@ -167,11 +167,7 @@ public extension Array where Element: Equatable {
     func elementsToAdd(other: Array, isIncluded: (Element, Element) -> Bool) -> Array {
         var result = other
         for element in self {
-            for elementOther in other {
-                if isIncluded(element, elementOther) {
-                    result = result.filter({ $0 != elementOther })
-                }
-            }
+            result = result.filter({ !isIncluded(element, $0) })
         }
         return result
     }
