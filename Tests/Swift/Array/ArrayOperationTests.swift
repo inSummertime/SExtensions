@@ -38,6 +38,8 @@ final class ArrayOperationTests: XCTestCase {
         XCTAssertEqual(["hello", "world", "!"].subtracting(["hello"]), ["world", "!"])
         XCTAssertEqual(["hello", "world", "!"].subtracting(["hello", "world"]), ["!"])
         XCTAssertEqual(["hello", "world", "!"].subtracting(["hello", "world"], ["!"]), [])
+        XCTAssertEqual(["hello", "world", "!"].subtracting([]), ["hello", "world", "!"])
+        XCTAssertEqual([Int]().subtracting([]), [])
     }
 
     func testIsSubarray() {
