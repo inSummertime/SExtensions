@@ -194,15 +194,8 @@ public extension Array where Element: Equatable {
     /// - Returns: An array.
     func elementsToRemove(other: Array, isIncluded: (Element, Element) -> Bool) -> Array {
         var result = self
-        for element in self {
-            for elementOther in other {
-                if isIncluded(element, elementOther) {
-                    result = result.filter({ (el) -> Bool in
-                        el != element
-                    })
-                    result = result.filter({ $0 != element })
-                }
-            }
+        for element in other {
+            result = result.filter({ !isIncluded(element, $0) })
         }
         return result
     }
