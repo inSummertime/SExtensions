@@ -84,11 +84,7 @@ public extension Array where Element: Equatable {
     func subtracting(_ others: Array...) -> Array {
         var result = self
         for array in others {
-            for element in array {
-                if contains(element) {
-                    result = result.filter({ $0 != element })
-                }
-            }
+            result = result.filter({ !array.contains($0) })
         }
         return result
     }
