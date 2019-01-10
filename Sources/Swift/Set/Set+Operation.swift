@@ -93,15 +93,8 @@ public extension Set {
     /// - Returns: A set.
     func elementsToRemove(other: Set, isIncluded: (Element, Element) -> Bool) -> Set {
         var result = self
-        for element in self {
-            for elementOther in other {
-                if isIncluded(element, elementOther) {
-                    result = result.filter({ (el) -> Bool in
-                        el != element
-                    })
-                    result = result.filter({ $0 != element })
-                }
-            }
+        for element in other {
+            result = result.filter({ !isIncluded($0, element) })
         }
         return result
     }
