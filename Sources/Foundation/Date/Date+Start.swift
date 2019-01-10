@@ -61,9 +61,9 @@ public extension Date {
     ///   - calendar: A Calendar.
     /// - Returns: A date created from the specified component.
     func end(of component: Calendar.Component, in calendar: Calendar = Calendar.current) -> Date? {
+        var dateComponents = DateComponents()
+        dateComponents.calendar = calendar
         if component == .year || component == .month || component == .day || component == .hour || component == .minute || component == .yearForWeekOfYear {
-            var dateComponents = DateComponents()
-            dateComponents.calendar = calendar
             dateComponents.setValue(1, for: component)
             if let start = start(of: component, in: calendar), let next = calendar.date(byAdding: dateComponents, to: start) {
                 var dateComponents = DateComponents()
@@ -74,8 +74,6 @@ public extension Date {
                 return nil
             }
         } else if component == .weekOfYear || component == .weekOfMonth || component == .weekday {
-            var dateComponents = DateComponents()
-            dateComponents.calendar = calendar
             dateComponents.setValue(7, for: .day)
             if let start = start(of: component, in: calendar), let next = calendar.date(byAdding: dateComponents, to: start) {
                 var dateComponents = DateComponents()
