@@ -66,11 +66,7 @@ public extension Set {
     func elementsToAdd(other: Set, isIncluded: (Element, Element) -> Bool) -> Set {
         var result = other
         for element in self {
-            for elementOther in other {
-                if isIncluded(element, elementOther) {
-                    result = result.filter({ $0 != elementOther })
-                }
-            }
+            result = result.filter({ !isIncluded($0, element) })
         }
         return result
     }
