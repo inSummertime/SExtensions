@@ -122,10 +122,8 @@ public extension Set {
     func elementsToUpdate(other: Set, isIncluded: (Element, Element) -> Bool) -> Set {
         var result = Set<Element>()
         for element in self {
-            for elementOther in other {
-                if isIncluded(element, elementOther) {
-                    result.insert(elementOther)
-                }
+            for elementOther in other where isIncluded(element, elementOther) {
+                result.insert(elementOther)
             }
         }
         return result
