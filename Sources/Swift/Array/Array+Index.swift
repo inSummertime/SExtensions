@@ -52,10 +52,8 @@ public extension Array where Element: Equatable {
     ///   array.
     func indexes(_ isIncluded: (_ element: Element) -> Bool) -> [Index] {
         var indexes = [Index]()
-        for index in 0..<count {
-            if isIncluded(self[index]) {
-                indexes.append(index)
-            }
+        for index in 0..<count where isIncluded(self[index]) {
+            indexes.append(index)
         }
         return indexes
     }
