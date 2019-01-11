@@ -225,10 +225,8 @@ public extension Array {
     func elementsToUpdate(other: Array, isIncluded: (Element, Element) -> Bool) -> Array {
         var result = [Element]()
         for element in self {
-            for elementOther in other {
-                if isIncluded(element, elementOther) {
-                    result.append(elementOther)
-                }
+            for elementOther in other where isIncluded(element, elementOther) {
+                result.append(elementOther)
             }
         }
         return result
