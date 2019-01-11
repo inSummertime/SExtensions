@@ -26,10 +26,8 @@ public extension Array {
     /// - Parameter indices: the indices the elements are at.
     subscript(safeIndices indices: Int...) -> Array {
         var result = Array()
-        for index in indices {
-            if self.indices.contains(index) {
-                result.append(self[index])
-            }
+        for index in indices where self.indices.contains(index) {
+            result.append(self[index])
         }
         return result
     }
