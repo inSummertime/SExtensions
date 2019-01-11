@@ -108,10 +108,8 @@ public extension Array where Element: Equatable {
         if isEmpty {
             return true
         }
-        for element in self {
-            if !other.contains(element) {
-                return false
-            }
+        for element in self where !other.contains(element) {
+            return false
         }
         return true
     }
