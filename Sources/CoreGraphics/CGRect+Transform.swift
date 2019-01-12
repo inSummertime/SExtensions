@@ -6,7 +6,7 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import Foundation
+import CoreGraphics
 
 public extension CGRect {
 
