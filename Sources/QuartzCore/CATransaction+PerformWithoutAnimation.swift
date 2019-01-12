@@ -1,5 +1,5 @@
 //
-//  CALayer+PerformWithoutAnimation.swift
+//  CATransaction+PerformWithoutAnimation.swift
 //  SExtensions
 //
 //  Created by Ray on 2018/12/20.
@@ -8,7 +8,7 @@
 
 import QuartzCore
 
-public extension CALayer {
+public extension CATransaction {
 
     /// Performs an action without animation.
     ///
