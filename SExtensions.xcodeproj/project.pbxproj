@@ -251,6 +251,8 @@
 		C4ABF1C221C33A3900C0A5BA /* CALayer+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */; };
 		C4ABF1C421C33B8700C0A5BA /* CALayerCornerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ABF1C321C33B8700C0A5BA /* CALayerCornerTests.swift */; };
 		C4B3D26421D9D47200FD395B /* CALayer+Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */; };
+		C4D310D521EAE37B00DD6CD6 /* CGContext+DrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D310D421EAE37B00DD6CD6 /* CGContext+DrawLine.swift */; };
+		C4D310D721EAE55400DD6CD6 /* CGContextDrawLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D310D621EAE55400DD6CD6 /* CGContextDrawLineTests.swift */; };
 		C4D58F5D21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D58F5C21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift */; };
 		C4F8A3E421CB3CBE005C33B6 /* CATransaction+PerformWithoutAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8A3E321CB3CBE005C33B6 /* CATransaction+PerformWithoutAnimation.swift */; };
 /* End PBXBuildFile section */
@@ -513,6 +515,8 @@
 		C4ABF1C121C33A3900C0A5BA /* CALayer+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Shadow.swift"; sourceTree = "<group>"; };
 		C4ABF1C321C33B8700C0A5BA /* CALayerCornerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerCornerTests.swift; sourceTree = "<group>"; };
 		C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Curve.swift"; sourceTree = "<group>"; };
+		C4D310D421EAE37B00DD6CD6 /* CGContext+DrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGContext+DrawLine.swift"; sourceTree = "<group>"; };
+		C4D310D621EAE55400DD6CD6 /* CGContextDrawLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGContextDrawLineTests.swift; sourceTree = "<group>"; };
 		C4D58F5C21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+PauseAndResumeAnimation.swift"; sourceTree = "<group>"; };
 		C4F8A3E321CB3CBE005C33B6 /* CATransaction+PerformWithoutAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CATransaction+PerformWithoutAnimation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -899,6 +903,7 @@
 		719C8C2B2144B4F800F3522D /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				C4D310D421EAE37B00DD6CD6 /* CGContext+DrawLine.swift */,
 				719C8C292144B49A00F3522D /* CGPoint+Operator.swift */,
 				7146A87721472FC0005C1814 /* CGRect+Center.swift */,
 				7146A87B21473595005C1814 /* CGRect+Transform.swift */,
@@ -914,6 +919,7 @@
 				711CD5472145E146002F26E4 /* CGRectUpdateTests.swift */,
 				7146A8792147303C005C1814 /* CGRectCenterTests.swift */,
 				71D67ECF214873D50004BB79 /* CGRectTransformTests.swift */,
+				C4D310D621EAE55400DD6CD6 /* CGContextDrawLineTests.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -1458,6 +1464,7 @@
 				C45A479A21DFA6E700637655 /* CALayer+PDFData.swift in Sources */,
 				71AF15C720CCD93C006641D3 /* NSAttributedString+Formatting.swift in Sources */,
 				71CF5DE7213F48A1002BB40F /* Int+Currency.swift in Sources */,
+				C4D310D521EAE37B00DD6CD6 /* CGContext+DrawLine.swift in Sources */,
 				711001A921756856001F5AC9 /* Bool+StringValue.swift in Sources */,
 				71F431F3212CDDA0005F67E3 /* URL+IsFromDomain.swift in Sources */,
 				71AE5F6920F1824C0026EFAE /* Double+Percentage.swift in Sources */,
@@ -1625,6 +1632,7 @@
 				718EDF44216418E2004CA361 /* OptionalOperatorTests.swift in Sources */,
 				C4375F9C21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift in Sources */,
 				71958F9420D0892A00AFCBA5 /* StringArrayTests.swift in Sources */,
+				C4D310D721EAE55400DD6CD6 /* CGContextDrawLineTests.swift in Sources */,
 				715CF54E21166737009187BF /* DateIntervalOperatorTests.swift in Sources */,
 				712AF13C2117B23C004715A1 /* DateIntervalStringTests.swift in Sources */,
 				71E6CA86218D22ED00E4C512 /* CALayerColorGradientTests.swift in Sources */,
