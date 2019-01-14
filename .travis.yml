@@ -7,7 +7,6 @@ xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone XS MAX
 before_install:
   - gem install bundle
   - bundle install
-  - brew update
   - brew install swiftformat
 before_script:
   - bundle exec danger
