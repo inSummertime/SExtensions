@@ -1,2 +1,2 @@
 # rules
---disable blankLinesAtStartOfScope, redundantSelf, andOperator, numberFormatting
+--disable blankLinesAtStartOfScope,redundantSelf,andOperator,numberFormatting
