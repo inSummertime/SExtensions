@@ -1,0 +1,2 @@
+# rules
+--disable blankLinesAtStartOfScope, redundantSelf, andOperator
