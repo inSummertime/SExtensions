@@ -112,5 +112,4 @@ public extension CGRect {
     mutating func update(height: CGFloat) {
         self = updating(height: height)
     }
-
 }

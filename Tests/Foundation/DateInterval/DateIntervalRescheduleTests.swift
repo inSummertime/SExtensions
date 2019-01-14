@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateIntervalRescheduleTests: XCTestCase {
 
@@ -31,5 +31,4 @@ final class DateIntervalRescheduleTests: XCTestCase {
         XCTAssertEqual(nextDateInterval.start, Date(timeIntervalSinceReferenceDate: 0))
         XCTAssertEqual(nextDateInterval.duration, 30.0)
     }
-
 }

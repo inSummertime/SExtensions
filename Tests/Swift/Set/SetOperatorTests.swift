@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class SetOperatorTests: XCTestCase {
 
@@ -40,5 +40,4 @@ final class SetOperatorTests: XCTestCase {
         XCTAssertEqual(set & ["hello", "world"], ["hello"])
         XCTAssertEqual(set & [], [])
     }
-
 }

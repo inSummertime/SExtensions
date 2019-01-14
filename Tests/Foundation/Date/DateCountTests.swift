@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateCountTests: XCTestCase {
 
@@ -37,5 +37,4 @@ final class DateCountTests: XCTestCase {
         calendar.timeZone = TimeZone(secondsFromGMT: 0)!
         XCTAssertEqual(date.weekCountThisYear(in: calendar), 53)
     }
-
 }

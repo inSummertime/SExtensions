@@ -6,8 +6,8 @@
 //  Copyright © 2019 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CALayerUIImageTests: XCTestCase {
 
@@ -19,5 +19,4 @@ final class CALayerUIImageTests: XCTestCase {
         let image = view.layer.image
         XCTAssertEqual(image!.size, CGSize(width: 64, height: 64))
     }
-
 }

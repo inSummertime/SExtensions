@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DictionaryOperatorTests: XCTestCase {
 
@@ -63,5 +63,4 @@ final class DictionaryOperatorTests: XCTestCase {
         XCTAssertEqual([0: 0] | [:], [0: 0])
         XCTAssertEqual([0: 0] | [1: 1] | [2: 2, 3: 3] | [:] | [4: 4, 5: 5, 6: 6], [0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6])
     }
-
 }

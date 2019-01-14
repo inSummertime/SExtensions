@@ -16,5 +16,4 @@ public extension Array {
     var indexedDictionary: [Int: Element] {
         return enumerated().reduce(into: [:]) { $0[$1.offset] = $1.element }
     }
-
 }

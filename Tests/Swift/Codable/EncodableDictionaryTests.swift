@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class EncodableDictionaryTests: XCTestCase {
 
@@ -35,5 +35,4 @@ final class EncodableDictionaryTests: XCTestCase {
         let targetDictionary: [String: Any] = ["int_type": 0, "double_type": 1.0, "bool_type": true, "string_type": "text", "dictionary_type": ["text": "textData"], "array_type": [0, 1]]
         XCTAssertTrue(NSDictionary(dictionary: sourceDictionary!).isEqual(to: targetDictionary))
     }
-
 }

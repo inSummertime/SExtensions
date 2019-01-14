@@ -25,5 +25,4 @@ public extension URLRequest {
             setValue(value, forHTTPHeaderField: key)
         }
     }
-
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CALayerFrontAndBackTests: XCTestCase {
 
@@ -50,5 +50,4 @@ final class CALayerFrontAndBackTests: XCTestCase {
         XCTAssertEqual(superlayer.sublayers!.first!, anotherSublayer)
         XCTAssertEqual(superlayer.sublayers!.last!, sublayer)
     }
-
 }

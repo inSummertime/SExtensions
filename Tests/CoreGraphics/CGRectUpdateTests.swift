@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CGRectUpdateTests: XCTestCase {
 
@@ -58,5 +58,4 @@ final class CGRectUpdateTests: XCTestCase {
         rect.update(height: 2.0)
         XCTAssertEqual(rect, CGRect(x: 1.0, y: 1.0, width: 1.0, height: 2.0))
     }
-
 }

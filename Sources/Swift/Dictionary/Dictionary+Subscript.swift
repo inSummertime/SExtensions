@@ -177,5 +177,4 @@ public extension Dictionary where Key == String {
             self[key] = newValue as? Value
         }
     }
-
 }

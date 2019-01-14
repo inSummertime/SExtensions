@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class ArrayStringTests: XCTestCase {
 
@@ -29,5 +29,4 @@ final class ArrayStringTests: XCTestCase {
         XCTAssertEqual(["ab", "ba", "abc", "acb", "bac"].groupAnagrams, [["ab", "ba"], ["abc", "acb", "bac"]])
         XCTAssertEqual(["ab", "ba", "abc", "acb", "bac", " ", ""].groupAnagrams, [[""], [" "], ["ab", "ba"], ["abc", "acb", "bac"]])
     }
-
 }

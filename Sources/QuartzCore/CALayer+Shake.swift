@@ -33,5 +33,4 @@ public extension CALayer {
         add(animation, forKey: nil)
         return animation
     }
-
 }

@@ -18,7 +18,6 @@ public extension Array where Element: Equatable {
     func countOfElement(_ element: Element) -> Int {
         return filter { $0 == element }.count
     }
-
 }
 
 public extension Array where Element: Hashable {
@@ -58,5 +57,4 @@ public extension Array where Element: Hashable {
         if countOfElement(element) > count / 2 { return element }
         return nil
     }
-
 }

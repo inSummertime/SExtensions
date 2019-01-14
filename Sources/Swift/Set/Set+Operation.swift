@@ -128,5 +128,4 @@ public extension Set {
         }
         return result
     }
-
 }

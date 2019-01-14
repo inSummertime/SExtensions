@@ -55,5 +55,4 @@ public extension UserDefaults {
         let data = try? JSONEncoder().encode(value)
         set(data, forKey: defaultName)
     }
-
 }

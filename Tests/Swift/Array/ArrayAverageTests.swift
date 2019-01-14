@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class ArrayAverageTests: XCTestCase {
 
@@ -19,5 +19,4 @@ final class ArrayAverageTests: XCTestCase {
         XCTAssertEqual([0.0, 1.1, 2.2, 1.1].average, 1.1)
         XCTAssertEqual([Float(0), Float(1.1), Float(2.2), Float(1.1)].average, 1.1)
     }
-
 }

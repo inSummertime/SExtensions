@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DictionaryHasTests: XCTestCase {
 
@@ -37,5 +37,4 @@ final class DictionaryHasTests: XCTestCase {
         XCTAssertTrue(["hello": 0].hasElement(("hello", 0)))
         XCTAssertFalse(["hello": 0, "world": 1].hasElement(("hello", 1)))
     }
-
 }

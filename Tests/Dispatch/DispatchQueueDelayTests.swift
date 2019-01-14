@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DispatchQueueDelayTests: XCTestCase {
 
@@ -25,5 +25,4 @@ final class DispatchQueueDelayTests: XCTestCase {
             XCTAssertTrue(start == 2)
         }
     }
-
 }

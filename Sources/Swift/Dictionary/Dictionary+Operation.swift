@@ -26,7 +26,6 @@ public extension Dictionary {
         }
         return result
     }
-
 }
 
 public extension Dictionary where Value: Equatable {
@@ -177,5 +176,4 @@ public extension Dictionary where Value: Equatable {
         }
         return isSubdictionary(of: other)
     }
-
 }

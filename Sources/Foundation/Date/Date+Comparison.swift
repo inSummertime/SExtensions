@@ -47,5 +47,4 @@ public extension Date {
             $0 > $1
         })
     }
-
 }

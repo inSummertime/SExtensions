@@ -55,5 +55,4 @@ public extension DateInterval {
         let endDate = end.addingTimeInterval(-timeInterval)
         return DateInterval(start: start, end: endDate)
     }
-
 }

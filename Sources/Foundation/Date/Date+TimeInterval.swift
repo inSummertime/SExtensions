@@ -21,5 +21,4 @@ public extension Date {
 
     /// Number of seconds per week
     static let timeIntervalPerWeek: TimeInterval = 604800.0
-
 }

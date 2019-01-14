@@ -27,5 +27,4 @@ public extension Calendar {
     static var dayAndTimeComponentSet: Set<Calendar.Component> {
         return [.year, .month, .day, .hour, .minute, .second]
     }
-
 }

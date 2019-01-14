@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DispatchSourceTimerTests: XCTestCase {
 
@@ -49,5 +49,4 @@ final class DispatchSourceTimerTests: XCTestCase {
             self.timerNoRepeating?.cancel()
         }
     }
-
 }

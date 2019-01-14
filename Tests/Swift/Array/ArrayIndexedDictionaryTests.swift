@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class ArrayIndexedDictionaryTests: XCTestCase {
 
@@ -17,5 +17,4 @@ final class ArrayIndexedDictionaryTests: XCTestCase {
         XCTAssertEqual(dictionary[3] as! Int, 0)
         XCTAssertEqual([Double]().indexedDictionary, [:])
     }
-
 }

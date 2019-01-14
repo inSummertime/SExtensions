@@ -68,5 +68,4 @@ public extension CALayer {
 
         return shapeLayer
     }
-
 }

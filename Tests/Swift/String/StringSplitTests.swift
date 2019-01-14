@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringSplitTests: XCTestCase {
 
@@ -22,5 +22,4 @@ final class StringSplitTests: XCTestCase {
         XCTAssertEqual("HelloWorld".splitingByCapitalLettersOrPunctuation(), ["Hello", "World"])
         XCTAssertEqual("".splitingByCapitalLettersOrPunctuation(), [])
     }
-
 }

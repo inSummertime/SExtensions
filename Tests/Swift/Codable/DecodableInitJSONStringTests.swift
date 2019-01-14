@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 class DecodableInitJSONStringTests: XCTestCase {
 
@@ -88,5 +88,4 @@ class DecodableInitJSONStringTests: XCTestCase {
             XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }
     }
-
 }

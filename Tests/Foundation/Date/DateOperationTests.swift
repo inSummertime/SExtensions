@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateOperationTests: XCTestCase {
 
@@ -68,5 +68,4 @@ final class DateOperationTests: XCTestCase {
         XCTAssertTrue(nextSecond >= date)
         XCTAssertTrue(date >= Date(timeIntervalSinceReferenceDate: 0))
     }
-
 }

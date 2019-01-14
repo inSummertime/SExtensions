@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CALayerTransparentCircleTests: XCTestCase {
 
@@ -18,5 +18,4 @@ final class CALayerTransparentCircleTests: XCTestCase {
         XCTAssertNotNil(shapeLayer)
         XCTAssertEqual(shapeLayer!.frame, view.layer.frame)
     }
-
 }

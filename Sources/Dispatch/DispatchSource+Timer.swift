@@ -42,5 +42,4 @@ public extension DispatchSource {
         timer.resume()
         return timer
     }
-
 }

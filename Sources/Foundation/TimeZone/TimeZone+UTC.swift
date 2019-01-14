@@ -14,5 +14,4 @@ public extension TimeZone {
     static var UTC: TimeZone {
         return TimeZone(identifier: "UTC")!
     }
-
 }

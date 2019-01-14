@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DictionaryContainTests: XCTestCase {
 
@@ -25,5 +25,4 @@ final class DictionaryContainTests: XCTestCase {
         XCTAssertFalse(["hello": 0, "world": 1].contains(other: ["hello": 0, "world": 1, "!": 2]))
         XCTAssertFalse([:].contains(other: ["hello": 0]))
     }
-
 }

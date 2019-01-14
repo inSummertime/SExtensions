@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringAffixTests: XCTestCase {
 
@@ -72,5 +72,4 @@ final class StringAffixTests: XCTestCase {
         helloWorld.removeSuffix(100)
         XCTAssertEqual(helloWorld, "")
     }
-
 }

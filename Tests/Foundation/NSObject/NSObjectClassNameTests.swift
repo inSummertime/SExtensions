@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class NSObjectClassNameTests: XCTestCase {
 
@@ -15,5 +15,4 @@ final class NSObjectClassNameTests: XCTestCase {
         XCTAssertEqual(className, "NSObjectClassNameTests")
         XCTAssertEqual(NSObjectClassNameTests.className, "NSObjectClassNameTests")
     }
-
 }

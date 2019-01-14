@@ -60,5 +60,4 @@ public extension Array where Element: StringProtocol {
         }
         return Set(dictionary.map { $0.1 })
     }
-
 }

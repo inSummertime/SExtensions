@@ -25,5 +25,4 @@ public extension CALayer {
         speed = 1
         beginTime = convertTime(CACurrentMediaTime(), from: nil) - pauseTime
     }
-
 }

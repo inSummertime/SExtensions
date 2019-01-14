@@ -55,7 +55,6 @@ public extension Set {
         }
         return result
     }
-
 }
 
 extension Set where Element: OptionalProtocol, Element.Wrapped: Hashable {
@@ -75,5 +74,4 @@ extension Set where Element: OptionalProtocol, Element.Wrapped: Hashable {
         }
         return result
     }
-
 }

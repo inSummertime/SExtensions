@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateStartTests: XCTestCase {
 
@@ -44,5 +44,4 @@ final class DateStartTests: XCTestCase {
         XCTAssertEqual(date.end(of: .weekday, in: calendar)!.description, "2001-02-24 23:59:59 +0000")
         XCTAssertNil(date.end(of: .quarter, in: calendar))
     }
-
 }

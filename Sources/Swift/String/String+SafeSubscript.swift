@@ -38,7 +38,7 @@ public extension String {
         }
         let lowerIndex = index(startIndex, offsetBy: max(0, range.lowerBound), limitedBy: endIndex) ?? startIndex
         let upperIndex = index(lowerIndex, offsetBy: range.upperBound - range.lowerBound, limitedBy: endIndex) ?? endIndex
-        return String(self[lowerIndex..<upperIndex])
+        return String(self[lowerIndex ..< upperIndex])
     }
 
     /// Returns a string with a contiguous countable closed range of the
@@ -64,7 +64,7 @@ public extension String {
         }
         let lowerIndex = index(startIndex, offsetBy: max(0, range.lowerBound), limitedBy: endIndex) ?? startIndex
         let upperIndex = index(lowerIndex, offsetBy: range.upperBound - range.lowerBound + 1, limitedBy: endIndex) ?? endIndex
-        return String(self[lowerIndex..<upperIndex])
+        return String(self[lowerIndex ..< upperIndex])
     }
 
     /// Returns a string with a contiguous countable partial from range of the
@@ -81,7 +81,7 @@ public extension String {
         guard let lowerIndex = index(startIndex, offsetBy: max(0, range.lowerBound), limitedBy: endIndex) else {
             return nil
         }
-        return String(self[lowerIndex..<endIndex])
+        return String(self[lowerIndex ..< endIndex])
     }
 
     /// Returns a string from index safely.
@@ -95,7 +95,7 @@ public extension String {
             return nil
         }
         let fromIndex = self.index(startIndex, offsetBy: max(index, 0))
-        return String(self[fromIndex..<endIndex])
+        return String(self[fromIndex ..< endIndex])
     }
 
     /// Returns a string to index safely.
@@ -112,7 +112,6 @@ public extension String {
             return nil
         }
         let toIndex = self.index(startIndex, offsetBy: min(index, count - 1))
-        return String(self[startIndex...toIndex])
+        return String(self[startIndex ... toIndex])
     }
-
 }

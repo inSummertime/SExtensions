@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DictionaryJSONTests: XCTestCase {
 
@@ -44,5 +44,4 @@ final class DictionaryJSONTests: XCTestCase {
         XCTAssertEqual(["hello": ["world": "!"]].jsonString(), "{\"hello\":{\"world\":\"!\"}}")
         XCTAssertEqual(["hello": ["world", "!"]].jsonString(), "{\"hello\":[\"world\",\"!\"]}")
     }
-
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateIntervalContainsTests: XCTestCase {
 
@@ -18,5 +18,4 @@ final class DateIntervalContainsTests: XCTestCase {
         XCTAssertTrue(dateInterval.contains(DateInterval(start: Date(timeIntervalSinceReferenceDate: 0).addingTimeInterval(1.0), duration: 1.0)))
         XCTAssertFalse(dateInterval.contains(DateInterval(start: Date(timeIntervalSinceReferenceDate: 0).addingTimeInterval(2.0), duration: 1.0)))
     }
-
 }

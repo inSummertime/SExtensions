@@ -51,5 +51,4 @@ public extension String {
             return joined
         }
     }
-
 }

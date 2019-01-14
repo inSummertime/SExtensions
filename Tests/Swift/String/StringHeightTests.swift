@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringHeightTests: XCTestCase {
 
@@ -25,5 +25,4 @@ final class StringHeightTests: XCTestCase {
         let height4 = helloWorld.height(withConstrainedWidth: 0, font: font)
         XCTAssertTrue(height3 == height4)
     }
-
 }

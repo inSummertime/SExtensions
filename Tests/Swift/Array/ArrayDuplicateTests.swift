@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class ArrayDuplicateTests: XCTestCase {
 
@@ -22,5 +22,4 @@ final class ArrayDuplicateTests: XCTestCase {
         XCTAssertEqual(["hello", "world"].duplicateArray, [])
         XCTAssertEqual([Double]().duplicateArray, [])
     }
-
 }

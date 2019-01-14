@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class NSAttributedStringFormattingTests: XCTestCase {
 
@@ -134,5 +134,4 @@ final class NSAttributedStringFormattingTests: XCTestCase {
         let worldRange = NSRange(location: 6, length: 6)
         XCTAssertFalse(helloWorldConcatenated.isItalic(in: worldRange))
     }
-
 }

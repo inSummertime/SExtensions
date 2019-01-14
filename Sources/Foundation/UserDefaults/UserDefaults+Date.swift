@@ -23,5 +23,4 @@ public extension UserDefaults {
     func date(forKey defaultName: String) -> Date? {
         return object(forKey: defaultName) as? Date
     }
-
 }

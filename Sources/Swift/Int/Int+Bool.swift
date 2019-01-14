@@ -15,5 +15,4 @@ public extension Int {
     var bool: Bool {
         return NSNumber(value: self) == NSNumber(value: true)
     }
-
 }

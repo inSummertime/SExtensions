@@ -61,5 +61,4 @@ public extension Set {
     static func & (lhs: Set, rhs: Set) -> Set {
         return lhs.intersection(rhs)
     }
-
 }

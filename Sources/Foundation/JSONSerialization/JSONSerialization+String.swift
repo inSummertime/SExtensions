@@ -35,5 +35,4 @@ public extension JSONSerialization {
         guard let jsonData = try? JSONSerialization.data(withJSONObject: array, options: []) else { return nil }
         return String(data: jsonData, encoding: .utf8)
     }
-
 }

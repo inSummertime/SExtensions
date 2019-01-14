@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateStringTests: XCTestCase {
 
@@ -51,5 +51,4 @@ final class DateStringTests: XCTestCase {
         XCTAssertEqual(date.dayName(style: .twoLetterAbbreviation, calendar: calendar, timeZone: timeZone, locale: locale), "Mo")
         XCTAssertEqual(date.dayName(style: .oneLetterAbbreviation, calendar: calendar, timeZone: timeZone, locale: locale), "M")
     }
-
 }

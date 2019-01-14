@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class NSAttributedStringConcatenateTests: XCTestCase {
 
@@ -25,5 +25,4 @@ final class NSAttributedStringConcatenateTests: XCTestCase {
         hello += world
         XCTAssertEqual(hello.string, "Hello world!")
     }
-
 }

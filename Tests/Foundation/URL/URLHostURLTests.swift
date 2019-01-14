@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class URLHostURLTests: XCTestCase {
 
@@ -18,5 +18,4 @@ final class URLHostURLTests: XCTestCase {
         let absoluteURL = URL(string: "https://www.google.com/search?q=iPhone")
         XCTAssertEqual(absoluteURL?.hostURL, baseURL)
     }
-
 }

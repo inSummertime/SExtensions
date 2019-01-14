@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class IntPaddedTests: XCTestCase {
 
@@ -16,5 +16,4 @@ final class IntPaddedTests: XCTestCase {
         XCTAssertEqual((-1).padded(fieldWidth: 2), "-1")
         XCTAssertEqual((-1).padded(fieldWidth: 3), "-01")
     }
-
 }

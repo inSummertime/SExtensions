@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class NSMutableAttributedStringFormatTests: XCTestCase {
 
@@ -247,5 +247,4 @@ final class NSMutableAttributedStringFormatTests: XCTestCase {
         helloWorld.removeItalic()
         XCTAssertFalse(helloWorld.isItalic())
     }
-
 }

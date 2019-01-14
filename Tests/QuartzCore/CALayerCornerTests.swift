@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CALayerCornerTests: XCTestCase {
 
@@ -16,5 +16,4 @@ final class CALayerCornerTests: XCTestCase {
         view.layer.beRound()
         XCTAssertEqual(view.layer.cornerRadius, 4.0)
     }
-
 }

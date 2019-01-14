@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class BoolIntValueTests: XCTestCase {
 
@@ -15,5 +15,4 @@ final class BoolIntValueTests: XCTestCase {
         XCTAssertEqual(true.intValue, 1)
         XCTAssertEqual(false.intValue, 0)
     }
-
 }

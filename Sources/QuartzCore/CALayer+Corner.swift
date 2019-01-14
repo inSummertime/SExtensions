@@ -47,5 +47,4 @@ public extension CALayer {
         animation.fillMode = kCAFillModeForwards
         add(animation, forKey: nil)
     }
-
 }

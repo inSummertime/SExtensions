@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateIntervalStringTests: XCTestCase {
 
@@ -31,5 +31,4 @@ final class DateIntervalStringTests: XCTestCase {
         let string = dateInterval.string(dateFormat: dateFormat, calendar: calendar, timeZone: timeZone)
         XCTAssertEqual(string, "2001.01.01 at 00:00:00 +0000 - 2001.01.01 at 00:00:01 +0000")
     }
-
 }

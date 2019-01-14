@@ -136,5 +136,4 @@ public extension Date {
     func dayName(style: DayNameStyle, calendar: Calendar = Calendar.current, timeZone: TimeZone = TimeZone.current, locale: Locale = Locale.current) -> String {
         return string(dateFormat: style.rawValue, calendar: calendar, timeZone: timeZone, locale: locale)
     }
-
 }

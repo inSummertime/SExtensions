@@ -335,5 +335,4 @@ public extension Date {
     func isAtMidnight(in calendar: Calendar = Calendar.current) -> Bool {
         return calendar.component(.hour, from: self) == 0
     }
-
 }

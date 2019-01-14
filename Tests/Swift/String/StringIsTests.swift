@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringIsTests: XCTestCase {
 
@@ -32,5 +32,4 @@ final class StringIsTests: XCTestCase {
         XCTAssertFalse("123@.com".isEmail)
         XCTAssertFalse("123@com".isEmail)
     }
-
 }

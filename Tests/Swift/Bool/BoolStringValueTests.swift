@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class BoolStringValueTests: XCTestCase {
 
@@ -15,5 +15,4 @@ final class BoolStringValueTests: XCTestCase {
         XCTAssertEqual(true.stringValue, "1")
         XCTAssertEqual(false.stringValue, "0")
     }
-
 }

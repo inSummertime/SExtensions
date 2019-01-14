@@ -23,5 +23,4 @@ public extension CALayer {
         render(in: context)
         return UIGraphicsGetImageFromCurrentImageContext()
     }
-
 }

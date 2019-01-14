@@ -50,7 +50,6 @@ public extension Array {
         }
         return result
     }
-
 }
 
 public extension Array where Element: Equatable {
@@ -64,7 +63,7 @@ public extension Array where Element: Equatable {
     /// - Returns: An array.
     func removing(_ elements: Element...) -> Array {
         var result = self
-        result.removeAll(where: {elements.contains($0)})
+        result.removeAll(where: { elements.contains($0) })
         return result
     }
 
@@ -143,7 +142,6 @@ public extension Array where Element: Equatable {
         }
         return result
     }
-
 }
 
 protocol OptionalProtocol {
@@ -176,5 +174,4 @@ extension Array where Element: OptionalProtocol {
         }
         return result
     }
-
 }

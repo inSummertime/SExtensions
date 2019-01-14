@@ -23,5 +23,4 @@ public extension Character {
     var isLowercase: Bool {
         return String(self).isLowercase
     }
-
 }

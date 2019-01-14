@@ -79,5 +79,4 @@ public extension CALayer {
         layer.removeFromSuperlayer()
         insertSublayer(layer, at: 0)
     }
-
 }

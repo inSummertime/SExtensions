@@ -65,5 +65,4 @@ public extension Date {
         let range = calendar.range(of: .weekOfYear, in: .year, for: self)!
         return range.upperBound - range.lowerBound
     }
-
 }

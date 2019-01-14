@@ -15,5 +15,4 @@ public extension Double {
     var bool: Bool {
         return NSNumber(value: self) == NSNumber(value: true)
     }
-
 }

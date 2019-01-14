@@ -23,5 +23,4 @@ public extension Int {
     var numberOfBitZero: Int {
         return String(self, radix: 2).filter { $0 == "0" }.count
     }
-
 }

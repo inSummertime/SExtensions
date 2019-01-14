@@ -69,5 +69,4 @@ public extension DateInterval {
             return dateIntervals
         }
     }
-
 }

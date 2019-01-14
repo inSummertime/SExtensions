@@ -54,5 +54,4 @@ public extension String {
         let trimmedString = string.trimmingCharacters(in: .whitespacesAndNewlines)
         return trimmedString.components(separatedBy: " ")
     }
-
 }

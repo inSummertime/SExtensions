@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class NSObjectMemoryAddressTests: XCTestCase {
 
@@ -17,5 +17,4 @@ final class NSObjectMemoryAddressTests: XCTestCase {
         let unsafeMutableRawPointerDescription = Unmanaged.passUnretained(userDefaults).toOpaque().debugDescription
         XCTAssertEqual(UInt(memoryAddress), UInt(unsafeMutableRawPointerDescription))
     }
-
 }

@@ -25,5 +25,4 @@ public extension CALayer {
             $0.removeFromSuperlayer()
         }
     }
-
 }

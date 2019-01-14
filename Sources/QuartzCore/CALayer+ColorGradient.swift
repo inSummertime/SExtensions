@@ -85,5 +85,4 @@ public extension CALayer {
         insertSublayer(gradientLayer, at: 0)
         return gradientLayer
     }
-
 }

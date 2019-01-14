@@ -35,5 +35,4 @@ public extension Dictionary {
         }
         return String(data: jsonData, encoding: .utf8)
     }
-
 }

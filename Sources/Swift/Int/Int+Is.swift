@@ -22,7 +22,6 @@ public extension Int {
     var isPrime: Bool {
         if self == 1 || self == 2 || self == 3 { return true }
         let maxDivider = Int(ceil(sqrt(Double(self))))
-        return !(2...maxDivider).contains { self % $0 == 0 }
+        return !(2 ... maxDivider).contains { self % $0 == 0 }
     }
-
 }

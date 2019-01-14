@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class UserDefaultsSubscriptTests: XCTestCase {
 
@@ -26,5 +26,4 @@ final class UserDefaultsSubscriptTests: XCTestCase {
         XCTAssertTrue(userDefaults?[key]! as! Bool)
         userDefaults?.removeObject(forKey: key)
     }
-
 }

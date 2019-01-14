@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateIntervalDurationComponentTests: XCTestCase {
 
@@ -37,5 +37,4 @@ final class DateIntervalDurationComponentTests: XCTestCase {
         XCTAssertEqual(dictionary[.minute], 1)
         XCTAssertEqual(dictionary[.second], 1)
     }
-
 }

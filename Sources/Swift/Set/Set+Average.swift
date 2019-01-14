@@ -18,7 +18,6 @@ public extension Set where Element: BinaryInteger {
     var average: Double {
         return isEmpty ? 0 : Double(total) / Double(count)
     }
-
 }
 
 extension Set where Element: BinaryFloatingPoint {
@@ -27,5 +26,4 @@ extension Set where Element: BinaryFloatingPoint {
     var average: Element {
         return isEmpty ? 0 : total / Element(count)
     }
-
 }

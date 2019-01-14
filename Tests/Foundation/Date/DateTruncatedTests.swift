@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateTruncatedTests: XCTestCase {
 
@@ -36,5 +36,4 @@ final class DateTruncatedTests: XCTestCase {
         XCTAssertEqual(date.truncated(from: .second, in: calendar)!.description, "2001-02-20 07:07:00 +0000")
         XCTAssertEqual(date.truncated(from: .nanosecond, in: calendar)!.description, "2001-02-20 07:07:07 +0000")
     }
-
 }

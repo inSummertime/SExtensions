@@ -109,5 +109,4 @@ public extension String {
         }
         return (self[safeTo: i] ?? "") + tail
     }
-
 }

@@ -345,5 +345,4 @@ public extension String {
         }
         return result
     }
-
 }

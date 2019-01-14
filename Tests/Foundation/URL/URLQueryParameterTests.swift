@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class URLQueryParameterTests: XCTestCase {
 
@@ -44,5 +44,4 @@ final class URLQueryParameterTests: XCTestCase {
         XCTAssertNil(url?.queryParameterValue(for: "oq"))
         XCTAssertEqual(url?.absoluteString, "https://www.google.com/search?q=iPhone")
     }
-
 }

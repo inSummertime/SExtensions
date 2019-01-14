@@ -14,5 +14,4 @@ public extension Int {
         let text = String(String(self * sign).reversed())
         return Int(text) * sign
     }
-
 }

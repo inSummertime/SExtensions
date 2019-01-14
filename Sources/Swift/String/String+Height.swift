@@ -23,5 +23,4 @@ public extension String {
         let rect = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [.font: font], context: nil)
         return rect.height
     }
-
 }

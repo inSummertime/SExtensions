@@ -128,5 +128,4 @@ public extension String {
     mutating func changeToSnakeCase() {
         self = changingToSnakeCase()
     }
-
 }

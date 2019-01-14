@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringCondenseTests: XCTestCase {
 
@@ -27,5 +27,4 @@ final class StringCondenseTests: XCTestCase {
         XCTAssertEqual("Hello worrrrld!".condensingString("r"), "Hello world!")
         XCTAssertEqual("Helloooo wooorld!".condensingString("o"), "Hello world!")
     }
-
 }

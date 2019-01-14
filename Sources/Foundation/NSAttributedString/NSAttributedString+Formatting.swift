@@ -90,7 +90,7 @@ public extension NSAttributedString {
         let option = NSAttributedString.EnumerationOptions(rawValue: 0)
         var isStrikethrough = false
         enumerateAttribute(.strikethroughStyle, in: checkRange, options: option, using: { (value: Any, range: NSRange, _) in
-            if range.location == checkRange.location, range.length == checkRange.length, let strikethrough = value as? NSNumber, strikethrough == NSNumber.init(value: 1) {
+            if range.location == checkRange.location, range.length == checkRange.length, let strikethrough = value as? NSNumber, strikethrough == NSNumber(value: 1) {
                 isStrikethrough = true
             }
         })
@@ -131,5 +131,4 @@ public extension NSAttributedString {
     func isItalic(in range: NSRange? = nil) -> Bool {
         return isUsingTraits(.traitItalic, in: range)
     }
-
 }

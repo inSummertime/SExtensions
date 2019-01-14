@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class URLIsFromDomainTests: XCTestCase {
 
@@ -21,5 +21,4 @@ final class URLIsFromDomainTests: XCTestCase {
         XCTAssertTrue(absoluteURL.isFromDomain("www.google.com"))
         XCTAssertFalse(absoluteURL.isFromDomain("www.apple.com"))
     }
-
 }

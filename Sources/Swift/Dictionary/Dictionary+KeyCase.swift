@@ -151,5 +151,4 @@ public extension Dictionary where Key == String {
     mutating func changeAllKeysToSnakeCase() {
         self = changingAllKeysToSnakeCase()
     }
-
 }

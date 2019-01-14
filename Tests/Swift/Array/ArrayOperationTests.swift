@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class ArrayOperationTests: XCTestCase {
 
@@ -112,5 +112,4 @@ final class ArrayOperationTests: XCTestCase {
         }
         XCTAssertEqual(anotherResult, [Data(id: 1, title: "hello")])
     }
-
 }

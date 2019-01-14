@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringTruncateTests: XCTestCase {
 
@@ -56,5 +56,4 @@ final class StringTruncateTests: XCTestCase {
         XCTAssertEqual("".truncated(withConstrained: CGSize(width: 4.0, height: 64.0), font: font), "")
         XCTAssertEqual("".truncated(withConstrained: CGSize(width: 64.0, height: 64.0), font: font), "")
     }
-
 }

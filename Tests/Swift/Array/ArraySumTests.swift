@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class ArraySumTests: XCTestCase {
 
@@ -16,5 +16,4 @@ final class ArraySumTests: XCTestCase {
         XCTAssertEqual([1.1, 2.2, 3.3, 4.4].sum, 11.0)
         XCTAssertEqual(["Hello", " ", "world", "!"].sum, "Hello world!")
     }
-
 }

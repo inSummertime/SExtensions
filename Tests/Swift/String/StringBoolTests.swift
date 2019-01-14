@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringBoolTests: XCTestCase {
 
@@ -35,5 +35,4 @@ final class StringBoolTests: XCTestCase {
         XCTAssertTrue("0".boolValue)
         XCTAssertFalse("".boolValue)
     }
-
 }

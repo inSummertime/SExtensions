@@ -4,10 +4,10 @@
 //
 //  Created by Ray on 2018/6/12.
 //  Copyright © 2018 Ray. All rights reserved.
-// 
+//
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringDictionaryTests: XCTestCase {
 
@@ -73,5 +73,4 @@ final class StringDictionaryTests: XCTestCase {
         XCTAssertEqual(" Hello:  world!,  0:  1 ".stringDictionaryValue["Hello"]!, "world!")
         XCTAssertEqual(" Hello:  world!,  0:  1 ".stringDictionaryValue["0"]!, "1")
     }
-
 }

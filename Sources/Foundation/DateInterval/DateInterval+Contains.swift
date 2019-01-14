@@ -22,5 +22,4 @@ public extension DateInterval {
     func contains(_ dateInterval: DateInterval) -> Bool {
         return dateInterval.start >= start && dateInterval.end <= end
     }
-
 }

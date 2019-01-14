@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class ArrayOperatorTests: XCTestCase {
 
@@ -37,5 +37,4 @@ final class ArrayOperatorTests: XCTestCase {
         XCTAssertEqual(["hello"] & ["hello", "world"], ["hello"])
         XCTAssertEqual(["hello"] & [], [])
     }
-
 }

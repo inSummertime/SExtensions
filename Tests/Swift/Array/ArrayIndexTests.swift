@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class ArrayIndexTests: XCTestCase {
 
@@ -24,8 +24,7 @@ final class ArrayIndexTests: XCTestCase {
     }
 
     func testIndexesIsIncluded() {
-        XCTAssertEqual(["hello", "world", "!", "hello", "world", "!"].indexes({$0.count == 5}), [0, 1, 3, 4])
-        XCTAssertEqual(["hello", "world", "!", "hello", "world", "!"].indexes({$0.count == 2}), [])
+        XCTAssertEqual(["hello", "world", "!", "hello", "world", "!"].indexes({ $0.count == 5 }), [0, 1, 3, 4])
+        XCTAssertEqual(["hello", "world", "!", "hello", "world", "!"].indexes({ $0.count == 2 }), [])
     }
-
 }
