@@ -1392,7 +1392,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftformat >/dev/null; then\nswiftformat .\nfi\n";
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat . --disable blankLinesAtStartOfScope,redundantSelf,andOperator,numberFormatting\nfi\n";
 		};
 		C452907121B778EB0021EC1C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
