@@ -1284,7 +1284,6 @@
 				71697E1C20B91CDB005C58EC /* Headers */,
 				71697E1D20B91CDB005C58EC /* Resources */,
 				C452907121B778EB0021EC1C /* ShellScript */,
-				C43F968A21ECC82A004D1D21 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1377,23 +1376,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C43F968A21ECC82A004D1D21 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftformat >/dev/null; then\nswiftformat .\nfi\n";
-		};
 		C452907121B778EB0021EC1C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
