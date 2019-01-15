@@ -10,5 +10,4 @@ warn("Please provide a summary in the Pull Request description") if github.pr_bo
 
 swiftlint.lint_files
 
-swiftformat.check_format(fail_on_error: true)
-
+swiftformat.check_format(fail_on_error: false)
