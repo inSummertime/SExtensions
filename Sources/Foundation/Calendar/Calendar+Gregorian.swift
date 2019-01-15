@@ -14,5 +14,4 @@ public extension Calendar {
     static var gregorian: Calendar {
         return Calendar(identifier: Calendar.Identifier.gregorian)
     }
-
 }

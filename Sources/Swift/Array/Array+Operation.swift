@@ -197,7 +197,6 @@ public extension Array where Element: Equatable {
         }
         return result
     }
-
 }
 
 public extension Array {
@@ -231,5 +230,4 @@ public extension Array {
         }
         return result
     }
-
 }

@@ -238,9 +238,9 @@
 		C4375F9A21C8BB95009B3243 /* CALayer+FrontAndBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4375F9921C8BB95009B3243 /* CALayer+FrontAndBack.swift */; };
 		C4375F9C21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4375F9B21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift */; };
 		C4375F9E21C8C4A4009B3243 /* CALayerShadowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4375F9D21C8C4A4009B3243 /* CALayerShadowTests.swift */; };
+		C43F968C21ECC974004D1D21 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = C43F968B21ECC974004D1D21 /* Gemfile */; };
 		C442B42C21C7DF8E00EB56FF /* CALayer+TriangleCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442B42B21C7DF8E00EB56FF /* CALayer+TriangleCorner.swift */; };
 		C442B42E21C7E34500EB56FF /* CALayerTriangleCornerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442B42D21C7E34500EB56FF /* CALayerTriangleCornerTests.swift */; };
-		C45485E321BCCF1A00E7F47A /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E121BCCF1A00E7F47A /* Gemfile */; };
 		C45485E421BCCF1A00E7F47A /* Dangerfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E221BCCF1A00E7F47A /* Dangerfile */; };
 		C45A479A21DFA6E700637655 /* CALayer+PDFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A479921DFA6E700637655 /* CALayer+PDFData.swift */; };
 		C45A479C21DFA72200637655 /* CALayerPDFDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A479B21DFA72200637655 /* CALayerPDFDataTests.swift */; };
@@ -502,9 +502,9 @@
 		C4375F9921C8BB95009B3243 /* CALayer+FrontAndBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+FrontAndBack.swift"; sourceTree = "<group>"; };
 		C4375F9B21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerFrontAndBackTests.swift; sourceTree = "<group>"; };
 		C4375F9D21C8C4A4009B3243 /* CALayerShadowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerShadowTests.swift; sourceTree = "<group>"; };
+		C43F968B21ECC974004D1D21 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		C442B42B21C7DF8E00EB56FF /* CALayer+TriangleCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+TriangleCorner.swift"; sourceTree = "<group>"; };
 		C442B42D21C7E34500EB56FF /* CALayerTriangleCornerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerTriangleCornerTests.swift; sourceTree = "<group>"; };
-		C45485E121BCCF1A00E7F47A /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		C45485E221BCCF1A00E7F47A /* Dangerfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 		C45A479921DFA6E700637655 /* CALayer+PDFData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+PDFData.swift"; sourceTree = "<group>"; };
 		C45A479B21DFA72200637655 /* CALayerPDFDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerPDFDataTests.swift; sourceTree = "<group>"; };
@@ -779,7 +779,7 @@
 			children = (
 				C408D30B21C11B4800736055 /* BotPreIntegration.sh */,
 				C45485E221BCCF1A00E7F47A /* Dangerfile */,
-				C45485E121BCCF1A00E7F47A /* Gemfile */,
+				C43F968B21ECC974004D1D21 /* Gemfile */,
 				71697E3C20B91E64005C58EC /* LICENSE */,
 				71697E3B20B91E63005C58EC /* SExtensions.podspec */,
 			);
@@ -1355,7 +1355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C45485E321BCCF1A00E7F47A /* Gemfile in Resources */,
+				C43F968C21ECC974004D1D21 /* Gemfile in Resources */,
 				71697E4020B91E64005C58EC /* README.md in Resources */,
 				C45485E421BCCF1A00E7F47A /* Dangerfile in Resources */,
 				C408D30C21C11B4800736055 /* BotPreIntegration.sh in Resources */,

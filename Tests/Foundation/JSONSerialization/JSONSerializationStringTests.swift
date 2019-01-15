@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class JSONSerializationStringTests: XCTestCase {
 
@@ -20,5 +20,4 @@ final class JSONSerializationStringTests: XCTestCase {
         let array: [[String: Any]] = [["id": 0], ["title": "title"]]
         XCTAssertEqual(JSONSerialization.jsonString(with: array)!, "[{\"id\":0},{\"title\":\"title\"}]")
     }
-
 }

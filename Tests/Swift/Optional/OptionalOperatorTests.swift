@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class OptionalOperatorTests: XCTestCase {
 
@@ -136,5 +136,4 @@ final class OptionalOperatorTests: XCTestCase {
         let f: Float? = 1.0
         XCTAssertEqual(e * f, 1.0)
     }
-
 }

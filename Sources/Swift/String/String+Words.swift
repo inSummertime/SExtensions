@@ -13,7 +13,7 @@ public extension String {
     ///     print("Hello world!".words)
     ///     // Prints ["hello", "world!"]
     var words: [String] {
-        return changingToSentenseCase().lowercased().components(separatedBy: .whitespacesAndNewlines).filter({ $0.count > 0})
+        return changingToSentenseCase().lowercased().components(separatedBy: .whitespacesAndNewlines).filter({ $0.count > 0 })
     }
 
     /// How many word in a string
@@ -38,7 +38,7 @@ public extension String {
             while j < characters.count && characters[j] != " " {
                 j += 1
             }
-            characters[i..<j].reverse()
+            characters[i ..< j].reverse()
             i = j + 1
         }
         return String(characters)
@@ -74,16 +74,15 @@ public extension String {
 
         let characters = Array(self)
         var start = 0, end = 0
-        for i in 0..<count {
+        for i in 0 ..< count {
             let length = expandAroundCenter(array: characters, lhs: i, rhs: i)
             let length2 = expandAroundCenter(array: characters, lhs: i, rhs: i + 1)
             let len = max(length, length2)
             if len > end - start {
-                start = i - (len - 1)/2
-                end = i + len/2
+                start = i - (len - 1) / 2
+                end = i + len / 2
             }
         }
-        return String(characters[start...end])
+        return String(characters[start ... end])
     }
-
 }

@@ -47,7 +47,6 @@ public extension Dictionary {
     func hasAll(_ isIncluded: (_ element: Element) -> Bool) -> Bool {
         return self.filter(isIncluded).count == count
     }
-
 }
 
 public extension Dictionary where Value: Equatable {
@@ -76,5 +75,4 @@ public extension Dictionary where Value: Equatable {
     func hasElement(_ element: Element) -> Bool {
         return self[element.key] == element.value
     }
-
 }

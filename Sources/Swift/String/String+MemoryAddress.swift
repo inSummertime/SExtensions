@@ -17,5 +17,4 @@ extension String {
         let opaque: UnsafeMutableRawPointer = Unmanaged.passUnretained(object).toOpaque()
         return String(describing: opaque)
     }
-
 }

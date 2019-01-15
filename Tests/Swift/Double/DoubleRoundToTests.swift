@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DoubleRoundToTests: XCTestCase {
 
@@ -17,5 +17,4 @@ final class DoubleRoundToTests: XCTestCase {
         XCTAssertEqual(-3.1415926.round(to: 0), -3)
         XCTAssertEqual(0.0.round(to: 2), 0.00)
     }
-
 }

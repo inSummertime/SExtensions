@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class IntCurrencyTests: XCTestCase {
 
@@ -26,5 +26,4 @@ final class IntCurrencyTests: XCTestCase {
         let dollar = (-100).currency(currencyCode: "USD")
         XCTAssertTrue(dollar == "-$100" || dollar == "-US$100")
     }
-
 }

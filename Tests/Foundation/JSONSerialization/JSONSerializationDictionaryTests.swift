@@ -6,15 +6,15 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class JSONSerializationDictionaryTests: XCTestCase {
 
     func testDictionaryFromJSONFile() {
         do {
             let dictionary = try JSONSerialization.dictionaryFromJSONFile(filename: "Dictionary", callerClass: JSONSerializationDictionaryTests.self)
-            let anotherDictionary = try  JSONSerialization.dictionaryFromJSONFile(filename: "Dictionary.json", callerClass: JSONSerializationDictionaryTests.self)
+            let anotherDictionary = try JSONSerialization.dictionaryFromJSONFile(filename: "Dictionary.json", callerClass: JSONSerializationDictionaryTests.self)
             XCTAssertEqual(dictionary!["id"] as! Int, 0)
             XCTAssertEqual(anotherDictionary!["title"] as! String, "title")
         } catch {
@@ -32,5 +32,4 @@ final class JSONSerializationDictionaryTests: XCTestCase {
             XCTFail("Failed to create a Foundation object from JSON data or JSON serialization.")
         }
     }
-
 }

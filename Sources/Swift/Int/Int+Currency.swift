@@ -46,5 +46,4 @@ public extension Int {
         formatter.maximumFractionDigits = 0
         return formatter.string(from: NSNumber(value: self))
     }
-
 }

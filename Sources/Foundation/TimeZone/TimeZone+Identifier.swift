@@ -212,7 +212,7 @@ public extension TimeZone {
             enum Argentina: String {
                 case buenosAires = "America/Argentina/Buenos_Aires"
                 case catamarca = "America/Argentina/Catamarca"
-                case cordoba =  "America/Argentina/Cordoba"
+                case cordoba = "America/Argentina/Cordoba"
                 case jujuy = "America/Argentina/Jujuy"
                 case laRioja = "America/Argentina/La_Rioja"
                 case mendoza = "America/Argentina/Mendoza"
@@ -511,7 +511,5 @@ public extension TimeZone {
             case wallis = "Pacific/Wallis"
             case yap = "Pacific/Yap"
         }
-
     }
-
 }

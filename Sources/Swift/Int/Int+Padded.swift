@@ -18,5 +18,4 @@ public extension Int {
     func padded(fieldWidth: Int) -> String {
         return String(format: "%0*d", fieldWidth, self)
     }
-
 }

@@ -71,5 +71,4 @@ public extension URLRequest {
         self.init(string: string, cachePolicy: cachePolicy, timeoutInterval: timeoutInterval)
         self.setHTTPHeaderFields(httpHeaderFields)
     }
-
 }

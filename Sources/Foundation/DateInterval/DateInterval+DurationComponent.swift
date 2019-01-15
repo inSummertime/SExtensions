@@ -50,5 +50,4 @@ public extension DateInterval {
         }
         return dictionary
     }
-
 }

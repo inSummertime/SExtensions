@@ -58,5 +58,4 @@ public extension Date {
     static func >= (lhs: Date, rhs: Date) -> Bool {
         return lhs == rhs || lhs > rhs
     }
-
 }

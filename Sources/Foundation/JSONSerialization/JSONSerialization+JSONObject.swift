@@ -10,7 +10,7 @@ import Foundation
 
 public extension JSONSerialization {
 
-    /// Creates a Foundation object from JSON data. 
+    /// Creates a Foundation object from JSON data.
     ///
     /// - Parameters:
     ///   - filename: JSON file name.
@@ -45,5 +45,4 @@ public extension JSONSerialization {
         guard let data = string.data(using: .utf8) else { return nil }
         return try jsonObject(with: data, options: readingOptions)
     }
-
 }

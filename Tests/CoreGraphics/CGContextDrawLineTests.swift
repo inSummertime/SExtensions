@@ -6,8 +6,8 @@
 //  Copyright © 2019 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CGContextDrawLineTests: XCTestCase {
 
@@ -20,7 +20,7 @@ final class CGContextDrawLineTests: XCTestCase {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         XCTAssertNotNil(image)
-        
+
         UIGraphicsBeginImageContextWithOptions(view.frame.size, false, 0)
         guard let context2 = UIGraphicsGetCurrentContext() else { return }
         view.layer.addBorder(color: .black, width: 1)
@@ -28,8 +28,7 @@ final class CGContextDrawLineTests: XCTestCase {
         let image2 = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         XCTAssertNotNil(image2)
-        
+
         XCTAssertEqual(UIImagePNGRepresentation(image!), UIImagePNGRepresentation(image2!))
     }
-    
 }

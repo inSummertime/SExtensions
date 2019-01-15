@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringWordsTests: XCTestCase {
 
@@ -65,5 +65,4 @@ final class StringWordsTests: XCTestCase {
         XCTAssertEqual("abaabc".longestPalindrome, "baab")
         XCTAssertEqual("abaaba".longestPalindrome, "abaaba")
     }
-
 }

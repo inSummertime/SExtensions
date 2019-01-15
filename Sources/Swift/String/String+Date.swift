@@ -29,5 +29,4 @@ public extension String {
         dateFormatter.locale = locale
         return dateFormatter.date(from: self)
     }
-
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class IntIsTests: XCTestCase {
 
@@ -36,5 +36,4 @@ final class IntIsTests: XCTestCase {
         XCTAssertTrue(11.isPrime)
         XCTAssertFalse(12.isPrime)
     }
-
 }

@@ -15,5 +15,4 @@ public extension Bool {
     var stringValue: String {
         return self ? "1" : "0"
     }
-
 }

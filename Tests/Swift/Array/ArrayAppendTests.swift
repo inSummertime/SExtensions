@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class ArrayAppendTests: XCTestCase {
 
@@ -27,5 +27,4 @@ final class ArrayAppendTests: XCTestCase {
         XCTAssertEqual(array.append("!", maxCountOfElement: 2), true)
         XCTAssertEqual(array, ["hello", "world", "!", "!"])
     }
-
 }

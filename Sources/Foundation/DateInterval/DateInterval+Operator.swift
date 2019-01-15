@@ -100,5 +100,4 @@ public extension DateInterval {
             return DateInterval(start: rhs.start, end: lhs.end)
         }
     }
-
 }

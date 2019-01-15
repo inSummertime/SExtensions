@@ -37,5 +37,4 @@ public extension CALayer {
         cornerRadius = radius
         shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
     }
-
 }

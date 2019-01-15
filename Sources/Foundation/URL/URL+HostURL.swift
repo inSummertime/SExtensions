@@ -22,7 +22,7 @@ public extension URL {
         } else {
             var url = self
             url.queryParameters = nil
-            for _ in 0..<pathComponents.count - 1 {
+            for _ in 0 ..< pathComponents.count - 1 {
                 url.deleteLastPathComponent()
             }
             if let last = url.absoluteString.last, String(last) == "/" {
@@ -34,5 +34,4 @@ public extension URL {
             return url
         }
     }
-
 }

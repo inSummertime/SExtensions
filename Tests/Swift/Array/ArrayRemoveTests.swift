@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class ArrayRemoveTests: XCTestCase {
 
@@ -35,15 +35,15 @@ final class ArrayRemoveTests: XCTestCase {
     }
 
     func testRemovingCountableRange() {
-        XCTAssertEqual(["hello", "world", "!"].removingCountableRange(0..<2), ["!"])
-        XCTAssertEqual(["hello", "world", "!"].removingCountableRange(2..<7), ["hello", "world"])
-        XCTAssertEqual(["hello", "world", "!"].removingCountableRange(7..<8), ["hello", "world", "!"])
+        XCTAssertEqual(["hello", "world", "!"].removingCountableRange(0 ..< 2), ["!"])
+        XCTAssertEqual(["hello", "world", "!"].removingCountableRange(2 ..< 7), ["hello", "world"])
+        XCTAssertEqual(["hello", "world", "!"].removingCountableRange(7 ..< 8), ["hello", "world", "!"])
     }
 
     func testRemovingCountableClosedRange() {
-        XCTAssertEqual(["hello", "world", "!"].removingCountableClosedRange(0...2), [])
-        XCTAssertEqual(["hello", "world", "!"].removingCountableClosedRange(2...7), ["hello", "world"])
-        XCTAssertEqual(["hello", "world", "!"].removingCountableClosedRange(7...8), ["hello", "world", "!"])
+        XCTAssertEqual(["hello", "world", "!"].removingCountableClosedRange(0 ... 2), [])
+        XCTAssertEqual(["hello", "world", "!"].removingCountableClosedRange(2 ... 7), ["hello", "world"])
+        XCTAssertEqual(["hello", "world", "!"].removingCountableClosedRange(7 ... 8), ["hello", "world", "!"])
     }
 
     func testRemovingEmpty() {
@@ -79,5 +79,4 @@ final class ArrayRemoveTests: XCTestCase {
         XCTAssertEqual([0, 1, 0, 1].removingDuplicates(), [0, 1])
         XCTAssertEqual([String]().removingDuplicates(), [])
     }
-
 }

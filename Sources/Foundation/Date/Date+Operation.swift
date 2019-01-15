@@ -24,7 +24,7 @@ public extension Date {
     func addingComponentDictionary(_ dictionary: [Calendar.Component: Int], in calendar: Calendar = Calendar.current) -> Date? {
         var dateComponents = DateComponents()
         dateComponents.calendar = calendar
-        dictionary.forEach { (key, value) in
+        dictionary.forEach { key, value in
             dateComponents.setValue(value, for: key)
         }
         return calendar.date(byAdding: dateComponents, to: self)
@@ -45,7 +45,7 @@ public extension Date {
         var dateComponents = DateComponents()
         dateComponents.calendar = calendar
         var hasInvalidValue = false
-        dictionary.forEach { (key, value) in
+        dictionary.forEach { key, value in
             if value < 0 {
                 hasInvalidValue = true
             } else if (key == .month || key == .day) && value == 0 {
@@ -60,5 +60,4 @@ public extension Date {
         }
         return calendar.date(byAdding: dateComponents, to: self)
     }
-
 }

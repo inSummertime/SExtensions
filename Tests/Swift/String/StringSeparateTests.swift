@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringSeparateTests: XCTestCase {
 
@@ -27,5 +27,4 @@ final class StringSeparateTests: XCTestCase {
     func testSeparateByCharacterSet() {
         XCTAssertEqual("hello-world".separating(by: .punctuationCharacters), "hello -world")
     }
-
 }

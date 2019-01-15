@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringAlphanumericTests: XCTestCase {
 
@@ -77,5 +77,4 @@ final class StringAlphanumericTests: XCTestCase {
         XCTAssertFalse("Hello world!".hasNumbersOnly)
         XCTAssertFalse("Hello world! * 2".hasNumbersOnly)
     }
-
 }

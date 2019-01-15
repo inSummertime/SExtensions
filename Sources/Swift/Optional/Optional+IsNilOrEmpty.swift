@@ -13,7 +13,6 @@ public extension Optional where Wrapped: Collection {
         guard let collection = self else { return true }
         return collection.isEmpty
     }
-
 }
 
 public extension Optional where Wrapped == String {
@@ -23,5 +22,4 @@ public extension Optional where Wrapped == String {
         guard let string = self else { return true }
         return string.isEmpty
     }
-
 }

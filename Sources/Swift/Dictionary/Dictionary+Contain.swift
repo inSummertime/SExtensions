@@ -28,5 +28,4 @@ public extension Dictionary where Value: Equatable {
     func contains(other: [Key: Value]) -> Bool {
         return other.isSubdictionary(of: self)
     }
-
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class IntReversedTests: XCTestCase {
 
@@ -16,5 +16,4 @@ final class IntReversedTests: XCTestCase {
         XCTAssertEqual(-123.reversed!, -321)
         XCTAssertEqual(1.reversed!, 1)
     }
-
 }

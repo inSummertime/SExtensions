@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class IntBoolTests: XCTestCase {
 
@@ -17,5 +17,4 @@ final class IntBoolTests: XCTestCase {
         XCTAssertFalse((-1).bool)
         XCTAssertFalse(2.bool)
     }
-
 }

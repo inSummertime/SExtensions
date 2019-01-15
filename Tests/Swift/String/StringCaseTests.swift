@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringCaseTests: XCTestCase {
 
@@ -208,5 +208,4 @@ final class StringCaseTests: XCTestCase {
         snakeCasedHelloWorldWithUnderscores.changeToSnakeCase()
         XCTAssertEqual(snakeCasedHelloWorldWithUnderscores, "hello_world!")
     }
-
 }

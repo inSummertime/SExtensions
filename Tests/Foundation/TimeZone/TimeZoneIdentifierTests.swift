@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class TimeZoneIdentifierTests: XCTestCase {
 
@@ -20,5 +20,4 @@ final class TimeZoneIdentifierTests: XCTestCase {
         XCTAssertNotNil(TimeZone(identifier: TimeZone.Identifier.GMT.rawValue))
         print(TimeZone.UTC.identifier)
     }
-
 }

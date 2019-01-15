@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class JSONSerializationJSONObjectTests: XCTestCase {
 
@@ -31,5 +31,4 @@ final class JSONSerializationJSONObjectTests: XCTestCase {
             XCTFail("File cannot be read, or failed to create a Foundation object from JSON data.")
         }
     }
-
 }

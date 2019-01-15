@@ -44,5 +44,4 @@ public extension NSAttributedString {
         result.append(rhs)
         lhs = result
     }
-
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CGRectTransformTests: XCTestCase {
 
@@ -54,5 +54,4 @@ final class CGRectTransformTests: XCTestCase {
         let translatedRect = rect.transformFromBottomRight(scaleX: 2.0, scaleY: 2.0).transformTranslate(tx: 2.0, ty: 2.0)
         XCTAssertEqual(translatedRect, CGRect(x: 1.0, y: 0, width: 2.0, height: 4.0))
     }
-
 }

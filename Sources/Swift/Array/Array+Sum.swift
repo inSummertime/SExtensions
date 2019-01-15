@@ -32,7 +32,6 @@ extension Int: Addable {
     public static func zero() -> Int {
         return 0
     }
-
 }
 
 extension Double: Addable {
@@ -44,7 +43,6 @@ extension Double: Addable {
     public static func zero() -> Double {
         return 0
     }
-
 }
 
 extension String: Addable {
@@ -56,7 +54,6 @@ extension String: Addable {
     public static func zero() -> String {
         return ""
     }
-
 }
 
 public extension Array where Element: Addable {
@@ -66,7 +63,6 @@ public extension Array where Element: Addable {
     ///     print(["Hello", " ", "world", "!"].sum)
     ///     //Print "Hello world!"
     var sum: Element {
-        return reduce( Element.zero()) { Element.add(lhs: $0, rhs: $1) }
+        return reduce(Element.zero()) { Element.add(lhs: $0, rhs: $1) }
     }
-
 }

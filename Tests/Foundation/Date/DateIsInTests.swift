@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateIsInTests: XCTestCase {
 
@@ -193,5 +193,4 @@ final class DateIsInTests: XCTestCase {
         XCTAssertTrue(date.isAtMidnight(in: calendar))
         XCTAssertFalse(date.addingTimeInterval(Date.timeIntervalPerHour * 12).isAtMidnight(in: calendar))
     }
-
 }

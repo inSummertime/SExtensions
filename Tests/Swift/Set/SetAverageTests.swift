@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class SetAverageTests: XCTestCase {
 
@@ -29,5 +29,4 @@ final class SetAverageTests: XCTestCase {
         XCTAssertEqual(setDuplicated.count, 3)
         XCTAssertEqual(setDuplicated.average, 1.0)
     }
-
 }

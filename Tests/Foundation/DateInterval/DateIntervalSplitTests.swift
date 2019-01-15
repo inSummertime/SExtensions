@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateIntervalSplitTests: XCTestCase {
 
@@ -33,5 +33,4 @@ final class DateIntervalSplitTests: XCTestCase {
         XCTAssertEqual(dateIntervalsWithZeroDuration.count, 60)
         XCTAssertEqual(dateIntervalsWithZeroDuration[59], DateInterval(start: Date(timeIntervalSinceReferenceDate: 59.0), duration: 0))
     }
-
 }

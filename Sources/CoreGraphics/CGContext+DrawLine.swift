@@ -10,12 +10,11 @@ import CoreGraphics
 import UIKit
 
 public extension CGContext {
-    
+
     func drawLine(points: [CGPoint], color: UIColor, lineWidth: CGFloat) {
         addLines(between: points)
         setStrokeColor(color.cgColor)
         setLineWidth(lineWidth)
         strokePath()
     }
-    
 }

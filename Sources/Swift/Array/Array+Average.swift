@@ -18,7 +18,6 @@ public extension Array where Element: BinaryInteger {
     var average: Double {
         return isEmpty ? 0 : Double(total) / Double(count)
     }
-
 }
 
 public extension Array where Element: BinaryFloatingPoint {
@@ -27,5 +26,4 @@ public extension Array where Element: BinaryFloatingPoint {
     var average: Element {
         return isEmpty ? 0 : total / Element(count)
     }
-
 }

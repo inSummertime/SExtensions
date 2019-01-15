@@ -64,5 +64,4 @@ public extension Optional where Wrapped: Numeric {
             return (lhs ?? 1) * (rhs ?? 1)
         }
     }
-
 }

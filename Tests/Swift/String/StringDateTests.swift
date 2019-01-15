@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringDateTests: XCTestCase {
 
@@ -38,5 +38,4 @@ final class StringDateTests: XCTestCase {
         let dateFromTime1 = time1.toDate(dateFormat: "yyyy-MM-dd HH:mm:ss", timeZone: TimeZone(identifier: "UTC")!)
         XCTAssertEqual(dateFromTime!.timeIntervalSince(dateFromTime1!), -1)
     }
-
 }

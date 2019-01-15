@@ -41,7 +41,6 @@ public extension Dictionary {
             lhs[key] = value
         }
     }
-
 }
 
 public extension Dictionary where Value: Equatable {
@@ -117,5 +116,4 @@ public extension Dictionary where Value: Equatable {
         }
         return result
     }
-
 }

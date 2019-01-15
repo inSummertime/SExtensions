@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringTrimTests: XCTestCase {
 
@@ -87,5 +87,4 @@ final class StringTrimTests: XCTestCase {
         helloWorld.trimText("l")
         XCTAssertEqual(helloWorld, "Heo word!")
     }
-
 }

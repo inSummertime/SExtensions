@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class SetRemoveTests: XCTestCase {
 
@@ -52,5 +52,4 @@ final class SetRemoveTests: XCTestCase {
         let nilSet: Set<Double?> = [nil, nil]
         XCTAssertEqual(nilSet.removingNils(), [])
     }
-
 }

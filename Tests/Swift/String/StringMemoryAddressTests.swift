@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringMemoryAddressTests: XCTestCase {
 
@@ -17,5 +17,4 @@ final class StringMemoryAddressTests: XCTestCase {
         let memoryAddressOfUserDefaults = String.memoryAddress(of: userDefaults)
         XCTAssertEqual(UInt(pointerMemoryAddress), UInt(memoryAddressOfUserDefaults))
     }
-
 }

@@ -41,5 +41,4 @@ public extension CALayer {
         mask = shapeLayer
         return shapeLayer
     }
-
 }

@@ -19,5 +19,4 @@ public extension CALayer {
         UIGraphicsEndPDFContext()
         return data
     }
-
 }

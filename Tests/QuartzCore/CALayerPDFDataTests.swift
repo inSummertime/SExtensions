@@ -6,8 +6,8 @@
 //  Copyright © 2019 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CALayerPDFDataTests: XCTestCase {
 
@@ -32,8 +32,7 @@ final class CALayerPDFDataTests: XCTestCase {
             }
             XCTAssertEqual(pdfDoc.numberOfPages, 1)
         } catch {
-           // Nothing
+            // Nothing
         }
     }
-
 }

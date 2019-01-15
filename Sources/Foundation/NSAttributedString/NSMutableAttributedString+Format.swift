@@ -210,7 +210,7 @@ public extension NSMutableAttributedString {
     func usingStrikethrough(in range: NSRange? = nil) -> NSMutableAttributedString {
         let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let mutableAttributedString = NSMutableAttributedString(attributedString: self)
-        mutableAttributedString.addAttribute(.strikethroughStyle, value: NSNumber.init(value: 1), range: replacementRange)
+        mutableAttributedString.addAttribute(.strikethroughStyle, value: NSNumber(value: 1), range: replacementRange)
         return mutableAttributedString
     }
 
@@ -225,7 +225,7 @@ public extension NSMutableAttributedString {
     /// - Parameter range: the NSRange of the text.
     func useStrikethrough(in range: NSRange? = nil) {
         let replacementRange = range ?? NSRange(location: 0, length: string.count)
-        addAttribute(.strikethroughStyle, value: NSNumber.init(value: 1), range: replacementRange)
+        addAttribute(.strikethroughStyle, value: NSNumber(value: 1), range: replacementRange)
     }
 
     /// Returns a NSMutableAttributedString with the text within a NSRange not
@@ -241,7 +241,7 @@ public extension NSMutableAttributedString {
     func removingStrikethrough(in range: NSRange? = nil) -> NSMutableAttributedString {
         let replacementRange = range ?? NSRange(location: 0, length: string.count)
         let mutableAttributedString = NSMutableAttributedString(attributedString: self)
-        mutableAttributedString.addAttribute(.strikethroughStyle, value: NSNumber.init(value: 0), range: replacementRange)
+        mutableAttributedString.addAttribute(.strikethroughStyle, value: NSNumber(value: 0), range: replacementRange)
         return mutableAttributedString
     }
 
@@ -256,7 +256,7 @@ public extension NSMutableAttributedString {
     /// - Parameter range: the NSRange of the text.
     func removeStrikethrough(in range: NSRange? = nil) {
         let replacementRange = range ?? NSRange(location: 0, length: string.count)
-        addAttribute(.strikethroughStyle, value: NSNumber.init(value: 0), range: replacementRange)
+        addAttribute(.strikethroughStyle, value: NSNumber(value: 0), range: replacementRange)
     }
 
     /// Returns a NSMutableAttributedString with the text within a NSRange using
@@ -472,5 +472,4 @@ public extension NSMutableAttributedString {
     func removeItalic(in range: NSRange? = nil) {
         removeTraits(.traitItalic, in: range)
     }
-
 }

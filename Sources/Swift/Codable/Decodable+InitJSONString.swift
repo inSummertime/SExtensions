@@ -19,5 +19,4 @@ public extension Decodable {
         guard let jsonData = jsonString.data(using: .utf8) else { return nil }
         self = try JSONDecoder().decode(Self.self, from: jsonData)
     }
-
 }

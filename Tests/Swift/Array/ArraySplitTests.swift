@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class ArraySplitTests: XCTestCase {
 
@@ -15,5 +15,4 @@ final class ArraySplitTests: XCTestCase {
         XCTAssertEqual([0, 1, 2, 3, 4, 5, 6, 7].spliting(by: 3), [[0, 1, 2], [3, 4, 5], [6, 7]])
         XCTAssertEqual(["hello", "world", "!", " ", ""].spliting(by: 2), [["hello", "world"], ["!", " "], [""]])
     }
-
 }

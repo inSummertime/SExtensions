@@ -26,5 +26,4 @@ public extension UserDefaults {
             set(newValue, forKey: key)
         }
     }
-
 }

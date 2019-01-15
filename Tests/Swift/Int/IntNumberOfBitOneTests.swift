@@ -25,5 +25,4 @@ final class IntNumberOfBitOneTests: XCTestCase {
         XCTAssertEqual(3.numberOfBitZero, 0)
         XCTAssertEqual((-4).numberOfBitZero, 2)
     }
-
 }

@@ -46,7 +46,7 @@ public extension String {
     func removingPrefix(_ count: Int = 1) -> String {
         if self.count > count {
             let index = self.index(startIndex, offsetBy: count)
-            return String(self[index..<endIndex])
+            return String(self[index ..< endIndex])
         } else {
             return ""
         }
@@ -121,5 +121,4 @@ public extension String {
     mutating func removeSuffix(_ count: Int = 1) {
         self = removingSuffix(count)
     }
-
 }

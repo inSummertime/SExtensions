@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DictionaryOperationTests: XCTestCase {
 
@@ -49,7 +49,7 @@ final class DictionaryOperationTests: XCTestCase {
         XCTAssertEqual(["hello": 0].subtracting(["hello": 0, "world": 1]), [:])
         XCTAssertEqual(["hello": 0].subtracting([:]), ["hello": 0])
         XCTAssertEqual(["hello": 0, "world": 1].subtracting(["world": 1]), ["hello": 0])
-         XCTAssertEqual(["hello": "world", "!": ""].subtracting(["hello": "world"], ["!": ""]), [:])
+        XCTAssertEqual(["hello": "world", "!": ""].subtracting(["hello": "world"], ["!": ""]), [:])
     }
 
     func testSubtract() {
@@ -83,5 +83,4 @@ final class DictionaryOperationTests: XCTestCase {
         XCTAssertFalse(["hello": 0, "world": 1, "!": 2].isStrictSubdictionary(of: ["hello": 0, "world": 1]))
         XCTAssertFalse(["hello": 0].isStrictSubdictionary(of: [:]))
     }
-
 }

@@ -34,5 +34,4 @@ public extension Bundle {
     var bundleID: String? {
         return infoDictionary?[kCFBundleIdentifierKey as String] as? String
     }
-
 }

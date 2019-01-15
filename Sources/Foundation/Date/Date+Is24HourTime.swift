@@ -19,5 +19,4 @@ public extension Date {
         let pmRange = dateString.range(of: formatter.pmSymbol)
         return amRange == nil && pmRange == nil
     }
-
 }

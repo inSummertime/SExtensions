@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CALayerBorderTests: XCTestCase {
 
@@ -168,5 +168,4 @@ final class CALayerBorderTests: XCTestCase {
         let leftBorder = view.layer.addExternalBorder(color: .white, width: 4, side: .left)
         XCTAssertEqual(leftBorder.frame, CGRect(x: -4, y: 0, width: 4, height: 64))
     }
-
 }

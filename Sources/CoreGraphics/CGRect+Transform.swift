@@ -119,5 +119,4 @@ public extension CGRect {
     func transformTranslate(tx: CGFloat, ty: CGFloat) -> CGRect {
         return CGRect(x: origin.x + tx, y: origin.y + ty, width: width, height: height)
     }
-
 }

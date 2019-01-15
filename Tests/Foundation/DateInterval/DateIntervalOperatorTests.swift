@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateIntervalOperatorTests: XCTestCase {
 
@@ -48,5 +48,4 @@ final class DateIntervalOperatorTests: XCTestCase {
         XCTAssertEqual(dateInterval | DateInterval(start: Date(timeIntervalSinceReferenceDate: 1), duration: 0), dateInterval)
         XCTAssertNil(dateInterval | DateInterval(start: Date(timeIntervalSinceReferenceDate: 2), duration: 1))
     }
-
 }

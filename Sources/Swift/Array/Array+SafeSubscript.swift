@@ -50,7 +50,7 @@ public extension Array {
         }
         let lower = Swift.max(0, range.lowerBound)
         let upper = Swift.min(count, range.upperBound)
-        return Array(self[lower..<upper])
+        return Array(self[lower ..< upper])
     }
 
     /// Returns a subsequence with a CountableClosedRange safely.
@@ -71,7 +71,6 @@ public extension Array {
         }
         let lower = Swift.max(0, range.lowerBound)
         let upper = Swift.min(count - 1, range.upperBound)
-        return Array(self[lower...upper])
+        return Array(self[lower ... upper])
     }
-
 }

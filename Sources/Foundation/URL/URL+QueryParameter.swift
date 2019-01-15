@@ -83,5 +83,4 @@ public extension URL {
         parameters.removeValue(forKey: key)
         queryParameters = parameters
     }
-
 }

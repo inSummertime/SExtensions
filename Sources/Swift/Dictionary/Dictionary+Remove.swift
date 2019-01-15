@@ -22,7 +22,6 @@ public extension Dictionary {
         }
         return result
     }
-
 }
 
 public extension Dictionary where Value: Equatable {
@@ -41,7 +40,6 @@ public extension Dictionary where Value: Equatable {
         }
         return result
     }
-
 }
 
 public extension Dictionary where Key == String {
@@ -87,7 +85,6 @@ public extension Dictionary where Key == String {
         }
         return result
     }
-
 }
 
 extension Dictionary where Value: OptionalProtocol {
@@ -104,5 +101,4 @@ extension Dictionary where Value: OptionalProtocol {
         }
         return result
     }
-
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CALayerRemoveAllSublayersTests: XCTestCase {
 
@@ -22,5 +22,4 @@ final class CALayerRemoveAllSublayersTests: XCTestCase {
         parentlayer.removeAllSublayers()
         XCTAssertNil(parentlayer.sublayers)
     }
-
 }

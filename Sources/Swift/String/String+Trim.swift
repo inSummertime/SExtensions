@@ -89,7 +89,7 @@ public extension String {
     /// - Returns: a trimmed string.
     func trimmingStartCharacters(in set: CharacterSet) -> String {
         if let range = rangeOfCharacter(from: set.inverted) {
-            return String(self[range.lowerBound..<endIndex])
+            return String(self[range.lowerBound ..< endIndex])
         }
         return self
     }
@@ -103,7 +103,7 @@ public extension String {
     /// - Returns: a trimmed string.
     func trimmingEndCharacters(in set: CharacterSet) -> String {
         if let range = rangeOfCharacter(from: set.inverted, options: .backwards) {
-            return String(self[startIndex..<range.upperBound])
+            return String(self[startIndex ..< range.upperBound])
         }
         return self
     }
@@ -131,5 +131,4 @@ public extension String {
     mutating func trimText(_ text: String) {
         self = trimmingText(text)
     }
-
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CALayerTriangleCornerTests: XCTestCase {
 
@@ -16,5 +16,4 @@ final class CALayerTriangleCornerTests: XCTestCase {
         let topLeftTriangleCorner = view.layer.addTriangleCorner(corner: .bottomRight, size: CGSize(width: 16, height: 16), color: .white)
         XCTAssertEqual(view.layer.sublayers?.first!, topLeftTriangleCorner)
     }
-
 }

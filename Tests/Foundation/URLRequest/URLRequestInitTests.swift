@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class URLRequestInitTests: XCTestCase {
 
@@ -33,5 +33,4 @@ final class URLRequestInitTests: XCTestCase {
         let urlRequestWithStringAndHTTPHeaderFields = URLRequest(string: "https://www.google.com", httpHeaderFields: httpHeaderFields)
         XCTAssertEqual(urlRequest, urlRequestWithStringAndHTTPHeaderFields)
     }
-
 }

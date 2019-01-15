@@ -30,5 +30,4 @@ public extension String {
     var arrayValue: [Any] {
         return array ?? [Any]()
     }
-
 }

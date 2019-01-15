@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DictionarySubscriptTests: XCTestCase {
 
@@ -135,5 +135,4 @@ final class DictionarySubscriptTests: XCTestCase {
         XCTAssertEqual(["hello": ["hello": "world"]][dictionaryValue: "hello"][string: "hello"], "world")
         XCTAssertEqual(["hello": ["hello": ["hello": "world"]]][dictionaryValue: "hello"][dictionaryValue: "hello"][string: "hello"], "world")
     }
-
 }

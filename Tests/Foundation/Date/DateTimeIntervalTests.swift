@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateTimeIntervalTests: XCTestCase {
 
@@ -16,5 +16,4 @@ final class DateTimeIntervalTests: XCTestCase {
         XCTAssertEqual(Date.timeIntervalPerDay / 24.0, Date.timeIntervalPerHour)
         XCTAssertEqual(Date.timeIntervalPerHour / 60.0, Date.timeIntervalPerMinute)
     }
-
 }

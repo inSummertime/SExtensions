@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class UserDefaultsCodableTests: XCTestCase {
 
@@ -22,5 +22,4 @@ final class UserDefaultsCodableTests: XCTestCase {
         XCTAssertEqual(userDefaults?.codable(Object.self, forKey: key)!.id, 0)
         userDefaults?.removeObject(forKey: key)
     }
-
 }

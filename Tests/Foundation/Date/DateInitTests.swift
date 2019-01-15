@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DateInitTests: XCTestCase {
 
@@ -27,5 +27,4 @@ final class DateInitTests: XCTestCase {
         XCTAssertTrue(calendar.isDate(referenceDate, inSameDayAs: Date(calendar: calendar, timeZone: timeZone, year: 2001, month: 1, day: 1, hour: 0)!))
         XCTAssertTrue(calendar.isDate(referenceDate, inSameDayAs: Date(calendar: calendar, timeZone: timeZone, year: 2001, month: 1, day: 1, hour: 0, minute: 0, second: 0)!))
     }
-
 }

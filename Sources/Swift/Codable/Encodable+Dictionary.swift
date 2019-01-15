@@ -17,5 +17,4 @@ public extension Encodable {
         let dictionary = jsonObject.flatMap { $0 as? [String: Any] }
         return dictionary
     }
-
 }

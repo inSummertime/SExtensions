@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class StringArrayTests: XCTestCase {
 
@@ -24,7 +24,6 @@ final class StringArrayTests: XCTestCase {
 
         XCTAssertNil("Hello world!".array)
         XCTAssertNil("".array)
-
     }
 
     func testArrayValue() {
@@ -41,5 +40,4 @@ final class StringArrayTests: XCTestCase {
         XCTAssertTrue("Hello world!".arrayValue.isEmpty)
         XCTAssertTrue("".arrayValue.isEmpty)
     }
-
 }

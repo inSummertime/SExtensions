@@ -57,5 +57,4 @@ public extension String {
     var stringDictionaryValue: [String: String] {
         return stringDictionary ?? [String: String]()
     }
-
 }

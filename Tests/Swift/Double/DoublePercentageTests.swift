@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DoublePercentageTests: XCTestCase {
 
@@ -23,5 +23,4 @@ final class DoublePercentageTests: XCTestCase {
         XCTAssertEqual((-0.99999).percentage(maximumFractionDigits: 4)!, "-99.999%")
         XCTAssertEqual((-1.0).percentage(maximumFractionDigits: 4)!, "-100%")
     }
-
 }

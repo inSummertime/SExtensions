@@ -44,5 +44,4 @@ public extension Double {
         formatter.currencyCode = currencyCode
         return formatter.string(from: NSNumber(value: self))
     }
-
 }

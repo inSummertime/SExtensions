@@ -59,5 +59,4 @@ public extension String {
         let count = components(separatedBy: .decimalDigits).joined(separator: "").count
         return hasNumbers && count == 0
     }
-
 }

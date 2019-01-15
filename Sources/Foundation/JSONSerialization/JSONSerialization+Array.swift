@@ -39,5 +39,4 @@ public extension JSONSerialization {
         let json = try JSONSerialization.jsonObjectFromString(string, readingOptions: readingOptions)
         return json as? [[String: Any]]
     }
-
 }

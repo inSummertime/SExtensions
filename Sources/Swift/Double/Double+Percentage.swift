@@ -22,5 +22,4 @@ public extension Double {
         formatter.maximumFractionDigits = maximumFractionDigits
         return formatter.string(from: NSNumber(value: self))
     }
-
 }

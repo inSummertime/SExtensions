@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class DoubleBoolTests: XCTestCase {
 
@@ -18,5 +18,4 @@ final class DoubleBoolTests: XCTestCase {
         XCTAssertFalse(2.0.bool)
         XCTAssertFalse(Double.nan.bool)
     }
-
 }

@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CALayerAddColorGradientTests: XCTestCase {
 
@@ -44,5 +44,4 @@ final class CALayerAddColorGradientTests: XCTestCase {
         XCTAssertEqual(gradientLayer!.frame.origin, CGPoint(x: 24, y: 24))
         print(gradientLayer!.frame.origin)
     }
-
 }

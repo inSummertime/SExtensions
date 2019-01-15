@@ -62,5 +62,4 @@ public extension Array where Element: Equatable {
     static func & (lhs: Array, rhs: Array) -> Array {
         return lhs.intersection(rhs)
     }
-
 }

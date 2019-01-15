@@ -6,8 +6,8 @@
 //  Copyright © 2018 Ray. All rights reserved.
 //
 
-import XCTest
 @testable import SExtensions
+import XCTest
 
 final class CGPointOperatorTests: XCTestCase {
 
@@ -40,5 +40,4 @@ final class CGPointOperatorTests: XCTestCase {
         XCTAssertEqual(point.x, -2.0)
         XCTAssertEqual(point.y, -2.0)
     }
-
 }

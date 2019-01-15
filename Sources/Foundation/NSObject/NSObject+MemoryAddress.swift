@@ -14,5 +14,4 @@ public extension NSObject {
     var memoryAddress: String {
         return String(format: "%p", self)
     }
-
 }
