@@ -16,7 +16,7 @@ final class UserDefaultsDateTests: XCTestCase {
         let userDefaults = UserDefaults(suiteName: "HelloWorld")
         XCTAssertNil(userDefaults?.date(forKey: key))
         userDefaults?.set(Date(timeIntervalSinceReferenceDate: 0), forKey: key)
-        XCTAssertEqual(userDefaults?.date(forKey: key)!, Date(timeIntervalSinceReferenceDate: 0))
+        XCTAssertEqual(userDefaults?.date(forKey: key), Date(timeIntervalSinceReferenceDate: 0))
         userDefaults?.removeObject(forKey: key)
     }
 }

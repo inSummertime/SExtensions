@@ -62,9 +62,9 @@ final class ArrayRemoveTests: XCTestCase {
         XCTAssertTrue([["", ""], [], "", ["hello": ""], NSNull(), [[""]], [[:]], [["hello": []]]].removingEmpty().isEmpty)
 
         XCTAssertEqual(["hello", "world"].removingEmpty(), ["hello", "world"])
-        XCTAssertEqual((["hello", "world", "!", "", [], [:], NSNull()].removingEmpty() as! [String]), ["hello", "world", "!"])
-        XCTAssertEqual((["hello", "world", "", ["", []], ["!": []], NSNull()].removingEmpty() as! [String]), ["hello", "world"])
-        XCTAssertEqual((["hello", "", [[]], ["!": [NSNull()]]].removingEmpty() as! [String]), ["hello"])
+        XCTAssertEqual((["hello", "world", "!", "", [], [:], NSNull()].removingEmpty() as? [String]), ["hello", "world", "!"])
+        XCTAssertEqual((["hello", "world", "", ["", []], ["!": []], NSNull()].removingEmpty() as? [String]), ["hello", "world"])
+        XCTAssertEqual((["hello", "", [[]], ["!": [NSNull()]]].removingEmpty() as? [String]), ["hello"])
     }
 
     func testRemovingNil() {

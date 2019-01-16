@@ -12,8 +12,8 @@ import XCTest
 final class IntReversedTests: XCTestCase {
 
     func testReversed() {
-        XCTAssertEqual(123.reversed!, 321)
-        XCTAssertEqual(-123.reversed!, -321)
-        XCTAssertEqual(1.reversed!, 1)
+        XCTAssertEqual(123.reversed, 321)
+        XCTAssertEqual((-123).reversed, -321)
+        XCTAssertEqual(1.reversed, 1)
     }
 }

@@ -84,7 +84,7 @@ final class DictionarySubscriptTests: XCTestCase {
     }
 
     func testSubscriptArray() {
-        XCTAssertEqual(["hello": ["hello", "world"]][array: "hello"]! as! [String], ["hello", "world"])
+        XCTAssertEqual(["hello": ["hello", "world"]][array: "hello"] as? [String], ["hello", "world"])
         XCTAssertNil(["hello": ["hello", "world"]][array: "world"])
         XCTAssertNil(["hello": 1.0][array: "world"])
         XCTAssertNil(["hello": 1][array: "hello"])
@@ -96,8 +96,8 @@ final class DictionarySubscriptTests: XCTestCase {
     }
 
     func testSubscriptArrayValue() {
-        XCTAssertEqual(["hello": ["hello", "world"]][arrayValue: "hello"] as! [String], ["hello", "world"])
-        XCTAssertEqual(["hello": ["hello", "world"]][arrayValue: "world"] as! [String], [String]())
+        XCTAssertEqual(["hello": ["hello", "world"]][arrayValue: "hello"] as? [String], ["hello", "world"])
+        XCTAssertEqual(["hello": ["hello", "world"]][arrayValue: "world"] as? [String], [String]())
         XCTAssertEqual(["hello": 1][arrayValue: "hello"].count, 0)
         XCTAssertEqual(["hello": 1.0][arrayValue: "hello"].count, 0)
         XCTAssertEqual(["hello": "world"][arrayValue: "hello"].count, 0)
@@ -108,7 +108,7 @@ final class DictionarySubscriptTests: XCTestCase {
     }
 
     func testSubscriptDictionary() {
-        XCTAssertEqual(["hello": ["hello": "world"]][dictionary: "hello"]! as! [String: String], ["hello": "world"])
+        XCTAssertEqual(["hello": ["hello": "world"]][dictionary: "hello"] as? [String: String], ["hello": "world"])
         XCTAssertNil(["hello": ["hello", "world"]][dictionary: "world"])
         XCTAssertNil(["hello": 1.0][dictionary: "world"])
         XCTAssertNil(["hello": 1][dictionary: "hello"])
@@ -120,8 +120,8 @@ final class DictionarySubscriptTests: XCTestCase {
     }
 
     func testSubscriptDictionaryValue() {
-        XCTAssertEqual(["hello": ["hello": "world"]][dictionaryValue: "hello"] as! [String: String], ["hello": "world"])
-        XCTAssertEqual(["hello": ["hello": "world"]][dictionaryValue: "world"] as! [String: String], [String: String]())
+        XCTAssertEqual(["hello": ["hello": "world"]][dictionaryValue: "hello"] as? [String: String], ["hello": "world"])
+        XCTAssertEqual(["hello": ["hello": "world"]][dictionaryValue: "world"] as? [String: String], [String: String]())
         XCTAssertTrue(["hello": 1][dictionaryValue: "hello"].isEmpty)
         XCTAssertTrue(["hello": 1.0][dictionaryValue: "hello"].isEmpty)
         XCTAssertTrue(["hello": "world"][dictionaryValue: "hello"].isEmpty)

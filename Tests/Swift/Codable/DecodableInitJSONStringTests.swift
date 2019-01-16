@@ -18,7 +18,7 @@ class DecodableInitJSONStringTests: XCTestCase {
         }
         do {
             let object = try Object(jsonString: jsonString)
-            XCTAssertEqual(object!.hello, "world")
+            XCTAssertEqual(object?.hello, "world")
         } catch {
             XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }
@@ -31,7 +31,7 @@ class DecodableInitJSONStringTests: XCTestCase {
         }
         do {
             let objectEmpty = try ObjectEmpty(jsonString: jsonStringEmpty)
-            XCTAssertEqual(objectEmpty!.hello, "")
+            XCTAssertEqual(objectEmpty?.hello, "")
         } catch {
             XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }
@@ -44,7 +44,7 @@ class DecodableInitJSONStringTests: XCTestCase {
         }
         do {
             let objectInt = try ObjectInt(jsonString: jsonStringInt)
-            XCTAssertEqual(objectInt!.hello, 0)
+            XCTAssertEqual(objectInt?.hello, 0)
         } catch {
             XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }
@@ -57,7 +57,7 @@ class DecodableInitJSONStringTests: XCTestCase {
         }
         do {
             let objectArray = try ObjectArray(jsonString: jsonStringArray)
-            XCTAssertEqual(objectArray!.hello, ["world", "!"])
+            XCTAssertEqual(objectArray?.hello, ["world", "!"])
         } catch {
             XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }
@@ -70,7 +70,7 @@ class DecodableInitJSONStringTests: XCTestCase {
         }
         do {
             let objectDictionary = try ObjectDictionary(jsonString: jsonStringDictionary)
-            XCTAssertEqual(objectDictionary!.hello, ["world": "!"])
+            XCTAssertEqual(objectDictionary?.hello, ["world": "!"])
         } catch {
             XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }
@@ -83,7 +83,7 @@ class DecodableInitJSONStringTests: XCTestCase {
         }
         do {
             let objectCodable = try ObjectCodable(jsonString: jsonStringCodable)
-            XCTAssertEqual(objectCodable!.hello, "world")
+            XCTAssertEqual(objectCodable?.hello, "world")
         } catch {
             XCTFail("Values requested from the payload are corrupted, or the given data is not valid JSON.")
         }

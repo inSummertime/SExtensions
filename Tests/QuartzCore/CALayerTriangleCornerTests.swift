@@ -14,6 +14,6 @@ final class CALayerTriangleCornerTests: XCTestCase {
     func testAddTriangleCorner() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 64, height: 64))
         let topLeftTriangleCorner = view.layer.addTriangleCorner(corner: .bottomRight, size: CGSize(width: 16, height: 16), color: .white)
-        XCTAssertEqual(view.layer.sublayers?.first!, topLeftTriangleCorner)
+        XCTAssertEqual(view.layer.sublayers?.first, topLeftTriangleCorner)
     }
 }

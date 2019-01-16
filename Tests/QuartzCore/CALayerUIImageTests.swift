@@ -17,6 +17,6 @@ final class CALayerUIImageTests: XCTestCase {
         subview.backgroundColor = .lightGray
         view.addSubview(subview)
         let image = view.layer.image
-        XCTAssertEqual(image!.size, CGSize(width: 64, height: 64))
+        XCTAssertEqual(image?.size, CGSize(width: 64, height: 64))
     }
 }

@@ -18,9 +18,9 @@ final class CALayerFrontAndBackTests: XCTestCase {
     override func setUp() {
         superlayer.addSublayer(sublayer)
         superlayer.addSublayer(anotherSublayer)
-        XCTAssertEqual(superlayer.sublayers!.count, 2)
-        XCTAssertEqual(superlayer.sublayers!.first!, sublayer)
-        XCTAssertEqual(superlayer.sublayers!.last!, anotherSublayer)
+        XCTAssertEqual(superlayer.sublayers?.count, 2)
+        XCTAssertEqual(superlayer.sublayers?.first, sublayer)
+        XCTAssertEqual(superlayer.sublayers?.last, anotherSublayer)
     }
 
     override func tearDown() {
@@ -29,25 +29,25 @@ final class CALayerFrontAndBackTests: XCTestCase {
 
     func testBringToFront() {
         sublayer.bringToFront()
-        XCTAssertEqual(superlayer.sublayers!.first!, anotherSublayer)
-        XCTAssertEqual(superlayer.sublayers!.last!, sublayer)
+        XCTAssertEqual(superlayer.sublayers?.first, anotherSublayer)
+        XCTAssertEqual(superlayer.sublayers?.last, sublayer)
     }
 
     func testSendToBack() {
         anotherSublayer.sendToBack()
-        XCTAssertEqual(superlayer.sublayers!.first!, anotherSublayer)
-        XCTAssertEqual(superlayer.sublayers!.last!, sublayer)
+        XCTAssertEqual(superlayer.sublayers?.first, anotherSublayer)
+        XCTAssertEqual(superlayer.sublayers?.last, sublayer)
     }
 
     func testBringSublayerToFront() {
         superlayer.bringSublayerToFront(sublayer)
-        XCTAssertEqual(superlayer.sublayers!.first!, anotherSublayer)
-        XCTAssertEqual(superlayer.sublayers!.last!, sublayer)
+        XCTAssertEqual(superlayer.sublayers?.first, anotherSublayer)
+        XCTAssertEqual(superlayer.sublayers?.last, sublayer)
     }
 
     func testSendSublayerToBack() {
         superlayer.sendSublayerToBack(anotherSublayer)
-        XCTAssertEqual(superlayer.sublayers!.first!, anotherSublayer)
-        XCTAssertEqual(superlayer.sublayers!.last!, sublayer)
+        XCTAssertEqual(superlayer.sublayers?.first, anotherSublayer)
+        XCTAssertEqual(superlayer.sublayers?.last, sublayer)
     }
 }

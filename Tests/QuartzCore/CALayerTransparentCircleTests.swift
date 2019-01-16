@@ -16,6 +16,6 @@ final class CALayerTransparentCircleTests: XCTestCase {
         view.layer.addTransparentCircle(center: view.layer.bounds.center, radius: 16, overlayColor: .red, overlayAlpha: 0.9)
         let shapeLayer = view.layer.sublayers?.first
         XCTAssertNotNil(shapeLayer)
-        XCTAssertEqual(shapeLayer!.frame, view.layer.frame)
+        XCTAssertEqual(shapeLayer?.frame, view.layer.frame)
     }
 }

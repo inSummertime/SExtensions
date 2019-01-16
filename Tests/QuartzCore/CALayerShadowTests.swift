@@ -14,6 +14,6 @@ final class CALayerShadowTests: XCTestCase {
     func testAddShadow() {
         let layer = CALayer()
         layer.addShadow(color: .black)
-        XCTAssertEqual(layer.shadowColor!, UIColor.black.cgColor)
+        XCTAssertEqual(layer.shadowColor, UIColor.black.cgColor)
     }
 }

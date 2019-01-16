@@ -13,8 +13,8 @@ final class ArrayIndexedDictionaryTests: XCTestCase {
 
     func testIndexedDictionary() {
         let dictionary: [Int: Any] = ["hello", "world", "!", 0].indexedDictionary
-        XCTAssertEqual(dictionary[0] as! String, "hello")
-        XCTAssertEqual(dictionary[3] as! Int, 0)
+        XCTAssertEqual(dictionary[0] as? String, "hello")
+        XCTAssertEqual(dictionary[3] as? Int, 0)
         XCTAssertEqual([Double]().indexedDictionary, [:])
     }
 }
