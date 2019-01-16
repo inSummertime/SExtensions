@@ -10,6 +10,7 @@ import QuartzCore
 
 public extension CALayer {
 
+    /// NSData for creating a pdf.
     var pdfData: NSData? {
         let data = NSMutableData()
         UIGraphicsBeginPDFContextToData(data, bounds, nil)

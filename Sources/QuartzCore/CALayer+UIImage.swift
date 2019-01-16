@@ -12,6 +12,7 @@ import UIKit
 
 public extension CALayer {
 
+    /// An UIImage from a CALayer.
     var image: UIImage? {
         defer {
             UIGraphicsEndImageContext()
