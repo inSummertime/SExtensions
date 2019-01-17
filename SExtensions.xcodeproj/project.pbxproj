@@ -903,11 +903,9 @@
 		719C8C2B2144B4F800F3522D /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
-				C4D310D421EAE37B00DD6CD6 /* CGContext+DrawLine.swift */,
-				719C8C292144B49A00F3522D /* CGPoint+Operator.swift */,
-				7146A87721472FC0005C1814 /* CGRect+Center.swift */,
-				7146A87B21473595005C1814 /* CGRect+Transform.swift */,
-				711CD5452145DDE9002F26E4 /* CGRect+Update.swift */,
+				C4E06E2821F0BCC600ABF04A /* CGContext */,
+				C4E06E2721F0BCBB00ABF04A /* CGPoint */,
+				C4E06E2621F0BCAE00ABF04A /* CGRect */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -915,11 +913,11 @@
 		719C8C2E2144BE2500F3522D /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				C4D310D621EAE55400DD6CD6 /* CGContextDrawLineTests.swift */,
 				719C8C2C2144BE1A00F3522D /* CGPointOperatorTests.swift */,
 				711CD5472145E146002F26E4 /* CGRectUpdateTests.swift */,
 				7146A8792147303C005C1814 /* CGRectCenterTests.swift */,
 				71D67ECF214873D50004BB79 /* CGRectTransformTests.swift */,
-				C4D310D621EAE55400DD6CD6 /* CGContextDrawLineTests.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -1259,6 +1257,32 @@
 				71585ADF2150801300ACD6A8 /* ArraySumTests.swift */,
 			);
 			path = Array;
+			sourceTree = "<group>";
+		};
+		C4E06E2621F0BCAE00ABF04A /* CGRect */ = {
+			isa = PBXGroup;
+			children = (
+				7146A87721472FC0005C1814 /* CGRect+Center.swift */,
+				7146A87B21473595005C1814 /* CGRect+Transform.swift */,
+				711CD5452145DDE9002F26E4 /* CGRect+Update.swift */,
+			);
+			path = CGRect;
+			sourceTree = "<group>";
+		};
+		C4E06E2721F0BCBB00ABF04A /* CGPoint */ = {
+			isa = PBXGroup;
+			children = (
+				719C8C292144B49A00F3522D /* CGPoint+Operator.swift */,
+			);
+			path = CGPoint;
+			sourceTree = "<group>";
+		};
+		C4E06E2821F0BCC600ABF04A /* CGContext */ = {
+			isa = PBXGroup;
+			children = (
+				C4D310D421EAE37B00DD6CD6 /* CGContext+DrawLine.swift */,
+			);
+			path = CGContext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
