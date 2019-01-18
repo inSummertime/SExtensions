@@ -1,6 +1,13 @@
 {
   "warnings": [
     {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/CoreGraphics/CGContext+DrawLine.swift",
+      "line": 14,
+      "symbol": "CGContext.drawLine(points:color:lineWidth:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Border.swift",
       "line": 23,
       "symbol": "CALayer.BorderSide.all",
