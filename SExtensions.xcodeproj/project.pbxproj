@@ -908,9 +908,9 @@
 			isa = PBXGroup;
 			children = (
 				C4E06E2821F0BCC600ABF04A /* CGContext */,
+				C45BF1E421F213D60053B61E /* CGImage */,
 				C4E06E2721F0BCBB00ABF04A /* CGPoint */,
 				C4E06E2621F0BCAE00ABF04A /* CGRect */,
-				C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -1263,6 +1263,14 @@
 				71585ADF2150801300ACD6A8 /* ArraySumTests.swift */,
 			);
 			path = Array;
+			sourceTree = "<group>";
+		};
+		C45BF1E421F213D60053B61E /* CGImage */ = {
+			isa = PBXGroup;
+			children = (
+				C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */,
+			);
+			path = CGImage;
 			sourceTree = "<group>";
 		};
 		C4E06E2621F0BCAE00ABF04A /* CGRect */ = {

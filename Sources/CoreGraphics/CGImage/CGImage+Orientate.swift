@@ -7,7 +7,6 @@
 //
 
 import CoreGraphics
-import UIKit
 
 public extension CGImage {
     
@@ -16,46 +15,46 @@ public extension CGImage {
     /// - Parameter orientation: A CGImagePropertyOrientation value.
     /// - Returns: An optional CGImage.
     func orientate(_ orientation: CGImagePropertyOrientation) -> CGImage? {
-        var degreesToRotate: CGFloat = 0
-        var swapWidthHeight: Bool = false
-        var mirrored: Bool = false
+        var degreeToRotate: CGFloat = 0
+        var isWidthHeightSwapped = false
+        var isMirrored = false
         switch orientation {
         case .up:
             // The original pixel data matches the image's intended display orientation.
             return copy()
         case .right:
             // The image has been rotated 90° clockwise from the orientation of its original pixel data.
-            degreesToRotate = 90.0
-            swapWidthHeight = true
+            degreeToRotate = 90.0
+            isWidthHeightSwapped = true
         case .down:
             // The image has been rotated 180° from the orientation of its original pixel data.
-            degreesToRotate = 180.0
+            degreeToRotate = 180.0
         case .left:
             // The image has been rotated 90° counterclockwise from the orientation of its original pixel data.
-            degreesToRotate = -90.0
-            swapWidthHeight = true
+            degreeToRotate = -90.0
+            isWidthHeightSwapped = true
         case .upMirrored:
             // The image has been horizontally flipped from the orientation of its original pixel data.
-            mirrored = true
+            isMirrored = true
         case .rightMirrored:
             // The encoded image data is horizontally flipped and rotated 90° clockwise from the image's intended display orientation.
-            degreesToRotate = 90.0
-            swapWidthHeight = true
-            mirrored = true
+            degreeToRotate = 90.0
+            isWidthHeightSwapped = true
+            isMirrored = true
         case .downMirrored:
             // The image has been vertically flipped from the orientation of its original pixel data.
-            degreesToRotate = 180.0
-            mirrored = true
+            degreeToRotate = 180.0
+            isMirrored = true
         case .leftMirrored:
             // The image has been rotated 90° clockwise and flipped horizontally from the orientation of its original pixel data.
-            degreesToRotate = -90.0
-            swapWidthHeight = true
-            mirrored = true
+            degreeToRotate = -90.0
+            isWidthHeightSwapped = true
+            isMirrored = true
         }
-        let radians = degreesToRotate * CGFloat.pi / 180
+        let angle = degreeToRotate * CGFloat.pi / 180
         var newWidth = CGFloat(width)
         var newHeight = CGFloat(height)
-        if swapWidthHeight {
+        if isWidthHeightSwapped {
             newWidth = CGFloat(height)
             newHeight = CGFloat(width)
         }
@@ -64,13 +63,13 @@ public extension CGImage {
             return nil
         }
         context.translateBy(x: newWidth / 2.0, y: newHeight / 2.0)
-        if mirrored {
+        if isMirrored {
             context.scaleBy(x: -1.0, y: 1.0)
-            context.rotate(by: radians)
+            context.rotate(by: angle)
         } else {
-            context.rotate(by: -radians)
+            context.rotate(by: -angle)
         }
-        if swapWidthHeight {
+        if isWidthHeightSwapped {
             context.translateBy(x: -newHeight / 2.0, y: -newWidth / 2.0)
         } else {
             context.translateBy(x: -newWidth / 2.0, y: -newHeight / 2.0)
