@@ -15,7 +15,7 @@ public extension CGImage {
     /// - Parameter orientation: A CGImagePropertyOrientation value.
     /// - Returns: An optional CGImage.
     func orientate(_ orientation: CGImagePropertyOrientation) -> CGImage? {
-        var degreeToRotate: CGFloat = 0
+        var degreesToRotate: CGFloat = 0
         var isWidthHeightSwapped = false
         var isMirrored = false
         switch orientation {
@@ -24,34 +24,34 @@ public extension CGImage {
             return copy()
         case .right:
             // The image has been rotated 90° clockwise from the orientation of its original pixel data.
-            degreeToRotate = 90.0
+            degreesToRotate = 90.0
             isWidthHeightSwapped = true
         case .down:
             // The image has been rotated 180° from the orientation of its original pixel data.
-            degreeToRotate = 180.0
+            degreesToRotate = 180.0
         case .left:
             // The image has been rotated 90° counterclockwise from the orientation of its original pixel data.
-            degreeToRotate = -90.0
+            degreesToRotate = -90.0
             isWidthHeightSwapped = true
         case .upMirrored:
             // The image has been horizontally flipped from the orientation of its original pixel data.
             isMirrored = true
         case .rightMirrored:
             // The encoded image data is horizontally flipped and rotated 90° clockwise from the image's intended display orientation.
-            degreeToRotate = 90.0
+            degreesToRotate = 90.0
             isWidthHeightSwapped = true
             isMirrored = true
         case .downMirrored:
             // The image has been vertically flipped from the orientation of its original pixel data.
-            degreeToRotate = 180.0
+            degreesToRotate = 180.0
             isMirrored = true
         case .leftMirrored:
             // The image has been rotated 90° clockwise and flipped horizontally from the orientation of its original pixel data.
-            degreeToRotate = -90.0
+            degreesToRotate = -90.0
             isWidthHeightSwapped = true
             isMirrored = true
         }
-        let angle = degreeToRotate * CGFloat.pi / 180
+        let angle = degreesToRotate * CGFloat.pi / 180
         var newWidth = CGFloat(width)
         var newHeight = CGFloat(height)
         if isWidthHeightSwapped {
