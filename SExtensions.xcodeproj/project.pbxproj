@@ -253,6 +253,9 @@
 		C4B11C0C21F1919D00C69617 /* CGImage+Orientate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */; };
 		C4B11C0E21F1939300C69617 /* CGImageOrientateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */; };
 		C4B3D26421D9D47200FD395B /* CALayer+Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */; };
+		C4D019D621F2A5420065E8C0 /* CGImage+Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D019D521F2A5420065E8C0 /* CGImage+Thumbnail.swift */; };
+		C4D019F921F2AC110065E8C0 /* CGImageThumbnailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D019F821F2AC110065E8C0 /* CGImageThumbnailTests.swift */; };
+		C4D01A0321F2B2FF0065E8C0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D01A0121F2B2680065E8C0 /* icon.png */; };
 		C4D310D521EAE37B00DD6CD6 /* CGContext+DrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D310D421EAE37B00DD6CD6 /* CGContext+DrawLine.swift */; };
 		C4D310D721EAE55400DD6CD6 /* CGContextDrawLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D310D621EAE55400DD6CD6 /* CGContextDrawLineTests.swift */; };
 		C4D58F5D21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D58F5C21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift */; };
@@ -519,6 +522,9 @@
 		C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Orientate.swift"; sourceTree = "<group>"; };
 		C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageOrientateTests.swift; sourceTree = "<group>"; };
 		C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Curve.swift"; sourceTree = "<group>"; };
+		C4D019D521F2A5420065E8C0 /* CGImage+Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Thumbnail.swift"; sourceTree = "<group>"; };
+		C4D019F821F2AC110065E8C0 /* CGImageThumbnailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageThumbnailTests.swift; sourceTree = "<group>"; };
+		C4D01A0121F2B2680065E8C0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		C4D310D421EAE37B00DD6CD6 /* CGContext+DrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGContext+DrawLine.swift"; sourceTree = "<group>"; };
 		C4D310D621EAE55400DD6CD6 /* CGContextDrawLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGContextDrawLineTests.swift; sourceTree = "<group>"; };
 		C4D58F5C21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+PauseAndResumeAnimation.swift"; sourceTree = "<group>"; };
@@ -763,6 +769,7 @@
 		71697E3A20B91D54005C58EC /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				C4D01A0121F2B2680065E8C0 /* icon.png */,
 				71C7F8ED213DFE8A002B9916 /* Array.json */,
 				71C7F8EB213DFE83002B9916 /* Dictionary.json */,
 				71697E2F20B91CDB005C58EC /* Info.plist */,
@@ -924,6 +931,7 @@
 				7146A8792147303C005C1814 /* CGRectCenterTests.swift */,
 				71D67ECF214873D50004BB79 /* CGRectTransformTests.swift */,
 				C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */,
+				C4D019F821F2AC110065E8C0 /* CGImageThumbnailTests.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -1269,6 +1277,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */,
+				C4D019D521F2A5420065E8C0 /* CGImage+Thumbnail.swift */,
 			);
 			path = CGImage;
 			sourceTree = "<group>";
@@ -1408,6 +1417,7 @@
 			files = (
 				71C7F8EF213E0443002B9916 /* Array.json in Resources */,
 				71C7F8F0213E0448002B9916 /* Dictionary.json in Resources */,
+				C4D01A0321F2B2FF0065E8C0 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1496,6 +1506,7 @@
 				7128D64E211554D200A06FE0 /* Date+Is24HourTime.swift in Sources */,
 				71AD0355211D088A00D5B536 /* DateInterval+Contains.swift in Sources */,
 				71E2163721279D8600FBD147 /* UserDefaults+Codable.swift in Sources */,
+				C4D019D621F2A5420065E8C0 /* CGImage+Thumbnail.swift in Sources */,
 				711272A32108180F006C550E /* Date+Count.swift in Sources */,
 				71DEFCCE2109544A000A03C9 /* Date+Operator.swift in Sources */,
 				7189E90D218810A30057EB83 /* String+MemoryAddress.swift in Sources */,
@@ -1646,6 +1657,7 @@
 				716CF09A20D47AC00040BF9B /* DictionaryOperationTests.swift in Sources */,
 				7153D150211BC23800C0A1C7 /* DateIntervalSplitTests.swift in Sources */,
 				71D7F6AD20DF700100525259 /* DictionaryHasTests.swift in Sources */,
+				C4D019F921F2AC110065E8C0 /* CGImageThumbnailTests.swift in Sources */,
 				716BF0EC215865BF00AE2BBB /* ArrayAverageTests.swift in Sources */,
 				710AF480216992D000A2813E /* SetOperationTests.swift in Sources */,
 				71CC5AC720CB4E6600C4D564 /* StringTruncateTests.swift in Sources */,
