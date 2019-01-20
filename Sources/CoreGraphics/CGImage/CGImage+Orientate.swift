@@ -51,7 +51,7 @@ public extension CGImage {
             isWidthHeightSwapped = true
             isMirrored = true
         }
-        let angle = degreesToRotate * CGFloat.pi / 180
+        let radians = CGFloat.radiansFromDegrees(degreesToRotate)
         var newWidth = CGFloat(width)
         var newHeight = CGFloat(height)
         if isWidthHeightSwapped {
@@ -65,9 +65,9 @@ public extension CGImage {
         context.translateBy(x: newWidth / 2.0, y: newHeight / 2.0)
         if isMirrored {
             context.scaleBy(x: -1.0, y: 1.0)
-            context.rotate(by: angle)
+            context.rotate(by: radians)
         } else {
-            context.rotate(by: -angle)
+            context.rotate(by: -radians)
         }
         if isWidthHeightSwapped {
             context.translateBy(x: -newHeight / 2.0, y: -newWidth / 2.0)
