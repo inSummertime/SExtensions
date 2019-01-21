@@ -244,6 +244,8 @@
 		C45485E421BCCF1A00E7F47A /* Dangerfile in Resources */ = {isa = PBXBuildFile; fileRef = C45485E221BCCF1A00E7F47A /* Dangerfile */; };
 		C45A479A21DFA6E700637655 /* CALayer+PDFData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A479921DFA6E700637655 /* CALayer+PDFData.swift */; };
 		C45A479C21DFA72200637655 /* CALayerPDFDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A479B21DFA72200637655 /* CALayerPDFDataTests.swift */; };
+		C45AA3D321F3FBEF006C9614 /* CGImage+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45AA3D221F3FBEF006C9614 /* CGImage+Rotate.swift */; };
+		C45AA3D521F3FEE1006C9614 /* CGImageRotateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */; };
 		C46E626721DB145D00842639 /* CALayer+Rhombus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E626621DB145D00842639 /* CALayer+Rhombus.swift */; };
 		C48F8E6421E08C7400E4A7E2 /* CALayer+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F8E6321E08C7400E4A7E2 /* CALayer+Shake.swift */; };
 		C498739F21DC52330004267F /* CALayer+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498739E21DC52330004267F /* CALayer+UIImage.swift */; };
@@ -514,6 +516,8 @@
 		C45485E221BCCF1A00E7F47A /* Dangerfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 		C45A479921DFA6E700637655 /* CALayer+PDFData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+PDFData.swift"; sourceTree = "<group>"; };
 		C45A479B21DFA72200637655 /* CALayerPDFDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerPDFDataTests.swift; sourceTree = "<group>"; };
+		C45AA3D221F3FBEF006C9614 /* CGImage+Rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Rotate.swift"; sourceTree = "<group>"; };
+		C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageRotateTests.swift; sourceTree = "<group>"; };
 		C46E626621DB145D00842639 /* CALayer+Rhombus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Rhombus.swift"; sourceTree = "<group>"; };
 		C48F8E6321E08C7400E4A7E2 /* CALayer+Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Shake.swift"; sourceTree = "<group>"; };
 		C498739E21DC52330004267F /* CALayer+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+UIImage.swift"; sourceTree = "<group>"; };
@@ -935,6 +939,7 @@
 				71D67ECF214873D50004BB79 /* CGRectTransformTests.swift */,
 				C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */,
 				C4D019F821F2AC110065E8C0 /* CGImageThumbnailTests.swift */,
+				C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -1280,6 +1285,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */,
+				C45AA3D221F3FBEF006C9614 /* CGImage+Rotate.swift */,
 				C4D019D521F2A5420065E8C0 /* CGImage+Thumbnail.swift */,
 			);
 			path = CGImage;
@@ -1565,6 +1571,7 @@
 				719C8C2A2144B49A00F3522D /* CGPoint+Operator.swift in Sources */,
 				7107D8962151B91E0064F8FE /* Array+Count.swift in Sources */,
 				71DB6F8421292E070014ACD0 /* URL+QueryParameter.swift in Sources */,
+				C45AA3D321F3FBEF006C9614 /* CGImage+Rotate.swift in Sources */,
 				C4F8A3E421CB3CBE005C33B6 /* CATransaction+PerformWithoutAnimation.swift in Sources */,
 				71A2A397218BCDFC00F55454 /* CALayer+RemoveAllSublayers.swift in Sources */,
 				718D2B47210FEC15002649BE /* Date+Comparison.swift in Sources */,
@@ -1594,6 +1601,7 @@
 			files = (
 				C4ABF1C421C33B8700C0A5BA /* CALayerCornerTests.swift in Sources */,
 				71479E7D20C7494700418144 /* StringAffixTests.swift in Sources */,
+				C45AA3D521F3FEE1006C9614 /* CGImageRotateTests.swift in Sources */,
 				710DAF3521531BC80098C387 /* ArrayAppendTests.swift in Sources */,
 				71585AE02150801300ACD6A8 /* ArraySumTests.swift in Sources */,
 				715F943520D3E9EC001C785F /* DictionaryOperatorTests.swift in Sources */,
