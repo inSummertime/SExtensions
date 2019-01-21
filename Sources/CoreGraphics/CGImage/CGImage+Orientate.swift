@@ -74,7 +74,7 @@ public extension CGImage {
         } else {
             context.translateBy(x: -newWidth / 2.0, y: -newHeight / 2.0)
         }
-        context.draw(self, in: CGRect(x: 0, y: 0, width: self.width, height: self.height))
+        context.draw(self, in: CGRect(x: 0, y: 0, width: width, height: height))
         return context.makeImage()
     }
 }
