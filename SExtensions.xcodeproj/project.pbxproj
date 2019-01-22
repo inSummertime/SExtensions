@@ -238,6 +238,8 @@
 		C4375F9A21C8BB95009B3243 /* CALayer+FrontAndBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4375F9921C8BB95009B3243 /* CALayer+FrontAndBack.swift */; };
 		C4375F9C21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4375F9B21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift */; };
 		C4375F9E21C8C4A4009B3243 /* CALayerShadowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4375F9D21C8C4A4009B3243 /* CALayerShadowTests.swift */; };
+		C439BC4321F6AA74005F0A74 /* CGImage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = C439BC4221F6AA74005F0A74 /* CGImage+Scale.swift */; };
+		C439BC4521F6AB9C005F0A74 /* CGImageScaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C439BC4421F6AB9C005F0A74 /* CGImageScaleTests.swift */; };
 		C43F968C21ECC974004D1D21 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = C43F968B21ECC974004D1D21 /* Gemfile */; };
 		C442B42C21C7DF8E00EB56FF /* CALayer+TriangleCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442B42B21C7DF8E00EB56FF /* CALayer+TriangleCorner.swift */; };
 		C442B42E21C7E34500EB56FF /* CALayerTriangleCornerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442B42D21C7E34500EB56FF /* CALayerTriangleCornerTests.swift */; };
@@ -510,6 +512,8 @@
 		C4375F9921C8BB95009B3243 /* CALayer+FrontAndBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+FrontAndBack.swift"; sourceTree = "<group>"; };
 		C4375F9B21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerFrontAndBackTests.swift; sourceTree = "<group>"; };
 		C4375F9D21C8C4A4009B3243 /* CALayerShadowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerShadowTests.swift; sourceTree = "<group>"; };
+		C439BC4221F6AA74005F0A74 /* CGImage+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Scale.swift"; sourceTree = "<group>"; };
+		C439BC4421F6AB9C005F0A74 /* CGImageScaleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageScaleTests.swift; sourceTree = "<group>"; };
 		C43F968B21ECC974004D1D21 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		C442B42B21C7DF8E00EB56FF /* CALayer+TriangleCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+TriangleCorner.swift"; sourceTree = "<group>"; };
 		C442B42D21C7E34500EB56FF /* CALayerTriangleCornerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerTriangleCornerTests.swift; sourceTree = "<group>"; };
@@ -940,6 +944,7 @@
 				C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */,
 				C4D019F821F2AC110065E8C0 /* CGImageThumbnailTests.swift */,
 				C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */,
+				C439BC4421F6AB9C005F0A74 /* CGImageScaleTests.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -1286,6 +1291,7 @@
 			children = (
 				C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */,
 				C45AA3D221F3FBEF006C9614 /* CGImage+Rotate.swift */,
+				C439BC4221F6AA74005F0A74 /* CGImage+Scale.swift */,
 				C4D019D521F2A5420065E8C0 /* CGImage+Thumbnail.swift */,
 			);
 			path = CGImage;
@@ -1348,6 +1354,7 @@
 				71697E1C20B91CDB005C58EC /* Headers */,
 				71697E1D20B91CDB005C58EC /* Resources */,
 				C452907121B778EB0021EC1C /* ShellScript */,
+				C439BC4621F6B339005F0A74 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1441,6 +1448,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		C439BC4621F6B339005F0A74 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat .\nfi\n";
+		};
 		C452907121B778EB0021EC1C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1575,6 +1599,7 @@
 				C4F8A3E421CB3CBE005C33B6 /* CATransaction+PerformWithoutAnimation.swift in Sources */,
 				71A2A397218BCDFC00F55454 /* CALayer+RemoveAllSublayers.swift in Sources */,
 				718D2B47210FEC15002649BE /* Date+Comparison.swift in Sources */,
+				C439BC4321F6AA74005F0A74 /* CGImage+Scale.swift in Sources */,
 				71F5D61421659B09000032B1 /* Set+Operator.swift in Sources */,
 				71ADEDF4213150EF0075C0A8 /* URLRequest+Init.swift in Sources */,
 				71AB823E20C61A7400EC2A24 /* String+Alphanumeric.swift in Sources */,
@@ -1673,6 +1698,7 @@
 				71F431F5212CDDE1005F67E3 /* URLIsFromDomainTests.swift in Sources */,
 				714B021820F5E141007DD87B /* BoolIntValueTests.swift in Sources */,
 				C408790021D0B33100DE07FD /* CALayerTransparentCircleTests.swift in Sources */,
+				C439BC4521F6AB9C005F0A74 /* CGImageScaleTests.swift in Sources */,
 				71F367EA20CEA2C800C01A74 /* NSMutableAttributedStringFormatTests.swift in Sources */,
 				716CF09A20D47AC00040BF9B /* DictionaryOperationTests.swift in Sources */,
 				7153D150211BC23800C0A1C7 /* DateIntervalSplitTests.swift in Sources */,
