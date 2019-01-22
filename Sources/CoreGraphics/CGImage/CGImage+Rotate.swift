@@ -9,7 +9,7 @@
 import CoreGraphics
 
 public extension CGImage {
-    
+
     /// Rotates a CGImage.
     ///
     /// - Parameter degrees: The degrees to rotate. Positive values rotate counterclockwise and negative values rotate clockwise.

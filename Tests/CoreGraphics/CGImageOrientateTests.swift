@@ -10,10 +10,10 @@
 import XCTest
 
 final class CGImageOrientateTests: XCTestCase {
-    
+
     var cgImage: CGImage?
     var scale: CGFloat?
-    
+
     override func setUp() {
         let size = CGSize(width: 32, height: 64)
         let view = UIView(frame: CGRect(origin: .zero, size: size))
@@ -25,7 +25,7 @@ final class CGImageOrientateTests: XCTestCase {
         cgImage = context.makeImage()
         scale = UIGraphicsGetImageFromCurrentImageContext()?.scale
     }
-    
+
     override func tearDown() {
         UIGraphicsEndImageContext()
     }
@@ -45,7 +45,7 @@ final class CGImageOrientateTests: XCTestCase {
         UIGraphicsEndImageContext()
         XCTAssertEqual(UIImagePNGRepresentation(newImage), UIImagePNGRepresentation(anotherImage))
     }
-    
+
     func testOrientateUpMirrored() {
         guard let newCGImage = cgImage?.orientate(.upMirrored) else { return }
         guard let scale = scale else { return }
@@ -61,8 +61,7 @@ final class CGImageOrientateTests: XCTestCase {
         UIGraphicsEndImageContext()
         XCTAssertEqual(UIImagePNGRepresentation(newImage), UIImagePNGRepresentation(anotherImage))
     }
-    
-    
+
     func testOrientateRight() {
         guard let newCGImage = cgImage?.orientate(.right) else { return }
         guard let scale = scale else { return }
@@ -78,7 +77,7 @@ final class CGImageOrientateTests: XCTestCase {
         UIGraphicsEndImageContext()
         XCTAssertEqual(UIImagePNGRepresentation(newImage), UIImagePNGRepresentation(anotherImage))
     }
-    
+
     func testOrientateRightMirrored() {
         guard let newCGImage = cgImage?.orientate(.rightMirrored) else { return }
         guard let scale = scale else { return }
@@ -94,7 +93,7 @@ final class CGImageOrientateTests: XCTestCase {
         UIGraphicsEndImageContext()
         XCTAssertEqual(UIImagePNGRepresentation(newImage), UIImagePNGRepresentation(anotherImage))
     }
-    
+
     func testOrientateDown() {
         guard let newCGImage = cgImage?.orientate(.down) else { return }
         guard let scale = scale else { return }
@@ -110,7 +109,7 @@ final class CGImageOrientateTests: XCTestCase {
         UIGraphicsEndImageContext()
         XCTAssertEqual(UIImagePNGRepresentation(newImage), UIImagePNGRepresentation(anotherImage))
     }
-    
+
     func testOrientateDownMirrored() {
         guard let newCGImage = cgImage?.orientate(.downMirrored) else { return }
         guard let scale = scale else { return }
@@ -126,7 +125,7 @@ final class CGImageOrientateTests: XCTestCase {
         UIGraphicsEndImageContext()
         XCTAssertEqual(UIImagePNGRepresentation(newImage), UIImagePNGRepresentation(anotherImage))
     }
-    
+
     func testOrientateLeft() {
         guard let newCGImage = cgImage?.orientate(.left) else { return }
         guard let scale = scale else { return }
@@ -142,7 +141,7 @@ final class CGImageOrientateTests: XCTestCase {
         UIGraphicsEndImageContext()
         XCTAssertEqual(UIImagePNGRepresentation(newImage), UIImagePNGRepresentation(anotherImage))
     }
-    
+
     func testOrientateLeftMirrored() {
         guard let newCGImage = cgImage?.orientate(.leftMirrored) else { return }
         guard let scale = scale else { return }

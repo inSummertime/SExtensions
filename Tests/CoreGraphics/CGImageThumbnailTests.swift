@@ -21,5 +21,4 @@ final class CGImageThumbnailTests: XCTestCase {
         XCTAssertEqual(cgImage.width, 22)
         XCTAssertEqual(cgImage.height, 26)
     }
-
 }

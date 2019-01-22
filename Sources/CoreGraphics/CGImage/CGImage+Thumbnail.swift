@@ -10,7 +10,7 @@ import CoreGraphics
 import ImageIO
 
 public extension CGImage {
-    
+
     /// Return a thumbnail CGImage reading from `url' with a given size via CGImageSource.
     ///
     ///     let bundle = Bundle(for: type(of: self))

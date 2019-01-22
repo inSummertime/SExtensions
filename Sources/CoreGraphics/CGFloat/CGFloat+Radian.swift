@@ -9,7 +9,7 @@
 import CoreGraphics
 
 public extension CGFloat {
-    
+
     /// Returns radians from degrees.
     ///
     /// - Parameter degrees: Degrees.
@@ -17,7 +17,7 @@ public extension CGFloat {
     static func radiansFromDegrees(_ degrees: CGFloat) -> CGFloat {
         return degrees * CGFloat.pi / 180
     }
-    
+
     /// Returns degrees from radians.
     ///
     /// - Parameter radians: Radians.

@@ -9,7 +9,7 @@
 import CoreGraphics
 
 public extension CGImage {
-    
+
     /// Orientates a CGImage.
     ///
     /// - Parameter orientation: A CGImagePropertyOrientation value.
