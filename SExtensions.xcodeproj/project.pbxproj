@@ -936,15 +936,10 @@
 		719C8C2E2144BE2500F3522D /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
-				C4D310D621EAE55400DD6CD6 /* CGContextDrawLineTests.swift */,
-				719C8C2C2144BE1A00F3522D /* CGPointOperatorTests.swift */,
-				711CD5472145E146002F26E4 /* CGRectUpdateTests.swift */,
-				7146A8792147303C005C1814 /* CGRectCenterTests.swift */,
-				71D67ECF214873D50004BB79 /* CGRectTransformTests.swift */,
-				C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */,
-				C4D019F821F2AC110065E8C0 /* CGImageThumbnailTests.swift */,
-				C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */,
-				C439BC4421F6AB9C005F0A74 /* CGImageScaleTests.swift */,
+				C4194C3A21F85B2B009F2DD7 /* CGContext */,
+				C4194C3D21F85B4F009F2DD7 /* CGImage */,
+				C4194C3B21F85B38009F2DD7 /* CGPoint */,
+				C4194C3C21F85B44009F2DD7 /* CGRect */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -1284,6 +1279,43 @@
 				71585ADF2150801300ACD6A8 /* ArraySumTests.swift */,
 			);
 			path = Array;
+			sourceTree = "<group>";
+		};
+		C4194C3A21F85B2B009F2DD7 /* CGContext */ = {
+			isa = PBXGroup;
+			children = (
+				C4D310D621EAE55400DD6CD6 /* CGContextDrawLineTests.swift */,
+			);
+			path = CGContext;
+			sourceTree = "<group>";
+		};
+		C4194C3B21F85B38009F2DD7 /* CGPoint */ = {
+			isa = PBXGroup;
+			children = (
+				719C8C2C2144BE1A00F3522D /* CGPointOperatorTests.swift */,
+			);
+			path = CGPoint;
+			sourceTree = "<group>";
+		};
+		C4194C3C21F85B44009F2DD7 /* CGRect */ = {
+			isa = PBXGroup;
+			children = (
+				711CD5472145E146002F26E4 /* CGRectUpdateTests.swift */,
+				7146A8792147303C005C1814 /* CGRectCenterTests.swift */,
+				71D67ECF214873D50004BB79 /* CGRectTransformTests.swift */,
+			);
+			path = CGRect;
+			sourceTree = "<group>";
+		};
+		C4194C3D21F85B4F009F2DD7 /* CGImage */ = {
+			isa = PBXGroup;
+			children = (
+				C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */,
+				C4D019F821F2AC110065E8C0 /* CGImageThumbnailTests.swift */,
+				C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */,
+				C439BC4421F6AB9C005F0A74 /* CGImageScaleTests.swift */,
+			);
+			path = CGImage;
 			sourceTree = "<group>";
 		};
 		C45BF1E421F213D60053B61E /* CGImage */ = {
