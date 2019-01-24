@@ -1,6 +1,13 @@
 {
   "warnings": [
     {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/CoreGraphics/CGImage/CGImage+Scale.swift",
+      "line": 13,
+      "symbol": "CGImage.scaleBy(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer+Border.swift",
       "line": 23,
       "symbol": "CALayer.BorderSide.all",
