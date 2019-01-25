@@ -103,7 +103,7 @@ final class CGImageColorTests: XCTestCase {
             return
         }
         // Test on the @2x devices
-        if UIScreen.main.scale == 2 { return }
+        guard UIScreen.main.scale == 2 else { return }
 
         XCTAssertEqual(cgImage.width, 4)
         XCTAssertEqual(cgImage.height, 4)
