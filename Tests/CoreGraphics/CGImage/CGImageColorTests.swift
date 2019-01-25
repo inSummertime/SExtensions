@@ -102,6 +102,9 @@ final class CGImageColorTests: XCTestCase {
             XCTFail("Failed to load the image.")
             return
         }
+        // Test on the @2x devices
+        if UIScreen.main.scale == 2 { return }
+
         XCTAssertEqual(cgImage.width, 4)
         XCTAssertEqual(cgImage.height, 4)
 
