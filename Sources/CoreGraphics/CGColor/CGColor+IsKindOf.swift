@@ -23,19 +23,13 @@ public extension CGColor {
     /// - Returns: Returns `true` when the component values match, otherwise returns `false`.
     func isKind(of aColor: CGColor, maximumFractionDigits: Int) -> Bool {
         guard maximumFractionDigits >= 0 else { return false }
-        // guard let space = colorSpace else { return false }
-
         guard let converted = converted(to: CGColorSpaceCreateDeviceRGB(), intent: .defaultIntent, options: nil) else { return false }
         guard let convertedAColor = aColor.converted(to: CGColorSpaceCreateDeviceRGB(), intent: .defaultIntent, options: nil) else { return false }
         for index in 0 ..< converted.numberOfComponents {
-            if let component = converted.components?[index] {
-                if let component2 = convertedAColor.components?[index] {
-                    if Double(component).round(to: maximumFractionDigits) != Double(component2).round(to: maximumFractionDigits) {
-                        return false
-                    }
-                } else {
-                    return false
-                }
+            if let component = converted.components?[index],
+                let component2 = convertedAColor.components?[index],
+                Double(component).round(to: maximumFractionDigits) != Double(component2).round(to: maximumFractionDigits) {
+                return false
             }
         }
         return true
