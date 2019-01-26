@@ -227,10 +227,80 @@
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So10CGColorRefa11SExtensionsE6isKind2of21maximumFractionDigitsSbAB_SitF"></a>
+                    <a name="//apple_ref/swift/Method/isKind(of:maximumFractionDigits:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So10CGColorRefa11SExtensionsE6isKind2of21maximumFractionDigitsSbAB_SitF">isKind(of:maximumFractionDigits:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns true if self has the same component values as another CGColor with a given maximum fraction digits for the comparison.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">white</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="p">(</span><span class="nv">red</span><span class="p">:</span> <span class="mf">0.994</span><span class="p">,</span> <span class="nv">green</span><span class="p">:</span> <span class="mf">0.994</span><span class="p">,</span> <span class="nv">blue</span><span class="p">:</span> <span class="mf">0.994</span><span class="p">,</span> <span class="nv">alpha</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">cgColor</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">white</span><span class="o">.</span><span class="nf">isKind</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">white</span><span class="o">.</span><span class="n">cgColor</span><span class="p">,</span> <span class="nv">maximumFractionDigits</span><span class="p">:</span> <span class="mi">1</span><span class="p">))</span>
+<span class="c1">// Prints "true"</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isKind</span><span class="p">(</span><span class="n">of</span> <span class="nv">aColor</span><span class="p">:</span> <span class="kt">CGColor</span><span class="p">,</span> <span class="nv">maximumFractionDigits</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>aColor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Another CGColor.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maximumFractionDigits</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum fraction digits for the comparison.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Returns <code>true</code> when the component values match, otherwise returns <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2019-01-25)</p>
+          <p>&copy; 2019 <a class="link" href="https://github.com/inSummertime/SExtensions" target="_blank" rel="external">inSummertime</a>. All rights reserved. (Last updated: 2019-01-26)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
