@@ -11,16 +11,15 @@ import UIKit
 
 public extension CGImage {
 
-    /// Returns a CGImage with given size, colors and whether the gradient is horizontal.
+    /// Returns a CGImage with given colors, whether the gradient is horizontal and size.
     ///
     /// - Parameters:
-    ///   - size: Image size.
     ///   - colors: The array of UIColor defining the color of each gradient stop.
     ///   - isHorizontal: whether is horizontal
+    ///   - size: Image size.
     /// - Returns: Returns a CGImage if succeeds, otherwise returns nil.
-    class func createWithGradient(size: CGSize, colors: [UIColor], isHorizontal: Bool) -> CGImage? {
+    class func createWithGradient(colors: [UIColor], isHorizontal: Bool, size: CGSize) -> CGImage? {
         let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         gradientLayer.colors = colors.map({ (color) -> CGColor in
             color.cgColor
         })
@@ -30,6 +29,7 @@ public extension CGImage {
         } else {
             gradientLayer.endPoint = CGPoint(x: 0, y: 1)
         }
+        gradientLayer.frame = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         UIGraphicsBeginImageContext(size)
         guard let context = UIGraphicsGetCurrentContext() else { return nil }
         gradientLayer.render(in: context)

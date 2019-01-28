@@ -12,7 +12,7 @@ import XCTest
 final class CGImageGradientTests: XCTestCase {
 
     func testCreateWithGradientHorizontal() {
-        guard let cgImage = CGImage.createWithGradient(size: CGSize(width: 64, height: 32), colors: [.white, .black], isHorizontal: true) else {
+        guard let cgImage = CGImage.createWithGradient(colors: [.white, .black], isHorizontal: true, size: CGSize(width: 64, height: 32)) else {
             XCTFail("Failed to create the image.")
             return
         }
@@ -25,7 +25,7 @@ final class CGImageGradientTests: XCTestCase {
     }
 
     func testCreateWithGradientVertical() {
-        guard let cgImage = CGImage.createWithGradient(size: CGSize(width: 64, height: 32), colors: [.white, .black], isHorizontal: false) else {
+        guard let cgImage = CGImage.createWithGradient(colors: [.white, .black], isHorizontal: false, size: CGSize(width: 64, height: 32)) else {
             XCTFail("Failed to create the image.")
             return
         }
