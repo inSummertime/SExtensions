@@ -234,6 +234,8 @@
 		C40878FE21D0B1B900DE07FD /* CALayer+TransparentCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40878FD21D0B1B900DE07FD /* CALayer+TransparentCircle.swift */; };
 		C408790021D0B33100DE07FD /* CALayerTransparentCircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40878FF21D0B33100DE07FD /* CALayerTransparentCircleTests.swift */; };
 		C408D30C21C11B4800736055 /* BotPreIntegration.sh in Resources */ = {isa = PBXBuildFile; fileRef = C408D30B21C11B4800736055 /* BotPreIntegration.sh */; };
+		C419A0BE21FEAC9B0059C4CD /* CGImage+CreateWithColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C419A0BD21FEAC9B0059C4CD /* CGImage+CreateWithColor.swift */; };
+		C419A0C021FEAD5D0059C4CD /* CGImageCreateWithColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C419A0BF21FEAD5D0059C4CD /* CGImageCreateWithColorTests.swift */; };
 		C42CFA5221C251EC004AC65A /* CALayer+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42CFA5121C251EC004AC65A /* CALayer+Corner.swift */; };
 		C4375F9A21C8BB95009B3243 /* CALayer+FrontAndBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4375F9921C8BB95009B3243 /* CALayer+FrontAndBack.swift */; };
 		C4375F9C21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4375F9B21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift */; };
@@ -248,8 +250,8 @@
 		C45A479C21DFA72200637655 /* CALayerPDFDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45A479B21DFA72200637655 /* CALayerPDFDataTests.swift */; };
 		C45AA3D321F3FBEF006C9614 /* CGImage+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45AA3D221F3FBEF006C9614 /* CGImage+Rotate.swift */; };
 		C45AA3D521F3FEE1006C9614 /* CGImageRotateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */; };
-		C45D2DCE21FD38DB00955181 /* CGImage+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D2DCD21FD38DB00955181 /* CGImage+Gradient.swift */; };
-		C45D2DD021FD391000955181 /* CGImageGradientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D2DCF21FD391000955181 /* CGImageGradientTests.swift */; };
+		C45D2DCE21FD38DB00955181 /* CGImage+CreateWithGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D2DCD21FD38DB00955181 /* CGImage+CreateWithGradient.swift */; };
+		C45D2DD021FD391000955181 /* CGImageCreateWithGradientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D2DCF21FD391000955181 /* CGImageCreateWithGradientTests.swift */; };
 		C46E626721DB145D00842639 /* CALayer+Rhombus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E626621DB145D00842639 /* CALayer+Rhombus.swift */; };
 		C47B613C21F9B54100B1CA69 /* CGColor+IsEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B613B21F9B54100B1CA69 /* CGColor+IsEqual.swift */; };
 		C47B613F21F9B5B500B1CA69 /* CGColorIsEqualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B613E21F9B5B500B1CA69 /* CGColorIsEqualTests.swift */; };
@@ -518,6 +520,8 @@
 		C40878FD21D0B1B900DE07FD /* CALayer+TransparentCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+TransparentCircle.swift"; sourceTree = "<group>"; };
 		C40878FF21D0B33100DE07FD /* CALayerTransparentCircleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerTransparentCircleTests.swift; sourceTree = "<group>"; };
 		C408D30B21C11B4800736055 /* BotPreIntegration.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BotPreIntegration.sh; sourceTree = "<group>"; };
+		C419A0BD21FEAC9B0059C4CD /* CGImage+CreateWithColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+CreateWithColor.swift"; sourceTree = "<group>"; };
+		C419A0BF21FEAD5D0059C4CD /* CGImageCreateWithColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageCreateWithColorTests.swift; sourceTree = "<group>"; };
 		C42CFA5121C251EC004AC65A /* CALayer+Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Corner.swift"; sourceTree = "<group>"; };
 		C4375F9921C8BB95009B3243 /* CALayer+FrontAndBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+FrontAndBack.swift"; sourceTree = "<group>"; };
 		C4375F9B21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerFrontAndBackTests.swift; sourceTree = "<group>"; };
@@ -532,8 +536,8 @@
 		C45A479B21DFA72200637655 /* CALayerPDFDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerPDFDataTests.swift; sourceTree = "<group>"; };
 		C45AA3D221F3FBEF006C9614 /* CGImage+Rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Rotate.swift"; sourceTree = "<group>"; };
 		C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageRotateTests.swift; sourceTree = "<group>"; };
-		C45D2DCD21FD38DB00955181 /* CGImage+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Gradient.swift"; sourceTree = "<group>"; };
-		C45D2DCF21FD391000955181 /* CGImageGradientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageGradientTests.swift; sourceTree = "<group>"; };
+		C45D2DCD21FD38DB00955181 /* CGImage+CreateWithGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+CreateWithGradient.swift"; sourceTree = "<group>"; };
+		C45D2DCF21FD391000955181 /* CGImageCreateWithGradientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageCreateWithGradientTests.swift; sourceTree = "<group>"; };
 		C46E626621DB145D00842639 /* CALayer+Rhombus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Rhombus.swift"; sourceTree = "<group>"; };
 		C47B613B21F9B54100B1CA69 /* CGColor+IsEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGColor+IsEqual.swift"; sourceTree = "<group>"; };
 		C47B613E21F9B5B500B1CA69 /* CGColorIsEqualTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColorIsEqualTests.swift; sourceTree = "<group>"; };
@@ -1335,7 +1339,8 @@
 			isa = PBXGroup;
 			children = (
 				C4BA9B9121FA84900040F7D4 /* CGImageColorAtPointTests.swift */,
-				C45D2DCF21FD391000955181 /* CGImageGradientTests.swift */,
+				C419A0BF21FEAD5D0059C4CD /* CGImageCreateWithColorTests.swift */,
+				C45D2DCF21FD391000955181 /* CGImageCreateWithGradientTests.swift */,
 				C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */,
 				C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */,
 				C439BC4421F6AB9C005F0A74 /* CGImageScaleTests.swift */,
@@ -1348,7 +1353,8 @@
 			isa = PBXGroup;
 			children = (
 				C4BA9B8F21FA845B0040F7D4 /* CGImage+ColorAtPoint.swift */,
-				C45D2DCD21FD38DB00955181 /* CGImage+Gradient.swift */,
+				C45D2DCD21FD38DB00955181 /* CGImage+CreateWithGradient.swift */,
+				C419A0BD21FEAC9B0059C4CD /* CGImage+CreateWithColor.swift */,
 				C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */,
 				C45AA3D221F3FBEF006C9614 /* CGImage+Rotate.swift */,
 				C439BC4221F6AA74005F0A74 /* CGImage+Scale.swift */,
@@ -1656,7 +1662,7 @@
 				71B5941D20BB71040073EE20 /* String+Bool.swift in Sources */,
 				712BB74A20CF64A300F01034 /* String+Dictionary.swift in Sources */,
 				71606AFA21439ACB00D56245 /* DispatchSource+Timer.swift in Sources */,
-				C45D2DCE21FD38DB00955181 /* CGImage+Gradient.swift in Sources */,
+				C45D2DCE21FD38DB00955181 /* CGImage+CreateWithGradient.swift in Sources */,
 				7146A87C21473595005C1814 /* CGRect+Transform.swift in Sources */,
 				7128479E214F16EB00D8CBC8 /* NSAttributedString+InitHTMLString.swift in Sources */,
 				71AAE943216D72D000C7DD1D /* Set+Remove.swift in Sources */,
@@ -1683,6 +1689,7 @@
 				C47B613C21F9B54100B1CA69 /* CGColor+IsEqual.swift in Sources */,
 				71A2A397218BCDFC00F55454 /* CALayer+RemoveAllSublayers.swift in Sources */,
 				718D2B47210FEC15002649BE /* Date+Comparison.swift in Sources */,
+				C419A0BE21FEAC9B0059C4CD /* CGImage+CreateWithColor.swift in Sources */,
 				C439BC4321F6AA74005F0A74 /* CGImage+Scale.swift in Sources */,
 				71F5D61421659B09000032B1 /* Set+Operator.swift in Sources */,
 				71ADEDF4213150EF0075C0A8 /* URLRequest+Init.swift in Sources */,
@@ -1729,6 +1736,7 @@
 				71A4B17F20F432A900F5D044 /* IntBoolTests.swift in Sources */,
 				71E973772124FA8A007533A0 /* UserDefaultsSubscriptTests.swift in Sources */,
 				714EB30120C207D9002ED5DE /* StringDateTests.swift in Sources */,
+				C419A0C021FEAD5D0059C4CD /* CGImageCreateWithColorTests.swift in Sources */,
 				71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */,
 				71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */,
 				712FD316210621E500165D5A /* DateComponentTests.swift in Sources */,
@@ -1777,7 +1785,7 @@
 				71AB2F3920BCBC670060F4CB /* StringCaseTests.swift in Sources */,
 				71A0632C218AB931004D9ABA /* CALayerBorderTests.swift in Sources */,
 				7130091321787C7B00201E07 /* IntReversedTests.swift in Sources */,
-				C45D2DD021FD391000955181 /* CGImageGradientTests.swift in Sources */,
+				C45D2DD021FD391000955181 /* CGImageCreateWithGradientTests.swift in Sources */,
 				718557F4210BEA4300BBFD32 /* DateTruncatedTests.swift in Sources */,
 				71761624215704B700CE8531 /* DecodableInitJSONStringTests.swift in Sources */,
 				71F431F5212CDDE1005F67E3 /* URLIsFromDomainTests.swift in Sources */,
