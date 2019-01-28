@@ -1,5 +1,5 @@
 //
-//  CGImageColorTests.swift
+//  CGImageColorAtPointTests.swift
 //  SExtensionsTests
 //
 //  Created by Ray on 2019/1/25.
@@ -9,7 +9,7 @@
 @testable import SExtensions
 import XCTest
 
-final class CGImageColorTests: XCTestCase {
+final class CGImageColorAtPointTests: XCTestCase {
 
     func testColorRGBA() {
         let bundle = Bundle(for: type(of: self))

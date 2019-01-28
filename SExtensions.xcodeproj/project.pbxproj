@@ -263,8 +263,8 @@
 		C4B11C0C21F1919D00C69617 /* CGImage+Orientate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */; };
 		C4B11C0E21F1939300C69617 /* CGImageOrientateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */; };
 		C4B3D26421D9D47200FD395B /* CALayer+Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */; };
-		C4BA9B9021FA845B0040F7D4 /* CGImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA9B8F21FA845B0040F7D4 /* CGImage+Color.swift */; };
-		C4BA9B9221FA84900040F7D4 /* CGImageColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA9B9121FA84900040F7D4 /* CGImageColorTests.swift */; };
+		C4BA9B9021FA845B0040F7D4 /* CGImage+ColorAtPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA9B8F21FA845B0040F7D4 /* CGImage+ColorAtPoint.swift */; };
+		C4BA9B9221FA84900040F7D4 /* CGImageColorAtPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA9B9121FA84900040F7D4 /* CGImageColorAtPointTests.swift */; };
 		C4BA9B9521FA87710040F7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BA9B9321FA85EA0040F7D4 /* Assets.xcassets */; };
 		C4BA9B9721FAAD670040F7D4 /* iconLab.tif in Resources */ = {isa = PBXBuildFile; fileRef = C4BA9B9621FAAD670040F7D4 /* iconLab.tif */; };
 		C4CBEDB921F3F261003C2C09 /* CGFloat+Radian.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CBEDB821F3F261003C2C09 /* CGFloat+Radian.swift */; };
@@ -547,8 +547,8 @@
 		C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Orientate.swift"; sourceTree = "<group>"; };
 		C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageOrientateTests.swift; sourceTree = "<group>"; };
 		C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Curve.swift"; sourceTree = "<group>"; };
-		C4BA9B8F21FA845B0040F7D4 /* CGImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Color.swift"; sourceTree = "<group>"; };
-		C4BA9B9121FA84900040F7D4 /* CGImageColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageColorTests.swift; sourceTree = "<group>"; };
+		C4BA9B8F21FA845B0040F7D4 /* CGImage+ColorAtPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+ColorAtPoint.swift"; sourceTree = "<group>"; };
+		C4BA9B9121FA84900040F7D4 /* CGImageColorAtPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageColorAtPointTests.swift; sourceTree = "<group>"; };
 		C4BA9B9321FA85EA0040F7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4BA9B9621FAAD670040F7D4 /* iconLab.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = iconLab.tif; sourceTree = "<group>"; };
 		C4CBEDB821F3F261003C2C09 /* CGFloat+Radian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Radian.swift"; sourceTree = "<group>"; };
@@ -1334,7 +1334,7 @@
 		C4194C3D21F85B4F009F2DD7 /* CGImage */ = {
 			isa = PBXGroup;
 			children = (
-				C4BA9B9121FA84900040F7D4 /* CGImageColorTests.swift */,
+				C4BA9B9121FA84900040F7D4 /* CGImageColorAtPointTests.swift */,
 				C45D2DCF21FD391000955181 /* CGImageGradientTests.swift */,
 				C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */,
 				C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */,
@@ -1347,7 +1347,7 @@
 		C45BF1E421F213D60053B61E /* CGImage */ = {
 			isa = PBXGroup;
 			children = (
-				C4BA9B8F21FA845B0040F7D4 /* CGImage+Color.swift */,
+				C4BA9B8F21FA845B0040F7D4 /* CGImage+ColorAtPoint.swift */,
 				C45D2DCD21FD38DB00955181 /* CGImage+Gradient.swift */,
 				C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */,
 				C45AA3D221F3FBEF006C9614 /* CGImage+Rotate.swift */,
@@ -1570,7 +1570,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D9F198214BB3960051B4E4 /* String+Is.swift in Sources */,
-				C4BA9B9021FA845B0040F7D4 /* CGImage+Color.swift in Sources */,
+				C4BA9B9021FA845B0040F7D4 /* CGImage+ColorAtPoint.swift in Sources */,
 				717D0E1320E3A838005E972D /* Array+Operation.swift in Sources */,
 				71C007972134B0FB00DF520A /* Bundle+Info.swift in Sources */,
 				C4CBEDB921F3F261003C2C09 /* CGFloat+Radian.swift in Sources */,
@@ -1794,7 +1794,7 @@
 				71CC5AC720CB4E6600C4D564 /* StringTruncateTests.swift in Sources */,
 				7130148220EB1C3700161E23 /* ArrayIndexTests.swift in Sources */,
 				71AB824020C623AF00EC2A24 /* StringAlphanumericTests.swift in Sources */,
-				C4BA9B9221FA84900040F7D4 /* CGImageColorTests.swift in Sources */,
+				C4BA9B9221FA84900040F7D4 /* CGImageColorAtPointTests.swift in Sources */,
 				C442B42E21C7E34500EB56FF /* CALayerTriangleCornerTests.swift in Sources */,
 				71A8004D20C1642D0029B141 /* StringTrimTests.swift in Sources */,
 				71FAC84920DF87E100D8E1C1 /* ArraySafeSubscriptTests.swift in Sources */,

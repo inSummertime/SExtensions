@@ -1,5 +1,5 @@
 //
-//  CGImage+Color.swift
+//  CGImage+ColorAtPoint.swift
 //  SExtensions
 //
 //  Created by Ray on 2019/1/25.
