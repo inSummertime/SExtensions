@@ -1,5 +1,5 @@
 //
-//  CGImageGradientTests.swift
+//  CGImageCreateWithGradientTests.swift
 //  SExtensionsTests
 //
 //  Created by Ray on 2019/1/27.

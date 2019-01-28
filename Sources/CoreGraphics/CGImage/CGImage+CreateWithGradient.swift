@@ -1,5 +1,5 @@
 //
-//  CGImage+Gradient.swift
+//  CGImage+CreateWithGradient.swift
 //  SExtensions
 //
 //  Created by Ray on 2019/1/27.
