@@ -976,7 +976,7 @@
 			isa = PBXGroup;
 			children = (
 				C4CAFC63220145260002DA4D /* CALayer */,
-				C4F8A3E321CB3CBE005C33B6 /* CATransaction+PerformWithoutAnimation.swift */,
+				C4CAFC64220145530002DA4D /* CATransaction */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -1387,6 +1387,14 @@
 				C48F8E6321E08C7400E4A7E2 /* CALayer+Shake.swift */,
 			);
 			path = CALayer;
+			sourceTree = "<group>";
+		};
+		C4CAFC64220145530002DA4D /* CATransaction */ = {
+			isa = PBXGroup;
+			children = (
+				C4F8A3E321CB3CBE005C33B6 /* CATransaction+PerformWithoutAnimation.swift */,
+			);
+			path = CATransaction;
 			sourceTree = "<group>";
 		};
 		C4CBEDBA21F3F403003C2C09 /* CGFloat */ = {
