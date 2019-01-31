@@ -276,6 +276,8 @@
 		C4D310D521EAE37B00DD6CD6 /* CGContext+DrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D310D421EAE37B00DD6CD6 /* CGContext+DrawLine.swift */; };
 		C4D310D721EAE55400DD6CD6 /* CGContextDrawLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D310D621EAE55400DD6CD6 /* CGContextDrawLineTests.swift */; };
 		C4D58F5D21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D58F5C21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift */; };
+		C4E30DD622029C3C004DB004 /* CGImage+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E30DD522029C3C004DB004 /* CGImage+Corner.swift */; };
+		C4E30DDA2202A0FA004DB004 /* CGImageCornerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E30DD92202A0FA004DB004 /* CGImageCornerTests.swift */; };
 		C4F8A3E421CB3CBE005C33B6 /* CATransaction+PerformWithoutAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F8A3E321CB3CBE005C33B6 /* CATransaction+PerformWithoutAnimation.swift */; };
 /* End PBXBuildFile section */
 
@@ -562,6 +564,8 @@
 		C4D310D421EAE37B00DD6CD6 /* CGContext+DrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGContext+DrawLine.swift"; sourceTree = "<group>"; };
 		C4D310D621EAE55400DD6CD6 /* CGContextDrawLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGContextDrawLineTests.swift; sourceTree = "<group>"; };
 		C4D58F5C21CE149200ACA72D /* CALayer+PauseAndResumeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+PauseAndResumeAnimation.swift"; sourceTree = "<group>"; };
+		C4E30DD522029C3C004DB004 /* CGImage+Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Corner.swift"; sourceTree = "<group>"; };
+		C4E30DD92202A0FA004DB004 /* CGImageCornerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageCornerTests.swift; sourceTree = "<group>"; };
 		C4F8A3E321CB3CBE005C33B6 /* CATransaction+PerformWithoutAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CATransaction+PerformWithoutAnimation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1326,6 +1330,7 @@
 			isa = PBXGroup;
 			children = (
 				C4BA9B9121FA84900040F7D4 /* CGImageColorAtPointTests.swift */,
+				C4E30DD92202A0FA004DB004 /* CGImageCornerTests.swift */,
 				C419A0BF21FEAD5D0059C4CD /* CGImageCreateWithColorTests.swift */,
 				C45D2DCF21FD391000955181 /* CGImageCreateWithGradientTests.swift */,
 				C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */,
@@ -1340,6 +1345,7 @@
 			isa = PBXGroup;
 			children = (
 				C4BA9B8F21FA845B0040F7D4 /* CGImage+ColorAtPoint.swift */,
+				C4E30DD522029C3C004DB004 /* CGImage+Corner.swift */,
 				C45D2DCD21FD38DB00955181 /* CGImage+CreateWithGradient.swift */,
 				C419A0BD21FEAC9B0059C4CD /* CGImage+CreateWithColor.swift */,
 				C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */,
@@ -1715,6 +1721,7 @@
 				716AE42521788FAD0000CBDA /* Int+NumberOfBitOne.swift in Sources */,
 				7130148020EB193200161E23 /* Array+Index.swift in Sources */,
 				7109AC5921873E4D00527AD5 /* NSObject+ClassName.swift in Sources */,
+				C4E30DD622029C3C004DB004 /* CGImage+Corner.swift in Sources */,
 				71982049215FA0AC004DE4A1 /* Optional+IsNilOrEmpty.swift in Sources */,
 				C4375F9A21C8BB95009B3243 /* CALayer+FrontAndBack.swift in Sources */,
 				71479E7B20C7482800418144 /* String+Affix.swift in Sources */,
@@ -1796,6 +1803,7 @@
 				71A2A399218BCE6E00F55454 /* CALayerRemoveAllSublayersTests.swift in Sources */,
 				71DD74F52149DAE8002252A3 /* IntPaddedTests.swift in Sources */,
 				710089272123A8330020C7C5 /* CalendarGregorianTests.swift in Sources */,
+				C4E30DDA2202A0FA004DB004 /* CGImageCornerTests.swift in Sources */,
 				71E216392127A3CE00FBD147 /* UserDefaultsCodableTests.swift in Sources */,
 				71D67ED0214873D50004BB79 /* CGRectTransformTests.swift in Sources */,
 				71AB2F3920BCBC670060F4CB /* StringCaseTests.swift in Sources */,
