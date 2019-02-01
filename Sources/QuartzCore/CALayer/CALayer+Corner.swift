@@ -25,10 +25,10 @@ public extension CALayer {
         return shapeLayer
     }
 
-    /// Makes the corners round.
+    /// Makes the corners be rounded.
     ///
     /// - Parameter radius: a CGFloat value that measures how round the corner is.
-    func beRound(radius: CGFloat? = nil) {
+    func beRounded(radius: CGFloat? = nil) {
         masksToBounds = true
         let cornerRadius = radius ?? min(bounds.size.width, bounds.size.height) / 2.0
         self.cornerRadius = cornerRadius
