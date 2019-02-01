@@ -252,6 +252,8 @@
 		C45AA3D521F3FEE1006C9614 /* CGImageRotateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */; };
 		C45D2DCE21FD38DB00955181 /* CGImage+CreateWithGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D2DCD21FD38DB00955181 /* CGImage+CreateWithGradient.swift */; };
 		C45D2DD021FD391000955181 /* CGImageCreateWithGradientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D2DCF21FD391000955181 /* CGImageCreateWithGradientTests.swift */; };
+		C463D96922041271004028D7 /* CGImage+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463D96822041271004028D7 /* CGImage+Round.swift */; };
+		C463D96B2204157F004028D7 /* CGImageRoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463D96A2204157F004028D7 /* CGImageRoundTests.swift */; };
 		C46E626721DB145D00842639 /* CALayer+Rhombus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E626621DB145D00842639 /* CALayer+Rhombus.swift */; };
 		C47B613C21F9B54100B1CA69 /* CGColor+IsEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B613B21F9B54100B1CA69 /* CGColor+IsEqual.swift */; };
 		C47B613F21F9B5B500B1CA69 /* CGColorIsEqualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B613E21F9B5B500B1CA69 /* CGColorIsEqualTests.swift */; };
@@ -540,6 +542,8 @@
 		C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageRotateTests.swift; sourceTree = "<group>"; };
 		C45D2DCD21FD38DB00955181 /* CGImage+CreateWithGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+CreateWithGradient.swift"; sourceTree = "<group>"; };
 		C45D2DCF21FD391000955181 /* CGImageCreateWithGradientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageCreateWithGradientTests.swift; sourceTree = "<group>"; };
+		C463D96822041271004028D7 /* CGImage+Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Round.swift"; sourceTree = "<group>"; };
+		C463D96A2204157F004028D7 /* CGImageRoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageRoundTests.swift; sourceTree = "<group>"; };
 		C46E626621DB145D00842639 /* CALayer+Rhombus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Rhombus.swift"; sourceTree = "<group>"; };
 		C47B613B21F9B54100B1CA69 /* CGColor+IsEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGColor+IsEqual.swift"; sourceTree = "<group>"; };
 		C47B613E21F9B5B500B1CA69 /* CGColorIsEqualTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColorIsEqualTests.swift; sourceTree = "<group>"; };
@@ -1335,6 +1339,7 @@
 				C45D2DCF21FD391000955181 /* CGImageCreateWithGradientTests.swift */,
 				C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */,
 				C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */,
+				C463D96A2204157F004028D7 /* CGImageRoundTests.swift */,
 				C439BC4421F6AB9C005F0A74 /* CGImageScaleTests.swift */,
 				C4D019F821F2AC110065E8C0 /* CGImageThumbnailTests.swift */,
 			);
@@ -1350,6 +1355,7 @@
 				C419A0BD21FEAC9B0059C4CD /* CGImage+CreateWithColor.swift */,
 				C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */,
 				C45AA3D221F3FBEF006C9614 /* CGImage+Rotate.swift */,
+				C463D96822041271004028D7 /* CGImage+Round.swift */,
 				C439BC4221F6AA74005F0A74 /* CGImage+Scale.swift */,
 				C4D019D521F2A5420065E8C0 /* CGImage+Thumbnail.swift */,
 			);
@@ -1603,6 +1609,7 @@
 				71C007972134B0FB00DF520A /* Bundle+Info.swift in Sources */,
 				C4CBEDB921F3F261003C2C09 /* CGFloat+Radian.swift in Sources */,
 				718DCD6720E86D95000634B2 /* Array+Remove.swift in Sources */,
+				C463D96922041271004028D7 /* CGImage+Round.swift in Sources */,
 				C442B42C21C7DF8E00EB56FF /* CALayer+TriangleCorner.swift in Sources */,
 				71B9121D2120F7B9006F9236 /* TimeZone+Identifier.swift in Sources */,
 				718557F2210BEA0300BBFD32 /* Date+Truncated.swift in Sources */,
@@ -1860,6 +1867,7 @@
 				713C9DC021545DDE00EFF6D5 /* ArrayDuplicateTests.swift in Sources */,
 				7107E82321604A6600B91E69 /* DictionaryContainTests.swift in Sources */,
 				C47B613F21F9B5B500B1CA69 /* CGColorIsEqualTests.swift in Sources */,
+				C463D96B2204157F004028D7 /* CGImageRoundTests.swift in Sources */,
 				71E18CBF212B85ED001BB850 /* URLHostURLTests.swift in Sources */,
 				71BA5BCE21000F4C002CE891 /* DateStartTests.swift in Sources */,
 				711EBCD920FD73FB0061AA57 /* DateOperationTests.swift in Sources */,
