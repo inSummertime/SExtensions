@@ -38,4 +38,17 @@ final class CGImageCornerTests: XCTestCase {
         XCTAssertEqual(newCGImage.width, 66)
         XCTAssertEqual(newCGImage.height, 78)
     }
+
+    func testRounded() {
+        guard let cgImage = CGImage.createWithGradient(colors: [.white, .black], isHorizontal: false, size: CGSize(width: 64, height: 32)) else {
+            XCTFail("Failed to create the image.")
+            return
+        }
+        guard let newCGImage = cgImage.rounded else {
+            XCTFail("Failed to add round corners.")
+            return
+        }
+        XCTAssertEqual(newCGImage.width, 64)
+        XCTAssertEqual(newCGImage.height, 32)
+    }
 }
