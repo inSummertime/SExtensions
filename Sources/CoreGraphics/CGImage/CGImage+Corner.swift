@@ -27,4 +27,11 @@ public extension CGImage {
         context.draw(self, in: rect)
         return context.makeImage()
     }
+
+    /// Returns a new CGImage with round corners, the radius value is the smaller one between the width and the height.
+    ///
+    /// - Returns: a new CGImage.
+    var rounded: CGImage? {
+        return addRoundCorners(radius: CGFloat(min(width, height) / 2))
+    }
 }
