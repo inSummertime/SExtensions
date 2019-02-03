@@ -267,6 +267,8 @@
 		C4B11C0C21F1919D00C69617 /* CGImage+Orientate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */; };
 		C4B11C0E21F1939300C69617 /* CGImageOrientateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */; };
 		C4B3D26421D9D47200FD395B /* CALayer+Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */; };
+		C4B9BA6B2206C67100240050 /* CGImage+Tiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B9BA6A2206C67100240050 /* CGImage+Tiles.swift */; };
+		C4B9BA6D2206CA5400240050 /* CGImageTilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B9BA6C2206CA5400240050 /* CGImageTilesTests.swift */; };
 		C4BA9B9021FA845B0040F7D4 /* CGImage+ColorAtPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA9B8F21FA845B0040F7D4 /* CGImage+ColorAtPoint.swift */; };
 		C4BA9B9221FA84900040F7D4 /* CGImageColorAtPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA9B9121FA84900040F7D4 /* CGImageColorAtPointTests.swift */; };
 		C4BA9B9521FA87710040F7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BA9B9321FA85EA0040F7D4 /* Assets.xcassets */; };
@@ -557,6 +559,8 @@
 		C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Orientate.swift"; sourceTree = "<group>"; };
 		C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageOrientateTests.swift; sourceTree = "<group>"; };
 		C4B3D26321D9D47200FD395B /* CALayer+Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Curve.swift"; sourceTree = "<group>"; };
+		C4B9BA6A2206C67100240050 /* CGImage+Tiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Tiles.swift"; sourceTree = "<group>"; };
+		C4B9BA6C2206CA5400240050 /* CGImageTilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageTilesTests.swift; sourceTree = "<group>"; };
 		C4BA9B8F21FA845B0040F7D4 /* CGImage+ColorAtPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+ColorAtPoint.swift"; sourceTree = "<group>"; };
 		C4BA9B9121FA84900040F7D4 /* CGImageColorAtPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageColorAtPointTests.swift; sourceTree = "<group>"; };
 		C4BA9B9321FA85EA0040F7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1342,6 +1346,7 @@
 				C463D96A2204157F004028D7 /* CGImageRoundTests.swift */,
 				C439BC4421F6AB9C005F0A74 /* CGImageScaleTests.swift */,
 				C4D019F821F2AC110065E8C0 /* CGImageThumbnailTests.swift */,
+				C4B9BA6C2206CA5400240050 /* CGImageTilesTests.swift */,
 			);
 			path = CGImage;
 			sourceTree = "<group>";
@@ -1358,6 +1363,7 @@
 				C463D96822041271004028D7 /* CGImage+Round.swift */,
 				C439BC4221F6AA74005F0A74 /* CGImage+Scale.swift */,
 				C4D019D521F2A5420065E8C0 /* CGImage+Thumbnail.swift */,
+				C4B9BA6A2206C67100240050 /* CGImage+Tiles.swift */,
 			);
 			path = CGImage;
 			sourceTree = "<group>";
@@ -1618,6 +1624,7 @@
 				71CC5AC520CB44C200C4D564 /* String+Truncate.swift in Sources */,
 				71C28FC020BE36BA00EF3654 /* String+Separate.swift in Sources */,
 				71B2D5592140979F00CD00D1 /* Encodable+Dictionary.swift in Sources */,
+				C4B9BA6B2206C67100240050 /* CGImage+Tiles.swift in Sources */,
 				71585ADE21507C1E00ACD6A8 /* Array+Sum.swift in Sources */,
 				712AF13A2117B08D004715A1 /* DateInterval+String.swift in Sources */,
 				71A8004B20C164020029B141 /* String+Trim.swift in Sources */,
@@ -1850,6 +1857,7 @@
 				71B9121F2120FFF6006F9236 /* TimeZoneIdentifierTests.swift in Sources */,
 				712847A0214F1BC200D8CBC8 /* NSAttributedStringInitHTMLStringTests.swift in Sources */,
 				71D9F19A214BB3B90051B4E4 /* StringIsTests.swift in Sources */,
+				C4B9BA6D2206CA5400240050 /* CGImageTilesTests.swift in Sources */,
 				716AE427217890730000CBDA /* IntNumberOfBitOneTests.swift in Sources */,
 				718EDF44216418E2004CA361 /* OptionalOperatorTests.swift in Sources */,
 				C4375F9C21C8BCE2009B3243 /* CALayerFrontAndBackTests.swift in Sources */,
