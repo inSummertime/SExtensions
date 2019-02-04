@@ -257,6 +257,8 @@
 		C46E626721DB145D00842639 /* CALayer+Rhombus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E626621DB145D00842639 /* CALayer+Rhombus.swift */; };
 		C47B613C21F9B54100B1CA69 /* CGColor+IsEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B613B21F9B54100B1CA69 /* CGColor+IsEqual.swift */; };
 		C47B613F21F9B5B500B1CA69 /* CGColorIsEqualTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47B613E21F9B5B500B1CA69 /* CGColorIsEqualTests.swift */; };
+		C47BF0932207E153001E3317 /* CGImage+CroppingAtTheCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47BF0922207E153001E3317 /* CGImage+CroppingAtTheCenter.swift */; };
+		C47BF0952207E2C2001E3317 /* CGImageCroppingAtTheCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47BF0942207E2C2001E3317 /* CGImageCroppingAtTheCenterTests.swift */; };
 		C48F8E6421E08C7400E4A7E2 /* CALayer+Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F8E6321E08C7400E4A7E2 /* CALayer+Shake.swift */; };
 		C498739F21DC52330004267F /* CALayer+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C498739E21DC52330004267F /* CALayer+UIImage.swift */; };
 		C49873A121DC54E10004267F /* CALayerUIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49873A021DC54E10004267F /* CALayerUIImageTests.swift */; };
@@ -549,6 +551,8 @@
 		C46E626621DB145D00842639 /* CALayer+Rhombus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Rhombus.swift"; sourceTree = "<group>"; };
 		C47B613B21F9B54100B1CA69 /* CGColor+IsEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGColor+IsEqual.swift"; sourceTree = "<group>"; };
 		C47B613E21F9B5B500B1CA69 /* CGColorIsEqualTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColorIsEqualTests.swift; sourceTree = "<group>"; };
+		C47BF0922207E153001E3317 /* CGImage+CroppingAtTheCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+CroppingAtTheCenter.swift"; sourceTree = "<group>"; };
+		C47BF0942207E2C2001E3317 /* CGImageCroppingAtTheCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageCroppingAtTheCenterTests.swift; sourceTree = "<group>"; };
 		C48F8E6321E08C7400E4A7E2 /* CALayer+Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Shake.swift"; sourceTree = "<group>"; };
 		C498739E21DC52330004267F /* CALayer+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+UIImage.swift"; sourceTree = "<group>"; };
 		C49873A021DC54E10004267F /* CALayerUIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerUIImageTests.swift; sourceTree = "<group>"; };
@@ -1341,6 +1345,7 @@
 				C4E30DD92202A0FA004DB004 /* CGImageCornerTests.swift */,
 				C419A0BF21FEAD5D0059C4CD /* CGImageCreateWithColorTests.swift */,
 				C45D2DCF21FD391000955181 /* CGImageCreateWithGradientTests.swift */,
+				C47BF0942207E2C2001E3317 /* CGImageCroppingAtTheCenterTests.swift */,
 				C4B11C0D21F1939300C69617 /* CGImageOrientateTests.swift */,
 				C45AA3D421F3FEE1006C9614 /* CGImageRotateTests.swift */,
 				C463D96A2204157F004028D7 /* CGImageRoundTests.swift */,
@@ -1358,6 +1363,7 @@
 				C4E30DD522029C3C004DB004 /* CGImage+Corner.swift */,
 				C45D2DCD21FD38DB00955181 /* CGImage+CreateWithGradient.swift */,
 				C419A0BD21FEAC9B0059C4CD /* CGImage+CreateWithColor.swift */,
+				C47BF0922207E153001E3317 /* CGImage+CroppingAtTheCenter.swift */,
 				C4B11C0B21F1919D00C69617 /* CGImage+Orientate.swift */,
 				C45AA3D221F3FBEF006C9614 /* CGImage+Rotate.swift */,
 				C463D96822041271004028D7 /* CGImage+Round.swift */,
@@ -1745,6 +1751,7 @@
 				71F367E820CEA24E00C01A74 /* NSMutableAttributedString+Format.swift in Sources */,
 				71C28F3020EC4A6100C56F45 /* Double+Bool.swift in Sources */,
 				7189E90921880DAB0057EB83 /* NSObject+MemoryAddress.swift in Sources */,
+				C47BF0932207E153001E3317 /* CGImage+CroppingAtTheCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1777,6 +1784,7 @@
 				71B5942120BB73F50073EE20 /* StringBoolTests.swift in Sources */,
 				71A4568820C0A657003E739C /* StringSafeSubscriptTests.swift in Sources */,
 				712FD316210621E500165D5A /* DateComponentTests.swift in Sources */,
+				C47BF0952207E2C2001E3317 /* CGImageCroppingAtTheCenterTests.swift in Sources */,
 				71C28FC220BE385400EF3654 /* StringSeparateTests.swift in Sources */,
 				715535E4212703E600B25789 /* UserDefaultsDateTests.swift in Sources */,
 				711CD5482145E146002F26E4 /* CGRectUpdateTests.swift in Sources */,
