@@ -15,6 +15,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/Jerry/Data/Work/SExtensions/Sources/CoreGraphics/CGImage/CGImage+Tiles.swift",
+      "line": 13,
+      "symbol": "CGImage.splitingToTiles(rows:columns:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/Jerry/Data/Work/SExtensions/Sources/QuartzCore/CALayer/CALayer+Border.swift",
       "line": 23,
       "symbol": "CALayer.BorderSide.all",
