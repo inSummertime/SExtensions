@@ -15,7 +15,6 @@ public extension CGImage {
         let bounds = CGRect(origin: .zero, size: CGSize(width: width, height: height))
         let rect = CGRect(x: bounds.center.x - radius, y: bounds.center.y - radius, width: radius * 2.0, height: radius * 2.0)
         guard let cropped = cropping(to: rect) else { return nil }
-        // let image = UIImage(cgImage: cropped)
         let newRect = CGRect(x: 0, y: 0, width: radius * 2, height: radius * 2)
         let path = CGPath(roundedRect: newRect, cornerWidth: radius, cornerHeight: radius, transform: nil)
         guard let colorSpace = colorSpace else { return nil }
